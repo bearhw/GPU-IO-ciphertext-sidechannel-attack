@@ -1,0 +1,180 @@
+#include <linux/module.h>
+#define INCLUDE_VERMAGIC
+#include <linux/build-salt.h>
+#include <linux/elfnote-lto.h>
+#include <linux/export-internal.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+BUILD_LTO_INFO;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(".gnu.linkonce.this_module") = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+
+static const struct modversion_info ____versions[]
+__used __section("__versions") = {
+	{ 0xf0047107, "nvme_sync_io_queues" },
+	{ 0xc941264c, "crypto_alloc_ahash" },
+	{ 0x134ef5bd, "nvme_uninit_ctrl" },
+	{ 0x49cd25ed, "alloc_workqueue" },
+	{ 0x6782fb8f, "skb_copy_bits" },
+	{ 0x51189b95, "nvme_complete_rq" },
+	{ 0xc60d0620, "__num_online_cpus" },
+	{ 0xfe86c1f0, "nvme_wait_freeze_timeout" },
+	{ 0xf62c7092, "ip_sock_set_tos" },
+	{ 0x3abcdffb, "crypto_stats_get" },
+	{ 0xa084f79f, "cpumask_next_wrap" },
+	{ 0xa6fa380f, "nvme_cancel_admin_tagset" },
+	{ 0xc5b6f236, "queue_work_on" },
+	{ 0x51c659eb, "nvmf_free_options" },
+	{ 0x2aa4e901, "nvme_start_queues" },
+	{ 0xce78a385, "iov_iter_single_seg_count" },
+	{ 0xd45434ee, "admin_timeout" },
+	{ 0x64a7c94f, "nvme_stop_keep_alive" },
+	{ 0xe6db41b0, "blk_mq_complete_request_remote" },
+	{ 0xcc4e4b3c, "iov_iter_advance" },
+	{ 0x51a511eb, "_raw_write_lock_bh" },
+	{ 0x794f1e8a, "nvme_setup_cmd" },
+	{ 0xa11cd276, "nvme_start_freeze" },
+	{ 0xbd9acb3b, "kernel_bind" },
+	{ 0x63b29a7a, "nvme_start_ctrl" },
+	{ 0xd72a9f53, "sock_create" },
+	{ 0xa789c0b1, "nvmf_connect_io_queue" },
+	{ 0x37a0cba, "kfree" },
+	{ 0xaeb082ad, "_raw_read_unlock_bh" },
+	{ 0x8dee722d, "_raw_read_lock_bh" },
+	{ 0xb320cc0e, "sg_init_one" },
+	{ 0xe7ab1ecc, "_raw_write_unlock_bh" },
+	{ 0x64b62862, "nvme_wq" },
+	{ 0x31ec5018, "nvmf_reg_read32" },
+	{ 0x5c1ea997, "nvme_delete_ctrl" },
+	{ 0xbbd13bd3, "kernel_recvmsg" },
+	{ 0xe561cda6, "skb_copy_and_hash_datagram_iter" },
+	{ 0x76e1eca9, "__dynamic_dev_dbg" },
+	{ 0xd8895d42, "nvme_disable_ctrl" },
+	{ 0x226c1d3a, "kmem_cache_alloc_trace" },
+	{ 0xb2d00eb2, "__dev_get_by_name" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0x52155e60, "sock_set_priority" },
+	{ 0x30036fd4, "blk_mq_alloc_tag_set" },
+	{ 0x6b3ccdb4, "crypto_destroy_tfm" },
+	{ 0x9fdbb040, "nvmf_get_address" },
+	{ 0x65487097, "__x86_indirect_thunk_rax" },
+	{ 0x92997ed8, "_printk" },
+	{ 0x88e1d0f0, "page_frag_free" },
+	{ 0xd0da656b, "__stack_chk_fail" },
+	{ 0xb2fcb56d, "queue_delayed_work_on" },
+	{ 0xecf89816, "nvmf_unregister_transport" },
+	{ 0x3197c4e3, "put_device" },
+	{ 0x91ba0c4b, "kernel_sendpage" },
+	{ 0x6383b27c, "__x86_indirect_thunk_rdx" },
+	{ 0x58b5116, "nvme_change_ctrl_state" },
+	{ 0xc65d01d6, "nvme_cancel_tagset" },
+	{ 0x2587f789, "_dev_info" },
+	{ 0xa7876cad, "nvme_init_ctrl" },
+	{ 0x7cd8d75e, "page_offset_base" },
+	{ 0x2de125c0, "page_frag_alloc_align" },
+	{ 0xd58bbbcb, "nvme_delete_wq" },
+	{ 0xbcb36fe4, "hugetlb_optimize_vmemmap_key" },
+	{ 0x29604158, "napi_busy_loop" },
+	{ 0x1cbbf88d, "tcp_sock_set_syncnt" },
+	{ 0x13fe63c1, "nvme_fail_nonready_command" },
+	{ 0x9085e9a, "_dev_err" },
+	{ 0x7c6024bd, "init_net" },
+	{ 0xf43e05f3, "kernel_sock_shutdown" },
+	{ 0x8c03d20c, "destroy_workqueue" },
+	{ 0x4dfa8d4b, "mutex_lock" },
+	{ 0x58b1e30a, "blk_sync_queue" },
+	{ 0xd0760fc0, "kfree_sensitive" },
+	{ 0x343d800b, "nvmf_reg_read64" },
+	{ 0x8d6713c, "inet_pton_with_scope" },
+	{ 0x4c9d28b0, "phys_base" },
+	{ 0x5a363f17, "blk_mq_free_tag_set" },
+	{ 0x5a5a2271, "__cpu_online_mask" },
+	{ 0x49224181, "nvme_reset_wq" },
+	{ 0x285fef57, "lock_sock_nested" },
+	{ 0x4b61711b, "nvmf_connect_admin_queue" },
+	{ 0x130312a4, "nvmf_ip_options_match" },
+	{ 0xcefb0c9f, "__mutex_init" },
+	{ 0x5b8a40d1, "skb_copy_datagram_iter" },
+	{ 0x813cf212, "nvme_io_timeout" },
+	{ 0x86490580, "current_task" },
+	{ 0xd319981b, "tcp_stream_memory_free" },
+	{ 0x81904f3e, "nvme_enable_ctrl" },
+	{ 0xff04e34, "sk_set_memalloc" },
+	{ 0x288ef7e1, "kernel_connect" },
+	{ 0x66dbe96c, "_dev_warn" },
+	{ 0xd9aa2171, "iov_iter_bvec" },
+	{ 0x9166fc03, "__flush_workqueue" },
+	{ 0x3c1ecf80, "blk_mq_init_queue" },
+	{ 0x347da517, "crypto_ahash_digest" },
+	{ 0x842977c4, "sock_no_sendpage" },
+	{ 0x7e9b64ed, "crypto_ahash_final" },
+	{ 0xbb9ed3bf, "mutex_trylock" },
+	{ 0x15ba50a6, "jiffies" },
+	{ 0x2d39b0a7, "kstrdup" },
+	{ 0x7e81267f, "__page_frag_cache_drain" },
+	{ 0x9cd3240b, "blk_mq_update_nr_hw_queues" },
+	{ 0x97651e6c, "vmemmap_base" },
+	{ 0xd8d91733, "nvmf_reg_write32" },
+	{ 0x7a2af7b4, "cpu_number" },
+	{ 0xd0693c90, "blk_mq_complete_request" },
+	{ 0xe18ddc1f, "nvme_stop_admin_queue" },
+	{ 0x3213f038, "mutex_unlock" },
+	{ 0x9fa7184a, "cancel_delayed_work_sync" },
+	{ 0xc6f46339, "init_timer_key" },
+	{ 0x545760bd, "nvmf_should_reconnect" },
+	{ 0x91acb249, "nvme_complete_async_event" },
+	{ 0xde11df5f, "nvme_stop_queues" },
+	{ 0xdacabd45, "nvme_set_queue_count" },
+	{ 0x3c12dfe, "cancel_work_sync" },
+	{ 0x2cd4b76e, "nvme_shutdown_ctrl" },
+	{ 0xffeedf6a, "delayed_work_timer_fn" },
+	{ 0x4d4d7b79, "blk_mq_map_queues" },
+	{ 0xab128a, "nvme_start_admin_queue" },
+	{ 0x52bee7f2, "nvmf_register_transport" },
+	{ 0x6e5c0971, "sock_release" },
+	{ 0x3498d552, "crypto_stats_ahash_update" },
+	{ 0x75363368, "blk_mq_start_request" },
+	{ 0x34e555f1, "nvme_unfreeze" },
+	{ 0x8b425fa4, "nvme_stop_ctrl" },
+	{ 0xb2340e65, "tcp_sock_set_nodelay" },
+	{ 0xc7a1840e, "llist_add_batch" },
+	{ 0x54b1fac6, "__ubsan_handle_load_invalid_value" },
+	{ 0x754d539c, "strlen" },
+	{ 0x437654c9, "param_ops_int" },
+	{ 0x783ce71c, "nvme_init_ctrl_finish" },
+	{ 0x55ad2c95, "kernel_sendmsg" },
+	{ 0x2569f74, "blk_cleanup_queue" },
+	{ 0xb38796e1, "sock_setsockopt" },
+	{ 0xeb233a45, "__kmalloc" },
+	{ 0x475dd3f4, "__nvme_check_ready" },
+	{ 0xa3563486, "kmalloc_caches" },
+	{ 0xae4cc05, "release_sock" },
+	{ 0x2f2c95c4, "flush_work" },
+	{ 0xb916ab62, "sock_no_linger" },
+	{ 0x817bf968, "module_layout" },
+};
+
+MODULE_INFO(depends, "nvme-core,nvme-fabrics");
+
+
+MODULE_INFO(srcversion, "FF60D46BF5752534F1DCD70");

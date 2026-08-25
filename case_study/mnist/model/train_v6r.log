@@ -1,0 +1,27 @@
+  RealPairDataset: 2523 pairs loaded
+v6r Training | Device: cpu | Real samples: 2523 | EPOCHS: 2523
+Batch size: 64 | Batches/epoch: 40 | Total steps: 100920
+----------------------------------------------------------------------
+Epoch [  126/2523]  Loss: 0.0193
+Epoch [  252/2523]  Loss: 0.0166
+Epoch [  378/2523]  Loss: 0.0168
+Epoch [  504/2523]  Loss: 0.0152
+Epoch [  630/2523]  Loss: 0.0195
+Epoch [  756/2523]  Loss: 0.0119
+Epoch [  882/2523]  Loss: 0.0126
+Epoch [ 1008/2523]  Loss: 0.0159
+Epoch [ 1134/2523]  Loss: 0.0148
+Epoch [ 1260/2523]  Loss: 0.0229
+Epoch [ 1386/2523]  Loss: 0.0114
+Epoch [ 1512/2523]  Loss: 0.0127
+Epoch [ 1638/2523]  Loss: 0.0124
+Epoch [ 1764/2523]  Loss: 0.0089 ← saved
+Epoch [ 1890/2523]  Loss: 0.0128
+Epoch [ 2016/2523]  Loss: 0.0099
+Epoch [ 2142/2523]  Loss: 0.0117
+Epoch [ 2268/2523]  Loss: 0.0087
+Epoch [ 2394/2523]  Loss: 0.0103
+Epoch [ 2520/2523]  Loss: 0.0094
+Epoch [ 2523/2523]  Loss: 0.0103
+
+Done. Best loss: 0.0076 → sparsity_encoder_v6r.pth

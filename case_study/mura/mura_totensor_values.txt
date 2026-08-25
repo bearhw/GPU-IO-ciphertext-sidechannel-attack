@@ -1,0 +1,384 @@
+ToTensor Results (after Resize+ToTensor, before Normalize)
+Range: [0.0, 1.0]  |  shape: (3, 224, 224)
+======================================================================
+
+======================================================================
+CLASS: ELBOW  (5 images)
+======================================================================
+
+  [1] mura_downloads/train/XR_ELBOW/patient00011/study1_negative/image1.png
+       orig size  : 512×456
+       ch R : mean=0.1158  std=0.0886  min=0.0000  max=1.0000
+       ch G : mean=0.1158  std=0.0886  min=0.0000  max=1.0000
+       ch B : mean=0.1158  std=0.0886  min=0.0000  max=1.0000
+       total   : mean=0.1158  std=0.0886  min=0.0000  max=1.0000
+       exact-zero: 5724/150528 px
+       bg corner R: mean=0.0322  min=0.0000  max=0.4353
+       top-5 vals : [(0.05900000035762787, 31929), (0.06300000101327896, 22065), (0.06700000166893005, 13566), (0.07100000232458115, 9876), (0.0, 5724)]
+
+  [2] mura_downloads/train/XR_ELBOW/patient00011/study1_negative/image2.png
+       orig size  : 319×512
+       ch R : mean=0.1329  std=0.0726  min=0.0000  max=1.0000
+       ch G : mean=0.1329  std=0.0726  min=0.0000  max=1.0000
+       ch B : mean=0.1329  std=0.0726  min=0.0000  max=1.0000
+       total   : mean=0.1329  std=0.0726  min=0.0000  max=1.0000
+       exact-zero: 3756/150528 px
+       bg corner R: mean=0.0513  min=0.0000  max=0.2627
+       top-5 vals : [(0.07800000160932541, 11844), (0.0820000022649765, 11397), (0.07500000298023224, 10950), (0.07100000232458115, 10053), (0.0860000029206276, 8676)]
+
+  [3] mura_downloads/train/XR_ELBOW/patient00011/study1_negative/image3.png
+       orig size  : 357×512
+       ch R : mean=0.1333  std=0.0777  min=0.0000  max=1.0000
+       ch G : mean=0.1333  std=0.0777  min=0.0000  max=1.0000
+       ch B : mean=0.1333  std=0.0777  min=0.0000  max=1.0000
+       total   : mean=0.1333  std=0.0777  min=0.0000  max=1.0000
+       exact-zero: 7464/150528 px
+       bg corner R: mean=0.0007  min=0.0000  max=0.0157
+       top-5 vals : [(0.07500000298023224, 12729), (0.07800000160932541, 10458), (0.0820000022649765, 9444), (0.0860000029206276, 7677), (0.0, 7464)]
+
+  [4] mura_downloads/train/XR_ELBOW/patient00016/study1_positive/image1.png
+       orig size  : 396×512
+       ch R : mean=0.0632  std=0.0767  min=0.0000  max=0.9569
+       ch G : mean=0.0632  std=0.0767  min=0.0000  max=0.9569
+       ch B : mean=0.0632  std=0.0767  min=0.0000  max=0.9569
+       total   : mean=0.0632  std=0.0767  min=0.0000  max=0.9569
+       exact-zero: 73821/150528 px
+       bg corner R: mean=0.0000  min=0.0000  max=0.0000
+       top-5 vals : [(0.0, 73821), (0.050999999046325684, 6198), (0.04699999839067459, 6057), (0.0860000029206276, 4131), (0.0820000022649765, 3519)]
+
+  [5] mura_downloads/train/XR_ELBOW/patient00016/study1_positive/image2.png
+       orig size  : 438×512
+       ch R : mean=0.0659  std=0.0817  min=0.0000  max=0.8980
+       ch G : mean=0.0659  std=0.0817  min=0.0000  max=0.8980
+       ch B : mean=0.0659  std=0.0817  min=0.0000  max=0.8980
+       total   : mean=0.0659  std=0.0817  min=0.0000  max=0.8980
+       exact-zero: 69240/150528 px
+       bg corner R: mean=0.0000  min=0.0000  max=0.0000
+       top-5 vals : [(0.0, 69240), (0.0430000014603138, 7545), (0.07100000232458115, 5100), (0.07500000298023224, 4692), (0.04699999839067459, 3813)]
+
+======================================================================
+CLASS: FINGER  (5 images)
+======================================================================
+
+  [1] mura_downloads/train/XR_FINGER/patient00011/study1_negative/image1.png
+       orig size  : 512×379
+       ch R : mean=0.1623  std=0.1108  min=0.0157  max=0.5451
+       ch G : mean=0.1623  std=0.1108  min=0.0157  max=0.5451
+       ch B : mean=0.1623  std=0.1108  min=0.0157  max=0.5451
+       total   : mean=0.1623  std=0.1108  min=0.0157  max=0.5451
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0891  min=0.0353  max=0.3294
+       top-5 vals : [(0.027000000700354576, 6684), (0.03099999949336052, 6111), (0.024000000208616257, 4959), (0.07800000160932541, 3972), (0.03500000014901161, 3921)]
+
+  [2] mura_downloads/train/XR_FINGER/patient00042/study1_positive/image1.png
+       orig size  : 174×512
+       ch R : mean=0.2670  std=0.0860  min=0.0000  max=1.0000
+       ch G : mean=0.2670  std=0.0860  min=0.0000  max=1.0000
+       ch B : mean=0.2670  std=0.0860  min=0.0000  max=1.0000
+       total   : mean=0.2670  std=0.0860  min=0.0000  max=1.0000
+       exact-zero: 1728/150528 px
+       bg corner R: mean=0.0966  min=0.0000  max=0.2275
+       top-5 vals : [(0.20000000298023224, 26580), (0.19599999487400055, 21639), (0.20399999618530273, 5544), (0.3569999933242798, 5142), (0.3529999852180481, 4788)]
+
+  [3] mura_downloads/train/XR_FINGER/patient00042/study1_positive/image2.png
+       orig size  : 185×512
+       ch R : mean=0.2370  std=0.0798  min=0.0000  max=0.9922
+       ch G : mean=0.2370  std=0.0798  min=0.0000  max=0.9922
+       ch B : mean=0.2370  std=0.0798  min=0.0000  max=0.9922
+       total   : mean=0.2370  std=0.0798  min=0.0000  max=0.9922
+       exact-zero: 7839/150528 px
+       bg corner R: mean=0.0000  min=0.0000  max=0.0000
+       top-5 vals : [(0.20000000298023224, 20517), (0.19599999487400055, 15630), (0.0, 7839), (0.2980000078678131, 5241), (0.3019999861717224, 5151)]
+
+  [4] mura_downloads/train/XR_FINGER/patient00042/study1_positive/image3.png
+       orig size  : 173×512
+       ch R : mean=0.2131  std=0.0891  min=0.0000  max=1.0000
+       ch G : mean=0.2131  std=0.0891  min=0.0000  max=1.0000
+       ch B : mean=0.2131  std=0.0891  min=0.0000  max=1.0000
+       total   : mean=0.2131  std=0.0891  min=0.0000  max=1.0000
+       exact-zero: 1731/150528 px
+       bg corner R: mean=0.2011  min=0.1529  max=0.2745
+       top-5 vals : [(0.15700000524520874, 18504), (0.15299999713897705, 9096), (0.16099999845027924, 9042), (0.25099998712539673, 6180), (0.22699999809265137, 6069)]
+
+  [5] mura_downloads/train/XR_FINGER/patient00050/study1_positive/image1.png
+       orig size  : 329×512
+       ch R : mean=0.2112  std=0.0762  min=0.0000  max=1.0000
+       ch G : mean=0.2112  std=0.0762  min=0.0000  max=1.0000
+       ch B : mean=0.2112  std=0.0762  min=0.0000  max=1.0000
+       total   : mean=0.2112  std=0.0762  min=0.0000  max=1.0000
+       exact-zero: 2928/150528 px
+       bg corner R: mean=0.1640  min=0.0000  max=0.2588
+       top-5 vals : [(0.18000000715255737, 23346), (0.17599999904632568, 13218), (0.18400000035762787, 10311), (0.22699999809265137, 6012), (0.2240000069141388, 5859)]
+
+======================================================================
+CLASS: FOREARM  (5 images)
+======================================================================
+
+  [1] mura_downloads/train/XR_FOREARM/patient00063/study1_positive/image1.png
+       orig size  : 406×512
+       ch R : mean=0.1398  std=0.0716  min=0.0118  max=0.5765
+       ch G : mean=0.1398  std=0.0716  min=0.0118  max=0.5765
+       ch B : mean=0.1398  std=0.0716  min=0.0118  max=0.5765
+       total   : mean=0.1398  std=0.0716  min=0.0118  max=0.5765
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.4362  min=0.2588  max=0.5294
+       top-5 vals : [(0.13300000131130219, 17007), (0.1289999932050705, 14550), (0.13699999451637268, 10722), (0.125, 9423), (0.12200000137090683, 7587)]
+
+  [2] mura_downloads/train/XR_FOREARM/patient00063/study1_positive/image2.png
+       orig size  : 406×512
+       ch R : mean=0.1452  std=0.0781  min=0.0118  max=0.5765
+       ch G : mean=0.1452  std=0.0781  min=0.0118  max=0.5765
+       ch B : mean=0.1452  std=0.0781  min=0.0118  max=0.5765
+       total   : mean=0.1452  std=0.0781  min=0.0118  max=0.5765
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.1569  min=0.1451  max=0.1647
+       top-5 vals : [(0.14499999582767487, 14739), (0.14100000262260437, 12765), (0.14900000393390656, 12756), (0.15299999713897705, 10179), (0.13699999451637268, 7164)]
+
+  [3] mura_downloads/train/XR_FOREARM/patient00067/study1_negative/image1.png
+       orig size  : 420×512
+       ch R : mean=0.1410  std=0.1130  min=0.0196  max=0.6588
+       ch G : mean=0.1410  std=0.1130  min=0.0196  max=0.6588
+       ch B : mean=0.1410  std=0.1130  min=0.0196  max=0.6588
+       total   : mean=0.1410  std=0.1130  min=0.0196  max=0.6588
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0980  min=0.0902  max=0.1216
+       top-5 vals : [(0.09000000357627869, 17073), (0.0860000029206276, 15495), (0.09399999678134918, 12234), (0.05900000035762787, 6294), (0.054999999701976776, 6249)]
+
+  [4] mura_downloads/train/XR_FOREARM/patient00067/study1_negative/image2.png
+       orig size  : 420×512
+       ch R : mean=0.1478  std=0.1358  min=0.0118  max=0.7020
+       ch G : mean=0.1478  std=0.1358  min=0.0118  max=0.7020
+       ch B : mean=0.1478  std=0.1358  min=0.0118  max=0.7020
+       total   : mean=0.1478  std=0.1358  min=0.0118  max=0.7020
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0956  min=0.0941  max=0.0980
+       top-5 vals : [(0.09399999678134918, 22869), (0.09000000357627869, 16536), (0.09799999743700027, 16059), (0.0860000029206276, 8025), (0.0820000022649765, 7392)]
+
+  [5] mura_downloads/train/XR_FOREARM/patient00069/study1_negative/image1.png
+       orig size  : 420×512
+       ch R : mean=0.1176  std=0.1467  min=0.0078  max=0.7373
+       ch G : mean=0.1176  std=0.1467  min=0.0078  max=0.7373
+       ch B : mean=0.1176  std=0.1467  min=0.0078  max=0.7373
+       total   : mean=0.1176  std=0.1467  min=0.0078  max=0.7373
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0124  min=0.0118  max=0.0157
+       top-5 vals : [(0.012000000104308128, 83115), (0.17599999904632568, 3651), (0.17299999296665192, 3360), (0.01600000075995922, 3279), (0.18000000715255737, 3078)]
+
+======================================================================
+CLASS: HAND  (5 images)
+======================================================================
+
+  [1] mura_downloads/train/XR_HAND/patient00008/study1_positive/image1.png
+       orig size  : 406×512
+       ch R : mean=0.1110  std=0.0923  min=0.0157  max=0.7216
+       ch G : mean=0.1110  std=0.0923  min=0.0157  max=0.7216
+       ch B : mean=0.1110  std=0.0923  min=0.0157  max=0.7216
+       total   : mean=0.1110  std=0.0923  min=0.0157  max=0.7216
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0654  min=0.0588  max=0.0706
+       top-5 vals : [(0.06300000101327896, 23826), (0.05900000035762787, 16185), (0.06700000166893005, 15579), (0.054999999701976776, 10701), (0.050999999046325684, 7194)]
+
+  [2] mura_downloads/train/XR_HAND/patient00008/study1_positive/image2.png
+       orig size  : 406×512
+       ch R : mean=0.1146  std=0.1032  min=0.0157  max=0.6431
+       ch G : mean=0.1146  std=0.1032  min=0.0157  max=0.6431
+       ch B : mean=0.1146  std=0.1032  min=0.0157  max=0.6431
+       total   : mean=0.1146  std=0.1032  min=0.0157  max=0.6431
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0751  min=0.0706  max=0.0824
+       top-5 vals : [(0.06700000166893005, 23499), (0.07100000232458115, 18687), (0.06300000101327896, 13611), (0.07500000298023224, 12564), (0.05900000035762787, 6546)]
+
+  [3] mura_downloads/train/XR_HAND/patient00008/study1_positive/image3.png
+       orig size  : 406×512
+       ch R : mean=0.1072  std=0.0741  min=0.0196  max=0.6196
+       ch G : mean=0.1072  std=0.0741  min=0.0196  max=0.6196
+       ch B : mean=0.1072  std=0.0741  min=0.0196  max=0.6196
+       total   : mean=0.1072  std=0.0741  min=0.0196  max=0.6196
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0612  min=0.0588  max=0.0667
+       top-5 vals : [(0.06300000101327896, 15537), (0.05900000035762787, 15426), (0.06700000166893005, 10155), (0.054999999701976776, 9447), (0.050999999046325684, 7470)]
+
+  [4] mura_downloads/train/XR_HAND/patient00050/study1_negative/image1.png
+       orig size  : 512×512
+       ch R : mean=0.0839  std=0.0949  min=0.0000  max=0.9725
+       ch G : mean=0.0839  std=0.0949  min=0.0000  max=0.9725
+       ch B : mean=0.0839  std=0.0949  min=0.0000  max=0.9725
+       total   : mean=0.0839  std=0.0949  min=0.0000  max=0.9725
+       exact-zero: 77277/150528 px
+       bg corner R: mean=0.0000  min=0.0000  max=0.0000
+       top-5 vals : [(0.0, 77277), (0.14100000262260437, 9081), (0.13699999451637268, 7899), (0.13300000131130219, 5895), (0.14499999582767487, 5781)]
+
+  [5] mura_downloads/train/XR_HAND/patient00050/study1_negative/image2.png
+       orig size  : 397×512
+       ch R : mean=0.1727  std=0.0454  min=0.1333  max=1.0000
+       ch G : mean=0.1727  std=0.0454  min=0.1333  max=1.0000
+       ch B : mean=0.1727  std=0.0454  min=0.1333  max=1.0000
+       total   : mean=0.1727  std=0.0454  min=0.1333  max=1.0000
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.1801  min=0.1569  max=0.4118
+       top-5 vals : [(0.14100000262260437, 29094), (0.14499999582767487, 22260), (0.14900000393390656, 16257), (0.15299999713897705, 8802), (0.15700000524520874, 5973)]
+
+======================================================================
+CLASS: HUMERUS  (5 images)
+======================================================================
+
+  [1] mura_downloads/train/XR_HUMERUS/patient00051/study1_positive/image1.png
+       orig size  : 512×230
+       ch R : mean=0.3426  std=0.1025  min=0.0000  max=0.8471
+       ch G : mean=0.3426  std=0.1025  min=0.0000  max=0.8471
+       ch B : mean=0.3426  std=0.1025  min=0.0000  max=0.8471
+       total   : mean=0.3426  std=0.1025  min=0.0000  max=0.8471
+       exact-zero: 6630/150528 px
+       bg corner R: mean=0.1252  min=0.0000  max=0.4078
+       top-5 vals : [(0.37299999594688416, 13260), (0.36899998784065247, 9708), (0.37599998712539673, 9573), (0.0, 6630), (0.36500000953674316, 6063)]
+
+  [2] mura_downloads/train/XR_HUMERUS/patient00051/study1_positive/image2.png
+       orig size  : 512×512
+       ch R : mean=0.1222  std=0.1313  min=0.0000  max=0.7765
+       ch G : mean=0.1222  std=0.1313  min=0.0000  max=0.7765
+       ch B : mean=0.1222  std=0.1313  min=0.0000  max=0.7765
+       total   : mean=0.1222  std=0.1313  min=0.0000  max=0.7765
+       exact-zero: 72258/150528 px
+       bg corner R: mean=0.0000  min=0.0000  max=0.0000
+       top-5 vals : [(0.0, 72258), (0.25099998712539673, 3144), (0.2549999952316284, 3012), (0.2590000033378601, 2868), (0.23100000619888306, 2859)]
+
+  [3] mura_downloads/train/XR_HUMERUS/patient00058/study1_negative/image1.png
+       orig size  : 420×512
+       ch R : mean=0.0881  std=0.0924  min=0.0078  max=0.6588
+       ch G : mean=0.0881  std=0.0924  min=0.0078  max=0.6588
+       ch B : mean=0.0881  std=0.0924  min=0.0078  max=0.6588
+       total   : mean=0.0881  std=0.0924  min=0.0078  max=0.6588
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0367  min=0.0275  max=0.0549
+       top-5 vals : [(0.03500000014901161, 52554), (0.039000000804662704, 17067), (0.03099999949336052, 13428), (0.027000000700354576, 7494), (0.024000000208616257, 4251)]
+
+  [4] mura_downloads/train/XR_HUMERUS/patient00058/study1_negative/image2.png
+       orig size  : 420×512
+       ch R : mean=0.0793  std=0.0819  min=0.0000  max=0.3961
+       ch G : mean=0.0793  std=0.0819  min=0.0000  max=0.3961
+       ch B : mean=0.0793  std=0.0819  min=0.0000  max=0.3961
+       total   : mean=0.0793  std=0.0819  min=0.0000  max=0.3961
+       exact-zero: 588/150528 px
+       bg corner R: mean=0.0390  min=0.0353  max=0.0431
+       top-5 vals : [(0.03500000014901161, 42564), (0.039000000804662704, 38094), (0.03099999949336052, 9804), (0.0430000014603138, 4575), (0.027000000700354576, 4044)]
+
+  [5] mura_downloads/train/XR_HUMERUS/patient00077/study1_negative/image1.png
+       orig size  : 512×406
+       ch R : mean=0.1680  std=0.1118  min=0.0039  max=0.8510
+       ch G : mean=0.1680  std=0.1118  min=0.0039  max=0.8510
+       ch B : mean=0.1680  std=0.1118  min=0.0039  max=0.8510
+       total   : mean=0.1680  std=0.1118  min=0.0039  max=0.8510
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.1898  min=0.1843  max=0.1961
+       top-5 vals : [(0.024000000208616257, 8574), (0.019999999552965164, 7527), (0.16099999845027924, 7194), (0.16500000655651093, 6678), (0.027000000700354576, 6435)]
+
+======================================================================
+CLASS: SHOULDER  (5 images)
+======================================================================
+
+  [1] mura_downloads/train/XR_SHOULDER/patient00001/study1_positive/image1.png
+       orig size  : 380×512
+       ch R : mean=0.1839  std=0.0922  min=0.0000  max=0.4078
+       ch G : mean=0.1839  std=0.0922  min=0.0000  max=0.4078
+       ch B : mean=0.1839  std=0.0922  min=0.0000  max=0.4078
+       total   : mean=0.1839  std=0.0922  min=0.0000  max=0.4078
+       exact-zero: 558/150528 px
+       bg corner R: mean=0.0330  min=0.0235  max=0.0706
+       top-5 vals : [(0.2939999997615814, 4971), (0.2980000078678131, 4893), (0.20000000298023224, 3744), (0.28999999165534973, 3702), (0.20399999618530273, 3447)]
+
+  [2] mura_downloads/train/XR_SHOULDER/patient00001/study1_positive/image2.png
+       orig size  : 303×512
+       ch R : mean=0.4379  std=0.2047  min=0.0000  max=0.8275
+       ch G : mean=0.4379  std=0.2047  min=0.0000  max=0.8275
+       ch B : mean=0.4379  std=0.2047  min=0.0000  max=0.8275
+       total   : mean=0.4379  std=0.2047  min=0.0000  max=0.8275
+       exact-zero: 7794/150528 px
+       bg corner R: mean=0.0930  min=0.0000  max=0.6039
+       top-5 vals : [(0.0, 7794), (0.004000000189989805, 2958), (0.5220000147819519, 2457), (0.00800000037997961, 2454), (0.5569999814033508, 2433)]
+
+  [3] mura_downloads/train/XR_SHOULDER/patient00001/study1_positive/image3.png
+       orig size  : 512×410
+       ch R : mean=0.2473  std=0.1198  min=0.0000  max=1.0000
+       ch G : mean=0.2473  std=0.1198  min=0.0000  max=1.0000
+       ch B : mean=0.2473  std=0.1198  min=0.0000  max=1.0000
+       total   : mean=0.2473  std=0.1198  min=0.0000  max=1.0000
+       exact-zero: 3744/150528 px
+       bg corner R: mean=0.1322  min=0.0431  max=0.3059
+       top-5 vals : [(0.32499998807907104, 6675), (0.32199999690055847, 6228), (0.32899999618530273, 5883), (0.2980000078678131, 5139), (0.3330000042915344, 4962)]
+
+  [4] mura_downloads/train/XR_SHOULDER/patient00002/study1_positive/image1.png
+       orig size  : 512×413
+       ch R : mean=0.2205  std=0.1182  min=0.0000  max=1.0000
+       ch G : mean=0.2205  std=0.1182  min=0.0000  max=1.0000
+       ch B : mean=0.2205  std=0.1182  min=0.0000  max=1.0000
+       total   : mean=0.2205  std=0.1182  min=0.0000  max=1.0000
+       exact-zero: 10506/150528 px
+       bg corner R: mean=0.1394  min=0.0275  max=0.2392
+       top-5 vals : [(0.0, 10506), (0.2980000078678131, 5628), (0.3019999861717224, 5379), (0.2939999997615814, 5283), (0.28999999165534973, 5181)]
+
+  [5] mura_downloads/train/XR_SHOULDER/patient00002/study1_positive/image2.png
+       orig size  : 440×512
+       ch R : mean=0.1517  std=0.1114  min=0.0000  max=0.5373
+       ch G : mean=0.1517  std=0.1114  min=0.0000  max=0.5373
+       ch B : mean=0.1517  std=0.1114  min=0.0000  max=0.5373
+       total   : mean=0.1517  std=0.1114  min=0.0000  max=0.5373
+       exact-zero: 30342/150528 px
+       bg corner R: mean=0.0334  min=0.0000  max=0.2588
+       top-5 vals : [(0.0, 30342), (0.004000000189989805, 5520), (0.24300000071525574, 4503), (0.23100000619888306, 4275), (0.00800000037997961, 4203)]
+
+======================================================================
+CLASS: WRIST  (5 images)
+======================================================================
+
+  [1] mura_downloads/train/XR_WRIST/patient00006/study1_positive/image1.png
+       orig size  : 425×512
+       ch R : mean=0.2443  std=0.1425  min=0.0314  max=0.9765
+       ch G : mean=0.2443  std=0.1425  min=0.0314  max=0.9765
+       ch B : mean=0.2443  std=0.1425  min=0.0314  max=0.9765
+       total   : mean=0.2443  std=0.1425  min=0.0314  max=0.9765
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.1490  min=0.1490  max=0.1490
+       top-5 vals : [(0.14900000393390656, 73692), (0.14499999582767487, 3030), (0.2980000078678131, 1782), (0.2939999997615814, 1704), (0.3019999861717224, 1620)]
+
+  [2] mura_downloads/train/XR_WRIST/patient00006/study1_positive/image2.png
+       orig size  : 407×512
+       ch R : mean=0.6849  std=0.1781  min=0.0196  max=0.9882
+       ch G : mean=0.6849  std=0.1781  min=0.0196  max=0.9882
+       ch B : mean=0.6849  std=0.1781  min=0.0196  max=0.9882
+       total   : mean=0.6849  std=0.1781  min=0.0196  max=0.9882
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.8510  min=0.8510  max=0.8510
+       top-5 vals : [(0.8510000109672546, 42474), (0.8550000190734863, 3240), (0.859000027179718, 2463), (0.8629999756813049, 1848), (0.6470000147819519, 1815)]
+
+  [3] mura_downloads/train/XR_WRIST/patient00006/study1_positive/image3.png
+       orig size  : 425×512
+       ch R : mean=0.2267  std=0.1498  min=0.0196  max=0.9686
+       ch G : mean=0.2267  std=0.1498  min=0.0196  max=0.9686
+       ch B : mean=0.2267  std=0.1498  min=0.0196  max=0.9686
+       total   : mean=0.2267  std=0.1498  min=0.0196  max=0.9686
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.1490  min=0.1490  max=0.1490
+       top-5 vals : [(0.14900000393390656, 86691), (0.14499999582767487, 3159), (0.2590000033378601, 1959), (0.2630000114440918, 1917), (0.14100000262260437, 1881)]
+
+  [4] mura_downloads/train/XR_WRIST/patient00012/study1_negative/image1.png
+       orig size  : 406×512
+       ch R : mean=0.0945  std=0.0785  min=0.0235  max=0.7843
+       ch G : mean=0.0945  std=0.0785  min=0.0235  max=0.7843
+       ch B : mean=0.0945  std=0.0785  min=0.0235  max=0.7843
+       total   : mean=0.0945  std=0.0785  min=0.0235  max=0.7843
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0663  min=0.0627  max=0.0667
+       top-5 vals : [(0.06300000101327896, 43482), (0.06700000166893005, 31599), (0.05900000035762787, 19572), (0.054999999701976776, 9153), (0.07100000232458115, 7245)]
+
+  [5] mura_downloads/train/XR_WRIST/patient00012/study1_negative/image2.png
+       orig size  : 406×512
+       ch R : mean=0.1027  std=0.0802  min=0.0235  max=0.8784
+       ch G : mean=0.1027  std=0.0802  min=0.0235  max=0.8784
+       ch B : mean=0.1027  std=0.0802  min=0.0235  max=0.8784
+       total   : mean=0.1027  std=0.0802  min=0.0235  max=0.8784
+       exact-zero: 0/150528 px
+       bg corner R: mean=0.0765  min=0.0706  max=0.0824
+       top-5 vals : [(0.07100000232458115, 42324), (0.07500000298023224, 35568), (0.06700000166893005, 24153), (0.07800000160932541, 9369), (0.06300000101327896, 6738)]
+
+======================================================================
+Done.

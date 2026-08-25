@@ -1,0 +1,67 @@
+!<thin>
+//                                              412       `
+init.o/
+init_64.o/
+fault.o/
+ioremap.o/
+extable.o/
+mmap.o/
+pgtable.o/
+physaddr.o/
+tlb.o/
+cpu_entry_area.o/
+maccess.o/
+pgprot.o/
+pat/set_memory.o/
+pat/memtype.o/
+pat/memtype_interval.o/
+hugetlbpage.o/
+dump_pagetables.o/
+kmmio.o/
+pf_in.o/
+mmio-mod.o/
+numa.o/
+numa_64.o/
+amdtopology.o/
+srat.o/
+numa_emulation.o/
+pkeys.o/
+kaslr.o/
+pti.o/
+mem_encrypt.o/
+mem_encrypt_amd.o/
+mem_encrypt_identity.o/
+mem_encrypt_boot.o/
+
+/0              0           0     0     644     101712    `
+/8              0           0     0     644     264136    `
+/19             0           0     0     644     163512    `
+/28             0           0     0     644     102296    `
+/39             0           0     0     644     30872     `
+/50             0           0     0     644     47688     `
+/58             0           0     0     644     120216    `
+/69             0           0     0     644     29448     `
+/81             0           0     0     644     142272    `
+/88             0           0     0     644     96000     `
+/106            0           0     0     644     8624      `
+/117            0           0     0     644     22272     `
+/127            0           0     0     644     215680    `
+/145            0           0     0     644     105704    `
+/160            0           0     0     644     40264     `
+/184            0           0     0     644     47096     `
+/199            0           0     0     644     52408     `
+/218            0           0     0     644     80688     `
+/227            0           0     0     644     36544     `
+/236            0           0     0     644     69584     `
+/248            0           0     0     644     191704    `
+/256            0           0     0     644     5080      `
+/267            0           0     0     644     35864     `
+/282            0           0     0     644     13208     `
+/290            0           0     0     644     159528    `
+/308            0           0     0     644     40704     `
+/317            0           0     0     644     29520     `
+/326            0           0     0     644     85960     `
+/333            0           0     0     644     10640     `
+/348            0           0     0     644     69640     `
+/367            0           0     0     644     4247416   `
+/391            0           0     0     644     2496      `

@@ -1,0 +1,8 @@
+drivers/vdpa/mlx5/mlx5_vdpa.ko
+drivers/vdpa/vdpa.ko
+drivers/vdpa/vdpa_sim/vdpa_sim.ko
+drivers/vdpa/vdpa_sim/vdpa_sim_net.ko
+drivers/vdpa/vdpa_sim/vdpa_sim_blk.ko
+drivers/vdpa/vdpa_user/vduse.ko
+drivers/vdpa/ifcvf/ifcvf.ko
+drivers/vdpa/virtio_pci/vp_vdpa.ko

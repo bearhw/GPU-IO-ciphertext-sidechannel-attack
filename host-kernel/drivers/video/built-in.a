@@ -1,0 +1,63 @@
+!<thin>
+//                                              628       `
+hdmi.o/
+console/dummycon.o/
+console/vgacon.o/
+backlight/backlight.o/
+fbdev/core/fb_cmdline.o/
+fbdev/core/fb_notify.o/
+fbdev/core/fbmem.o/
+fbdev/core/fbmon.o/
+fbdev/core/fbcmap.o/
+fbdev/core/fbsysfs.o/
+fbdev/core/modedb.o/
+fbdev/core/fbcvt.o/
+fbdev/core/fb_defio.o/
+fbdev/core/fbcon.o/
+fbdev/core/bitblit.o/
+fbdev/core/softcursor.o/
+fbdev/core/tileblit.o/
+fbdev/core/fbcon_rotate.o/
+fbdev/core/fbcon_cw.o/
+fbdev/core/fbcon_ud.o/
+fbdev/core/fbcon_ccw.o/
+fbdev/core/cfbfillrect.o/
+fbdev/core/cfbcopyarea.o/
+fbdev/core/cfbimgblt.o/
+fbdev/imsttfb.o/
+fbdev/asiliantfb.o/
+fbdev/vesafb.o/
+fbdev/efifb.o/
+display_timing.o/
+videomode.o/
+
+/0              0           0     0     644     105704    `
+/8              0           0     0     644     35920     `
+/28             0           0     0     644     161304    `
+/46             0           0     0     644     92200     `
+/69             0           0     0     644     37248     `
+/94             0           0     0     644     32680     `
+/118            0           0     0     644     139808    `
+/138            0           0     0     644     81632     `
+/158            0           0     0     644     61264     `
+/179            0           0     0     644     71736     `
+/201            0           0     0     644     72624     `
+/222            0           0     0     644     44240     `
+/242            0           0     0     644     72504     `
+/265            0           0     0     644     245544    `
+/285            0           0     0     644     28400     `
+/307            0           0     0     644     11280     `
+/332            0           0     0     644     15736     `
+/355            0           0     0     644     15104     `
+/382            0           0     0     644     29840     `
+/405            0           0     0     644     29288     `
+/428            0           0     0     644     30320     `
+/452            0           0     0     644     60744     `
+/478            0           0     0     644     46600     `
+/504            0           0     0     644     48712     `
+/528            0           0     0     644     88520     `
+/545            0           0     0     644     48760     `
+/565            0           0     0     644     66264     `
+/581            0           0     0     644     77448     `
+/596            0           0     0     644     15272     `
+/614            0           0     0     644     9688      `

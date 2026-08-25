@@ -1,0 +1,2624 @@
+MNIST run1: B-precursor → TRUE IMAGE cases (n=74)
+======================================================================
+
+Case 1: B-precursor #176  (log line 26138)
+  B-precursor ts : 252747466684232
+  image[0] ts    : 252747466692712
+  delay          : 8.5 µs
+  run gpa        : 0x00017fe00000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f846cc000  ts=252747466681052  <== B-precursor #175
+                                                                          [no run]
+WRITE  gpa=0x0000003f846cd000  ts=252747466684232  <== B-precursor #176
+                                                                          --> run: gpa=0x00017fe00000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000010695f000  ts=252747466688972
+WRITE  gpa=0x000000017fe00000  ts=252747466692712      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe01000  ts=252747466697252      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe02000  ts=252747466700752      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe03000  ts=252747466704072      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe04000  ts=252747466706972      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe05000  ts=252747466710422      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe06000  ts=252747466713332      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe07000  ts=252747466716752      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe08000  ts=252747466719992      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe09000  ts=252747466723782      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0a000  ts=252747466727602      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0b000  ts=252747466730722      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0c000  ts=252747466733642      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0d000  ts=252747466737072      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0e000  ts=252747466740442      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0f000  ts=252747466743402      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846cf000  ts=252747466748342  <== B-precursor #177
+                                                                          --> run: gpa=0x00017fe10000 len=14p [TRUE IMAGE]
+
+======================================================================
+
+Case 2: B-precursor #177  (log line 26157)
+  B-precursor ts : 252747466748342
+  image[0] ts    : 252747466760881
+  delay          : 12.5 µs
+  run gpa        : 0x00017fe10000  len=14p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017fe0e000  ts=252747466740442      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0f000  ts=252747466743402      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846cf000  ts=252747466748342  <== B-precursor #177
+                                                                          --> run: gpa=0x00017fe10000 len=14p [TRUE IMAGE]
+WRITE  gpa=0x0000001f96c09000  ts=252747466752841
+WRITE  gpa=0x0000001f974f8000  ts=252747466756781
+WRITE  gpa=0x000000017fe10000  ts=252747466760881      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe11000  ts=252747466764391      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe12000  ts=252747466767831      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe13000  ts=252747466771171      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe14000  ts=252747466774341      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe15000  ts=252747466777961      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe16000  ts=252747466781311      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe17000  ts=252747466784241      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe18000  ts=252747466787501      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe19000  ts=252747466790871      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1a000  ts=252747466794151      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1b000  ts=252747466797231      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1c000  ts=252747466800671      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1d000  ts=252747466804121      image[13] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846ca000  ts=252747466810151  <== B-precursor #178
+                                                                          --> run: gpa=0x00017fe1e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 3: B-precursor #178  (log line 26175)
+  B-precursor ts : 252747466810151
+  image[0] ts    : 252747466814391
+  delay          : 4.2 µs
+  run gpa        : 0x00017fe1e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017fe1c000  ts=252747466800671      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1d000  ts=252747466804121      image[13] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846ca000  ts=252747466810151  <== B-precursor #178
+                                                                          --> run: gpa=0x00017fe1e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1e000  ts=252747466814391      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1f000  ts=252747466817691      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe20000  ts=252747466821481      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe21000  ts=252747466824691      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe22000  ts=252747466828331      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe23000  ts=252747466831911      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe24000  ts=252747466834981      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe25000  ts=252747466838271      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe26000  ts=252747466841181      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe27000  ts=252747466844391      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe28000  ts=252747466847791      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe29000  ts=252747466851341      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2a000  ts=252747466854501      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2b000  ts=252747466858031      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2c000  ts=252747466861331      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2d000  ts=252747466864371      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846d3000  ts=252747466870181  <== B-precursor #179
+                                                                          [no run]
+
+======================================================================
+
+Case 4: B-precursor #180  (log line 26195)
+  B-precursor ts : 252747466873341
+  image[0] ts    : 252747466876800
+  delay          : 3.5 µs
+  run gpa        : 0x00017fe2e000  len=48p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f846d3000  ts=252747466870181  <== B-precursor #179
+                                                                          [no run]
+WRITE  gpa=0x0000003f846ce000  ts=252747466873341  <== B-precursor #180
+                                                                          --> run: gpa=0x00017fe2e000 len=48p [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2e000  ts=252747466876800      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2f000  ts=252747466880030      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe30000  ts=252747466883020      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe31000  ts=252747466886570      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe32000  ts=252747466889580      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe33000  ts=252747466892800      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe34000  ts=252747466895720      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe35000  ts=252747466898980      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe36000  ts=252747466902140      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe37000  ts=252747466905510      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe38000  ts=252747466908810      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe39000  ts=252747466912010      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3a000  ts=252747466915620      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3b000  ts=252747466919270      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3c000  ts=252747466922350      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3d000  ts=252747466925740      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3e000  ts=252747466932550      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3f000  ts=252747466935540      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe40000  ts=252747466938860      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe41000  ts=252747466942810      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe42000  ts=252747466945820      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe43000  ts=252747466949410      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe44000  ts=252747466952790      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe45000  ts=252747466956140      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe46000  ts=252747466959230      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe47000  ts=252747466962870      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe48000  ts=252747466966270      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe49000  ts=252747466970560      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe4a000  ts=252747466973720      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe4b000  ts=252747466976700      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe4c000  ts=252747466980190      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe4d000  ts=252747466983400      image[31] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe4e000  ts=252747466989720      image[32] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe4f000  ts=252747466992950      image[33] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe50000  ts=252747466996250      image[34] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe51000  ts=252747466999280      image[35] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe52000  ts=252747467002249      image[36] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe53000  ts=252747467005279      image[37] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe54000  ts=252747467008449      image[38] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe55000  ts=252747467011709      image[39] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe56000  ts=252747467014959      image[40] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe57000  ts=252747467018009      image[41] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe58000  ts=252747467021619      image[42] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe59000  ts=252747467024749      image[43] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe5a000  ts=252747467027969      image[44] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe5b000  ts=252747467031429      image[45] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe5c000  ts=252747467034669      image[46] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe5d000  ts=252747467038059      image[47] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c9000  ts=252747467043309  <== B-precursor #181
+                                                                          --> run: gpa=0x00017fe5e000 len=48p [TRUE IMAGE]
+
+======================================================================
+
+Case 5: B-precursor #181  (log line 26245)
+  B-precursor ts : 252747467043309
+  image[0] ts    : 252747467047599
+  delay          : 4.3 µs
+  run gpa        : 0x00017fe5e000  len=48p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017fe5c000  ts=252747467034669      image[46] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe5d000  ts=252747467038059      image[47] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c9000  ts=252747467043309  <== B-precursor #181
+                                                                          --> run: gpa=0x00017fe5e000 len=48p [TRUE IMAGE]
+WRITE  gpa=0x000000017fe5e000  ts=252747467047599      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe5f000  ts=252747467050739      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe60000  ts=252747467054589      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe61000  ts=252747467057639      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe62000  ts=252747467060619      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe63000  ts=252747467063499      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe64000  ts=252747467066369      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe65000  ts=252747467069529      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe66000  ts=252747467072359      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe67000  ts=252747467076049      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe68000  ts=252747467079159      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe69000  ts=252747467082229      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6a000  ts=252747467085249      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6b000  ts=252747467088099      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6c000  ts=252747467090969      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6d000  ts=252747467094259      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6e000  ts=252747467100729      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6f000  ts=252747467103639      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe70000  ts=252747467106539      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe71000  ts=252747467109659      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe72000  ts=252747467113039      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe73000  ts=252747467116109      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe74000  ts=252747467119649      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe75000  ts=252747467122539      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe76000  ts=252747467125788      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe77000  ts=252747467128698      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe78000  ts=252747467131648      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe79000  ts=252747467134918      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe7a000  ts=252747467137788      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe7b000  ts=252747467140678      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe7c000  ts=252747467143898      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe7d000  ts=252747467147208      image[31] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe7e000  ts=252747467153758      image[32] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe7f000  ts=252747467156688      image[33] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe80000  ts=252747467159958      image[34] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe81000  ts=252747467163418      image[35] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe82000  ts=252747467166298      image[36] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe83000  ts=252747467169208      image[37] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe84000  ts=252747467172068      image[38] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe85000  ts=252747467175788      image[39] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe86000  ts=252747467178688      image[40] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe87000  ts=252747467181568      image[41] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe88000  ts=252747467184768      image[42] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe89000  ts=252747467187848      image[43] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8a000  ts=252747467191008      image[44] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8b000  ts=252747467194308      image[45] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8c000  ts=252747467197238      image[46] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8d000  ts=252747467200348      image[47] [TRUE IMAGE]
+WRITE  gpa=0x0000003f84690000  ts=252747467206268  <== B-precursor #182
+                                                                          [no run]
+
+======================================================================
+
+Case 6: B-precursor #183  (log line 26297)
+  B-precursor ts : 252747467209688
+  image[0] ts    : 252747467213218
+  delay          : 3.5 µs
+  run gpa        : 0x00017fe8e000  len=32p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f84690000  ts=252747467206268  <== B-precursor #182
+                                                                          [no run]
+WRITE  gpa=0x0000003f84691000  ts=252747467209688  <== B-precursor #183
+                                                                          --> run: gpa=0x00017fe8e000 len=32p [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8e000  ts=252747467213218      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8f000  ts=252747467216168      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe90000  ts=252747467219288      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe91000  ts=252747467222388      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe92000  ts=252747467225288      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe93000  ts=252747467228188      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe94000  ts=252747467231478      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe95000  ts=252747467234608      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe96000  ts=252747467237758      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe97000  ts=252747467241018      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe98000  ts=252747467244158      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe99000  ts=252747467246918      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9a000  ts=252747467250107      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9b000  ts=252747467253437      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9c000  ts=252747467256317      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9d000  ts=252747467259397      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9e000  ts=252747467265687      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9f000  ts=252747467268917      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea0000  ts=252747467272107      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea1000  ts=252747467275207      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea2000  ts=252747467278097      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea3000  ts=252747467281447      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea4000  ts=252747467284617      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea5000  ts=252747467287537      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea6000  ts=252747467290707      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea7000  ts=252747467293557      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea8000  ts=252747467296507      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea9000  ts=252747467299997      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017feaa000  ts=252747467302987      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017feab000  ts=252747467305957      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017feac000  ts=252747467308717      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017fead000  ts=252747467311867      image[31] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c8000  ts=252747467315727  <== B-precursor #184
+                                                                          [no run]
+
+======================================================================
+
+Case 7: B-precursor #186  (log line 26335)
+  B-precursor ts : 252747467323557
+  image[0] ts    : 252747467327137
+  delay          : 3.6 µs
+  run gpa        : 0x00017feae000  len=32p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f846c7000  ts=252747467319487  <== B-precursor #185
+                                                                          [no run]
+WRITE  gpa=0x0000003f846c4000  ts=252747467323557  <== B-precursor #186
+                                                                          --> run: gpa=0x00017feae000 len=32p [TRUE IMAGE]
+WRITE  gpa=0x000000017feae000  ts=252747467327137      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017feaf000  ts=252747467330057      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb0000  ts=252747467333087      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb1000  ts=252747467336597      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb2000  ts=252747467340057      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb3000  ts=252747467342907      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb4000  ts=252747467346117      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb5000  ts=252747467349427      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb6000  ts=252747467352347      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb7000  ts=252747467355887      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb8000  ts=252747467359207      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb9000  ts=252747467362847      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017feba000  ts=252747467365737      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017febb000  ts=252747467368677      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017febc000  ts=252747467371827      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017febd000  ts=252747467374746      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017febe000  ts=252747467380826      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017febf000  ts=252747467384046      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec0000  ts=252747467387306      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec1000  ts=252747467390146      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec2000  ts=252747467393256      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec3000  ts=252747467396346      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec4000  ts=252747467399246      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec5000  ts=252747467402366      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec6000  ts=252747467405396      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec7000  ts=252747467408456      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec8000  ts=252747467411646      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec9000  ts=252747467414886      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017feca000  ts=252747467418106      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017fecb000  ts=252747467421106      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017fecc000  ts=252747467424276      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017fecd000  ts=252747467427146      image[31] [TRUE IMAGE]
+WRITE  gpa=0x0000003f84692000  ts=252747467431146  <== B-precursor #187
+                                                                          --> run: gpa=0x00017fece000 len=32p [TRUE IMAGE]
+
+======================================================================
+
+Case 8: B-precursor #187  (log line 26369)
+  B-precursor ts : 252747467431146
+  image[0] ts    : 252747467436496
+  delay          : 5.3 µs
+  run gpa        : 0x00017fece000  len=32p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017fecc000  ts=252747467424276      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017fecd000  ts=252747467427146      image[31] [TRUE IMAGE]
+WRITE  gpa=0x0000003f84692000  ts=252747467431146  <== B-precursor #187
+                                                                          --> run: gpa=0x00017fece000 len=32p [TRUE IMAGE]
+WRITE  gpa=0x000000017fece000  ts=252747467436496      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fecf000  ts=252747467439726      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed0000  ts=252747467442906      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed1000  ts=252747467446156      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed2000  ts=252747467449576      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed3000  ts=252747467452626      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed4000  ts=252747467456016      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed5000  ts=252747467459056      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed6000  ts=252747467462186      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed7000  ts=252747467465406      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed8000  ts=252747467468296      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fed9000  ts=252747467471766      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017feda000  ts=252747467474826      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fedb000  ts=252747467477686      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fedc000  ts=252747467480606      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fedd000  ts=252747467483476      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017fede000  ts=252747467489946      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017fedf000  ts=252747467493536      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee0000  ts=252747467496515      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee1000  ts=252747467499695      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee2000  ts=252747467502635      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee3000  ts=252747467505875      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee4000  ts=252747467508595      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee5000  ts=252747467512015      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee6000  ts=252747467515155      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee7000  ts=252747467518315      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee8000  ts=252747467521155      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee9000  ts=252747467524115      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017feea000  ts=252747467527445      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017feeb000  ts=252747467530395      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017feec000  ts=252747467533225      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017feed000  ts=252747467536345      image[31] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c5000  ts=252747467540395  <== B-precursor #188
+                                                                          [no run]
+
+======================================================================
+
+Case 9: B-precursor #189  (log line 26405)
+  B-precursor ts : 252747467543695
+  image[0] ts    : 252747467549165
+  delay          : 5.5 µs
+  run gpa        : 0x00017feee000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f846c5000  ts=252747467540395  <== B-precursor #188
+                                                                          [no run]
+WRITE  gpa=0x0000003f846b2000  ts=252747467543695  <== B-precursor #189
+                                                                          --> run: gpa=0x00017feee000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017feee000  ts=252747467549165      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017feef000  ts=252747467552355      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef0000  ts=252747467555975      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef1000  ts=252747467558845      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef2000  ts=252747467562075      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef3000  ts=252747467565125      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef4000  ts=252747467567945      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef5000  ts=252747467571135      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef6000  ts=252747467574175      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef7000  ts=252747467577485      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef8000  ts=252747467580805      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef9000  ts=252747467583745      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefa000  ts=252747467586905      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefb000  ts=252747467589825      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefc000  ts=252747467592955      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefd000  ts=252747467595885      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c3000  ts=252747467599745  <== B-precursor #190
+                                                                          --> run: gpa=0x00017fefe000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 10: B-precursor #190  (log line 26423)
+  B-precursor ts : 252747467599745
+  image[0] ts    : 252747467605345
+  delay          : 5.6 µs
+  run gpa        : 0x00017fefe000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017fefc000  ts=252747467592955      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefd000  ts=252747467595885      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c3000  ts=252747467599745  <== B-precursor #190
+                                                                          --> run: gpa=0x00017fefe000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017fefe000  ts=252747467605345      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017feff000  ts=252747467608555      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff00000  ts=252747467612285      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff01000  ts=252747467615275      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff02000  ts=252747467618325      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff03000  ts=252747467621144      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff04000  ts=252747467624264      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff05000  ts=252747467627564      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff06000  ts=252747467630454      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff07000  ts=252747467633594      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff08000  ts=252747467636734      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff09000  ts=252747467639994      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff0a000  ts=252747467642764      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff0b000  ts=252747467645914      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff0c000  ts=252747467648784      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff0d000  ts=252747467652024      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846bf000  ts=252747467655654  <== B-precursor #191
+                                                                          [no run]
+
+======================================================================
+
+Case 11: B-precursor #193  (log line 26445)
+  B-precursor ts : 252747467663504
+  image[0] ts    : 252747467666994
+  delay          : 3.5 µs
+  run gpa        : 0x00017ff0e000  len=48p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f846b6000  ts=252747467659294  <== B-precursor #192
+                                                                          [no run]
+WRITE  gpa=0x0000003f846bc000  ts=252747467663504  <== B-precursor #193
+                                                                          --> run: gpa=0x00017ff0e000 len=48p [TRUE IMAGE]
+WRITE  gpa=0x000000017ff0e000  ts=252747467666994      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff0f000  ts=252747467669884      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff10000  ts=252747467673124      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff11000  ts=252747467676334      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff12000  ts=252747467679234      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff13000  ts=252747467683034      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff14000  ts=252747467685994      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff15000  ts=252747467688994      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff16000  ts=252747467692044      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff17000  ts=252747467695264      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff18000  ts=252747467698064      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff19000  ts=252747467701144      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff1a000  ts=252747467704164      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff1b000  ts=252747467707094      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff1c000  ts=252747467710154      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff1d000  ts=252747467713434      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff1e000  ts=252747467720654      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff1f000  ts=252747467724074      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff20000  ts=252747467727324      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff21000  ts=252747467730484      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff22000  ts=252747467733554      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff23000  ts=252747467736714      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff24000  ts=252747467739524      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff25000  ts=252747467742644      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff26000  ts=252747467745643      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff27000  ts=252747467748863      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff28000  ts=252747467752193      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff29000  ts=252747467755123      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff2a000  ts=252747467758593      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff2b000  ts=252747467761923      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff2c000  ts=252747467765323      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff2d000  ts=252747467768313      image[31] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff2e000  ts=252747467774453      image[32] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff2f000  ts=252747467778193      image[33] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff30000  ts=252747467781353      image[34] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff31000  ts=252747467784483      image[35] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff32000  ts=252747467787713      image[36] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff33000  ts=252747467790893      image[37] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff34000  ts=252747467793963      image[38] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff35000  ts=252747467796823      image[39] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff36000  ts=252747467799843      image[40] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff37000  ts=252747467803023      image[41] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff38000  ts=252747467806263      image[42] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff39000  ts=252747467809113      image[43] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff3a000  ts=252747467812273      image[44] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff3b000  ts=252747467815183      image[45] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff3c000  ts=252747467818183      image[46] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff3d000  ts=252747467821073      image[47] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c0000  ts=252747467825263  <== B-precursor #194
+                                                                          --> run: gpa=0x00017ff3e000 len=32p [TRUE IMAGE]
+
+======================================================================
+
+Case 12: B-precursor #194  (log line 26495)
+  B-precursor ts : 252747467825263
+  image[0] ts    : 252747467830423
+  delay          : 5.2 µs
+  run gpa        : 0x00017ff3e000  len=32p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017ff3c000  ts=252747467818183      image[46] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff3d000  ts=252747467821073      image[47] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c0000  ts=252747467825263  <== B-precursor #194
+                                                                          --> run: gpa=0x00017ff3e000 len=32p [TRUE IMAGE]
+WRITE  gpa=0x000000017ff3e000  ts=252747467830423      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff3f000  ts=252747467833603      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff40000  ts=252747467837213      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff41000  ts=252747467840363      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff42000  ts=252747467843163      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff43000  ts=252747467846963      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff44000  ts=252747467849833      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff45000  ts=252747467852953      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff46000  ts=252747467856273      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff47000  ts=252747467859513      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff48000  ts=252747467862623      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff49000  ts=252747467865893      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff4a000  ts=252747467868803      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff4b000  ts=252747467871812      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff4c000  ts=252747467875182      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff4d000  ts=252747467878042      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff4e000  ts=252747467884622      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff4f000  ts=252747467887852      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff50000  ts=252747467890972      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff51000  ts=252747467894002      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff52000  ts=252747467896932      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff53000  ts=252747467900332      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff54000  ts=252747467903642      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff55000  ts=252747467906472      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff56000  ts=252747467909352      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff57000  ts=252747467912792      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff58000  ts=252747467915502      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff59000  ts=252747467918462      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff5a000  ts=252747467921392      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff5b000  ts=252747467924522      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff5c000  ts=252747467927732      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff5d000  ts=252747467930742      image[31] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846d1000  ts=252747467936402  <== B-precursor #195
+                                                                          --> run: gpa=0x00017ff5e000 len=42p [TRUE IMAGE]
+
+======================================================================
+
+Case 13: B-precursor #195  (log line 26529)
+  B-precursor ts : 252747467936402
+  image[0] ts    : 252747467940092
+  delay          : 3.7 µs
+  run gpa        : 0x00017ff5e000  len=42p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017ff5c000  ts=252747467927732      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff5d000  ts=252747467930742      image[31] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846d1000  ts=252747467936402  <== B-precursor #195
+                                                                          --> run: gpa=0x00017ff5e000 len=42p [TRUE IMAGE]
+WRITE  gpa=0x000000017ff5e000  ts=252747467940092      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff5f000  ts=252747467942992      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff60000  ts=252747467946092      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff61000  ts=252747467949032      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff62000  ts=252747467951992      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff63000  ts=252747467955092      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff64000  ts=252747467957902      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff65000  ts=252747467961542      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff66000  ts=252747467965102      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff67000  ts=252747467968132      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff68000  ts=252747467971252      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff69000  ts=252747467974502      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff6a000  ts=252747467977282      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff6b000  ts=252747467980702      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff6c000  ts=252747467983512      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff6d000  ts=252747467986892      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff6e000  ts=252747467993202      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff6f000  ts=252747467996321      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff70000  ts=252747467999391      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff71000  ts=252747468002541      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff72000  ts=252747468005531      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff73000  ts=252747468008491      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff74000  ts=252747468011331      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff75000  ts=252747468014581      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff76000  ts=252747468017561      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff77000  ts=252747468020581      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff78000  ts=252747468023761      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff79000  ts=252747468027071      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff7a000  ts=252747468029891      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff7b000  ts=252747468033181      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff7c000  ts=252747468035951      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff7d000  ts=252747468039061      image[31] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff7e000  ts=252747468044451      image[32] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff7f000  ts=252747468047761      image[33] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff80000  ts=252747468050691      image[34] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff81000  ts=252747468053721      image[35] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff82000  ts=252747468056531      image[36] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff83000  ts=252747468059741      image[37] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff84000  ts=252747468062661      image[38] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff85000  ts=252747468065881      image[39] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff86000  ts=252747468068681      image[40] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff87000  ts=252747468071631      image[41] [TRUE IMAGE]
+WRITE  gpa=0x000000019f053000  ts=252747468097071
+WRITE  gpa=0x0000003f81fc7000  ts=252747468109511  <== B-precursor #196
+
+======================================================================
+
+Case 14: B-precursor #786  (log line 135228)
+  B-precursor ts : 252822859326910
+  image[0] ts    : 252822859334940
+  delay          : 8.0 µs
+  run gpa        : 0x000187400000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d59000  ts=252822859322760  <== B-precursor #785
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d49000  ts=252822859326910  <== B-precursor #786
+                                                                          --> run: gpa=0x000187400000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x0000000106938000  ts=252822859331440
+WRITE  gpa=0x0000000187400000  ts=252822859334940      image[0] [TRUE IMAGE]
+WRITE  gpa=0x0000000187401000  ts=252822859339580      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187402000  ts=252822859343250      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187403000  ts=252822859346930      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187404000  ts=252822859350300      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187405000  ts=252822859354150      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187406000  ts=252822859357920      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187407000  ts=252822859361580      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187408000  ts=252822859365220      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187409000  ts=252822859369240      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000018740a000  ts=252822859372710      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000018740b000  ts=252822859376260      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018740c000  ts=252822859379240      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018740d000  ts=252822859383400      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018740e000  ts=252822859387010      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018740f000  ts=252822859390790      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000001f96c09000  ts=252822859397509
+WRITE  gpa=0x0000003f82d55000  ts=252822859401169  <== B-precursor #787
+
+======================================================================
+
+Case 15: B-precursor #787  (log line 135248)
+  B-precursor ts : 252822859401169
+  image[0] ts    : 252822859405629
+  delay          : 4.5 µs
+  run gpa        : 0x000187410000  len=14p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018740f000  ts=252822859390790      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000001f96c09000  ts=252822859397509
+WRITE  gpa=0x0000003f82d55000  ts=252822859401169  <== B-precursor #787
+                                                                          --> run: gpa=0x000187410000 len=14p [TRUE IMAGE]
+WRITE  gpa=0x0000000187410000  ts=252822859405629      image[0] [TRUE IMAGE]
+WRITE  gpa=0x0000000187411000  ts=252822859408899      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187412000  ts=252822859412559      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187413000  ts=252822859416439      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187414000  ts=252822859419989      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187415000  ts=252822859423839      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187416000  ts=252822859427389      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187417000  ts=252822859430679      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187418000  ts=252822859433779      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187419000  ts=252822859437849      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000018741a000  ts=252822859440959      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000018741b000  ts=252822859444869      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018741c000  ts=252822859447819      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018741d000  ts=252822859451159      image[13] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d4a000  ts=252822859455779  <== B-precursor #788
+                                                                          [no run]
+
+======================================================================
+
+Case 16: B-precursor #791  (log line 135270)
+  B-precursor ts : 252822859466959
+  image[0] ts    : 252822859471399
+  delay          : 4.4 µs
+  run gpa        : 0x00018741e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82978000  ts=252822859463749  <== B-precursor #790
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d58000  ts=252822859466959  <== B-precursor #791
+                                                                          --> run: gpa=0x00018741e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018741e000  ts=252822859471399      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018741f000  ts=252822859474689      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187420000  ts=252822859478529      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187421000  ts=252822859482469      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187422000  ts=252822859485509      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187423000  ts=252822859489039      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187424000  ts=252822859492429      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187425000  ts=252822859495689      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187426000  ts=252822859499119      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187427000  ts=252822859502499      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187428000  ts=252822859506099      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187429000  ts=252822859509629      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018742a000  ts=252822859512599      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018742b000  ts=252822859515688      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018742c000  ts=252822859518648      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018742d000  ts=252822859521958      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82968000  ts=252822859526508  <== B-precursor #792
+                                                                          [no run]
+
+======================================================================
+
+Case 17: B-precursor #797  (log line 135298)
+  B-precursor ts : 252822859544308
+  image[0] ts    : 252822859548538
+  delay          : 4.2 µs
+  run gpa        : 0x00018742e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f829ba000  ts=252822859541108  <== B-precursor #796
+                                                                          [no run]
+WRITE  gpa=0x0000003f82760000  ts=252822859544308  <== B-precursor #797
+                                                                          --> run: gpa=0x00018742e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018742e000  ts=252822859548538      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018742f000  ts=252822859551498      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187430000  ts=252822859555028      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187431000  ts=252822859558718      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187432000  ts=252822859561908      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187433000  ts=252822859565318      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187434000  ts=252822859568678      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187435000  ts=252822859572358      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187436000  ts=252822859575668      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187437000  ts=252822859578688      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187438000  ts=252822859582608      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187439000  ts=252822859585738      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018743a000  ts=252822859589168      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018743b000  ts=252822859592398      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018743c000  ts=252822859595578      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018743d000  ts=252822859598648      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d4f000  ts=252822859602548  <== B-precursor #798
+                                                                          [no run]
+
+======================================================================
+
+Case 18: B-precursor #799  (log line 135318)
+  B-precursor ts : 252822859605658
+  image[0] ts    : 252822859610848
+  delay          : 5.2 µs
+  run gpa        : 0x00018743e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d4f000  ts=252822859602548  <== B-precursor #798
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d4b000  ts=252822859605658  <== B-precursor #799
+                                                                          --> run: gpa=0x00018743e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018743e000  ts=252822859610848      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018743f000  ts=252822859614448      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187440000  ts=252822859618658      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187441000  ts=252822859622228      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187442000  ts=252822859625308      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187443000  ts=252822859628288      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187444000  ts=252822859631928      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187445000  ts=252822859635337      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187446000  ts=252822859638687      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187447000  ts=252822859642137      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187448000  ts=252822859645717      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187449000  ts=252822859648717      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018744a000  ts=252822859651667      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018744b000  ts=252822859654997      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018744c000  ts=252822859657757      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018744d000  ts=252822859660777      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5b000  ts=252822859665887  <== B-precursor #800
+                                                                          --> run: gpa=0x00018744e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 19: B-precursor #800  (log line 135336)
+  B-precursor ts : 252822859665887
+  image[0] ts    : 252822859669177
+  delay          : 3.3 µs
+  run gpa        : 0x00018744e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018744c000  ts=252822859657757      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018744d000  ts=252822859660777      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5b000  ts=252822859665887  <== B-precursor #800
+                                                                          --> run: gpa=0x00018744e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018744e000  ts=252822859669177      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018744f000  ts=252822859672537      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187450000  ts=252822859675497      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187451000  ts=252822859679327      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187452000  ts=252822859682107      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187453000  ts=252822859685357      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187454000  ts=252822859688437      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187455000  ts=252822859691297      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187456000  ts=252822859694387      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187457000  ts=252822859697527      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187458000  ts=252822859700857      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187459000  ts=252822859703787      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018745a000  ts=252822859706597      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018745b000  ts=252822859709897      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018745c000  ts=252822859713117      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018745d000  ts=252822859716187      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82989000  ts=252822859721297  <== B-precursor #801
+                                                                          [no run]
+
+======================================================================
+
+Case 20: B-precursor #809  (log line 135370)
+  B-precursor ts : 252822859748067
+  image[0] ts    : 252822859751797
+  delay          : 3.7 µs
+  run gpa        : 0x00018745e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82aa6000  ts=252822859744327  <== B-precursor #808
+                                                                          [no run]
+WRITE  gpa=0x0000003f8296a000  ts=252822859748067  <== B-precursor #809
+                                                                          --> run: gpa=0x00018745e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018745e000  ts=252822859751797      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018745f000  ts=252822859755567      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187460000  ts=252822859759126      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187461000  ts=252822859762366      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187462000  ts=252822859765616      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187463000  ts=252822859768856      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187464000  ts=252822859772136      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187465000  ts=252822859775296      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187466000  ts=252822859779046      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187467000  ts=252822859782106      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187468000  ts=252822859785326      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187469000  ts=252822859788536      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018746a000  ts=252822859792086      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018746b000  ts=252822859795266      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018746c000  ts=252822859798406      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018746d000  ts=252822859801276      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82821000  ts=252822859807436  <== B-precursor #810
+                                                                          [no run]
+
+======================================================================
+
+Case 21: B-precursor #812  (log line 135392)
+  B-precursor ts : 252822859815466
+  image[0] ts    : 252822859819136
+  delay          : 3.7 µs
+  run gpa        : 0x00018746e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82cac000  ts=252822859811466  <== B-precursor #811
+                                                                          [no run]
+WRITE  gpa=0x0000003f82ce9000  ts=252822859815466  <== B-precursor #812
+                                                                          --> run: gpa=0x00018746e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018746e000  ts=252822859819136      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018746f000  ts=252822859822406      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187470000  ts=252822859825886      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187471000  ts=252822859829276      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187472000  ts=252822859832466      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187473000  ts=252822859835416      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187474000  ts=252822859838386      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187475000  ts=252822859841126      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187476000  ts=252822859844136      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187477000  ts=252822859847496      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187478000  ts=252822859850356      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187479000  ts=252822859854036      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018747a000  ts=252822859856946      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018747b000  ts=252822859860656      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018747c000  ts=252822859863306      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018747d000  ts=252822859866346      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5d000  ts=252822859870986  <== B-precursor #813
+                                                                          [no run]
+
+======================================================================
+
+Case 22: B-precursor #815  (log line 135414)
+  B-precursor ts : 252822859877956
+  image[0] ts    : 252822859881285
+  delay          : 3.3 µs
+  run gpa        : 0x00018747e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d5f000  ts=252822859874376  <== B-precursor #814
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d5e000  ts=252822859877956  <== B-precursor #815
+                                                                          --> run: gpa=0x00018747e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018747e000  ts=252822859881285      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018747f000  ts=252822859884685      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187480000  ts=252822859888045      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187481000  ts=252822859891365      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187482000  ts=252822859894195      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187483000  ts=252822859897875      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187484000  ts=252822859900755      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187485000  ts=252822859903705      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187486000  ts=252822859906805      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187487000  ts=252822859910325      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187488000  ts=252822859913295      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187489000  ts=252822859916385      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018748a000  ts=252822859920135      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018748b000  ts=252822859923285      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018748c000  ts=252822859926445      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018748d000  ts=252822859929265      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82ce8000  ts=252822859934375  <== B-precursor #816
+                                                                          [no run]
+
+======================================================================
+
+Case 23: B-precursor #818  (log line 135436)
+  B-precursor ts : 252822859942165
+  image[0] ts    : 252822859945625
+  delay          : 3.5 µs
+  run gpa        : 0x00018748e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82ce7000  ts=252822859937685  <== B-precursor #817
+                                                                          [no run]
+WRITE  gpa=0x0000003f82818000  ts=252822859942165  <== B-precursor #818
+                                                                          --> run: gpa=0x00018748e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018748e000  ts=252822859945625      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018748f000  ts=252822859948975      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187490000  ts=252822859952525      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187491000  ts=252822859955605      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187492000  ts=252822859958935      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187493000  ts=252822859962045      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187494000  ts=252822859965285      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187495000  ts=252822859968365      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187496000  ts=252822859971745      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187497000  ts=252822859974855      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187498000  ts=252822859977715      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187499000  ts=252822859980725      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018749a000  ts=252822859983895      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018749b000  ts=252822859987175      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018749c000  ts=252822859990605      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018749d000  ts=252822859993495      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f8285f000  ts=252822859998705  <== B-precursor #819
+                                                                          [no run]
+
+======================================================================
+
+Case 24: B-precursor #822  (log line 135460)
+  B-precursor ts : 252822860009584
+  image[0] ts    : 252822860014034
+  delay          : 4.5 µs
+  run gpa        : 0x00018749e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d60000  ts=252822860006284  <== B-precursor #821
+                                                                          [no run]
+WRITE  gpa=0x0000003f82970000  ts=252822860009584  <== B-precursor #822
+                                                                          --> run: gpa=0x00018749e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018749e000  ts=252822860014034      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018749f000  ts=252822860017664      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a0000  ts=252822860021574      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a1000  ts=252822860025234      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a2000  ts=252822860028604      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a3000  ts=252822860031494      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a4000  ts=252822860034894      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a5000  ts=252822860037864      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a6000  ts=252822860041074      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a7000  ts=252822860044374      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a8000  ts=252822860047324      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a9000  ts=252822860050594      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874aa000  ts=252822860053394      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ab000  ts=252822860056464      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ac000  ts=252822860060294      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ad000  ts=252822860063224      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cde000  ts=252822860068304  <== B-precursor #823
+                                                                          [no run]
+
+======================================================================
+
+Case 25: B-precursor #827  (log line 135486)
+  B-precursor ts : 252822860083174
+  image[0] ts    : 252822860086954
+  delay          : 3.8 µs
+  run gpa        : 0x0001874ae000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82879000  ts=252822860079264  <== B-precursor #826
+                                                                          [no run]
+WRITE  gpa=0x0000003f82885000  ts=252822860083174  <== B-precursor #827
+                                                                          --> run: gpa=0x0001874ae000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874ae000  ts=252822860086954      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874af000  ts=252822860090254      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b0000  ts=252822860093284      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b1000  ts=252822860096334      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b2000  ts=252822860099094      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b3000  ts=252822860102144      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b4000  ts=252822860105074      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b5000  ts=252822860108564      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b6000  ts=252822860111674      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b7000  ts=252822860116294      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b8000  ts=252822860119794      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b9000  ts=252822860123094      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ba000  ts=252822860126473      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bb000  ts=252822860129663      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bc000  ts=252822860132863      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bd000  ts=252822860135683      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5c000  ts=252822860139693  <== B-precursor #828
+                                                                          --> run: gpa=0x0001874be000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 26: B-precursor #828  (log line 135504)
+  B-precursor ts : 252822860139693
+  image[0] ts    : 252822860144913
+  delay          : 5.2 µs
+  run gpa        : 0x0001874be000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x00000001874bc000  ts=252822860132863      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bd000  ts=252822860135683      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5c000  ts=252822860139693  <== B-precursor #828
+                                                                          --> run: gpa=0x0001874be000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874be000  ts=252822860144913      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bf000  ts=252822860148243      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c0000  ts=252822860151353      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c1000  ts=252822860154443      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c2000  ts=252822860157303      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c3000  ts=252822860160353      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c4000  ts=252822860163203      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c5000  ts=252822860166223      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c6000  ts=252822860169823      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c7000  ts=252822860173193      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c8000  ts=252822860176113      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c9000  ts=252822860179173      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ca000  ts=252822860182043      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874cb000  ts=252822860185333      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874cc000  ts=252822860188183      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874cd000  ts=252822860191053      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f8280a000  ts=252822860195223  <== B-precursor #829
+                                                                          [no run]
+
+======================================================================
+
+Case 27: B-precursor #835  (log line 135534)
+  B-precursor ts : 252822860216293
+  image[0] ts    : 252822860219883
+  delay          : 3.6 µs
+  run gpa        : 0x0001874ce000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f829d5000  ts=252822860212523  <== B-precursor #834
+                                                                          [no run]
+WRITE  gpa=0x0000003f829a5000  ts=252822860216293  <== B-precursor #835
+                                                                          --> run: gpa=0x0001874ce000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874ce000  ts=252822860219883      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874cf000  ts=252822860223533      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d0000  ts=252822860226893      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d1000  ts=252822860230213      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d2000  ts=252822860233463      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d3000  ts=252822860236583      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d4000  ts=252822860239503      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d5000  ts=252822860243323      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d6000  ts=252822860246832      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d7000  ts=252822860250762      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d8000  ts=252822860253782      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d9000  ts=252822860256902      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874da000  ts=252822860260042      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874db000  ts=252822860262972      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874dc000  ts=252822860265842      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874dd000  ts=252822860269852      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cc4000  ts=252822860274522  <== B-precursor #836
+                                                                          --> run: gpa=0x0001874de000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 28: B-precursor #836  (log line 135552)
+  B-precursor ts : 252822860274522
+  image[0] ts    : 252822860279572
+  delay          : 5.0 µs
+  run gpa        : 0x0001874de000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x00000001874dc000  ts=252822860265842      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874dd000  ts=252822860269852      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cc4000  ts=252822860274522  <== B-precursor #836
+                                                                          --> run: gpa=0x0001874de000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874de000  ts=252822860279572      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874df000  ts=252822860282762      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e0000  ts=252822860286182      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e1000  ts=252822860289482      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e2000  ts=252822860292652      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e3000  ts=252822860295992      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e4000  ts=252822860298862      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e5000  ts=252822860301842      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e6000  ts=252822860305142      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e7000  ts=252822860308342      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e8000  ts=252822860311302      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e9000  ts=252822860314702      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ea000  ts=252822860317452      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874eb000  ts=252822860320872      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ec000  ts=252822860323782      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ed000  ts=252822860326552      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cb1000  ts=252822860331152  <== B-precursor #837
+                                                                          [no run]
+
+======================================================================
+
+Case 29: B-precursor #845  (log line 135586)
+  B-precursor ts : 252822860358052
+  image[0] ts    : 252822860361332
+  delay          : 3.3 µs
+  run gpa        : 0x0001874ee000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f828f3000  ts=252822860353942  <== B-precursor #844
+                                                                          [no run]
+WRITE  gpa=0x0000003f82621000  ts=252822860358052  <== B-precursor #845
+                                                                          --> run: gpa=0x0001874ee000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874ee000  ts=252822860361332      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ef000  ts=252822860364712      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f0000  ts=252822860367572      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f1000  ts=252822860371081      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f2000  ts=252822860373941      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f3000  ts=252822860377511      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f4000  ts=252822860380291      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f5000  ts=252822860383651      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f6000  ts=252822860386751      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f7000  ts=252822860390431      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f8000  ts=252822860393281      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f9000  ts=252822860396501      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874fa000  ts=252822860400081      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874fb000  ts=252822860403421      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874fc000  ts=252822860406981      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874fd000  ts=252822860410081      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d75000  ts=252822860414661  <== B-precursor #846
+                                                                          [no run]
+
+======================================================================
+
+Case 30: B-precursor #849  (log line 135610)
+  B-precursor ts : 252822860424031
+  image[0] ts    : 252822860428751
+  delay          : 4.7 µs
+  run gpa        : 0x0001874fe000  len=11p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82cb9000  ts=252822860420871  <== B-precursor #848
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cdd000  ts=252822860424031  <== B-precursor #849
+                                                                          --> run: gpa=0x0001874fe000 len=11p [TRUE IMAGE]
+WRITE  gpa=0x00000001874fe000  ts=252822860428751      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ff000  ts=252822860432061      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187500000  ts=252822860435301      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187501000  ts=252822860438321      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187502000  ts=252822860441701      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187503000  ts=252822860444791      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187504000  ts=252822860448441      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187505000  ts=252822860451411      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187506000  ts=252822860454541      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187507000  ts=252822860458021      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187508000  ts=252822860463491      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000001f96d80000  ts=252822860482231
+WRITE  gpa=0x0000001f96dca000  ts=252822860486731
+
+======================================================================
+
+Case 31: B-precursor #854  (log line 136227)
+  B-precursor ts : 252823293176443
+  image[0] ts    : 252823293185353
+  delay          : 8.9 µs
+  run gpa        : 0x00018750e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d75000  ts=252823293173173  <== B-precursor #853
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d77000  ts=252823293176443  <== B-precursor #854
+                                                                          --> run: gpa=0x00018750e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x0000001f974f8000  ts=252823293179933
+WRITE  gpa=0x000000018750e000  ts=252823293185353      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018750f000  ts=252823293188543      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187510000  ts=252823293191553      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187511000  ts=252823293194953      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187512000  ts=252823293198643      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187513000  ts=252823293201733      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187514000  ts=252823293204593      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187515000  ts=252823293207673      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187516000  ts=252823293210483      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187517000  ts=252823293214223      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187518000  ts=252823293217373      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187519000  ts=252823293220763      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018751a000  ts=252823293223943      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018751b000  ts=252823293227343      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018751c000  ts=252823293230363      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018751d000  ts=252823293233213      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cbc000  ts=252823293237963  <== B-precursor #855
+                                                                          [no run]
+
+======================================================================
+
+Case 32: B-precursor #857  (log line 136250)
+  B-precursor ts : 252823293245853
+  image[0] ts    : 252823293249733
+  delay          : 3.9 µs
+  run gpa        : 0x00018751e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d78000  ts=252823293242443  <== B-precursor #856
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cc4000  ts=252823293245853  <== B-precursor #857
+                                                                          --> run: gpa=0x00018751e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018751e000  ts=252823293249733      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018751f000  ts=252823293253523      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187520000  ts=252823293256703      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187521000  ts=252823293259813      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187522000  ts=252823293262622      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187523000  ts=252823293265692      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187524000  ts=252823293268772      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187525000  ts=252823293271942      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187526000  ts=252823293275382      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187527000  ts=252823293278602      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187528000  ts=252823293281462      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187529000  ts=252823293284552      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018752a000  ts=252823293287452      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018752b000  ts=252823293290612      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018752c000  ts=252823293293692      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018752d000  ts=252823293296792      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d6c000  ts=252823293301742  <== B-precursor #858
+                                                                          [no run]
+
+======================================================================
+
+Case 33: B-precursor #859  (log line 136270)
+  B-precursor ts : 252823293305462
+  image[0] ts    : 252823293310122
+  delay          : 4.7 µs
+  run gpa        : 0x00018752e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d6c000  ts=252823293301742  <== B-precursor #858
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d6b000  ts=252823293305462  <== B-precursor #859
+                                                                          --> run: gpa=0x00018752e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018752e000  ts=252823293310122      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018752f000  ts=252823293313462      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187530000  ts=252823293316692      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187531000  ts=252823293319812      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187532000  ts=252823293323162      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187533000  ts=252823293326922      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187534000  ts=252823293330392      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187535000  ts=252823293334252      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187536000  ts=252823293337302      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187537000  ts=252823293340702      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187538000  ts=252823293344242      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187539000  ts=252823293347122      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018753a000  ts=252823293350802      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018753b000  ts=252823293354112      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018753c000  ts=252823293357392      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018753d000  ts=252823293360632      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cd1000  ts=252823293366722  <== B-precursor #860
+                                                                          --> run: gpa=0x00018753e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 34: B-precursor #860  (log line 136288)
+  B-precursor ts : 252823293366722
+  image[0] ts    : 252823293370752
+  delay          : 4.0 µs
+  run gpa        : 0x00018753e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018753c000  ts=252823293357392      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018753d000  ts=252823293360632      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cd1000  ts=252823293366722  <== B-precursor #860
+                                                                          --> run: gpa=0x00018753e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018753e000  ts=252823293370752      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018753f000  ts=252823293374222      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187540000  ts=252823293377552      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187541000  ts=252823293380612      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187542000  ts=252823293383521      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187543000  ts=252823293386791      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187544000  ts=252823293390001      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187545000  ts=252823293393331      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187546000  ts=252823293396311      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187547000  ts=252823293399821      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187548000  ts=252823293402641      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187549000  ts=252823293406071      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018754a000  ts=252823293409161      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018754b000  ts=252823293412441      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018754c000  ts=252823293415321      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018754d000  ts=252823293418251      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d63000  ts=252823293423611  <== B-precursor #861
+                                                                          --> run: gpa=0x00018754e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 35: B-precursor #861  (log line 136306)
+  B-precursor ts : 252823293423611
+  image[0] ts    : 252823293428561
+  delay          : 5.0 µs
+  run gpa        : 0x00018754e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018754c000  ts=252823293415321      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018754d000  ts=252823293418251      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d63000  ts=252823293423611  <== B-precursor #861
+                                                                          --> run: gpa=0x00018754e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018754e000  ts=252823293428561      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018754f000  ts=252823293431781      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187550000  ts=252823293435031      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187551000  ts=252823293438331      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187552000  ts=252823293441161      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187553000  ts=252823293444101      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187554000  ts=252823293447101      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187555000  ts=252823293450301      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187556000  ts=252823293453661      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187557000  ts=252823293456831      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187558000  ts=252823293460011      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187559000  ts=252823293463481      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018755a000  ts=252823293466421      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018755b000  ts=252823293469821      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018755c000  ts=252823293473271      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018755d000  ts=252823293476441      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d6d000  ts=252823293482491  <== B-precursor #862
+                                                                          [no run]
+
+======================================================================
+
+Case 36: B-precursor #863  (log line 136326)
+  B-precursor ts : 252823293486061
+  image[0] ts    : 252823293489661
+  delay          : 3.6 µs
+  run gpa        : 0x00018755e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d6d000  ts=252823293482491  <== B-precursor #862
+                                                                          [no run]
+WRITE  gpa=0x0000003f82ccf000  ts=252823293486061  <== B-precursor #863
+                                                                          --> run: gpa=0x00018755e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018755e000  ts=252823293489661      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018755f000  ts=252823293492881      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187560000  ts=252823293496591      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187561000  ts=252823293500031      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187562000  ts=252823293503001      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187563000  ts=252823293506290      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187564000  ts=252823293509440      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187565000  ts=252823293512550      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187566000  ts=252823293515620      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187567000  ts=252823293518810      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187568000  ts=252823293521990      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187569000  ts=252823293524970      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018756a000  ts=252823293527970      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018756b000  ts=252823293531570      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018756c000  ts=252823293534370      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018756d000  ts=252823293538590      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cd4000  ts=252823293544870  <== B-precursor #864
+                                                                          --> run: gpa=0x00018756e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 37: B-precursor #864  (log line 136344)
+  B-precursor ts : 252823293544870
+  image[0] ts    : 252823293548380
+  delay          : 3.5 µs
+  run gpa        : 0x00018756e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018756c000  ts=252823293534370      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018756d000  ts=252823293538590      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cd4000  ts=252823293544870  <== B-precursor #864
+                                                                          --> run: gpa=0x00018756e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018756e000  ts=252823293548380      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018756f000  ts=252823293552070      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187570000  ts=252823293555060      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187571000  ts=252823293558910      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187572000  ts=252823293561770      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187573000  ts=252823293565470      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187574000  ts=252823293568480      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187575000  ts=252823293571990      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187576000  ts=252823293574850      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187577000  ts=252823293578080      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187578000  ts=252823293581140      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187579000  ts=252823293584660      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018757a000  ts=252823293587620      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018757b000  ts=252823293591380      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018757c000  ts=252823293594790      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018757d000  ts=252823293598030      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cc8000  ts=252823293602710  <== B-precursor #865
+                                                                          [no run]
+
+======================================================================
+
+Case 38: B-precursor #866  (log line 136364)
+  B-precursor ts : 252823293606140
+  image[0] ts    : 252823293609550
+  delay          : 3.4 µs
+  run gpa        : 0x00018757e000  len=10p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82cc8000  ts=252823293602710  <== B-precursor #865
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cc7000  ts=252823293606140  <== B-precursor #866
+                                                                          --> run: gpa=0x00018757e000 len=10p [TRUE IMAGE]
+WRITE  gpa=0x000000018757e000  ts=252823293609550      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018757f000  ts=252823293613250      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187580000  ts=252823293616920      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187581000  ts=252823293620110      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187582000  ts=252823293623240      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187583000  ts=252823293627330      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187584000  ts=252823293630159      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187585000  ts=252823293633619      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187586000  ts=252823293636579      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187587000  ts=252823293639829      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000010718f000  ts=252823293643299
+WRITE  gpa=0x0000000106d58000  ts=252823293647329
+
+======================================================================
+
+Case 39: B-precursor #3831  (log line 411982)
+  B-precursor ts : 253017837199286
+  image[0] ts    : 253017837215656
+  delay          : 16.4 µs
+  run gpa        : 0x00017fe00000  len=46p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d6d000  ts=253017837196266  <== B-precursor #3830
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d6c000  ts=253017837199286  <== B-precursor #3831
+                                                                          --> run: gpa=0x00017fe00000 len=46p [TRUE IMAGE]
+WRITE  gpa=0x0000000106992000  ts=253017837203676
+WRITE  gpa=0x000000010695f000  ts=253017837212136
+WRITE  gpa=0x000000017fe00000  ts=253017837215656      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe01000  ts=253017837223036      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe02000  ts=253017837231885      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe03000  ts=253017837238315      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe04000  ts=253017837245195      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe05000  ts=253017837250605      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe06000  ts=253017837257365      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe07000  ts=253017837263225      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe08000  ts=253017837269015      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe09000  ts=253017837274885      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0a000  ts=253017837281185      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0b000  ts=253017837286685      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0c000  ts=253017837292095      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0d000  ts=253017837298205      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0e000  ts=253017837303575      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe0f000  ts=253017837308865      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe10000  ts=253017837318335      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe11000  ts=253017837323945      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe12000  ts=253017837329585      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe13000  ts=253017837335205      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe14000  ts=253017837340875      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe15000  ts=253017837347114      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe16000  ts=253017837352964      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe17000  ts=253017837358614      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe18000  ts=253017837364274      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe19000  ts=253017837370054      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1a000  ts=253017837375744      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1b000  ts=253017837381394      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1c000  ts=253017837387094      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1d000  ts=253017837393094      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1e000  ts=253017837403364      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe1f000  ts=253017837409314      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe20000  ts=253017837414824      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe21000  ts=253017837421194      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe22000  ts=253017837426774      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe23000  ts=253017837432194      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe24000  ts=253017837438264      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe25000  ts=253017837443844      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe26000  ts=253017837449994      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe27000  ts=253017837455994      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe28000  ts=253017837461523      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe29000  ts=253017837467523      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2a000  ts=253017837473593      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2b000  ts=253017837479023      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2c000  ts=253017837485253      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2d000  ts=253017837490673      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d6b000  ts=253017837495263  <== B-precursor #3832
+                                                                          --> run: gpa=0x00017fe2e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 40: B-precursor #3832  (log line 412032)
+  B-precursor ts : 253017837495263
+  image[0] ts    : 253017837503283
+  delay          : 8.0 µs
+  run gpa        : 0x00017fe2e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017fe2c000  ts=253017837485253      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2d000  ts=253017837490673      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d6b000  ts=253017837495263  <== B-precursor #3832
+                                                                          --> run: gpa=0x00017fe2e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2e000  ts=253017837503283      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe2f000  ts=253017837508823      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe30000  ts=253017837514223      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe31000  ts=253017837521503      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe32000  ts=253017837527183      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe33000  ts=253017837533423      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe34000  ts=253017837540013      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe35000  ts=253017837545453      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe36000  ts=253017837551183      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe37000  ts=253017837556963      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe38000  ts=253017837562923      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe39000  ts=253017837569213      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3a000  ts=253017837574993      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3b000  ts=253017837580272      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3c000  ts=253017837585942      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3d000  ts=253017837591392      image[15] [TRUE IMAGE]
+WRITE  gpa=0x00000001064f2000  ts=253017837594492
+WRITE  gpa=0x0000003f81f93000  ts=253017837598702  <== B-precursor #3833
+
+======================================================================
+
+Case 41: B-precursor #3835  (log line 412055)
+  B-precursor ts : 253017837606932
+  image[0] ts    : 253018268070024
+  delay          : 430463.1 µs
+  run gpa        : 0x00017fe3e000  len=4p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82cd1000  ts=253017837603082  <== B-precursor #3834
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cc4000  ts=253017837606932  <== B-precursor #3835
+                                                                          --> run: gpa=0x00017fe3e000 len=4p [TRUE IMAGE]
+                                                                          --> run: gpa=0x001f96c15000 len=2p
+                                                                          --> run: gpa=0x001f9780a000 len=2p
+WRITE  gpa=0x000000017fe3e000  ts=253017837615532      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe3f000  ts=253017837621022      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe40000  ts=253017837627072      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe41000  ts=253017837634372      image[19] [TRUE IMAGE]
+WRITE  gpa=0x0000000119e72000  ts=253018268061184
+WRITE  gpa=0x0000003f7fc18000  ts=253018268065894
+WRITE  gpa=0x0000001f96c15000  ts=253018268070024      image[0]
+WRITE  gpa=0x0000001f96c16000  ts=253018268073904      image[1]
+WRITE  gpa=0x0000001f97801000  ts=253018268077814
+WRITE  gpa=0x0000001f9780a000  ts=253018268081464      image[0]
+WRITE  gpa=0x0000001f9780b000  ts=253018268084394      image[1]
+WRITE  gpa=0x0000000100000000  ts=253018268087974
+
+======================================================================
+
+Case 42: B-precursor #3916  (log line 416894)
+  B-precursor ts : 253021302707834
+  image[0] ts    : 253021302721493
+  delay          : 13.7 µs
+  run gpa        : 0x00017fe5e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82cb9000  ts=253021302704614  <== B-precursor #3915
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d75000  ts=253021302707834  <== B-precursor #3916
+                                                                          --> run: gpa=0x00017fe5e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x0000001f974f8000  ts=253021302712103
+WRITE  gpa=0x0000000106992000  ts=253021302715633
+WRITE  gpa=0x000000017fe5e000  ts=253021302721493      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe5f000  ts=253021302727033      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe60000  ts=253021302733123      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe61000  ts=253021302739313      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe62000  ts=253021302745343      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe63000  ts=253021302751483      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe64000  ts=253021302757673      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe65000  ts=253021302764063      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe66000  ts=253021302769633      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe67000  ts=253021302775503      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe68000  ts=253021302781253      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe69000  ts=253021302788033      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6a000  ts=253021302793883      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6b000  ts=253021302799653      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6c000  ts=253021302805143      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6d000  ts=253021302811433      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82805000  ts=253021302816593  <== B-precursor #3917
+                                                                          [no run]
+
+======================================================================
+
+Case 43: B-precursor #3919  (log line 416918)
+  B-precursor ts : 253021302824573
+  image[0] ts    : 253021733482970
+  delay          : 430658.4 µs
+  run gpa        : 0x00017fe6e000  len=10p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82802000  ts=253021302820163  <== B-precursor #3918
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cdd000  ts=253021302824573  <== B-precursor #3919
+                                                                          --> run: gpa=0x00017fe6e000 len=10p [TRUE IMAGE]
+                                                                          --> run: gpa=0x001f96c15000 len=2p
+                                                                          --> run: gpa=0x001f9780a000 len=2p
+WRITE  gpa=0x000000017fe6e000  ts=253021302831342      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe6f000  ts=253021302838172      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe70000  ts=253021302844472      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe71000  ts=253021302850532      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe72000  ts=253021302856332      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe73000  ts=253021302861862      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe74000  ts=253021302867822      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe75000  ts=253021302873742      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe76000  ts=253021302879932      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe77000  ts=253021733425951      image[25] [TRUE IMAGE]
+WRITE  gpa=0x0000000119e72000  ts=253021733474330
+WRITE  gpa=0x0000003f7fc18000  ts=253021733478980
+WRITE  gpa=0x0000001f96c15000  ts=253021733482970      image[0]
+WRITE  gpa=0x0000001f96c16000  ts=253021733486690      image[1]
+WRITE  gpa=0x0000001f97801000  ts=253021733490110
+WRITE  gpa=0x0000001f9780a000  ts=253021733492980      image[0]
+WRITE  gpa=0x0000001f9780b000  ts=253021733495780      image[1]
+WRITE  gpa=0x0000000100000000  ts=253021733499010
+WRITE  gpa=0x00000001001ce000  ts=253021733502350      image[0]
+WRITE  gpa=0x0000000109688000  ts=253021733505380
+WRITE  gpa=0x0000000106a0d000  ts=253021733508740
+WRITE  gpa=0x0000003f7fc31000  ts=253021733511690
+WRITE  gpa=0x0000003f7fc1f000  ts=253021733514530
+WRITE  gpa=0x0000000100dd3000  ts=253021733517600
+
+======================================================================
+
+Case 44: B-precursor #3964  (log line 419028)
+  B-precursor ts : 253023026865959
+  image[0] ts    : 253023027007298
+  delay          : 141.3 µs
+  run gpa        : 0x00017fe7e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82621000  ts=253023026861429  <== B-precursor #3963
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d5d000  ts=253023026865959  <== B-precursor #3964
+                                                                          --> run: gpa=0x00017fe7e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x0000000106992000  ts=253023026869249
+WRITE  gpa=0x000000017fe7e000  ts=253023026876099      image[32] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe7f000  ts=253023026881769      image[33] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe80000  ts=253023026888899      image[34] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe81000  ts=253023026896419      image[35] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe82000  ts=253023026902079      image[36] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe83000  ts=253023026907849      image[37] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe84000  ts=253023026915729      image[38] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe85000  ts=253023026923668      image[39] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe86000  ts=253023026931908      image[40] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe87000  ts=253023026937198      image[41] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe88000  ts=253023026944898      image[42] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe89000  ts=253023026951388      image[43] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8a000  ts=253023026959738      image[44] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8b000  ts=253023026966568      image[45] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8c000  ts=253023026972448      image[46] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8d000  ts=253023026978998      image[47] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5e000  ts=253023026983608  <== B-precursor #3965
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cc4000  ts=253023026987078  <== B-precursor #3966
+                                                                          [no run]
+WRITE  gpa=0x0000003f82802000  ts=253023026990918  <== B-precursor #3967
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cac000  ts=253023026994228  <== B-precursor #3968
+                                                                          [no run]
+WRITE  gpa=0x0000003f829e5000  ts=253023027000098  <== B-precursor #3969
+                                                                          --> run: gpa=0x00017fe8e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8e000  ts=253023027007298      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8f000  ts=253023027014578      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe90000  ts=253023027019918      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe91000  ts=253023027025498      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe92000  ts=253023027031348      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe93000  ts=253023027039337      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe94000  ts=253023027045137      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe95000  ts=253023027051467      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe96000  ts=253023027057387      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe97000  ts=253023027062897      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe98000  ts=253023027068317      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe99000  ts=253023027073657      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9a000  ts=253023027079397      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9b000  ts=253023027084717      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9c000  ts=253023027091387      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9d000  ts=253023027097597      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f8286c000  ts=253023027102547  <== B-precursor #3970
+                                                                          [no run]
+
+======================================================================
+
+Case 45: B-precursor #3969  (log line 419055)
+  B-precursor ts : 253023027000098
+  image[0] ts    : 253023027007298
+  delay          : 7.2 µs
+  run gpa        : 0x00017fe8e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82cac000  ts=253023026994228  <== B-precursor #3968
+                                                                          [no run]
+WRITE  gpa=0x0000003f829e5000  ts=253023027000098  <== B-precursor #3969
+                                                                          --> run: gpa=0x00017fe8e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8e000  ts=253023027007298      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe8f000  ts=253023027014578      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe90000  ts=253023027019918      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe91000  ts=253023027025498      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe92000  ts=253023027031348      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe93000  ts=253023027039337      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe94000  ts=253023027045137      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe95000  ts=253023027051467      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe96000  ts=253023027057387      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe97000  ts=253023027062897      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe98000  ts=253023027068317      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe99000  ts=253023027073657      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9a000  ts=253023027079397      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9b000  ts=253023027084717      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9c000  ts=253023027091387      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9d000  ts=253023027097597      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f8286c000  ts=253023027102547  <== B-precursor #3970
+                                                                          [no run]
+
+======================================================================
+
+Case 46: B-precursor #3973  (log line 419079)
+  B-precursor ts : 253023027114427
+  image[0] ts    : 253023027240706
+  delay          : 126.3 µs
+  run gpa        : 0x00017fe9e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f829a5000  ts=253023027110487  <== B-precursor #3972
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d5c000  ts=253023027114427  <== B-precursor #3973
+                                                                          --> run: gpa=0x00017fe9e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9e000  ts=253023027120497      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017fe9f000  ts=253023027126087      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea0000  ts=253023027141357      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea1000  ts=253023027148507      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea2000  ts=253023027154036      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea3000  ts=253023027159586      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea4000  ts=253023027165486      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea5000  ts=253023027171376      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea6000  ts=253023027176936      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea7000  ts=253023027184126      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea8000  ts=253023027189276      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017fea9000  ts=253023027194556      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017feaa000  ts=253023027199906      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017feab000  ts=253023027205706      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017feac000  ts=253023027211876      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017fead000  ts=253023027217776      image[31] [TRUE IMAGE]
+WRITE  gpa=0x0000003f8280a000  ts=253023027223986  <== B-precursor #3974
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d5f000  ts=253023027227036  <== B-precursor #3975
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cde000  ts=253023027230756  <== B-precursor #3976
+                                                                          [no run]
+WRITE  gpa=0x0000003f82ca3000  ts=253023027234136  <== B-precursor #3977
+                                                                          --> run: gpa=0x00017feae000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017feae000  ts=253023027240706      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017feaf000  ts=253023027246316      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb0000  ts=253023027251816      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb1000  ts=253023027257066      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb2000  ts=253023027262296      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb3000  ts=253023027267915      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb4000  ts=253023027273185      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb5000  ts=253023027278945      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb6000  ts=253023027284465      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb7000  ts=253023027290185      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb8000  ts=253023027295425      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb9000  ts=253023027302615      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017feba000  ts=253023027308855      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017febb000  ts=253023027314625      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017febc000  ts=253023027321675      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017febd000  ts=253023027329765      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82a8b000  ts=253023027334755  <== B-precursor #3978
+                                                                          [no run]
+
+======================================================================
+
+Case 47: B-precursor #3977  (log line 419103)
+  B-precursor ts : 253023027234136
+  image[0] ts    : 253023027240706
+  delay          : 6.6 µs
+  run gpa        : 0x00017feae000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82cde000  ts=253023027230756  <== B-precursor #3976
+                                                                          [no run]
+WRITE  gpa=0x0000003f82ca3000  ts=253023027234136  <== B-precursor #3977
+                                                                          --> run: gpa=0x00017feae000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000017feae000  ts=253023027240706      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017feaf000  ts=253023027246316      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb0000  ts=253023027251816      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb1000  ts=253023027257066      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb2000  ts=253023027262296      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb3000  ts=253023027267915      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb4000  ts=253023027273185      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb5000  ts=253023027278945      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb6000  ts=253023027284465      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb7000  ts=253023027290185      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb8000  ts=253023027295425      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017feb9000  ts=253023027302615      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017feba000  ts=253023027308855      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017febb000  ts=253023027314625      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017febc000  ts=253023027321675      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017febd000  ts=253023027329765      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82a8b000  ts=253023027334755  <== B-precursor #3978
+                                                                          [no run]
+
+======================================================================
+
+Case 48: B-precursor #3981  (log line 419127)
+  B-precursor ts : 253023027346945
+  image[0] ts    : 253023455550892
+  delay          : 428203.9 µs
+  run gpa        : 0x00017febe000  len=12p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82885000  ts=253023027342345  <== B-precursor #3980
+                                                                          [no run]
+WRITE  gpa=0x0000003f82970000  ts=253023027346945  <== B-precursor #3981
+                                                                          --> run: gpa=0x00017febe000 len=12p [TRUE IMAGE]
+                                                                          --> run: gpa=0x001f96c15000 len=2p
+                                                                          --> run: gpa=0x001f9780a000 len=2p
+WRITE  gpa=0x000000017febe000  ts=253023027353535      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017febf000  ts=253023027361525      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec0000  ts=253023027369005      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec1000  ts=253023027376235      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec2000  ts=253023027381705      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec3000  ts=253023027387804      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec4000  ts=253023027393914      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec5000  ts=253023027400004      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec6000  ts=253023027406044      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec7000  ts=253023027412154      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec8000  ts=253023027417664      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017fec9000  ts=253023027425554      image[27] [TRUE IMAGE]
+WRITE  gpa=0x0000000119e72000  ts=253023455540432
+WRITE  gpa=0x0000003f7fc18000  ts=253023455546382
+WRITE  gpa=0x0000001f96c15000  ts=253023455550892      image[0]
+WRITE  gpa=0x0000001f96c16000  ts=253023455554082      image[1]
+WRITE  gpa=0x0000001f97801000  ts=253023455557732
+WRITE  gpa=0x0000001f9780a000  ts=253023455560752      image[0]
+WRITE  gpa=0x0000001f9780b000  ts=253023455563192      image[1]
+WRITE  gpa=0x0000000100000000  ts=253023455566952
+WRITE  gpa=0x00000001001ce000  ts=253023455570792      image[0]
+WRITE  gpa=0x0000000109688000  ts=253023455574422
+WRITE  gpa=0x0000000106a0d000  ts=253023455577762
+WRITE  gpa=0x0000003f7fc31000  ts=253023455580752
+WRITE  gpa=0x0000003f7fc1f000  ts=253023455583592
+WRITE  gpa=0x0000000100dd3000  ts=253023455586662
+WRITE  gpa=0x0000000118501000  ts=253023455590892
+WRITE  gpa=0x000000011fc6c000  ts=253023455594632
+
+======================================================================
+
+Case 49: B-precursor #4114  (log line 426316)
+  B-precursor ts : 253028245652869
+  image[0] ts    : 253028245821217
+  delay          : 168.3 µs
+  run gpa        : 0x00017fede000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000017fedd000  ts=253028245627829      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000010801b000  ts=253028245640899      image[2]
+WRITE  gpa=0x0000003f81f93000  ts=253028245652869  <== B-precursor #4114
+                                                                          --> run: gpa=0x00017fede000 len=16p [TRUE IMAGE]
+                                                                          --> run: gpa=0x00017feee000 len=80p [TRUE IMAGE]
+                                                                          --> run: gpa=0x001f96c15000 len=2p
+WRITE  gpa=0x000000011fa08000  ts=253028245658689
+WRITE  gpa=0x000000017fede000  ts=253028245698168      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017fedf000  ts=253028245705198      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee0000  ts=253028245712818      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee1000  ts=253028245718078      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee2000  ts=253028245726228      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee3000  ts=253028245733328      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee4000  ts=253028245739148      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee5000  ts=253028245746018      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee6000  ts=253028245752238      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee7000  ts=253028245758408      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee8000  ts=253028245764978      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017fee9000  ts=253028245770808      image[27] [TRUE IMAGE]
+WRITE  gpa=0x000000017feea000  ts=253028245776358      image[28] [TRUE IMAGE]
+WRITE  gpa=0x000000017feeb000  ts=253028245782808      image[29] [TRUE IMAGE]
+WRITE  gpa=0x000000017feec000  ts=253028245788288      image[30] [TRUE IMAGE]
+WRITE  gpa=0x000000017feed000  ts=253028245793938      image[31] [TRUE IMAGE]
+WRITE  gpa=0x0000001f96c09000  ts=253028245804428
+WRITE  gpa=0x0000001f974f8000  ts=253028245813977
+WRITE  gpa=0x000000017feee000  ts=253028245821217      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017feef000  ts=253028245826487      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef0000  ts=253028245832547      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef1000  ts=253028245838067      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef2000  ts=253028245843327      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef3000  ts=253028245849827      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef4000  ts=253028245855977      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef5000  ts=253028245861747      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef6000  ts=253028245867337      image[8] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef7000  ts=253028245873357      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef8000  ts=253028245879517      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000017fef9000  ts=253028245885147      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefa000  ts=253028245890677      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefb000  ts=253028245896207      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefc000  ts=253028245901677      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefd000  ts=253028245908067      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000017fefe000  ts=253028245924717      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017feff000  ts=253028245930626      image[1] [TRUE IMAGE]
+
+======================================================================
+
+Case 50: B-precursor #4123  (log line 428288)
+  B-precursor ts : 253030847578948
+  image[0] ts    : 253031274111855
+  delay          : 426532.9 µs
+  run gpa        : 0x00017ff4e000  len=12p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d49000  ts=253030847566338  <== B-precursor #4122
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d59000  ts=253030847578948  <== B-precursor #4123
+                                                                          --> run: gpa=0x00017ff4e000 len=12p [TRUE IMAGE]
+                                                                          --> run: gpa=0x001f96c15000 len=2p
+                                                                          --> run: gpa=0x001f9780a000 len=2p
+WRITE  gpa=0x0000000106992000  ts=253030847586618
+WRITE  gpa=0x000000017ff4e000  ts=253030847592988      image[16] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff4f000  ts=253030847598858      image[17] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff50000  ts=253030847607047      image[18] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff51000  ts=253030847614227      image[19] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff52000  ts=253030847620267      image[20] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff53000  ts=253030847626547      image[21] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff54000  ts=253030847632787      image[22] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff55000  ts=253030847639367      image[23] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff56000  ts=253030847645907      image[24] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff57000  ts=253030847652147      image[25] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff58000  ts=253030847658177      image[26] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff59000  ts=253030847664777      image[27] [TRUE IMAGE]
+WRITE  gpa=0x0000000119e72000  ts=253031274101665
+WRITE  gpa=0x0000003f7fc18000  ts=253031274107475
+WRITE  gpa=0x0000001f96c15000  ts=253031274111855      image[0]
+WRITE  gpa=0x0000001f96c16000  ts=253031274115385      image[1]
+WRITE  gpa=0x0000001f97801000  ts=253031274119575
+WRITE  gpa=0x0000001f9780a000  ts=253031274122655      image[0]
+WRITE  gpa=0x0000001f9780b000  ts=253031274125385      image[1]
+WRITE  gpa=0x0000000100000000  ts=253031274129595
+WRITE  gpa=0x00000001001ce000  ts=253031274132944      image[0]
+WRITE  gpa=0x0000000109688000  ts=253031274136354
+WRITE  gpa=0x0000000106a0d000  ts=253031274139904
+WRITE  gpa=0x0000003f7fc31000  ts=253031274142864
+WRITE  gpa=0x0000003f7fc1f000  ts=253031274145964
+WRITE  gpa=0x0000000100dd3000  ts=253031274148834
+WRITE  gpa=0x0000000118501000  ts=253031274152064
+WRITE  gpa=0x000000011fc6c000  ts=253031274155734
+
+======================================================================
+
+Case 51: B-precursor #4139  (log line 430792)
+  B-precursor ts : 253033884288841
+  image[0] ts    : 253033884305130
+  delay          : 16.3 µs
+  run gpa        : 0x00017ff5e000  len=9p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d59000  ts=253033884281851  <== B-precursor #4138
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d47000  ts=253033884288841  <== B-precursor #4139
+                                                                          --> run: gpa=0x00017ff5e000 len=9p [TRUE IMAGE]
+                                                                          --> run: gpa=0x00017ff67000 len=7p [TRUE IMAGE]
+                                                                          --> run: gpa=0x00017ff6e000 len=26p [TRUE IMAGE]
+WRITE  gpa=0x0000000106992000  ts=253033884297780
+WRITE  gpa=0x000000017ff5e000  ts=253033884305130      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff5f000  ts=253033884312080      image[1] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff60000  ts=253033884320340      image[2] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff61000  ts=253033884326560      image[3] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff62000  ts=253033884333920      image[4] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff63000  ts=253033884340990      image[5] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff64000  ts=253033884348560      image[6] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff65000  ts=253033884355660      image[7] [TRUE IMAGE]
+WRITE  gpa=0x000000017ff66000  ts=253033884362300      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001185bb000  ts=253033884383140
+WRITE  gpa=0x000000017ff67000  ts=253033884392470      image[9] [TRUE IMAGE]
+
+======================================================================
+
+Case 52: B-precursor #6977  (log line 615339)
+  B-precursor ts : 253163313504022
+  image[0] ts    : 253163313514311
+  delay          : 10.3 µs
+  run gpa        : 0x000187400000  len=10p
+----------------------------------------------------------------------
+WRITE  gpa=0x00000001072a6000  ts=253163313488812
+WRITE  gpa=0x0000000106d5a000  ts=253163313492332
+WRITE  gpa=0x0000003f81fc2000  ts=253163313504022  <== B-precursor #6977
+                                                                          --> run: gpa=0x000187400000 len=10p [TRUE IMAGE]
+WRITE  gpa=0x0000000106938000  ts=253163313510162
+WRITE  gpa=0x0000000187400000  ts=253163313514311      image[0] [TRUE IMAGE]
+WRITE  gpa=0x0000000187401000  ts=253163313518161      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187402000  ts=253163313520941      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187403000  ts=253163313523801      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187404000  ts=253163313526821      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187405000  ts=253163313529491      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187406000  ts=253163313532191      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187407000  ts=253163313534911      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187408000  ts=253163313538151      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187409000  ts=253163313542621      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000013e0d9000  ts=253163313585811
+WRITE  gpa=0x000000017e60d000  ts=253163313591001
+
+======================================================================
+
+Case 53: B-precursor #6987  (log line 615978)
+  B-precursor ts : 253163747953753
+  image[0] ts    : 253163747960053
+  delay          : 6.3 µs
+  run gpa        : 0x000187410000  len=14p
+----------------------------------------------------------------------
+                                                                          [no run]
+WRITE  gpa=0x0000001f96c09000  ts=253163747950713
+WRITE  gpa=0x0000003f82dae000  ts=253163747953753  <== B-precursor #6987
+                                                                          --> run: gpa=0x000187410000 len=14p [TRUE IMAGE]
+WRITE  gpa=0x0000000107ffa000  ts=253163747956803
+WRITE  gpa=0x0000000187410000  ts=253163747960053      image[0] [TRUE IMAGE]
+WRITE  gpa=0x0000000187411000  ts=253163747963163      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187412000  ts=253163747966523      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187413000  ts=253163747969683      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187414000  ts=253163747973113      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187415000  ts=253163747976433      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187416000  ts=253163747979583      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187417000  ts=253163747982383      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187418000  ts=253163747985193      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187419000  ts=253163747988603      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000018741a000  ts=253163747991262      image[10] [TRUE IMAGE]
+WRITE  gpa=0x000000018741b000  ts=253163747993962      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018741c000  ts=253163747997042      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018741d000  ts=253163748000142      image[13] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c7000  ts=253163748004582  <== B-precursor #6988
+                                                                          --> run: gpa=0x00018741e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 54: B-precursor #6988  (log line 615995)
+  B-precursor ts : 253163748004582
+  image[0] ts    : 253163748008992
+  delay          : 4.4 µs
+  run gpa        : 0x00018741e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018741c000  ts=253163747997042      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018741d000  ts=253163748000142      image[13] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c7000  ts=253163748004582  <== B-precursor #6988
+                                                                          --> run: gpa=0x00018741e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018741e000  ts=253163748008992      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018741f000  ts=253163748012152      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187420000  ts=253163748015412      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187421000  ts=253163748018462      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187422000  ts=253163748021182      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187423000  ts=253163748023912      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187424000  ts=253163748026592      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187425000  ts=253163748029852      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187426000  ts=253163748032562      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187427000  ts=253163748035382      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187428000  ts=253163748038232      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187429000  ts=253163748041582      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018742a000  ts=253163748044882      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018742b000  ts=253163748047582      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018742c000  ts=253163748051142      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018742d000  ts=253163748053852      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000001f974f8000  ts=253163748057662
+WRITE  gpa=0x0000003f82d8d000  ts=253163748061412  <== B-precursor #6989
+
+======================================================================
+
+Case 55: B-precursor #6993  (log line 616022)
+  B-precursor ts : 253163748073512
+  image[0] ts    : 253163748077042
+  delay          : 3.5 µs
+  run gpa        : 0x00018742e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f846ca000  ts=253163748070692  <== B-precursor #6992
+                                                                          [no run]
+WRITE  gpa=0x0000003f846cf000  ts=253163748073512  <== B-precursor #6993
+                                                                          --> run: gpa=0x00018742e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018742e000  ts=253163748077042      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018742f000  ts=253163748079822      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187430000  ts=253163748082832      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187431000  ts=253163748085902      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187432000  ts=253163748089042      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187433000  ts=253163748092222      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187434000  ts=253163748095402      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187435000  ts=253163748098172      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187436000  ts=253163748101112      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187437000  ts=253163748103782      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187438000  ts=253163748106801      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187439000  ts=253163748109811      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018743a000  ts=253163748113351      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018743b000  ts=253163748116241      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018743c000  ts=253163748119201      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018743d000  ts=253163748121861      image[15] [TRUE IMAGE]
+WRITE  gpa=0x00000001064f2000  ts=253163748124811
+WRITE  gpa=0x0000003f81f93000  ts=253163748128851  <== B-precursor #6994
+
+======================================================================
+
+Case 56: B-precursor #6996  (log line 616045)
+  B-precursor ts : 253163748135151
+  image[0] ts    : 253163748138181
+  delay          : 3.0 µs
+  run gpa        : 0x00018743e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d8f000  ts=253163748132301  <== B-precursor #6995
+                                                                          [no run]
+WRITE  gpa=0x0000003f846d8000  ts=253163748135151  <== B-precursor #6996
+                                                                          --> run: gpa=0x00018743e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018743e000  ts=253163748138181      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018743f000  ts=253163748141031      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187440000  ts=253163748143951      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187441000  ts=253163748147091      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187442000  ts=253163748149781      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187443000  ts=253163748152871      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187444000  ts=253163748155621      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187445000  ts=253163748158381      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187446000  ts=253163748161131      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187447000  ts=253163748163911      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187448000  ts=253163748166891      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187449000  ts=253163748169951      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018744a000  ts=253163748172621      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018744b000  ts=253163748175601      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018744c000  ts=253163748178271      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018744d000  ts=253163748181191      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5c000  ts=253163748185671  <== B-precursor #6997
+                                                                          [no run]
+
+======================================================================
+
+Case 57: B-precursor #7003  (log line 616075)
+  B-precursor ts : 253163748204711
+  image[0] ts    : 253163748208521
+  delay          : 3.8 µs
+  run gpa        : 0x00018744e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82daa000  ts=253163748201991  <== B-precursor #7002
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d5d000  ts=253163748204711  <== B-precursor #7003
+                                                                          --> run: gpa=0x00018744e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018744e000  ts=253163748208521      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018744f000  ts=253163748211821      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187450000  ts=253163748214871      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187451000  ts=253163748218491      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187452000  ts=253163748221240      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187453000  ts=253163748224280      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187454000  ts=253163748226930      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187455000  ts=253163748230550      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187456000  ts=253163748233470      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187457000  ts=253163748236650      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187458000  ts=253163748239570      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187459000  ts=253163748242620      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018745a000  ts=253163748245350      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018745b000  ts=253163748248040      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018745c000  ts=253163748250800      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018745d000  ts=253163748253480      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846bf000  ts=253163748257550  <== B-precursor #7004
+                                                                          [no run]
+
+======================================================================
+
+Case 58: B-precursor #7007  (log line 616099)
+  B-precursor ts : 253163748267040
+  image[0] ts    : 253163748271040
+  delay          : 4.0 µs
+  run gpa        : 0x00018745e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f84691000  ts=253163748263840  <== B-precursor #7006
+                                                                          [no run]
+WRITE  gpa=0x0000003f846c3000  ts=253163748267040  <== B-precursor #7007
+                                                                          --> run: gpa=0x00018745e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018745e000  ts=253163748271040      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018745f000  ts=253163748273860      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187460000  ts=253163748276880      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187461000  ts=253163748279920      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187462000  ts=253163748282630      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187463000  ts=253163748285340      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187464000  ts=253163748288790      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187465000  ts=253163748291700      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187466000  ts=253163748294840      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187467000  ts=253163748297660      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187468000  ts=253163748300790      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187469000  ts=253163748304220      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018746a000  ts=253163748307520      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018746b000  ts=253163748310570      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018746c000  ts=253163748313830      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018746d000  ts=253163748316970      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846ce000  ts=253163748320830  <== B-precursor #7008
+                                                                          [no run]
+
+======================================================================
+
+Case 59: B-precursor #7011  (log line 616123)
+  B-precursor ts : 253163748330420
+  image[0] ts    : 253163748333849
+  delay          : 3.4 µs
+  run gpa        : 0x00018746e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d9a000  ts=253163748327280  <== B-precursor #7010
+                                                                          [no run]
+WRITE  gpa=0x0000003f846c4000  ts=253163748330420  <== B-precursor #7011
+                                                                          --> run: gpa=0x00018746e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018746e000  ts=253163748333849      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018746f000  ts=253163748336609      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187470000  ts=253163748339729      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187471000  ts=253163748342759      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187472000  ts=253163748345519      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187473000  ts=253163748348589      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187474000  ts=253163748351379      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187475000  ts=253163748354129      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187476000  ts=253163748357109      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187477000  ts=253163748360079      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187478000  ts=253163748362789      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187479000  ts=253163748366419      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018747a000  ts=253163748369199      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018747b000  ts=253163748372459      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018747c000  ts=253163748375439      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018747d000  ts=253163748378149      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c8000  ts=253163748381799  <== B-precursor #7012
+                                                                          --> run: gpa=0x00018747e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 60: B-precursor #7012  (log line 616141)
+  B-precursor ts : 253163748381799
+  image[0] ts    : 253163748386029
+  delay          : 4.2 µs
+  run gpa        : 0x00018747e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018747c000  ts=253163748375439      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018747d000  ts=253163748378149      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846c8000  ts=253163748381799  <== B-precursor #7012
+                                                                          --> run: gpa=0x00018747e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018747e000  ts=253163748386029      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018747f000  ts=253163748388949      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187480000  ts=253163748393169      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187481000  ts=253163748397189      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187482000  ts=253163748399889      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187483000  ts=253163748402689      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187484000  ts=253163748405379      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187485000  ts=253163748408459      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187486000  ts=253163748411119      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187487000  ts=253163748413949      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187488000  ts=253163748416609      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187489000  ts=253163748420209      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018748a000  ts=253163748422929      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018748b000  ts=253163748425689      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018748c000  ts=253163748428539      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018748d000  ts=253163748431179      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d99000  ts=253163748434539  <== B-precursor #7013
+                                                                          [no run]
+
+======================================================================
+
+Case 61: B-precursor #7015  (log line 616163)
+  B-precursor ts : 253163748441519
+  image[0] ts    : 253163748445239
+  delay          : 3.7 µs
+  run gpa        : 0x00018748e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f84692000  ts=253163748437759  <== B-precursor #7014
+                                                                          [no run]
+WRITE  gpa=0x0000003f82db6000  ts=253163748441519  <== B-precursor #7015
+                                                                          --> run: gpa=0x00018748e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018748e000  ts=253163748445239      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018748f000  ts=253163748448089      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187490000  ts=253163748450788      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187491000  ts=253163748454468      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187492000  ts=253163748457248      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187493000  ts=253163748459928      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187494000  ts=253163748463178      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187495000  ts=253163748466248      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187496000  ts=253163748469148      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187497000  ts=253163748472438      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187498000  ts=253163748475298      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187499000  ts=253163748478548      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018749a000  ts=253163748481298      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018749b000  ts=253163748484438      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018749c000  ts=253163748487128      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018749d000  ts=253163748489908      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82da0000  ts=253163748493698  <== B-precursor #7016
+                                                                          [no run]
+
+======================================================================
+
+Case 62: B-precursor #7023  (log line 616195)
+  B-precursor ts : 253163748517248
+  image[0] ts    : 253163748521668
+  delay          : 4.4 µs
+  run gpa        : 0x00018749e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82afe000  ts=253163748512938  <== B-precursor #7022
+                                                                          [no run]
+WRITE  gpa=0x0000003f829fd000  ts=253163748517248  <== B-precursor #7023
+                                                                          --> run: gpa=0x00018749e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018749e000  ts=253163748521668      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018749f000  ts=253163748524868      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a0000  ts=253163748528518      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a1000  ts=253163748531578      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a2000  ts=253163748534908      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a3000  ts=253163748538068      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a4000  ts=253163748540718      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a5000  ts=253163748544078      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a6000  ts=253163748546768      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a7000  ts=253163748549908      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a8000  ts=253163748552568      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874a9000  ts=253163748555848      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874aa000  ts=253163748558488      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ab000  ts=253163748561848      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ac000  ts=253163748564547      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ad000  ts=253163748568067      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d78000  ts=253163748571977  <== B-precursor #7024
+                                                                          [no run]
+
+======================================================================
+
+Case 63: B-precursor #7034  (log line 616233)
+  B-precursor ts : 253163748606047
+  image[0] ts    : 253163748610567
+  delay          : 4.5 µs
+  run gpa        : 0x0001874ae000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d7b000  ts=253163748602977  <== B-precursor #7033
+                                                                          [no run]
+WRITE  gpa=0x0000003f846d3000  ts=253163748606047  <== B-precursor #7034
+                                                                          --> run: gpa=0x0001874ae000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874ae000  ts=253163748610567      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874af000  ts=253163748613957      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b0000  ts=253163748617337      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b1000  ts=253163748620487      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b2000  ts=253163748624007      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b3000  ts=253163748627457      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b4000  ts=253163748630697      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b5000  ts=253163748634317      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b6000  ts=253163748637947      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b7000  ts=253163748641227      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b8000  ts=253163748643887      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874b9000  ts=253163748647197      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ba000  ts=253163748649937      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bb000  ts=253163748653627      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bc000  ts=253163748656347      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bd000  ts=253163748659957      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d7e000  ts=253163748663367  <== B-precursor #7035
+                                                                          [no run]
+
+======================================================================
+
+Case 64: B-precursor #7047  (log line 616275)
+  B-precursor ts : 253163748704126
+  image[0] ts    : 253163748707786
+  delay          : 3.7 µs
+  run gpa        : 0x0001874be000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f828b1000  ts=253163748701436  <== B-precursor #7046
+                                                                          [no run]
+WRITE  gpa=0x0000003f82d62000  ts=253163748704126  <== B-precursor #7047
+                                                                          --> run: gpa=0x0001874be000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874be000  ts=253163748707786      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874bf000  ts=253163748710936      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c0000  ts=253163748714836      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c1000  ts=253163748717586      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c2000  ts=253163748720856      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c3000  ts=253163748723936      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c4000  ts=253163748727106      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c5000  ts=253163748730176      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c6000  ts=253163748733476      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c7000  ts=253163748736146      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c8000  ts=253163748739306      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874c9000  ts=253163748741996      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ca000  ts=253163748745346      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874cb000  ts=253163748748396      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874cc000  ts=253163748751056      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874cd000  ts=253163748754746      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82cc8000  ts=253163748772436  <== B-precursor #7048
+                                                                          [no run]
+
+======================================================================
+
+Case 65: B-precursor #7052  (log line 616301)
+  B-precursor ts : 253163748785376
+  image[0] ts    : 253163748789816
+  delay          : 4.4 µs
+  run gpa        : 0x0001874ce000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d60000  ts=253163748781206  <== B-precursor #7051
+                                                                          [no run]
+WRITE  gpa=0x0000003f82be4000  ts=253163748785376  <== B-precursor #7052
+                                                                          --> run: gpa=0x0001874ce000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874ce000  ts=253163748789816      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874cf000  ts=253163748793195      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d0000  ts=253163748795965      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d1000  ts=253163748799345      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d2000  ts=253163748802065      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d3000  ts=253163748804845      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d4000  ts=253163748808165      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d5000  ts=253163748811195      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d6000  ts=253163748813985      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d7000  ts=253163748816835      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d8000  ts=253163748820505      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874d9000  ts=253163748823255      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874da000  ts=253163748825985      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874db000  ts=253163748829245      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874dc000  ts=253163748832425      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874dd000  ts=253163748835475      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82dba000  ts=253163748839105  <== B-precursor #7053
+                                                                          [no run]
+
+======================================================================
+
+Case 66: B-precursor #7058  (log line 616329)
+  B-precursor ts : 253163748855975
+  image[0] ts    : 253163748860195
+  delay          : 4.2 µs
+  run gpa        : 0x0001874de000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82765000  ts=253163748851765  <== B-precursor #7057
+                                                                          [no run]
+WRITE  gpa=0x0000003f8274f000  ts=253163748855975  <== B-precursor #7058
+                                                                          --> run: gpa=0x0001874de000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874de000  ts=253163748860195      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874df000  ts=253163748863685      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e0000  ts=253163748866895      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e1000  ts=253163748869625      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e2000  ts=253163748872415      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e3000  ts=253163748875195      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e4000  ts=253163748878325      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e5000  ts=253163748881445      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e6000  ts=253163748884685      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e7000  ts=253163748888645      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e8000  ts=253163748891885      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874e9000  ts=253163748894915      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ea000  ts=253163748897825      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874eb000  ts=253163748900975      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ec000  ts=253163748904285      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ed000  ts=253163748907904      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846d7000  ts=253163748911924  <== B-precursor #7059
+                                                                          [no run]
+
+======================================================================
+
+Case 67: B-precursor #7061  (log line 616351)
+  B-precursor ts : 253163748918164
+  image[0] ts    : 253163748921874
+  delay          : 3.7 µs
+  run gpa        : 0x0001874ee000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82cd0000  ts=253163748915034  <== B-precursor #7060
+                                                                          [no run]
+WRITE  gpa=0x0000003f8276c000  ts=253163748918164  <== B-precursor #7061
+                                                                          --> run: gpa=0x0001874ee000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874ee000  ts=253163748921874      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ef000  ts=253163748925214      image[1] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f0000  ts=253163748927984      image[2] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f1000  ts=253163748931244      image[3] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f2000  ts=253163748933924      image[4] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f3000  ts=253163748936854      image[5] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f4000  ts=253163748939864      image[6] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f5000  ts=253163748943264      image[7] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f6000  ts=253163748946044      image[8] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f7000  ts=253163748949274      image[9] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f8000  ts=253163748952434      image[10] [TRUE IMAGE]
+WRITE  gpa=0x00000001874f9000  ts=253163748955634      image[11] [TRUE IMAGE]
+WRITE  gpa=0x00000001874fa000  ts=253163748958354      image[12] [TRUE IMAGE]
+WRITE  gpa=0x00000001874fb000  ts=253163748961164      image[13] [TRUE IMAGE]
+WRITE  gpa=0x00000001874fc000  ts=253163748963954      image[14] [TRUE IMAGE]
+WRITE  gpa=0x00000001874fd000  ts=253163748967064      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82929000  ts=253163748971894  <== B-precursor #7062
+                                                                          [no run]
+
+======================================================================
+
+Case 68: B-precursor #7065  (log line 616375)
+  B-precursor ts : 253163748982914
+  image[0] ts    : 253163748986554
+  delay          : 3.6 µs
+  run gpa        : 0x0001874fe000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f829c8000  ts=253163748978674  <== B-precursor #7064
+                                                                          [no run]
+WRITE  gpa=0x0000003f82a55000  ts=253163748982914  <== B-precursor #7065
+                                                                          --> run: gpa=0x0001874fe000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x00000001874fe000  ts=253163748986554      image[0] [TRUE IMAGE]
+WRITE  gpa=0x00000001874ff000  ts=253163748989724      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187500000  ts=253163748992924      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187501000  ts=253163748996194      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187502000  ts=253163748999494      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187503000  ts=253163749002204      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187504000  ts=253163749005324      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187505000  ts=253163749008514      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187506000  ts=253163749011254      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187507000  ts=253163749014454      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187508000  ts=253163749017144      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187509000  ts=253163749020274      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018750a000  ts=253163749022973      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018750b000  ts=253163749025993      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018750c000  ts=253163749028773      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018750d000  ts=253163749031483      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f8291d000  ts=253163749035973  <== B-precursor #7066
+                                                                          [no run]
+
+======================================================================
+
+Case 69: B-precursor #7068  (log line 616397)
+  B-precursor ts : 253163749042893
+  image[0] ts    : 253163749046783
+  delay          : 3.9 µs
+  run gpa        : 0x00018750e000  len=48p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d8b000  ts=253163749039113  <== B-precursor #7067
+                                                                          [no run]
+WRITE  gpa=0x0000003f82cc4000  ts=253163749042893  <== B-precursor #7068
+                                                                          --> run: gpa=0x00018750e000 len=48p [TRUE IMAGE]
+WRITE  gpa=0x000000018750e000  ts=253163749046783      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018750f000  ts=253163749049843      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187510000  ts=253163749053093      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187511000  ts=253163749056123      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187512000  ts=253163749059323      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187513000  ts=253163749062003      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187514000  ts=253163749065113      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187515000  ts=253163749067803      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187516000  ts=253163749070803      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187517000  ts=253163749073503      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187518000  ts=253163749076223      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187519000  ts=253163749079643      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018751a000  ts=253163749082693      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018751b000  ts=253163749085683      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018751c000  ts=253163749088413      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018751d000  ts=253163749091523      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000018751e000  ts=253163749097293      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018751f000  ts=253163749100173      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187520000  ts=253163749102953      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187521000  ts=253163749106303      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187522000  ts=253163749109483      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187523000  ts=253163749112933      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187524000  ts=253163749115783      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187525000  ts=253163749118503      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187526000  ts=253163749121613      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187527000  ts=253163749124483      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187528000  ts=253163749127243      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187529000  ts=253163749130983      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018752a000  ts=253163749133683      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018752b000  ts=253163749136962      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018752c000  ts=253163749139732      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018752d000  ts=253163749142572      image[15] [TRUE IMAGE]
+WRITE  gpa=0x000000018752e000  ts=253163749147992      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018752f000  ts=253163749150932      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187530000  ts=253163749153622      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187531000  ts=253163749157002      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187532000  ts=253163749160452      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187533000  ts=253163749163242      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187534000  ts=253163749166222      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187535000  ts=253163749168952      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187536000  ts=253163749171922      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187537000  ts=253163749174692      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187538000  ts=253163749177682      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187539000  ts=253163749180762      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018753a000  ts=253163749183452      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018753b000  ts=253163749186222      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018753c000  ts=253163749188922      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018753d000  ts=253163749192512      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5e000  ts=253163749197022  <== B-precursor #7069
+                                                                          --> run: gpa=0x00018753e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 70: B-precursor #7069  (log line 616447)
+  B-precursor ts : 253163749197022
+  image[0] ts    : 253163749201262
+  delay          : 4.2 µs
+  run gpa        : 0x00018753e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018753c000  ts=253163749188922      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018753d000  ts=253163749192512      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d5e000  ts=253163749197022  <== B-precursor #7069
+                                                                          --> run: gpa=0x00018753e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018753e000  ts=253163749201262      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018753f000  ts=253163749204672      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187540000  ts=253163749207712      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187541000  ts=253163749210832      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187542000  ts=253163749213782      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187543000  ts=253163749216992      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187544000  ts=253163749220002      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187545000  ts=253163749222792      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187546000  ts=253163749225472      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187547000  ts=253163749228812      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187548000  ts=253163749231512      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187549000  ts=253163749234912      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018754a000  ts=253163749237652      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018754b000  ts=253163749240642      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018754c000  ts=253163749244202      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018754d000  ts=253163749246992      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846d9000  ts=253163749250571  <== B-precursor #7070
+                                                                          --> run: gpa=0x00018754e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 71: B-precursor #7070  (log line 616465)
+  B-precursor ts : 253163749250571
+  image[0] ts    : 253163749254801
+  delay          : 4.2 µs
+  run gpa        : 0x00018754e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018754c000  ts=253163749244202      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018754d000  ts=253163749246992      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846d9000  ts=253163749250571  <== B-precursor #7070
+                                                                          --> run: gpa=0x00018754e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018754e000  ts=253163749254801      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018754f000  ts=253163749258101      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187550000  ts=253163749261651      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187551000  ts=253163749265081      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187552000  ts=253163749267831      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187553000  ts=253163749270631      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187554000  ts=253163749274001      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187555000  ts=253163749277031      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187556000  ts=253163749279851      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187557000  ts=253163749283251      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187558000  ts=253163749286111      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187559000  ts=253163749289131      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018755a000  ts=253163749292011      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018755b000  ts=253163749295181      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018755c000  ts=253163749297851      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018755d000  ts=253163749300901      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d47000  ts=253163749305461  <== B-precursor #7071
+                                                                          --> run: gpa=0x00018755e000 len=16p [TRUE IMAGE]
+
+======================================================================
+
+Case 72: B-precursor #7071  (log line 616483)
+  B-precursor ts : 253163749305461
+  image[0] ts    : 253163749311311
+  delay          : 5.8 µs
+  run gpa        : 0x00018755e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x000000018755c000  ts=253163749297851      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018755d000  ts=253163749300901      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d47000  ts=253163749305461  <== B-precursor #7071
+                                                                          --> run: gpa=0x00018755e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018755e000  ts=253163749311311      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018755f000  ts=253163749314241      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187560000  ts=253163749317881      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187561000  ts=253163749320931      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187562000  ts=253163749324011      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187563000  ts=253163749327021      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187564000  ts=253163749330031      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187565000  ts=253163749333341      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187566000  ts=253163749336061      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187567000  ts=253163749339171      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187568000  ts=253163749342361      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187569000  ts=253163749345421      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018756a000  ts=253163749348201      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018756b000  ts=253163749351201      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018756c000  ts=253163749353891      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018756d000  ts=253163749356891      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f846cd000  ts=253163749360351  <== B-precursor #7072
+                                                                          [no run]
+
+======================================================================
+
+Case 73: B-precursor #7073  (log line 616503)
+  B-precursor ts : 253163749364770
+  image[0] ts    : 253163749368500
+  delay          : 3.7 µs
+  run gpa        : 0x00018756e000  len=16p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f846cd000  ts=253163749360351  <== B-precursor #7072
+                                                                          [no run]
+WRITE  gpa=0x0000003f829e5000  ts=253163749364770  <== B-precursor #7073
+                                                                          --> run: gpa=0x00018756e000 len=16p [TRUE IMAGE]
+WRITE  gpa=0x000000018756e000  ts=253163749368500      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018756f000  ts=253163749372330      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187570000  ts=253163749375350      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187571000  ts=253163749378410      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187572000  ts=253163749381220      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187573000  ts=253163749383970      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187574000  ts=253163749387240      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187575000  ts=253163749390090      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187576000  ts=253163749392830      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187577000  ts=253163749395870      image[9] [TRUE IMAGE]
+WRITE  gpa=0x0000000187578000  ts=253163749398630      image[10] [TRUE IMAGE]
+WRITE  gpa=0x0000000187579000  ts=253163749401900      image[11] [TRUE IMAGE]
+WRITE  gpa=0x000000018757a000  ts=253163749404660      image[12] [TRUE IMAGE]
+WRITE  gpa=0x000000018757b000  ts=253163749408090      image[13] [TRUE IMAGE]
+WRITE  gpa=0x000000018757c000  ts=253163749410760      image[14] [TRUE IMAGE]
+WRITE  gpa=0x000000018757d000  ts=253163749413440      image[15] [TRUE IMAGE]
+WRITE  gpa=0x0000003f82d75000  ts=253163749417810  <== B-precursor #7074
+                                                                          [no run]
+
+======================================================================
+
+Case 74: B-precursor #7075  (log line 616523)
+  B-precursor ts : 253163749421010
+  image[0] ts    : 253163749424240
+  delay          : 3.2 µs
+  run gpa        : 0x00018757e000  len=10p
+----------------------------------------------------------------------
+WRITE  gpa=0x0000003f82d75000  ts=253163749417810  <== B-precursor #7074
+                                                                          [no run]
+WRITE  gpa=0x0000003f846e1000  ts=253163749421010  <== B-precursor #7075
+                                                                          --> run: gpa=0x00018757e000 len=10p [TRUE IMAGE]
+WRITE  gpa=0x000000018757e000  ts=253163749424240      image[0] [TRUE IMAGE]
+WRITE  gpa=0x000000018757f000  ts=253163749427250      image[1] [TRUE IMAGE]
+WRITE  gpa=0x0000000187580000  ts=253163749430010      image[2] [TRUE IMAGE]
+WRITE  gpa=0x0000000187581000  ts=253163749433040      image[3] [TRUE IMAGE]
+WRITE  gpa=0x0000000187582000  ts=253163749435780      image[4] [TRUE IMAGE]
+WRITE  gpa=0x0000000187583000  ts=253163749438590      image[5] [TRUE IMAGE]
+WRITE  gpa=0x0000000187584000  ts=253163749442140      image[6] [TRUE IMAGE]
+WRITE  gpa=0x0000000187585000  ts=253163749445340      image[7] [TRUE IMAGE]
+WRITE  gpa=0x0000000187586000  ts=253163749448330      image[8] [TRUE IMAGE]
+WRITE  gpa=0x0000000187587000  ts=253163749451720      image[9] [TRUE IMAGE]
+WRITE  gpa=0x000000010718f000  ts=253163749455170
+WRITE  gpa=0x0000000106d58000  ts=253163749459120
+
+======================================================================
+

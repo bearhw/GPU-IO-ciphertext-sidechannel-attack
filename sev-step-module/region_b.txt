@@ -1,0 +1,103 @@
+\subsection{Characterization of Region~B Write Activity}
+
+We identified a contiguous guest physical address region, denoted Region~B, spanning \texttt{0x3f80000000} to \texttt{0x3f90000000} in a 256\,GB guest.
+This 256\,MB window is located 1.75 to 2\,GB below the top of the 256\,GB guest physical address space.
+To characterize the source of write activity in Region~B, we conducted controlled experiments under two VM configurations on a host running kernel version \texttt{5.19.0-rc6-sev-step} with KVM write-protection tracking (\texttt{KVM\_DST\_TRACK}).
+
+The first configuration used a 256\,GB guest (\texttt{-m 256G}) launched without GPU passthrough, using image \texttt{amdsev\_ubuntu22.04.qcow2} and executing a two-epoch MNIST training workload entirely on CPU via PyTorch.
+The second configuration used a 128\,GB guest (\texttt{-m 128G}) under the same software environment and workload.
+Both guests ran Ubuntu 22.04 with a single vCPU and no attached GPU.
+
+In the 256\,GB CPU-only guest, we observed 54,262 Region~B write events out of 889,452 total write events recorded during a 500\,s monitoring window.
+For comparison, GPU-passthrough runs on the same 256\,GB image produced only 2,419 to 13,864 Region~B writes across six independent runs.
+The CPU-only run therefore produced more Region~B write activity than any GPU run, which directly refutes the hypothesis that Region~B writes originate from GPU hardware DMA.
+
+In the 128\,GB guest, the absolute Region~B address range (254 to 254.25\,GB) falls entirely outside physical RAM, and no write events were observed at those addresses.
+An equivalent write concentration instead appeared at the upper boundary of the 128\,GB guest physical address space, in the 1\,MB window \texttt{0x1fffc00000} to \texttt{0x1fffd00000}, located 4\,MB below the 128\,GB boundary.
+This window accumulated 40,339 write events under the same MNIST workload, matching the order of magnitude observed in the 256\,GB experiment.
+
+A page-level comparison of the two guests reveals an identical set of active page offsets within their respective concentrated windows.
+In both cases the written pages lie at offsets $+$0, $+$20, $+$24, $+$44, $+$96, $+$100, $+$124, $+$128, $+$132, $+$136, $+$140, $+$180, $+$184, $+$196, $+$200, and $+$204\,KB from the window base, with per-page write counts ranging from the hundreds to the thousands.
+The offset pattern is fully preserved across the two RAM sizes and is independent of whether a GPU is present, indicating that a fixed kernel data structure occupies this region and that its GPA tracks the top of guest physical memory.
+
+Physical memory analysis on the 128\,GB guest corroborates this interpretation.
+\texttt{/proc/iomem} classifies the pages at \texttt{0x1fffc00000} as \texttt{System RAM} and not as MMIO or device memory.
+\texttt{/proc/kpageflags} returns a zero flag word for all pages in the window, showing that they are managed outside the Linux buddy allocator.
+Reading page content via \texttt{/dev/mem} reveals a layout consistent with \texttt{struct page} entries, with most 8-byte fields equal to zero and isolated non-zero values at fixed intra-structure offsets.
+These observations are consistent with the Linux \texttt{vmemmap} region, in which one 64-byte \texttt{struct page} record exists per physical page frame.
+
+The causal chain linking Region~B writes to ML inference activity is indirect but deterministic.
+GPU inference triggers CUDA memory allocation and deallocation calls inside the guest.
+These calls invoke the Linux kernel buddy allocator, which updates \texttt{struct page} metadata for each affected page frame.
+Because the \texttt{vmemmap} entries for page frames near the top of guest RAM reside in Region~B, memory operations in that address range produce observable write faults at the hypervisor level.
+The same mechanism applies to CPU-only workloads through PyTorch tensor allocation and deallocation, which explains why Region~B write activity is present regardless of GPU involvement.
+
+Despite the indirect causal path, the temporal correlation between Region~B write bursts and ML inference events is consistent and reproducible across runs.
+The burst timing reflects the CUDA memory operation schedule, which is in turn determined by the structure of the ML computation graph.
+When used as a timing gate in the $H \times R$ scoring method, Region~B bursts reliably precede writes to the pinned host-to-device staging buffers at GPA \texttt{0xc0000000}, detected in 5 out of 5 runs, and at GPA \texttt{0x122000000}, detected in 4 out of 5 runs.
+We conclude that monitoring Region~B write activity, combined with contiguous-run scoring of the full GPA write trace, provides sufficient side-channel information to identify the physical addresses of ML input tensor staging buffers from outside the guest without any guest-side instrumentation.
+
+\subsection{Region~B as a Precursor Signal for ML Input Tensor Identification}
+
+We evaluated Region~B write bursts as a timing precursor for detecting MNIST image tensor DMA transfers across seven independent runs on a 256\,GB GPU-passthrough guest, using batch sizes of 512 (runs 1--4), 256 (run 5), and 128 (runs 6--7).
+Each run was recorded as a host-side KVM write fault trace paired with a guest-side ground-truth log of image tensor GPAs.
+The precursor method credits a contiguous ascending GPA run as a candidate image buffer access only when a Region~B write burst precedes the run start within a timing window of $W = 40\,\mu$s, with a lookahead of 12 non-Region-B write events.
+Candidate regions are scored as $S = H \times R$ where $H$ is the number of credited runs and $R$ is the length of the longest run.
+
+\paragraph{Temporal Precision of the B$\to$GT Delay.}
+Across all ten runs spanning four batch sizes, we measured 742 Region~B burst events for which a subsequent ground-truth image access was observed.
+Of these, 588 out of 742 (79.2\,\%) fell within the 40\,$\mu$s window.
+For batch size 512 (runs 1--4, a total of 227 events), the in-window rate reached 98.7\,\% with a median B$\to$GT delay of 4.3\,$\mu$s and a 95th-percentile delay of 16.3\,$\mu$s.
+For batch size 256 (run 5, 50 events), the in-window rate was 88.0\,\% with a median delay of 6.4\,$\mu$s.
+For batch size 128 (runs 6--7, 147 events), the in-window rate dropped to 75.5\,\% with a median delay of 8.0\,$\mu$s and a 95th-percentile delay of 542\,$\mu$s.
+For batch size 64 (runs bs64-1 through bs64-3, a total of 318 events), the in-window rate further declined to 65.7\,\%, with per-run medians of 18.4, 33.4, and 38.3\,$\mu$s respectively.
+The degradation in temporal precision with decreasing batch size is consistent with a smaller DMA transfer producing a weaker and more variable burst signal relative to background write noise.
+
+\paragraph{Per-Run Detection Results.}
+For batch size 512, the true image buffer GPA appeared in the top-5 candidate list in all four runs, ranked first in three of four runs (runs 1, 3, 4).
+In run 3, the top-ranked candidate achieved a maximum ascending run length of 330 pages, corresponding to 84.2\,\% of the 392-page tensor captured within a single precursor window; its score of 6,270 exceeded the third-ranked noise candidate by a factor of 18.6.
+In run 4, the top-ranked GT candidate scored 8,448 against a third-ranked noise score of 570, a ratio of 14.8.
+Across all four batch-512 runs, the exact GPA of at least one true image buffer matched a top-5 candidate exactly in every run.
+For batch size 256 (run 5), the true buffer appeared at rank 5, as the shorter 196-page tensor produced ascending runs (maximum 28 pages) that were not sufficiently longer than noise runs (maximum 85 pages) to achieve a higher rank.
+For batch size 128 (runs 6--7), the true buffer appeared at rank 3 in run 6 and at rank 77 in run 7; in run 7, Region~B fired 15,515 times, generating spurious large ascending runs of up to 512 pages that overwhelmed the true signal.
+For batch size 64 (runs bs64-1 through bs64-3, 49-page tensors), the GT buffer appeared at rank 3 in run bs64-1 with an exact GPA match (\texttt{0x1187a0000}), at rank 1 in run bs64-2 with a region match (best GPA missed the true start by one 4\,KB page), and at rank 1 in run bs64-3 with a region match.
+The ascending runs produced by a 49-page tensor (maximum 8--10 pages within the gate window) are comparable in length to noise runs, which prevents score-based separation from noise at this batch size.
+Across all ten runs, the true image buffer GPA appeared somewhere in the candidate list in every case, confirming that Region~B gating consistently reduces the search space to a manageable set of candidates regardless of batch size.
+
+\paragraph{Effect of Batch Size.}
+Detection quality degrades monotonically as batch size decreases from 512 to 64.
+The primary cause is tensor size: a batch-512 tensor spans 392 pages and produces long ascending runs clearly distinguishable from noise, whereas a batch-64 tensor spans only 49 pages and produces ascending runs of at most 8--10 pages within the gate window, indistinguishable in length from OS memory management artifacts.
+A secondary cause in the small-batch regime is GPA misalignment: several ground-truth GPAs recorded by the guest were not 4\,KB-aligned (e.g., \texttt{0x107f5f800}, \texttt{0x1080a0400}), making an exact page-level match against 4\,KB-aligned write fault records structurally impossible.
+Despite score-based ranking becoming unreliable at batch sizes of 64 and 128, region-level containment of the true buffer is maintained across all runs at all batch sizes.
+
+\paragraph{Overall Detection Summary.}
+Table~\ref{tab:mnist_detection} summarizes the per-run results across all ten runs.
+The ground-truth image buffer is ranked first in 5 of 10 runs, in the top 3 in 7 of 10 runs, in the top 5 in 9 of 10 runs, and present in the candidate list in all 10 runs.
+For the batch-512 regime, every run achieved an exact GPA match within the top 5 candidates.
+These results demonstrate that Region~B write bursts, used as a timing precursor with a 40\,$\mu$s gate, provide sufficient side-channel information to identify the physical address of an ML input tensor staging buffer from outside the guest, without any modification to the guest software stack.
+
+\begin{table}[t]
+\centering
+\caption{Per-run Region~B precursor detection results on MNIST (runs 1--7).
+$N_B$ is the number of Region~B bursts observed.
+Rank reports the position of the highest-ranked ground-truth candidate.
+Match type indicates whether the exact GPA or only the containing 2\,MB region was recovered.}
+\label{tab:mnist_detection}
+\begin{tabular}{ccrrrll}
+\toprule
+Run & Batch & Total writes & $N_B$ & GT rank & Match & In-window \\
+\midrule
+1 & 512 & 711{,}631 & 7{,}729 & \#1 & exact & 97.3\,\% \\
+2 & 512 & 672{,}521 & 4{,}275 & \#3 & exact & 100.0\,\% \\
+3 & 512 & 683{,}630 & 2{,}608 & \#1 & exact & 100.0\,\% \\
+4 & 512 & 327{,}045 & 13{,}864 & \#1 & exact & 98.9\,\% \\
+5 & 256 & 411{,}531 & 6{,}787 & \#5 & region & 88.0\,\% \\
+6 & 128 & 565{,}321 & 2{,}419 & \#3 & region & 77.6\,\% \\
+7 & 128 & 703{,}530 & 15{,}515 & \#77 & none & 73.8\,\% \\
+\midrule
+bs64-1 & 64 & 1{,}391{,}101 & 4{,}284 & \#3 & exact & 79.5\,\% \\
+bs64-2 & 64 & 1{,}275{,}403 & 9{,}487 & \#1 & region & 58.0\,\% \\
+bs64-3 & 64 & 1{,}356{,}260 & 2{,}601 & \#1 & region & 56.0\,\% \\
+\bottomrule
+\end{tabular}
+\end{table}

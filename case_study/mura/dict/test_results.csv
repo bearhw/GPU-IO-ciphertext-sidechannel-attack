@@ -1,0 +1,11 @@
+log,rank,block_gpa,hits,max_run,best_range_base,best_range_len,npy_path,status,pred_class,pred_prob,dist_ELBOW,dist_FINGER,dist_FOREARM,dist_HAND,dist_HUMERUS,dist_SHOULDER,dist_WRIST
+mura_host_regB_1,3,0x188200000,2257,73,0x18838a000,73,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_1_rank3.npy,ok,SHOULDER,0.6202,0.0332,0.1156,0.0731,0.0109,0.0911,0.6202,0.0559
+mura_host_regB_1,4,0x175400000,830,198,0x175404000,198,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_1_rank4.npy,ok,FINGER,0.6681,0.0212,0.6681,0.0439,0.0073,0.0867,0.1548,0.0181
+mura_host_regB_2,3,0x1c3800000,407,146,0x1c3818000,146,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_2_rank3.npy,ok,SHOULDER,0.6596,0.0242,0.1200,0.0648,0.0137,0.1023,0.6596,0.0154
+mura_host_regB_2,4,0x1ad200000,1729,30,0x1ad261000,30,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_2_rank4.npy,ok,HUMERUS,0.5784,0.0482,0.1334,0.0523,0.0498,0.5784,0.0815,0.0565
+mura_host_regB_3,3,0x1c3200000,407,202,0x1c3213000,202,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_3_rank3.npy,ok,SHOULDER,0.5377,0.0150,0.2067,0.0613,0.0177,0.0962,0.5377,0.0654
+mura_host_regB_3,4,0x1ad000000,1490,52,0x1ad0ca000,52,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_3_rank4.npy,ok,HUMERUS,0.5798,0.0480,0.1338,0.0520,0.0494,0.5798,0.0803,0.0566
+mura_host_regB_4,3,0x1a6800000,1027,70,0x1a699c000,70,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_4_rank3.npy,ok,HUMERUS,0.5798,0.0480,0.1338,0.0520,0.0494,0.5798,0.0803,0.0566
+mura_host_regB_4,4,0x1b1a00000,549,109,0x1b1ace000,109,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_4_rank4.npy,ok,HUMERUS,0.5849,0.0470,0.1334,0.0512,0.0485,0.5849,0.0787,0.0562
+mura_host_regB_5,3,0x172a00000,1168,58,0x172b80000,58,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_5_rank3.npy,ok,SHOULDER,0.5756,0.0393,0.0987,0.1064,0.0288,0.1103,0.5756,0.0410
+mura_host_regB_5,4,0x174e00000,1140,54,0x174e8a000,54,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_5_rank4.npy,ok,FINGER,0.4878,0.0437,0.4878,0.0761,0.0354,0.1389,0.0079,0.2103

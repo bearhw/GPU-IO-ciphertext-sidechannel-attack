@@ -1,0 +1,4 @@
+drivers/virt/vboxguest/vboxguest.ko
+drivers/virt/nitro_enclaves/nitro_enclaves.ko
+drivers/virt/acrn/acrn.ko
+drivers/virt/coco/sev-guest/sev-guest.ko

@@ -1,0 +1,1642 @@
+timestamp,index,indication,verdict,n_matches,token_idx,label,tok_start,indication_gpa,n_blocks,N_est
+2026-08-16T21:28:09,2,Shortness of breath and fever,MATCH,1,1,ness of,448,0x1a1cafe00,1,396
+2026-08-16T21:28:55,5,Shortness of breath and cough,MULTI_MATCH,2,2;0, Shortness; of breath,718;720,0x1a27a9670;0x1a27a9680,1;1,675
+2026-08-16T21:39:34,9,Respiratory distress. Twin born at 33.1 weeks gestational age.,MATCH,1,9, Respiratory,312,0x1a06a29c0,1,270
+2026-08-16T21:39:52,11,"MVC, complains of chest pain",MATCH,1,6, chest pain,782,0x1a119e870,1,729
+2026-08-16T21:40:10,12,"Coughing, right chest pain",MATCH,1,6, chest pain,352,0x1a1207b00,1,304
+2026-08-16T21:40:28,13,Shortness of breath,NO_MATCH,0,,,,,,594
+2026-08-16T21:40:47,15,"Cough, right-sided chest pain, PICC line not flushing",NO_MATCH,0,,,,,,528
+2026-08-16T21:41:05,17,"Shortness of breath, congestion.",MULTI_MATCH,2,2;0, Shortness; of breath,312;314,0x13b2179c0;0x13b2179d0,1;1,270
+2026-08-16T21:41:23,22,Cough and shortness of breath for 3 days.,NO_MATCH,0,,,,,,600
+2026-08-16T21:41:41,24,Cough and congestion.,MATCH,1,3, Cough,772,0x1a1236820,1,729
+2026-08-16T21:41:59,26,Respiratory failure.,NO_MATCH,0,,,,,,396
+2026-08-16T21:42:18,28,Chest pain.,NO_MATCH,0,,,,,,1178
+2026-08-16T21:42:36,29,Cough. Congestion.,MATCH,1,3, Cough,772,0x1a29be820,1,729
+2026-08-16T21:42:54,31,Prematurity. Respiratory distress.,MATCH,1,9, Respiratory,126,0x1a29de3f0,1,81
+2026-08-16T21:43:13,32,Chest pain and throat pain.,NO_MATCH,0,,,,,,572
+2026-08-16T21:43:31,34,wheezing altered mental status,NO_MATCH,0,,,,,,396
+2026-08-16T21:43:49,36,Fever. Pancreatic cancer,NO_MATCH,0,,,,,,396
+2026-08-16T21:44:07,38,Respiratory failure. Pneumonia.,NO_MATCH,0,,,,,,484
+2026-08-16T21:44:25,39,Acute respiratory failure,NO_MATCH,0,,,,,,594
+2026-08-16T21:44:42,41,Follow up pneumonia and shortness of breath,MATCH,1,1,ness of,352,0x1a25efb00,1,304
+2026-08-16T21:44:45,43,Weakness,NO_MATCH,0,,,,,,750
+2026-08-16T21:45:00,44,Central line placement. Hypertension.,GPA_FAIL,0,,,,,,
+2026-08-16T21:45:15,45,Shortness of breath and cough for 2 weeks,GPA_FAIL,0,,,,,,
+2026-08-16T21:54:47,46,"8 pound weight loss over the past year, 1 month of cough, current smoker. History of COPD and abdominal aortic aneurysm.",MATCH,1,14," cough,",794,0x1a228e8d0,1,729
+2026-08-16T21:55:05,47,PICC line placement.,NO_MATCH,0,,,,,,304
+2026-08-16T21:55:23,50,Recent COVID-19 positive. Hyperglycemia.,NO_MATCH,0,,,,,,525
+2026-08-16T21:55:40,51,Left anterior rib pain and abrasion; hit by tailgate of truck.,NO_MATCH,0,,,,,,304
+2026-08-16T21:55:58,52,"Chest pain, pneumonia.",MATCH,1,7, Chest pain,404,0x1276c1ca0,1,361
+2026-08-16T21:56:17,56,Shortness of breath and chest tightness for 3 weeks.,NO_MATCH,0,,,,,,621
+2026-08-16T21:56:36,61,Fatigue and short of breath.,MATCH,1,24, respiratory failure,746,0x13d937750,1,702
+2026-08-16T21:56:54,62,"Severe shortness of breath, weakness.",MULTI_MATCH,2,1;8,"ness of; breath,",350;352,0x1317fbaf0;0x1317fbb00,1;1,304
+2026-08-16T21:57:13,63,Respiratory failure,NO_MATCH,0,,,,,,594
+2026-08-16T21:57:32,64,"COPD, pneumonia",NO_MATCH,0,,,,,,304
+2026-08-16T21:57:50,65,"Shortness of breath, fever, body aches, unknown COVID status.",MULTI_MATCH,2,2;0, Shortness; of breath,556;558,0x1a24f4160;0x1a24f4170,1;1,513
+2026-08-16T21:58:09,67,Premature neonate. Respiratory distress syndrome. On ventilator. Bilious emesis.,NO_MATCH,0,,,,,,150
+2026-08-16T21:58:28,69,Shortness of breath.,MATCH,1,1,ness of,1214,0x1a3b6b5f0,1,1178
+2026-08-16T21:58:46,70,Left-sided chest pain and shoulder pain. History of hypertension and asthma.,MATCH,1,6, chest pain,774,0x1a3c4e830,1,729
+2026-08-16T21:59:05,78,Back and flank pain. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,352;354,0x1a397fb00;0x1a397fb10,1;1,304
+2026-08-16T21:59:49,79,"Fever, cough, shortness of breath, question pneumonia",MULTI_MATCH,3,11;1;8,", short;ness of; breath,",350;352;354,0x1a39dfaf0;0x1a39dfb00;0x1a39dfb10,1;1;1,304
+2026-08-16T22:19:31,83,"Cough, congestion",NO_MATCH,0,,,,,,648
+2026-08-16T22:19:49,86,"Preop, mediastinal adenopathy, short of breath, smoking history",MATCH,1,8," breath,",358,0x1a3144b30,1,304
+2026-08-16T22:20:08,88,Short of breath.,NO_MATCH,0,,,,,,525
+2026-08-16T22:20:26,92,"57-year-old male with respiratory failure, shortness of breath.",MULTI_MATCH,14,24;28;24;28;24;28;24;28;24;28;24;28;24;28, respiratory failure; catheter; respiratory failure; catheter; respiratory failure; catheter; respiratory failure; catheter; respiratory failure; catheter; respiratory failure; catheter; respiratory failure; catheter,720;720;722;722;724;724;726;726;728;728;730;730;732;732,0x12437c680;0x12437c680;0x12437c690;0x12437c690;0x12437c6a0;0x12437c6a0;0x12437c6b0;0x12437c6b0;0x12437c6c0;0x12437c6c0;0x12437c6d0;0x12437c6d0;0x12437c6e0;0x12437c6e0,1;1;1;1;1;1;1;1;1;1;1;1;1;1,676
+2026-08-16T22:20:45,93,Pneumothorax. Follow-up.,MATCH,1,17, Follow-up,354,0x128ec6b10,1,304
+2026-08-16T22:21:03,96,Cough for 2 weeks.,NO_MATCH,0,,,,,,182
+2026-08-16T22:21:22,97,"History of a spontaneous pneumothorax on the right, some chest pain and cough",MATCH,1,6, chest pain,360,0x13af4bb40,1,304
+2026-08-16T22:21:41,98,Coughing and chest pain.,MULTI_MATCH,2,3;6, Cough; chest pain,772;776,0x1a3204820;0x1a3204840,1;1,729
+2026-08-16T22:21:59,99,Shortness of breath (SOB),MULTI_MATCH,2,2;0, Shortness; of breath,560;562,0x1a329a180;0x1a329a190,1;1,525
+2026-08-16T22:22:45,100,Cough. Congestion. Vomiting. Fever.,NO_MATCH,0,,,,,,270
+2026-08-17T09:48:14,101,Cough and congestion,MATCH,1,3, Cough,780,0x1a80c7860,1,729
+2026-08-17T09:48:32,102,56-year-old male with chest pain status post CABG.,MULTI_MATCH,2,6;21, chest pain; CABG,354;358,0x1a812bb10;0x1a812bb30,1;1,304
+2026-08-17T09:48:50,103,Motor vehicle accident. Chest pain.,NO_MATCH,0,,,,,,702
+2026-08-17T09:49:08,107,Respiratory distress. Pneumonitis.,MATCH,1,9, Respiratory,438,0x1a8250db0,1,396
+2026-08-17T09:49:26,108,Shortness of breath-intubation.,MATCH,1,1,ness of,440,0x1a82cfdc0,1,396
+2026-08-17T09:49:45,109,Mid chest pain.,NO_MATCH,0,,,,,,729
+2026-08-17T09:50:02,112,Short of breath,MATCH,1,0, of breath,436,0x1a8434da0,1,396
+2026-08-17T09:50:20,116,Chest pain and altered mental status. History of lung cancer on the right.,NO_MATCH,0,,,,,,500
+2026-08-17T09:50:38,120,Cough and shortness of breath. Right lower back pain.,MULTI_MATCH,3,10;4;0,ough and; shortness; of breath,638;640;642,0x1a857c3f0;0x1a857c400;0x1a857c410,1;1;1,594
+2026-08-17T09:50:56,121,"Hypertension, diabetes. Dementia. Altered level of consciousness.",MATCH,1,27, Hypert,610,0x1a861e310,1,567
+2026-08-17T09:51:14,125,Acute respiratory failure.,MATCH,1,24, respiratory failure,612,0x1a86c4320,1,567
+2026-08-17T09:51:32,126,Left chest pain,NO_MATCH,0,,,,,,729
+2026-08-17T09:51:50,127,3-year-old female with shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,128;130,0x1a87bf400;0x1a87bf410,1;1,80
+2026-08-17T09:52:08,133,Left chest pain. Patient complains of left sided chest pain for 3 weeks. History of smoking.,NO_MATCH,0,,,,,,525
+2026-08-17T09:52:26,134,Cough and fever for two days. Left lower rib pain.,MATCH,1,10,ough and,348,0x1a88b9ae0,1,304
+2026-08-17T09:52:44,137,Visit reason: Cough,MATCH,1,3, Cough,1216,0x1a9f0d600,1,1178
+2026-08-17T09:53:02,139,PICC line placement,NO_MATCH,0,,,,,,396
+2026-08-17T09:53:20,140,"Chest pain, dizziness, shortness of breath.",MULTI_MATCH,2,11;1,", short;ness of",642;644,0x1aa02e410;0x1aa02e420,1;1,594
+2026-08-17T09:53:38,142,Onset of shortness of breath today in a patient with a history of COPD.,MATCH,1,1,ness of,614,0x1a9da6330,1,567
+2026-08-17T09:53:56,143,"Shortness of breath, smoker.",MULTI_MATCH,2,1;8,"ness of; breath,",440;442,0x1a9e2cdc0;0x1a9e2cdd0,1;1,396
+2026-08-17T09:54:14,148,Generalized weakness. Lethargy. Cough. Current history of bronchiectasis.,MATCH,1,3, Cough,646,0x1a9ece430,1,594
+2026-08-17T09:54:59,149,Shortness of breath and crepitus.,MATCH,1,1,ness of,440,0x1a9b4ddc0,1,396
+2026-08-17T10:28:06,151,"Shortness of breath, and the cardiomegaly and CHF",MULTI_MATCH,2,1;8,"ness of; breath,",524;526,0x1a1102060;0x1a1102070,1;1,480
+2026-08-17T10:28:24,152,Vitreous hemorrhage and traction retinal detachment. Preop workup. Views smoker. Hypertension. Diabetes.,MATCH,1,27, Hypert,366,0x13b5afb70,1,304
+2026-08-17T10:28:42,154,Atrial fibrillation. Decreased oxygen saturations. Short of breath.,NO_MATCH,0,,,,,,396
+2026-08-17T10:29:00,155,Shortness of breath and cough for 1 day,MULTI_MATCH,2,2;0, Shortness; of breath,780;782,0x1a19bc860;0x1a19bc870,1;1,729
+2026-08-17T10:29:18,156,Weakness and unresponsive during dialysis.,MATCH,1,18, Weakness,556,0x1a1a54160,1,513
+2026-08-17T10:29:36,158,Coronary artery disease. Status post CABG.,NO_MATCH,0,,,,,,594
+2026-08-17T10:29:53,160,Increased Weakness today per family member; HTN;,MATCH,1,18, Weakness,572,0x1a1b9f1e0,1,528
+2026-08-17T10:30:12,162,Shortness of breath and weakness.,MATCH,1,1,ness of,620,0x1a1c48360,1,576
+2026-08-17T10:30:14,163,COPD,NO_MATCH,0,,,,,,304
+2026-08-17T10:30:32,165,Pneumonia. Congestion. Shortness of breath.,MATCH,1,1,ness of,356,0x1a1cebb20,1,304
+2026-08-17T10:30:50,167,Right-sided rib pain.,NO_MATCH,0,,,,,,396
+2026-08-17T10:31:08,172,"Cough, wheezing and chest pain for 4 days.",MULTI_MATCH,2,19;6, wheez; chest pain,600;604,0x1a1e162c0;0x1a1e162e0,1;1,546
+2026-08-17T10:31:25,174,"Legs swollen - denies cough, SOB",NO_MATCH,0,,,,,,546
+2026-08-17T10:31:43,176,Shortness of breath. Chest pain. Chronic bronchitis. Reportedly diagnosed with laryngitis on 10/03/10.,MULTI_MATCH,3,1;5;7,ness of; breath.; Chest pain,348;350;352,0x1a1f13ae0;0x1a1f13af0;0x1a1f13b00,1;1;1,304
+2026-08-17T10:32:01,177,Cough and fever 3 days,MATCH,1,3, Cough,312,0x1a1f539c0,1,270
+2026-08-17T10:32:19,179,"Chest pain associated with headache and nausea; history of atrial fibrillation, rest angina, asthma, former smoker.",MATCH,1,7, Chest pain,772,0x1a202c820,1,729
+2026-08-17T10:33:04,180,"Cough, fever",MATCH,1,3, Cough,382,0x1a208ebf0,1,340
+2026-08-17T10:54:47,186,Chest pain; Two views of the chest in frontal and lateral projections are performed.,MATCH,1,7, Chest pain,560,0x1a18d5180,1,525
+2026-08-17T10:55:05,187,Left-sided chest pain post lifting up a heavy object.,MATCH,1,6, chest pain,774,0x1a1d30830,1,729
+2026-08-17T10:55:23,188,Hypertension. Atrial fibrillation. Urinary tract infection,NO_MATCH,0,,,,,,304
+2026-08-17T10:55:41,189,Respiratory failure. NG tube in place.,NO_MATCH,0,,,,,,504
+2026-08-17T10:55:59,191,27-year-old male with left side gunshot wound and pneumothorax. Chest tube.,MULTI_MATCH,6,5;5;5;5;5;5, breath.; breath.; breath.; breath.; breath.; breath.,638;640;644;650;652;654,0x13d8803f0;0x13d880400;0x13d880420;0x13d880450;0x13d880460;0x13d880470,1;1;1;1;1;1,594
+2026-08-17T10:56:17,192,Chest and rib pain after a fall today.,NO_MATCH,0,,,,,,528
+2026-08-17T10:56:35,194,Chest pain and acid reflux.,MATCH,1,7, Chest pain,772,0x1a1d70820,1,729
+2026-08-17T10:56:53,196,"PICC placement, weakness.",NO_MATCH,0,,,,,,304
+2026-08-17T10:57:11,198,"3 y/o F; fever, cough, congestion. Seizure episode.",MATCH,1,14," cough,",306,0x1a1e13990,1,256
+2026-08-17T10:57:29,199,Hypoxia,NO_MATCH,0,,,,,,528
+2026-08-17T10:57:47,200,Hypoxemia,NO_MATCH,0,,,,,,594
+2026-08-17T10:58:04,201,"Six months of nonproductive cough, nonsmoker.",MATCH,1,14," cough,",696,0x1a20445c0,1,648
+2026-08-17T10:58:22,204,Pre dialysis catheter placement; history of hypertension and diabetes and previous tobacco use.,NO_MATCH,0,,,,,,729
+2026-08-17T10:58:40,205,"Short of breath, concern for pneumothorax",MATCH,1,0, of breath,348,0x1a2167ae0,1,304
+2026-08-17T10:58:58,206,Respiratory distress,NO_MATCH,0,,,,,,594
+2026-08-17T10:59:17,207,Shortness of breath. History of COVID-19 positive status,MULTI_MATCH,2,1;22,ness of; COVID-,638;644,0x1a22c63f0;0x1a22c6420,1;1,594
+2026-08-17T10:59:35,211,Central chest pain,NO_MATCH,0,,,,,,729
+2026-08-17T10:59:53,212,Central chest pain and tightness,NO_MATCH,0,,,,,,529
+2026-08-17T11:00:11,213,wheezing,NO_MATCH,0,,,,,,180
+2026-08-17T11:00:29,214,"One week history of chest pain, shortness of breath, and cough; history of tobacco use.",MULTI_MATCH,4,6;11;1;8," chest pain;, short;ness of; breath,",722;724;726;728,0x1a256c690;0x1a256c6a0;0x1a256c6b0;0x1a256c6c0,1;1;1;1,675
+2026-08-17T11:00:47,215,"Chest pain, shortness of breath.",MULTI_MATCH,2,4;0, shortness; of breath,350;352,0x1a25c5af0;0x1a25c5b00,1;1,304
+2026-08-17T11:01:05,216,"Shortness of breath, cough, chest pain",MULTI_MATCH,4,1;8;14;6,"ness of; breath,; cough,; chest pain",638;640;642;644,0x1a26723f0;0x1a2672400;0x1a2672410;0x1a2672420,1;1;1;1,594
+2026-08-17T11:01:23,221,49-year-old male with shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,644;646,0x1a2739420;0x1a2739430,1;1,594
+2026-08-17T11:01:41,224,Intermittent chest pain and shortness of breath for the past 2 months especially with exertion.,MULTI_MATCH,2,6;1, chest pain;ness of,776;780,0x1a2c0f840;0x1a2c0f860,1;1,729
+2026-08-17T11:01:59,228,Intermittent fevers. Cough.,MATCH,1,3, Cough,644,0x1a2cb8420,1,594
+2026-08-17T11:02:17,230,"Cough, wheezing, rapid heart rate",MATCH,1,19, wheez,316,0x1a2cf79e0,1,270
+2026-08-17T11:02:36,233,"Shortness of breath, left lower quadrant pain",MULTI_MATCH,2,2;0, Shortness; of breath,618;620,0x1a2d98350;0x1a2d98360,1;1,567
+2026-08-17T11:02:54,235,Cough/fever.,NO_MATCH,0,,,,,,396
+2026-08-17T11:03:12,238,"Visit reason: Cough 4 days, fever/lll rales",NO_MATCH,0,,,,,,525
+2026-08-17T11:03:29,239,Tracheostomy. Respiratory failure.,MATCH,1,9, Respiratory,598,0x1a2ee12b0,1,550
+2026-08-17T11:03:47,240,"Right pneumothorax, chest tube",MATCH,1,25, pneumoth,638,0x1a2f843f0,1,594
+2026-08-17T11:04:05,245,Cough and dizziness. Recent COVID-19 positive,MULTI_MATCH,2,10;22,ough and; COVID-,550;556,0x1a3003130;0x1a3003160,1;1,506
+2026-08-17T11:04:23,246,"cough, ShoB",NO_MATCH,0,,,,,,396
+2026-08-17T11:04:42,247,Shortness of breath. Fever and chills. History of asthma and sarcoidosis.,MATCH,1,1,ness of,348,0x1a3137ae0,1,304
+2026-08-17T11:05:00,248,Fell. Cough and congestion.,MATCH,1,10,ough and,722,0x1a31f7690,1,676
+2026-08-17T11:05:19,250,"Shortness of breath, history of asthma, diabetes, hypertension",MULTI_MATCH,2,1;8,"ness of; breath,",412;414,0x1a325ece0;0x1a325ecf0,1;1,360
+2026-08-17T11:05:37,251,Chest pain. Shortness of breath. Mental status changes.,MULTI_MATCH,2,2;0, Shortness; of breath,450;452,0x1a32cfe10;0x1a32cfe20,1;1,396
+2026-08-17T11:05:55,252,CABG. Chest pain.,MATCH,1,7, Chest pain,350,0x1a331faf0,1,304
+2026-08-17T11:06:14,256,Shortness of breath. Left chest pain. Left shoulder pain. Cough.,MULTI_MATCH,3,2;0;6, Shortness; of breath; chest pain,772;774;778,0x1a33e9820;0x1a33e9830;0x1a33e9850,1;1;1,729
+2026-08-17T11:06:32,257,Chest pain. Nonsmoker,MATCH,1,7, Chest pain,772,0x1a34c5820,1,729
+2026-08-17T11:06:50,263,Upper back and left posterior rib pain following lifting heavy object,MATCH,1,15, rib pain,490,0x1a3555f50,1,442
+2026-08-17T11:07:08,266,"One month history of productive cough and sinonasal drainage, worsening over the past 1 week. Hypoxemia with oxygen saturation 88%.",NO_MATCH,0,,,,,,528
+2026-08-17T11:07:26,267,Motor vehicle accident yesterday with left anterior rib pain.,NO_MATCH,0,,,,,,729
+2026-08-17T11:07:44,269,Shortness of breath and lower extremity swelling for 1 month.,MATCH,1,1,ness of,348,0x1a3734ae0,1,304
+2026-08-17T11:08:02,272,"Weakness, altered level of consciousness.",NO_MATCH,0,,,,,,304
+2026-08-17T11:08:20,273,Status post CABG for coronary artery disease.,NO_MATCH,0,,,,,,304
+2026-08-17T11:08:37,277,Left lower lobe pneumonia. Failure to thrive. Intubated.,NO_MATCH,0,,,,,,304
+2026-08-17T11:08:55,279,Unstable newborn. Evaluate for pneumothorax,MATCH,1,25, pneumoth,444,0x1a3a9ede0,1,396
+2026-08-17T11:09:12,280,Dyspnea and wheezing.,MATCH,1,19, wheez,302,0x140a98970,1,256
+2026-08-17T11:09:31,281,"Sepsis, concern for pneumonia. Cough and fever.",MULTI_MATCH,2,5;5, breath.; breath.,638;648,0x1a54653f0;0x1a5465440,1;1,594
+2026-08-17T11:09:48,282,Shortness breath. Productive cough.,NO_MATCH,0,,,,,,396
+2026-08-17T11:10:07,285,73-year-old male with cough and shortness of breath.,NO_MATCH,0,,,,,,506
+2026-08-17T11:10:25,287,Right posterior lower rib pain. Cough.,MATCH,1,3, Cough,778,0x1a6922850,1,729
+2026-08-17T11:10:43,288,"Fever, cough and shortness of breath since last night. History of asthma.",NO_MATCH,0,,,,,,550
+2026-08-17T11:11:01,289,History given of body edema and swelling. History of shortness of breath and diabetes and congestive heart failure.,NO_MATCH,0,,,,,,729
+2026-08-17T11:11:19,291,"Cough, short of breath, body aches",MATCH,1,8," breath,",352,0x1a66b0b00,1,304
+2026-08-17T11:11:37,292,Left lower leg cramps and shortness of breath. Left ankle and foot swelling for 2 days. Initial encounter.,NO_MATCH,0,,,,,,648
+2026-08-17T11:11:54,293,"Cough, elevated white blood cell count, congestion",MATCH,1,3, Cough,312,0x1a44299c0,1,270
+2026-08-17T11:12:12,295,Progressive shortness of breath over the past 2 days.,MULTI_MATCH,2,4;0, shortness; of breath,638;640,0x1a6a5d3f0;0x1a6a5d400,1;1,594
+2026-08-17T11:12:30,296,Cough and congestion for 4 days.,MULTI_MATCH,2,5;5, breath.; breath.,544;546,0x1a6b94100;0x1a6b94110,1;1,500
+2026-08-17T11:12:49,297,Respiratory distress.,NO_MATCH,0,,,,,,550
+2026-08-17T11:13:07,298,Pain. Shortness of breath. History of asthma. Smoker,NO_MATCH,0,,,,,,483
+2026-08-17T11:13:24,299,Post CABG,MATCH,1,21, CABG,524,0x1a6f56060,1,480
+2026-08-17T11:13:42,303,"Chest pain, cough, congestion",MATCH,1,7, Chest pain,772,0x1a6cc0820,1,729
+2026-08-17T11:14:00,304,"Shortness of breath, acute respiratory failure, hepatic cirrhosis, current smoker. Intubated patient.",MULTI_MATCH,3,5;5;5, breath.; breath.; breath.,638;640;642,0x1a6eaa3f0;0x1a6eaa400;0x1a6eaa410,1;1;1,594
+2026-08-17T11:14:17,311,"COVID, shortness of breath, back pain",MULTI_MATCH,3,11;1;8,", short;ness of; breath,",504;506;508,0x1a7215fc0;0x1a7215fd0;0x1a7215fe0,1;1;1,460
+2026-08-17T11:14:36,315,Hypoxia. COVID-19 positive.,MULTI_MATCH,2,5;5, breath.; breath.,638;640,0x1a70873f0;0x1a7087400,1;1,594
+2026-08-17T11:14:54,319,"Hypertension, leg weakness",NO_MATCH,0,,,,,,396
+2026-08-17T11:15:11,321,"Injury, fall and landing on the right side, lower right anterior rib pain",MULTI_MATCH,7,5;5;5;5;5;5;5, breath.; breath.; breath.; breath.; breath.; breath.; breath.,718;720;722;724;726;728;730,0x1a7408670;0x1a7408680;0x1a7408690;0x1a74086a0;0x1a74086b0;0x1a74086c0;0x1a74086d0,1;1;1;1;1;1;1,675
+2026-08-17T11:15:30,322,"Short of breath, CHF",MATCH,1,0, of breath,638,0x1a72f83f0,1,594
+2026-08-17T11:15:48,328,Cough and right-sided chest pain since Saturday.,NO_MATCH,0,,,,,,729
+2026-08-17T11:16:06,331,Short of breath and wheezing,MATCH,1,0, of breath,314,0x1a6da59d0,1,270
+2026-08-17T11:16:23,332,"32-year-old female with shortness of breath, cough congestion mid chest pain and fever for 1 week.",MULTI_MATCH,2,1;8,"ness of; breath,",780;782,0x1a6f12860;0x1a6f12870,1;1,729
+2026-08-17T11:16:41,338,Central catheter placement. Hypoxia.,MULTI_MATCH,2,28;29, catheter; Hypox,572;576,0x1a715f1e0;0x1a715f200,1;1,528
+2026-08-17T11:16:59,339,Left-sided chest pain.,NO_MATCH,0,,,,,,729
+2026-08-17T11:17:17,340,High blood sugar. Shortness of breath. Mid chest pain for 2 weeks. History of smoking.,MULTI_MATCH,2,2;0, Shortness; of breath,776;778,0x1a6b9d840;0x1a6b9d850,1;1,729
+2026-08-17T11:17:35,343,Weakness - dialysis patient.,NO_MATCH,0,,,,,,598
+2026-08-17T11:17:53,346,Weakness and congestion.,NO_MATCH,0,,,,,,304
+2026-08-17T11:18:11,347,Right chest pain for the past 1-2 days. Nausea and vomiting since this morning.,NO_MATCH,0,,,,,,625
+2026-08-17T11:18:28,349,"New onset of shortness of breath and mid chest pain last night. History of atypical chest pain, Barrett's esophagus, hypertension, nonsmoker.",NO_MATCH,0,,,,,,572
+2026-08-17T11:18:46,350,Productive cough. Shortness of breath.,MATCH,1,1,ness of,750,0x1a74c2770,1,702
+2026-08-17T11:19:04,353,"Cough and congestion for 3 weeks, no fever",MATCH,1,3, Cough,338,0x1a7513a90,1,288
+2026-08-17T11:19:23,360,Code stroke. Productive cough. Chest congestion.,NO_MATCH,0,,,,,,480
+2026-08-17T11:19:41,362,"Generalized weakness, shortness of breath. History coronary artery disease.",MULTI_MATCH,2,11;1,", short;ness of",350;352,0x1a7603af0;0x1a7603b00,1;1,304
+2026-08-17T11:19:59,363,Status post CABG.,NO_MATCH,0,,,,,,304
+2026-08-17T11:20:17,364,Cough. Tracheostomy.,MATCH,1,3, Cough,664,0x1a770c4c0,1,621
+2026-08-17T11:20:34,376,"Status post motor vehicle collision. Patient with chest pain. Patient intubated. Patient reportedly was walking at the scene of the motor vehicle accident, but collapsed in the emergency department.",NO_MATCH,0,,,,,,396
+2026-08-17T11:20:52,377,Hypoglycemia ; umbilical venous catheter placement,NO_MATCH,0,,,,,,160
+2026-08-17T11:21:09,380,Patient with GI bleed denies dyspnea or chest pain.,NO_MATCH,0,,,,,,729
+2026-08-17T11:21:27,381,Cough. Prostate cancer. Fever. Chills.,MATCH,1,26, Fever.,644,0x1a8129420,1,594
+2026-08-17T11:21:45,382,"Shortness of breath, dyspnea",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1a81da3f0;0x1a81da400,1;1,594
+2026-08-17T11:22:03,384,Weakness. Abnormal lab values. Lung carcinoma.,NO_MATCH,0,,,,,,304
+2026-08-17T11:22:21,385,Intermittent chest pain. COVID positive.,NO_MATCH,0,,,,,,594
+2026-08-17T11:22:38,387,Persistent intermittently productive cough with mid upper chest tightness and shortness of breath on exertion since an episode of flu in March of 2001.,MATCH,1,1,ness of,628,0x1a83893a0,1,572
+2026-08-17T11:22:57,389,Cough and wheezing,MATCH,1,3, Cough,772,0x1a846b820,1,729
+2026-08-17T11:23:15,391,84-year-old female with chest pain.,MATCH,1,6, chest pain,644,0x1a852f420,1,594
+2026-08-17T11:23:33,392,Cough and headache.,MATCH,1,3, Cough,772,0x1a8605820,1,729
+2026-08-17T11:23:51,393,"Shortness of breath, getting worse last few days. History of stroke, CVA, hypertension, diabetes.",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1a86f1820;0x1a86f1830,1;1,729
+2026-08-17T11:24:09,394,Shortness of breath and wheezing.,MULTI_MATCH,2,2;0, Shortness; of breath,438;440,0x1a8746db0;0x1a8746dc0,1;1,396
+2026-08-17T11:24:27,396,"Cough, 6 months duration.",NO_MATCH,0,,,,,,304
+2026-08-17T11:24:45,397,Left rib pain after fall.,NO_MATCH,0,,,,,,729
+2026-08-17T11:25:04,400,"Chest pain and pressure, jaw pain, smoker",NO_MATCH,0,,,,,,304
+2026-08-17T11:25:21,405,Acute onset left chest pain. Shortness of breath. Dry cough. Fatigued. Smoker.,MULTI_MATCH,2,6;1, chest pain;ness of,730;734,0x1a8dbc6d0;0x1a8dbc6f0,1;1,675
+2026-08-17T11:25:39,408,Chest pain. Back pain. Short of breath.,MATCH,1,0, of breath,354,0x1a8e17b10,1,304
+2026-08-17T11:25:57,411,"Nausea, chest pain",NO_MATCH,0,,,,,,304
+2026-08-17T11:26:16,412,Pneumonia. Septic shock. Fall. Respiratory distress.,MATCH,1,9, Respiratory,358,0x1a8ec3b30,1,304
+2026-08-17T11:26:34,413,Right sided chest pain,MATCH,1,6, chest pain,562,0x1a8f60190,1,525
+2026-08-17T11:26:52,414,Chest pain for 1 hour,NO_MATCH,0,,,,,,528
+2026-08-17T11:27:10,415,Post-op. Respiratory distress.,MATCH,1,9, Respiratory,350,0x1a9052af0,1,304
+2026-08-17T11:27:28,416,Fever. Tachycardia. Short of breath.,MATCH,1,0, of breath,556,0x1a90e6160,1,504
+2026-08-17T11:27:46,417,Premature neonate. Respiratory distress.,MATCH,1,9, Respiratory,128,0x1a9107400,1,81
+2026-08-17T11:28:04,418,MVA May 07st. Left mid chest pain.,NO_MATCH,0,,,,,,396
+2026-08-17T11:28:21,419,Chest pain. CABG.,MATCH,1,21, CABG,350,0x1a91eaaf0,1,304
+2026-08-17T11:28:39,425,"74-year-old male, shortness of breath, history of lung carcinoma and pneumonia versus pulmonary edema.",MULTI_MATCH,2,4;0, shortness; of breath,354;356,0x1a9243b10;0x1a9243b20,1;1,304
+2026-08-17T11:28:57,427,"Chest pain. Shortness of breath and dizziness, 4 days duration.",MULTI_MATCH,2,2;0, Shortness; of breath,574;576,0x1a92e71f0;0x1a92e7200,1;1,520
+2026-08-17T11:29:14,430,Acute onset of fever and cough. Initial encounter.,MATCH,1,12, cough.,250,0x1a93197d0,1,195
+2026-08-17T11:29:32,431,Cough. Chest congestion. Shortness of breath.,MATCH,1,1,ness of,354,0x1a936eb10,1,304
+2026-08-17T11:29:50,432,"Worsening cough, congestion",MATCH,1,14," cough,",652,0x1a9430460,1,598
+2026-08-17T11:30:08,436,Respiratory distress in newborn.,MATCH,1,9, Respiratory,138,0x1a9459450,1,96
+2026-08-17T11:30:26,438,"Productive cough, fever",MATCH,1,14," cough,",720,0x1a951a680,1,675
+2026-08-17T11:30:43,440,Follow-up pneumonia. Persistent fever.,MULTI_MATCH,2,17;13, Follow-up; pneumonia.,576;578,0x1a95bf200;0x1a95bf210,1;1,525
+2026-08-17T11:31:01,442,Cough for 6 months.,NO_MATCH,0,,,,,,594
+2026-08-17T11:31:19,443,Cough for 1 week. Smoker.,MATCH,1,3, Cough,772,0x1a9756820,1,729
+2026-08-17T11:31:37,444,Chest pain for three days.,NO_MATCH,0,,,,,,624
+2026-08-17T11:31:55,446,"Shortness of breath, bilateral ovarian carcinoma currently undergoing chemotherapy, former smoking history",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1a9905820;0x1a9905830,1;1,729
+2026-08-17T11:32:12,449,Cough and gagging.,NO_MATCH,0,,,,,,396
+2026-08-17T11:32:30,453,Shortness of breath status post fall.,MATCH,1,1,ness of,1222,0x1aaf97630,1,1178
+2026-08-17T11:32:48,454,86-year-old male intubated. Acute respiratory failure. Cerebral infarct status post revascularization. Initial encounter.,NO_MATCH,0,,,,,,594
+2026-08-17T11:33:06,455,Cough for 2 days.,NO_MATCH,0,,,,,,304
+2026-08-17T11:33:25,456,Left upper chest pain with shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,444;446,0x1aaddbde0;0x1aaddbdf0,1;1,396
+2026-08-17T11:33:43,457,Visit reason: Cough;,MATCH,1,3, Cough,584,0x1aae51240,1,546
+2026-08-17T11:34:02,459,Hypertension.,NO_MATCH,0,,,,,,462
+2026-08-17T11:34:20,461,shortness of breath,MATCH,1,1,ness of,440,0x1aaf5bdc0,1,396
+2026-08-17T11:34:38,464,Left rib pain,MATCH,1,15, rib pain,638,0x1aac293f0,1,594
+2026-08-17T11:34:55,466,Right lateral rib pain for several days.,MATCH,1,15, rib pain,774,0x1aad00830,1,729
+2026-08-17T11:35:13,471,"Cough, short of breath, pre cardiac catheterization",MULTI_MATCH,2,8;28," breath,; catheter",352;356,0x1aad60b00;0x1aad60b20,1;1,304
+2026-08-17T11:35:31,473,Patient with cough. Respiratory failure.,NO_MATCH,0,,,,,,594
+2026-08-17T11:35:49,474,Shortness of breath and chest congestion.,MATCH,1,1,ness of,348,0x1aaa6cae0,1,304
+2026-08-17T11:36:07,475,Initial evaluation for wheezing. History of asthma and recent pneumonia.,MATCH,1,19, wheez,582,0x1aab16230,1,528
+2026-08-17T11:36:25,476,Follow-up right-sided thoracentesis.,NO_MATCH,0,,,,,,550
+2026-08-17T11:36:43,481,"Status post CABG, follow-up",MATCH,1,21, CABG,774,0x1aa8a5830,1,729
+2026-08-17T11:37:01,482,Progressively worsening weakness. Cough and fever since yesterday. Ex-smoker.,MATCH,1,10,ough and,574,0x1aa93e1f0,1,525
+2026-08-17T11:37:19,484,"Cough fever. Cough since Tuesday, Flu test negative, Covid last Jan.",MULTI_MATCH,3,3;23;3, Cough; fever.; Cough,568;570;572,0x1aa5ee1c0;0x1aa5ee1d0;0x1aa5ee1e0,1;1;1,525
+2026-08-17T11:37:37,488,Smoking history. Respiratory clearance.,MATCH,1,9, Respiratory,350,0x1aa647af0,1,304
+2026-08-17T11:37:55,489,Hypertension for 1 day.,NO_MATCH,0,,,,,,702
+2026-08-17T11:38:12,494,Chest pain. History of pericarditis.,MATCH,1,7, Chest pain,772,0x1aa400820,1,729
+2026-08-17T11:38:30,497,"53-year-old male with 1 week history of shortness of breath, cough and chest pain",NO_MATCH,0,,,,,,729
+2026-08-17T11:38:48,498,"53-year-old male, chest pain status post VATS.",MATCH,1,6, chest pain,354,0x1aa318b10,1,304
+2026-08-17T11:39:06,502,"Left anterior chest pain for about 3 months, smoker.",MATCH,1,6, chest pain,774,0x1a9ff8830,1,729
+2026-08-17T11:39:25,507,Chest pain after trauma,NO_MATCH,0,,,,,,572
+2026-08-17T11:39:42,512,Acute chest pain after motorcycle accident.,MATCH,1,6, chest pain,774,0x1a9ed0830,1,729
+2026-08-17T11:40:00,514,"Fever, cough, congestion",MATCH,1,14," cough,",300,0x1a9f0a960,1,256
+2026-08-17T11:40:18,516,"Wheezing, cough and shortness of breath for the past 2 days.",MULTI_MATCH,2,4;0, shortness; of breath,786;788,0x1a9bdc890;0x1a9bdc8a0,1;1,729
+2026-08-17T11:40:36,517,"Cough, chest congestion for 3 weeks",NO_MATCH,0,,,,,,399
+2026-08-17T11:40:54,518,Increased shortness of breath. Body aches. COVID-19 positive yesterday.,MULTI_MATCH,2,4;0, shortness; of breath,448;450,0x1a9cbfe00;0x1a9cbfe10,1;1,396
+2026-08-17T11:41:12,522,Postop CABG.,NO_MATCH,0,,,,,,480
+2026-08-17T11:41:29,523,Cough and congestion for couple weeks. Nonsmoker.,MATCH,1,10,ough and,348,0x1a9d9fae0,1,304
+2026-08-17T11:41:47,526,Cough and congestion for 1 week.,MATCH,1,3, Cough,438,0x1ab10ddb0,1,396
+2026-08-17T11:42:06,528,"59-year-old female, obesity, shortness of breath.",MULTI_MATCH,2,4;0, shortness; of breath,356;358,0x1ab155b20;0x1ab155b30,1;1,304
+2026-08-17T11:42:24,529,27 y/o M; motor vehicle collision with anterior chest pain.,MATCH,1,6, chest pain,790,0x1ab2378b0,1,729
+2026-08-17T11:42:41,530,Tachycardia and shortness of breath beginning last night. Chest pain.,MATCH,1,1,ness of,644,0x1ab2e6420,1,594
+2026-08-17T11:42:59,533,Coughing shortness of breath and asthma,MULTI_MATCH,2,4;0, shortness; of breath,350;352,0x1ab31faf0;0x1ab31fb00,1;1,304
+2026-08-17T11:43:17,534,46-year-old male with COVID and acute shortness of breath.,MATCH,1,1,ness of,648,0x1ab3d4440,1,594
+2026-08-17T11:43:35,535,"Acute respiratory failure, COPD, diabetes mellitus, CHF, COVID-19",MULTI_MATCH,2,16;22, COPD; COVID-,642;652,0x1ac485410;0x1ac485460,1;1,594
+2026-08-17T11:43:53,536,Weakness for several days. Near syncope today.,MATCH,1,18, Weakness,610,0x1ac532310,1,567
+2026-08-17T11:44:10,539,Hypoxia. Fatigue.,NO_MATCH,0,,,,,,594
+2026-08-17T11:44:29,542,Cough and shortness of breath,MULTI_MATCH,3,10;4;0,ough and; shortness; of breath,638;640;642,0x1ac68a3f0;0x1ac68a400;0x1ac68a410,1;1;1,594
+2026-08-17T11:44:47,544,Level II trauma with substernal chest pain.,NO_MATCH,0,,,,,,304
+2026-08-17T11:45:04,545,Cough for 3 weeks. Wheezing. Congestion.,NO_MATCH,0,,,,,,256
+2026-08-17T11:45:22,546,Pneumonia. Respiratory failure.,MATCH,1,9, Respiratory,598,0x1ac7ad2b0,1,550
+2026-08-17T11:45:40,547,Short of breath and weakness.,MATCH,1,0, of breath,440,0x1ac833dc0,1,396
+2026-08-17T11:45:58,553,Trach replacement. Bleeding at stoma. Tachycardia and shortness of breath.,MATCH,1,1,ness of,364,0x1ac890b60,1,304
+2026-08-17T11:46:16,556,Cough and shortness of breath.,MULTI_MATCH,3,10;4;0,ough and; shortness; of breath,572;574;576,0x1ac92e1e0;0x1ac92e1f0;0x1ac92e200,1;1;1,528
+2026-08-17T11:46:33,559,Cough fever,MATCH,1,3, Cough,560,0x1ac9bf180,1,525
+2026-08-17T11:46:51,560,Fever. Hypoxia.,NO_MATCH,0,,,,,,304
+2026-08-17T11:47:09,563,"Spontaneous pneumothorax, follow-up",MATCH,1,25, pneumoth,350,0x1aca70af0,1,304
+2026-08-17T11:47:27,564,"Cough, shortness of breath.",MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1acb1b400;0x1acb1b410,1;1,594
+2026-08-17T11:47:45,568,"CABG, cough. Monitor.",MATCH,1,12, cough.,350,0x1acb76af0,1,304
+2026-08-17T11:48:04,569,Three-week history weakness. Hypoxia.,MATCH,1,29, Hypox,620,0x1acc20360,1,572
+2026-08-17T11:48:22,570,Preoperative study prior to CABG and aortic valve replacement,NO_MATCH,0,,,,,,729
+2026-08-17T11:48:40,571,"Two-day history of mid and right-sided chest pain, shortness of breath and productive cough. Current history of asthma.",MULTI_MATCH,3,4;0;12, shortness; of breath; cough.,730;732;736,0x1acdd56d0;0x1acdd56e0;0x1acdd5700,1;1;1,676
+2026-08-17T11:48:58,576,Shortness of breath. Hypoxia,MULTI_MATCH,2,2;0, Shortness; of breath,186;188,0x1ace085d0;0x1ace085e0,1;1,144
+2026-08-17T11:49:16,577,"40-year-old female with cough, congestion, fever, chest pain and shortness of breath.",MULTI_MATCH,2,4;0, shortness; of breath,634;636,0x1acebd3d0;0x1acebd3e0,1;1,575
+2026-08-17T11:49:33,578,Difficulty breathing. Shortness of breath.,MATCH,1,1,ness of,776,0x1acf93840,1,729
+2026-08-17T11:49:51,584,Fell. Chest pain.,MATCH,1,7, Chest pain,774,0x1ad077830,1,729
+2026-08-17T11:50:09,587,82-year-old female with COPD and history of hypertension. Difficulty breathing. Initial encounter.,MATCH,1,16, COPD,752,0x1ad15f780,1,702
+2026-08-17T11:50:27,590,Substernal chest pain,NO_MATCH,0,,,,,,621
+2026-08-17T11:50:45,591,Follow up effusions and pneumonia. Ventilator dependent respiratory failure.,MULTI_MATCH,2,13;24, pneumonia.; respiratory failure,352;358,0x1ad255b00;0x1ad255b30,1;1,304
+2026-08-17T11:51:03,593,Cough and fever since yesterday.,MATCH,1,3, Cough,224,0x1ad295700,1,182
+2026-08-17T11:51:21,594,Anterior chest pain,NO_MATCH,0,,,,,,572
+2026-08-17T11:51:38,595,Follow-up post intubation,MATCH,1,17, Follow-up,568,0x1ad3eb1c0,1,525
+2026-08-17T11:51:56,596,Shortness of breath. Weakness,MULTI_MATCH,2,1;18,ness of; Weakness,638;642,0x1ad8993f0;0x1ad899410,1;1,594
+2026-08-17T11:52:14,597,Fall with chest pain,NO_MATCH,0,,,,,,506
+2026-08-17T11:52:31,602,Shortness of Breath/Dyspnea. Surgery 5 days ago.,MATCH,1,1,ness of,794,0x1ad9fd8d0,1,750
+2026-08-17T11:52:49,603,Weakness. History of pneumonia.,NO_MATCH,0,,,,,,594
+2026-08-17T11:53:07,604,Meconium aspiration. Hypoxia.,NO_MATCH,0,,,,,,144
+2026-08-17T11:53:25,605,"Weakness, rectal bleeding.",NO_MATCH,0,,,,,,594
+2026-08-17T11:53:44,607,"Cough and congestion and fever for 1 month, initial encounter",MATCH,1,10,ough and,638,0x1adc383f0,1,594
+2026-08-17T11:54:02,608,"Drug overdose, shortness of breath",MULTI_MATCH,2,11;1,", short;ness of",774;776,0x1add24830;0x1add24840,1;1,729
+2026-08-17T11:54:20,609,Respiratory failure and atelectasis.,NO_MATCH,0,,,,,,594
+2026-08-17T11:54:38,612,Increasing shortness of breath for 2 weeks. Swelling. Wheezing.,MULTI_MATCH,2,4;0, shortness; of breath,616;618,0x1ade74340;0x1ade74350,1;1,572
+2026-08-17T11:54:55,623,Right-sided rib pain. Football injury.,MATCH,1,15, rib pain,774,0x1adf5f830,1,729
+2026-08-17T11:55:13,625,Respiratory failure. Shortness of breath.,MATCH,1,1,ness of,642,0x1ae410410,1,594
+2026-08-17T11:55:31,627,"Cough, shortness of breath, left-sided chest pain. Positive COVID test 10 days ago.",MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1ae4c1400;0x1ae4c1410,1;1,594
+2026-08-17T11:55:49,628,Right pneumothorax,NO_MATCH,0,,,,,,396
+2026-08-17T11:56:07,631,MI. Ventilator dependent respiratory failure. Intra-aortic balloon pump. Possible aspiration.,NO_MATCH,0,,,,,,304
+2026-08-17T11:56:24,635,Chest pain. Recent common bile duct extraction. Anemia.,MATCH,1,7, Chest pain,560,0x1ae5f5180,1,525
+2026-08-17T11:56:42,637,Cough and chest pain.,MULTI_MATCH,2,10;6,ough and; chest pain,596;598,0x1ae6a52a0;0x1ae6a52b0,1;1,552
+2026-08-17T11:57:01,641,Palpitations today with shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,352;354,0x1ae6fbb00;0x1ae6fbb10,1;1,304
+2026-08-17T11:57:19,644,"Shortness of breath, dementia",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1ae7ab3f0;0x1ae7ab400,1;1,594
+2026-08-17T11:57:36,649,Chest pain and hypertension,NO_MATCH,0,,,,,,342
+2026-08-17T11:57:54,650,Shortness of breath. Asthma.,MATCH,1,1,ness of,348,0x1ae869ae0,1,304
+2026-08-17T11:58:13,651,"41-year-old male with shortness of breath for 2 weeks, worsening today. Initial encounter.",MULTI_MATCH,2,4;0, shortness; of breath,644;646,0x1ae92f420;0x1ae92f430,1;1,594
+2026-08-17T11:58:31,653,Severe shortness of breath. COPD. Congestive heart failure.,MULTI_MATCH,2,1;16,ness of; COPD,350;354,0x1ae97caf0;0x1ae97cb10,1;1,304
+2026-08-17T11:58:49,657,Five day history of shortness of breath. 1-2 month history of cough,MATCH,1,1,ness of,444,0x1ae9eede0,1,396
+2026-08-17T11:59:07,660,Short of breath. Fever. Chest pressure.,MATCH,1,0, of breath,348,0x1aea46ae0,1,304
+2026-08-17T11:59:25,662,Respiratory failure. Follow-up LEFT basilar atelectasis.,NO_MATCH,0,,,,,,594
+2026-08-17T11:59:43,663,Umbilical catheter placements,NO_MATCH,0,,,,,,396
+2026-08-17T12:00:01,664,"Left anterior rib pain, recent fall",NO_MATCH,0,,,,,,550
+2026-08-17T12:00:19,665,Leg pain. Hypertension.,MATCH,1,27, Hypert,526,0x1aec58070,1,480
+2026-08-17T12:00:37,666,Shortness of breath. Chest pain. Hypertension. Two weeks postpartum from C-section delivery.,MULTI_MATCH,2,1;7,ness of; Chest pain,348;352,0x1aecb6ae0;0x1aecb6b00,1;1,304
+2026-08-17T12:00:55,672,Central catheter placement,MATCH,1,28, catheter,638,0x1aed643f0,1,594
+2026-08-17T12:01:13,675,Mild shortness-of-breath with productive cough 6 months. History of smoking. Quit 25 years ago.,NO_MATCH,0,,,,,,729
+2026-08-17T12:01:46,677,"Respiratory distress, pneumonia, endotracheal tube.",NO_MATCH,0,,,,,,460
+2026-08-17T12:02:04,679,58-year-old male with history of pneumonia from COVID-19 infection.,MATCH,1,22, COVID-,1006,0x1af98cf70,1,952
+2026-08-17T12:02:22,680,New onset chest pain.,MATCH,1,6, chest pain,774,0x1afa7b830,1,729
+2026-08-17T12:02:39,682,Left-sided chest pain. Nonsmoker.,NO_MATCH,0,,,,,,624
+2026-08-17T12:02:57,685,Right rib pain.,MATCH,1,15, rib pain,638,0x1afbf23f0,1,594
+2026-08-17T12:03:14,686,Chest pain. Chest pressure. Short of breath. Right arm pain. History of CABG.,MATCH,1,0, of breath,354,0x1afc4bb10,1,304
+2026-08-17T12:03:32,692,"Shortness of breath, fever",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1afcf33f0;0x1afcf3400,1;1,594
+2026-08-17T12:03:49,695,"Left-sided chest pain, shortness of breath.",MULTI_MATCH,3,6;11;1," chest pain;, short;ness of",720;722;724,0x1afdb4680;0x1afdb4690;0x1afdb46a0,1;1;1,675
+2026-08-17T12:04:07,696,PICC placement,NO_MATCH,0,,,,,,304
+2026-08-17T12:04:25,697,"Respiratory distress, cough and GI bleed.",NO_MATCH,0,,,,,,304
+2026-08-17T12:04:43,698,Chest pain. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,526;528,0x1afeeb070;0x1afeeb080,1;1,480
+2026-08-17T12:05:02,700,Chest pain. Shortness of breath. History of sarcoidosis.,MULTI_MATCH,2,2;0, Shortness; of breath,530;532,0x1aff7d090;0x1aff7d0a0,1;1,484
+2026-08-17T12:05:20,703,Weakness. Hiccups.,MATCH,1,18, Weakness,664,0x1b00524c0,1,621
+2026-08-17T12:05:38,705,"Gradual worsening, weakness over 2 weeks. History of CLL. Fever, cough, confusion over last few days.",MATCH,1,14," cough,",788,0x1b01298a0,1,729
+2026-08-17T12:05:57,708,Follow-up for pneumonia.,NO_MATCH,0,,,,,,594
+2026-08-17T12:06:16,711,Hypoxemia.,NO_MATCH,0,,,,,,304
+2026-08-17T12:06:34,713,"CABG, postop day #1",NO_MATCH,0,,,,,,480
+2026-08-17T12:07:08,714,Shortness of breath for 1 week. Productive cough.,MATCH,1,1,ness of,504,0x1b033dfc0,1,460
+2026-08-17T12:07:26,717,Hypoxia. Question pneumonia.,NO_MATCH,0,,,,,,304
+2026-08-17T12:07:44,718,Microscopic polyangiitis. Bilateral lower extremity swelling. Hypertension.,MATCH,1,27, Hypert,476,0x1b0419ee0,1,420
+2026-08-17T12:08:02,719,"Shortness of breath, Covid-19 positive.",MULTI_MATCH,2,2;0, Shortness; of breath,664;666,0x1b04c54c0;0x1b04c54d0,1;1,621
+2026-08-17T12:08:19,720,Shortness of breath. Mild chest discomfort.,MATCH,1,1,ness of,638,0x1b05733f0,1,594
+2026-08-17T12:08:38,727,Cough and weakness,MATCH,1,3, Cough,484,0x1b05edf20,1,441
+2026-08-17T12:08:56,728,13 weeks old male; 4 days of cough. Low-grade fever.,MATCH,1,12, cough.,210,0x1b061d690,1,156
+2026-08-17T12:09:14,731,Severe shortness of breath. Fibrosis.,NO_MATCH,0,,,,,,480
+2026-08-17T12:09:47,732,"Right-sided chest pain, short of breath, cough, former smoker",MULTI_MATCH,2,8;14," breath,; cough,",510;512,0x1b0713ff0;0x1b0714000,1;1,460
+2026-08-17T12:10:05,734,Left rib pain. Possible mass.,NO_MATCH,0,,,,,,729
+2026-08-17T12:10:23,735,Renal failure. Diatek catheter placement.,MATCH,1,28, catheter,354,0x1b084db10,1,304
+2026-08-17T12:10:40,738,"Wheezing, cough, chest pain",MULTI_MATCH,2,14;6," cough,; chest pain",302;304,0x1b0896970;0x1b0896980,1;1,256
+2026-08-17T12:10:58,739,Fever and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,670;672,0x1b09604f0;0x1b0960500,1;1,625
+2026-08-17T12:11:16,740,Shortness of breath. Wheezing.,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b0a42820;0x1b0a42830,1;1,729
+2026-08-17T12:11:34,741,Cough and chest tightness for 2 weeks,MATCH,1,3, Cough,772,0x1b0b2a820,1,729
+2026-08-17T12:11:52,742,Shortness of breath and leg swelling.,MATCH,1,1,ness of,638,0x1b0bda3f0,1,594
+2026-08-17T12:12:10,748,COVID-19 positive. Shortness of breath,MATCH,1,1,ness of,644,0x1b0c7a420,1,594
+2026-08-17T12:12:28,750,Follow-up CABG.,MULTI_MATCH,2,17;21, Follow-up; CABG,772;774,0x1b0d54820;0x1b0d54830,1;1,729
+2026-08-17T12:12:46,755,Chest pain. Onset of symptoms at 7846 hr today.,MATCH,1,7, Chest pain,772,0x1b0e3b820,1,729
+2026-08-17T12:13:03,758,"Hypoxia, acute respiratory failure.",MATCH,1,24, respiratory failure,576,0x1b0ed2200,1,528
+2026-08-17T12:13:21,760,Shortness of breath. Hypertension. Alcohol dependence.,MULTI_MATCH,2,1;27,ness of; Hypert,388;392,0x1b0f2ec20;0x1b0f2ec40,1;1,336
+2026-08-17T12:13:38,763,"83-year-old female with history of shortness of breath for the past 2 weeks, worsening on exertion. History of bronchiectasis.",MULTI_MATCH,2,4;0, shortness; of breath,532;534,0x1b0fbf0a0;0x1b0fbf0b0,1;1,480
+2026-08-17T12:13:56,764,Shortness of breath with lower extremity edema,MATCH,1,1,ness of,638,0x1b146e3f0,1,594
+2026-08-17T12:14:14,767,Bilateral pneumothorax.,NO_MATCH,0,,,,,,594
+2026-08-17T12:14:32,768,Pain and weakness and shortness of breath. Left hand numbness.,MATCH,1,1,ness of,352,0x1b1578b00,1,304
+2026-08-17T12:14:50,770,"Preoperative study prior to video-assisted thoracostomy in wedge resection on the right, history of COPD and right upper lung mass, current smoker.",NO_MATCH,0,,,,,,576
+2026-08-17T12:15:08,773,left-sided chest pain,NO_MATCH,0,,,,,,304
+2026-08-17T12:15:26,774,"Shortness of breath, cold sweats, overheating, chest tightness; history of gastroesophageal reflux",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b176f820;0x1b176f830,1;1,729
+2026-08-17T12:15:44,775,Persistent cough. Had COVID in Muaythai. Patient complains of cough and dyspnea with exertion. History of open heart surgery in 8610.,MATCH,1,12, cough.,348,0x1b17c7ae0,1,304
+2026-08-17T12:16:02,777,"Pulmonary edema, shortness of breath, history of shortness of breath, sarcoidosis, chronic kidney disease, COPD, pulmonary hypertension",MULTI_MATCH,5,4;0;1;8;16," shortness; of breath;ness of; breath,; COPD",400;402;408;410;420,0x1b1825c80;0x1b1825c90;0x1b1825cc0;0x1b1825cd0;0x1b1825d20,1;1;1;1;1,352
+2026-08-17T12:16:04,778,CABG,NO_MATCH,0,,,,,,480
+2026-08-17T12:16:22,779,Cough and right-sided chest pain for the past 2 days. Nonsmoker.,MULTI_MATCH,2,10;6,ough and; chest pain,638;642,0x1b19503f0;0x1b1950410,1;1,594
+2026-08-17T12:16:40,782,Abdominal pain. PICC placement.,MATCH,1,20, PICC,352,0x1b19a1b00,1,304
+2026-08-17T12:16:58,783,Left PICC line placement.,MATCH,1,20, PICC,616,0x1b1a48340,1,572
+2026-08-17T12:17:16,784,Diabetes. Hypertension. Fracture left facial bone.,NO_MATCH,0,,,,,,304
+2026-08-17T12:17:34,785,"Productive cough, body aches, fever",NO_MATCH,0,,,,,,540
+2026-08-17T12:17:52,787,Lethargy. Weakness.,MATCH,1,18, Weakness,642,0x1b1beb410,1,594
+2026-08-17T12:18:10,790,"Weakness, cough and congestion. Smoker.",NO_MATCH,0,,,,,,702
+2026-08-17T12:18:28,792,3rd degree heart block. Shortness of breath. Lung cancer.,MULTI_MATCH,2,2;0, Shortness; of breath,600;602,0x1b1d582c0;0x1b1d582d0,1;1,550
+2026-08-17T12:18:46,793,Syncopal episode. History of CHF and COPD.,MATCH,1,16, COPD,558,0x1b1def170,1,506
+2026-08-17T12:19:03,794,65 y/o M; shortness of breath and chest tightness. Status post radiation therapy on chemo for lung cancer.,NO_MATCH,0,,,,,,702
+2026-08-17T12:19:21,795,"Decreased level of consciousness, shortness of breath",MULTI_MATCH,2,11;1,", short;ness of",352;354,0x1d1cf1b00;0x1d1cf1b10,1;1,304
+2026-08-17T12:19:39,797,Shortness of breath and renal failure.,NO_MATCH,0,,,,,,480
+2026-08-17T12:19:57,798,Cough and weakness.,NO_MATCH,0,,,,,,594
+2026-08-17T12:20:15,802,"Two weeks of cough, wheezing, and fatigue. Onset of fever 2 days ago.",NO_MATCH,0,,,,,,552
+2026-08-17T12:20:32,804,68-year-old male with pleural effusion. Status post thoracentesis. Patient presenting with chest pain since the procedure.,NO_MATCH,0,,,,,,594
+2026-08-17T12:20:50,806,"Productive cough for 2 days, weakness, mid chest pain off and on for a few days, smoker",NO_MATCH,0,,,,,,729
+2026-08-17T12:21:08,807,Aortic stenosis. CABG.,NO_MATCH,0,,,,,,304
+2026-08-17T12:21:26,808,62 y/o F; productive cough and wheezing for 1 week.,MULTI_MATCH,8,5;5;5;5;5;5;5;5, breath.; breath.; breath.; breath.; breath.; breath.; breath.; breath.,590;592;594;596;598;600;602;604,0x1b8aed270;0x1b8aed280;0x1b8aed290;0x1b8aed2a0;0x1b8aed2b0;0x1b8aed2c0;0x1b8aed2d0;0x1b8aed2e0,1;1;1;1;1;1;1;1,546
+2026-08-17T12:21:44,809,"Shortness of breath, fever.",MULTI_MATCH,2,1;8,"ness of; breath,",484;486,0x1b402bf20;0x1b402bf30,1;1,440
+2026-08-17T12:22:02,810,"Cough, congestion.",NO_MATCH,0,,,,,,304
+2026-08-17T12:22:19,813,Weakness. Cough.,NO_MATCH,0,,,,,,729
+2026-08-17T12:22:37,814,Shortness of breath. History of diastolic heart failure.,MULTI_MATCH,6,5;5;5;5;5;5, breath.; breath.; breath.; breath.; breath.; breath.,638;640;642;644;646;648,0x1b8eda3f0;0x1b8eda400;0x1b8eda410;0x1b8eda420;0x1b8eda430;0x1b8eda440,1;1;1;1;1;1,594
+2026-08-17T12:22:55,818,Chest pain and dyspnea,NO_MATCH,0,,,,,,594
+2026-08-17T12:23:13,821,Persistent productive cough and wheezing after 6 days of prednisone treatment.,MATCH,1,5, breath.,652,0x1c3449460,1,594
+2026-08-17T12:23:31,822,Premature newborn. RDS. Status post umbilical catheter repositioning.,MATCH,1,28, catheter,324,0x1ba5f0a20,1,270
+2026-08-17T12:23:49,824,Shortness of breath. Extremity swelling and Kidney disease.,MATCH,1,1,ness of,448,0x1c89dbe00,1,396
+2026-08-17T12:24:07,827,Diatek catheter placement.,MATCH,1,28, catheter,350,0x1cbfe9af0,1,304
+2026-08-17T12:24:24,832,"Cough, congestion, and fever.",NO_MATCH,0,,,,,,195
+2026-08-17T12:24:42,833,"Cough, fever and congestion.",NO_MATCH,0,,,,,,323
+2026-08-17T12:25:00,837,Shortness of breath. Morbid obesity.,MATCH,1,1,ness of,348,0x1cd0a2ae0,1,304
+2026-08-17T12:25:18,839,Short of breath. Cough. Wheezing.,MATCH,1,3, Cough,406,0x1ccd4ecb0,1,360
+2026-08-17T12:25:35,841,COPD. Dysrhythmia.,NO_MATCH,0,,,,,,304
+2026-08-17T12:25:53,845,63-year-old female with a history of shortness of breath and abdominal pain,NO_MATCH,0,,,,,,594
+2026-08-17T12:26:11,846,Worsening shortness of breath following home dialysis. Known lung masses.,NO_MATCH,0,,,,,,484
+2026-08-17T12:26:29,848,Right lower rib pain after lifting something heavy at work 1 hour ago,MULTI_MATCH,2,5;5, breath.; breath.,748;754,0x1cbd1c760;0x1cbd1c790,1;1,702
+2026-08-17T12:26:47,849,Shortness of breath COVID positive,MATCH,1,5, breath.,640,0x1cd755400,1,594
+2026-08-17T12:27:05,850,Shortness of breath ascites abdominal pain,NO_MATCH,0,,,,,,546
+2026-08-17T12:27:22,859,Cough and short of breath,MATCH,1,10,ough and,638,0x1ccb333f0,1,594
+2026-08-17T12:27:40,861,"Left-sided chest pain, shortness of breath",NO_MATCH,0,,,,,,625
+2026-08-17T12:27:58,862,76-year-old male with shortness of breath and respiratory distress.,MULTI_MATCH,2,4;0, shortness; of breath,354;356,0x1cd548b10;0x1cd548b20,1;1,304
+2026-08-17T12:28:15,865,"Chest pain, sore throat, cough and back pain. Tachycardia. Weakness.",NO_MATCH,0,,,,,,575
+2026-08-17T12:28:33,867,Right chest pain. No known injury.,NO_MATCH,0,,,,,,729
+2026-08-17T12:28:51,868,69-hour-old male peripheral central venous catheter placement.,MATCH,1,28, catheter,448,0x1cca9be00,1,396
+2026-08-17T12:29:09,870,short of breath,NO_MATCH,0,,,,,,540
+2026-08-17T12:29:26,872,Chest pain and shortness of breath with exertion,NO_MATCH,0,,,,,,729
+2026-08-17T12:29:44,873,"Cough probable COVID, COVID exposure",NO_MATCH,0,,,,,,304
+2026-08-17T12:30:02,874,"Shortness of breath, post renal stent placement",MULTI_MATCH,4,5;5;5;5, breath.; breath.; breath.; breath.,664;666;670;672,0x1ccc934c0;0x1ccc934d0;0x1ccc934f0;0x1ccc93500,1;1;1;1,621
+2026-08-17T12:30:20,877,"Short of breath, hot flashes.",MATCH,1,0, of breath,348,0x1cbd1dae0,1,304
+2026-08-17T12:30:38,878,"CLL, chest pain",NO_MATCH,0,,,,,,304
+2026-08-17T12:30:56,880,Shortness of breath. Possible PICC line infection. On antibiotics.,NO_MATCH,0,,,,,,729
+2026-08-17T12:31:13,881,Dyspnea with separate gating sensation and chest pain.,NO_MATCH,0,,,,,,729
+2026-08-17T12:31:31,886,Possible pneumothorax.,NO_MATCH,0,,,,,,480
+2026-08-17T12:31:49,895,Short of breath and hemoptysis for 2 weeks,MULTI_MATCH,3,5;5;5, breath.; breath.; breath.,772;776;778,0x1b756f820;0x1b756f840;0x1b756f850,1;1;1,729
+2026-08-17T12:32:07,897,"Fever, cough, and congestion.",MATCH,1,14," cough,",314,0x1b6eff9d0,1,270
+2026-08-17T12:32:25,904,MVC yesterday. Restrained driver. Chest pain with deep inspiration.,MULTI_MATCH,4,5;5;5;5, breath.; breath.; breath.; breath.,692;694;698;700,0x1c633f5a0;0x1c633f5b0;0x1c633f5d0;0x1c633f5e0,1;1;1;1,648
+2026-08-17T12:32:43,907,"Mid back pain, chest pain, sudden onset today",NO_MATCH,0,,,,,,525
+2026-08-17T12:33:01,910,Productive cough and wheezing,NO_MATCH,0,,,,,,594
+2026-08-17T12:33:19,911,Shortness of breath. Respiratory distress.,MULTI_MATCH,2,1;9,ness of; Respiratory,348;352,0x1c9a9dae0;0x1c9a9db00,1;1,304
+2026-08-17T12:33:37,912,CHF. Weakness.,MATCH,1,18, Weakness,350,0x1d56baaf0,1,304
+2026-08-17T12:33:55,913,"Shortness of breath beginning today. History of hypertension, diabetes, former smoker.",NO_MATCH,0,,,,,,621
+2026-08-17T12:34:12,915,Overdose. Rule out aspiration. Chest pain beginning this morning.,MULTI_MATCH,4,5;5;5;5, breath.; breath.; breath.; breath.,596;598;602;604,0x1ccffb2a0;0x1ccffb2b0;0x1ccffb2d0;0x1ccffb2e0,1;1;1;1,550
+2026-08-17T12:34:30,917,"Shortness of breath, recent CHF and pneumonia, recent heart attack",MULTI_MATCH,2,1;8,"ness of; breath,",348;350,0x1c93fdae0;0x1c93fdaf0,1;1,304
+2026-08-17T12:34:48,918,Fall several days ago. Right rib pain.,NO_MATCH,0,,,,,,396
+2026-08-17T12:35:05,919,"Weakness, history of hypertension and atrial fibrillation.",NO_MATCH,0,,,,,,304
+2026-08-17T12:35:23,921,Cough and fever for 2 days.,MATCH,1,3, Cough,350,0x1cbd88af0,1,300
+2026-08-17T12:35:41,923,"Respiratory failure, cardiac arrest",NO_MATCH,0,,,,,,594
+2026-08-17T12:35:59,924,53-year-old male with weakness and shortness of breath.,NO_MATCH,0,,,,,,480
+2026-08-17T12:36:17,926,Cough. Pleural effusion.,NO_MATCH,0,,,,,,304
+2026-08-17T12:36:35,927,"Mid back, rib pain.",NO_MATCH,0,,,,,,750
+2026-08-17T12:36:53,929,Weakness. Altered mental status. Recent fall. Elevated white blood cell count.,NO_MATCH,0,,,,,,729
+2026-08-17T12:37:11,931,84 year-old with nausea and vomiting. PICC line placement.,NO_MATCH,0,,,,,,304
+2026-08-17T12:37:28,935,Shortness of breath and fever.,NO_MATCH,0,,,,,,550
+2026-08-17T12:37:46,938,"Respiratory distress, COPD",NO_MATCH,0,,,,,,594
+2026-08-17T12:38:04,942,"Respiratory failure following ERCP, he ETT adjustment",NO_MATCH,0,,,,,,396
+2026-08-17T12:38:22,943,Status post CABG,NO_MATCH,0,,,,,,594
+2026-08-17T12:38:56,944,Hypertension; diaphoresis. Leg swelling and cough.,NO_MATCH,0,,,,,,460
+2026-08-17T12:39:14,945,Weakness and altered mental status.,NO_MATCH,0,,,,,,304
+2026-08-17T12:39:32,946,Evaluate peripheral venous catheter placement.,MATCH,1,28, catheter,316,0x1c42db9e0,1,270
+2026-08-17T12:39:50,947,"COPD exacerbation, pneumonia.",NO_MATCH,0,,,,,,1178
+2026-08-17T12:40:08,948,Follow-up right pneumothorax. Atelectasis.,NO_MATCH,0,,,,,,621
+2026-08-17T12:40:26,949,Shortness of breath. Thoracoscopy on the left 2 days prior,NO_MATCH,0,,,,,,594
+2026-08-17T12:40:44,950,Fall with left rib pain. Initial encounter.,NO_MATCH,0,,,,,,594
+2026-08-17T12:41:02,951,Respiratory distress in a term neonate.,MATCH,1,9, Respiratory,162,0x1b8d6d510,1,120
+2026-08-17T12:41:20,952,"72-year-old female with acute on chronic respiratory failure. COVID-19, recovery phase.",NO_MATCH,0,,,,,,594
+2026-08-17T12:41:38,955,Weakness. Headaches.,NO_MATCH,0,,,,,,304
+2026-08-17T12:41:55,961,49-year-old female with left-sided chest pain and mild shortness of breath,NO_MATCH,0,,,,,,675
+2026-08-17T12:42:13,962,Urethral retention. Follow-up right lower lobe atelectasis.,NO_MATCH,0,,,,,,304
+2026-08-17T12:42:31,963,Shortness of breath. Croup. Asthma. Breathing difficulty.,MATCH,1,1,ness of,464,0x1ba304e80,1,420
+2026-08-17T12:42:49,966,"Chest pain, MVA",NO_MATCH,0,,,,,,572
+2026-08-17T12:43:07,968,"Shortness of breath on exertion for 1 month, hypertension, question pneumonia, former smoker",MATCH,1,1,ness of,348,0x1b753bae0,1,304
+2026-08-17T12:43:25,970,Sore throat for 2 months. Laryngitis. Nonproductive cough. Smoker.,NO_MATCH,0,,,,,,729
+2026-08-17T12:43:43,971,PICC line repositioning.,NO_MATCH,0,,,,,,396
+2026-08-17T12:44:00,974,Shortness of breath with weakness,MATCH,1,1,ness of,348,0x1c85ebae0,1,304
+2026-08-17T12:44:18,976,Cough for 5 days,NO_MATCH,0,,,,,,594
+2026-08-17T12:44:36,977,Initial encounter for Mid chest pain and shortness of breath for the last 2-3 days.,MULTI_MATCH,2,6;1, chest pain;ness of,722;726,0x1af832690;0x1af8326b0,1;1,675
+2026-08-17T12:44:54,983,"COVID-19 positive, fever and shortness of breath",MATCH,1,1,ness of,762,0x1af9017d0,1,702
+2026-08-17T12:45:12,984,Cough. Leukocytosis.,MATCH,1,3, Cough,664,0x1af5ad4c0,1,621
+2026-08-17T12:45:30,985,Hypoxia. Status post MVA.,NO_MATCH,0,,,,,,594
+2026-08-17T12:45:48,986,Shortness of breath. COPD. The patient smokes 1.5 packs per day of cigarettes.,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1af722820;0x1af722830,1;1,729
+2026-08-17T12:46:05,987,Cough and congestion for 1 month. Left-sided chest pain. Initial encounter.,MULTI_MATCH,2,10;6,ough and; chest pain,746;756,0x1af412750;0x1af4127a0,1;1,702
+2026-08-17T12:46:23,990,"Shortness of breath (SOB), shortness of air on exertion (SOA), right side chest pain, heartburn (HB).",MULTI_MATCH,3,1;1;6,ness of;ness of; chest pain,590;598;610,0x1af4b1270;0x1af4b12b0;0x1af4b1310,1;1;1,546
+2026-08-17T12:46:41,991,Hypoxia.,NO_MATCH,0,,,,,,572
+2026-08-17T12:46:59,992,Bowel obstruction. PICC line placement.,NO_MATCH,0,,,,,,304
+2026-08-17T12:47:17,993,Difficulty breathing with chest pain.,NO_MATCH,0,,,,,,729
+2026-08-17T12:47:35,995,86-year-old male with shortness of breath and fever.,MULTI_MATCH,2,4;0, shortness; of breath,454;456,0x1a0185e30;0x1a0185e40,1;1,396
+2026-08-17T12:47:53,997,"VQ Scan ordered, Shortness of breath",MULTI_MATCH,2,2;0, Shortness; of breath,444;446,0x19fd5bde0;0x19fd5bdf0,1;1,396
+2026-08-17T12:48:11,998,Internal jugular catheter placement.,MATCH,1,28, catheter,350,0x1a0389af0,1,304
+2026-08-17T12:48:29,999,Right-sided chest pain for 4 days; history of smoking.,NO_MATCH,0,,,,,,304
+2026-08-17T12:48:47,1002,"Shortness of breath, nausea, possible aspiration",NO_MATCH,0,,,,,,621
+2026-08-17T12:49:05,1003,Hemoptysis and shortness of breath.,NO_MATCH,0,,,,,,567
+2026-08-17T12:49:23,1007,"Chest pain, nausea, alcohol dependence, recent attempt at detoxification",NO_MATCH,0,,,,,,594
+2026-08-17T12:49:41,1009,Cough and fever to 105 degrees,MATCH,1,10,ough and,348,0x1a0321ae0,1,304
+2026-08-17T12:49:59,1015,"43-year-old female postop day 1 exploratory laparotomy. Pelvic hemorrhage status post hysterectomy, status post coil embolization right uterine artery. Respiratory failure. Initial encounter.",NO_MATCH,0,,,,,,594
+2026-08-17T12:50:17,1016,Follow-up of right-sided pneumothorax.,NO_MATCH,0,,,,,,594
+2026-08-17T12:50:35,1017,Chest discomfort and pressure for the past 2 days. Shortness of breath.,NO_MATCH,0,,,,,,625
+2026-08-17T12:50:52,1018,Follow-up pneumonia. Subsequent encounter.,NO_MATCH,0,,,,,,506
+2026-08-17T12:51:10,1021,"Shortness of breath, pulmonary edema",MULTI_MATCH,2,1;8,"ness of; breath,",348;350,0x1a027cae0;0x1a027caf0,1;1,304
+2026-08-17T12:51:29,1022,Status post peripherally inserted central catheter (PICC) central line placement,NO_MATCH,0,,,,,,594
+2026-08-17T12:51:46,1024,"cough, fever. Patient's mother states a cough since Jojima.",MULTI_MATCH,2,14;23," cough,; fever.",312;314,0x19f7739c0;0x19f7739d0,1;1,270
+2026-08-17T12:52:04,1025,Right PICC line reposition.,MATCH,1,20, PICC,638,0x19f6143f0,1,594
+2026-08-17T12:52:22,1026,Fever. Intermittent fever for 1 month. Cough. Initial encounter.,NO_MATCH,0,,,,,,216
+2026-08-17T12:52:40,1029,Cough. Chest discomfort. Former smoker.,NO_MATCH,0,,,,,,304
+2026-08-17T12:52:58,1031,"Initial evaluation for chest pain, patient unable to give history",NO_MATCH,0,,,,,,594
+2026-08-17T12:53:16,1032,"Fall, right lower rib pain.",NO_MATCH,0,,,,,,304
+2026-08-17T12:53:34,1033,"Shortness of breath with exertion, status post left VATS and talc pleurodesis",MATCH,1,1,ness of,348,0x19f9e7ae0,1,304
+2026-08-17T12:53:52,1035,Respiratory distress of newborn.,MATCH,1,9, Respiratory,152,0x19f9964c0,1,110
+2026-08-17T12:54:10,1037,Fever. Cough.,NO_MATCH,0,,,,,,572
+2026-08-17T12:54:27,1038,Cough and congestion for several months with hemoptysis,NO_MATCH,0,,,,,,506
+2026-08-17T12:54:45,1041,"Shortness of breath, cough, smoker, COPD",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x19f349820;0x19f349830,1;1,729
+2026-08-17T12:55:03,1043,"Initial evaluation for acute cough, difficulty breathing.",NO_MATCH,0,,,,,,252
+2026-08-17T12:55:21,1047,Cough fever and wheezing,MULTI_MATCH,2,3;19, Cough; wheez,366;370,0x19fb8bb70;0x19fb8bb90,1;1,324
+2026-08-17T12:55:39,1048,Rule out diaphragmatic hernia. Respiratory distress and distended abdomen,MATCH,1,9, Respiratory,320,0x19fb22a00,1,270
+2026-08-17T12:55:57,1049,Visit reason: Cough h/o pna;,NO_MATCH,0,,,,,,525
+2026-08-17T12:56:16,1050,Nonproductive cough for shortness of breath.,MATCH,1,1,ness of,620,0x19f5e9360,1,572
+2026-08-17T12:56:34,1053,"17 m/o F; cough, runny nose, fever.",NO_MATCH,0,,,,,,225
+2026-08-17T12:56:52,1055,Shortness of breath. CABG.,MULTI_MATCH,2,1;21,ness of; CABG,616;620,0x1a9b6c340;0x1a9b6c360,1;1,572
+2026-08-17T12:57:10,1057,"Shortness of breath today, history hypertension, COPD",MULTI_MATCH,2,1;16,ness of; COPD,638;646,0x19f3163f0;0x19f316430,1;1,594
+2026-08-17T12:57:28,1062,"Fall, chest pain",NO_MATCH,0,,,,,,675
+2026-08-17T12:57:46,1064,Cough and congestion 3 days.,MATCH,1,3, Cough,780,0x19f52f860,1,729
+2026-08-17T12:58:03,1067,Central line placement. Ventilator dependent respiratory failure.,NO_MATCH,0,,,,,,304
+2026-08-17T12:58:21,1068,Shortness of breath. Smoking history. Cough.,MATCH,1,1,ness of,348,0x19f0d7ae0,1,304
+2026-08-17T12:58:39,1069,Fall today with left posterior rib pain,NO_MATCH,0,,,,,,729
+2026-08-17T12:58:57,1070,"Hypertension, sharp stabbing mid chest pain, tobacco abuse",MATCH,1,27, Hypert,772,0x19f291820,1,729
+2026-08-17T12:59:14,1071,Weakness. Short of breath. Hypertension. Asthma. COPD. Left renal pelvic tumor.,MULTI_MATCH,3,18;0;16, Weakness; of breath; COPD,772;776;786,0x19ef5f820;0x19ef5f840;0x19ef5f890,1;1;1,729
+2026-08-17T12:59:17,1074,PICC,NO_MATCH,0,,,,,,304
+2026-08-17T12:59:35,1075,History of CABG,MATCH,1,21, CABG,774,0x19f093830,1,729
+2026-08-17T12:59:53,1076,Acute onset of shortness of breath. Initial encounter.,MATCH,1,1,ness of,696,0x19ed4f5c0,1,648
+2026-08-17T13:00:11,1077,"Hypertension, headache",NO_MATCH,0,,,,,,594
+2026-08-17T13:00:29,1078,Shortness of breath and left chest pain; lung cancer,MATCH,1,1,ness of,348,0x19ee6dae0,1,304
+2026-08-17T13:00:47,1083,Left rib pain after MVA,MATCH,1,15, rib pain,348,0x19ea54ae0,1,304
+2026-08-17T13:01:32,1085,"Pulmonary hypertension, shortness of breath, pre VQ scan",MULTI_MATCH,3,11;1;8,", short;ness of; breath,",598;600;602,0x19eb142b0;0x19eb142c0;0x19eb142d0,1;1;1,552
+2026-08-17T19:01:38,1087,"Chest pain, tachycardia",NO_MATCH,0,,,,,,594
+2026-08-17T19:01:56,1088,"Cough, congestion and low grade fever for the past 3 weeks.",MATCH,1,3, Cough,772,0x1a576a820,1,729
+2026-08-17T19:02:13,1090,"Cough and congestion for 1 month, negative COVID testing last week, history of heart murmur",MATCH,1,10,ough and,720,0x1a583f680,1,676
+2026-08-17T19:02:31,1092,"Acute onset of lower extremity swelling, numbness and tingling. Shortness of breath, wheezing and cough.",MULTI_MATCH,2,2;0, Shortness; of breath,652;654,0x1a5903460;0x1a5903470,1;1,594
+2026-08-17T19:02:49,1095,Acute onset of generalized chest pain and syncope. Initial encounter.,NO_MATCH,0,,,,,,729
+2026-08-17T19:03:08,1096,"Cough, shortness of breath, and headache. COVID-19 positive.",MULTI_MATCH,3,4;0;22, shortness; of breath; COVID-,640;642;648,0x1a5ab2400;0x1a5ab2410;0x1a5ab2440,1;1;1,594
+2026-08-17T19:03:26,1097,"Cough for 1 day, hypoxia, history hypertension, type II diabetes mellitus",NO_MATCH,0,,,,,,594
+2026-08-17T19:03:44,1098,Nausea and chest pain,NO_MATCH,0,,,,,,1178
+2026-08-17T19:04:02,1099,"Acute MI, PICC line reposition.",NO_MATCH,0,,,,,,304
+2026-08-17T19:04:20,1103,Weakness. Status post carotid endarterectomy.,NO_MATCH,0,,,,,,572
+2026-08-17T19:04:22,1105,chest pain,NO_MATCH,0,,,,,,396
+2026-08-17T19:04:40,1106,"weakness, short of breath",MULTI_MATCH,2,11;0,", short; of breath",440;442,0x1a7023dc0;0x1a7023dd0,1;1,396
+2026-08-17T19:04:58,1107,Low O2 sats. Hypoxia.,MATCH,1,29, Hypox,670,0x1a70cd4f0,1,621
+2026-08-17T19:05:16,1110,Increased shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,572;574,0x1a6d701e0;0x1a6d701f0,1;1,528
+2026-08-17T19:05:34,1111,"Coughing, congestion",MATCH,1,3, Cough,252,0x1a6db77e0,1,210
+2026-08-17T19:05:52,1112,Chest pain. Cough. Sweating.,MATCH,1,3, Cough,1224,0x1a60fd640,1,1178
+2026-08-17T19:06:09,1113,"History of pneumonia, followup, COPD",MATCH,1,16, COPD,578,0x1a60c2210,1,528
+2026-08-17T19:06:27,1117,Lumbar wound infection. PICC line placement.,MATCH,1,20, PICC,352,0x1a6519b00,1,304
+2026-08-17T19:06:45,1120,wheezing/short of breath.,MATCH,1,0, of breath,352,0x1a6576b00,1,304
+2026-08-17T20:17:17,1339,"Right PICC line placement, brain abscess",MATCH,1,20, PICC,348,0x1a0853ae0,1,304
+2026-08-17T20:17:35,1340,Cough and syncope,MATCH,1,10,ough and,594,0x1a0fbd290,1,550
+2026-08-17T20:17:53,1343,Cough fever possible aspiration from seizure. Prolonged seizure activity today. History of pacemaker. Patient is wearing an alert necklace in chest X-ray.,NO_MATCH,0,,,,,,304
+2026-08-17T20:18:11,1347,"chest pain with cough, shortness of breath",MULTI_MATCH,3,14;4;0," cough,; shortness; of breath",442;444;446,0x1a108cdd0;0x1a108cde0;0x1a108cdf0,1;1;1,396
+2026-08-17T20:18:29,1348,"Short of breath, follow-up emphysema",MATCH,1,0, of breath,348,0x1a10e8ae0,1,304
+2026-08-17T20:18:47,1352,"Chest pain, cough and congestion. History of asthma.",MATCH,1,7, Chest pain,312,0x1a11369c0,1,270
+2026-08-17T20:19:05,1355,Hypertensive emergency,NO_MATCH,0,,,,,,594
+2026-08-17T20:19:24,1356,Cough and fever for 12 hr. Febrile seizure,MATCH,1,10,ough and,374,0x1a12ffbb0,1,330
+2026-08-17T20:19:42,1357,Right anterior rib pain. Trauma.,NO_MATCH,0,,,,,,304
+2026-08-17T20:20:01,1358,"Chest pain, epigastric pain, nausea",MATCH,1,7, Chest pain,772,0x1a16d2820,1,729
+2026-08-17T20:20:19,1361,Right-sided rib pain. No known injury.,NO_MATCH,0,,,,,,594
+2026-08-17T20:20:36,1364,Right rib pain,NO_MATCH,0,,,,,,729
+2026-08-17T20:20:54,1365,"Shortness of breath, swelling in the legs, atrial fibrillation",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1a193d820;0x1a193d830,1;1,729
+2026-08-17T20:21:11,1366,Weakness. Altered mental status. Fever.,NO_MATCH,0,,,,,,506
+2026-08-17T20:21:29,1367,Respiratory failure. Sepsis.,NO_MATCH,0,,,,,,594
+2026-08-17T20:21:47,1368,Hypoxemia. Altered mental status. Unresponsive.,NO_MATCH,0,,,,,,304
+2026-08-17T20:22:05,1370,"Cough, hemoptysis",NO_MATCH,0,,,,,,702
+2026-08-17T20:22:23,1372,Nonproductive cough and shortness of breath for 4 months.,NO_MATCH,0,,,,,,729
+2026-08-17T20:22:40,1374,History of seizure. History of alcohol dependence. Coughing. Question of aspiration.,MATCH,1,3, Cough,356,0x1a1d10b20,1,304
+2026-08-17T20:22:58,1377,Centralized chest pain for 2 days.,MATCH,1,6, chest pain,774,0x1a1dfb830,1,729
+2026-08-17T20:23:16,1381,Two day history of chest pain and back pain. Nausea and vomiting which began yesterday. Current history of hypertension.,NO_MATCH,0,,,,,,304
+2026-08-17T20:23:34,1382,Hypoxia. Recent bronchoscopy and biopsy.,NO_MATCH,0,,,,,,594
+2026-08-17T20:23:52,1384,Chest pain. Left arm pain.,MATCH,1,7, Chest pain,780,0x1a1fd7860,1,729
+2026-08-17T20:24:09,1385,"Productive cough, sinus congestion, and wheezing for 1 month. History of COPD. Smoker.",MULTI_MATCH,3,14;19;16," cough,; wheez; COPD",774;780;790,0x1a24ca830;0x1a24ca860;0x1a24ca8b0,1;1;1,729
+2026-08-17T20:24:27,1388,Status post bronchoscopy. Assess for pneumothorax.,NO_MATCH,0,,,,,,304
+2026-08-18T15:18:55,1389,"Atelectasis, previous CABG",MATCH,1,21, CABG,674,0x1a24c6510,1,625
+2026-08-18T15:19:12,1391,"Stab wound to the left neck and chest, some shortness of breath",MATCH,1,1,ness of,730,0x1a27236d0,1,675
+2026-08-18T15:19:30,1393,COPD wheezing and crackles,NO_MATCH,0,,,,,,396
+2026-08-18T15:20:15,1396,Chest pain. Cough.,NO_MATCH,0,,,,,,525
+2026-08-18T15:37:55,1121,Follow-up pneumonia.,MATCH,1,17, Follow-up,772,0x1a1792820,1,729
+2026-08-18T15:38:13,1122,Pneumonia. COVID-19.,MATCH,1,22, COVID-,576,0x1a1835200,1,528
+2026-08-18T15:38:31,1123,"Shortness of breath for several days, history of pneumonia",MULTI_MATCH,2,2;0, Shortness; of breath,610;612,0x1a18da310;0x1a18da320,1;1,567
+2026-08-18T15:38:49,1125,"Chest pain, cough. Cough, Influenza A+, shortness of air.",MULTI_MATCH,3,12;3;1, cough.; Cough;ness of,350;352;362,0x13b2f7af0;0x13b2f7b00;0x13b2f7b50,1;1;1,304
+2026-08-18T15:39:07,1126,Sepsis and respiratory failure.,NO_MATCH,0,,,,,,594
+2026-08-18T15:39:25,1129,Follow-up of congestion and pleural effusion,NO_MATCH,0,,,,,,396
+2026-08-18T15:39:43,1132,"Traumatic hemo pneumothorax with right-sided chest tube treatment, status post gunshot wound, smoker.",NO_MATCH,0,,,,,,572
+2026-08-18T15:40:01,1134,"Fever, cough, congestion.",NO_MATCH,0,,,,,,270
+2026-08-18T15:40:20,1138,"Flu like symptoms, vomiting, weakness, shortness of breath, wheezing, productive cough, and dehydration for 2-3 days, history asthma",MULTI_MATCH,3,11;1;19,", short;ness of; wheez",650;652;656,0x1a18f5450;0x1a18f5460;0x1a18f5480,1;1;1,600
+2026-08-18T15:40:37,1139,Unstable premature newborn. Follow-up RDS. On ventilator.,NO_MATCH,0,,,,,,270
+2026-08-18T15:40:55,1146,Chest pain and 28 weeks pregnant,NO_MATCH,0,,,,,,572
+2026-08-18T15:41:14,1147,Shortness of breath. Using his voice. Symptoms for 1 week. Productive cough.,NO_MATCH,0,,,,,,600
+2026-08-18T15:41:32,1148,"In initial evaluation for acute chest pain, URI symptoms.",NO_MATCH,0,,,,,,270
+2026-08-18T15:41:50,1149,Shortness of breath. Sepsis.,NO_MATCH,0,,,,,,594
+2026-08-18T15:42:09,1151,Chest pain status post fall.,MATCH,1,7, Chest pain,610,0x1a1c54310,1,567
+2026-08-18T15:42:27,1152,Shortness of breath. Respiratory distress. Patient unresponsive.,MULTI_MATCH,3,1;5;9,ness of; breath.; Respiratory,524;526;528,0x1a1cd0060;0x1a1cd0070;0x1a1cd0080,1;1;1,480
+2026-08-18T15:42:45,1153,PICC placement.,NO_MATCH,0,,,,,,304
+2026-08-18T15:43:03,1162,Follow-up pneumonia/on ventilator.,NO_MATCH,0,,,,,,304
+2026-08-18T16:30:44,1166,Sharp mid and left-sided chest pain. Recent cardiac catheterization with diagnosis of pericarditis. Chills.,MATCH,1,6, chest pain,750,0x40250f770,1,702
+2026-08-18T16:31:03,1168,COPD. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,350;352,0x2d66e6af0;0x2d66e6b00,1;1,304
+2026-08-18T16:31:21,1169,Chest pain and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,700;702,0x3702895e0;0x3702895f0,1;1,648
+2026-08-18T16:31:39,1171,Fever and altered mental status. Hypoxia.,NO_MATCH,0,,,,,,572
+2026-08-18T16:31:56,1173,Shortness of breath. Hypoxia.,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x3be69b820;0x3be69b830,1;1,729
+2026-08-18T16:32:15,1174,Respiratory failure with endotracheal tube,NO_MATCH,0,,,,,,484
+2026-08-18T16:32:33,1175,Hypoxemia. Follow up pneumonia.,NO_MATCH,0,,,,,,304
+2026-08-18T16:32:51,1176,65-year-old male with acute respiratory failure.,NO_MATCH,0,,,,,,594
+2026-08-18T16:33:10,1178,59-year-old male status post CABG. No current chest complaints.,NO_MATCH,0,,,,,,729
+2026-08-18T16:33:28,1182,50-year-old male with shortness of breath status post intubation.,MULTI_MATCH,2,4;0, shortness; of breath,644;646,0x3f3fc7420;0x3f3fc7430,1;1,594
+2026-08-18T16:33:46,1183,Fall with rib pain. Pain in the left anterior ribs.,NO_MATCH,0,,,,,,594
+2026-08-18T16:34:03,1187,Respiratory failure. Cardiac patient.,NO_MATCH,0,,,,,,304
+2026-08-18T16:34:21,1188,"Motor vehicle collision, anterior right rib pain",NO_MATCH,0,,,,,,572
+2026-08-18T16:34:39,1190,episodic shortness of breath,MATCH,1,1,ness of,442,0x381206dd0,1,396
+2026-08-18T16:34:58,1191,"Cough, chest pain and fatigue for 2 days.",MATCH,1,6, chest pain,618,0x38066c350,1,572
+2026-08-18T16:35:15,1192,Shortness of breath. Fever. Nausea and vomiting.,MULTI_MATCH,3,1;5;26,ness of; breath.; Fever.,348;350;352,0x41d907ae0;0x41d907af0;0x41d907b00,1;1;1,304
+2026-08-18T16:35:33,1195,"Fever, cough. Shortness of breath. Fever of 101. Congestion.",MULTI_MATCH,2,1;5,ness of; breath.,242;244,0x3be7c9790;0x3be7c97a0,1;1,195
+2026-08-18T16:35:51,1196,Shortness of breath and fatigue. Dry cough.,MATCH,1,1,ness of,616,0x40c348340,1,572
+2026-08-18T16:36:08,1197,Shortness of breath with black stools,MATCH,1,1,ness of,594,0x34862c290,1,550
+2026-08-18T16:36:26,1199,Central chest pain for 2 weeks.,NO_MATCH,0,,,,,,675
+2026-08-18T16:36:44,1200,Acute onset of hypoxia and shortness of breath. Initial encounter.,MULTI_MATCH,2,1;5,ness of; breath.,646;648,0x38b32b430;0x38b32b440,1;1,594
+2026-08-18T16:37:02,1206,Diverticulitis. Evaluate PICC line placement.,MATCH,1,20, PICC,354,0x3ecb44b10,1,304
+2026-08-18T16:37:20,1207,Left-sided chest pain after motor vehicle accident,NO_MATCH,0,,,,,,594
+2026-08-18T16:37:37,1210,"Shortness of breath for 4 days, initial encounter",MATCH,1,1,ness of,638,0x318b693f0,1,594
+2026-08-18T16:37:56,1211,Preop lung mass. Short of breath. Chest pain.,MULTI_MATCH,2,5;7, breath.; Chest pain,354;356,0x379bd0b10;0x379bd0b20,1;1,304
+2026-08-18T16:38:13,1213,Urinary tract infection. Hypertension.,MATCH,1,27, Hypert,598,0x32ac362b0,1,550
+2026-08-18T16:54:12,1215,"Chest pain. Weakness. Left knee laceration. Initial encounter. Per patient, no memory of falling but knee laceration.",MATCH,1,18, Weakness,618,0x1a1ea8350,1,572
+2026-08-18T16:54:30,1216,Cough. Sore throat.,NO_MATCH,0,,,,,,304
+2026-08-18T16:54:48,1217,Weakness and abdominal pain.,NO_MATCH,0,,,,,,480
+2026-08-18T16:55:06,1218,"COVID-19 positive, hypoxia, O2 requirement",NO_MATCH,0,,,,,,594
+2026-08-18T16:55:24,1220,Shortness of breath and abdominal pain.,MULTI_MATCH,6,5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,638;638;640;640;642;642,0x140fc13f0;0x140fc13f0;0x140fc1400;0x140fc1400;0x140fc1410;0x140fc1410,1;1;1;1;1;1,594
+2026-08-18T16:55:42,1221,Chest pain. Portable chest film demonstrated possible right pulmonary nodule versus nipple shadow. Two view study is now repeated with nipple markers.,NO_MATCH,0,,,,,,304
+2026-08-18T16:55:59,1223,The chest pain intermittently for 1 week.,NO_MATCH,0,,,,,,675
+2026-08-18T16:56:17,1224,Shortness of Air,MATCH,1,2, Shortness,764,0x1a233f7e0,1,729
+2026-08-18T16:56:35,1227,Fever. Loss of taste and smell.,MULTI_MATCH,3,25;25;25, pneumoth; pneumoth; pneumoth,638;640;642,0x1a23f03f0;0x1a23f0400;0x1a23f0410,1;1;1,594
+2026-08-18T16:56:53,1231,Shortness of breath and chest pain.,MULTI_MATCH,2,1;6,ness of; chest pain,348;352,0x1a2449ae0;0x1a2449b00,1;1,304
+2026-08-18T16:57:11,1234,Chest pain. Diabetes. Hypertension. Coronary artery disease.,MATCH,1,27, Hypert,352,0x1a24a5b00,1,304
+2026-08-18T16:57:29,1238,Suspected COVID-19. Sore throat for 4 days. Cough. Chills.,MATCH,1,22, COVID-,470,0x1a252feb0,1,425
+2026-08-18T16:57:47,1239,Weakness and cough.,NO_MATCH,0,,,,,,340
+2026-08-18T16:58:05,1241,"Hypoxia, cough",NO_MATCH,0,,,,,,252
+2026-08-18T16:58:23,1242,Shortness of breath. COPD. Follow-up upper right apical disease. Abnormal chest x-ray.,NO_MATCH,0,,,,,,729
+2026-08-18T16:58:40,1244,"SOB. Post operative Left IM nail. Hx PNA, HTN, COPD.",NO_MATCH,0,,,,,,506
+2026-08-18T16:58:58,1246,Shortness of breath and chest tightness,MULTI_MATCH,4,25;25;25;25, pneumoth; pneumoth; pneumoth; pneumoth,772;774;776;778,0x1a27bc820;0x1a27bc830;0x1a27bc840;0x1a27bc850,1;1;1;1,729
+2026-08-18T16:59:16,1247,"Chest pain, coughing. Short of breath for four days.",MATCH,1,0, of breath,354,0x1a298db10,1,304
+2026-08-18T16:59:34,1253,"Dyspnea, COVID-19, diabetes mellitus",NO_MATCH,0,,,,,,594
+2026-08-18T16:59:52,1255,Weakness.,NO_MATCH,0,,,,,,594
+2026-08-18T17:00:10,1257,"MVC passenger, right-sided neck pain and shoulder pain. Right anterior lower rib pain. Rib pain marked by a BB.",NO_MATCH,0,,,,,,729
+2026-08-18T17:00:28,1260,Chest pain and shortness of breath for 1 day,NO_MATCH,0,,,,,,729
+2026-08-18T17:00:45,1261,"INCREASING SOA X 5-6 MONTHS. MUCH WORSE RECENTLY. EXTENSIVE CARDIAC HISTORY INCLUDING MULTIPLE CABG, VALVE REPLACEMENTS, STENTS.",NO_MATCH,0,,,,,,304
+2026-08-18T17:01:03,1266,Cough and anemia,MULTI_MATCH,4,5;25;5;25, breath.; pneumoth; breath.; pneumoth,664;664;666;666,0x1a45b94c0;0x1a45b94c0;0x1a45b94d0;0x1a45b94d0,1;1;1;1,621
+2026-08-18T17:01:21,1267,Initial evaluation for acute shortness of breath and chest pain.,MULTI_MATCH,6,5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,638;638;640;640;642;642,0x1a34473f0;0x1a34473f0;0x1a3447400;0x1a3447400;0x1a3447410;0x1a3447410,1;1;1;1;1;1,594
+2026-08-18T17:01:39,1269,Cough. Upper back pain.,NO_MATCH,0,,,,,,304
+2026-08-18T17:01:57,1272,Chronic respiratory failure with hypoxia.,MULTI_MATCH,6,5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,594;594;596;596;598;598,0x1a3290290;0x1a3290290;0x1a32902a0;0x1a32902a0;0x1a32902b0;0x1a32902b0,1;1;1;1;1;1,550
+2026-08-18T17:02:15,1273,Aspiration. Hypertension.,MATCH,1,27, Hypert,640,0x1a361c400,1,594
+2026-08-18T17:02:33,1274,Shortness of breath for 3 days. History of bilateral pulmonary embolism.,NO_MATCH,0,,,,,,575
+2026-08-18T17:02:51,1275,62-year-old male with respiratory failure.,MATCH,1,24, respiratory failure,354,0x1a38f2b10,1,304
+2026-08-18T17:03:10,1277,Respiratory failure. Status post surgery for left renal mass.,NO_MATCH,0,,,,,,304
+2026-08-18T17:03:27,1278,"Intubated patient, cardiac arrest, pneumonia. Current smoker.",NO_MATCH,0,,,,,,594
+2026-08-18T17:03:45,1284,Cough. Asthma.,MATCH,1,3, Cough,504,0x1a3d5efc0,1,462
+2026-08-18T17:04:03,1286,Cough and cold symptoms.,NO_MATCH,0,,,,,,504
+2026-08-18T17:04:21,1290,"Shortness of breath, cough, evaluate effusion",MULTI_MATCH,8,5;25;5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,638;638;640;640;642;642;644;644,0x1a3b5f3f0;0x1a3b5f3f0;0x1a3b5f400;0x1a3b5f400;0x1a3b5f410;0x1a3b5f410;0x1a3b5f420;0x1a3b5f420,1;1;1;1;1;1;1;1,594
+2026-08-18T17:04:38,1293,Shortness of breath and wheezing. COPD. Arrhythmia.,MULTI_MATCH,3,1;19;16,ness of; wheez; COPD,348;352;356,0x1a3e2dae0;0x1a3e2db00;0x1a3e2db20,1;1;1,304
+2026-08-18T17:04:56,1294,Chest pain. Cough. COPD.,MATCH,1,3, Cough,350,0x1a3b61af0,1,304
+2026-08-18T17:05:14,1296,"Shortness of breath, weakness",MULTI_MATCH,2,5;25, breath.; pneumoth,528;528,0x1a3c76080;0x1a3c76080,1;1,484
+2026-08-18T17:05:32,1300,Chest pain and dizziness.,NO_MATCH,0,,,,,,546
+2026-08-18T17:05:50,1301,Acute respiratory failure. Asthma. Smoker.,NO_MATCH,0,,,,,,594
+2026-08-18T17:06:08,1302,Left pneumothorax follow-up.,MULTI_MATCH,4,25;25;25;25, pneumoth; pneumoth; pneumoth; pneumoth,772;774;776;778,0x1a4605820;0x1a4605830;0x1a4605840;0x1a4605850,1;1;1;1,729
+2026-08-18T17:06:26,1303,Diaphoretic. Shortness of breath.,NO_MATCH,0,,,,,,572
+2026-08-18T17:06:44,1304,"Post CABG, pleural effusion, shortness of breath",NO_MATCH,0,,,,,,729
+2026-08-18T17:07:02,1305,Shortness of breath. Community acquired pneumonia,MATCH,1,1,ness of,594,0x1a4186290,1,550
+2026-08-18T17:07:20,1307,Hero catheter insertion for dialysis,NO_MATCH,0,,,,,,594
+2026-08-18T17:07:38,1309,"Acute right upper chest pain, palpitations for 2 days",MATCH,1,6, chest pain,668,0x1a42f24e0,1,625
+2026-08-18T17:07:56,1310,Post CABG.,MULTI_MATCH,2,25;29, pneumoth; Hypox,524;524,0x1a3b96060;0x1a3b96060,1;1,480
+2026-08-18T17:08:14,1311,"Shortness of breath, chest pain",MULTI_MATCH,3,1;8;6,"ness of; breath,; chest pain",638;640;642,0x1a3d003f0;0x1a3d00400;0x1a3d00410,1;1;1,594
+2026-08-18T17:08:31,1313,"Fever, cough, coarse breath sounds",NO_MATCH,0,,,,,,208
+2026-08-18T17:08:49,1316,Followup pleural effusion. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,354;356,0x1a3fb5b10;0x1a3fb5b20,1;1,304
+2026-08-18T17:09:06,1319,"Chest pain, tightness.",MULTI_MATCH,2,25;25, pneumoth; pneumoth,692;694,0x1a33645a0;0x1a33645b0,1;1,648
+2026-08-18T17:09:24,1320,Altered mental status. Decreased oxygen saturation. Short of breath.,MATCH,1,0, of breath,358,0x1a348bb30,1,304
+2026-08-18T17:09:41,1321,Severe chest pain for 30 minutes. Some shortness of breath. Ex-smoker.,MULTI_MATCH,2,4;0, shortness; of breath,458;460,0x1a3680e50;0x1a3680e60,1;1,396
+2026-08-18T17:10:00,1322,"Chest pain, altered mental status",NO_MATCH,0,,,,,,460
+2026-08-18T17:10:18,1324,Right PICC placement.,MATCH,1,20, PICC,348,0x1a399eae0,1,304
+2026-08-18T17:10:36,1326,Shortness of breath. Pulmonary infiltrate.,MATCH,1,1,ness of,440,0x1a2b9bdc0,1,396
+2026-08-18T17:10:53,1328,Follow-up basilar pneumonia.,NO_MATCH,0,,,,,,594
+2026-08-18T17:11:12,1330,Respiratory distress. Overdose.,NO_MATCH,0,,,,,,598
+2026-08-18T17:11:30,1333,Evaluate umbilical venous catheter placement,MATCH,1,28, catheter,152,0x1a32d14c0,1,104
+2026-08-18T17:11:48,1334,Chest pain. Abdominal pain.,MULTI_MATCH,8,5;25;5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,772;772;774;774;776;776;778;778,0x1a29cf820;0x1a29cf820;0x1a29cf830;0x1a29cf830;0x1a29cf840;0x1a29cf840;0x1a29cf850;0x1a29cf850,1;1;1;1;1;1;1;1,729
+2026-08-18T17:12:06,1336,Respiratory distress. Tube placement.,NO_MATCH,0,,,,,,594
+2026-08-18T17:12:24,1338,"Respiratory distress, shortness of breath for 2 hours.",MULTI_MATCH,2,5;25, breath.; pneumoth,618;618,0x1a4724350;0x1a4724350,1;1,567
+2026-08-18T17:12:42,1400,Cough and fever over the last several days.,MULTI_MATCH,10,5;25;5;25;5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,780;780;782;782;784;784;786;786;788;788,0x1a4794860;0x1a4794860;0x1a4794870;0x1a4794870;0x1a4794880;0x1a4794880;0x1a4794890;0x1a4794890;0x1a47948a0;0x1a47948a0,1;1;1;1;1;1;1;1;1;1,729
+2026-08-18T17:13:00,1401,Syncope. Hypertension.,NO_MATCH,0,,,,,,729
+2026-08-18T17:13:18,1404,"Fever, shortness of breath",MULTI_MATCH,2,11;1,", short;ness of",348;350,0x1a4ca0ae0;0x1a4ca0af0,1;1,304
+2026-08-18T17:13:36,1408,Followup left pneumothorax. Status post left diaphragmatic hernia repair.,NO_MATCH,0,,,,,,304
+2026-08-18T17:13:54,1415,"82 year old with atrial fibrillation, shortness of breath, and cough.",MULTI_MATCH,2,4;0, shortness; of breath,358;360,0x1a4d43b30;0x1a4d43b40,1;1,304
+2026-08-18T17:14:12,1417,Follow-up CHF.,NO_MATCH,0,,,,,,594
+2026-08-18T17:14:30,1424,"Status post motor vehicle collision, with chest pain.",MATCH,1,6, chest pain,490,0x1a4e5df50,1,440
+2026-08-18T17:14:48,1425,Confusion. Fever. Nausea and vomiting.,MATCH,1,26, Fever.,350,0x1a4eb7af0,1,304
+2026-08-18T17:15:06,1428,Cough and wheezing since Sunday. Congestion started Monday.,MULTI_MATCH,2,10;19,ough and; wheez,572;574,0x1a4f501e0;0x1a4f501f0,1;1,528
+2026-08-18T17:15:24,1429,"new arrhythmia and chest pain, covid a month ago",MATCH,1,6, chest pain,642,0x1a4ffe410,1,594
+2026-08-18T17:15:42,1431,Difficulty breathing and shortness of breath.,MATCH,1,1,ness of,672,0x1a50b4500,1,625
+2026-08-18T17:16:00,1433,"Tube, catheter placement.",NO_MATCH,0,,,,,,304
+2026-08-18T17:16:18,1434,Fall with RIGHT chest pain.,MATCH,1,6, chest pain,640,0x1a51b0400,1,594
+2026-08-18T17:16:36,1437,"SOB, weakness, wheezing",MATCH,1,19, wheez,528,0x1a5243080,1,480
+2026-08-18T17:16:54,1438,Pneumonia. Chest pain.,MATCH,1,7, Chest pain,488,0x1a52b5f40,1,440
+2026-08-18T17:17:11,1441,Motor vehicle collision with liver laceration. Follow-up chest.,MATCH,1,17, Follow-up,356,0x1a5300b20,1,304
+2026-08-18T17:17:29,1442,"Wheezing, cough, fever",MATCH,1,14," cough,",302,0x129199970,1,255
+2026-08-18T17:17:47,1444,Acute shortness of breath.,MATCH,1,1,ness of,640,0x1a5412400,1,594
+2026-08-18T17:18:05,1448,sudden shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,440;442,0x1a5480dc0;0x1a5480dd0,1;1,396
+2026-08-18T17:18:22,1449,Shortness of breath. End-stage renal disease.,MATCH,1,1,ness of,348,0x1a54e0ae0,1,304
+2026-08-18T17:18:40,1450,78-year-old male with fever. Known exposure to COVID-19.,MATCH,1,23, fever.,644,0x1a5589420,1,594
+2026-08-18T17:18:58,1453,Patient states he tested positive for COVID last week and this morning he woke up and felt short of breath.,MATCH,1,0, of breath,790,0x1a56608b0,1,729
+2026-08-18T17:19:17,1455,Allergic reaction to peanuts tonight. Shortness of breath. Throat swelling.,MULTI_MATCH,2,2;0, Shortness; of breath,644;646,0x1a570d420;0x1a570d430,1;1,594
+2026-08-18T17:19:35,1456,Cough. Low grade fever.,MATCH,1,3, Cough,526,0x1a5799070,1,483
+2026-08-18T17:19:53,1458,COVID-19.,NO_MATCH,0,,,,,,456
+2026-08-18T17:20:11,1461,"Shortness of breath, wheezing, and productive cough",MULTI_MATCH,3,1;8;19,"ness of; breath,; wheez",668;670;672,0x1a5cde4e0;0x1a5cde4f0;0x1a5cde500,1;1;1,624
+2026-08-18T17:20:29,1462,Pneumothorax. Difficult intubation. Evaluate for infiltrate. Postoperative chest pain.,NO_MATCH,0,,,,,,506
+2026-08-18T17:20:47,1464,46 year old with chest pain.,NO_MATCH,0,,,,,,304
+2026-08-18T17:21:04,1465,Motor vehicle accident. Chest pain,MATCH,1,7, Chest pain,784,0x1a5e95880,1,729
+2026-08-18T17:21:22,1467,"Respiratory failure acute encephalopathy, history of diabetes.",NO_MATCH,0,,,,,,594
+2026-08-18T17:21:40,1471,Right arm PICC line placement.,NO_MATCH,0,,,,,,598
+2026-08-18T17:21:58,1472,"Hypotension, COPD",NO_MATCH,0,,,,,,360
+2026-08-18T17:22:16,1473,"Preoperative examination prior heart catheterization on September 2nd, history of previous MI and left ventricular thrombus, previous tobacco use, history of vocal cord malignancy.",NO_MATCH,0,,,,,,729
+2026-08-18T17:22:33,1474,Apparent allergic reaction. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,620;622,0x1a61f5360;0x1a61f5370,1;1,572
+2026-08-18T17:22:52,1475,Visit reason: Cough and fever;,MATCH,1,10,ough and,564,0x1a62921a0,1,525
+2026-08-18T17:23:09,1476,Chest congestion and productive cough for 1 month; shortness of breath and body aches; smoker,MULTI_MATCH,2,4;0, shortness; of breath,782;784,0x1a636a870;0x1a636a880,1;1,729
+2026-08-18T17:23:28,1478,shortness of breath-pt in Kinley,MATCH,1,1,ness of,440,0x1a63ebdc0,1,396
+2026-08-18T17:23:46,1479,"Pneumonia. Cough, smoker.",MATCH,1,3, Cough,642,0x1a64a1410,1,594
+2026-08-18T17:24:04,1485,"One day history of left-sided lower anterior rib pain, status post injury when slipping and falling while pushing a below low are.",NO_MATCH,0,,,,,,648
+2026-08-18T17:24:22,1486,"Left lower lobe pneumonia, congestive heart failure, shortness of breath.",MULTI_MATCH,2,11;1,", short;ness of",678;680,0x1a6633530;0x1a6633540,1;1,625
+2026-08-18T17:24:40,1488,"Chest pain, congestion, cough, vomiting for several weeks. History of asthma. The patient is a smoker.",MATCH,1,14," cough,",352,0x1a668db00,1,304
+2026-08-18T17:24:58,1489,Respiratory distress of newborn,MATCH,1,9, Respiratory,162,0x1a66b6510,1,120
+2026-08-18T17:25:15,1493,COVID-19 yesterday with fever for 5 days.,MATCH,1,22, COVID-,162,0x1a66e7510,1,120
+2026-08-18T17:25:33,1494,"Shortness of breath, cough, evaluate for pneumonia",MULTI_MATCH,2,2;0, Shortness; of breath,618;620,0x1a67a0350;0x1a67a0360,1;1,575
+2026-08-18T17:25:50,1497,Acute respiratory failure. History of lung cancer.,NO_MATCH,0,,,,,,594
+2026-08-18T17:26:08,1500,Fever and cough. Diminished breath sounds on the right.,NO_MATCH,0,,,,,,288
+2026-08-18T17:26:26,1503,Confusion and dizziness. Hypertension.,NO_MATCH,0,,,,,,594
+2026-08-18T17:26:44,1504,Fever with shortness of breath. COVID-19 infection.,MULTI_MATCH,2,1;22,ness of; COVID-,574;578,0x1a6e041f0;0x1a6e04210,1;1,528
+2026-08-18T17:27:02,1505,Central line placement. Hypoxemic respiratory failure.,MATCH,1,24, respiratory failure,644,0x1a6eb1420,1,594
+2026-08-18T17:27:20,1506,Fever. Recent drain removal.,MATCH,1,26, Fever.,778,0x1a6f76850,1,729
+2026-08-18T17:27:38,1511,"CABG 3 days ago, bilateral atelectasis",NO_MATCH,0,,,,,,594
+2026-08-18T17:27:55,1513,Cough for 3 weeks.,MATCH,1,3, Cough,434,0x1a70a9d90,1,391
+2026-08-18T17:28:13,1515,Acute onset of respiratory failure. Initial encounter.,NO_MATCH,0,,,,,,594
+2026-08-18T17:28:31,1520,"Fever, cough, for 2 days",NO_MATCH,0,,,,,,270
+2026-08-18T17:28:48,1522,Respiratory distress syndrome in the newborn. Repositioning of endotracheal tube.,MATCH,1,9, Respiratory,162,0x1a71b9510,1,120
+2026-08-18T17:29:06,1523,"Productive cough, sneezing for 2 weeks",MATCH,1,14," cough,",774,0x1a726c830,1,729
+2026-08-18T17:29:24,1525,Increase shortness of breath. Respiratory failure.,MULTI_MATCH,2,1;9,ness of; Respiratory,666;670,0x1a73324d0;0x1a73324f0,1;1,621
+2026-08-18T17:29:42,1526,Fever. Cough and congestion.,MULTI_MATCH,2,26;3, Fever.; Cough,312;314,0x1a73709c0;0x1a73709d0,1;1,270
+2026-08-18T17:30:00,1529,History of fever and rash. History of left chest pain.,NO_MATCH,0,,,,,,729
+2026-08-18T17:30:17,1530,Shortness of breath; history of coronary artery disease and remote history of tobacco use,MATCH,1,1,ness of,348,0x1a78a2ae0,1,304
+2026-08-18T17:30:35,1531,"CABG, chest tubes",NO_MATCH,0,,,,,,304
+2026-08-18T17:30:52,1532,"Productive cough, difficulty breathing. Smoker. History of COPD.",NO_MATCH,0,,,,,,546
+2026-08-18T17:31:10,1534,"PICC line placement, right foot osteomyelitis",NO_MATCH,0,,,,,,304
+2026-08-18T17:31:28,1535,"Cough, unresponsive",MATCH,1,3, Cough,772,0x1a7ad8820,1,729
+2026-08-18T17:31:47,1536,Cough 1 year.,NO_MATCH,0,,,,,,650
+2026-08-18T17:32:05,1537,"Chest pain, cough and fever.",MATCH,1,7, Chest pain,772,0x1a7c64820,1,729
+2026-08-18T17:32:23,1539,54-year-old with acute pancreatitis. Verify left PICC line placement.,NO_MATCH,0,,,,,,304
+2026-08-18T17:32:56,1542,Left-sided chest pain. Asthma. History of pneumonia.,NO_MATCH,0,,,,,,460
+2026-08-18T17:33:14,1543,"Dyspnea, chest pain.",NO_MATCH,0,,,,,,304
+2026-08-18T17:33:32,1545,83 y/o F; cough and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,572;574,0x1a7e2e1e0;0x1a7e2e1f0,1;1,520
+2026-08-18T17:33:50,1551,"Two weeks of productive cough, recent diagnosis of pneumonia; right-sided pleuritic chest pain",NO_MATCH,0,,,,,,650
+2026-08-18T17:34:07,1552,Cough with mid back pain and chest pain,MATCH,1,3, Cough,772,0x1a7fff820,1,729
+2026-08-18T17:34:25,1554,"Cough and congestion, comparison 01/11/2001.",MATCH,1,3, Cough,764,0x1a80e57e0,1,729
+2026-08-18T17:34:43,1557,Chest pain. Ongoing treatment for prostate cancer.,NO_MATCH,0,,,,,,304
+2026-08-18T17:35:01,1559,"MVA. Shortness of breath, chest pain.",MULTI_MATCH,2,2;0, Shortness; of breath,640;642,0x1a81d4400;0x1a81d4410,1;1,594
+2026-08-18T17:35:19,1561,"SOB, Cough",MATCH,1,3, Cough,442,0x1a824ddd0,1,396
+2026-08-18T17:35:36,1564,"Cough, wheezing",MATCH,1,19, wheez,316,0x1a82809e0,1,270
+2026-08-18T17:35:54,1566,cough wheezing,NO_MATCH,0,,,,,,180
+2026-08-18T17:36:12,1572,"Left side chest pain, MVA 4 days ago",NO_MATCH,0,,,,,,396
+2026-08-18T17:36:30,1573,Recent pneumonia worsening shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,694;696,0x1a84075b0;0x1a84075c0,1;1,648
+2026-08-18T17:36:48,1577,central catheter placement,MATCH,1,28, catheter,638,0x1a84b93f0,1,594
+2026-08-18T17:37:06,1580,Shortness of breath. Weakness.,MULTI_MATCH,2,2;0, Shortness; of breath,560;562,0x1a854e180;0x1a854e190,1;1,525
+2026-08-18T17:37:24,1584,"Cough, fever and fatigue.",NO_MATCH,0,,,,,,304
+2026-08-18T17:37:42,1585,Severe shortness of breath and dyspnea.,MATCH,1,1,ness of,350,0x1a8604af0,1,304
+2026-08-18T17:38:00,1588,"Cough for 2 days, and dyspnea and shortness of breath.",MULTI_MATCH,3,3;4;0, Cough; shortness; of breath,170;182;184,0x1a8631550;0x1a86315b0;0x1a86315c0,1;1;1,120
+2026-08-18T17:38:17,1589,"Cough, chest pain, and SOB. Former smoker.",MATCH,1,3, Cough,772,0x1a8709820,1,729
+2026-08-18T17:38:35,1591,Right pneumothorax and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,616;618,0x1a87b0340;0x1a87b0350,1;1,567
+2026-08-18T17:38:53,1593,"Right rib pain for several months, no known injury",NO_MATCH,0,,,,,,729
+2026-08-18T17:39:10,1598,Diaphoresis and chest pain.,MATCH,1,6, chest pain,698,0x1a89325d0,1,650
+2026-08-18T17:39:28,1600,"Centralized chest pain after using crack. History of cocaine abuse, alcohol abuse, hypertension.",NO_MATCH,0,,,,,,572
+2026-08-18T17:39:46,1604,Short of breath and chest pain this a.m. Pain is predominantly between the shoulders.,MATCH,1,0, of breath,348,0x1a8a2cae0,1,304
+2026-08-18T17:40:04,1605,Right rib pain following over exertion,NO_MATCH,0,,,,,,729
+2026-08-18T17:40:22,1608,Cough and 38,MATCH,1,10,ough and,348,0x1a8b51ae0,1,304
+2026-08-18T17:40:40,1609,CAD. CABG. Rule-out fluid overload.,NO_MATCH,0,,,,,,304
+2026-08-18T17:40:58,1610,Fever with cough. History of CVA,MATCH,1,12, cough.,612,0x1a9044320,1,567
+2026-08-18T17:41:15,1615,Left-sided chest pain for 30 minutes. Patient reports remote history of pulmonary embolus.,MATCH,1,6, chest pain,782,0x1a911b870,1,729
+2026-08-18T17:41:33,1616,"Chest pain, tingling in arms and hands today. History of asthma.",NO_MATCH,0,,,,,,624
+2026-08-18T17:41:51,1618,Productive cough. Shortness of breath,MATCH,1,1,ness of,648,0x1a9297440,1,600
+2026-08-18T17:42:09,1621,Right lateral rib pain,NO_MATCH,0,,,,,,304
+2026-08-18T17:42:27,1623,"Fall, right lower rib pain/contusion",NO_MATCH,0,,,,,,304
+2026-08-18T17:42:45,1624,"Fever, pain and shortness of breath",MATCH,1,1,ness of,352,0x1a9394b00,1,304
+2026-08-18T17:43:03,1625,Venous catheter placement.,MATCH,1,28, catheter,200,0x1a93ce640,1,156
+2026-08-18T17:43:21,1627,Cough and shortness of breath. COVID-19 positive,MULTI_MATCH,3,10;4;0,ough and; shortness; of breath,638;640;642,0x1a947e3f0;0x1a947e400;0x1a947e410,1;1;1,594
+2026-08-18T17:43:38,1631,Increasing shortness of breath. Respiratory distress.,MULTI_MATCH,2,4;0, shortness; of breath,638;640,0x1a952e3f0;0x1a952e400,1;1,594
+2026-08-18T17:43:57,1634,Flu-like symptoms. Upper extremity chest pain. Shortness of breath.,MULTI_MATCH,2,6;1, chest pain;ness of,708;712,0x1a95fa620;0x1a95fa640,1;1,650
+2026-08-18T17:44:15,1638,Right-sided PICC line placement. Colon cancer.,NO_MATCH,0,,,,,,304
+2026-08-18T17:44:33,1639,Left rib pain. Patient status post fall 4 days ago.,MATCH,1,15, rib pain,572,0x1a96f41e0,1,528
+2026-08-18T17:44:51,1640,Respiratory failure. COPD exacerbation.,NO_MATCH,0,,,,,,304
+2026-08-18T17:45:09,1641,47-year-old male with wheezing for 1-2 years.,NO_MATCH,0,,,,,,729
+2026-08-18T17:45:27,1643,71-year-old female under preoperative evaluation for pacemaker placement. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,652;654,0x1a98e4460;0x1a98e4470,1;1,594
+2026-08-18T17:45:45,1644,"Cough, chest pain and shortness of breath.",MULTI_MATCH,2,6;1, chest pain;ness of,464;468,0x1a9975e80;0x1a9975ea0,1;1,418
+2026-08-18T17:46:03,1645,Five days of shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,702;704,0x1a9a405f0;0x1a9a40600,1;1,648
+2026-08-18T17:46:21,1653,61-year-old ? lung cancer. Confusion. Uncooperative. Chest pain.,NO_MATCH,0,,,,,,304
+2026-08-18T17:46:38,1654,Abdominal pain. Fever. Nausea. Gastric carcinoma.,NO_MATCH,0,,,,,,621
+2026-08-18T17:46:56,1656,Weakness and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1a9c11400;0x1a9c11410,1;1,594
+2026-08-18T17:47:14,1657,Encounter for PICC line placement.,MATCH,1,20, PICC,270,0x1a9c58870,1,225
+2026-08-18T17:47:32,1658,PICC line placement. Pneumonia.,NO_MATCH,0,,,,,,304
+2026-08-18T17:47:50,1661,Intubation. Shortness of breath.,MATCH,1,1,ness of,400,0x1a9d13c80,1,352
+2026-08-18T17:48:08,1663,Right rib pain since a fall 3 days ago. Shortness of breath.,MATCH,1,1,ness of,630,0x1a9dca3b0,1,567
+2026-08-18T17:48:26,1665,Shortness of breath for 2 weeks,MATCH,1,1,ness of,572,0x1a9e7b1e0,1,528
+2026-08-18T17:48:44,1667,Preoperative evaluation. Hypertension. No current chest complaints.,NO_MATCH,0,,,,,,304
+2026-08-18T17:49:02,1668,Asthma. Chest pain.,NO_MATCH,0,,,,,,729
+2026-08-18T17:49:20,1669,"Injured while tubing, injury to lower RIGHT rib cage laterally, contusion, shortness of breath",MULTI_MATCH,2,4;0, shortness; of breath,456;458,0x1aa022e40;0x1aa022e50,1;1,396
+2026-08-18T17:49:38,1670,History of COPD. Emphysema.,NO_MATCH,0,,,,,,572
+2026-08-18T17:49:55,1672,Visit reason: COPD;,NO_MATCH,0,,,,,,525
+2026-08-18T17:50:13,1678,Right shoulder and posterior rib pain after fall from horse.,NO_MATCH,0,,,,,,304
+2026-08-18T17:50:31,1681,Assault. Trauma. Chest pain. Left lateral rib pain.,MATCH,1,15, rib pain,782,0x1aa28c870,1,729
+2026-08-18T17:50:49,1683,"Follow up infiltrate, history hypertension, COPD, coronary disease, CHF",NO_MATCH,0,,,,,,594
+2026-08-18T17:51:06,1684,Left lower rib pain,NO_MATCH,0,,,,,,729
+2026-08-18T17:51:24,1685,"Shortness of breath, weakness, COVID-19 positive",MULTI_MATCH,2,2;0, Shortness; of breath,610;612,0x1aa8b3310;0x1aa8b3320,1;1,567
+2026-08-18T17:51:41,1687,Persistent cough. Former smoker. Follow-up pneumonia.,MATCH,1,12, cough.,348,0x1aa915ae0,1,304
+2026-08-18T17:52:00,1691,Shortness of breath. Hypoxia. Lung carcinoma.,MULTI_MATCH,2,1;29,ness of; Hypox,440;444,0x1aa989dc0;0x1aa989de0,1;1,396
+2026-08-18T17:52:17,1693,5-day-old male former 30 week gestation. Respiratory distress syndrome. Small for gestational age. Lines and tubes.,NO_MATCH,0,,,,,,270
+2026-08-18T17:52:35,1695,"3-4 weeks of shortness of breath, onset of medial chest pain and productive cough 1 week ago. Discontinued smoking in 4367.",MULTI_MATCH,3,4;0;6, shortness; of breath; chest pain,778;780;786,0x1aaa99850;0x1aaa99860;0x1aaa99890,1;1;1,729
+2026-08-18T17:52:53,1696,Shortness of breath. Chest pain and cough.,MULTI_MATCH,2,1;7,ness of; Chest pain,634;638,0x1aab333d0;0x1aab333f0,1;1,594
+2026-08-18T17:53:11,1697,Shortness of breath with exertion. Productive cough for 2 days. History of CHF and hypertension.,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1aac0f820;0x1aac0f830,1;1,729
+2026-08-18T17:53:29,1700,Chest pain radiating to back.,MATCH,1,7, Chest pain,772,0x1aacf4820,1,729
+2026-08-18T17:53:47,1705,"Early pneumonia. Follow-up. Cough, congestion, fever.",MULTI_MATCH,2,13;17, pneumonia.; Follow-up,692;694,0x1aadaa5a0;0x1aadaa5b0,1;1,648
+2026-08-18T17:54:05,1706,History of coughing for 1-1/2 weeks. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,360;362,0x1aae0fb40;0x1aae0fb50,1;1,304
+2026-08-18T17:54:22,1707,Respiratory failure/hypoxia,NO_MATCH,0,,,,,,594
+2026-08-18T17:54:40,1709,Fall. Left posterior rib pain.,NO_MATCH,0,,,,,,304
+2026-08-18T17:54:57,1710,44-year-old male with a history of chest pain,NO_MATCH,0,,,,,,650
+2026-08-18T17:55:15,1711,Cough congestion fever.,NO_MATCH,0,,,,,,624
+2026-08-18T17:55:33,1713,"Respiratory failure, intubation.",NO_MATCH,0,,,,,,352
+2026-08-18T17:55:51,1714,62-year-old with shortness of breath and chest pain.,MULTI_MATCH,2,1;6,ness of; chest pain,354;358,0x1ab168b10;0x1ab168b30,1;1,304
+2026-08-18T17:56:09,1718,"CABG, valve repair",NO_MATCH,0,,,,,,304
+2026-08-18T17:56:27,1720,"COPD, shortness of breath.",MULTI_MATCH,3,16;11;1," COPD;, short;ness of",764;766;768,0x1ab2997e0;0x1ab2997f0;0x1ab299800,1;1;1,729
+2026-08-18T17:56:45,1724,"Routine examination, former smoker, history of COPD, no current chest complaints",NO_MATCH,0,,,,,,594
+2026-08-18T17:57:03,1725,Lung cancer. Fever. Chest pain.,NO_MATCH,0,,,,,,361
+2026-08-18T17:57:21,1729,Shortness of breath. Hypertension.,MULTI_MATCH,2,2;0, Shortness; of breath,780;782,0x1ab498860;0x1ab498870,1;1,729
+2026-08-18T17:57:39,1731,Wheezing and shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,190;192,0x1ab4ca5f0;0x1ab4ca600,1;1,144
+2026-08-18T17:57:56,1736,Cough for 3 weeks,NO_MATCH,0,,,,,,594
+2026-08-18T17:58:14,1738,Status post fall. Anterior left rib pain.,MATCH,1,15, rib pain,354,0x1ab5f3b10,1,304
+2026-08-18T17:58:31,1739,"Football injury, left anterior chest pain",NO_MATCH,0,,,,,,675
+2026-08-18T17:58:50,1741,Fever. Occasional shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,620;622,0x1ab75c360;0x1ab75c370,1;1,572
+2026-08-18T17:59:07,1744,"Respiratory distress, post intubation.",NO_MATCH,0,,,,,,396
+2026-08-18T17:59:25,1745,Ovarian CA. Right portacath insertion. Reevaluate pneumothorax.,NO_MATCH,0,,,,,,304
+2026-08-18T17:59:43,1748,"Left-sided chest pain today, painful inspiration.",MATCH,1,6, chest pain,774,0x1ab8f8830,1,729
+2026-08-18T18:00:01,1750,"Cough, sob, pneumonia.",MATCH,1,3, Cough,568,0x1ab9a71c0,1,525
+2026-08-18T18:00:18,1753,Mid chest pain and pressure extending into the throat.,MATCH,1,6, chest pain,694,0x1aba695b0,1,650
+2026-08-18T18:00:35,1754,Hypoxemia status post motor vehicle accident.,NO_MATCH,0,,,,,,594
+2026-08-18T18:00:53,1757,Painful swelling and left chest. Hypertension.,NO_MATCH,0,,,,,,729
+2026-08-18T18:01:12,1758,"Respiratory failure, history of hypertension and atrial fibrillation",NO_MATCH,0,,,,,,594
+2026-08-18T18:01:30,1759,Cough and wheezing for 2 days. Intermittent fever suggested. Fever to 102.5,MULTI_MATCH,2,10;19,ough and; wheez,292;294,0x1ac0ce920;0x1ac0ce930,1;1,240
+2026-08-18T18:01:48,1762,PICC placement. GI bleeding.,NO_MATCH,0,,,,,,304
+2026-08-18T18:02:06,1764,Follow up CABG.,NO_MATCH,0,,,,,,480
+2026-08-18T18:02:24,1767,COPD with cough; pulmonary edema,NO_MATCH,0,,,,,,594
+2026-08-18T18:02:42,1769,"Shortness of breath, nausea, headache for 2 days",MULTI_MATCH,2,2;0, Shortness; of breath,768;770,0x1ac32b800;0x1ac32b810,1;1,729
+2026-08-18T18:02:59,1771,Weakness. Hypotension. Confusion.,MATCH,1,18, Weakness,618,0x1ac3c9350,1,567
+2026-08-18T18:03:17,1775,Intermittent sharp chest pain radiating into the back. Symptoms began several months ago. Nonsmoker. No history of cardiopulmonary disease.,MATCH,1,6, chest pain,732,0x1ac4816e0,1,676
+2026-08-18T18:03:35,1777,"cough, cancer lung",NO_MATCH,0,,,,,,396
+2026-08-18T18:03:52,1780,"Respiratory failure, right-sided chest pain, history of GI bleeding, Barrett's esophagus, nonsmoker.",NO_MATCH,0,,,,,,594
+2026-08-18T18:04:10,1781,"Cough, shortness of breath, fever",MULTI_MATCH,4,3;11;1;8," Cough;, short;ness of; breath,",568;570;572;574,0x1ac6441c0;0x1ac6441d0;0x1ac6441e0;0x1ac6441f0,1;1;1;1,525
+2026-08-18T18:04:28,1783,66-year-old male with history of shortness of breath. COVID-19 positive.,MULTI_MATCH,2,4;0, shortness; of breath,646;648,0x1ac6f5430;0x1ac6f5440,1;1,594
+2026-08-18T18:04:46,1788,Respiratory distress. Dementia.,NO_MATCH,0,,,,,,594
+2026-08-18T18:05:04,1792,Acute on chronic respiratory failure.,NO_MATCH,0,,,,,,525
+2026-08-18T18:05:22,1795,Cough and wheezing for 3 days. Rhonchi on exam.,MATCH,1,3, Cough,668,0x1ac8fa4e0,1,625
+2026-08-18T18:05:40,1798,Fever. History of esophageal carcinoma,NO_MATCH,0,,,,,,594
+2026-08-18T18:05:58,1799,"74-year-old with kidney infection. Shortness of breath, fever, congestion and emphysema.",MULTI_MATCH,2,2;0, Shortness; of breath,356;358,0x1aca05b20;0x1aca05b30,1;1,304
+2026-08-18T18:06:16,1804,20-year-old male with history of spontaneous pneumothorax. Chest tube evaluation.,NO_MATCH,0,,,,,,546
+2026-08-18T18:06:33,1807,Motor vehicle accident. Follow-up.,NO_MATCH,0,,,,,,480
+2026-08-18T18:06:51,1808,"Mid chest pain and tightness, shortness of breath, diaphoresis, all beginning last night, smoker",MULTI_MATCH,3,6;4;0, chest pain; shortness; of breath,692;698;700,0x1acbfd5a0;0x1acbfd5d0;0x1acbfd5e0,1;1;1,648
+2026-08-18T18:07:09,1810,Congestion and cough. Shortness of breath.,MATCH,1,1,ness of,778,0x1accd8850,1,729
+2026-08-18T18:07:27,1815,CHF. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,350;352,0x1acd34af0;0x1acd34b00,1;1,304
+2026-08-18T18:07:45,1817,Follow-up CABG,NO_MATCH,0,,,,,,572
+2026-08-18T18:08:03,1818,Cough and wheezing for 2 days.,MATCH,1,3, Cough,312,0x1ace1b9c0,1,270
+2026-08-18T18:08:21,1820,Shortness of breath. Former smoker. TB,MATCH,1,1,ness of,422,0x1ace8bd30,1,378
+2026-08-18T18:08:39,1823,R/O pneumothorax,NO_MATCH,0,,,,,,525
+2026-08-18T18:08:57,1824,"Shortness of breath, leg swelling, and chest",MULTI_MATCH,2,1;8,"ness of; breath,",504;506,0x1acfa2fc0;0x1acfa2fd0,1;1,460
+2026-08-18T18:09:14,1828,"Acute shortness of breath. History of COPD, hypertension, and tobacco abuse.",MULTI_MATCH,2,1;16,ness of; COPD,640;646,0x1ad04c400;0x1ad04c430,1;1,594
+2026-08-18T18:09:32,1831,"Cough, smoking history",MATCH,1,3, Cough,772,0x1ad114820,1,729
+2026-08-18T18:09:50,1836,"Recent pneumonia. PT had teeth extracted 1 week ago. Took multiple pain medicines this AM. Complains of dizziness, weakness.",NO_MATCH,0,,,,,,525
+2026-08-18T18:10:08,1841,Sore chest after CABG,NO_MATCH,0,,,,,,594
+2026-08-18T18:10:26,1844,84-year-old male respiratory failure.,NO_MATCH,0,,,,,,594
+2026-08-18T18:10:44,1845,"73-year-old female, congestive heart failure, shortness of breath.",MULTI_MATCH,2,11;1,", short;ness of",358;360,0x1ad36ab30;0x1ad36ab40,1;1,304
+2026-08-18T18:11:02,1847,Respiratory distress. Shortness of breath. The patient is CPAP. History of hypertension.,MATCH,1,1,ness of,642,0x1ad416410,1,594
+2026-08-18T18:11:19,1849,"Productive cough, fever and shortness of Breath.",MATCH,1,1,ness of,644,0x1ad4c0420,1,594
+2026-08-18T18:11:37,1850,Awakened this morning with left-sided substernal chest pain extending into the left upper extremity. New onset dyspnea.,NO_MATCH,0,,,,,,500
+2026-08-18T18:11:54,1852,30-year-old female with cough and wheezing and emesis.,NO_MATCH,0,,,,,,594
+2026-08-18T18:12:12,1855,Shortness of air. History of asthma.,MATCH,1,1,ness of,348,0x1ad628ae0,1,304
+2026-08-18T18:12:30,1861,"Shortness of breath, weakness, productive cough. History of lung cancer.",MULTI_MATCH,2,1;8,"ness of; breath,",556;558,0x1ad6b4160;0x1ad6b4170,1;1,504
+2026-08-18T18:12:48,1864,Follow up pneumothorax. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,644;646,0x1ad762420;0x1ad762430,1;1,594
+2026-08-18T18:13:07,1865,Intermittent vomiting for 2 weeks. Recent cough. Sick sibling.,MATCH,1,12, cough.,282,0x1ad7ab8d0,1,228
+2026-08-18T18:13:24,1868,Cough and wheezing. Follow up.,MULTI_MATCH,2,10;19,ough and; wheez,440;442,0x1adc2cdc0;0x1adc2cdd0,1;1,396
+2026-08-18T18:13:42,1872,Shortness of breath. Nausea and vomiting. Headache.,MATCH,1,1,ness of,694,0x1adceb5b0,1,650
+2026-08-18T18:14:00,1875,Wheezing. Coughing. Fever.,NO_MATCH,0,,,,,,304
+2026-08-18T18:14:18,1876,Follow-up heart surgery post chest tube removal.,NO_MATCH,0,,,,,,576
+2026-08-18T18:14:36,1877,Weakness. Questionable fall.,NO_MATCH,0,,,,,,594
+2026-08-18T18:14:53,1881,"Recent fall with chest pain, initial encounter",NO_MATCH,0,,,,,,729
+2026-08-18T18:15:11,1883,"Chest pain, new onset atrial fibrillation.",NO_MATCH,0,,,,,,1178
+2026-08-18T18:15:29,1886,Left chest pain with shortness of breath.,MULTI_MATCH,2,6;1, chest pain;ness of,348;352,0x1af600ae0;0x1af600b00,1;1,304
+2026-08-18T18:15:47,1887,Short of breath. Hypoxia. Left-sided crackles.,MATCH,1,0, of breath,638,0x1af69c3f0,1,594
+2026-08-18T18:16:05,1888,Chest pain since last night,MATCH,1,7, Chest pain,610,0x1af42f310,1,567
+2026-08-18T18:16:22,1892,Cough for 3 months. History of asthma,NO_MATCH,0,,,,,,552
+2026-08-18T18:16:40,1894,Inspiratory chest pain. Syncope.,MATCH,1,6, chest pain,774,0x1af5a0830,1,729
+2026-08-18T18:16:58,1897,dyspnea; chest pain,NO_MATCH,0,,,,,,304
+2026-08-18T18:17:16,1898,Post bronchoscopy and biopsy. Rule out delayed pneumothorax.,NO_MATCH,0,,,,,,648
+2026-08-18T18:17:34,1901,Shortness of breath. CHF.,NO_MATCH,0,,,,,,750
+2026-08-18T18:17:52,1904,"CHF, cough, COPD",MULTI_MATCH,2,14;16," cough,; COPD",550;552,0x1af038130;0x1af038140,1;1,504
+2026-08-18T18:18:09,1905,Acute onset of shortness of breath and generalized weakness.,MATCH,1,1,ness of,642,0x1af0e7410,1,594
+2026-08-18T18:18:27,1909,Postop CABG,NO_MATCH,0,,,,,,288
+2026-08-18T18:18:45,1910,Follow-up COVID-19 viral pneumonia.,NO_MATCH,0,,,,,,650
+2026-08-18T18:19:03,1911,"Atypical chest pain, abnormal EKG",NO_MATCH,0,,,,,,304
+2026-08-18T18:19:20,1913,[AGE] female with history of acute respiratory failure. Chronic dyspnea. Generalized weakness and fever.,NO_MATCH,0,,,,,,572
+2026-08-18T18:19:38,1914,"Large left pneumothorax, chest tube placement",NO_MATCH,0,,,,,,304
+2026-08-18T18:19:56,1915,80-year-old male with shortness of breath. Palpitations. History of congestive heart failure. Initial encounter.,MATCH,1,1,ness of,788,0x1aec518a0,1,729
+2026-08-18T18:20:14,1916,Cough. Recent sinus infection.,MATCH,1,3, Cough,772,0x1aed1c820,1,729
+2026-08-18T18:20:31,1917,"Chest pain, shortness of breath, atrial fibrillation. History of hypertension. Nonsmoker.",MULTI_MATCH,4,7;11;1;8," Chest pain;, short;ness of; breath,",664;666;668;670,0x1ae9d04c0;0x1ae9d04d0;0x1ae9d04e0;0x1ae9d04f0,1;1;1;1,621
+2026-08-18T18:20:49,1919,Respiratory distress of newborn. Vaginal delivery.,MATCH,1,9, Respiratory,224,0x1aea0a700,1,182
+2026-08-18T18:21:07,1920,75-year-old female with congestive heart failure. Hypertension.,MATCH,1,27, Hypert,730,0x1aeac66d0,1,675
+2026-08-18T18:21:25,1921,Increasing weakness. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,596;598,0x1aeb6a2a0;0x1aeb6a2b0,1;1,550
+2026-08-18T18:21:42,1924,Cough and shortness of breath; metastatic lung carcinoma,MULTI_MATCH,2,3;1, Cough;ness of,610;614,0x1ae818310;0x1ae818330,1;1,567
+2026-08-18T18:22:01,1925,"Shortness of breath, swelling in the hands and feet, mid chest pain with cough and congestion",MULTI_MATCH,3,1;8;6,"ness of; breath,; chest pain",348;350;360,0x1ae87bae0;0x1ae87baf0;0x1ae87bb40,1;1;1,304
+2026-08-18T18:22:18,1926,Premature newborn. Follow-up atelectasis.,NO_MATCH,0,,,,,,396
+2026-08-18T18:22:36,1927,Respiratory distress syndrome. Newborn today.,MATCH,1,9, Respiratory,132,0x1ae8d7420,1,90
+2026-08-18T18:22:54,1928,"Cough, history of pulmonary fibrosis",NO_MATCH,0,,,,,,594
+2026-08-18T18:23:12,1930,Respiratory congestion.,NO_MATCH,0,,,,,,594
+2026-08-18T18:23:30,1931,"Motor vehicle accident, chest pain",MATCH,1,6, chest pain,530,0x1ae6d7090,1,483
+2026-08-18T18:23:47,1932,"Lung lesion, right IJ catheter placement and bronchoscopy.",NO_MATCH,0,,,,,,304
+2026-08-18T18:24:05,1933,Hemoptysis left evening associated with chest congestion. Abnormal chest exam. No fever. Nonsmoker.,NO_MATCH,0,,,,,,650
+2026-08-18T18:24:22,1935,"Shortness of breath, cough, altered mental status.",MULTI_MATCH,3,1;8;14,"ness of; breath,; cough,",348;350;352,0x1ae452ae0;0x1ae452af0;0x1ae452b00,1;1;1,304
+2026-08-18T18:24:40,1938,"Cough, fever, chest tightness",NO_MATCH,0,,,,,,594
+2026-08-18T18:24:58,1939,Preop exam. Hypertension.,NO_MATCH,0,,,,,,650
+2026-08-18T18:25:16,1940,Right-sided chest trauma and rib pain.,MATCH,1,15, rib pain,352,0x1ae233b00,1,304
+2026-08-18T18:25:34,1943,Shortness of air.,MATCH,1,2, Shortness,664,0x1ae2f34c0,1,621
+2026-08-18T18:25:52,1944,"Pneumonia, shortness of breath, history of CVA and CABG.",MULTI_MATCH,3,4;0;21, shortness; of breath; CABG,642;644;652,0x1ae39d410;0x1ae39d420;0x1ae39d460,1;1;1,594
+2026-08-18T18:26:10,1946,"Chest pain, shortness of breath. Code stroke.",MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1af757400;0x1af757410,1;1,594
+2026-08-18T18:26:28,1950,"Motorcycle accident with chest pain, initial encounter",MATCH,1,6, chest pain,640,0x1af7f3400,1,594
+2026-08-18T18:26:46,1952,"Chest pain, PT states has upper chest pain x 1 day. History of asthma.",MATCH,1,6, chest pain,354,0x1afc4fb10,1,304
+2026-08-18T18:27:04,1954,Respiratory illness. Fever. Clinical concern of croup.,NO_MATCH,0,,,,,,266
+2026-08-18T18:27:22,1956,"Fall several weeks ago with persistent left-sided chest pain, initial encounter",NO_MATCH,0,,,,,,304
+2026-08-18T18:27:40,1958,Status post dialysis catheter placement,NO_MATCH,0,,,,,,594
+2026-08-18T18:27:57,1960,Aortic stenosis. AVR. CABG.,NO_MATCH,0,,,,,,304
+2026-08-18T18:28:15,1961,Ventilator dependent respiratory failure. Sepsis. Acute renal failure.,NO_MATCH,0,,,,,,304
+2026-08-18T18:28:33,1962,Acute respiratory failure. Hypoxia,MATCH,1,29, Hypox,642,0x1aff20410,1,594
+2026-08-18T18:28:51,1963,"CA lung, productive cough, shortness of breath.",MULTI_MATCH,3,14;4;0," cough,; shortness; of breath",776;778;780,0x1affe9840;0x1affe9850;0x1affe9860,1;1;1,729
+2026-08-18T18:29:08,1964,Respiratory arrest. Intubated.,NO_MATCH,0,,,,,,304
+2026-08-18T18:29:26,1966,"Respiratory distress, ET tube placement, central line placement",NO_MATCH,0,,,,,,304
+2026-08-18T18:29:43,1967,"Abdominal pain for 3 weeks. Previous peritoneal catheter placed with abscess surrounding the catheter. Right upper chest hemodialysis catheter placed yesterday. Abdominal pain, vomiting, temperature.",MULTI_MATCH,2,28;28, catheter; catheter,628;636,0x1b014e3a0;0x1b014e3e0,1;1,572
+2026-08-18T18:30:01,1968,Umbilical artery catheter repositioning.,MATCH,1,28, catheter,442,0x1b019ddd0,1,396
+2026-08-18T18:30:19,1970,"Shortness of breath, fever, history of cancer",MULTI_MATCH,2,2;0, Shortness; of breath,568;570,0x1b02441c0;0x1b02441d0,1;1,525
+2026-08-18T18:30:37,1973,Chest pain and shortness of breath,MULTI_MATCH,2,7;1, Chest pain;ness of,664;668,0x1b031a4c0;0x1b031a4e0,1;1,621
+2026-08-18T18:30:55,1978,"Cough, fever for 5 days",MATCH,1,3, Cough,772,0x1b03ec820,1,729
+2026-08-18T18:31:14,1979,"Back and flank pain, shortness of breath.",MULTI_MATCH,2,4;0, shortness; of breath,750;752,0x1b08b8770;0x1b08b8780,1;1,702
+2026-08-18T18:31:32,1981,Central venous catheter placement. Status post L5-S1 ALIF.,MATCH,1,28, catheter,350,0x1b0912af0,1,304
+2026-08-18T18:31:50,1982,Cough and fever. Upper chest pain for 3 weeks.,MULTI_MATCH,2,10;23,ough and; fever.,348;350,0x1b0978ae0;0x1b0978af0,1;1,304
+2026-08-18T18:32:08,1983,Hypoxia today. Altered mental status. COVID positive 2 months ago.,NO_MATCH,0,,,,,,594
+2026-08-18T18:32:26,1987,PICC line placement by IV therapy.,NO_MATCH,0,,,,,,304
+2026-08-18T18:32:44,1988,"Dizziness, shortness of breath",MULTI_MATCH,2,4;0, shortness; of breath,552;554,0x1b0b13140;0x1b0b13150,1;1,506
+2026-08-18T18:33:01,1989,Short of breath. Pulmonary edema appear,MATCH,1,0, of breath,638,0x1b0bc53f0,1,594
+2026-08-18T18:33:19,1991,Follow-up COVID-19 pneumonia/ARDS.,MULTI_MATCH,2,17;22, Follow-up; COVID-,568;570,0x1b0c681c0;0x1b0c681d0,1;1,525
+2026-08-18T18:33:37,1992,Chest pain since insertion of a left PICC line yesterday.,MATCH,1,20, PICC,622,0x1b0d15370,1,572
+2026-08-18T18:33:55,1995,Worsening shortness of breath and generalized weakness for several days. History of gastric cancer post chemotherapy.,MULTI_MATCH,2,4;0, shortness; of breath,586;588,0x1b0db5250;0x1b0db5260,1;1,540
+2026-08-18T18:34:12,1998,Substernal chest pain; 2 weeks status post stent placement,NO_MATCH,0,,,,,,621
+2026-08-18T18:34:31,1999,Cough and hypoxia. Status post lumbar spine surgery.,MATCH,1,10,ough and,348,0x1b0ec7ae0,1,304
+2026-08-18T18:34:48,2001,Newborn. Umbilical vein catheter placement.,NO_MATCH,0,,,,,,396
+2026-08-18T18:35:07,2007,"Fever, headaches, tachycardia, shortness breath",MATCH,1,11,", short",448,0x1b0f92e00,1,396
+2026-08-18T18:35:25,2009,[AGE] female with a history of shortness of breath and positive viral test,MATCH,1,1,ness of,624,0x1b144d380,1,572
+2026-08-18T18:35:43,2011,Centralized chest pain and dizziness. History of hypertension.,MATCH,1,6, chest pain,720,0x1b151a680,1,675
+2026-08-18T18:36:01,2013,Acute onset of shortness of breath. Fever. Initial encounter.,MULTI_MATCH,2,1;26,ness of; Fever.,642;646,0x1b15aa410;0x1b15aa430,1;1,594
+2026-08-18T18:36:19,2014,"Shortness of breath, pneumonia, weakness",MULTI_MATCH,2,1;8,"ness of; breath,",572;574,0x1b16511e0;0x1b16511f0,1;1,528
+2026-08-18T18:36:37,2016,COPD. Respiratory failure.,MATCH,1,9, Respiratory,350,0x1b16aaaf0,1,304
+2026-08-18T18:36:55,2018,"shortness of breath, chest pain",MULTI_MATCH,3,1;8;6,"ness of; breath,; chest pain",440;442;444,0x1b171adc0;0x1b171add0;0x1b171ade0,1;1;1,396
+2026-08-18T18:37:13,2020,70-year-old with chest pain.,NO_MATCH,0,,,,,,304
+2026-08-18T18:37:30,2022,"83-year-old male with shortness of breath, arrhythmia, mid chest pain.",MULTI_MATCH,2,1;8,"ness of; breath,",780;782,0x1b1838860;0x1b1838870,1;1,729
+2026-08-18T18:37:49,2027,"Congestive heart failure, congestion, cough. Followup aeration.",NO_MATCH,0,,,,,,304
+2026-08-18T18:38:06,2029,Intermittent shortness of breath for 2 months.,MULTI_MATCH,2,4;0, shortness; of breath,776;778,0x1b1959840;0x1b1959850,1;1,729
+2026-08-18T18:38:24,2031,"Chest pain, shortness of breath and tachypnea; left-sided chest pain radiates down both arms.",MULTI_MATCH,3,4;0;6, shortness; of breath; chest pain,526;528;538,0x1b19d4070;0x1b19d4080;0x1b19d40d0,1;1;1,480
+2026-08-18T18:38:42,2034,Cough for two weeks. Wheezing.,NO_MATCH,0,,,,,,270
+2026-08-18T18:39:00,2038,"Hypoxia, CHF. Patient reports a hacking cough for 1 week. Hypertension, takes meds to control it. Pacemaker in 08766. Smoker for 50 years.",MATCH,1,27, Hypert,364,0x1b1a6fb60,1,304
+2026-08-18T18:39:18,2041,Follow-up pericardial effusion. Chest tubes.,NO_MATCH,0,,,,,,304
+2026-08-18T18:39:36,2043,"Chest pain, punched in chest/shortness of breath. Additional history provided: Left-sided chest pain and mild shortness of breath after being punched in left side of chest today.",MULTI_MATCH,2,0;1, of breath;ness of,676;690,0x1b1b85520;0x1b1b85590,1;1,624
+2026-08-18T18:39:53,2045,"Chest pain, short of breath, VFIB.",MATCH,1,8," breath,",352,0x1b1bd5b00,1,304
+2026-08-18T18:40:12,2047,Acute hypoxic respiratory failure. Pneumonia.,NO_MATCH,0,,,,,,594
+2026-08-18T18:40:29,2049,"4-year-old female with cough, fever, and history of asthma.",MATCH,1,14," cough,",318,0x1b1cd89f0,1,270
+2026-08-18T18:40:47,2051,Follow-up coronary bypass graft,NO_MATCH,0,,,,,,594
+2026-08-18T18:41:05,2056,Cough. Wheezing. Initial encounter.,MATCH,1,3, Cough,330,0x1b1df2a50,1,288
+2026-08-18T18:41:23,2057,Altered mental status. Cough and shortness of breath. Respiratory distress.,MULTI_MATCH,3,3;1;9, Cough;ness of; Respiratory,352;356;360,0x1b1e51b00;0x1b1e51b20;0x1b1e51b40,1;1;1,304
+2026-08-18T18:41:40,2058,"Follow-up small left pneumothorax demonstrated on exams of July 16, 1998; continued left-sided chest discomfort and shortness of breath",MULTI_MATCH,2,4;0, shortness; of breath,376;378,0x1b1ea8bc0;0x1b1ea8bd0,1;1,304
+2026-08-18T18:41:58,2059,Cough. Strep throat one month ago. Bronchitis.,NO_MATCH,0,,,,,,304
+2026-08-18T18:42:16,2060,Left flank and rib pain due to coughing spells.,MATCH,1,15, rib pain,442,0x1b1f8fdd0,1,396
+2026-08-18T18:42:34,2061,Shortness of breath. Fell and hit right-side of chest.,MATCH,1,1,ness of,440,0x1b2017dc0,1,396
+2026-08-18T18:42:52,2065,"Chest pain, shortness of breath for 4-5 days. Diagnosed with pneumonia 4 days ago.",MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1b20c3400;0x1b20c3410,1;1,594
+2026-08-18T18:43:10,2067,"Fever, wheezing",MATCH,1,19, wheez,240,0x1b2108780,1,195
+2026-08-18T18:43:28,2069,Chest pain. History of hypertension.,MATCH,1,7, Chest pain,664,0x1b21b64c0,1,621
+2026-08-18T18:43:46,2070,Soreness of breath and cough,MATCH,1,0, of breath,350,0x1b221caf0,1,304
+2026-08-18T18:44:03,2071,"Status post fall yesterday, mid left sided rib pain.",MATCH,1,15, rib pain,534,0x1b22af0b0,1,483
+2026-08-18T18:44:21,2073,Chest pain. Chest tube placement.,MATCH,1,7, Chest pain,560,0x1b2348180,1,525
+2026-08-18T18:44:38,2074,Dyspnea on exertion with left lower extremity edema and shortness of breath.,MATCH,1,1,ness of,1228,0x1b3818660,1,1178
+2026-08-18T18:44:56,2075,"PICC line placement, colitis, failure to thrive",NO_MATCH,0,,,,,,304
+2026-08-18T18:45:14,2076,"Respiratory distress, acute onset. Premature newborn. Initial encounter.",MATCH,1,9, Respiratory,174,0x1b3661570,1,132
+2026-08-18T18:45:32,2078,38-year-old female with history of shortness of breath. COVID-19 infection.,MULTI_MATCH,2,1;22,ness of; COVID-,782;786,0x1b373f870;0x1b373f890,1;1,729
+2026-08-18T18:45:50,2079,Upper Respiratory Infection.,NO_MATCH,0,,,,,,621
+2026-08-18T18:46:08,2080,"Pneumonia, COPD.",MATCH,1,16, COPD,352,0x1b345ab00,1,304
+2026-08-18T18:46:26,2084,Respiratory failure. Concern for aspiration.,NO_MATCH,0,,,,,,594
+2026-08-18T18:46:43,2085,Status post dialysis catheter placement today.,NO_MATCH,0,,,,,,594
+2026-08-18T18:47:01,2086,Weakness and unresponsiveness after fall.,NO_MATCH,0,,,,,,396
+2026-08-18T18:47:19,2087,Constipation with abdominal pain. Cough,NO_MATCH,0,,,,,,285
+2026-08-18T18:47:37,2088,History of pneumomediastinum and left pneumothorax. History of trauma.,NO_MATCH,0,,,,,,440
+2026-08-18T18:47:56,2091,Acute upper respiratory infection. Cough and chest pain,MULTI_MATCH,2,10;6,ough and; chest pain,760;762,0x1b33c17c0;0x1b33c17d0,1;1,702
+2026-08-18T18:48:14,2100,"Shortness of breath, cough.",MULTI_MATCH,2,2;0, Shortness; of breath,618;620,0x1b307c350;0x1b307c360,1;1,575
+2026-08-18T18:48:32,2101,Shortness of breath. Choking episode.,MATCH,1,1,ness of,108,0x1b3097360,1,64
+2026-08-18T18:48:50,2102,Left-sided chest pain. Diaphoresis. Shortness of breath. CT demonstrating mediastinal mass and possibly hemorrhage. Follow up effusions.,MATCH,1,1,ness of,534,0x1b31130b0,1,480
+2026-08-18T18:49:07,2103,"Cough and shortness of breath worsening over the last 3 weeks, history of interstitial lung disease, asthma, and pulmonary sarcoidosis.",MULTI_MATCH,2,3;1, Cough;ness of,610;614,0x1b31bd310;0x1b31bd330,1;1,567
+2026-08-18T18:49:25,2104,"Respiratory failure, COPD exacerbation.",NO_MATCH,0,,,,,,304
+2026-08-18T18:49:43,2105,Upper back pain to rule out pneumonia. Patient states upper back pain and slight trouble breathing. Rule out pneumonia. Denied pregnancy.,NO_MATCH,0,,,,,,304
+2026-08-18T18:50:01,2106,Precardiac catheterization study.,MATCH,1,28, catheter,350,0x1b2ed2af0,1,304
+2026-08-18T18:50:19,2107,"Shortness of breath, cough and weakness. History of lupus.",MULTI_MATCH,2,1;8,"ness of; breath,",598;600,0x1b2f682b0;0x1b2f682c0,1;1,546
+2026-08-18T18:50:37,2110,Cough for 10 days.,NO_MATCH,0,,,,,,594
+2026-08-18T18:50:54,2112,COPD chronic airway obstruction,NO_MATCH,0,,,,,,396
+2026-08-18T18:51:12,2114,59 y/o M; shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,644;646,0x1b2d57420;0x1b2d57430,1;1,594
+2026-08-18T18:51:30,2118,"Respiratory distress syndrome, prematurity",MATCH,1,9, Respiratory,438,0x1b2d9cdb0,1,396
+2026-08-18T18:51:48,2119,"Chest pain, MVC on Tuesday",NO_MATCH,0,,,,,,594
+2026-08-18T18:52:06,2120,COVID-19 positive. Fall with altered mental status,NO_MATCH,0,,,,,,594
+2026-08-18T18:52:23,2121,Shortness of breath; rapid heart,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b2bed820;0x1b2bed830,1;1,729
+2026-08-18T18:52:41,2123,"Acute MI, shortness of breath, chest pain",MULTI_MATCH,4,11;1;8;6,", short;ness of; breath,; chest pain",640;642;644;646,0x1b289f400;0x1b289f410;0x1b289f420;0x1b289f430,1;1;1;1,594
+2026-08-18T18:52:59,2126,Progressive weakness. Cough beginning today.,MATCH,1,3, Cough,640,0x1b294f400,1,594
+2026-08-18T18:53:17,2127,"Shortness of breath, cough, fever.",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b2a17820;0x1b2a17830,1;1,729
+2026-08-18T18:53:34,2130,Shortness of breath. Recent discharge from green Valley campus for COVID-19. Progressive shortness of breath tonight. Decreased oxygen saturation.,NO_MATCH,0,,,,,,528
+2026-08-18T18:53:52,2132,"COVID-19 positivity with shortness of breath and cough, initial encounter",NO_MATCH,0,,,,,,594
+2026-08-18T18:54:10,2134,42-year-old Chest pain.,NO_MATCH,0,,,,,,625
+2026-08-18T18:54:28,2135,Prior CABG. Shortness of breath with exertion,NO_MATCH,0,,,,,,729
+2026-08-18T18:54:46,2136,Pneumonia. Weakness.,NO_MATCH,0,,,,,,594
+2026-08-18T18:55:04,2138,"Occluded graft access, dialysis catheter insertion",NO_MATCH,0,,,,,,480
+2026-08-18T18:55:22,2140,"COPD, pneumonia and worsening respiratory distress.",NO_MATCH,0,,,,,,304
+2026-08-18T18:55:40,2141,Right-sided chest pain and mild difficulty breathing,NO_MATCH,0,,,,,,729
+2026-08-18T18:55:58,2142,85-year-old male with wheezing. Heart block.,NO_MATCH,0,,,,,,480
+2026-08-18T18:56:16,2143,"83 year old male; congestive heart failure, chest pain, and atrial fibrillation.",NO_MATCH,0,,,,,,304
+2026-08-18T18:56:34,2144,Postop for CABG.,MATCH,1,21, CABG,350,0x1a0617af0,1,304
+2026-08-18T18:56:51,2152,Premature neonate. Respiratory distress syndrome. Patent ductus arteriosus. Heart murmur.,MATCH,1,9, Respiratory,112,0x1a091e380,1,64
+2026-08-18T18:57:09,2155,"Patient was in a motor vehicle collision today and is complaining of chest wall and sternal pain with associated shortness of breath, no pre-existing underlying cardiopulmonary problems, smoker.",NO_MATCH,0,,,,,,729
+2026-08-18T18:57:27,2157,62-year-old female with shortness of breath and wheezing.,NO_MATCH,0,,,,,,594
+2026-08-18T18:57:45,2161,"soa, history of covid Patient has complaints of shortness of breath, chest pain, and a cough since the first part [DATE] which has recently turned productive. Diagnosed with COVID 05/08/2023.",MULTI_MATCH,3,1;8;6,"ness of; breath,; chest pain",358;360;362,0x19fe27b30;0x19fe27b40;0x19fe27b50,1;1;1,304
+2026-08-18T18:58:02,2162,Aspiration pneumonia. Pyelonephritis.,NO_MATCH,0,,,,,,304
+2026-08-18T18:58:21,2163,Shortness of breath on exertion.,NO_MATCH,0,,,,,,702
+2026-08-18T18:58:38,2168,"Cough, congestion, fever, and shortness of breath all day",MULTI_MATCH,3,3;4;0, Cough; shortness; of breath,298;306;308,0x19fb48950;0x19fb48990;0x19fb489a0,1;1;1,255
+2026-08-18T18:58:56,2170,new onset apnea in term baby with history of pneumothorax,NO_MATCH,0,,,,,,180
+2026-08-18T18:59:14,2171,"Shortness of breath, chest discomfort",NO_MATCH,0,,,,,,675
+2026-08-18T18:59:32,2172,Patient complains of shortness of breath. Decreased O2 saturation recorded in the emergency [HOSPITAL] with pneumonia 2 weeks ago.,NO_MATCH,0,,,,,,702
+2026-08-18T18:59:50,2173,70 year-old-male with cough and shortness of breath x 9 months. Question pleural effusion. History of esophageal cancer.,MATCH,1,1,ness of,358,0x19fee5b30,1,304
+2026-08-18T19:00:07,2174,"Shortness of breath, productive cough.",MULTI_MATCH,2,5;25, breath.; pneumoth,638;638,0x19fd863f0;0x19fd863f0,1;1,594
+2026-08-18T19:00:25,2175,Swelling and groin. A phasic. Diabetic. Hypertensive.,NO_MATCH,0,,,,,,1178
+2026-08-18T19:00:43,2176,Short of breath. Weakness.,MATCH,1,0, of breath,348,0x1b5a75ae0,1,304
+2026-08-18T19:01:01,2177,Left-sided chest pain today,MATCH,1,6, chest pain,774,0x1b5822830,1,729
+2026-08-18T19:01:19,2179,Left pneumothorax.,NO_MATCH,0,,,,,,576
+2026-08-18T19:01:36,2182,Chest pain and shortness of breath for 3 hours.,MULTI_MATCH,2,7;1, Chest pain;ness of,772;776,0x1b5597820;0x1b5597840,1;1,729
+2026-08-18T19:01:54,2183,Follow-up effusion.,MATCH,1,17, Follow-up,664,0x1b562f4c0,1,621
+2026-08-18T19:02:11,2185,"COVID positive, cough and shortness of breath",MULTI_MATCH,2,4;0, shortness; of breath,548;550,0x1b52ce120;0x1b52ce130,1;1,500
+2026-08-18T19:02:29,2187,Fever. Leukemia. Abdominal pain and bloody stool.,NO_MATCH,0,,,,,,1178
+2026-08-18T19:02:47,2190,"Respiratory failure, history of hypertension and diabetes",MULTI_MATCH,3,25;25;25, pneumoth; pneumoth; pneumoth,640;642;644,0x1b60cb400;0x1b60cb410;0x1b60cb420,1;1;1,594
+2026-08-18T19:03:05,2191,Follow-up left side pneumonia.,MATCH,1,17, Follow-up,726,0x1b619a6b0,1,675
+2026-08-18T19:03:39,2192,Interscapular chest pain and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,512;514,0x1b6237000;0x1b6237010,1;1,462
+2026-08-18T19:03:57,2194,"Acute respiratory failure, cardiac arrest",NO_MATCH,0,,,,,,594
+2026-08-18T19:04:14,2200,Shortness of breath; assess for airspace consolidation or free intra-abdominal air.,MATCH,1,1,ness of,548,0x1b5f8c120,1,504
+2026-08-18T19:04:32,2201,Right chest pain,MATCH,1,6, chest pain,514,0x1b6023010,1,462
+2026-08-18T19:04:51,2203,Respiratory failure and status post intubation.,NO_MATCH,0,,,,,,396
+2026-08-18T19:05:08,2204,Hypoxia. Status post C-section at 35 weeks gestation.,MATCH,1,29, Hypox,312,0x1b5cb59c0,1,270
+2026-08-18T19:05:26,2205,"47-year-old female with respiratory failure, presented with pancreatitis, DKA, and altered mental status. Found to have acute to subacute left MCA territory infarcts.",MATCH,1,24, respiratory failure,556,0x1b5d4f160,1,506
+2026-08-18T19:05:44,2206,"COVID-19 pneumonia, hypoxia and bacterial pneumonia.",NO_MATCH,0,,,,,,550
+2026-08-18T19:06:02,2217,"cough, fever, altered mental ALTERED MENTAL STATUS",NO_MATCH,0,,,,,,304
+2026-08-18T19:06:20,2218,"Shortness of breath, orthopnea",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b5b44820;0x1b5b44830,1;1,729
+2026-08-18T19:06:38,2219,Nausea. Shortness of breath. COVID-19 positive.,MULTI_MATCH,2,1;22,ness of; COVID-,750;754,0x1b5c14770;0x1b5c14790,1;1,702
+2026-08-18T19:06:56,2220,72-year-old female with shortness of breath and wheezing. Very high blood pressure.,NO_MATCH,0,,,,,,552
+2026-08-18T19:07:14,2222,"Progressively worsening breathing. Cough, shortness of breath.",NO_MATCH,0,,,,,,594
+2026-08-18T19:07:32,2225,Short of breath. Rash.,NO_MATCH,0,,,,,,676
+2026-08-18T19:07:49,2229,Chest pain at rest and on exertion. Pain with palpation to left chest wall.,NO_MATCH,0,,,,,,702
+2026-08-18T19:08:07,2230,Kidney stones. Hypertension.,MATCH,1,27, Hypert,672,0x1ae124500,1,625
+2026-08-18T19:08:25,2232,Weakness for 7 days.,NO_MATCH,0,,,,,,594
+2026-08-18T19:08:43,2233,Wheezing and shortness breath. COVID exposure.,NO_MATCH,0,,,,,,594
+2026-08-18T19:09:01,2234,"Acute respiratory failure with hypoxemia, congestive heart failure.",NO_MATCH,0,,,,,,594
+2026-08-18T19:09:18,2237,"Altered mental status, short of breath.",NO_MATCH,0,,,,,,304
+2026-08-18T19:09:36,2240,Chest discomfort. Intermittent chest pain.,NO_MATCH,0,,,,,,729
+2026-08-18T19:09:54,2241,"Acute onset of central chest pain, radiating to the right arm. Initial encounter.",MATCH,1,6, chest pain,620,0x19f757360,1,572
+2026-08-18T19:10:12,2242,Cough x 6 months,NO_MATCH,0,,,,,,396
+2026-08-18T19:10:45,2243,Cough and congestion for 2 weeks. Some chest pain with the cough.,MATCH,1,10,ough and,506,0x19f45bfd0,1,462
+2026-08-18T19:11:03,2246,Cough and fever since yesterday,MATCH,1,3, Cough,556,0x19f4f7160,1,513
+2026-08-18T19:11:21,2247,"Left chest pain, shortness of breath and generalized weakness for 5 days.",MULTI_MATCH,3,6;11;1," chest pain;, short;ness of",594;596;598,0x19f598290;0x19f5982a0;0x19f5982b0,1;1;1,550
+2026-08-18T19:11:38,2249,"Hypoxia, shortness of breath, acute respiratory failure.",MULTI_MATCH,3,11;1;8,", short;ness of; breath,",618;620;622,0x19f209350;0x19f209360;0x19f209370,1;1;1,572
+2026-08-18T19:11:56,2251,Chest pain and left arm pain,NO_MATCH,0,,,,,,729
+2026-08-18T19:12:14,2253,Female with cough. Initial encounter.,NO_MATCH,0,,,,,,396
+2026-08-18T19:12:32,2255,Cough. The degree seven site. Nausea and vomiting.,MATCH,1,3, Cough,378,0x1b4053bd0,1,336
+2026-08-18T19:12:50,2256,"2 day-old infant female with shortness of breath, respiratory distress.",MULTI_MATCH,2,1;8,"ness of; breath,",320;322,0x1b387ba00;0x1b387ba10,1;1,270
+2026-08-18T19:13:08,2257,Short of breath. Respiratory failure.,MATCH,1,9, Respiratory,370,0x1b38d7b90,1,323
+2026-08-18T19:13:26,2260,Shortness of breath. Right lower extremity swelling. Congestive heart failure. Coronary artery disease.,MATCH,1,1,ness of,404,0x1b3934ca0,1,360
+2026-08-18T19:13:44,2261,2-3 days of productive cough. Current smoker.,MATCH,1,12, cough.,752,0x1b39fc780,1,702
+2026-08-18T19:14:02,2262,"Shortness of breath, neck and back pain when sitting, history COPD, sleep apnea, CHF, coronary artery disease post CABG, pulmonary hypertension, cirrhosis, atrial fibrillation.",MULTI_MATCH,2,2;0, Shortness; of breath,610;612,0x1b3ab1310;0x1b3ab1320,1;1,567
+2026-08-18T19:14:19,2263,Cough and respiratory distress,MATCH,1,10,ough and,314,0x1b3aff9d0,1,270
+2026-08-18T19:14:37,2265,Follow-up recent episode of right-sided pneumonia following antibiotic treatment. Some persistent cough.,MATCH,1,17, Follow-up,772,0x1b3bd1820,1,729
+2026-08-18T19:14:55,2267,Cough for 1 month.,NO_MATCH,0,,,,,,528
+2026-08-18T19:15:13,2268,Shortness of breath and CHF.,MATCH,1,1,ness of,348,0x1b40c9ae0,1,304
+2026-08-18T19:15:31,2273,Mid upper back pain radiating to the shoulders after falling down stairs. Shortness of breath.,MATCH,1,1,ness of,610,0x1b4175310,1,552
+2026-08-18T19:15:49,2276,"Shortness of breath, hypertension",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b4655820;0x1b4655830,1;1,729
+2026-08-18T19:16:06,2277,"Shortness of breath, cough, pneumonia.",MULTI_MATCH,3,1;8;14,"ness of; breath,; cough,",348;350;352,0x1b42b4ae0;0x1b42b4af0;0x1b42b4b00,1;1;1,304
+2026-08-18T19:16:24,2279,Chest pain. Post CABG. Ventilator.,NO_MATCH,0,,,,,,304
+2026-08-18T19:16:41,2284,[AGE] with COVID-19. Non ST-elevation MI.,NO_MATCH,0,,,,,,594
+2026-08-18T19:16:59,2286,"Pt comes to ER with respiratory distress recent hospitalization July 05-17, 7261 for sepsis/ pneumonia/ acute respiratory failure. Patient has history including, but not limited to, CAD with previous MI x 3; end-stage COPD; HTN; and anxiety.",MATCH,1,24, respiratory failure,668,0x1b446a4e0,1,594
+2026-08-18T19:17:17,2287,Chest pain for 1 week. Hypertension.,MATCH,1,7, Chest pain,772,0x1b4542820,1,729
+2026-08-18T19:17:34,2291,"Shortness of breath, cough, congestion, pregnant",NO_MATCH,0,,,,,,480
+2026-08-18T19:17:52,2292,"Weakness, vomiting",NO_MATCH,0,,,,,,576
+2026-08-18T19:18:10,2293,"Respiratory failure, history of COVID-19 positivity",NO_MATCH,0,,,,,,484
+2026-08-18T19:18:28,2299,"Dyspnea today, chest pain. Smoker, prior renal transplant.",MATCH,1,6, chest pain,576,0x1b47c0200,1,528
+2026-08-18T19:18:46,2303,Shortness of breath and states that he tested positive for COVID 2 days ago. He is a current smoker and this is the second time being diagnosed with COVID per patient.,MULTI_MATCH,2,2;0, Shortness; of breath,526;528,0x1b4c5a070;0x1b4c5a080,1;1,483
+2026-08-18T19:19:03,2305,Cough and low grade fever,MATCH,1,10,ough and,314,0x1b48989d0,1,270
+2026-08-18T19:19:21,2307,Cough with side pain,MATCH,1,3, Cough,664,0x1b49604c0,1,621
+2026-08-18T19:19:39,2308,Short of breath. COVID positive.,MATCH,1,0, of breath,642,0x1b4a2b410,1,598
+2026-08-18T19:19:57,2310,"Chest pain, hypertension",NO_MATCH,0,,,,,,729
+2026-08-18T19:20:15,2311,Brain tumor. Cough.,MATCH,1,3, Cough,350,0x1b4d33af0,1,304
+2026-08-18T19:20:33,2312,"Shortness of breath, CHF, and aspiration pneumonia",MULTI_MATCH,2,1;8,"ness of; breath,",524;526,0x1b4daa060;0x1b4daa070,1;1,480
+2026-08-18T19:20:50,2313,"Cough, dyspnea",MATCH,1,3, Cough,772,0x1b4e6c820,1,729
+2026-08-18T19:21:09,2320,Evaluate PICC line placement,NO_MATCH,0,,,,,,480
+2026-08-18T19:21:27,2322,Cough and fever and vomiting for the past 3 days. Family members with COVID at home. Shortness of breath.,MULTI_MATCH,3,3;2;0, Cough; Shortness; of breath,772;792;794,0x1b50f8820;0x1b50f88c0;0x1b50f88d0,1;1;1,729
+2026-08-18T19:21:45,2326,Follow-up left pneumothorax,MATCH,1,17, Follow-up,780,0x1b51d2860,1,729
+2026-08-18T19:22:03,2327,Coughing for 10 days,NO_MATCH,0,,,,,,304
+2026-08-18T19:22:21,2328,Recent diagnosis of pneumonia. Worsening symptoms/shortness of breath.,MULTI_MATCH,2,13;1, pneumonia.;ness of,560;568,0x1b6333180;0x1b63331c0,1;1,506
+2026-08-18T19:22:39,2330,Left PICC line placement,MATCH,1,20, PICC,348,0x1b6387ae0,1,304
+2026-08-18T19:22:57,2333,"Pneumonia, sepsis and increased shortness of breath.",MATCH,1,1,ness of,358,0x1b63e0b30,1,304
+2026-08-18T19:23:15,2335,"Right chest soreness, coughing, chest pain",NO_MATCH,0,,,,,,576
+2026-08-18T19:23:33,2336,"chest pain; hx of smoking, copd, emphyzema; htn, and diabetes",MATCH,1,6, chest pain,568,0x1b793a1c0,1,525
+2026-08-18T19:23:51,2339,"Weakness, confusion",NO_MATCH,0,,,,,,304
+2026-08-18T19:24:09,2343,"Weakness, fatigue, shortness of breath for 2 days. Ex-smoker",MULTI_MATCH,2,4;0, shortness; of breath,642;644,0x1b7a44410;0x1b7a44420,1;1,594
+2026-08-18T19:24:26,2344,Chest pain. Pneumonia.,MATCH,1,7, Chest pain,560,0x1b7ae0180,1,525
+2026-08-18T19:24:44,2347,Increased shortness of Breath,MATCH,1,4, shortness,616,0x1b7b88340,1,572
+2026-08-18T19:25:02,2348,"Fever, cough, shortness of breath. History lymphoma.",MULTI_MATCH,2,11;1,", short;ness of",722;724,0x1b7c6c690;0x1b7c6c6a0,1;1,676
+2026-08-18T19:25:20,2349,Recent mediastinal mass resection. Hypertension.,NO_MATCH,0,,,,,,550
+2026-08-18T19:25:38,2351,"Chest pain, diaphoresis, syncope, vomiting.",NO_MATCH,0,,,,,,304
+2026-08-18T19:25:55,2352,"Dyspnea, respiratory failure.",NO_MATCH,0,,,,,,594
+2026-08-18T19:26:13,2354,Fever for 5 days. Cough and nausea and vomiting for 1 day.,MATCH,1,10,ough and,350,0x1b7e6caf0,1,300
+2026-08-18T19:26:31,2359,Cough with nausea and diarrhea.,NO_MATCH,0,,,,,,550
+2026-08-18T19:26:48,2360,chest pain; shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,350;352,0x1b7f6caf0;0x1b7f6cb00,1;1,304
+2026-08-18T19:27:06,2362,Shortness of breath and hemoptysis,MATCH,1,1,ness of,692,0x1b80315a0,1,648
+2026-08-18T19:27:24,2364,Shortness of breath. Weight gain.,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b810b820;0x1b810b830,1;1,729
+2026-08-18T19:27:42,2366,Cough and asthma.,MATCH,1,10,ough and,440,0x1b8181dc0,1,396
+2026-08-18T19:28:01,2370,Fever. Vomiting.,MATCH,1,26, Fever.,266,0x1b81d0850,1,224
+2026-08-18T19:28:18,2371,Left orbital cellulitis. PICC line placement.,MATCH,1,20, PICC,352,0x1b822bb00,1,304
+2026-08-18T19:28:36,2374,Follow-up chest x-ray.,NO_MATCH,0,,,,,,396
+2026-08-18T19:28:54,2377,Cough and chest congestion for 2-3 days. Also fever.,MATCH,1,3, Cough,274,0x1b82f4890,1,224
+2026-08-18T19:29:12,2378,Shortness of breath following chlorine inhalation,MATCH,1,1,ness of,628,0x1b839b3a0,1,576
+2026-08-18T19:29:29,2380,Unstable 2-day-old premature infant. Umbilical catheter placement.,MATCH,1,28, catheter,450,0x1b8804e10,1,396
+2026-08-18T19:29:47,2381,"Infected knee, PICC placement",NO_MATCH,0,,,,,,304
+2026-08-18T19:30:05,2383,Cough. Hypertension.,MATCH,1,27, Hypert,622,0x1b891d370,1,576
+2026-08-18T19:30:23,2384,79-year-old male with respiratory failure.,MATCH,1,24, respiratory failure,530,0x1b899b090,1,480
+2026-08-18T19:30:40,2386,Intubation. Respiratory failure.,NO_MATCH,0,,,,,,550
+2026-08-18T19:30:58,2387,End stage renal disease. Pneumonia. CHF. AVGG insertion. Dry cough. Former smoker--ceased.,NO_MATCH,0,,,,,,304
+2026-08-18T19:31:16,2388,"Mid to upper chest pain, smoker, COPD, colon cancer, coronary disease post MI",MATCH,1,6, chest pain,696,0x1b8b6b5c0,1,650
+2026-08-18T19:31:34,2389,Right rib pain x1 month without known injury.,NO_MATCH,0,,,,,,729
+2026-08-18T19:31:52,2392,Vomiting. Cough. Possible aspiration.,NO_MATCH,0,,,,,,572
+2026-08-18T19:32:11,2393,Acute respiratory failure; MI and CABG 3 days ago,MATCH,1,21, CABG,644,0x1b8d97420,1,594
+2026-08-18T19:32:29,2394,Left chest pain. Cough. Hypertension. Smoker.,MATCH,1,3, Cough,776,0x1b8e6e840,1,729
+2026-08-18T19:32:47,2396,Shortness of breath history of pulmonary motion 11/6/7,MULTI_MATCH,2,2;0, Shortness; of breath,560;562,0x1b8f18180;0x1b8f18190,1;1,525
+2026-08-18T19:33:05,2398,Right flank and rib pain,NO_MATCH,0,,,,,,396
+2026-08-18T19:33:23,2401,Peripheral central venous catheter placement.,NO_MATCH,0,,,,,,120
+2026-08-18T19:33:40,2402,Shortness of breath and fatigue for several months,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b90b6820;0x1b90b6830,1;1,729
+2026-08-18T19:33:58,2404,"Shortness of breath, acute bronchitis.",MULTI_MATCH,2,1;8,"ness of; breath,",348;350,0x1b911aae0;0x1b911aaf0,1;1,304
+2026-08-18T19:34:15,2405,"Acute onset of cough, wheezing and dyspnea. Initial encounter.",NO_MATCH,0,,,,,,594
+2026-08-18T19:34:33,2406,Chest pain for 2 days.,MATCH,1,7, Chest pain,668,0x1b92844e0,1,625
+2026-08-18T19:34:50,2408,Patient complains of shortness of breath. History of COPD and coronary artery disease.,MULTI_MATCH,2,4;0, shortness; of breath,566;568,0x1b93231b0;0x1b93231c0,1;1,520
+2026-08-18T19:35:07,2410,Evaluate pneumothorax.,NO_MATCH,0,,,,,,396
+2026-08-18T19:35:25,2413,Cough and congestion. COVID exposure. Wife is COVID positive.,MATCH,1,10,ough and,638,0x1b942e3f0,1,594
+2026-08-18T19:35:43,2414,Lung carcinoma. Follow-up pneumothorax.,NO_MATCH,0,,,,,,621
+2026-08-18T19:36:01,2415,COPD exacerbation.,MATCH,1,16, COPD,764,0x1b95c07e0,1,729
+2026-08-18T19:36:19,2418,"Cough, wheezing, congestion.",MATCH,1,3, Cough,346,0x1b95f7ad0,1,304
+2026-08-18T19:36:36,2424,Short of breath. Chest pain. Asthma.,MATCH,1,0, of breath,348,0x1b9650ae0,1,304
+2026-08-18T19:36:54,2428,Shortness of breath.. Weakness.,MULTI_MATCH,2,1;18,ness of; Weakness,418;422,0x1b96bad10;0x1b96bad30,1;1,374
+2026-08-18T19:37:12,2433,Chronic shortness of breath with headache cough for 1-2 days,MATCH,1,1,ness of,620,0x1b9760360,1,567
+2026-08-18T19:37:30,2434,Shortness of breath and confusion. Nursing home patient.,MATCH,1,1,ness of,638,0x1b97fb3f0,1,594
+2026-08-18T19:37:49,2438,"Shortness of breath and productive cough 3 weeks ago and 2 weeks ago. Now having chills, sweats, and dizziness. History of asthma as a child. Smoker.",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1b98d0820;0x1b98d0830,1;1,729
+2026-08-18T19:38:07,2440,"Chest pain, nonproductive cough, sore throat for the past 2 days. Chest pain is felt to be related to the cough.",MULTI_MATCH,2,7;7, Chest pain; Chest pain,534;550,0x1b995b0b0;0x1b995b130,1;1,483
+2026-08-18T19:38:25,2443,Of the chest pain. Short of breath.,NO_MATCH,0,,,,,,304
+2026-08-18T19:38:43,2446,Weakness. Slight nausea. Short of breath. Smoker.,NO_MATCH,0,,,,,,1178
+2026-08-18T19:39:00,2447,Chest pain and shortness of breath since developing COVID 7 weeks ago.,MULTI_MATCH,2,7;1, Chest pain;ness of,780;784,0x1bc362860;0x1bc362880,1;1,729
+2026-08-18T19:39:18,2452,Pneumonia. Shortness of breath. Anemia. Rectal cancer.,MULTI_MATCH,2,2;0, Shortness; of breath,354;356,0x1bc3bab10;0x1bc3bab20,1;1,306
+2026-08-18T19:39:36,2455,One month of productive cough associated with upper chest discomfort and shortness of breath. Nonsmoker. History of childhood pneumonia.,MULTI_MATCH,2,4;0, shortness; of breath,604;606,0x1bc4732e0;0x1bc4732f0,1;1,550
+2026-08-18T19:39:54,2459,Shortness of breath and productive cough for 1 week.,MATCH,1,1,ness of,638,0x1bc13c3f0,1,594
+2026-08-18T19:40:12,2460,"Shortness of breath, chest pain, cough for 2 weeks",MULTI_MATCH,3,1;8;6,"ness of; breath,; chest pain",746;748;750,0x1bc22a750;0x1bc22a760;0x1bc22a770,1;1;1,702
+2026-08-18T19:40:30,2461,"Cough, chest pain.",MATCH,1,3, Cough,526,0x1bc2c8070,1,483
+2026-08-18T19:40:48,2464,"New onset shortness of breath, history of hypertension, Parkinson's, kidney stones, stroke, GERD.",MULTI_MATCH,2,1;8,"ness of; breath,",618;620,0x1bbf65350;0x1bbf65360,1;1,572
+2026-08-18T19:41:05,2465,This is a 74-year-old female with chest pain.,NO_MATCH,0,,,,,,396
+2026-08-18T19:41:23,2466,"Mid chest pain this morning, worsening throughout the day. Shortness of breath and cough.",MULTI_MATCH,3,6;2;0, chest pain; Shortness; of breath,746;756;758,0x1bc0c2750;0x1bc0c27a0;0x1bc0c27b0,1;1;1,702
+2026-08-18T19:41:41,2468,Shortness of breath. Weakness. Hypotension. Dementia. Hypertension. Prior CVAs.,MULTI_MATCH,2,2;0, Shortness; of breath,618;620,0x1bbd63350;0x1bbd63360,1;1,567
+2026-08-18T19:41:59,2469,Panic attack. Chest pain. Shortness of breath. Tachycardia.,MULTI_MATCH,2,2;0, Shortness; of breath,778;780,0x1bbe3a850;0x1bbe3a860,1;1,729
+2026-08-18T19:42:16,2472,SOA (Shortness of Air).,NO_MATCH,0,,,,,,750
+2026-08-18T19:42:35,2476,"Hypoxia, follow up R sided pneumonia",NO_MATCH,0,,,,,,396
+2026-08-18T19:42:53,2477,Evaluate central line placement. Respiratory distress.,MATCH,1,9, Respiratory,642,0x1bbc2d410,1,594
+2026-08-18T19:43:10,2479,"4-month-old with wheezing, congestion and fever.",NO_MATCH,0,,,,,,196
+2026-08-18T19:43:28,2484,"Shortness of breath, COVID positive. Unable to get deep breath since Friday. History of hypertension and diabetes mellitus.",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1bb9233f0;0x1bb923400,1;1,594
+2026-08-18T19:43:46,2486,Central line placement and PICC placement. Seizure.,NO_MATCH,0,,,,,,418
+2026-08-18T19:44:04,2489,"Shortness of breath, admitted as CHF.",MULTI_MATCH,2,1;8,"ness of; breath,",440;442,0x1bba16dc0;0x1bba16dd0,1;1,396
+2026-08-18T19:44:21,2496,Diatek catheter placement. Renal failure.,MATCH,1,28, catheter,350,0x1bba71af0,1,304
+2026-08-18T19:44:39,2500,Back pain. Right posterior rib pain for 1 week.,MATCH,1,15, rib pain,598,0x1bb7142b0,1,550
+2026-08-18T19:44:57,2503,Follow-up pneumonia. Upper GI bleeding.,NO_MATCH,0,,,,,,304
+2026-08-18T19:45:15,2505,worsening cough. C/O chronic cough. Worsening over last couple days.,MATCH,1,12, cough.,352,0x1bb7a7b00,1,304
+2026-08-18T19:45:33,2506,Pulmonary edema. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,642;644,0x1bb865410;0x1bb865420,1;1,594
+2026-08-18T19:45:51,2507,COPD SOB,NO_MATCH,0,,,,,,396
+2026-08-18T19:46:09,2508,"Shortness of breath, chest pain for 2 days. Cough. History of asthma.",MULTI_MATCH,3,2;0;3, Shortness; of breath; Cough,544;546;556,0x1bb585100;0x1bb585110;0x1bb585160,1;1;1,506
+2026-08-18T19:46:27,2509,Cough. Fell in swimming pool with possible aspiration.,NO_MATCH,0,,,,,,270
+2026-08-18T19:46:44,2510,PICC line placement. Patient pregnant with triplets and funneling cervix.,NO_MATCH,0,,,,,,304
+2026-08-18T19:47:02,2511,Right rib pain for 2 weeks.,MATCH,1,15, rib pain,694,0x1bb2fd5b0,1,650
+2026-08-18T19:47:20,2516,"Left axillary rib pain, assault",MATCH,1,15, rib pain,350,0x1bb35aaf0,1,304
+2026-08-18T19:47:38,2517,Respiratory distress in a newborn. Rule out pneumonia or pneumothorax.,NO_MATCH,0,,,,,,81
+2026-08-18T19:47:56,2518,"Chest pain, shortness of breath. Patient max needed but living with sign waist COVID positive.",MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1bb42e400;0x1bb42e410,1;1,594
+2026-08-18T19:48:13,2519,"Respiratory failure, history of left pneumothorax",NO_MATCH,0,,,,,,594
+2026-08-18T19:48:31,2520,"Shortness of breath, chest congestion and wheezing.",MULTI_MATCH,2,1;8,"ness of; breath,",348;350,0x1bb12cae0;0x1bb12caf0,1;1,304
+2026-08-18T19:48:49,2523,Chest pain for 1 day.,MATCH,1,7, Chest pain,718,0x1bb201670,1,675
+2026-08-18T19:49:07,2526,Short of breath and chest pain,MATCH,1,6, chest pain,614,0x1bb2a2330,1,567
+2026-08-18T19:49:25,2527,Central chest pain after falling onto chest wall 1 week ago,MATCH,1,6, chest pain,528,0x1baf3a080,1,484
+2026-08-18T19:49:42,2531,Three months of cough. Nonsmoker.,NO_MATCH,0,,,,,,729
+2026-08-18T19:50:00,2533,Acute central chest pain. Initial encounter.,MATCH,1,6, chest pain,442,0x1bb079dd0,1,396
+2026-08-18T19:50:18,2536,Right chest tube removed. COVID-19 negative,MATCH,1,22, COVID-,642,0x1bad2c410,1,594
+2026-08-18T19:50:36,2537,Follow-up pleural effusions.,MATCH,1,17, Follow-up,772,0x1badfa820,1,729
+2026-08-18T19:50:54,2538,Cough and shortness of Breath,MULTI_MATCH,2,3;1, Cough;ness of,772;776,0x1baaed820;0x1baaed840,1;1,729
+2026-08-18T19:51:12,2539,"Shortness of breath, COPD. Flu symptoms.",MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1babcb820;0x1babcb830,1;1,729
+2026-08-18T19:51:30,2542,Acute respiratory failure with hypoxemia,NO_MATCH,0,,,,,,594
+2026-08-18T19:51:48,2545,Chest pain. Shortness of breath. Syncope.,MULTI_MATCH,2,2;0, Shortness; of breath,350;352,0x1bacc7af0;0x1bacc7b00,1;1,304
+2026-08-18T19:52:05,2546,Chest pain. Palpable right parasternal knot for 2 months.,NO_MATCH,0,,,,,,304
+2026-08-18T19:52:23,2548,Evaluate PICC placement.,MATCH,1,20, PICC,440,0x1ba992dc0,1,396
+2026-08-18T19:52:40,2550,"Chest pain, generalized heavy chest pain, nausea, shortness of breath and headache for 2 days, pain increases at night when lying flat, history hypertension",MULTI_MATCH,3,7;4;0, Chest pain; shortness; of breath,772;782;784,0x1baa6c820;0x1baa6c870;0x1baa6c880,1;1;1,729
+2026-08-18T19:52:58,2551,"77-year-old male, respiratory failure, anemia, pneumonia.",MATCH,1,24, respiratory failure,354,0x1baac3b10,1,304
+2026-08-18T19:53:16,2552,Patient complains of not feeling well and shortness of breath today.,MATCH,1,1,ness of,672,0x1ba79d500,1,621
+2026-08-18T19:53:34,2554,"Shortness of breath, cough. Evaluate fluid status.",MULTI_MATCH,3,1;8;12,"ness of; breath,; cough.",524;526;528,0x1ba816060;0x1ba816070;0x1ba816080,1;1;1,480
+2026-08-18T19:53:53,2555,Respiratory distress rule out pulmonary edema.,NO_MATCH,0,,,,,,304
+2026-08-18T19:54:11,2557,Hypertensive hemorrhage. Central line.,NO_MATCH,0,,,,,,304
+2026-08-18T19:54:29,2558,Leg swelling. Cough.,MATCH,1,3, Cough,670,0x1ba57b4f0,1,624
+2026-08-18T19:54:46,2566,Respiratory distress and evaluate central line placement.,NO_MATCH,0,,,,,,304
+2026-08-18T19:55:04,2567,Shortness of breath. Fever.,MATCH,1,1,ness of,348,0x1ba636ae0,1,304
+2026-08-18T19:55:22,2568,Weakness and shortness of breath. Cough.,MULTI_MATCH,2,4;0, shortness; of breath,598;600,0x1ba6d32b0;0x1ba6d32c0,1;1,552
+2026-08-18T19:55:39,2571,"Cough, fever, nasal congestion, generalized body aches, headaches for 4 days, wet sounding cough but not coughing up much mucus, temperature 100.5 degrees with mild tachycardia in triage, rhonchi and expiratory wheezing on LEFT, former smoker.",MATCH,1,3, Cough,780,0x1ba3bb860,1,729
+2026-08-18T19:55:58,2572,"Low oxygen saturation on venous blood gas, COVID-19 diagnosis 07/28/2016",NO_MATCH,0,,,,,,729
+2026-08-18T19:56:16,2575,"Hypoxia, decreased breath sounds at the right lung base, post bronchoscopy",NO_MATCH,0,,,,,,396
+2026-08-18T19:56:34,2579,Fever. Shortness of breath.,MATCH,1,1,ness of,640,0x1ba1b2400,1,594
+2026-08-18T19:56:51,2583,Follow up left pneumothorax. Chest tube removal.,NO_MATCH,0,,,,,,675
+2026-08-18T19:57:09,2584,Respiratory distress. Meningitis.,NO_MATCH,0,,,,,,480
+2026-08-18T19:57:27,2585,Increased cough. Crackles.,MATCH,1,12, cough.,440,0x1b9f60dc0,1,396
+2026-08-18T19:57:45,2586,Hypoxia and chest pain.,NO_MATCH,0,,,,,,594
+2026-08-18T19:58:03,2587,Chest pain. Motor vehicle accident [DATE].,NO_MATCH,0,,,,,,304
+2026-08-18T19:58:22,2593,75-year-old male with mid chest pain.,NO_MATCH,0,,,,,,304
+2026-08-18T19:58:40,2595,"Cough, fever, and chills for the past 2 weeks",NO_MATCH,0,,,,,,396
+2026-08-18T19:58:58,2597,Three-day history of central region chest pain. Tobacco use.,MATCH,1,6, chest pain,778,0x1b9e24850,1,729
+2026-08-18T19:59:15,2601,Umbilical venous catheter repositioned,NO_MATCH,0,,,,,,256
+2026-08-18T19:59:33,2602,COPD. Colitis.,NO_MATCH,0,,,,,,304
+2026-08-18T19:59:51,2603,"Dry cough and shortness of breath for 3 days, fever",MULTI_MATCH,2,4;0, shortness; of breath,350;352,0x1b9b13af0;0x1b9b13b00,1;1,304
+2026-08-18T20:00:09,2605,CLL. Cough. History of pneumonia.,MATCH,1,3, Cough,728,0x1b9bd36c0,1,675
+2026-08-18T20:00:27,2610,Recent traumatic injury with right-sided chest pain,NO_MATCH,0,,,,,,304
+2026-08-18T20:00:45,2612,Follow-up lung infiltrate.,NO_MATCH,0,,,,,,594
+2026-08-18T20:01:02,2613,History given of PICC placement.,MATCH,1,20, PICC,350,0x1bc55caf0,1,304
+2026-08-18T20:01:19,2614,Left arm PICC line placement.,NO_MATCH,0,,,,,,304
+2026-08-18T20:01:37,2615,Short of breath. Chest tightness. History of prostate carcinoma.,NO_MATCH,0,,,,,,729
+2026-08-18T20:01:55,2616,Sudden onset of chest pain.,NO_MATCH,0,,,,,,702
+2026-08-18T20:02:13,2619,56-year-old male status post CABG.,NO_MATCH,0,,,,,,304
+2026-08-18T20:02:31,2624,Hypoxia. PICC placement.,NO_MATCH,0,,,,,,594
+2026-08-18T20:02:49,2625,Short of breath. Rule out pneumonia,MATCH,1,0, of breath,638,0x1bd10d3f0,1,594
+2026-08-18T20:03:07,2626,Follow-up examination post intubation.,NO_MATCH,0,,,,,,396
+2026-08-18T20:03:25,2627,Chest pain with exertional shortness of breath and difficulty urinating for 2 weeks. History of atrial fibrillation.,MULTI_MATCH,2,4;0, shortness; of breath,598;600,0x1bd21b2b0;0x1bd21b2c0,1;1,550
+2026-08-18T20:03:43,2630,Code stroke. Cough.,NO_MATCH,0,,,,,,437
+2026-08-18T20:04:01,2632,Respiratory distress tonight.,NO_MATCH,0,,,,,,486
+2026-08-18T20:04:19,2633,Worsening shortness of breath.,MATCH,1,1,ness of,668,0x1bd3d64e0,1,621
+2026-08-18T20:04:37,2634,Shortness of breath history of COVID,MATCH,1,1,ness of,638,0x1bd4863f0,1,594
+2026-08-18T20:04:55,2635,Cough and nausea. Former smoker.,MATCH,1,10,ough and,572,0x1bd5251e0,1,528
+2026-08-18T20:05:13,2638,Replacement of umbilical vein catheter. Left pneumothorax.,MATCH,1,28, catheter,318,0x1bd55a9f0,1,270
+2026-08-18T20:05:30,2639,68 year-old female with dehydration. PICC repositioning.,MATCH,1,20, PICC,356,0x1bd5bbb20,1,304
+2026-08-18T20:05:48,2641,58-year-old male status post dialysis catheter placement. Initial encounter.,MATCH,1,28, catheter,782,0x1bd692870,1,729
+2026-08-18T20:06:07,2645,"Cough, wheezing and vomiting.",MATCH,1,3, Cough,384,0x1bd6f3c00,1,342
+2026-08-18T20:06:24,2646,"Left rib pain, prior history of left chest surgery, rib fracture, pleurectomy",MATCH,1,15, rib pain,348,0x1bd747ae0,1,304
+2026-08-18T20:06:42,2651,Follow-up recent episode pneumonia.,NO_MATCH,0,,,,,,594
+2026-08-18T20:07:00,2654,"Shortness of breath for days, increased.",MATCH,1,1,ness of,616,0x1bd899340,1,572
+2026-08-18T20:07:18,2658,Acute left rib pain after fall in shower several days ago. Initial encounter.,MATCH,1,15, rib pain,574,0x1bd9341f0,1,528
+2026-08-18T20:07:36,2660,"History of coughing, shortness of breath, and weakness.",MULTI_MATCH,3,11;1;8,", short;ness of; breath,",530;532;534,0x1bd9c5090;0x1bd9c50a0;0x1bd9c50b0,1;1;1,483
+2026-08-18T20:07:54,2661,Respiratory failure. Follow-up infiltrate.,NO_MATCH,0,,,,,,304
+2026-08-18T20:08:12,2662,"Cough, vomiting, tachycardia, COVID positive",NO_MATCH,0,,,,,,546
+2026-08-18T20:08:30,2669,"Cough for 1 month, worse this morning.",NO_MATCH,0,,,,,,702
+2026-08-18T20:08:48,2670,Cough and chest congestion.,MATCH,1,10,ough and,292,0x1bdbe5920,1,240
+2026-08-18T20:09:06,2673,"Chills, sweats, congestion, cough, fatigue, headache, nausea, chest soreness with cough, ongoing symptoms for 5 days, smoker",MULTI_MATCH,2,14;14," cough,; cough,",668;680,0x1be0ab4e0;0x1be0ab540,1;1,621
+2026-08-18T20:09:24,2674,Sternal fracture 6 weeks ago. Follow-up exam.,NO_MATCH,0,,,,,,600
+2026-08-18T20:09:42,2675,"35 y/o M; dialysis patient with nausea, vomiting, and shortness of breath.",MATCH,1,1,ness of,600,0x1be20f2c0,1,540
+2026-08-18T20:09:59,2677,Fever. Sepsis.,NO_MATCH,0,,,,,,378
+2026-08-18T20:10:17,2679,"Acute respiratory failure, hypoxia, history of stroke",NO_MATCH,0,,,,,,594
+2026-08-18T20:10:35,2680,"Weakness, cough, and shortness of breath.",MULTI_MATCH,2,14;1," cough,;ness of",346;350,0x1be38cad0;0x1be38caf0,1;1,304
+2026-08-18T20:10:53,2681,"Initial evaluation for acute respiratory distress, chest pain.",MATCH,1,6, chest pain,644,0x1be453420,1,594
+2026-08-18T20:11:11,2682,"Low lung volumes, COVID-19 positive 6/25/2001",NO_MATCH,0,,,,,,550
+2026-08-18T20:11:30,2686,Cough. Exposure to black mold. Question asthma.,MATCH,1,3, Cough,438,0x1be56edb0,1,396
+2026-08-18T20:11:48,2687,Short of breath. Swollen legs.,MATCH,1,0, of breath,348,0x1be5ceae0,1,304
+2026-08-18T20:12:05,2691,Shortness of breath. History of bilateral pleural effusions.,MATCH,1,1,ness of,548,0x1be666120,1,504
+2026-08-18T20:12:23,2692,Shortness of breath. Post code. Confirm line placement.,MATCH,1,1,ness of,638,0x1be7113f0,1,594
+2026-08-18T20:12:41,2693,Acute onset of fever. Subsequent encounter.,NO_MATCH,0,,,,,,594
+2026-08-18T20:12:59,2697,Shortness of breath. Coughing.,MULTI_MATCH,2,1;3,ness of; Cough,348;352,0x1bec18ae0;0x1bec18b00,1;1,304
+2026-08-18T20:13:33,2699,"Chest pain since motor vehicle collision 4 days ago. Restrained, no airbag deployment. Pain to neck and thoracic spine. Sternal pain.",NO_MATCH,0,,,,,,462
+2026-08-18T20:14:06,2702,Patient with new right upper extremity PICC line.,MATCH,1,20, PICC,510,0x1bed43ff0,1,460
+2026-08-18T20:14:24,2703,COVID-19 positivity with dyspnea,NO_MATCH,0,,,,,,594
+2026-08-18T20:14:42,2704,"SOB, cough. PT states cough, SOA. DEGNES",MULTI_MATCH,2,12;14," cough.; cough,",350;354,0x1bee56af0;0x1bee56b10,1;1,304
+2026-08-18T20:15:00,2706,Right chest pain and cough for 1 week.,MATCH,1,6, chest pain,572,0x1beef81e0,1,528
+2026-08-18T20:15:18,2709,Cough. Smoking history.,NO_MATCH,0,,,,,,594
+2026-08-18T20:15:36,2711,"78 year-old male, CHF. Shortness of breath.",MATCH,1,1,ness of,358,0x1bf015b30,1,304
+2026-08-18T20:15:53,2713,"Shortness of breath, COVID-19 positive, headache, history of hypertension, diabetes mellitus",MULTI_MATCH,3,1;8;22,"ness of; breath,; COVID-",638;640;642,0x1bf0c53f0;0x1bf0c5400;0x1bf0c5410,1;1;1,594
+2026-08-18T20:16:11,2714,Follow-up BILATERAL pneumonia. Sepsis.,MULTI_MATCH,2,17;13, Follow-up; pneumonia.,618;624,0x1bf163350;0x1bf163380,1;1,567
+2026-08-18T20:16:29,2715,51-year-old male diagnosed with right seventh rib fracture in Nabih. Shortness of Breath. Initial encounter.,MATCH,1,2, Shortness,788,0x1bf2568a0,1,729
+2026-08-18T20:16:47,2716,"Pancreatitis, cough, wheezing.",NO_MATCH,0,,,,,,304
+2026-08-18T20:17:04,2719,"Shortness of breath, room 8.",MULTI_MATCH,2,1;8,"ness of; breath,",436;438,0x1bf2f6da0;0x1bf2f6db0,1;1,396
+2026-08-18T20:17:22,2720,"sob. cough lung cancer SOB, Cough productive(green, yellow, bloody) per patient hx of lung cancer, smoker x 50 years.",MULTI_MATCH,30,5;25;5;25;5;25;5;25;5;25;5;25;5;25;5;25;5;25;5;25;5;25;5;25;5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,590;590;592;592;594;594;596;596;598;598;600;600;602;602;604;604;606;606;608;608;610;610;612;612;614;614;616;616;618;618,0x1bf32d270;0x1bf32d270;0x1bf32d280;0x1bf32d280;0x1bf32d290;0x1bf32d290;0x1bf32d2a0;0x1bf32d2a0;0x1bf32d2b0;0x1bf32d2b0;0x1bf32d2c0;0x1bf32d2c0;0x1bf32d2d0;0x1bf32d2d0;0x1bf32d2e0;0x1bf32d2e0;0x1bf32d2f0;0x1bf32d2f0;0x1bf32d300;0x1bf32d300;0x1bf32d310;0x1bf32d310;0x1bf32d320;0x1bf32d320;0x1bf32d330;0x1bf32d330;0x1bf32d340;0x1bf32d340;0x1bf32d350;0x1bf32d350,1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1,546
+2026-08-18T20:17:40,2722,Pneumonia. Respiratory distress.,NO_MATCH,0,,,,,,270
+2026-08-18T20:17:58,2723,Acute respiratory failure. Patient on a ventilator.,NO_MATCH,0,,,,,,304
+2026-08-18T20:18:16,2725,Pre-term infant. Status post needle aspiration for pneumothorax.,NO_MATCH,0,,,,,,396
+2026-08-18T20:18:34,2728,PICC line placement. Weakness. Hyponatremia. Acute renal failure.,MATCH,1,18, Weakness,352,0x1bf4beb00,1,304
+2026-08-18T20:18:52,2729,Follow-up,MATCH,1,17, Follow-up,312,0x1bf4f09c0,1,270
+2026-08-18T20:19:10,2731,Premature neonate. Respiratory distress syndrome. Respiratory insufficiency on ventilator.,MATCH,1,9, Respiratory,146,0x1bf516490,1,99
+2026-08-18T20:19:28,2733,"Bronchitis symptoms, acute respiratory failure, community-acquired pneumonia, history of COPD and previous smoking",MULTI_MATCH,2,24;16, respiratory failure; COPD,724;734,0x1bf5e26a0;0x1bf5e26f0,1;1,675
+2026-08-18T20:19:46,2736,Fever of 104.8. Cough. Nausea. Influenza A.,MATCH,1,3, Cough,322,0x1bf629a10,1,270
+2026-08-18T20:20:04,2740,"Shortness of breath, wheezing and productive cough. Difficulty breathing.",MULTI_MATCH,3,1;8;19,"ness of; breath,; wheez",348;350;352,0x1bf68eae0;0x1bf68eaf0;0x1bf68eb00,1;1;1,304
+2026-08-18T20:20:22,2741,Chest pain following a fall.,NO_MATCH,0,,,,,,594
+2026-08-18T20:20:40,2742,27-year-old female with acute respiratory failure.,NO_MATCH,0,,,,,,594
+2026-08-18T20:20:57,2747,"43-year-old male with chest pain, vomiting, tingling into the left shoulder.",NO_MATCH,0,,,,,,675
+2026-08-18T20:21:15,2748,MVC ? left chest pain.,MATCH,1,6, chest pain,350,0x1bf91baf0,1,304
+2026-08-18T20:21:33,2750,"Chest pain, chronic cough",MATCH,1,7, Chest pain,718,0x1bf9d9670,1,675
+2026-08-18T20:21:51,2751,"COPD, tracheostomy patient, MAI infection, known large cavitary process in the right upper lobe.",NO_MATCH,0,,,,,,484
+2026-08-18T20:22:09,2752,"Initial evaluation for acute cough, congestion.",MATCH,1,14," cough,",784,0x1bfb57880,1,729
+2026-08-18T20:22:27,2754,"cough, SOB",NO_MATCH,0,,,,,,396
+2026-08-18T20:22:44,2755,Left-sided chest pain and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,352;354,0x1bfc29b00;0x1bfc29b10,1;1,304
+2026-08-18T20:23:03,2757,PICC line placement. Infected sacral decubitus ulcer.,NO_MATCH,0,,,,,,304
+2026-08-18T20:23:21,2758,"Shortness of breath and weakness, multiple falls.",MATCH,1,1,ness of,616,0x1bfd30340,1,572
+2026-08-18T20:23:39,2761,"Cough, subcutaneous emphysema.",MATCH,1,3, Cough,772,0x1bfe11820,1,729
+2026-08-18T20:23:57,2763,Chest pain. COVID positive.,MATCH,1,7, Chest pain,772,0x1bfee7820,1,729
+2026-08-18T20:24:15,2766,Cough and elevated white blood cell count,MATCH,1,10,ough and,550,0x1bff7b130,1,506
+2026-08-18T20:24:33,2768,"Cough, congestion for 7 days",NO_MATCH,0,,,,,,304
+2026-08-18T20:24:50,2769,"Shortness of breath, fever, history hypertension, diabetes mellitus, pneumonia",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1c050f3f0;0x1c050f400,1;1,594
+2026-08-18T20:25:08,2770,Weakness. Initial in count,NO_MATCH,0,,,,,,304
+2026-08-18T20:25:25,2771,Swan-Ganz catheter insertion.,MULTI_MATCH,3,5;5;5, breath.; breath.; breath.,524;526;528,0x1c1828060;0x1c1828070;0x1c1828080,1;1;1,480
+2026-08-18T20:25:43,2775,Weakness and cough,MULTI_MATCH,2,5;25, breath.; pneumoth,794;794,0x1c13be8d0;0x1c13be8d0,1;1,750
+2026-08-18T20:25:59,2781,"History of pneumonia, cough, congestion, shortness of breath, former smoking history, followup chest x-ray of 6/13/2006",MATCH,1,5, breath.,646,0x1c0f82430,1,572
+2026-08-18T20:26:17,2782,"cough, wheeze, fever",NO_MATCH,0,,,,,,374
+2026-08-18T20:26:35,2783,Left anterior rib pain after fall.,MULTI_MATCH,6,5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,610;610;612;612;614;614,0x1c1170310;0x1c1170310;0x1c1170320;0x1c1170320;0x1c1170330;0x1c1170330,1;1;1;1;1;1,567
+2026-08-18T20:26:53,2784,Respiratory failure. Encounter for Endotracheal tube,NO_MATCH,0,,,,,,480
+2026-08-18T20:27:11,2789,Shortness of breath and weakness. Pleural effusions.,NO_MATCH,0,,,,,,729
+2026-08-18T20:27:29,2792,Chest pain and heart palpitations beginning overnight.,NO_MATCH,0,,,,,,567
+2026-08-18T20:27:47,2794,Initial evaluation for acute chest pain.,NO_MATCH,0,,,,,,594
+2026-08-18T20:28:05,2795,Fever. Follow-up.,NO_MATCH,0,,,,,,572
+2026-08-18T20:28:23,2797,History given of left PICC placement. History of carcinoma of the stomach.,NO_MATCH,0,,,,,,304
+2026-08-18T20:28:41,2798,"Questionable sepsis, shortness of breath",MULTI_MATCH,2,11;1,", short;ness of",508;510,0x1c1a99fe0;0x1c1a99ff0,1;1,460
+2026-08-18T20:28:59,2803,CABG. Follow-up.,MATCH,1,17, Follow-up,350,0x1c0cffaf0,1,304
+2026-08-18T20:29:17,2804,82-year-old with shortness of breath. Smoker.,MATCH,1,1,ness of,354,0x1e544db10,1,304
+2026-08-18T20:29:34,2807,Chest pain and productive cough for 1 week.,NO_MATCH,0,,,,,,702
+2026-08-18T20:29:52,2809,Sepsis. Respiratory distress.,NO_MATCH,0,,,,,,480
+2026-08-18T20:30:10,2810,Postop from aortic valve replacement. Chest tubes. Chest pain.,NO_MATCH,0,,,,,,594
+2026-08-18T20:30:29,2811,33-year-old female with acute chest pain and shortness of breath today. History of sickle cell disease.,NO_MATCH,0,,,,,,650
+2026-08-18T20:30:47,2812,"Status post aorto mesenteric aneurysm repair, follow-up line placement. History of COPD",MATCH,1,16, COPD,592,0x1e5379280,1,528
+2026-08-18T20:31:05,2813,"Fever, shortness of breath, weakness",NO_MATCH,0,,,,,,729
+2026-08-18T20:31:23,2814,"Chest pain, chest pain",MATCH,1,6, chest pain,796,0x1c3d278e0,1,750
+2026-08-18T20:31:42,2817,Shortness of breath. History of COPD. Cannot catch breath.,MULTI_MATCH,2,1;16,ness of; COPD,348;354,0x1c5189ae0;0x1c5189b10,1;1,304
+2026-08-18T20:31:59,2819,Cough and cold for 2 weeks.,NO_MATCH,0,,,,,,729
+2026-08-18T20:32:18,2820,Follow-up COVID pneumonia.,NO_MATCH,0,,,,,,594
+2026-08-18T20:32:36,2821,"Fever (103 F), cough, congestion for 3 days; no known cardiopulmonary problems.",NO_MATCH,0,,,,,,304
+2026-08-18T20:32:54,2823,COPD exacerbation evaluate for infiltrates.,NO_MATCH,0,,,,,,594
+2026-08-18T20:33:12,2827,Coughing and shortness of breath.,MATCH,1,1,ness of,576,0x1c3cfa200,1,528
+2026-08-18T20:33:30,2828,Followup pulmonary edema. Ventilator dependent respiratory failure.,NO_MATCH,0,,,,,,304
+2026-08-18T20:33:48,2829,Shortness of breath and coughing up blood.,MULTI_MATCH,2,2;0, Shortness; of breath,780;782,0x1c134f860;0x1c134f870,1;1,729
+2026-08-18T20:34:06,2831,Acute onset of shortness of breath. Recent C-section. Initial encounter.,MATCH,1,1,ness of,642,0x1c14c9410,1,594
+2026-08-18T20:34:24,2834,Chest pain and shortness of breath. Smoked marijuana today.,MULTI_MATCH,2,5;25, breath.; pneumoth,788;788,0x1c4b608a0;0x1c4b608a0,1;1,729
+2026-08-18T20:34:42,2837,Chest pain for 3 days. Weakness in legs.,MATCH,1,7, Chest pain,618,0x1c3903350,1,575
+2026-08-18T20:35:00,2838,"Shortness of breath, syncopal episode, history sleep apnea, smoking",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1c1b0d3f0;0x1c1b0d400,1;1,594
+2026-08-18T20:35:19,2839,73-year-old female with shortness of breath.,NO_MATCH,0,,,,,,594
+2026-08-18T20:35:37,2840,Shortness of breath and cough. Recent COVID-19 positive,MULTI_MATCH,3,2;0;22, Shortness; of breath; COVID-,772;774;780,0x1e636a820;0x1e636a830;0x1e636a860,1;1;1,729
+2026-08-18T20:35:55,2844,"Cough, short of breath, fever",MATCH,1,8," breath,",352,0x1c4919b00,1,304
+2026-08-18T20:36:12,2846,Respiratory distress. Evaluate pneumonia.,MATCH,1,9, Respiratory,438,0x1c3055db0,1,396
+2026-08-18T20:36:30,2847,Acute pancreatitis. PICC line placement.,MATCH,1,20, PICC,352,0x1c18b1b00,1,304
+2026-08-18T20:36:48,2849,Status post fall. Right lower chest pain.,NO_MATCH,0,,,,,,506
+2026-08-18T20:37:06,2850,Respiratory distress of newborn. Premature neonate. Feeding tube placement.,NO_MATCH,0,,,,,,117
+2026-08-18T20:37:24,2856,COVID positive with shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1c391f400;0x1c391f410,1;1,594
+2026-08-18T20:37:42,2857,"[AGE] female failure to thrive, shortness of breath, fever.",MULTI_MATCH,3,11;1;8,", short;ness of; breath,",354;356;358,0x1c1542b10;0x1c1542b20;0x1c1542b30,1;1;1,304
+2026-08-18T20:38:00,2858,Sepsis. Follow-up.,NO_MATCH,0,,,,,,304
+2026-08-18T20:38:18,2859,Smoker with cough. Physical exam screening.,MATCH,1,12, cough.,350,0x1c0a84af0,1,304
+2026-08-18T20:38:36,2866,Chest pain/short of breath. History of lung cancer.,NO_MATCH,0,,,,,,304
+2026-08-18T20:38:54,2867,"Shortness of breath, recent pneumonia, history of hypertension.",MULTI_MATCH,2,1;8,"ness of; breath,",348;350,0x1c1112ae0;0x1c1112af0,1;1,304
+2026-08-18T20:39:12,2868,Unstable unstable angina; CABG,NO_MATCH,0,,,,,,304
+2026-08-18T20:39:30,2871,Persistent cough. Diagnosed with pneumonia 2 days ago.,MATCH,1,12, cough.,314,0x1c139f9d0,1,270
+2026-08-18T20:39:48,2872,Left lateral chest pain post motor vehicle collision.,MATCH,1,6, chest pain,774,0x1c2eed830,1,729
+2026-08-18T20:40:06,2873,Weakness. Diarrhea.,NO_MATCH,0,,,,,,304
+2026-08-18T20:40:24,2874,Right posterior rib pain after motor vehicle accident today. Initial encounter.,NO_MATCH,0,,,,,,600
+2026-08-18T20:40:42,2876,Left pneumothorax,NO_MATCH,0,,,,,,528
+2026-08-18T20:41:00,2877,Tracheostomy tube patient. Acute decreasing hemoglobin. Atrial fibrillation. Hypertension. Acute on chronic respiratory failure. Coronary artery disease.,NO_MATCH,0,,,,,,594
+2026-08-18T20:41:18,2878,87-year-old male with chest pain.,MATCH,1,6, chest pain,644,0x1c16d4420,1,594
+2026-08-18T20:41:36,2880,"Cough, chest pain, shortness of breath, COVID positive",MULTI_MATCH,4,6;11;1;8," chest pain;, short;ness of; breath,",350;352;354;356,0x1c089faf0;0x1c089fb00;0x1c089fb10;0x1c089fb20,1;1;1;1,304
+2026-08-18T20:41:54,2882,Follow-up of pneumonia.,MATCH,1,17, Follow-up,772,0x1c1c7f820,1,729
+2026-08-18T20:42:12,2883,"71-year-old, with fever. Decreased level of consciousness.",MATCH,1,23, fever.,354,0x1c0af9b10,1,304
+2026-08-18T20:42:30,2885,"Cough, fever, nasal congestion",MATCH,1,3, Cough,438,0x1c3047db0,1,396
+2026-08-18T20:42:48,2886,Positive PPD test. Cough.,NO_MATCH,0,,,,,,256
+2026-08-18T20:43:06,2888,Coughing over the last week. Wheezing.,NO_MATCH,0,,,,,,192
+2026-08-18T20:43:24,2889,"Shortness of breath. History of aortic stenosis, CAD, heart murmur, tachycardia, mitral regurgitation, and cardiac stent placement. TB",MULTI_MATCH,2,2;0, Shortness; of breath,526;528,0x1c4113070;0x1c4113080,1;1,483
+2026-08-18T20:43:42,2890,Respiratory distress. Pneumonia. COPD. Follow-up.,MATCH,1,16, COPD,356,0x1e6588b20,1,304
+2026-08-18T20:43:59,2893,Followup pulmonary edema. Community acquired pneumonia. Sepsis. Acute on chronic diastolic congestive heart failure.,NO_MATCH,0,,,,,,594
+2026-08-18T20:44:17,2895,"Woke up this a.m. with difficulty breathing. Pt has had chest pain going on the past few weeks - pain increases with inspiration. PNA dx x a few months ago. H/o Asthma, Diabetes, HTN. Smoker.",NO_MATCH,0,,,,,,414
+2026-08-18T20:44:35,2896,"Cough, pulmonary edema",NO_MATCH,0,,,,,,594
+2026-08-18T20:44:53,2898,60-year-old who was admitted 2 days ago for asthma exacerbation. Shortness of breath and mid chest pain persists. Negative COVID-19 testing.,MULTI_MATCH,2,1;22,ness of; COVID-,686;696,0x1c53a9570;0x1c53a95c0,1;1,625
+2026-08-18T20:45:11,2899,"Shortness of breath, intubated",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1c3aec3f0;0x1c3aec400,1;1,594
+2026-08-18T20:45:29,2900,Cough x 1 day.,MATCH,1,3, Cough,636,0x1c2e8f3e0,1,594
+2026-08-18T20:45:48,2902,"Motor vehicle accident, chest pain, leg abrasions",NO_MATCH,0,,,,,,729
+2026-08-18T20:46:05,2903,Prior episode of fever and shortness of breath. Rule out infiltrate.,MULTI_MATCH,2,4;0, shortness; of breath,352;354,0x1c39bbb00;0x1c39bbb10,1;1,304
+2026-08-18T20:46:23,2907,Shortness of breath and fever; congested cough.,MULTI_MATCH,9,25;25;29;25;29;25;29;25;29, pneumoth; pneumoth; Hypox; pneumoth; Hypox; pneumoth; Hypox; pneumoth; Hypox,518;520;520;522;522;524;524;526;526,0x1c15ec030;0x1c15ec040;0x1c15ec040;0x1c15ec050;0x1c15ec050;0x1c15ec060;0x1c15ec060;0x1c15ec070;0x1c15ec070,1;1;1;1;1;1;1;1;1,475
+2026-08-18T20:46:41,2908,PICC tube insertion right,NO_MATCH,0,,,,,,525
+2026-08-18T20:46:59,2909,Back pain and chest pain.,NO_MATCH,0,,,,,,729
+2026-08-18T20:47:17,2914,Follow-up pleural effusion,NO_MATCH,0,,,,,,572
+2026-08-18T20:47:35,2917,22-year-old female with pneumonia due to COVID-19.,NO_MATCH,0,,,,,,506
+2026-08-18T20:47:53,2918,70-year-old male with history of left foot cellulitis. Wound infection. Concern for osteomyelitis. History of peripheral vascular disease. Shortness of breath without exertion.,NO_MATCH,0,,,,,,594
+2026-08-18T20:48:11,2922,Preoperative gastric sleeve resection. Hypertension.,NO_MATCH,0,,,,,,729
+2026-08-18T20:48:29,2923,"Cough, chest congestion and wheezing for 1 week. Intermittent fever.",NO_MATCH,0,,,,,,729
+2026-08-18T20:48:47,2924,Wheezing. Congestion. Cough.,NO_MATCH,0,,,,,,396
+2026-08-18T20:49:05,2926,"Shortness of breath, fever, cough.",MULTI_MATCH,2,2;0, Shortness; of breath,778;780,0x1c4c94850;0x1c4c94860,1;1,729
+2026-08-18T20:49:23,2929,intraaortic balloon pump placement; chest pain,MATCH,1,6, chest pain,354,0x1c3948b10,1,304
+2026-08-18T20:49:41,2932,"Chest pain. History of smoking, COPD. Hypertension.",MATCH,1,16, COPD,1228,0x1e48ed660,1,1178
+2026-08-18T20:50:00,2934,Right rib pain post fall.,MATCH,1,15, rib pain,548,0x1e4b36120,1,504
+2026-08-18T20:50:17,2935,Mild respiratory failure. Bilateral community-acquired pneumonia with failed outpatient therapy.,MATCH,1,24, respiratory failure,692,0x1e4bea5a0,1,648
+2026-08-18T20:50:35,2937,Cold like symptoms. Cough. History of hypertension and MI.,NO_MATCH,0,,,,,,396
+2026-08-18T20:50:53,2938,"Abnormal chest x-ray, follow-up. History of COVID-19.",MATCH,1,22, COVID-,756,0x1c55497a0,1,702
+2026-08-18T20:51:11,2939,Weakness and wheezing,MATCH,1,19, wheez,640,0x1c55e8400,1,594
+2026-08-18T20:51:29,2940,"Dyspnea, wheezing and hypoxia",NO_MATCH,0,,,,,,540
+2026-08-18T20:51:47,2941,Chest pain. Cough and chills.,MULTI_MATCH,2,7;10, Chest pain;ough and,772;776,0x1d4a67820;0x1d4a67840,1;1,729
+2026-08-18T20:52:04,2946,Cough and fever for 1 week.,MATCH,1,3, Cough,298,0x1d4aad950,1,256
+2026-08-18T20:52:23,2948,Shortness of breath and hypoxia. Metastatic bone disease.,MATCH,1,1,ness of,638,0x1e74583f0,1,594
+2026-08-18T20:52:41,2950,Term newborn. Umbilical catheter placement.,MATCH,1,28, catheter,256,0x1e749c800,1,208
+2026-08-18T20:52:59,2952,Large left pneumothorax.,NO_MATCH,0,,,,,,304
+2026-08-18T20:53:17,2955,Postoperative CABG.,NO_MATCH,0,,,,,,304
+2026-08-18T20:53:35,2956,Pneumonia. Fever. Evaluate for tuberculosis.,MATCH,1,26, Fever.,352,0x1e4d30b00,1,304
+2026-08-18T20:53:53,2957,Shortness of breath R/O Infil,MULTI_MATCH,2,2;0, Shortness; of breath,560;562,0x1c213a180;0x1c213a190,1;1,525
+2026-08-18T20:54:11,2958,Cough over the last 10 weeks. Right-sided chest pain.,NO_MATCH,0,,,,,,550
+2026-08-18T20:54:29,2961,Right internal jugular venous catheter placement.,NO_MATCH,0,,,,,,594
+2026-08-18T20:54:47,2966,"Cough, shortness of breath",MULTI_MATCH,2,4;0, shortness; of breath,486;488,0x1e3e0bf30;0x1e3e0bf40,1;1,440
+2026-08-18T20:55:05,2967,Trauma. MVC and pain. Mid chest pain with seat belt marks.,NO_MATCH,0,,,,,,504
+2026-08-18T20:55:23,2970,COVID positive. Shortness of breath. Fever.,MULTI_MATCH,2,2;0, Shortness; of breath,640;642,0x1c4d6a400;0x1c4d6a410,1;1,594
+2026-08-18T20:55:41,2971,Cough. Laryngitis. Chills. Seven days duration.,MATCH,1,3, Cough,772,0x1c4bd4820,1,729
+2026-08-18T20:55:59,2972,Chest pain and shortness of breath radiating to the left arm. Nausea and diaphoresis.,MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1e668b400;0x1e668b410,1;1,594
+2026-08-18T20:56:17,2973,"Cough, shortness of breath and pneumonia.",MULTI_MATCH,2,4;0, shortness; of breath,622;624,0x1ce5c2370;0x1ce5c2380,1;1,576
+2026-08-18T20:56:35,2974,"Weakness, altered mental status.",NO_MATCH,0,,,,,,304
+2026-08-18T20:56:53,2975,Cough for 3 months. Evaluate for pneumonia and asthma. No fever. Shortness of breath and wheezing.,MULTI_MATCH,2,1;19,ness of; wheez,456;460,0x1c4c0ce40;0x1c4c0ce60,1;1,396
+2026-08-18T20:57:11,2976,"Short of breath, abdominal aortic aneurysm",MATCH,1,8," breath,",482,0x1c3e05f10,1,437
+2026-08-18T20:57:29,2979,Hypoxia. Recent motor vehicle accident,NO_MATCH,0,,,,,,528
+2026-08-18T20:57:47,2980,Cough since yesterday with chest congestion.,NO_MATCH,0,,,,,,168
+2026-08-18T20:58:05,2983,"Wheezing, fever, cough, history of asthma",NO_MATCH,0,,,,,,594
+2026-08-18T20:58:24,2984,Chest pain. Pain with deep inspiration. Pain for 1 month.,NO_MATCH,0,,,,,,304
+2026-08-18T20:58:41,2985,69-year-old female status post fall with severe left lower rib pain.,MATCH,1,15, rib pain,650,0x1c38b0450,1,594
+2026-08-18T20:58:59,2986,Cough and chills.,MATCH,1,10,ough and,348,0x1c38feae0,1,304
+2026-08-18T20:59:17,2989,Fever. Pancreatitis.,NO_MATCH,0,,,,,,594
+2026-08-18T20:59:34,2992,Shortness of breath. History of dyspnea.,MATCH,1,1,ness of,616,0x1c2952340,1,572
+2026-08-18T20:59:52,2993,Cough and fever for several days,MATCH,1,10,ough and,372,0x1c2cbdba0,1,320
+2026-08-18T21:00:11,2998,Cough and congestion. History of esophageal tear.,MATCH,1,10,ough and,594,0x1c455f290,1,550
+2026-08-18T21:00:29,3006,Post CABG x4.,MATCH,1,21, CABG,638,0x1c24943f0,1,594
+2026-08-18T21:00:47,3007,"Shortness of breath, cough, sore throat and fever; upper back pain.",MULTI_MATCH,3,1;8;14,"ness of; breath,; cough,",548;550;552,0x1c2727120;0x1c2727130;0x1c2727140,1;1;1,504
+2026-08-18T21:01:05,3008,"Shortness of breath, fever, hypoxia.",MULTI_MATCH,2,1;8,"ness of; breath,",348;350,0x1c2080ae0;0x1c2080af0,1;1,304
+2026-08-18T21:01:23,3010,Shortness of breath and history of pneumothorax.,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1c2356820;0x1c2356830,1;1,729
+2026-08-18T21:01:41,3012,CHF. Short of breath.,MATCH,1,0, of breath,622,0x1c8197370,1,575
+2026-08-18T21:01:59,3013,Shortness of breath and wheezing,MULTI_MATCH,2,2;0, Shortness; of breath,664;666,0x1c33c34c0;0x1c33c34d0,1;1,621
+2026-08-18T21:02:17,3014,COVID. Shortness of breath.,MATCH,1,1,ness of,640,0x1c2273400,1,594
+2026-08-18T21:02:35,3015,Cough for a month. Fever.,NO_MATCH,0,,,,,,270
+2026-08-18T21:02:53,3017,"Fever, wheezing, cough, congestion",NO_MATCH,0,,,,,,192
+2026-08-18T21:03:10,3018,"Left lower anterior rib pain, MVA 2 days ago",MATCH,1,15, rib pain,350,0x1c4db8af0,1,304
+2026-08-18T21:03:28,3020,Shortness of breath. Recent esophagectomy.,MATCH,1,1,ness of,692,0x1c44075a0,1,648
+2026-08-18T21:03:45,3021,"Severe left chest pain with shortness of breath began this morning. Current smoker. History of seizure disorder, post traumatic intercerebral bleed, alcohol abuse, tobacco abuse.",MULTI_MATCH,2,6;1, chest pain;ness of,596;600,0x1c28b12a0;0x1c28b12c0,1;1,550
+2026-08-18T21:04:03,3023,"Shortness of breath even at rest, history of diabetes, hyperlipidemia",MATCH,1,1,ness of,746,0x1c2f0f750,1,702
+2026-08-18T21:04:22,3030,"Central venous catheter placement, COVID pneumonia",MATCH,1,28, catheter,596,0x1e66442a0,1,550
+2026-08-18T21:04:40,3032,"Cough, shortness of breath and fever.",MULTI_MATCH,3,3;11;1," Cough;, short;ness of",772;774;776,0x1c3c60820;0x1c3c60830;0x1c3c60840,1;1;1,729
+2026-08-18T21:04:58,3033,Respiratory distress. Altered level of consciousness.,NO_MATCH,0,,,,,,304
+2026-08-18T21:05:16,3034,Increasing shortness of breath and productive cough with reddish sputum. Clinical diagnosis of CHF and possible pneumonitis-atypical pneumonia.,MULTI_MATCH,2,4;0, shortness; of breath,638;640,0x1c53e43f0;0x1c53e4400,1;1,594
+2026-08-18T21:05:34,3036,Check catheter placement,MATCH,1,28, catheter,440,0x1c3250dc0,1,396
+2026-08-18T21:05:52,3038,Status post PICC placement.,NO_MATCH,0,,,,,,594
+2026-08-18T21:06:10,3040,Fall. Right-sided rib pain. Diminished breath sounds on the right at physical examination. Former smoker.,NO_MATCH,0,,,,,,396
+2026-08-18T21:06:28,3043,73-year-old with chest pain. Precardiac cath. Abnormal stress test.,NO_MATCH,0,,,,,,304
+2026-08-18T21:06:46,3044,Shortness of breath and chest tightness for 3 months.,NO_MATCH,0,,,,,,729
+2026-08-18T21:07:04,3047,Ascending aortic aneurysm. AI. CABG.,MATCH,1,21, CABG,358,0x1c494db30,1,304
+2026-08-18T21:07:22,3049,Wheezing & Cough,MATCH,1,3, Cough,226,0x1c3da6710,1,180
+2026-08-18T21:07:40,3053,"Cough for 2-3 days, with mild chest tightness and pain. Initial encounter.",MATCH,1,3, Cough,1220,0x1e3a0f620,1,1178
+2026-08-18T21:07:58,3054,Premature newborn. Follow-up respiratory distress syndrome.,MATCH,1,17, Follow-up,442,0x1e3a49dd0,1,396
+2026-08-18T21:08:16,3057,Follow-up of sternal fracture. Treated with ORIF,MATCH,1,17, Follow-up,768,0x1e38dc800,1,729
+2026-08-18T21:08:34,3059,Hypoxia. Chest pain. Short of breath.,NO_MATCH,0,,,,,,304
+2026-08-18T21:08:52,3060,"82-year-old female with pneumothorax, lung surgery in the past.",NO_MATCH,0,,,,,,729
+2026-08-18T21:09:09,3061,"Acute pancreatitis, PICC placement.",MATCH,1,20, PICC,352,0x1f3a41b00,1,304
+2026-08-18T21:09:28,3062,Rib fractures. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,640;642,0x1f3afe400;0x1f3afe410,1;1,594
+2026-08-18T21:09:46,3066,COPD/smoker.,NO_MATCH,0,,,,,,1178
+2026-08-18T21:10:04,3068,Syncope. Weakness.,MATCH,1,18, Weakness,596,0x1d00d22a0,1,550
+2026-08-18T21:10:23,3069,Respiratory distress R/O Infil,MATCH,1,9, Respiratory,560,0x1d016e180,1,525
+2026-08-18T21:10:41,3074,Chest pain. Former smoker.,MATCH,1,7, Chest pain,772,0x1d025b820,1,729
+2026-08-18T21:10:59,3077,Shortness of breath and cough. Smoker.,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1e3b44820;0x1e3b44830,1;1,729
+2026-08-18T21:11:17,3079,Cough. Short of breath.,MULTI_MATCH,2,3;0, Cough; of breath,772;776,0x1d0029820;0x1d0029840,1;1,729
+2026-08-18T21:11:36,3084,"Cough, shortness of breath for 1 weeks, possible pneumonia",MULTI_MATCH,3,3;11;1," Cough;, short;ness of",780;782;784,0x1db8f3860;0x1db8f3870;0x1db8f3880,1;1;1,729
+2026-08-18T21:11:54,3087,89-year-old with PICC line placement.,NO_MATCH,0,,,,,,304
+2026-08-18T21:12:11,3088,Cough and fever for 4 days. Shortness of breath last night.,MULTI_MATCH,3,10;2;0,ough and; Shortness; of breath,340;348;350,0x1c4eb4aa0;0x1c4eb4ae0;0x1c4eb4af0,1;1;1,288
+2026-08-18T21:12:29,3093,"Pacemaker insertion 1 week ago, pain and shortness of breath",NO_MATCH,0,,,,,,729
+2026-08-18T21:12:47,3094,Postop from CABG. Ischemic cardiomyopathy.,NO_MATCH,0,,,,,,594
+2026-08-18T21:13:05,3097,"LV dysfunction, pre procedure respiratory exam. Slight shortness of breath.",MATCH,1,1,ness of,358,0x1c4839b30,1,304
+2026-08-18T21:13:23,3099,Hypoxia/respiratory failure,MULTI_MATCH,3,25;25;25, pneumoth; pneumoth; pneumoth,638;640;642,0x1c4ff33f0;0x1c4ff3400;0x1c4ff3410,1;1;1,594
+2026-08-18T21:13:42,3102,Hypoxia. Sneezing.,MATCH,1,29, Hypox,434,0x1c1605d90,1,396
+2026-08-18T21:14:00,3103,Cough and fever. Question pneumonia.,MATCH,1,3, Cough,346,0x1c1cccad0,1,304
+2026-08-18T21:14:17,3104,Chest pain. Left-sided lower chest pain.,NO_MATCH,0,,,,,,396
+2026-08-18T21:14:35,3108,"37-year-old male with cough, body ache, malaise. Onset of fever this week.",NO_MATCH,0,,,,,,572
+2026-08-18T21:14:53,3109,Fell - left anterior rib pain,NO_MATCH,0,,,,,,594
+2026-08-18T21:15:11,3111,Persistent cough and intermittent shortness of air for about a week.,MATCH,1,1,ness of,352,0x1c3dbab00,1,304
+2026-08-18T21:15:29,3114,79-year-old male with progressive shortness of breath,NO_MATCH,0,,,,,,621
+2026-08-18T21:15:47,3116,Status post CABG 1 week ago.,MULTI_MATCH,8,5;25;5;25;5;25;5;25, breath.; pneumoth; breath.; pneumoth; breath.; pneumoth; breath.; pneumoth,746;746;748;748;750;750;752;752,0x1c23e3750;0x1c23e3750;0x1c23e3760;0x1c23e3760;0x1c23e3770;0x1c23e3770;0x1c23e3780;0x1c23e3780,1;1;1;1;1;1;1;1,702
+2026-08-18T21:16:05,3119,Shortness of breath after surgery. Crepitus and neck swelling.,MATCH,1,1,ness of,638,0x1db9d53f0,1,594
+2026-08-18T21:16:23,3120,Pericardiocentesis. Shortness of breath.,MULTI_MATCH,2,2;0, Shortness; of breath,800;802,0x1e67b5900;0x1e67b5910,1;1,750
+2026-08-18T21:16:41,3121,Post COVID cough. Question pneumonia. COVID in Bardina.,MATCH,1,13, pneumonia.,642,0x1d5165410,1,594
+2026-08-18T21:16:59,3123,Weakness and diarrhea; suspect sepsis,NO_MATCH,0,,,,,,340
+2026-08-18T21:17:17,3125,"Weakness, fall from bed. Dementia.",MATCH,1,18, Weakness,618,0x1e4c6d350,1,567
+2026-08-18T21:17:36,3127,Respiratory failure; ETT present,MULTI_MATCH,2,5;25, breath.; pneumoth,576;576,0x1e4c9c200;0x1e4c9c200,1;1,528
+2026-08-18T21:17:54,3129,Insertion of Diatek catheter.,NO_MATCH,0,,,,,,304
+2026-08-18T21:18:12,3131,chest pressure; shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,442;444,0x1e84e4dd0;0x1e84e4de0,1;1,396
+2026-08-18T21:18:30,3132,Short of breath. Chest pain.,MATCH,1,0, of breath,668,0x1c2ba94e0,1,624
+2026-08-18T21:18:48,3139,Newborn. Respiratory distress. 36-weeks gestational age.,NO_MATCH,0,,,,,,270
+2026-08-18T21:19:07,3142,Cough and dementia,MATCH,1,3, Cough,526,0x1c3f5e070,1,483
+2026-08-18T21:19:25,3143,Chest pain shortness of breath,MATCH,1,1,ness of,644,0x1c2512420,1,598
+2026-08-18T21:19:43,3146,Fracture. Chest pain.,NO_MATCH,0,,,,,,304
+2026-08-18T21:20:00,3147,Respiratory distress/intracranial hematoma,NO_MATCH,0,,,,,,460
+2026-08-18T21:20:18,3150,Shortness of breath. Fall.,MATCH,1,1,ness of,348,0x1f393eae0,1,304
+2026-08-18T21:20:36,3154,"Cough, chest congestion",NO_MATCH,0,,,,,,304
+2026-08-18T21:20:54,3155,"Shortness of breath, fever, myalgias and cough since 02/02/2013. The patient's son tested positive for COVID-19 on 2/11/2019. She had exposure to her son. Weaker today.",MULTI_MATCH,2,1;8,"ness of; breath,",572;574,0x1e3f3c1e0;0x1e3f3c1f0,1;1,528
+2026-08-18T21:21:12,3159,"Shortness of breath. Patient tested positive for COVID-03 November 10, 2002.",MULTI_MATCH,2,1;22,ness of; COVID-,572;580,0x1e3fd81e0;0x1e3fd8220,1;1,528
+2026-08-18T21:21:30,3160,Chest pain. ST-elevation MI.,NO_MATCH,0,,,,,,594
+2026-08-18T21:21:48,3161,78-year-old male with pulmonary edema and shortness of breath-followup.,MULTI_MATCH,2,4;0, shortness; of breath,648;650,0x1dbb39440;0x1dbb39450,1;1,594
+2026-08-18T21:22:06,3162,Shortness of breath and chest pain over the last 2 weeks. Asthma.,MULTI_MATCH,2,2;0, Shortness; of breath,718;720,0x1cac01670;0x1cac01680,1;1,675
+2026-08-18T21:22:24,3163,Cough and fever for 4 days,MATCH,1,3, Cough,308,0x1cac559a0,1,266
+2026-08-18T21:22:42,3164,Trauma and respiratory failure.,MATCH,1,24, respiratory failure,640,0x1cad08400,1,594
+2026-08-18T21:23:01,3165,"Follow-up for right middle lobe mass. The patient is experiencing experience cough, chest congestion, shortness of breath, and wheezing for the past 3-4 weeks. Patient is a former smoker. History of chronic respiratory failure, COPD.",MULTI_MATCH,4,4;0;19;16, shortness; of breath; wheez; COPD,656;658;662;686,0x1cadb8480;0x1cadb8490;0x1cadb84b0;0x1cadb8570,1;1;1;1,594
+2026-08-18T21:23:19,3166,"Chest pain for 3 days, shortness of breath, hypertension, previous tobacco abuse",MULTI_MATCH,4,7;11;1;8," Chest pain;, short;ness of; breath,",718;724;726;728,0x1d487f670;0x1d487f6a0;0x1d487f6b0;0x1d487f6c0,1;1;1;1,675
+2026-08-18T21:23:37,3167,Shortness of breath. Patient admitted to the hospital 10/11/1997 with a diagnosis of multilobar pneumonia.,MATCH,1,1,ness of,594,0x1d492a290,1,550
+2026-08-18T21:23:55,3172,Short of breath/wheezing/chest pain,NO_MATCH,0,,,,,,729
+2026-08-18T21:24:13,3176,Shortness of breath. History of cardiac murmur.,MATCH,1,1,ness of,348,0x1e7672ae0,1,304
+2026-08-18T21:24:31,3179,COVID pneumonia. COVID positive 11/06/2020. Patient reports persistent shortness of breath.,MULTI_MATCH,2,13;1, pneumonia.;ness of,534;554,0x1e770b0b0;0x1e770b150,1;1,484
+2026-08-18T21:24:49,3180,Left-sided chest pain for 2 weeks.,NO_MATCH,0,,,,,,598
+2026-08-18T21:25:07,3183,"Wheezing, chest tightness, history asthma, chest pain",NO_MATCH,0,,,,,,729
+2026-08-18T21:25:25,3184,LEFT side chest pain for 2 days worse with exertion,NO_MATCH,0,,,,,,572
+2026-08-18T21:25:43,3185,"Cough and chest congestion, previous history of esophageal tear",MATCH,1,10,ough and,668,0x1ce60b4e0,1,624
+2026-08-18T21:26:01,3187,Tripped while stepping off curb today. Injury. Right rib pain.,NO_MATCH,0,,,,,,729
+2026-08-18T21:26:19,3189,Dyspnea. Productive cough. History of COPD and lung cancer.,MULTI_MATCH,2,12;16, cough.; COPD,778;782,0x1ce7d4850;0x1ce7d4870,1;1,729
+2026-08-18T21:26:37,3190,"Shortness of breath, pneumonia follow up.",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1c567a3f0;0x1c567a400,1;1,594
+2026-08-18T21:26:56,3191,"Panda tube placement, ET tube placement, respiratory failure",NO_MATCH,0,,,,,,304
+2026-08-18T21:27:14,3194,"Cough, shortness of breath and wheezing. Question pneumonia.",MATCH,1,0, of breath,352,0x1c572eb00,1,304
+2026-08-18T21:27:32,3195,History of renal cell carcinoma. Shortness of breath. Former smoker.,MULTI_MATCH,2,2;0, Shortness; of breath,674;676,0x1c57fc510;0x1c57fc520,1;1,625
+2026-08-18T21:27:50,3198,Coronary artery disease and CABG procedure.,MATCH,1,21, CABG,528,0x1d5276080,1,480
+2026-08-18T21:28:07,3200,49-year-old female with shortness of breath. Evaluate pneumonia.,MULTI_MATCH,2,4;0, shortness; of breath,530;532,0x1d52f0090;0x1d52f00a0,1;1,480
+2026-08-18T21:28:25,3203,Hypertension. Fever.,NO_MATCH,0,,,,,,304
+2026-08-18T21:28:43,3204,Altered mental status. Hypoxia.,NO_MATCH,0,,,,,,594
+2026-08-18T21:29:01,3205,"Cough, congestion. Fever, runny nose for 1 week.",MATCH,1,3, Cough,312,0x1c34389c0,1,270
+2026-08-18T21:29:18,3206,"Visit reason: L pleuritic cp, r/p pneumothorax. Aids, pneumonia;",NO_MATCH,0,,,,,,525
+2026-08-18T21:29:36,3207,"Cough, chest congestion.",NO_MATCH,0,,,,,,270
+2026-08-18T21:29:54,3208,Short of breath. Atrial fibrillation.,MATCH,1,0, of breath,638,0x1c35ca3f0,1,594
+2026-08-18T21:30:12,3213,Cough and short of breath. Dizziness,MATCH,1,10,ough and,348,0x1e3c2fae0,1,304
+2026-08-18T21:30:29,3214,Fever. Hypertension.,NO_MATCH,0,,,,,,594
+2026-08-18T21:30:47,3216,COVID-19 positive,NO_MATCH,0,,,,,,594
+2026-08-18T21:31:05,3217,Chest pain and chest congestion. Rhonchi.,MATCH,1,7, Chest pain,772,0x1e3c27820,1,729
+2026-08-18T21:31:23,3220,Short of breath. Wheezing. Dizziness.,NO_MATCH,0,,,,,,729
+2026-08-18T21:31:41,3221,"Right-sided chest pain, cough for renal",NO_MATCH,0,,,,,,304
+2026-08-18T21:31:59,3223,Chest pain and upper G.I. bleeding.,NO_MATCH,0,,,,,,304
+2026-08-18T21:32:17,3224,Cough. Pregnancy.,MULTI_MATCH,2,25;25, pneumoth; pneumoth,644;646,0x1d68e0420;0x1d68e0430,1;1,600
+2026-08-18T21:32:35,3225,Status post right jugular dialysis catheter placement,MATCH,1,28, catheter,644,0x1d698f420,1,594
+2026-08-18T21:32:53,3227,Cough. Ventilator dependent.,NO_MATCH,0,,,,,,304
+2026-08-18T21:33:11,3235,"Chest pain, shortness of breath, dizziness, weakness.",MULTI_MATCH,2,4;0, shortness; of breath,350;352,0x1d6a41af0;0x1d6a41b00,1;1,304
+2026-08-18T21:33:29,3237,Cough with nausea and vomiting,MATCH,1,3, Cough,780,0x1d6b26860,1,729
+2026-08-18T21:33:46,3239,"Follow-up pneumonia, wheezing",NO_MATCH,0,,,,,,256
+2026-08-18T21:34:04,3242,Premature newborn. Follow-up respiratory distress syndrome and left pneumothorax.,MATCH,1,17, Follow-up,442,0x1d6bbfdd0,1,396
+2026-08-18T21:34:22,3246,"Shortness of breath, fever, dizziness and elevated heart rate after playing football, smoker",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1ce06f3f0;0x1ce06f400,1;1,594
+2026-08-18T21:34:40,3247,"Nausea, chest pain, shortness of breath",MULTI_MATCH,2,4;0, shortness; of breath,530;532,0x1ce0ed090;0x1ce0ed0a0,1;1,480
+2026-08-18T21:34:59,3248,Acute onset of shortness of breath,MATCH,1,1,ness of,576,0x1ce18d200,1,528
+2026-08-18T21:35:17,3249,"MVA - trauma with anterior left knee and left upper chest pain, shortness of breath, nonsmoker / asthma.",MULTI_MATCH,2,4;0, shortness; of breath,786;788,0x1ce255890;0x1ce2558a0,1;1,729
+2026-08-18T21:35:34,3252,"Abdominal pain, weakness, hypertension, shortness of breath",MULTI_MATCH,2,11;1,", short;ness of",672;674,0x1ce319500;0x1ce319510,1;1,621
+2026-08-18T21:35:52,3254,"Asthma, difficulty breathing, chest pain and cough beginning yesterday",MATCH,1,6, chest pain,778,0x1d440a850,1,729
+2026-08-18T21:36:10,3255,Wheezing with shortness of breath. Evaluate endotracheal tube.,MATCH,1,1,ness of,646,0x1d44ac430,1,598
+2026-08-18T21:36:28,3256,Acute allergic reaction. Shortness of breath. Better now.,MULTI_MATCH,2,2;0, Shortness; of breath,352;354,0x1d4505b00;0x1d4505b10,1;1,304
+2026-08-18T21:36:46,3257,Status post PICC line placement.,NO_MATCH,0,,,,,,304
+2026-08-18T21:37:04,3259,"Chest pain, back pain",NO_MATCH,0,,,,,,480
+2026-08-18T21:37:22,3260,Posterior left rib pain with cough,NO_MATCH,0,,,,,,675
+2026-08-18T21:37:40,3261,Cough for 1 week. Recent croup. Fever.,NO_MATCH,0,,,,,,224
+2026-08-18T21:37:57,3264,Cough and congestion x1 month.,MATCH,1,10,ough and,596,0x1d47a52a0,1,552
+2026-08-18T21:38:16,3266,9-week-old male with cough and fever. Subsequent encounter.,NO_MATCH,0,,,,,,182
+2026-08-18T21:38:34,3269,Cough and sore throat. Chest pain dyspnea. Fatigue. COVID-19 virus infection.,MULTI_MATCH,2,3;7, Cough; Chest pain,772;778,0x1dacb5820;0x1dacb5850,1;1,729
+2026-08-18T21:38:52,3271,Respiratory failure. Hypoxia.,NO_MATCH,0,,,,,,594
+2026-08-18T21:39:10,3272,"Shortness of breath, status post tracheostomy",MULTI_MATCH,2,1;8,"ness of; breath,",638;640,0x1dae273f0;0x1dae27400,1;1,594
+2026-08-18T21:39:27,3273,OG tube placement. Central line placement. Respiratory arrest.,NO_MATCH,0,,,,,,594
+2026-08-18T21:39:46,3274,"Shortness of breath, interstitial lung disease, evaluate for pneumonia.",MULTI_MATCH,2,1;8,"ness of; breath,",448;450,0x1daf48e00;0x1daf48e10,1;1,396
+2026-08-18T21:40:04,3277,Acute onset of vomiting and diarrhea. Cough. Generalized weakness. Fever.,MATCH,1,3, Cough,780,0x1c7023860,1,729
+2026-08-18T21:40:22,3280,"Chest pain, followup examination to assess for nipple shadow",MATCH,1,7, Chest pain,780,0x1c7103860,1,729
+2026-08-18T21:40:41,3283,Pt presents with tachycardia that began at 3028. Pt does not have a hx of cardiac issues. Pt stated that he did have chest pain earlier today and shortness of breath.,MULTI_MATCH,2,6;1, chest pain;ness of,670;676,0x1c71b24f0;0x1c71b2520,1;1,594
+2026-08-18T21:40:59,3288,Chest pain. Shortness of breath and weakness.,MULTI_MATCH,2,2;0, Shortness; of breath,506;508,0x1c7223fd0;0x1c7223fe0,1;1,460
+2026-08-18T21:41:16,3289,ARDS. COVID pneumonia. Prone positioning,NO_MATCH,0,,,,,,594
+2026-08-18T21:41:34,3290,"MVC 02/04/1998, worsening shortness of breath",MULTI_MATCH,2,4;0, shortness; of breath,794;796,0x1c73b98d0;0x1c73b98e0,1;1,729
+2026-08-18T21:41:52,3292,"Post CABG, some shortness of breath, history coronary artery disease post MI, hypertension, GERD, former smoker",MULTI_MATCH,2,1;8,"ness of; breath,",778;780,0x1cbca5850;0x1cbca5860,1;1,729
+2026-08-18T21:42:10,3295,Shortness of breath and cough for the past 2 weeks. Ex-smoker.,MULTI_MATCH,2,2;0, Shortness; of breath,772;774,0x1cbd74820;0x1cbd74830,1;1,729
+2026-08-18T21:42:28,3297,"cough, fatigue, hypoxia",NO_MATCH,0,,,,,,304
+2026-08-18T21:42:46,3298,Status post CABG procedure.,MATCH,1,21, CABG,774,0x1cbe9a830,1,729
+2026-08-18T21:43:04,3299,Shortness of breath. Cough.,MULTI_MATCH,2,2;0, Shortness; of breath,526;528,0x1cbf32070;0x1cbf32080,1;1,483
+2026-08-18T21:43:22,3301,PU4.6G (ICD-10-CM) - SOB (shortness of breath) COPD (chronic obstructive pulmonary disease) (HCC) G5E-KY 1ppd/60 yrs,MULTI_MATCH,2,1;16,ness of; COPD,656;660,0x1cbfd1480;0x1cbfd14a0,1;1,594
+2026-08-18T21:43:40,3308,"3 syncopal episodes in the last 24 hours, CABG on Feb 13th",MATCH,1,21, CABG,460,0x1cb044e60,1,396
+2026-08-18T21:43:59,3309,Cough and fever. COVID-19 positive.,MULTI_MATCH,3,10;23;22,ough and; fever.; COVID-,638;640;642,0x1cb0f23f0;0x1cb0f2400;0x1cb0f2410,1;1;1,594
+2026-08-18T21:44:17,3310,New onset of mid chest pain and 6 this morning associated with tachycardia and nausea and vomiting. Patient has an unspecified cardiac condition and is followed by cardiology is.,MATCH,1,6, chest pain,784,0x1cb1d3880,1,729
+2026-08-18T21:44:35,3311,Followup rib fracture. Small right pneumothorax.,NO_MATCH,0,,,,,,304
+2026-08-18T21:44:53,3312,Respiratory difficulty,NO_MATCH,0,,,,,,594
+2026-08-18T21:45:12,3313,Fever. Nausea and vomiting. Questionable sepsis - evaluate for abnormality,NO_MATCH,0,,,,,,550
+2026-08-18T21:45:30,3315,Found on the ground. Shortness of breath.,MATCH,1,1,ness of,486,0x1cb3faf30,1,437
+2026-08-18T21:45:48,3319,Hypotension and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,614;616,0x1d2ca0330;0x1d2ca0340,1;1,567
+2026-08-18T21:46:05,3320,49-year-old male with shortness of breath,MULTI_MATCH,2,4;0, shortness; of breath,644;646,0x1d2d4d420;0x1d2d4d430,1;1,594
+2026-08-18T21:46:23,3321,Altered mental status. Weakness.,MATCH,1,18, Weakness,352,0x1d2da6b00,1,304
+2026-08-18T21:46:42,3325,Metastatic cancer. PICC line placement.,MATCH,1,20, PICC,352,0x1d2dffb00,1,304
+2026-08-18T21:47:00,3326,"Respiratory failure, pneumonia",NO_MATCH,0,,,,,,500
+2026-08-18T21:47:18,3327,Shortness of breath. COVID-19 positive patient.,MULTI_MATCH,2,1;22,ness of; COVID-,616;620,0x1d2f2a340;0x1d2f2a360,1;1,572
+2026-08-18T21:47:36,3328,Osteoarthritis left new. Short of breath.,MATCH,1,0, of breath,356,0x1d2f84b20,1,304
+2026-08-18T21:47:54,3332,"CVA, shortness of breath, chest pain",MULTI_MATCH,2,4;0, shortness; of breath,350;352,0x1d2fccaf0;0x1d2fccb00,1;1,304
+2026-08-18T21:48:12,3333,"Suspected right leg wound infection. History of hypertension, COPD and atrial fibrillation.",MATCH,1,16, COPD,648,0x1f2c91440,1,594
+2026-08-18T21:48:30,3335,PICC Placement.,NO_MATCH,0,,,,,,304
+2026-08-18T21:48:48,3339,"Follow-up pneumonia, worsening shortness of breath.",MULTI_MATCH,2,4;0, shortness; of breath,444;446,0x1f2d5ede0;0x1f2d5edf0,1;1,396
+2026-08-18T21:49:06,3343,"Cough, fever, body aches for 3 days",NO_MATCH,0,,,,,,528
+2026-08-18T21:49:24,3345,Followup left pneumothorax and pneumonia,NO_MATCH,0,,,,,,550
+2026-08-18T21:49:42,3346,"1-day-old former 29-30 week pre term female. Respiratory insufficiency, central line placement.",MATCH,1,9, Respiratory,184,0x1f2ed95c0,1,126
+2026-08-18T21:50:00,3347,"Throat swelling, cough, difficulty swallowing",NO_MATCH,0,,,,,,304
+2026-08-18T21:50:17,3348,"Cough for 1 week, fever, chills, body aches",NO_MATCH,0,,,,,,600
+2026-08-18T21:50:35,3350,"Chest pain, allergic reaction.",MATCH,1,7, Chest pain,610,0x1d30a1310,1,567
+2026-08-18T21:50:53,3356,Three days of chest pain,MATCH,1,6, chest pain,748,0x1d318b760,1,702
+2026-08-18T21:51:11,3357,Shortness of breath for several days,MATCH,1,1,ness of,638,0x1d324d3f0,1,594
+2026-08-18T21:51:29,3359,Leg and ankle swelling. Hypertension. Diabetes.,MATCH,1,27, Hypert,352,0x1d32a9b00,1,304
+2026-08-18T21:51:48,3360,"Cough, fever times 1½ months. Smoker.",NO_MATCH,0,,,,,,396
+2026-08-18T21:52:06,3362,"Cough, shortness of breath and chest pain.",MULTI_MATCH,2,4;0, shortness; of breath,350;352,0x1d3380af0;0x1d3380b00,1;1,304
+2026-08-18T21:52:24,3363,"Productive cough, 4 days duration.",MATCH,1,14," cough,",782,0x1d145a870,1,729
+2026-08-18T21:52:42,3364,"Shortness of breath, cough and fever.",MULTI_MATCH,2,1;8,"ness of; breath,",440;442,0x1d14dfdc0;0x1d14dfdd0,1;1,396
+2026-08-18T21:53:00,3365,"Dry cough, shortness of breath, dizziness and weakness for 2 weeks",MULTI_MATCH,3,14;4;0," cough,; shortness; of breath",700;702;704,0x1d15ad5e0;0x1d15ad5f0;0x1d15ad600,1;1;1,648
+2026-08-18T21:53:18,3366,Follow-up pneumothorax,NO_MATCH,0,,,,,,396
+2026-08-18T21:53:36,3369,Altered mental status. Shortness of breath and chest pain.,MULTI_MATCH,2,2;0, Shortness; of breath,642;644,0x1d16d3410;0x1d16d3420,1;1,594
+2026-08-18T21:53:54,3371,History of kidney CA. Shortness of breath. Hypertension.,MULTI_MATCH,2,2;0, Shortness; of breath,750;752,0x1d17ac770;0x1d17ac780,1;1,702
+2026-08-18T21:54:12,3372,"Follow up CABG, chest soreness",NO_MATCH,0,,,,,,702
+2026-08-18T21:54:30,3375,"Initial evaluation for acute chest pain, shortness of breath.",MULTI_MATCH,2,4;0, shortness; of breath,644;646,0x1c991e420;0x1c991e430,1;1,594
+2026-08-18T21:54:48,3377,"ARDS due to COVID-19, hypoxia",NO_MATCH,0,,,,,,594
+2026-08-18T21:55:05,3379,Weakness and diarrhea.,NO_MATCH,0,,,,,,594
+2026-08-18T21:55:24,3380,Evaluate PICC line placement.,MATCH,1,20, PICC,348,0x1c9acbae0,1,304
+2026-08-18T21:55:42,3381,Chest pain for 10 days,MATCH,1,7, Chest pain,718,0x1c9b9f670,1,675
+2026-08-18T21:56:01,3385,Right anterior chest pain.,NO_MATCH,0,,,,,,304
+2026-08-18T21:56:19,3386,Chest pain and dyspnea.,NO_MATCH,0,,,,,,304
+2026-08-18T21:56:37,3387,"Cough, shortness of breath, COVID positive contact",MULTI_MATCH,2,4;0, shortness; of breath,640;642,0x1cc4fe400;0x1cc4fe410,1;1,594
+2026-08-18T21:56:55,3389,Chest pain and short of breath,NO_MATCH,0,,,,,,648
+2026-08-18T21:57:13,3393,"Right sided chest pain, pt was in motorcycle accident 4-5 days ago, bike fell on her, hx of PEs",NO_MATCH,0,,,,,,304
+2026-08-18T21:57:31,3395,"Cough, Hx COPD; Pacemaker alerted for A.Fib, denies any chest pain. Recent cough x 4 days. H/O A.Fib, HTN, COPD, Pacemaker.",MULTI_MATCH,2,16;16, COPD; COPD,352;384,0x1cc676b00;0x1cc676c00,1;1,304
+2026-08-18T21:57:50,3396,Ventilator dependent respiratory failure,NO_MATCH,0,,,,,,528
+2026-08-18T21:58:07,3397,"Cough, wheeze",NO_MATCH,0,,,,,,650
+2026-08-18T21:58:26,3398,"Productive yellow sputum cough for 1 week with reported nausea/vomiting/diarrhea as well, and shortness of breath on exertion. Patient denies any fevers or urinary symptoms.",MULTI_MATCH,2,4;0, shortness; of breath,718;720,0x1db0ae670;0x1db0ae680,1;1,650
+2026-08-18T21:58:43,3399,Shortness of breath for 3-4 days. History of chronic renal disease.,MATCH,1,1,ness of,594,0x1db152290,1,550
+2026-08-18T21:59:01,3401,"36-year-old male with dry cough, wheezing and shortness of breath for the past 2 weeks.",MATCH,1,1,ness of,760,0x1db2177c0,1,702
+2026-08-18T21:59:19,3405,Productive cough and shortness of breath. Symptoms since last month.,MATCH,1,1,ness of,542,0x1db2bf0f0,1,494
+2026-08-18T21:59:37,3406,Shortness of breath. Hemoptysis.,MULTI_MATCH,2,2;0, Shortness; of breath,718;720,0x1db38c670;0x1db38c680,1;1,675
+2026-08-18T21:59:55,3407,Fall with rib fracture and small pneumothorax.,NO_MATCH,0,,,,,,304
+2026-08-18T22:00:13,3412,COVID-19 pneumonia,MATCH,1,22, COVID-,772,0x1c78d1820,1,729
+2026-08-18T22:00:31,3413,Right anterior mid rib pain and shortness of breath after being kicked in the chest.,MULTI_MATCH,2,4;0, shortness; of breath,778;780,0x1c79af850;0x1c79af860,1;1,729
+2026-08-18T22:00:49,3414,"Pneumonia, respiratory failure - ARDS",MATCH,1,24, respiratory failure,642,0x1c7a5c410,1,594
+2026-08-18T22:01:07,3415,Shortness of breath. COVID positive.,MATCH,1,1,ness of,638,0x1c7b1e3f0,1,594
+2026-08-18T22:01:25,3418,"Cough, shortness of breath, pneumonia 3 weeks.",MULTI_MATCH,4,3;11;1;8," Cough;, short;ness of; breath,",772;774;776;778,0x1c7bf2820;0x1c7bf2830;0x1c7bf2840;0x1c7bf2850,1;1;1;1,729
+2026-08-18T22:01:43,3419,Coughing congestion over the last 10 days. Fever and diarrhea for the last 4 days.,MATCH,1,3, Cough,328,0x1c8452a40,1,285
+2026-08-18T22:02:01,3420,37-year-old female with shortness of breath and right chest pain for 1 week.,MATCH,1,1,ness of,788,0x1c85258a0,1,729
+2026-08-18T22:02:19,3421,Assault with left lateral and posterior rib pain. Some shortness of breath. Nonsmoker.,MULTI_MATCH,3,15;4;0, rib pain; shortness; of breath,778;782;784,0x1c85e4850;0x1c85e4870;0x1c85e4880,1;1;1,729
+2026-08-18T22:02:37,3424,"Cough, chest pain and shortness of breath for a week.",MULTI_MATCH,2,6;1, chest pain;ness of,696;700,0x1c86ba5c0;0x1c86ba5e0,1;1,650
+2026-08-18T22:02:55,3428,Respiratory failure. Metastatic prostate cancer.,NO_MATCH,0,,,,,,594
+2026-08-18T22:03:13,3429,Left lower lobe 2 cm primary lung cancer. Followup left pneumothorax.,NO_MATCH,0,,,,,,304
+2026-08-18T22:03:31,3430,Shortness of breath for 2 weeks.,MULTI_MATCH,2,2;0, Shortness; of breath,780;782,0x1cec94860;0x1cec94870,1;1,729
+2026-08-18T22:03:49,3431,"28-year-old presenting with 1 week history of chest pain, increasing bilateral lower extremity edema and shortness of breath. Current history of lupus.",MULTI_MATCH,2,4;0, shortness; of breath,768;770,0x1ced64800;0x1ced64810,1;1,702
+2026-08-18T22:04:07,3437,Assault trauma yesterday. Struck in the left ribs. Today has bloody stool and shortness of breath.,MULTI_MATCH,2,4;0, shortness; of breath,788;790,0x1cee3a8a0;0x1cee3a8b0,1;1,729
+2026-08-18T22:04:25,3442,44-year-old male status post slip and fall while trail running. Possible loss of consciousness. Right rib pain. Abrasions.,NO_MATCH,0,,,,,,729
+2026-08-18T22:04:43,3446,"chest pain, trauma",MATCH,1,6, chest pain,772,0x1cf801820,1,729
+2026-08-18T22:05:01,3454,15-year-old female status post blunt trauma with posterior right rib pain and abrasion. Initial encounter.,MATCH,1,15, rib pain,562,0x1cf8a5190,1,506
+2026-08-18T22:05:19,3462,"Hypoxia, weakness",MATCH,1,29, Hypox,718,0x1cf98c670,1,675

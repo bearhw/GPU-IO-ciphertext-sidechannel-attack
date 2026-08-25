@@ -1,0 +1,21 @@
+!<thin>
+//                                              134       `
+cpuidle.o/
+driver.o/
+governor.o/
+sysfs.o/
+governors/ladder.o/
+governors/menu.o/
+governors/teo.o/
+governors/haltpoll.o/
+poll_state.o/
+
+/0              0           0     0     644     81912     `
+/11             0           0     0     644     37688     `
+/21             0           0     0     644     24336     `
+/33             0           0     0     644     65176     `
+/42             0           0     0     644     24296     `
+/62             0           0     0     644     33952     `
+/80             0           0     0     644     33992     `
+/97             0           0     0     644     25736     `
+/119            0           0     0     644     21496     `

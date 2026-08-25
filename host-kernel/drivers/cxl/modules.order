@@ -1,0 +1,6 @@
+drivers/cxl/core/cxl_core.ko
+drivers/cxl/cxl_pci.ko
+drivers/cxl/cxl_mem.ko
+drivers/cxl/cxl_acpi.ko
+drivers/cxl/cxl_pmem.ko
+drivers/cxl/cxl_port.ko

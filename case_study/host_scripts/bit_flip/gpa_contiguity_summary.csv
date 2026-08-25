@@ -1,0 +1,5 @@
+load_level,trials,successes,failures,success_rate,avg_interior_pages,avg_frags
+Idle,50,50,0,100.0,1.0,1.22
+Low,50,50,0,100.0,1.0,1.16
+Medium,50,50,0,100.0,1.0,1.14
+High,50,50,0,100.0,1.0,1.28

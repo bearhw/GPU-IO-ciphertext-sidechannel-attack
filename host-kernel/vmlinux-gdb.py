@@ -1,0 +1,1 @@
+/home/eun/esp_bak/sev-step/sev-step-host-kernel/scripts/gdb/vmlinux-gdb.py

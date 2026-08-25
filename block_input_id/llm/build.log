@@ -1,0 +1,288 @@
+[22:26:36] [build] 30 labels  30 phases  ~30 sends (est.)
+[22:26:36] [build] Cleared dict_pages_v4/ — QEMU dump only (no swap relocate)
+[22:26:36] [mtu] host tap0 already 9000
+[22:26:36] [mtu] guest enp0s4 already 9000
+  [drain] drained 0 pkts
+  [recover] ICMP frag probe OK
+[22:26:44] 
+[build 1/30] token_idx=0 ' of breath'  L=16B  phase=0/1  target_landing=0x0
+  payload=[315, 11486]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=27702 size=5066 icmp_hdr=0 header_skip=0
+  [align-fix] actual_landing=0x6 (%8=6, off=27702, 1 candidates) → byte_shift=2, retrying
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [aim] actual_landing=0x8 want=0x0 (off=6198, 1 candidates) → byte_shift+=8 now 10, retrying
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  dict_gpa=0x32096c000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t0_p0.out  (dict_gpa=0x32096c000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:27:05] 
+[build 2/30] token_idx=1 'ness of'  L=16B  phase=0/1  target_landing=0x0
+  payload=[2090, 315]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=24630 size=8138 icmp_hdr=0 header_skip=10
+  dict_gpa=0x32096f000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t1_p0.out  (dict_gpa=0x32096f000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:27:12] 
+[build 3/30] token_idx=2 ' Shortness'  L=16B  phase=0/1  target_landing=0x0
+  payload=[10698, 2090]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=1590 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x307b11000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t2_p0.out  (dict_gpa=0x307b11000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:27:20] 
+[build 4/30] token_idx=3 ' Cough'  L=16B  phase=0/1  target_landing=0x0
+  payload=[356, 1384]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=12342 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x307b14000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t3_p0.out  (dict_gpa=0x307b14000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:27:27] 
+[build 5/30] token_idx=4 ' shortness'  L=16B  phase=0/1  target_landing=0x0
+  payload=[2805, 2090]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=21558 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x307b16000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t4_p0.out  (dict_gpa=0x307b16000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:27:34] 
+[build 6/30] token_idx=5 ' breath.'  L=16B  phase=0/1  target_landing=0x0
+  payload=[11486, 13]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=54 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x1e88c9000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t5_p0.out  (dict_gpa=0x1e88c9000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:27:41] 
+[build 7/30] token_idx=6 ' chest pain'  L=16B  phase=0/1  target_landing=0x0
+  payload=[15138, 6646]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=9270 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x1e88cb000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t6_p0.out  (dict_gpa=0x1e88cb000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:27:48] 
+[build 8/30] token_idx=7 ' Chest pain'  L=16B  phase=0/1  target_landing=0x0
+  payload=[41771, 6646]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=18486 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x1e88cd000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t7_p0.out  (dict_gpa=0x1e88cd000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:27:55] 
+[build 9/30] token_idx=8 ' breath,'  L=16B  phase=0/1  target_landing=0x0
+  payload=[11486, 11]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=29238 size=3530 icmp_hdr=0 header_skip=10
+  dict_gpa=0x307948000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t8_p0.out  (dict_gpa=0x307948000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:02] 
+[build 10/30] token_idx=9 ' Respiratory'  L=16B  phase=0/1  target_landing=0x0
+  payload=[76834, 5269]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=6198 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x30794a000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t9_p0.out  (dict_gpa=0x30794a000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:09] 
+[build 11/30] token_idx=10 'ough and'  L=16B  phase=0/1  target_landing=0x0
+  payload=[1384, 323]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=15414 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x30794c000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t10_p0.out  (dict_gpa=0x30794c000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:16] 
+[build 12/30] token_idx=11 ', short'  L=16B  phase=0/1  target_landing=0x0
+  payload=[11, 2805]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=24630 size=8138 icmp_hdr=0 header_skip=10
+  dict_gpa=0x30794f000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t11_p0.out  (dict_gpa=0x30794f000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:24] 
+[build 13/30] token_idx=12 ' cough.'  L=16B  phase=0/1  target_landing=0x0
+  payload=[39600, 13]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=1590 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x35e2c1000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t12_p0.out  (dict_gpa=0x35e2c1000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:31] 
+[build 14/30] token_idx=13 ' pneumonia.'  L=16B  phase=0/1  target_landing=0x0
+  payload=[68229, 13]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=13878 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x35e2c4000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t13_p0.out  (dict_gpa=0x35e2c4000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:38] 
+[build 15/30] token_idx=14 ' cough,'  L=16B  phase=0/1  target_landing=0x0
+  payload=[39600, 11]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=23094 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x35e2c6000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t14_p0.out  (dict_gpa=0x35e2c6000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:45] 
+[build 16/30] token_idx=15 ' rib pain'  L=16B  phase=0/1  target_landing=0x0
+  payload=[20131, 6646]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=54 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x307979000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t15_p0.out  (dict_gpa=0x307979000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:52] 
+[build 17/30] token_idx=16 ' COPD'  L=16B  phase=0/1  target_landing=0x0
+  payload=[67572, 35]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=9270 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x30797b000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t16_p0.out  (dict_gpa=0x30797b000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:28:59] 
+[build 18/30] token_idx=17 ' Follow-up'  L=16B  phase=0/1  target_landing=0x0
+  payload=[11112, 5239]
+  [drain] drained 0 pkts
+  [pace] extra quiet after 20 sends...
+  [pace] waiting 0.4s for guest mdelay hold (pace)
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=18486 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x30797d000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t17_p0.out  (dict_gpa=0x30797d000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:29:10] 
+[build 19/30] token_idx=18 ' Weakness'  L=16B  phase=0/1  target_landing=0x0
+  payload=[41164, 2090]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=29238 size=3530 icmp_hdr=0 header_skip=10
+  dict_gpa=0x202b58000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t18_p0.out  (dict_gpa=0x202b58000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:29:17] 
+[build 20/30] token_idx=19 ' wheez'  L=16B  phase=0/1  target_landing=0x0
+  payload=[14894, 10125]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=6198 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x202b5a000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t19_p0.out  (dict_gpa=0x202b5a000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:29:24] 
+[build 21/30] token_idx=20 ' PICC'  L=16B  phase=0/1  target_landing=0x0
+  payload=[60606, 34]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=16950 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x202b5d000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t20_p0.out  (dict_gpa=0x202b5d000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:29:31] 
+[build 22/30] token_idx=21 ' CABG'  L=16B  phase=0/1  target_landing=0x0
+  payload=[80117, 38]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=26166 size=6602 icmp_hdr=0 header_skip=10
+  dict_gpa=0x202b5f000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t21_p0.out  (dict_gpa=0x202b5f000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:29:39] 
+[build 23/30] token_idx=22 ' COVID-'  L=16B  phase=0/1  target_landing=0x0
+  payload=[19966, 12]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=3126 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x307a19000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t22_p0.out  (dict_gpa=0x307a19000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:29:46] 
+[build 24/30] token_idx=23 ' fever.'  L=16B  phase=0/1  target_landing=0x0
+  payload=[33553, 13]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=12342 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x307a1c000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t23_p0.out  (dict_gpa=0x307a1c000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:29:53] 
+[build 25/30] token_idx=24 ' respiratory failure'  L=16B  phase=0/1  target_landing=0x0
+  payload=[41531, 7901]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=23094 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x307a1e000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t24_p0.out  (dict_gpa=0x307a1e000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:30:00] 
+[build 26/30] token_idx=25 ' pneumoth'  L=16B  phase=0/1  target_landing=0x0
+  payload=[56123, 8767]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=54 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x35e2a1000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t25_p0.out  (dict_gpa=0x35e2a1000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:30:07] 
+[build 27/30] token_idx=26 ' Fever.'  L=16B  phase=0/1  target_landing=0x0
+  payload=[83901, 13]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=9270 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x35e2a3000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t26_p0.out  (dict_gpa=0x35e2a3000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:30:14] 
+[build 28/30] token_idx=27 ' Hypert'  L=16B  phase=0/1  target_landing=0x0
+  payload=[38415, 529]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=18486 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x35e2a5000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t27_p0.out  (dict_gpa=0x35e2a5000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:30:22] 
+[build 29/30] token_idx=28 ' catheter'  L=16B  phase=0/1  target_landing=0x0
+  payload=[30647, 1404]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=29238 size=3530 icmp_hdr=0 header_skip=10
+  dict_gpa=0x308740000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t28_p0.out  (dict_gpa=0x308740000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:30:29] 
+[build 30/30] token_idx=29 ' Hypox'  L=16B  phase=0/1  target_landing=0x0
+  payload=[38415, 5131]
+  [drain] drained 0 pkts
+  [drain] drained 0 pkts
+  [frag0] off=6198 size=8256 icmp_hdr=0 header_skip=10
+  dict_gpa=0x308742000  actual_landing=0x0  reg_start=0x0  byte_shift=10  (1 candidates, 1 at target)
+  dump → t29_p0.out  (dict_gpa=0x308742000)
+  registered 256 offsets: ['0x0', '0x10', '0x20', '0x30']...
+[22:30:36] [build] Complete. 7680 (offset×token) entries in /home/eun/open-science/block_input_id/llm/dict_cache_v4.json
+[22:30:36] [build] Draining guest ICMP receive buffer...
+  [drain] drained 0 pkts

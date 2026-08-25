@@ -1,0 +1,249 @@
+(base) eun@tiger:~/proof_code/bit_flip$  sudo python3 test_gpa_contiguity.py  
+[sudo] password for eun: 
+[setup] Checking guest SSH...
+[setup] stress-ng not found on guest, using python mmap fallback
+
+============================================================
+  Load level: Idle  (50 trials)
+============================================================
+  [settle] waiting 10s for load to stabilize...
+  [Idle] trial   1/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial   2/50  OK  interior=1  frags=2  6.1s
+  [Idle] trial   3/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial   4/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial   5/50  OK  interior=1  frags=2  6.0s
+  [Idle] trial   6/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial   7/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial   8/50  OK  interior=1  frags=2  6.0s
+  [Idle] trial   9/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  10/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  11/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  12/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  13/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  14/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  15/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  16/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  17/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  18/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  19/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  20/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  21/50  OK  interior=1  frags=2  6.0s
+  [Idle] trial  22/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  23/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  24/50  OK  interior=1  frags=2  6.0s
+  [Idle] trial  25/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  26/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  27/50  OK  interior=1  frags=2  6.1s
+  [Idle] trial  28/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  29/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  30/50  OK  interior=1  frags=2  6.1s
+  [Idle] trial  31/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  32/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  33/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  34/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  35/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  36/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  37/50  OK  interior=1  frags=2  6.1s
+  [Idle] trial  38/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  39/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  40/50  OK  interior=1  frags=2  6.1s
+  [Idle] trial  41/50  OK  interior=1  frags=1  6.0s
+  [Idle] trial  42/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  43/50  OK  interior=1  frags=2  6.1s
+  [Idle] trial  44/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  45/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  46/50  OK  interior=1  frags=2  6.1s
+  [Idle] trial  47/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  48/50  OK  interior=1  frags=1  6.3s
+  [Idle] trial  49/50  OK  interior=1  frags=1  6.1s
+  [Idle] trial  50/50  OK  interior=1  frags=1  6.1s
+
+  [Idle] Result: 50/50 = 100.0%  avg_interior=1.00  avg_frags=1.22
+
+============================================================
+  Load level: Low  (50 trials)
+============================================================
+  [load] started: Low
+  [settle] waiting 10s for load to stabilize...
+  [Low] trial   1/50  OK  interior=1  frags=1  6.1s
+  [Low] trial   2/50  OK  interior=1  frags=1  6.1s
+  [Low] trial   3/50  OK  interior=1  frags=2  6.1s
+  [Low] trial   4/50  OK  interior=1  frags=1  6.1s
+  [Low] trial   5/50  OK  interior=1  frags=1  6.1s
+  [Low] trial   6/50  OK  interior=1  frags=2  6.1s
+  [Low] trial   7/50  OK  interior=1  frags=1  6.1s
+  [Low] trial   8/50  OK  interior=1  frags=1  6.1s
+  [Low] trial   9/50  OK  interior=1  frags=2  6.1s
+  [Low] trial  10/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  11/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  12/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  13/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  14/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  15/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  16/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  17/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  18/50  OK  interior=1  frags=1  6.0s
+  [Low] trial  19/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  20/50  OK  interior=1  frags=2  6.1s
+  [Low] trial  21/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  22/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  23/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  24/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  25/50  OK  interior=1  frags=2  6.0s
+  [Low] trial  26/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  27/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  28/50  OK  interior=1  frags=2  6.1s
+  [Low] trial  29/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  30/50  OK  interior=1  frags=1  6.0s
+  [Low] trial  31/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  32/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  33/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  34/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  35/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  36/50  OK  interior=1  frags=2  6.3s
+  [Low] trial  37/50  OK  interior=1  frags=1  6.3s
+  [Low] trial  38/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  39/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  40/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  41/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  42/50  OK  interior=1  frags=1  6.4s
+  [Low] trial  43/50  OK  interior=1  frags=1  6.5s
+  [Low] trial  44/50  OK  interior=1  frags=1  6.2s
+  [Low] trial  45/50  OK  interior=1  frags=1  6.1s
+  [Low] trial  46/50  OK  interior=1  frags=1  6.2s
+  [Low] trial  47/50  OK  interior=1  frags=1  6.2s
+  [Low] trial  48/50  OK  interior=1  frags=1  6.3s
+  [Low] trial  49/50  OK  interior=1  frags=2  6.1s
+  [Low] trial  50/50  OK  interior=1  frags=1  6.1s
+
+  [Low] Result: 50/50 = 100.0%  avg_interior=1.00  avg_frags=1.16
+
+============================================================
+  Load level: Medium  (50 trials)
+============================================================
+  [load] started: Medium
+  [settle] waiting 10s for load to stabilize...
+  [Medium] trial   1/50  OK  interior=1  frags=2  6.1s
+  [Medium] trial   2/50  OK  interior=1  frags=1  6.2s
+  [Medium] trial   3/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial   4/50  OK  interior=1  frags=1  6.2s
+  [Medium] trial   5/50  OK  interior=1  frags=1  6.0s
+  [Medium] trial   6/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial   7/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial   8/50  OK  interior=1  frags=1  6.0s
+  [Medium] trial   9/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  10/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  11/50  OK  interior=1  frags=1  6.0s
+  [Medium] trial  12/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  13/50  OK  interior=1  frags=1  6.0s
+  [Medium] trial  14/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  15/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  16/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  17/50  OK  interior=1  frags=1  6.2s
+  [Medium] trial  18/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  19/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  20/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  21/50  OK  interior=1  frags=1  6.0s
+  [Medium] trial  22/50  OK  interior=1  frags=1  6.0s
+  [Medium] trial  23/50  OK  interior=1  frags=2  6.2s
+  [Medium] trial  24/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  25/50  OK  interior=1  frags=2  6.1s
+  [Medium] trial  26/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  27/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  28/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  29/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  30/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  31/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  32/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  33/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  34/50  OK  interior=1  frags=2  6.1s
+  [Medium] trial  35/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  36/50  OK  interior=1  frags=2  6.1s
+  [Medium] trial  37/50  OK  interior=1  frags=1  6.0s
+  [Medium] trial  38/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  39/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  40/50  OK  interior=1  frags=1  6.2s
+  [Medium] trial  41/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  42/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  43/50  OK  interior=1  frags=2  6.1s
+  [Medium] trial  44/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  45/50  OK  interior=1  frags=2  6.1s
+  [Medium] trial  46/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  47/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  48/50  OK  interior=1  frags=1  6.0s
+  [Medium] trial  49/50  OK  interior=1  frags=1  6.1s
+  [Medium] trial  50/50  OK  interior=1  frags=1  6.1s
+
+  [Medium] Result: 50/50 = 100.0%  avg_interior=1.00  avg_frags=1.14
+
+============================================================
+  Load level: High  (50 trials)
+============================================================
+  [load] started: High
+  [settle] waiting 10s for load to stabilize...
+  [High] trial   1/50  OK  interior=1  frags=1  6.5s
+  [High] trial   2/50  OK  interior=1  frags=1  12.5s
+  [High] trial   3/50  OK  interior=1  frags=1  6.4s
+  [High] trial   4/50  OK  interior=1  frags=2  6.0s
+  [High] trial   5/50  OK  interior=1  frags=1  6.1s
+  [High] trial   6/50  OK  interior=1  frags=2  6.1s
+  [High] trial   7/50  OK  interior=1  frags=1  6.1s
+  [High] trial   8/50  OK  interior=1  frags=1  6.1s
+  [High] trial   9/50  OK  interior=1  frags=1  6.1s
+  [High] trial  10/50  OK  interior=1  frags=1  6.1s
+  [High] trial  11/50  OK  interior=1  frags=1  6.1s
+  [High] trial  12/50  OK  interior=1  frags=1  6.1s
+  [High] trial  13/50  OK  interior=1  frags=1  6.1s
+  [High] trial  14/50  OK  interior=1  frags=1  6.1s
+  [High] trial  15/50  OK  interior=1  frags=2  6.1s
+  [High] trial  16/50  OK  interior=1  frags=1  6.1s
+  [High] trial  17/50  OK  interior=1  frags=1  6.2s
+  [High] trial  18/50  OK  interior=1  frags=1  6.1s
+  [High] trial  19/50  OK  interior=1  frags=1  6.1s
+  [High] trial  20/50  OK  interior=1  frags=2  6.1s
+  [High] trial  21/50  OK  interior=1  frags=1  6.1s
+  [High] trial  22/50  OK  interior=1  frags=2  6.1s
+  [High] trial  23/50  OK  interior=1  frags=1  6.1s
+  [High] trial  24/50  OK  interior=1  frags=2  6.1s
+  [High] trial  25/50  OK  interior=1  frags=1  6.1s
+  [High] trial  26/50  OK  interior=1  frags=1  6.1s
+  [High] trial  27/50  OK  interior=1  frags=1  6.1s
+  [High] trial  28/50  OK  interior=1  frags=1  6.0s
+  [High] trial  29/50  OK  interior=1  frags=2  6.1s
+  [High] trial  30/50  OK  interior=1  frags=1  6.1s
+  [High] trial  31/50  OK  interior=1  frags=2  6.0s
+  [High] trial  32/50  OK  interior=1  frags=1  6.1s
+  [High] trial  33/50  OK  interior=1  frags=2  6.1s
+  [High] trial  34/50  OK  interior=1  frags=1  6.1s
+  [High] trial  35/50  OK  interior=1  frags=1  6.1s
+  [High] trial  36/50  OK  interior=1  frags=1  6.1s
+  [High] trial  37/50  OK  interior=1  frags=1  6.0s
+  [High] trial  38/50  OK  interior=1  frags=2  6.1s
+  [High] trial  39/50  OK  interior=1  frags=1  6.3s
+  [High] trial  40/50  OK  interior=1  frags=2  6.1s
+  [High] trial  41/50  OK  interior=1  frags=1  6.1s
+  [High] trial  42/50  OK  interior=1  frags=2  6.1s
+  [High] trial  43/50  OK  interior=1  frags=1  6.1s
+  [High] trial  44/50  OK  interior=1  frags=1  6.1s
+  [High] trial  45/50  OK  interior=1  frags=2  6.1s
+  [High] trial  46/50  OK  interior=1  frags=1  6.0s
+  [High] trial  47/50  OK  interior=1  frags=2  6.1s
+  [High] trial  48/50  OK  interior=1  frags=1  6.1s
+  [High] trial  49/50  OK  interior=1  frags=1  6.0s
+  [High] trial  50/50  OK  interior=1  frags=1  6.1s
+
+  [High] Result: 50/50 = 100.0%  avg_interior=1.00  avg_frags=1.28
+
+[save] /home/eun/proof_code/bit_flip/gpa_contiguity_results.json
+[save] /home/eun/proof_code/bit_flip/gpa_contiguity_summary.csv
+
+============================================================
+  SUMMARY
+============================================================
+  Level      Trials  Success     Rate  AvgPages  AvgFrags
+  ---------- ------ -------- -------- --------- ---------
+  Idle           50       50   100.0%      1.00      1.22
+  Low            50       50   100.0%      1.00      1.16
+  Medium         50       50   100.0%      1.00      1.14
+  High           50       50   100.0%      1.00      1.28
+============================================================

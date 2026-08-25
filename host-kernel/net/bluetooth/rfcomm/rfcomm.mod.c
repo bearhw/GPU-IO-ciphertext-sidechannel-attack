@@ -1,0 +1,181 @@
+#include <linux/module.h>
+#define INCLUDE_VERMAGIC
+#include <linux/build-salt.h>
+#include <linux/elfnote-lto.h>
+#include <linux/export-internal.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+BUILD_LTO_INFO;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(".gnu.linkonce.this_module") = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+
+static const struct modversion_info ____versions[]
+__used __section("__versions") = {
+	{ 0x1a8bd555, "try_module_get" },
+	{ 0x88db9f48, "__check_object_size" },
+	{ 0x14b1fdc3, "bt_procfs_cleanup" },
+	{ 0x13c49cc2, "_copy_from_user" },
+	{ 0xbe888b32, "skb_put" },
+	{ 0xa8d968d, "tty_wakeup" },
+	{ 0x8f9c199c, "__get_user_2" },
+	{ 0x9ed2b1f3, "tty_flip_buffer_push" },
+	{ 0xc89d03e1, "skb_dequeue" },
+	{ 0xfa779867, "bt_procfs_init" },
+	{ 0x1e91687d, "tty_kref_put" },
+	{ 0x51a511eb, "_raw_write_lock_bh" },
+	{ 0xbd9acb3b, "kernel_bind" },
+	{ 0xde293f9e, "add_wait_queue_exclusive" },
+	{ 0xaf468156, "set_user_nice" },
+	{ 0x69acdf38, "memcpy" },
+	{ 0x89e47c70, "hci_conn_switch_role" },
+	{ 0x37a0cba, "kfree" },
+	{ 0xddc78e1e, "seq_lseek" },
+	{ 0x4afb2238, "add_wait_queue" },
+	{ 0x409873e3, "tty_termios_baud_rate" },
+	{ 0xb1e8027, "__tty_alloc_driver" },
+	{ 0xe7ab1ecc, "_raw_write_unlock_bh" },
+	{ 0xa0935d, "tty_port_tty_hangup" },
+	{ 0xb3f7646e, "kthread_should_stop" },
+	{ 0x3eeb2322, "__wake_up" },
+	{ 0xf4206108, "kernel_accept" },
+	{ 0x2eabc3ca, "__module_get" },
+	{ 0x34ac593f, "tty_unregister_driver" },
+	{ 0x34db050b, "_raw_spin_lock_irqsave" },
+	{ 0x226c1d3a, "kmem_cache_alloc_trace" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0xd0818fa4, "bt_sock_wait_ready" },
+	{ 0x963afbea, "wake_up_process" },
+	{ 0x8cdd6844, "tty_port_install" },
+	{ 0x65487097, "__x86_indirect_thunk_rax" },
+	{ 0x20ae5750, "bt_sock_reclassify_lock" },
+	{ 0xdad3ff9f, "hci_unregister_cb" },
+	{ 0xf38617e3, "proto_unregister" },
+	{ 0x282f8ea0, "bt_sock_stream_recvmsg" },
+	{ 0xd0da656b, "__stack_chk_fail" },
+	{ 0x296695f, "refcount_warn_saturate" },
+	{ 0x3197c4e3, "put_device" },
+	{ 0xa12be669, "__alloc_skb" },
+	{ 0x87683d13, "bt_debugfs" },
+	{ 0xb2fd5ceb, "__put_user_4" },
+	{ 0x6383b27c, "__x86_indirect_thunk_rdx" },
+	{ 0x67b27ec1, "tty_std_termios" },
+	{ 0x90641976, "tty_unregister_device" },
+	{ 0x68764184, "proto_register" },
+	{ 0xd0654aba, "woken_wake_function" },
+	{ 0xc6cbbc89, "capable" },
+	{ 0xf49cdd0f, "skb_queue_tail" },
+	{ 0x1de23e95, "module_put" },
+	{ 0x5fb2dddd, "tty_port_tty_wakeup" },
+	{ 0x87a21cb3, "__ubsan_handle_out_of_bounds" },
+	{ 0x2121e851, "device_create_file" },
+	{ 0xf9b939ef, "bt_sock_link" },
+	{ 0x7c6024bd, "init_net" },
+	{ 0x74a3d5c0, "skb_pull" },
+	{ 0xa097bede, "tty_vhangup" },
+	{ 0x8fea24bd, "bt_sock_unregister" },
+	{ 0xc38c83b8, "mod_timer" },
+	{ 0xa0552c2d, "sk_free" },
+	{ 0x7d4ccb4f, "device_move" },
+	{ 0x197a3490, "kfree_skb_reason" },
+	{ 0xe68efe41, "_raw_write_lock" },
+	{ 0x4dfa8d4b, "mutex_lock" },
+	{ 0x4eb6f185, "skb_push" },
+	{ 0x4b554bee, "tty_insert_flip_string_fixed_flag" },
+	{ 0x781a487c, "tty_port_init" },
+	{ 0xb63b719a, "debugfs_remove" },
+	{ 0x82befc88, "hci_conn_security" },
+	{ 0xb49ce922, "tty_port_register_device" },
+	{ 0x285fef57, "lock_sock_nested" },
+	{ 0xc0aeea2, "kthread_stop" },
+	{ 0xcefb0c9f, "__mutex_init" },
+	{ 0x86490580, "current_task" },
+	{ 0xd35cce70, "_raw_spin_unlock_irqrestore" },
+	{ 0x13d29713, "sk_alloc" },
+	{ 0xad252699, "tty_port_close" },
+	{ 0x288ef7e1, "kernel_connect" },
+	{ 0x7a5212e2, "sock_no_socketpair" },
+	{ 0x6898b0f4, "bt_accept_dequeue" },
+	{ 0xccb56c5, "hci_get_route" },
+	{ 0xb9492e46, "skb_queue_purge" },
+	{ 0x97934ecf, "del_timer_sync" },
+	{ 0x7ec121e5, "bt_accept_unlink" },
+	{ 0xf3895984, "bt_sock_unlink" },
+	{ 0xaa6878ed, "tty_port_put" },
+	{ 0x554e51b5, "bt_accept_enqueue" },
+	{ 0x6b10bee1, "_copy_to_user" },
+	{ 0x3932d27c, "sock_no_mmap" },
+	{ 0xe06141e9, "security_sk_clone" },
+	{ 0x49e63ca4, "__pskb_pull_tail" },
+	{ 0x718b8b7, "bt_info" },
+	{ 0x7b8c32f1, "bt_err" },
+	{ 0x15ba50a6, "jiffies" },
+	{ 0xd62ef0fe, "bt_sock_wait_state" },
+	{ 0x4730773d, "kthread_create_on_node" },
+	{ 0xf2b11959, "seq_read" },
+	{ 0x3c3ff9fd, "sprintf" },
+	{ 0xae5e42b8, "hci_conn_check_secure" },
+	{ 0xa8e1072f, "debugfs_create_file" },
+	{ 0xcd89d757, "kernel_listen" },
+	{ 0x644f1f0d, "bt_sock_register" },
+	{ 0x3213f038, "mutex_unlock" },
+	{ 0xcf78d1e6, "sock_create_kern" },
+	{ 0xc6f46339, "init_timer_key" },
+	{ 0x8844d9e9, "param_ops_bool" },
+	{ 0xc783c290, "tty_register_driver" },
+	{ 0x66cca4f9, "__x86_indirect_thunk_rcx" },
+	{ 0xf5e8df48, "sock_alloc_send_pskb" },
+	{ 0x6729d3df, "__get_user_4" },
+	{ 0x837b7b09, "__dynamic_pr_debug" },
+	{ 0x530cf00e, "bt_sock_ioctl" },
+	{ 0xaa7322dc, "tty_port_hangup" },
+	{ 0xd75eb10d, "seq_printf" },
+	{ 0x2f3a6084, "tty_port_open" },
+	{ 0x9753bad6, "hci_register_cb" },
+	{ 0x5e46cfc0, "_copy_from_iter" },
+	{ 0xfe8c61f0, "_raw_read_lock" },
+	{ 0x6e5c0971, "sock_release" },
+	{ 0x7c18457e, "bt_sock_poll" },
+	{ 0xb308c97d, "wait_woken" },
+	{ 0x37110088, "remove_wait_queue" },
+	{ 0x86d7db3c, "sock_gettstamp" },
+	{ 0xbb2b861a, "single_release" },
+	{ 0x54b1fac6, "__ubsan_handle_load_invalid_value" },
+	{ 0x2b68bd2f, "del_timer" },
+	{ 0x437654c9, "param_ops_int" },
+	{ 0x500313ed, "iov_iter_revert" },
+	{ 0xb82ba28c, "single_open" },
+	{ 0x55ad2c95, "kernel_sendmsg" },
+	{ 0x3811c23d, "sock_init_data" },
+	{ 0x2032b017, "tty_driver_kref_put" },
+	{ 0xeb233a45, "__kmalloc" },
+	{ 0xa3563486, "kmalloc_caches" },
+	{ 0xae4cc05, "release_sock" },
+	{ 0x42ddc4c1, "skb_queue_head" },
+	{ 0xcd420564, "tty_port_tty_get" },
+	{ 0x817bf968, "module_layout" },
+};
+
+MODULE_INFO(depends, "bluetooth");
+
+
+MODULE_INFO(srcversion, "2787EECAEC282A1A24A7701");

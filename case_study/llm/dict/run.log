@@ -1,0 +1,2629 @@
+[12:23:12] [run-all] Loaded cache: 512 offset entries
+[12:23:12] [run-all] 1641 samples loaded from guest:~/medical_ml/med_vlm/scripts/filtered_samples.json
+[12:23:12] [run-all] output → run_all_v3.csv
+  [guest] starting persistent --stdin-loop process
+  [guest] LOOP_READY
+[12:23:26] 
+[run-all] 1/1641 index=2  'Shortness of breath and fever'
+  [guest] loop index=2
+  [guest] LOOP_INDEX 2
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.30150910239075027660877703782097120474)
+  [guest] ============================================================
+  [guest]   Shortness of breath and fever
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a11c5000
+  [guest] input_ids base GPA: 0x00000001a11c5000
+  [guest] input_ids base page GPA: 0x00000001a11c5000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 447
+  [guest] HEADER_CONST_HINT: 51
+  [guest] HOLDING
+  [host] base_gpa=0x1a11c5000  N=396  N_ind=6  tok_start=447  HEADER_CONST=51
+[12:23:26] [blind] N=396 (live from guest)  indication starts at tok_start=447  HEADER_CONST=51  scan_len=6(exact)  scanning [447, 452] (6 steps)
+[12:23:35] [blind] MATCH (1): tok=448 idx=1 'ness of' off=0xe00 blocks=1
+  [guest] RELEASED
+[12:23:38] [run-all] index=2  verdict=MATCH  n=1  label=ness of
+[12:23:38] 
+[run-all] 2/1641 index=5  'Shortness of breath and cough'
+  [guest] loop index=5
+  [guest] LOOP_INDEX 5
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.86707376183221786451909528156339622218)
+  [guest] ============================================================
+  [guest]   Shortness of breath and cough
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a1cb8000
+  [guest] input_ids base GPA: 0x00000001a1cb8000
+  [guest] input_ids base page GPA: 0x00000001a1cb8000
+  [guest] N_image_pad: 675
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=675
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 718
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a1cb8000  N=675  N_ind=6  tok_start=718  HEADER_CONST=43
+[12:23:38] [blind] N=675 (live from guest)  indication starts at tok_start=718  HEADER_CONST=43  scan_len=6(exact)  scanning [718, 723] (6 steps)
+  [blind] flaky dump rejected tok_start=720 token_idx=0 ' of breath' off=0x680
+[12:23:46] [blind] MATCH (1): tok=718 idx=2 ' Shortness' off=0x670 blocks=1  flaky_rejected=1
+  [guest] RELEASED
+[12:23:49] [run-all] index=5  verdict=MATCH  n=1  label= Shortness
+[12:23:49] 
+[run-all] 3/1641 index=9  'Respiratory distress. Twin born at 33.1 weeks gestational age.'
+  [guest] loop index=9
+  [guest] LOOP_INDEX 9
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.86980875209107637385895456976599438625)
+  [guest] ============================================================
+  [guest]   Respiratory distress. Twin born at 33.1 weeks gestational age.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a1ce0000
+  [guest] input_ids base GPA: 0x00000001a1ce0000
+  [guest] input_ids base page GPA: 0x00000001a1ce0000
+  [guest] N_image_pad: 270
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=270
+  [guest] N_indication_tokens: 17
+  [guest] tok_start: 312
+  [guest] HEADER_CONST_HINT: 42
+  [guest] HOLDING
+  [host] base_gpa=0x1a1ce0000  N=270  N_ind=17  tok_start=312  HEADER_CONST=42
+[12:23:49] [blind] N=270 (live from guest)  indication starts at tok_start=312  HEADER_CONST=42  scan_len=17(exact)  scanning [312, 328] (17 steps)
+[12:23:58] [blind] MATCH (1): tok=312 idx=9 ' Respiratory' off=0x9c0 blocks=1
+  [guest] RELEASED
+[12:24:00] [run-all] index=9  verdict=MATCH  n=1  label= Respiratory
+[12:24:00] 
+[run-all] 4/1641 index=11  'MVC, complains of chest pain'
+  [guest] loop index=11
+  [guest] LOOP_INDEX 11
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.87631877423520497630751687669433788199)
+  [guest] ============================================================
+  [guest]   MVC, complains of chest pain
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a1dbb000
+  [guest] input_ids base GPA: 0x00000001a1dbb000
+  [guest] input_ids base page GPA: 0x00000001a1dbb000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 778
+  [guest] HEADER_CONST_HINT: 49
+  [guest] HOLDING
+  [host] base_gpa=0x1a1dbb000  N=729  N_ind=6  tok_start=778  HEADER_CONST=49
+[12:24:00] [blind] N=729 (live from guest)  indication starts at tok_start=778  HEADER_CONST=49  scan_len=6(exact)  scanning [778, 783] (6 steps)
+  [blind] flaky dump rejected tok_start=782 token_idx=6 ' chest pain' off=0x870
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=89 overflow=30 flaky=1
+  [guest] RELEASED
+[12:24:12] [run-all] index=11  verdict=NO_MATCH  n=0  label=
+[12:24:12] 
+[run-all] 5/1641 index=12  'Coughing, right chest pain'
+  [guest] loop index=12
+  [guest] LOOP_INDEX 12
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.22998957144892928978044765548880455455)
+  [guest] ============================================================
+  [guest]   Coughing, right chest pain
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a1e24000
+  [guest] input_ids base GPA: 0x00000001a1e24000
+  [guest] input_ids base page GPA: 0x00000001a1e24000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a1e24000  N=304  N_ind=7  tok_start=347  HEADER_CONST=43
+[12:24:12] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=7(exact)  scanning [347, 353] (7 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=90 overflow=30 flaky=0
+  [guest] RELEASED
+[12:24:23] [run-all] index=12  verdict=NO_MATCH  n=0  label=
+[12:24:23] 
+[run-all] 6/1641 index=13  'Shortness of breath'
+  [guest] loop index=13
+  [guest] LOOP_INDEX 13
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.44024444393307391011773471675189900024)
+  [guest] ============================================================
+  [guest]   Shortness of breath
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a1ed4000
+  [guest] input_ids base GPA: 0x00000001a1ed4000
+  [guest] input_ids base page GPA: 0x00000001a1ed4000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a1ed4000  N=594  N_ind=4  tok_start=637  HEADER_CONST=43
+[12:24:23] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=4(exact)  scanning [637, 640] (4 steps)
+  [blind] flaky dump rejected tok_start=638 token_idx=1 'ness of' off=0x3f0
+[blind] No match: swap_fail=1 swap_self=0 no_blocks=59 weak_blocks=0 mismatch=29 overflow=30 flaky=1
+  [guest] RELEASED
+[12:24:35] [run-all] index=13  verdict=NO_MATCH  n=0  label=
+[12:24:35] 
+[run-all] 7/1641 index=15  'Cough, right-sided chest pain, PICC line not flushing'
+  [guest] loop index=15
+  [guest] LOOP_INDEX 15
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.23776609919024113195449280426387443591)
+  [guest] ============================================================
+  [guest]   Cough, right-sided chest pain, PICC line not flushing
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a1f79000
+  [guest] input_ids base GPA: 0x00000001a1f79000
+  [guest] input_ids base page GPA: 0x00000001a1f79000
+  [guest] N_image_pad: 528
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=528
+  [guest] N_indication_tokens: 13
+  [guest] tok_start: 571
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a1f79000  N=528  N_ind=13  tok_start=571  HEADER_CONST=43
+[12:24:35] [blind] N=528 (live from guest)  indication starts at tok_start=571  HEADER_CONST=43  scan_len=13(exact)  scanning [571, 583] (13 steps)
+  [blind] flaky dump rejected tok_start=576 token_idx=6 ' chest pain' off=0x200
+[blind] No match: swap_fail=3 swap_self=0 no_blocks=180 weak_blocks=0 mismatch=176 overflow=30 flaky=1
+  [guest] RELEASED
+[12:24:47] [run-all] index=15  verdict=NO_MATCH  n=0  label=
+[12:24:47] 
+[run-all] 8/1641 index=17  'Shortness of breath, congestion.'
+  [guest] loop index=17
+  [guest] LOOP_INDEX 17
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.91140107492127653453913033622385782656)
+  [guest] ============================================================
+  [guest]   Shortness of breath, congestion.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a1fa1000
+  [guest] input_ids base GPA: 0x00000001a1fa1000
+  [guest] input_ids base page GPA: 0x00000001a1fa1000
+  [guest] N_image_pad: 270
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=270
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 312
+  [guest] HEADER_CONST_HINT: 42
+  [guest] HOLDING
+  [host] base_gpa=0x1a1fa1000  N=270  N_ind=7  tok_start=312  HEADER_CONST=42
+[12:24:48] [blind] N=270 (live from guest)  indication starts at tok_start=312  HEADER_CONST=42  scan_len=7(exact)  scanning [312, 318] (7 steps)
+  [blind] flaky dump rejected tok_start=314 token_idx=0 ' of breath' off=0x9d0
+[blind] No match: swap_fail=1 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=88 overflow=30 flaky=1
+  [guest] RELEASED
+[12:24:59] [run-all] index=17  verdict=NO_MATCH  n=0  label=
+[12:24:59] 
+[run-all] 9/1641 index=22  'Cough and shortness of breath for 3 days.'
+  [guest] loop index=22
+  [guest] LOOP_INDEX 22
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.76949257797847146182174850541870711850)
+  [guest] ============================================================
+  [guest]   Cough and shortness of breath for 3 days.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2467000
+  [guest] input_ids base GPA: 0x00000001a2467000
+  [guest] input_ids base page GPA: 0x00000001a2467000
+  [guest] N_image_pad: 600
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=600
+  [guest] N_indication_tokens: 12
+  [guest] tok_start: 643
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2467000  N=600  N_ind=12  tok_start=643  HEADER_CONST=43
+[12:25:00] [blind] N=600 (live from guest)  indication starts at tok_start=643  HEADER_CONST=43  scan_len=12(exact)  scanning [643, 654] (12 steps)
+  [blind] flaky dump rejected tok_start=644 token_idx=10 'ough and' off=0x420
+  [blind] flaky dump rejected tok_start=646 token_idx=4 ' shortness' off=0x430
+  [blind] flaky dump rejected tok_start=648 token_idx=0 ' of breath' off=0x440
+[blind] No match: swap_fail=9 swap_self=0 no_blocks=180 weak_blocks=0 mismatch=138 overflow=30 flaky=3
+  [guest] RELEASED
+[12:25:12] [run-all] index=22  verdict=NO_MATCH  n=0  label=
+[12:25:12] 
+[run-all] 10/1641 index=24  'Cough and congestion.'
+  [guest] loop index=24
+  [guest] LOOP_INDEX 24
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.43976355253138457152752779244558147696)
+  [guest] ============================================================
+  [guest]   Cough and congestion.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2541000
+  [guest] input_ids base GPA: 0x00000001a2541000
+  [guest] input_ids base page GPA: 0x00000001a2541000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 5
+  [guest] tok_start: 772
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2541000  N=729  N_ind=5  tok_start=772  HEADER_CONST=43
+[12:25:13] [blind] N=729 (live from guest)  indication starts at tok_start=772  HEADER_CONST=43  scan_len=5(exact)  scanning [772, 776] (5 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:25:24] [run-all] index=24  verdict=NO_MATCH  n=0  label=
+[12:25:24] 
+[run-all] 11/1641 index=26  'Respiratory failure.'
+  [guest] loop index=26
+  [guest] LOOP_INDEX 26
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.49328888274005080045383041493401973418)
+  [guest] ============================================================
+  [guest]   Respiratory failure.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a25b0000
+  [guest] input_ids base GPA: 0x00000001a25b0000
+  [guest] input_ids base page GPA: 0x00000001a25b0000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 439
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a25b0000  N=396  N_ind=4  tok_start=439  HEADER_CONST=43
+[12:25:24] [blind] N=396 (live from guest)  indication starts at tok_start=439  HEADER_CONST=43  scan_len=4(exact)  scanning [439, 442] (4 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:25:36] [run-all] index=26  verdict=NO_MATCH  n=0  label=
+[12:25:36] 
+[run-all] 12/1641 index=28  'Chest pain.'
+  [guest] loop index=28
+  [guest] LOOP_INDEX 28
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.70096988124596512287664397845013961627)
+  [guest] ============================================================
+  [guest]   Chest pain.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2801000
+  [guest] input_ids base GPA: 0x00000001a2801000
+  [guest] input_ids base page GPA: 0x00000001a2801000
+  [guest] N_image_pad: 1178
+  [guest] PINNED map_size=0x3000 ptr=0x7f1a3da8c000
+  [guest]   [GPA] <|image_pad|> count: N=1178
+  [guest] N_indication_tokens: 3
+  [guest] tok_start: 1213
+  [guest] HEADER_CONST_HINT: 35
+  [guest] HOLDING
+  [host] base_gpa=0x1a2801000  N=1178  N_ind=3  tok_start=1213  HEADER_CONST=35
+[12:25:37] [blind] N=1178 (live from guest)  indication starts at tok_start=1213  HEADER_CONST=35  scan_len=3(exact)  scanning [1213, 1215] (3 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:25:48] [run-all] index=28  verdict=NO_MATCH  n=0  label=
+[12:25:48] 
+[run-all] 13/1641 index=29  'Cough. Congestion.'
+  [guest] loop index=29
+  [guest] LOOP_INDEX 29
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.86621648706200348465622838664035462330)
+  [guest] ============================================================
+  [guest]   Cough. Congestion.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a28d4000
+  [guest] input_ids base GPA: 0x00000001a28d4000
+  [guest] input_ids base page GPA: 0x00000001a28d4000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 772
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a28d4000  N=729  N_ind=6  tok_start=772  HEADER_CONST=43
+[12:25:48] [blind] N=729 (live from guest)  indication starts at tok_start=772  HEADER_CONST=43  scan_len=6(exact)  scanning [772, 777] (6 steps)
+[12:25:58] [blind] MATCH (1): tok=772 idx=3 ' Cough' off=0x820 blocks=1
+  [guest] RELEASED
+[12:26:00] [run-all] index=29  verdict=MATCH  n=1  label= Cough
+[12:26:00] 
+[run-all] 14/1641 index=31  'Prematurity. Respiratory distress.'
+  [guest] loop index=31
+  [guest] LOOP_INDEX 31
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.69270262124301619217198657500143701661)
+  [guest] ============================================================
+  [guest]   Prematurity. Respiratory distress.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a28f5000
+  [guest] input_ids base GPA: 0x00000001a28f5000
+  [guest] input_ids base page GPA: 0x00000001a28f5000
+  [guest] N_image_pad: 81
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=81
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 123
+  [guest] HEADER_CONST_HINT: 42
+  [guest] HOLDING
+  [host] base_gpa=0x1a28f5000  N=81  N_ind=7  tok_start=123  HEADER_CONST=42
+[12:26:00] [blind] N=81 (live from guest)  indication starts at tok_start=123  HEADER_CONST=42  scan_len=7(exact)  scanning [123, 129] (7 steps)
+[12:26:09] [blind] MATCH (1): tok=126 idx=9 ' Respiratory' off=0x3f0 blocks=1
+  [guest] RELEASED
+[12:26:12] [run-all] index=31  verdict=MATCH  n=1  label= Respiratory
+[12:26:12] 
+[run-all] 15/1641 index=32  'Chest pain and throat pain.'
+  [guest] loop index=32
+  [guest] LOOP_INDEX 32
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.33772352028436941332028447163808436192)
+  [guest] ============================================================
+  [guest]   Chest pain and throat pain.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a29ad000
+  [guest] input_ids base GPA: 0x00000001a29ad000
+  [guest] input_ids base page GPA: 0x00000001a29ad000
+  [guest] N_image_pad: 572
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=572
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 615
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a29ad000  N=572  N_ind=6  tok_start=615  HEADER_CONST=43
+[12:26:12] [blind] N=572 (live from guest)  indication starts at tok_start=615  HEADER_CONST=43  scan_len=6(exact)  scanning [615, 620] (6 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:26:24] [run-all] index=32  verdict=NO_MATCH  n=0  label=
+[12:26:24] 
+[run-all] 16/1641 index=34  'wheezing altered mental status'
+  [guest] loop index=34
+  [guest] LOOP_INDEX 34
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.65473998129138343596673428747455017167)
+  [guest] ============================================================
+  [guest]   wheezing altered mental status
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2a10000
+  [guest] input_ids base GPA: 0x00000001a2a10000
+  [guest] input_ids base page GPA: 0x00000001a2a10000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 439
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2a10000  N=396  N_ind=6  tok_start=439  HEADER_CONST=43
+[12:26:24] [blind] N=396 (live from guest)  indication starts at tok_start=439  HEADER_CONST=43  scan_len=6(exact)  scanning [439, 444] (6 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:26:35] [run-all] index=34  verdict=NO_MATCH  n=0  label=
+[12:26:35] 
+[run-all] 17/1641 index=36  'Fever. Pancreatic cancer'
+  [guest] loop index=36
+  [guest] LOOP_INDEX 36
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.62938945685729301814332668483920814733)
+  [guest] ============================================================
+  [guest]   Fever. Pancreatic cancer
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2a80000
+  [guest] input_ids base GPA: 0x00000001a2a80000
+  [guest] input_ids base page GPA: 0x00000001a2a80000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 439
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2a80000  N=396  N_ind=6  tok_start=439  HEADER_CONST=43
+[12:26:36] [blind] N=396 (live from guest)  indication starts at tok_start=439  HEADER_CONST=43  scan_len=6(exact)  scanning [439, 444] (6 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:26:48] [run-all] index=36  verdict=NO_MATCH  n=0  label=
+[12:26:48] 
+[run-all] 18/1641 index=38  'Respiratory failure. Pneumonia.'
+  [guest] loop index=38
+  [guest] LOOP_INDEX 38
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.72362017398802445528659788188169494836)
+  [guest] ============================================================
+  [guest]   Respiratory failure. Pneumonia.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2b20000
+  [guest] input_ids base GPA: 0x00000001a2b20000
+  [guest] input_ids base page GPA: 0x00000001a2b20000
+  [guest] N_image_pad: 484
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=484
+  [guest] N_indication_tokens: 9
+  [guest] tok_start: 527
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2b20000  N=484  N_ind=9  tok_start=527  HEADER_CONST=43
+[12:26:48] [blind] N=484 (live from guest)  indication starts at tok_start=527  HEADER_CONST=43  scan_len=9(exact)  scanning [527, 535] (9 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=120 weak_blocks=0 mismatch=120 overflow=30 flaky=0
+  [guest] RELEASED
+[12:26:59] [run-all] index=38  verdict=NO_MATCH  n=0  label=
+[12:26:59] 
+[run-all] 19/1641 index=39  'Acute respiratory failure'
+  [guest] loop index=39
+  [guest] LOOP_INDEX 39
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.17971474326103962676366300632359661977)
+  [guest] ============================================================
+  [guest]   Acute respiratory failure
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2bce000
+  [guest] input_ids base GPA: 0x00000001a2bce000
+  [guest] input_ids base page GPA: 0x00000001a2bce000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2bce000  N=594  N_ind=4  tok_start=637  HEADER_CONST=43
+[12:26:59] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=4(exact)  scanning [637, 640] (4 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:27:10] [run-all] index=39  verdict=NO_MATCH  n=0  label=
+[12:27:10] 
+[run-all] 20/1641 index=41  'Follow up pneumonia and shortness of breath'
+  [guest] loop index=41
+  [guest] LOOP_INDEX 41
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.93627124955270449787370133013668031521)
+  [guest] ============================================================
+  [guest]   Follow up pneumonia and shortness of breath
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2c2a000
+  [guest] input_ids base GPA: 0x00000001a2c2a000
+  [guest] input_ids base page GPA: 0x00000001a2c2a000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 8
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2c2a000  N=304  N_ind=8  tok_start=347  HEADER_CONST=43
+[12:27:10] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=8(exact)  scanning [347, 354] (8 steps)
+[12:27:20] [blind] MATCH (1): tok=352 idx=1 'ness of' off=0xb00 blocks=1
+  [guest] RELEASED
+[12:27:23] [run-all] index=41  verdict=MATCH  n=1  label=ness of
+[12:27:23] 
+[run-all] 21/1641 index=43  'Weakness'
+  [guest] loop index=43
+  [guest] LOOP_INDEX 43
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.34148746647571865823301507550084474316)
+  [guest] ============================================================
+  [guest]   Weakness
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2d08000
+  [guest] input_ids base GPA: 0x00000001a2d08000
+  [guest] input_ids base page GPA: 0x00000001a2d08000
+  [guest] N_image_pad: 750
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=750
+  [guest] N_indication_tokens: 2
+  [guest] tok_start: 793
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2d08000  N=750  N_ind=2  tok_start=793  HEADER_CONST=43
+[12:27:23] [blind] N=750 (live from guest)  indication starts at tok_start=793  HEADER_CONST=43  scan_len=2(exact)  scanning [793, 794] (2 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=0 overflow=30 flaky=0
+  [guest] RELEASED
+[12:27:30] [run-all] index=43  verdict=NO_MATCH  n=0  label=
+[12:27:30] 
+[run-all] 22/1641 index=44  'Central line placement. Hypertension.'
+  [guest] loop index=44
+  [guest] LOOP_INDEX 44
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.60836624601506336549473679481804732777)
+  [guest] ============================================================
+  [guest]   Central line placement. Hypertension.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2db7000
+  [guest] input_ids base GPA: 0x00000001a2db7000
+  [guest] input_ids base page GPA: 0x00000001a2db7000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 8
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2db7000  N=594  N_ind=8  tok_start=637  HEADER_CONST=43
+[12:27:30] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=8(exact)  scanning [637, 644] (8 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=120 weak_blocks=0 mismatch=90 overflow=30 flaky=0
+  [guest] RELEASED
+[12:27:42] [run-all] index=44  verdict=NO_MATCH  n=0  label=
+[12:27:42] 
+[run-all] 23/1641 index=45  'Shortness of breath and cough for 2 weeks'
+  [guest] loop index=45
+  [guest] LOOP_INDEX 45
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.40248081534881616137307938008399005200)
+  [guest] ============================================================
+  [guest]   Shortness of breath and cough for 2 weeks
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2e52000
+  [guest] input_ids base GPA: 0x00000001a2e52000
+  [guest] input_ids base page GPA: 0x00000001a2e52000
+  [guest] N_image_pad: 525
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=525
+  [guest] N_indication_tokens: 10
+  [guest] tok_start: 568
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2e52000  N=525  N_ind=10  tok_start=568  HEADER_CONST=43
+[12:27:42] [blind] N=525 (live from guest)  indication starts at tok_start=568  HEADER_CONST=43  scan_len=10(exact)  scanning [568, 577] (10 steps)
+  [blind] flaky dump rejected tok_start=568 token_idx=2 ' Shortness' off=0x1c0
+  [blind] flaky dump rejected tok_start=570 token_idx=0 ' of breath' off=0x1d0
+[blind] No match: swap_fail=7 swap_self=0 no_blocks=120 weak_blocks=0 mismatch=141 overflow=30 flaky=2
+  [guest] RELEASED
+[12:27:53] [run-all] index=45  verdict=NO_MATCH  n=0  label=
+[12:27:53] 
+[run-all] 24/1641 index=46  '8 pound weight loss over the past year, 1 month of cough, current smoker. History of COPD and abdominal aortic aneurysm.'
+  [guest] loop index=46
+  [guest] LOOP_INDEX 46
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.27615920815853200275756880263011174743)
+  [guest] ============================================================
+  [guest]   8 pound weight loss over the past year, 1 month of cough, current smoker. History of COPD and abdominal aortic aneurysm.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2f32000
+  [guest] input_ids base GPA: 0x00000001a2f32000
+  [guest] input_ids base page GPA: 0x00000001a2f32000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 31
+  [guest] tok_start: 781
+  [guest] HEADER_CONST_HINT: 52
+  [guest] HOLDING
+  [host] base_gpa=0x1a2f32000  N=729  N_ind=31  tok_start=781  HEADER_CONST=52
+[12:27:54] [blind] N=729 (live from guest)  indication starts at tok_start=781  HEADER_CONST=52  scan_len=31(exact)  scanning [781, 811] (31 steps)
+  [blind] flaky dump rejected tok_start=794 token_idx=14 ' cough,' off=0x8d0
+[blind] No match: swap_fail=8 swap_self=0 no_blocks=450 weak_blocks=0 mismatch=441 overflow=30 flaky=1
+  [guest] RELEASED
+[12:28:06] [run-all] index=46  verdict=NO_MATCH  n=0  label=
+[12:28:06] 
+[run-all] 25/1641 index=47  'PICC line placement.'
+  [guest] loop index=47
+  [guest] LOOP_INDEX 47
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.46834725698388707186310088253575128882)
+  [guest] ============================================================
+  [guest]   PICC line placement.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a2f88000
+  [guest] input_ids base GPA: 0x00000001a2f88000
+  [guest] input_ids base page GPA: 0x00000001a2f88000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 5
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a2f88000  N=304  N_ind=5  tok_start=347  HEADER_CONST=43
+[12:28:06] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=5(exact)  scanning [347, 351] (5 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:28:18] [run-all] index=47  verdict=NO_MATCH  n=0  label=
+[12:28:18] 
+[run-all] 26/1641 index=50  'Recent COVID-19 positive. Hyperglycemia.'
+  [guest] loop index=50
+  [guest] LOOP_INDEX 50
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.87059249349256849489640559432804992817)
+  [guest] ============================================================
+  [guest]   Recent COVID-19 positive. Hyperglycemia.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3025000
+  [guest] input_ids base GPA: 0x00000001a3025000
+  [guest] input_ids base page GPA: 0x00000001a3025000
+  [guest] N_image_pad: 525
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=525
+  [guest] N_indication_tokens: 12
+  [guest] tok_start: 568
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3025000  N=525  N_ind=12  tok_start=568  HEADER_CONST=43
+[12:28:18] [blind] N=525 (live from guest)  indication starts at tok_start=568  HEADER_CONST=43  scan_len=12(exact)  scanning [568, 579] (12 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=150 weak_blocks=0 mismatch=180 overflow=30 flaky=0
+  [guest] RELEASED
+[12:28:31] [run-all] index=50  verdict=NO_MATCH  n=0  label=
+[12:28:31] 
+[run-all] 27/1641 index=51  'Left anterior rib pain and abrasion; hit by tailgate of truck.'
+  [guest] loop index=51
+  [guest] LOOP_INDEX 51
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.85938423338317404265194067445457184478)
+  [guest] ============================================================
+  [guest]   Left anterior rib pain and abrasion; hit by tailgate of truck.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3081000
+  [guest] input_ids base GPA: 0x00000001a3081000
+  [guest] input_ids base page GPA: 0x00000001a3081000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 15
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3081000  N=304  N_ind=15  tok_start=347  HEADER_CONST=43
+[12:28:31] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=15(exact)  scanning [347, 361] (15 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=210 weak_blocks=0 mismatch=210 overflow=30 flaky=0
+  [guest] RELEASED
+[12:28:43] [run-all] index=51  verdict=NO_MATCH  n=0  label=
+[12:28:43] 
+[run-all] 28/1641 index=52  'Chest pain, pneumonia.'
+  [guest] loop index=52
+  [guest] LOOP_INDEX 52
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.32335550246053603261480088940494700099)
+  [guest] ============================================================
+  [guest]   Chest pain, pneumonia.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a30e1000
+  [guest] input_ids base GPA: 0x00000001a30e1000
+  [guest] input_ids base page GPA: 0x00000001a30e1000
+  [guest] N_image_pad: 361
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=361
+  [guest] N_indication_tokens: 5
+  [guest] tok_start: 404
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a30e1000  N=361  N_ind=5  tok_start=404  HEADER_CONST=43
+[12:28:43] [blind] N=361 (live from guest)  indication starts at tok_start=404  HEADER_CONST=43  scan_len=5(exact)  scanning [404, 408] (5 steps)
+[12:28:53] [blind] MATCH (1): tok=404 idx=7 ' Chest pain' off=0xca0 blocks=1
+  [guest] RELEASED
+[12:28:55] [run-all] index=52  verdict=MATCH  n=1  label= Chest pain
+[12:28:55] 
+[run-all] 29/1641 index=56  'Shortness of breath and chest tightness for 3 weeks.'
+  [guest] loop index=56
+  [guest] LOOP_INDEX 56
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.66368765220455384060397158716292722204)
+  [guest] ============================================================
+  [guest]   Shortness of breath and chest tightness for 3 weeks.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a31ad000
+  [guest] input_ids base GPA: 0x00000001a31ad000
+  [guest] input_ids base page GPA: 0x00000001a31ad000
+  [guest] N_image_pad: 621
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=621
+  [guest] N_indication_tokens: 13
+  [guest] tok_start: 660
+  [guest] HEADER_CONST_HINT: 39
+  [guest] HOLDING
+  [host] base_gpa=0x1a31ad000  N=621  N_ind=13  tok_start=660  HEADER_CONST=39
+[12:28:55] [blind] N=621 (live from guest)  indication starts at tok_start=660  HEADER_CONST=39  scan_len=13(exact)  scanning [660, 672] (13 steps)
+  [blind] flaky dump rejected tok_start=662 token_idx=0 ' of breath' off=0x4b0
+[12:29:05] [blind] MATCH (1): tok=660 idx=2 ' Shortness' off=0x4a0 blocks=1  flaky_rejected=1
+  [guest] RELEASED
+[12:29:07] [run-all] index=56  verdict=MATCH  n=1  label= Shortness
+[12:29:07] 
+[run-all] 30/1641 index=61  'Fatigue and short of breath.'
+  [guest] loop index=61
+  [guest] LOOP_INDEX 61
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.76689842437679289314976227266450131511)
+  [guest] ============================================================
+  [guest]   Fatigue and short of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a328a000
+  [guest] input_ids base GPA: 0x00000001a328a000
+  [guest] input_ids base page GPA: 0x00000001a328a000
+  [guest] N_image_pad: 702
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=702
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 745
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a328a000  N=702  N_ind=7  tok_start=745  HEADER_CONST=43
+[12:29:07] [blind] N=702 (live from guest)  indication starts at tok_start=745  HEADER_CONST=43  scan_len=7(exact)  scanning [745, 751] (7 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=90 overflow=30 flaky=0
+  [guest] RELEASED
+[12:29:19] [run-all] index=61  verdict=NO_MATCH  n=0  label=
+[12:29:19] 
+[run-all] 31/1641 index=62  'Severe shortness of breath, weakness.'
+  [guest] loop index=62
+  [guest] LOOP_INDEX 62
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.88937295929797681982962565808576475864)
+  [guest] ============================================================
+  [guest]   Severe shortness of breath, weakness.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a32e4000
+  [guest] input_ids base GPA: 0x00000001a32e4000
+  [guest] input_ids base page GPA: 0x00000001a32e4000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 9
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a32e4000  N=304  N_ind=9  tok_start=347  HEADER_CONST=43
+[12:29:19] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=9(exact)  scanning [347, 355] (9 steps)
+  [blind] flaky dump rejected tok_start=350 token_idx=1 'ness of' off=0xaf0
+[12:29:29] [blind] MATCH (1): tok=352 idx=8 ' breath,' off=0xb00 blocks=1  flaky_rejected=1
+  [guest] RELEASED
+[12:29:31] [run-all] index=62  verdict=MATCH  n=1  label= breath,
+[12:29:31] 
+[run-all] 32/1641 index=63  'Respiratory failure'
+  [guest] loop index=63
+  [guest] LOOP_INDEX 63
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.90330812527728132310217387997721698459)
+  [guest] ============================================================
+  [guest]   Respiratory failure
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3390000
+  [guest] input_ids base GPA: 0x00000001a3390000
+  [guest] input_ids base page GPA: 0x00000001a3390000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 3
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3390000  N=594  N_ind=3  tok_start=637  HEADER_CONST=43
+[12:29:32] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=3(exact)  scanning [637, 639] (3 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:29:43] [run-all] index=63  verdict=NO_MATCH  n=0  label=
+[12:29:43] 
+[run-all] 33/1641 index=64  'COPD, pneumonia'
+  [guest] loop index=64
+  [guest] LOOP_INDEX 64
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.47818528318128659527146315631127821590)
+  [guest] ============================================================
+  [guest]   COPD, pneumonia
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a33e8000
+  [guest] input_ids base GPA: 0x00000001a33e8000
+  [guest] input_ids base page GPA: 0x00000001a33e8000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a33e8000  N=304  N_ind=4  tok_start=347  HEADER_CONST=43
+[12:29:44] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=4(exact)  scanning [347, 350] (4 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:29:56] [run-all] index=64  verdict=NO_MATCH  n=0  label=
+[12:29:56] 
+[run-all] 34/1641 index=65  'Shortness of breath, fever, body aches, unknown COVID status.'
+  [guest] loop index=65
+  [guest] LOOP_INDEX 65
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.24158251148823912160865707584680885729)
+  [guest] ============================================================
+  [guest]   Shortness of breath, fever, body aches, unknown COVID status.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3483000
+  [guest] input_ids base GPA: 0x00000001a3483000
+  [guest] input_ids base page GPA: 0x00000001a3483000
+  [guest] N_image_pad: 513
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=513
+  [guest] N_indication_tokens: 15
+  [guest] tok_start: 556
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3483000  N=513  N_ind=15  tok_start=556  HEADER_CONST=43
+[12:29:56] [blind] N=513 (live from guest)  indication starts at tok_start=556  HEADER_CONST=43  scan_len=15(exact)  scanning [556, 570] (15 steps)
+  [blind] flaky dump rejected tok_start=558 token_idx=0 ' of breath' off=0x170
+[blind] No match: swap_fail=5 swap_self=0 no_blocks=210 weak_blocks=0 mismatch=204 overflow=30 flaky=1
+  [guest] RELEASED
+[12:30:07] [run-all] index=65  verdict=NO_MATCH  n=0  label=
+[12:30:07] 
+[run-all] 35/1641 index=67  'Premature neonate. Respiratory distress syndrome. On ventilator. Bilious emesis.'
+  [guest] loop index=67
+  [guest] LOOP_INDEX 67
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.84649330700041085654617515036145204528)
+  [guest] ============================================================
+  [guest]   Premature neonate. Respiratory distress syndrome. On ventilator. Bilious emesis.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a34b8000
+  [guest] input_ids base GPA: 0x00000001a34b8000
+  [guest] input_ids base page GPA: 0x00000001a34b8000
+  [guest] N_image_pad: 150
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=150
+  [guest] N_indication_tokens: 19
+  [guest] tok_start: 192
+  [guest] HEADER_CONST_HINT: 42
+  [guest] HOLDING
+  [host] base_gpa=0x1a34b8000  N=150  N_ind=19  tok_start=192  HEADER_CONST=42
+[12:30:08] [blind] N=150 (live from guest)  indication starts at tok_start=192  HEADER_CONST=42  scan_len=19(exact)  scanning [192, 210] (19 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=270 weak_blocks=0 mismatch=270 overflow=30 flaky=0
+  [guest] RELEASED
+[12:30:19] [run-all] index=67  verdict=NO_MATCH  n=0  label=
+[12:30:19] 
+[run-all] 36/1641 index=69  'Shortness of breath.'
+  [guest] loop index=69
+  [guest] LOOP_INDEX 69
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.38052566036295238035172871468440250283)
+  [guest] ============================================================
+  [guest]   Shortness of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a35f1000
+  [guest] input_ids base GPA: 0x00000001a35f1000
+  [guest] input_ids base page GPA: 0x00000001a35f1000
+  [guest] N_image_pad: 1178
+  [guest] PINNED map_size=0x3000 ptr=0x7f1a3da8c000
+  [guest]   [GPA] <|image_pad|> count: N=1178
+  [guest] N_indication_tokens: 5
+  [guest] tok_start: 1213
+  [guest] HEADER_CONST_HINT: 35
+  [guest] HOLDING
+  [host] base_gpa=0x1a35f1000  N=1178  N_ind=5  tok_start=1213  HEADER_CONST=35
+[12:30:20] [blind] N=1178 (live from guest)  indication starts at tok_start=1213  HEADER_CONST=35  scan_len=5(exact)  scanning [1213, 1217] (5 steps)
+  [blind] flaky dump rejected tok_start=1214 token_idx=1 'ness of' off=0x5f0
+[blind] No match: swap_fail=2 swap_self=0 no_blocks=59 weak_blocks=0 mismatch=58 overflow=30 flaky=1
+  [guest] RELEASED
+[12:30:31] [run-all] index=69  verdict=NO_MATCH  n=0  label=
+[12:30:31] 
+[run-all] 37/1641 index=70  'Left-sided chest pain and shoulder pain. History of hypertension and asthma.'
+  [guest] loop index=70
+  [guest] LOOP_INDEX 70
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.95595305163057699864920004436215759566)
+  [guest] ============================================================
+  [guest]   Left-sided chest pain and shoulder pain. History of hypertension and asthma.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a36d5000
+  [guest] input_ids base GPA: 0x00000001a36d5000
+  [guest] input_ids base page GPA: 0x00000001a36d5000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 14
+  [guest] tok_start: 772
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a36d5000  N=729  N_ind=14  tok_start=772  HEADER_CONST=43
+[12:30:31] [blind] N=729 (live from guest)  indication starts at tok_start=772  HEADER_CONST=43  scan_len=14(exact)  scanning [772, 785] (14 steps)
+[12:30:41] [blind] MATCH (1): tok=774 idx=6 ' chest pain' off=0x830 blocks=1
+  [guest] RELEASED
+[12:30:43] [run-all] index=70  verdict=MATCH  n=1  label= chest pain
+[12:30:43] 
+[run-all] 38/1641 index=78  'Back and flank pain. Shortness of breath.'
+  [guest] loop index=78
+  [guest] LOOP_INDEX 78
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.33522239373908916931917779155847054857)
+  [guest] ============================================================
+  [guest]   Back and flank pain. Shortness of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3734000
+  [guest] input_ids base GPA: 0x00000001a3734000
+  [guest] input_ids base page GPA: 0x00000001a3734000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 10
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3734000  N=304  N_ind=10  tok_start=347  HEADER_CONST=43
+[12:30:44] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=10(exact)  scanning [347, 356] (10 steps)
+  [blind] flaky dump rejected tok_start=352 token_idx=2 ' Shortness' off=0xb00
+  [blind] flaky dump rejected tok_start=354 token_idx=0 ' of breath' off=0xb10
+[blind] No match: swap_fail=1 swap_self=0 no_blocks=150 weak_blocks=0 mismatch=117 overflow=30 flaky=2
+  [guest] RELEASED
+[12:30:56] [run-all] index=78  verdict=NO_MATCH  n=0  label=
+[12:30:56] 
+[run-all] 39/1641 index=79  'Fever, cough, shortness of breath, question pneumonia'
+  [guest] loop index=79
+  [guest] LOOP_INDEX 79
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.21817563480632182802673656892566920029)
+  [guest] ============================================================
+  [guest]   Fever, cough, shortness of breath, question pneumonia
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3794000
+  [guest] input_ids base GPA: 0x00000001a3794000
+  [guest] input_ids base page GPA: 0x00000001a3794000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 11
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3794000  N=304  N_ind=11  tok_start=347  HEADER_CONST=43
+[12:30:56] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=11(exact)  scanning [347, 357] (11 steps)
+[12:31:06] [blind] MULTI_MATCH (3): tok=350 idx=11 ', short' off=0xaf0 blocks=1 | tok=352 idx=1 'ness of' off=0xb00 blocks=1 | tok=354 idx=8 ' breath,' off=0xb10 blocks=1
+  [guest] RELEASED
+[12:31:09] [run-all] index=79  verdict=MULTI_MATCH  n=3  label=, short;ness of; breath,
+[12:31:09] 
+[run-all] 40/1641 index=83  'Cough, congestion'
+  [guest] loop index=83
+  [guest] LOOP_INDEX 83
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.16590876234699882821807912958640970790)
+  [guest] ============================================================
+  [guest]   Cough, congestion
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3c4f000
+  [guest] input_ids base GPA: 0x00000001a3c4f000
+  [guest] input_ids base page GPA: 0x00000001a3c4f000
+  [guest] N_image_pad: 648
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=648
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 691
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3c4f000  N=648  N_ind=4  tok_start=691  HEADER_CONST=43
+[12:31:09] [blind] N=648 (live from guest)  indication starts at tok_start=691  HEADER_CONST=43  scan_len=4(exact)  scanning [691, 694] (4 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:31:21] [run-all] index=83  verdict=NO_MATCH  n=0  label=
+[12:31:21] 
+[run-all] 41/1641 index=86  'Preop, mediastinal adenopathy, short of breath, smoking history'
+  [guest] loop index=86
+  [guest] LOOP_INDEX 86
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.82041931435508845871952273468619420927)
+  [guest] ============================================================
+  [guest]   Preop, mediastinal adenopathy, short of breath, smoking history
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3ca5000
+  [guest] input_ids base GPA: 0x00000001a3ca5000
+  [guest] input_ids base page GPA: 0x00000001a3ca5000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 15
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3ca5000  N=304  N_ind=15  tok_start=347  HEADER_CONST=43
+[12:31:21] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=15(exact)  scanning [347, 361] (15 steps)
+[12:31:32] [blind] MATCH (1): tok=358 idx=8 ' breath,' off=0xb30 blocks=1
+  [guest] RELEASED
+[12:31:34] [run-all] index=86  verdict=MATCH  n=1  label= breath,
+[12:31:34] 
+[run-all] 42/1641 index=88  'Short of breath.'
+  [guest] loop index=88
+  [guest] LOOP_INDEX 88
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.91843386599327809155282554114256302816)
+  [guest] ============================================================
+  [guest]   Short of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3d3e000
+  [guest] input_ids base GPA: 0x00000001a3d3e000
+  [guest] input_ids base page GPA: 0x00000001a3d3e000
+  [guest] N_image_pad: 525
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=525
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 560
+  [guest] HEADER_CONST_HINT: 35
+  [guest] HOLDING
+  [host] base_gpa=0x1a3d3e000  N=525  N_ind=4  tok_start=560  HEADER_CONST=35
+[12:31:35] [blind] N=525 (live from guest)  indication starts at tok_start=560  HEADER_CONST=35  scan_len=4(exact)  scanning [560, 563] (4 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:31:47] [run-all] index=88  verdict=NO_MATCH  n=0  label=
+[12:31:47] 
+[run-all] 43/1641 index=92  '57-year-old male with respiratory failure, shortness of breath.'
+  [guest] loop index=92
+  [guest] LOOP_INDEX 92
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.86878975814457724191921445572309789992)
+  [guest] ============================================================
+  [guest]   57-year-old male with respiratory failure, shortness of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3e02000
+  [guest] input_ids base GPA: 0x00000001a3e02000
+  [guest] input_ids base page GPA: 0x00000001a3e02000
+  [guest] N_image_pad: 676
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=676
+  [guest] N_indication_tokens: 14
+  [guest] tok_start: 720
+  [guest] HEADER_CONST_HINT: 44
+  [guest] HOLDING
+  [host] base_gpa=0x1a3e02000  N=676  N_ind=14  tok_start=720  HEADER_CONST=44
+[12:31:47] [blind] N=676 (live from guest)  indication starts at tok_start=720  HEADER_CONST=44  scan_len=14(exact)  scanning [720, 733] (14 steps)
+[12:31:58] [blind] MULTI_MATCH (3): tok=726 idx=24 ' respiratory failure' off=0x6b0 blocks=1 | tok=728 idx=11 ', short' off=0x6c0 blocks=1 | tok=730 idx=1 'ness of' off=0x6d0 blocks=1
+  [guest] RELEASED
+[12:32:00] [run-all] index=92  verdict=MULTI_MATCH  n=3  label= respiratory failure;, short;ness of
+[12:32:00] 
+[run-all] 44/1641 index=93  'Pneumothorax. Follow-up.'
+  [guest] loop index=93
+  [guest] LOOP_INDEX 93
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.29328497245011962872279115148632247303)
+  [guest] ============================================================
+  [guest]   Pneumothorax. Follow-up.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3e5e000
+  [guest] input_ids base GPA: 0x00000001a3e5e000
+  [guest] input_ids base page GPA: 0x00000001a3e5e000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 10
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3e5e000  N=304  N_ind=10  tok_start=347  HEADER_CONST=43
+[12:32:00] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=10(exact)  scanning [347, 356] (10 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=150 weak_blocks=0 mismatch=120 overflow=30 flaky=0
+  [guest] RELEASED
+[12:32:12] [run-all] index=93  verdict=NO_MATCH  n=0  label=
+[12:32:12] 
+[run-all] 45/1641 index=96  'Cough for 2 weeks.'
+  [guest] loop index=96
+  [guest] LOOP_INDEX 96
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.10887028264098753915070448225233638241)
+  [guest] ============================================================
+  [guest]   Cough for 2 weeks.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3ea4000
+  [guest] input_ids base GPA: 0x00000001a3ea4000
+  [guest] input_ids base page GPA: 0x00000001a3ea4000
+  [guest] N_image_pad: 182
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=182
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 225
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3ea4000  N=182  N_ind=7  tok_start=225  HEADER_CONST=43
+[12:32:12] [blind] N=182 (live from guest)  indication starts at tok_start=225  HEADER_CONST=43  scan_len=7(exact)  scanning [225, 231] (7 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=90 overflow=30 flaky=0
+  [guest] RELEASED
+[12:32:24] [run-all] index=96  verdict=NO_MATCH  n=0  label=
+[12:32:24] 
+[run-all] 46/1641 index=97  'History of a spontaneous pneumothorax on the right, some chest pain and cough'
+  [guest] loop index=97
+  [guest] LOOP_INDEX 97
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.37999942905809021762090309828793359703)
+  [guest] ============================================================
+  [guest]   History of a spontaneous pneumothorax on the right, some chest pain and cough
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3ef4000
+  [guest] input_ids base GPA: 0x00000001a3ef4000
+  [guest] input_ids base page GPA: 0x00000001a3ef4000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 17
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3ef4000  N=304  N_ind=17  tok_start=347  HEADER_CONST=43
+[12:32:24] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=17(exact)  scanning [347, 363] (17 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=240 weak_blocks=0 mismatch=240 overflow=30 flaky=0
+  [guest] RELEASED
+[12:32:37] [run-all] index=97  verdict=NO_MATCH  n=0  label=
+[12:32:37] 
+[run-all] 47/1641 index=98  'Coughing and chest pain.'
+  [guest] loop index=98
+  [guest] LOOP_INDEX 98
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.61662701034879018915425388377247791020)
+  [guest] ============================================================
+  [guest]   Coughing and chest pain.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a3fba000
+  [guest] input_ids base GPA: 0x00000001a3fba000
+  [guest] input_ids base page GPA: 0x00000001a3fba000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 772
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a3fba000  N=729  N_ind=7  tok_start=772  HEADER_CONST=43
+[12:32:37] [blind] N=729 (live from guest)  indication starts at tok_start=772  HEADER_CONST=43  scan_len=7(exact)  scanning [772, 778] (7 steps)
+[12:32:47] [blind] MULTI_MATCH (2): tok=772 idx=3 ' Cough' off=0x820 blocks=1 | tok=776 idx=6 ' chest pain' off=0x840 blocks=1
+  [guest] RELEASED
+[12:32:49] [run-all] index=98  verdict=MULTI_MATCH  n=2  label= Cough; chest pain
+[12:32:49] 
+[run-all] 48/1641 index=99  'Shortness of breath (SOB)'
+  [guest] loop index=99
+  [guest] LOOP_INDEX 99
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.79373206949650763546290498445365128879)
+  [guest] ============================================================
+  [guest]   Shortness of breath (SOB)
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4050000
+  [guest] input_ids base GPA: 0x00000001a4050000
+  [guest] input_ids base page GPA: 0x00000001a4050000
+  [guest] N_image_pad: 525
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=525
+  [guest] N_indication_tokens: 8
+  [guest] tok_start: 560
+  [guest] HEADER_CONST_HINT: 35
+  [guest] HOLDING
+  [host] base_gpa=0x1a4050000  N=525  N_ind=8  tok_start=560  HEADER_CONST=35
+[12:32:50] [blind] N=525 (live from guest)  indication starts at tok_start=560  HEADER_CONST=35  scan_len=8(exact)  scanning [560, 567] (8 steps)
+  [blind] flaky dump rejected tok_start=562 token_idx=0 ' of breath' off=0x190
+[blind] No match: swap_fail=2 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=117 overflow=30 flaky=1
+  [guest] RELEASED
+[12:33:02] [run-all] index=99  verdict=NO_MATCH  n=0  label=
+[12:33:02] 
+[run-all] 49/1641 index=100  'Cough. Congestion. Vomiting. Fever.'
+  [guest] loop index=100
+  [guest] LOOP_INDEX 100
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.51239989444244634281307386286207852922)
+  [guest] ============================================================
+  [guest]   Cough. Congestion. Vomiting. Fever.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a408f000
+  [guest] input_ids base GPA: 0x00000001a408f000
+  [guest] input_ids base page GPA: 0x00000001a408f000
+  [guest] N_image_pad: 270
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=270
+  [guest] N_indication_tokens: 12
+  [guest] tok_start: 313
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a408f000  N=270  N_ind=12  tok_start=313  HEADER_CONST=43
+[12:33:02] [blind] N=270 (live from guest)  indication starts at tok_start=313  HEADER_CONST=43  scan_len=12(exact)  scanning [313, 324] (12 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=180 weak_blocks=0 mismatch=150 overflow=30 flaky=0
+  [guest] RELEASED
+[12:33:14] [run-all] index=100  verdict=NO_MATCH  n=0  label=
+[12:33:14] 
+[run-all] 50/1641 index=101  'Cough and congestion'
+  [guest] loop index=101
+  [guest] LOOP_INDEX 101
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.52940579118629793193968171731877221623)
+  [guest] ============================================================
+  [guest]   Cough and congestion
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4176000
+  [guest] input_ids base GPA: 0x00000001a4176000
+  [guest] input_ids base page GPA: 0x00000001a4176000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 780
+  [guest] HEADER_CONST_HINT: 51
+  [guest] HOLDING
+  [host] base_gpa=0x1a4176000  N=729  N_ind=4  tok_start=780  HEADER_CONST=51
+[12:33:14] [blind] N=729 (live from guest)  indication starts at tok_start=780  HEADER_CONST=51  scan_len=4(exact)  scanning [780, 783] (4 steps)
+[12:33:24] [blind] MATCH (1): tok=780 idx=3 ' Cough' off=0x860 blocks=1
+  [guest] RELEASED
+[12:33:26] [run-all] index=101  verdict=MATCH  n=1  label= Cough
+[12:33:26] 
+[run-all] 51/1641 index=102  '56-year-old male with chest pain status post CABG.'
+  [guest] loop index=102
+  [guest] LOOP_INDEX 102
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.13766127030677841449620513574146647453)
+  [guest] ============================================================
+  [guest]   56-year-old male with chest pain status post CABG.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a41d6000
+  [guest] input_ids base GPA: 0x00000001a41d6000
+  [guest] input_ids base page GPA: 0x00000001a41d6000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 13
+  [guest] tok_start: 348
+  [guest] HEADER_CONST_HINT: 44
+  [guest] HOLDING
+  [host] base_gpa=0x1a41d6000  N=304  N_ind=13  tok_start=348  HEADER_CONST=44
+[12:33:26] [blind] N=304 (live from guest)  indication starts at tok_start=348  HEADER_CONST=44  scan_len=13(exact)  scanning [348, 360] (13 steps)
+[12:33:36] [blind] MULTI_MATCH (2): tok=354 idx=6 ' chest pain' off=0xb10 blocks=1 | tok=358 idx=21 ' CABG' off=0xb30 blocks=1
+  [guest] RELEASED
+[12:33:38] [run-all] index=102  verdict=MULTI_MATCH  n=2  label= chest pain; CABG
+[12:33:38] 
+[run-all] 52/1641 index=103  'Motor vehicle accident. Chest pain.'
+  [guest] loop index=103
+  [guest] LOOP_INDEX 103
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.74577128734636245166755709548716459388)
+  [guest] ============================================================
+  [guest]   Motor vehicle accident. Chest pain.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a42b2000
+  [guest] input_ids base GPA: 0x00000001a42b2000
+  [guest] input_ids base page GPA: 0x00000001a42b2000
+  [guest] N_image_pad: 702
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=702
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 745
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a42b2000  N=702  N_ind=7  tok_start=745  HEADER_CONST=43
+[12:33:38] [blind] N=702 (live from guest)  indication starts at tok_start=745  HEADER_CONST=43  scan_len=7(exact)  scanning [745, 751] (7 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=90 overflow=30 flaky=0
+  [guest] RELEASED
+[12:33:50] [run-all] index=103  verdict=NO_MATCH  n=0  label=
+[12:33:50] 
+[run-all] 53/1641 index=107  'Respiratory distress. Pneumonitis.'
+  [guest] loop index=107
+  [guest] LOOP_INDEX 107
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.35495209145207865837388334956930368841)
+  [guest] ============================================================
+  [guest]   Respiratory distress. Pneumonitis.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a42f6000
+  [guest] input_ids base GPA: 0x00000001a42f6000
+  [guest] input_ids base page GPA: 0x00000001a42f6000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 10
+  [guest] tok_start: 438
+  [guest] HEADER_CONST_HINT: 42
+  [guest] HOLDING
+  [host] base_gpa=0x1a42f6000  N=396  N_ind=10  tok_start=438  HEADER_CONST=42
+[12:33:50] [blind] N=396 (live from guest)  indication starts at tok_start=438  HEADER_CONST=42  scan_len=10(exact)  scanning [438, 447] (10 steps)
+[12:34:00] [blind] MATCH (1): tok=438 idx=9 ' Respiratory' off=0xdb0 blocks=1
+  [guest] RELEASED
+[12:34:02] [run-all] index=107  verdict=MATCH  n=1  label= Respiratory
+[12:34:02] 
+[run-all] 54/1641 index=108  'Shortness of breath-intubation.'
+  [guest] loop index=108
+  [guest] LOOP_INDEX 108
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.53647303949704048174315964372639905463)
+  [guest] ============================================================
+  [guest]   Shortness of breath-intubation.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4375000
+  [guest] input_ids base GPA: 0x00000001a4375000
+  [guest] input_ids base page GPA: 0x00000001a4375000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 8
+  [guest] tok_start: 439
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4375000  N=396  N_ind=8  tok_start=439  HEADER_CONST=43
+[12:34:02] [blind] N=396 (live from guest)  indication starts at tok_start=439  HEADER_CONST=43  scan_len=8(exact)  scanning [439, 446] (8 steps)
+[12:34:11] [blind] MATCH (1): tok=440 idx=1 'ness of' off=0xdc0 blocks=1
+  [guest] RELEASED
+[12:34:14] [run-all] index=108  verdict=MATCH  n=1  label=ness of
+[12:34:14] 
+[run-all] 55/1641 index=109  'Mid chest pain.'
+  [guest] loop index=109
+  [guest] LOOP_INDEX 109
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.76000565993892957180769650242051641444)
+  [guest] ============================================================
+  [guest]   Mid chest pain.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4459000
+  [guest] input_ids base GPA: 0x00000001a4459000
+  [guest] input_ids base page GPA: 0x00000001a4459000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 780
+  [guest] HEADER_CONST_HINT: 51
+  [guest] HOLDING
+  [host] base_gpa=0x1a4459000  N=729  N_ind=4  tok_start=780  HEADER_CONST=51
+[12:34:14] [blind] N=729 (live from guest)  indication starts at tok_start=780  HEADER_CONST=51  scan_len=4(exact)  scanning [780, 783] (4 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:34:26] [run-all] index=109  verdict=NO_MATCH  n=0  label=
+[12:34:26] 
+[run-all] 56/1641 index=112  'Short of breath'
+  [guest] loop index=112
+  [guest] LOOP_INDEX 112
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.62899703613377279987414341106368528153)
+  [guest] ============================================================
+  [guest]   Short of breath
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a44d7000
+  [guest] input_ids base GPA: 0x00000001a44d7000
+  [guest] input_ids base page GPA: 0x00000001a44d7000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 3
+  [guest] tok_start: 435
+  [guest] HEADER_CONST_HINT: 39
+  [guest] HOLDING
+  [host] base_gpa=0x1a44d7000  N=396  N_ind=3  tok_start=435  HEADER_CONST=39
+[12:34:26] [blind] N=396 (live from guest)  indication starts at tok_start=435  HEADER_CONST=39  scan_len=3(exact)  scanning [435, 437] (3 steps)
+[12:34:37] [blind] MATCH (1): tok=436 idx=0 ' of breath' off=0xda0 blocks=1
+  [guest] RELEASED
+[12:34:39] [run-all] index=112  verdict=MATCH  n=1  label= of breath
+[12:34:39] 
+[run-all] 57/1641 index=116  'Chest pain and altered mental status. History of lung cancer on the right.'
+  [guest] loop index=116
+  [guest] LOOP_INDEX 116
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.23605526460211259541692642896229856304)
+  [guest] ============================================================
+  [guest]   Chest pain and altered mental status. History of lung cancer on the right.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a456b000
+  [guest] input_ids base GPA: 0x00000001a456b000
+  [guest] input_ids base page GPA: 0x00000001a456b000
+  [guest] N_image_pad: 500
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=500
+  [guest] N_indication_tokens: 15
+  [guest] tok_start: 543
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a456b000  N=500  N_ind=15  tok_start=543  HEADER_CONST=43
+[12:34:39] [blind] N=500 (live from guest)  indication starts at tok_start=543  HEADER_CONST=43  scan_len=15(exact)  scanning [543, 557] (15 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=210 weak_blocks=0 mismatch=210 overflow=30 flaky=0
+  [guest] RELEASED
+[12:34:50] [run-all] index=116  verdict=NO_MATCH  n=0  label=
+[12:34:50] 
+[run-all] 58/1641 index=120  'Cough and shortness of breath. Right lower back pain.'
+  [guest] loop index=120
+  [guest] LOOP_INDEX 120
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.81391775004999671587668525330643429057)
+  [guest] ============================================================
+  [guest]   Cough and shortness of breath. Right lower back pain.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a461b000
+  [guest] input_ids base GPA: 0x00000001a461b000
+  [guest] input_ids base page GPA: 0x00000001a461b000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 13
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a461b000  N=594  N_ind=13  tok_start=637  HEADER_CONST=43
+[12:34:50] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=13(exact)  scanning [637, 649] (13 steps)
+  [blind] flaky dump rejected tok_start=640 token_idx=4 ' shortness' off=0x400
+  [blind] flaky dump rejected tok_start=642 token_idx=0 ' of breath' off=0x410
+[12:35:00] [blind] MATCH (1): tok=638 idx=10 'ough and' off=0x3f0 blocks=1  flaky_rejected=2
+  [guest] RELEASED
+[12:35:02] [run-all] index=120  verdict=MATCH  n=1  label=ough and
+[12:35:02] 
+[run-all] 59/1641 index=121  'Hypertension, diabetes. Dementia. Altered level of consciousness.'
+  [guest] loop index=121
+  [guest] LOOP_INDEX 121
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.73101489571555485273485497327218749434)
+  [guest] ============================================================
+  [guest]   Hypertension, diabetes. Dementia. Altered level of consciousness.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a46bc000
+  [guest] input_ids base GPA: 0x00000001a46bc000
+  [guest] input_ids base page GPA: 0x00000001a46bc000
+  [guest] N_image_pad: 567
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=567
+  [guest] N_indication_tokens: 15
+  [guest] tok_start: 610
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a46bc000  N=567  N_ind=15  tok_start=610  HEADER_CONST=43
+[12:35:03] [blind] N=567 (live from guest)  indication starts at tok_start=610  HEADER_CONST=43  scan_len=15(exact)  scanning [610, 624] (15 steps)
+[12:35:13] [blind] MATCH (1): tok=610 idx=27 ' Hypert' off=0x310 blocks=1
+  [guest] RELEASED
+[12:35:15] [run-all] index=121  verdict=MATCH  n=1  label= Hypert
+[12:35:15] 
+[run-all] 60/1641 index=125  'Acute respiratory failure.'
+  [guest] loop index=125
+  [guest] LOOP_INDEX 125
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.54629241621456881307404150305446815054)
+  [guest] ============================================================
+  [guest]   Acute respiratory failure.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4762000
+  [guest] input_ids base GPA: 0x00000001a4762000
+  [guest] input_ids base page GPA: 0x00000001a4762000
+  [guest] N_image_pad: 567
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=567
+  [guest] N_indication_tokens: 5
+  [guest] tok_start: 610
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4762000  N=567  N_ind=5  tok_start=610  HEADER_CONST=43
+[12:35:15] [blind] N=567 (live from guest)  indication starts at tok_start=610  HEADER_CONST=43  scan_len=5(exact)  scanning [610, 614] (5 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:35:27] [run-all] index=125  verdict=NO_MATCH  n=0  label=
+[12:35:27] 
+[run-all] 61/1641 index=126  'Left chest pain'
+  [guest] loop index=126
+  [guest] LOOP_INDEX 126
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.81811347506699795386972081884908939077)
+  [guest] ============================================================
+  [guest]   Left chest pain
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a483e000
+  [guest] input_ids base GPA: 0x00000001a483e000
+  [guest] input_ids base page GPA: 0x00000001a483e000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 3
+  [guest] tok_start: 780
+  [guest] HEADER_CONST_HINT: 51
+  [guest] HOLDING
+  [host] base_gpa=0x1a483e000  N=729  N_ind=3  tok_start=780  HEADER_CONST=51
+[12:35:27] [blind] N=729 (live from guest)  indication starts at tok_start=780  HEADER_CONST=51  scan_len=3(exact)  scanning [780, 782] (3 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:35:40] [run-all] index=126  verdict=NO_MATCH  n=0  label=
+[12:35:40] 
+[run-all] 62/1641 index=127  '3-year-old female with shortness of breath.'
+  [guest] loop index=127
+  [guest] LOOP_INDEX 127
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.16351452681629461622027199192639043070)
+  [guest] ============================================================
+  [guest]   3-year-old female with shortness of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a485e000
+  [guest] input_ids base GPA: 0x00000001a485e000
+  [guest] input_ids base page GPA: 0x00000001a485e000
+  [guest] N_image_pad: 80
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=80
+  [guest] N_indication_tokens: 10
+  [guest] tok_start: 123
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a485e000  N=80  N_ind=10  tok_start=123  HEADER_CONST=43
+[12:35:40] [blind] N=80 (live from guest)  indication starts at tok_start=123  HEADER_CONST=43  scan_len=10(exact)  scanning [123, 132] (10 steps)
+[12:35:50] [blind] MULTI_MATCH (2): tok=128 idx=4 ' shortness' off=0x400 blocks=1 | tok=130 idx=0 ' of breath' off=0x410 blocks=1
+  [guest] RELEASED
+[12:35:52] [run-all] index=127  verdict=MULTI_MATCH  n=2  label= shortness; of breath
+[12:35:52] 
+[run-all] 63/1641 index=133  'Left chest pain. Patient complains of left sided chest pain for 3 weeks. History of smoking.'
+  [guest] loop index=133
+  [guest] LOOP_INDEX 133
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.18988834128737530640529701644556444516)
+  [guest] ============================================================
+  [guest]   Left chest pain. Patient complains of left sided chest pain for 3 weeks. History of smoking.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a48f9000
+  [guest] input_ids base GPA: 0x00000001a48f9000
+  [guest] input_ids base page GPA: 0x00000001a48f9000
+  [guest] N_image_pad: 525
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=525
+  [guest] N_indication_tokens: 20
+  [guest] tok_start: 568
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a48f9000  N=525  N_ind=20  tok_start=568  HEADER_CONST=43
+[12:35:52] [blind] N=525 (live from guest)  indication starts at tok_start=568  HEADER_CONST=43  scan_len=20(exact)  scanning [568, 587] (20 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=270 weak_blocks=0 mismatch=300 overflow=30 flaky=0
+  [guest] RELEASED
+[12:36:03] [run-all] index=133  verdict=NO_MATCH  n=0  label=
+[12:36:03] 
+[run-all] 64/1641 index=134  'Cough and fever for two days. Left lower rib pain.'
+  [guest] loop index=134
+  [guest] LOOP_INDEX 134
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.14564148411239581389375621768227975263)
+  [guest] ============================================================
+  [guest]   Cough and fever for two days. Left lower rib pain.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4958000
+  [guest] input_ids base GPA: 0x00000001a4958000
+  [guest] input_ids base page GPA: 0x00000001a4958000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 13
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4958000  N=304  N_ind=13  tok_start=347  HEADER_CONST=43
+[12:36:03] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=13(exact)  scanning [347, 359] (13 steps)
+[12:36:13] [blind] MATCH (1): tok=348 idx=10 'ough and' off=0xae0 blocks=1
+  [guest] RELEASED
+[12:36:15] [run-all] index=134  verdict=MATCH  n=1  label=ough and
+[12:36:15] 
+[run-all] 65/1641 index=137  'Visit reason: Cough'
+  [guest] loop index=137
+  [guest] LOOP_INDEX 137
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.96793337288508469548205155280189224148)
+  [guest] ============================================================
+  [guest]   Visit reason: Cough
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4aa5000
+  [guest] input_ids base GPA: 0x00000001a4aa5000
+  [guest] input_ids base page GPA: 0x00000001a4aa5000
+  [guest] N_image_pad: 1178
+  [guest] PINNED map_size=0x3000 ptr=0x7f1a3da8c000
+  [guest]   [GPA] <|image_pad|> count: N=1178
+  [guest] N_indication_tokens: 5
+  [guest] tok_start: 1213
+  [guest] HEADER_CONST_HINT: 35
+  [guest] HOLDING
+  [host] base_gpa=0x1a4aa5000  N=1178  N_ind=5  tok_start=1213  HEADER_CONST=35
+[12:36:16] [blind] N=1178 (live from guest)  indication starts at tok_start=1213  HEADER_CONST=35  scan_len=5(exact)  scanning [1213, 1217] (5 steps)
+  [blind] flaky dump rejected tok_start=1216 token_idx=3 ' Cough' off=0x600
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=59 overflow=30 flaky=1
+  [guest] RELEASED
+[12:36:27] [run-all] index=137  verdict=NO_MATCH  n=0  label=
+[12:36:27] 
+[run-all] 66/1641 index=139  'PICC line placement'
+  [guest] loop index=139
+  [guest] LOOP_INDEX 139
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.82648232074542449722545551269510847089)
+  [guest] ============================================================
+  [guest]   PICC line placement
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4b16000
+  [guest] input_ids base GPA: 0x00000001a4b16000
+  [guest] input_ids base page GPA: 0x00000001a4b16000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 447
+  [guest] HEADER_CONST_HINT: 51
+  [guest] HOLDING
+  [host] base_gpa=0x1a4b16000  N=396  N_ind=4  tok_start=447  HEADER_CONST=51
+[12:36:27] [blind] N=396 (live from guest)  indication starts at tok_start=447  HEADER_CONST=51  scan_len=4(exact)  scanning [447, 450] (4 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:36:37] [run-all] index=139  verdict=NO_MATCH  n=0  label=
+[12:36:37] 
+[run-all] 67/1641 index=140  'Chest pain, dizziness, shortness of breath.'
+  [guest] loop index=140
+  [guest] LOOP_INDEX 140
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.99905404176165924801367432205181007272)
+  [guest] ============================================================
+  [guest]   Chest pain, dizziness, shortness of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4bc5000
+  [guest] input_ids base GPA: 0x00000001a4bc5000
+  [guest] input_ids base page GPA: 0x00000001a4bc5000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 11
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4bc5000  N=594  N_ind=11  tok_start=637  HEADER_CONST=43
+[12:36:37] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=11(exact)  scanning [637, 647] (11 steps)
+[12:36:48] [blind] MULTI_MATCH (2): tok=642 idx=11 ', short' off=0x410 blocks=1 | tok=644 idx=1 'ness of' off=0x420 blocks=1
+  [guest] RELEASED
+[12:36:50] [run-all] index=140  verdict=MULTI_MATCH  n=2  label=, short;ness of
+[12:36:50] 
+[run-all] 68/1641 index=142  'Onset of shortness of breath today in a patient with a history of COPD.'
+  [guest] loop index=142
+  [guest] LOOP_INDEX 142
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.51180992218039430905398928707198490779)
+  [guest] ============================================================
+  [guest]   Onset of shortness of breath today in a patient with a history of COPD.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4c6a000
+  [guest] input_ids base GPA: 0x00000001a4c6a000
+  [guest] input_ids base page GPA: 0x00000001a4c6a000
+  [guest] N_image_pad: 567
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=567
+  [guest] N_indication_tokens: 18
+  [guest] tok_start: 610
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4c6a000  N=567  N_ind=18  tok_start=610  HEADER_CONST=43
+[12:36:50] [blind] N=567 (live from guest)  indication starts at tok_start=610  HEADER_CONST=43  scan_len=18(exact)  scanning [610, 627] (18 steps)
+  [blind] flaky dump rejected tok_start=614 token_idx=1 'ness of' off=0x330
+[blind] No match: swap_fail=12 swap_self=0 no_blocks=234 weak_blocks=0 mismatch=263 overflow=30 flaky=1
+  [guest] RELEASED
+[12:37:02] [run-all] index=142  verdict=NO_MATCH  n=0  label=
+[12:37:02] 
+[run-all] 69/1641 index=143  'Shortness of breath, smoker.'
+  [guest] loop index=143
+  [guest] LOOP_INDEX 143
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.49828689230385605719676083815878406090)
+  [guest] ============================================================
+  [guest]   Shortness of breath, smoker.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4cf1000
+  [guest] input_ids base GPA: 0x00000001a4cf1000
+  [guest] input_ids base page GPA: 0x00000001a4cf1000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 439
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4cf1000  N=396  N_ind=7  tok_start=439  HEADER_CONST=43
+[12:37:02] [blind] N=396 (live from guest)  indication starts at tok_start=439  HEADER_CONST=43  scan_len=7(exact)  scanning [439, 445] (7 steps)
+[12:37:12] [blind] MULTI_MATCH (2): tok=440 idx=1 'ness of' off=0xdc0 blocks=1 | tok=442 idx=8 ' breath,' off=0xdd0 blocks=1
+  [guest] RELEASED
+[12:37:15] [run-all] index=143  verdict=MULTI_MATCH  n=2  label=ness of; breath,
+[12:37:15] 
+[run-all] 70/1641 index=148  'Generalized weakness. Lethargy. Cough. Current history of bronchiectasis.'
+  [guest] loop index=148
+  [guest] LOOP_INDEX 148
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.17255539552651832307821539357976246254)
+  [guest] ============================================================
+  [guest]   Generalized weakness. Lethargy. Cough. Current history of bronchiectasis.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4d92000
+  [guest] input_ids base GPA: 0x00000001a4d92000
+  [guest] input_ids base page GPA: 0x00000001a4d92000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 20
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4d92000  N=594  N_ind=20  tok_start=637  HEADER_CONST=43
+[12:37:15] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=20(exact)  scanning [637, 656] (20 steps)
+  [blind] flaky dump rejected tok_start=646 token_idx=3 ' Cough' off=0x430
+[blind] No match: swap_fail=4 swap_self=0 no_blocks=300 weak_blocks=0 mismatch=265 overflow=30 flaky=1
+  [guest] RELEASED
+[12:37:27] [run-all] index=148  verdict=NO_MATCH  n=0  label=
+[12:37:27] 
+[run-all] 71/1641 index=149  'Shortness of breath and crepitus.'
+  [guest] loop index=149
+  [guest] LOOP_INDEX 149
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.46554990543613148980447983937297682728)
+  [guest] ============================================================
+  [guest]   Shortness of breath and crepitus.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4e0e000
+  [guest] input_ids base GPA: 0x00000001a4e0e000
+  [guest] input_ids base page GPA: 0x00000001a4e0e000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 9
+  [guest] tok_start: 439
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4e0e000  N=396  N_ind=9  tok_start=439  HEADER_CONST=43
+[12:37:28] [blind] N=396 (live from guest)  indication starts at tok_start=439  HEADER_CONST=43  scan_len=9(exact)  scanning [439, 447] (9 steps)
+  [blind] flaky dump rejected tok_start=440 token_idx=1 'ness of' off=0xdc0
+[blind] No match: swap_fail=6 swap_self=0 no_blocks=117 weak_blocks=0 mismatch=116 overflow=30 flaky=1
+  [guest] RELEASED
+[12:37:39] [run-all] index=149  verdict=NO_MATCH  n=0  label=
+[12:37:39] 
+[run-all] 72/1641 index=151  'Shortness of breath, and the cardiomegaly and CHF'
+  [guest] loop index=151
+  [guest] LOOP_INDEX 151
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.28922835407774881508041170270070607884)
+  [guest] ============================================================
+  [guest]   Shortness of breath, and the cardiomegaly and CHF
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4e88000
+  [guest] input_ids base GPA: 0x00000001a4e88000
+  [guest] input_ids base page GPA: 0x00000001a4e88000
+  [guest] N_image_pad: 480
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=480
+  [guest] N_indication_tokens: 14
+  [guest] tok_start: 523
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4e88000  N=480  N_ind=14  tok_start=523  HEADER_CONST=43
+[12:37:40] [blind] N=480 (live from guest)  indication starts at tok_start=523  HEADER_CONST=43  scan_len=14(exact)  scanning [523, 536] (14 steps)
+[12:37:50] [blind] MULTI_MATCH (2): tok=524 idx=1 'ness of' off=0x60 blocks=1 | tok=526 idx=8 ' breath,' off=0x70 blocks=1
+  [guest] RELEASED
+[12:37:52] [run-all] index=151  verdict=MULTI_MATCH  n=2  label=ness of; breath,
+[12:37:52] 
+[run-all] 73/1641 index=152  'Vitreous hemorrhage and traction retinal detachment. Preop workup. Views smoker. Hypertension. Diabetes.'
+  [guest] loop index=152
+  [guest] LOOP_INDEX 152
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.37098440451742278510912084619656681303)
+  [guest] ============================================================
+  [guest]   Vitreous hemorrhage and traction retinal detachment. Preop workup. Views smoker. Hypertension. Diabetes.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4ee2000
+  [guest] input_ids base GPA: 0x00000001a4ee2000
+  [guest] input_ids base page GPA: 0x00000001a4ee2000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 25
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4ee2000  N=304  N_ind=25  tok_start=347  HEADER_CONST=43
+[12:37:52] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=25(exact)  scanning [347, 371] (25 steps)
+[12:38:02] [blind] MATCH (1): tok=366 idx=27 ' Hypert' off=0xb70 blocks=1
+  [guest] RELEASED
+[12:38:04] [run-all] index=152  verdict=MATCH  n=1  label= Hypert
+[12:38:04] 
+[run-all] 74/1641 index=154  'Atrial fibrillation. Decreased oxygen saturations. Short of breath.'
+  [guest] loop index=154
+  [guest] LOOP_INDEX 154
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.35950027423701908917208802745784313490)
+  [guest] ============================================================
+  [guest]   Atrial fibrillation. Decreased oxygen saturations. Short of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a4f4c000
+  [guest] input_ids base GPA: 0x00000001a4f4c000
+  [guest] input_ids base page GPA: 0x00000001a4f4c000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 15
+  [guest] tok_start: 439
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a4f4c000  N=396  N_ind=15  tok_start=439  HEADER_CONST=43
+[12:38:04] [blind] N=396 (live from guest)  indication starts at tok_start=439  HEADER_CONST=43  scan_len=15(exact)  scanning [439, 453] (15 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=210 weak_blocks=0 mismatch=210 overflow=30 flaky=0
+  [guest] RELEASED
+[12:38:17] [run-all] index=154  verdict=NO_MATCH  n=0  label=
+[12:38:17] 
+[run-all] 75/1641 index=155  'Shortness of breath and cough for 1 day'
+  [guest] loop index=155
+  [guest] LOOP_INDEX 155
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.81678794441387537576335110480795839457)
+  [guest] ============================================================
+  [guest]   Shortness of breath and cough for 1 day
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5419000
+  [guest] input_ids base GPA: 0x00000001a5419000
+  [guest] input_ids base page GPA: 0x00000001a5419000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 10
+  [guest] tok_start: 780
+  [guest] HEADER_CONST_HINT: 51
+  [guest] HOLDING
+  [host] base_gpa=0x1a5419000  N=729  N_ind=10  tok_start=780  HEADER_CONST=51
+[12:38:17] [blind] N=729 (live from guest)  indication starts at tok_start=780  HEADER_CONST=51  scan_len=10(exact)  scanning [780, 789] (10 steps)
+[12:38:26] [blind] MULTI_MATCH (2): tok=780 idx=2 ' Shortness' off=0x860 blocks=1 | tok=782 idx=0 ' of breath' off=0x870 blocks=1
+  [guest] RELEASED
+[12:38:28] [run-all] index=155  verdict=MULTI_MATCH  n=2  label= Shortness; of breath
+[12:38:28] 
+[run-all] 76/1641 index=156  'Weakness and unresponsive during dialysis.'
+  [guest] loop index=156
+  [guest] LOOP_INDEX 156
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.81629142347693716206077816669495906259)
+  [guest] ============================================================
+  [guest]   Weakness and unresponsive during dialysis.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a54b1000
+  [guest] input_ids base GPA: 0x00000001a54b1000
+  [guest] input_ids base page GPA: 0x00000001a54b1000
+  [guest] N_image_pad: 513
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=513
+  [guest] N_indication_tokens: 9
+  [guest] tok_start: 556
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a54b1000  N=513  N_ind=9  tok_start=556  HEADER_CONST=43
+[12:38:29] [blind] N=513 (live from guest)  indication starts at tok_start=556  HEADER_CONST=43  scan_len=9(exact)  scanning [556, 564] (9 steps)
+[12:38:38] [blind] MATCH (1): tok=556 idx=18 ' Weakness' off=0x160 blocks=1
+  [guest] RELEASED
+[12:38:40] [run-all] index=156  verdict=MATCH  n=1  label= Weakness
+[12:38:40] 
+[run-all] 77/1641 index=158  'Coronary artery disease. Status post CABG.'
+  [guest] loop index=158
+  [guest] LOOP_INDEX 158
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.32305886222575570975182420446367133812)
+  [guest] ============================================================
+  [guest]   Coronary artery disease. Status post CABG.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5562000
+  [guest] input_ids base GPA: 0x00000001a5562000
+  [guest] input_ids base page GPA: 0x00000001a5562000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 10
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5562000  N=594  N_ind=10  tok_start=637  HEADER_CONST=43
+[12:38:40] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=10(exact)  scanning [637, 646] (10 steps)
+[12:38:50] [blind] MATCH (1): tok=644 idx=21 ' CABG' off=0x420 blocks=1
+  [guest] RELEASED
+[12:38:52] [run-all] index=158  verdict=MATCH  n=1  label= CABG
+[12:38:52] 
+[run-all] 78/1641 index=160  'Increased Weakness today per family member; HTN;'
+  [guest] loop index=160
+  [guest] LOOP_INDEX 160
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.81266407520317697447904310643384971284)
+  [guest] ============================================================
+  [guest]   Increased Weakness today per family member; HTN;
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a55fd000
+  [guest] input_ids base GPA: 0x00000001a55fd000
+  [guest] input_ids base page GPA: 0x00000001a55fd000
+  [guest] N_image_pad: 528
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=528
+  [guest] N_indication_tokens: 11
+  [guest] tok_start: 571
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a55fd000  N=528  N_ind=11  tok_start=571  HEADER_CONST=43
+[12:38:53] [blind] N=528 (live from guest)  indication starts at tok_start=571  HEADER_CONST=43  scan_len=11(exact)  scanning [571, 581] (11 steps)
+[12:39:02] [blind] MATCH (1): tok=572 idx=18 ' Weakness' off=0x1e0 blocks=1
+  [guest] RELEASED
+[12:39:04] [run-all] index=160  verdict=MATCH  n=1  label= Weakness
+[12:39:04] 
+[run-all] 79/1641 index=162  'Shortness of breath and weakness.'
+  [guest] loop index=162
+  [guest] LOOP_INDEX 162
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.38502967800919800176659230729453648228)
+  [guest] ============================================================
+  [guest]   Shortness of breath and weakness.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a56a2000
+  [guest] input_ids base GPA: 0x00000001a56a2000
+  [guest] input_ids base page GPA: 0x00000001a56a2000
+  [guest] N_image_pad: 576
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=576
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 619
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a56a2000  N=576  N_ind=7  tok_start=619  HEADER_CONST=43
+[12:39:04] [blind] N=576 (live from guest)  indication starts at tok_start=619  HEADER_CONST=43  scan_len=7(exact)  scanning [619, 625] (7 steps)
+[12:39:14] [blind] MATCH (1): tok=620 idx=1 'ness of' off=0x360 blocks=1
+  [guest] RELEASED
+[12:39:17] [run-all] index=162  verdict=MATCH  n=1  label=ness of
+[12:39:17] 
+[run-all] 80/1641 index=163  'COPD'
+  [guest] loop index=163
+  [guest] LOOP_INDEX 163
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.12948697003896540647010441882390432007)
+  [guest] ============================================================
+  [guest]   COPD
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a56ec000
+  [guest] input_ids base GPA: 0x00000001a56ec000
+  [guest] input_ids base page GPA: 0x00000001a56ec000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 2
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a56ec000  N=304  N_ind=2  tok_start=347  HEADER_CONST=43
+[12:39:17] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=2(exact)  scanning [347, 348] (2 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=0 overflow=30 flaky=0
+  [guest] RELEASED
+[12:39:23] [run-all] index=163  verdict=NO_MATCH  n=0  label=
+[12:39:23] 
+[run-all] 81/1641 index=165  'Pneumonia. Congestion. Shortness of breath.'
+  [guest] loop index=165
+  [guest] LOOP_INDEX 165
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.44568541477893380345829360218638237267)
+  [guest] ============================================================
+  [guest]   Pneumonia. Congestion. Shortness of breath.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5745000
+  [guest] input_ids base GPA: 0x00000001a5745000
+  [guest] input_ids base page GPA: 0x00000001a5745000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 13
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5745000  N=304  N_ind=13  tok_start=347  HEADER_CONST=43
+[12:39:24] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=13(exact)  scanning [347, 359] (13 steps)
+  [blind] flaky dump rejected tok_start=356 token_idx=1 'ness of' off=0xb20
+[blind] No match: swap_fail=2 swap_self=0 no_blocks=179 weak_blocks=0 mismatch=178 overflow=30 flaky=1
+  [guest] RELEASED
+[12:39:36] [run-all] index=165  verdict=NO_MATCH  n=0  label=
+[12:39:36] 
+[run-all] 82/1641 index=167  'Right-sided rib pain.'
+  [guest] loop index=167
+  [guest] LOOP_INDEX 167
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.67453204054330578292933044875539264842)
+  [guest] ============================================================
+  [guest]   Right-sided rib pain.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a57cb000
+  [guest] input_ids base GPA: 0x00000001a57cb000
+  [guest] input_ids base page GPA: 0x00000001a57cb000
+  [guest] N_image_pad: 396
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=396
+  [guest] N_indication_tokens: 5
+  [guest] tok_start: 439
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a57cb000  N=396  N_ind=5  tok_start=439  HEADER_CONST=43
+[12:39:36] [blind] N=396 (live from guest)  indication starts at tok_start=439  HEADER_CONST=43  scan_len=5(exact)  scanning [439, 443] (5 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=60 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:39:48] [run-all] index=167  verdict=NO_MATCH  n=0  label=
+[12:39:48] 
+[run-all] 83/1641 index=172  'Cough, wheezing and chest pain for 4 days.'
+  [guest] loop index=172
+  [guest] LOOP_INDEX 172
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.70115061970052272687714671240202689455)
+  [guest] ============================================================
+  [guest]   Cough, wheezing and chest pain for 4 days.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a586e000
+  [guest] input_ids base GPA: 0x00000001a586e000
+  [guest] input_ids base page GPA: 0x00000001a586e000
+  [guest] N_image_pad: 546
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=546
+  [guest] N_indication_tokens: 14
+  [guest] tok_start: 597
+  [guest] HEADER_CONST_HINT: 51
+  [guest] HOLDING
+  [host] base_gpa=0x1a586e000  N=546  N_ind=14  tok_start=597  HEADER_CONST=51
+[12:39:48] [blind] N=546 (live from guest)  indication starts at tok_start=597  HEADER_CONST=51  scan_len=14(exact)  scanning [597, 610] (14 steps)
+[12:39:58] [blind] MATCH (1): tok=604 idx=6 ' chest pain' off=0x2e0 blocks=1
+  [guest] RELEASED
+[12:40:00] [run-all] index=172  verdict=MATCH  n=1  label= chest pain
+[12:40:00] 
+[run-all] 84/1641 index=174  'Legs swollen - denies cough, SOB'
+  [guest] loop index=174
+  [guest] LOOP_INDEX 174
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.25991724350790692579298153212564587261)
+  [guest] ============================================================
+  [guest]   Legs swollen - denies cough, SOB
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5916000
+  [guest] input_ids base GPA: 0x00000001a5916000
+  [guest] input_ids base page GPA: 0x00000001a5916000
+  [guest] N_image_pad: 546
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=546
+  [guest] N_indication_tokens: 8
+  [guest] tok_start: 589
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5916000  N=546  N_ind=8  tok_start=589  HEADER_CONST=43
+[12:40:00] [blind] N=546 (live from guest)  indication starts at tok_start=589  HEADER_CONST=43  scan_len=8(exact)  scanning [589, 596] (8 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=120 weak_blocks=0 mismatch=90 overflow=30 flaky=0
+  [guest] RELEASED
+[12:40:11] [run-all] index=174  verdict=NO_MATCH  n=0  label=
+[12:40:11] 
+[run-all] 85/1641 index=176  'Shortness of breath. Chest pain. Chronic bronchitis. Reportedly diagnosed with laryngitis on 10/03/10.'
+  [guest] loop index=176
+  [guest] LOOP_INDEX 176
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.80610183556964273765419072887246113565)
+  [guest] ============================================================
+  [guest]   Shortness of breath. Chest pain. Chronic bronchitis. Reportedly diagnosed with laryngitis on 10/03/10.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a596d000
+  [guest] input_ids base GPA: 0x00000001a596d000
+  [guest] input_ids base page GPA: 0x00000001a596d000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 32
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a596d000  N=304  N_ind=32  tok_start=347  HEADER_CONST=43
+[12:40:12] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=32(exact)  scanning [347, 378] (32 steps)
+[12:40:21] [blind] MULTI_MATCH (3): tok=348 idx=1 'ness of' off=0xae0 blocks=1 | tok=350 idx=5 ' breath.' off=0xaf0 blocks=1 | tok=352 idx=7 ' Chest pain' off=0xb00 blocks=1
+  [guest] RELEASED
+[12:40:23] [run-all] index=176  verdict=MULTI_MATCH  n=3  label=ness of; breath.; Chest pain
+[12:40:23] 
+[run-all] 86/1641 index=177  'Cough and fever 3 days'
+  [guest] loop index=177
+  [guest] LOOP_INDEX 177
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.98691576285182145111535426311214182033)
+  [guest] ============================================================
+  [guest]   Cough and fever 3 days
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a59ac000
+  [guest] input_ids base GPA: 0x00000001a59ac000
+  [guest] input_ids base page GPA: 0x00000001a59ac000
+  [guest] N_image_pad: 270
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=270
+  [guest] N_indication_tokens: 7
+  [guest] tok_start: 312
+  [guest] HEADER_CONST_HINT: 42
+  [guest] HOLDING
+  [host] base_gpa=0x1a59ac000  N=270  N_ind=7  tok_start=312  HEADER_CONST=42
+[12:40:24] [blind] N=270 (live from guest)  indication starts at tok_start=312  HEADER_CONST=42  scan_len=7(exact)  scanning [312, 318] (7 steps)
+[12:40:33] [blind] MATCH (1): tok=312 idx=3 ' Cough' off=0x9c0 blocks=1
+  [guest] RELEASED
+[12:40:36] [run-all] index=177  verdict=MATCH  n=1  label= Cough
+[12:40:36] 
+[run-all] 87/1641 index=179  'Chest pain associated with headache and nausea; history of atrial fibrillation, rest angina, asthma, former smoker.'
+  [guest] loop index=179
+  [guest] LOOP_INDEX 179
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.11801440884467728136831034277278262119)
+  [guest] ============================================================
+  [guest]   Chest pain associated with headache and nausea; history of atrial fibrillation, rest angina, asthma, former smoker.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5a84000
+  [guest] input_ids base GPA: 0x00000001a5a84000
+  [guest] input_ids base page GPA: 0x00000001a5a84000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 24
+  [guest] tok_start: 772
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5a84000  N=729  N_ind=24  tok_start=772  HEADER_CONST=43
+[12:40:36] [blind] N=729 (live from guest)  indication starts at tok_start=772  HEADER_CONST=43  scan_len=24(exact)  scanning [772, 795] (24 steps)
+[12:40:45] [blind] MATCH (1): tok=772 idx=7 ' Chest pain' off=0x820 blocks=1
+  [guest] RELEASED
+[12:40:47] [run-all] index=179  verdict=MATCH  n=1  label= Chest pain
+[12:40:47] 
+[run-all] 88/1641 index=180  'Cough, fever'
+  [guest] loop index=180
+  [guest] LOOP_INDEX 180
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.67466848424012238600546713487801117371)
+  [guest] ============================================================
+  [guest]   Cough, fever
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5ae6000
+  [guest] input_ids base GPA: 0x00000001a5ae6000
+  [guest] input_ids base page GPA: 0x00000001a5ae6000
+  [guest] N_image_pad: 340
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=340
+  [guest] N_indication_tokens: 4
+  [guest] tok_start: 382
+  [guest] HEADER_CONST_HINT: 42
+  [guest] HOLDING
+  [host] base_gpa=0x1a5ae6000  N=340  N_ind=4  tok_start=382  HEADER_CONST=42
+[12:40:48] [blind] N=340 (live from guest)  indication starts at tok_start=382  HEADER_CONST=42  scan_len=4(exact)  scanning [382, 385] (4 steps)
+[12:40:57] [blind] MATCH (1): tok=382 idx=3 ' Cough' off=0xbf0 blocks=1
+  [guest] RELEASED
+[12:40:59] [run-all] index=180  verdict=MATCH  n=1  label= Cough
+[12:40:59] 
+[run-all] 89/1641 index=186  'Chest pain; Two views of the chest in frontal and lateral projections are performed.'
+  [guest] loop index=186
+  [guest] LOOP_INDEX 186
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.23045123140429713020541033437262032698)
+  [guest] ============================================================
+  [guest]   Chest pain; Two views of the chest in frontal and lateral projections are performed.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5b93000
+  [guest] input_ids base GPA: 0x00000001a5b93000
+  [guest] input_ids base page GPA: 0x00000001a5b93000
+  [guest] N_image_pad: 525
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=525
+  [guest] N_indication_tokens: 16
+  [guest] tok_start: 560
+  [guest] HEADER_CONST_HINT: 35
+  [guest] HOLDING
+  [host] base_gpa=0x1a5b93000  N=525  N_ind=16  tok_start=560  HEADER_CONST=35
+[12:40:59] [blind] N=525 (live from guest)  indication starts at tok_start=560  HEADER_CONST=35  scan_len=16(exact)  scanning [560, 575] (16 steps)
+[12:41:10] [blind] MATCH (1): tok=560 idx=7 ' Chest pain' off=0x180 blocks=1
+  [guest] RELEASED
+[12:41:12] [run-all] index=186  verdict=MATCH  n=1  label= Chest pain
+[12:41:12] 
+[run-all] 90/1641 index=187  'Left-sided chest pain post lifting up a heavy object.'
+  [guest] loop index=187
+  [guest] LOOP_INDEX 187
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.62396166290352475929794880182622752869)
+  [guest] ============================================================
+  [guest]   Left-sided chest pain post lifting up a heavy object.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5c86000
+  [guest] input_ids base GPA: 0x00000001a5c86000
+  [guest] input_ids base page GPA: 0x00000001a5c86000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 11
+  [guest] tok_start: 772
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5c86000  N=729  N_ind=11  tok_start=772  HEADER_CONST=43
+[12:41:12] [blind] N=729 (live from guest)  indication starts at tok_start=772  HEADER_CONST=43  scan_len=11(exact)  scanning [772, 782] (11 steps)
+  [blind] flaky dump rejected tok_start=774 token_idx=6 ' chest pain' off=0x830
+[blind] No match: swap_fail=3 swap_self=0 no_blocks=150 weak_blocks=0 mismatch=146 overflow=30 flaky=1
+  [guest] RELEASED
+[12:41:24] [run-all] index=187  verdict=NO_MATCH  n=0  label=
+[12:41:24] 
+[run-all] 91/1641 index=188  'Hypertension. Atrial fibrillation. Urinary tract infection'
+  [guest] loop index=188
+  [guest] LOOP_INDEX 188
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.10971505857773961162023010153828212407)
+  [guest] ============================================================
+  [guest]   Hypertension. Atrial fibrillation. Urinary tract infection
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5ce6000
+  [guest] input_ids base GPA: 0x00000001a5ce6000
+  [guest] input_ids base page GPA: 0x00000001a5ce6000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 13
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5ce6000  N=304  N_ind=13  tok_start=347  HEADER_CONST=43
+[12:41:24] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=13(exact)  scanning [347, 359] (13 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=180 weak_blocks=0 mismatch=180 overflow=30 flaky=0
+  [guest] RELEASED
+[12:41:37] [run-all] index=188  verdict=NO_MATCH  n=0  label=
+[12:41:37] 
+[run-all] 92/1641 index=189  'Respiratory failure. NG tube in place.'
+  [guest] loop index=189
+  [guest] LOOP_INDEX 189
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.18565843953533578699577196617308506017)
+  [guest] ============================================================
+  [guest]   Respiratory failure. NG tube in place.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5d6f000
+  [guest] input_ids base GPA: 0x00000001a5d6f000
+  [guest] input_ids base page GPA: 0x00000001a5d6f000
+  [guest] N_image_pad: 504
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=504
+  [guest] N_indication_tokens: 9
+  [guest] tok_start: 547
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5d6f000  N=504  N_ind=9  tok_start=547  HEADER_CONST=43
+[12:41:38] [blind] N=504 (live from guest)  indication starts at tok_start=547  HEADER_CONST=43  scan_len=9(exact)  scanning [547, 555] (9 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=120 weak_blocks=0 mismatch=120 overflow=30 flaky=0
+  [guest] RELEASED
+[12:41:49] [run-all] index=189  verdict=NO_MATCH  n=0  label=
+[12:41:49] 
+[run-all] 93/1641 index=191  '27-year-old male with left side gunshot wound and pneumothorax. Chest tube.'
+  [guest] loop index=191
+  [guest] LOOP_INDEX 191
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.53833561492038516726508793403685756972)
+  [guest] ============================================================
+  [guest]   27-year-old male with left side gunshot wound and pneumothorax. Chest tube.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5e1c000
+  [guest] input_ids base GPA: 0x00000001a5e1c000
+  [guest] input_ids base page GPA: 0x00000001a5e1c000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 19
+  [guest] tok_start: 638
+  [guest] HEADER_CONST_HINT: 44
+  [guest] HOLDING
+  [host] base_gpa=0x1a5e1c000  N=594  N_ind=19  tok_start=638  HEADER_CONST=44
+[12:41:49] [blind] N=594 (live from guest)  indication starts at tok_start=638  HEADER_CONST=44  scan_len=19(exact)  scanning [638, 656] (19 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=270 weak_blocks=0 mismatch=270 overflow=30 flaky=0
+  [guest] RELEASED
+[12:42:00] [run-all] index=191  verdict=NO_MATCH  n=0  label=
+[12:42:00] 
+[run-all] 94/1641 index=192  'Chest and rib pain after a fall today.'
+  [guest] loop index=192
+  [guest] LOOP_INDEX 192
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.29374643322262754452886157957946151459)
+  [guest] ============================================================
+  [guest]   Chest and rib pain after a fall today.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5ecb000
+  [guest] input_ids base GPA: 0x00000001a5ecb000
+  [guest] input_ids base page GPA: 0x00000001a5ecb000
+  [guest] N_image_pad: 528
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=528
+  [guest] N_indication_tokens: 9
+  [guest] tok_start: 571
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5ecb000  N=528  N_ind=9  tok_start=571  HEADER_CONST=43
+[12:42:00] [blind] N=528 (live from guest)  indication starts at tok_start=571  HEADER_CONST=43  scan_len=9(exact)  scanning [571, 579] (9 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=120 weak_blocks=0 mismatch=120 overflow=30 flaky=0
+  [guest] RELEASED
+[12:42:11] [run-all] index=192  verdict=NO_MATCH  n=0  label=
+[12:42:11] 
+[run-all] 95/1641 index=194  'Chest pain and acid reflux.'
+  [guest] loop index=194
+  [guest] LOOP_INDEX 194
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.91254352427654249468765075506407362716)
+  [guest] ============================================================
+  [guest]   Chest pain and acid reflux.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a5fb7000
+  [guest] input_ids base GPA: 0x00000001a5fb7000
+  [guest] input_ids base page GPA: 0x00000001a5fb7000
+  [guest] N_image_pad: 729
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=729
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 772
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a5fb7000  N=729  N_ind=6  tok_start=772  HEADER_CONST=43
+[12:42:12] [blind] N=729 (live from guest)  indication starts at tok_start=772  HEADER_CONST=43  scan_len=6(exact)  scanning [772, 777] (6 steps)
+[12:42:21] [blind] MATCH (1): tok=772 idx=7 ' Chest pain' off=0x820 blocks=1
+  [guest] RELEASED
+[12:42:23] [run-all] index=194  verdict=MATCH  n=1  label= Chest pain
+[12:42:23] 
+[run-all] 96/1641 index=196  'PICC placement, weakness.'
+  [guest] loop index=196
+  [guest] LOOP_INDEX 196
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.58576084947390659203853315953789681897)
+  [guest] ============================================================
+  [guest]   PICC placement, weakness.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a600e000
+  [guest] input_ids base GPA: 0x00000001a600e000
+  [guest] input_ids base page GPA: 0x00000001a600e000
+  [guest] N_image_pad: 304
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=304
+  [guest] N_indication_tokens: 6
+  [guest] tok_start: 347
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a600e000  N=304  N_ind=6  tok_start=347  HEADER_CONST=43
+[12:42:24] [blind] N=304 (live from guest)  indication starts at tok_start=347  HEADER_CONST=43  scan_len=6(exact)  scanning [347, 352] (6 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=90 weak_blocks=0 mismatch=60 overflow=30 flaky=0
+  [guest] RELEASED
+[12:42:35] [run-all] index=196  verdict=NO_MATCH  n=0  label=
+[12:42:35] 
+[run-all] 97/1641 index=198  '3 y/o F; fever, cough, congestion. Seizure episode.'
+  [guest] loop index=198
+  [guest] LOOP_INDEX 198
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.51642549434661571429150664193362753940)
+  [guest] ============================================================
+  [guest]   3 y/o F; fever, cough, congestion. Seizure episode.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a605b000
+  [guest] input_ids base GPA: 0x00000001a605b000
+  [guest] input_ids base page GPA: 0x00000001a605b000
+  [guest] N_image_pad: 256
+  [guest] PINNED map_size=0x1000 ptr=0x7f1a3dacf000
+  [guest]   [GPA] <|image_pad|> count: N=256
+  [guest] N_indication_tokens: 16
+  [guest] tok_start: 299
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a605b000  N=256  N_ind=16  tok_start=299  HEADER_CONST=43
+[12:42:36] [blind] N=256 (live from guest)  indication starts at tok_start=299  HEADER_CONST=43  scan_len=16(exact)  scanning [299, 314] (16 steps)
+  [blind] flaky dump rejected tok_start=306 token_idx=14 ' cough,' off=0x990
+[blind] No match: swap_fail=3 swap_self=0 no_blocks=240 weak_blocks=0 mismatch=206 overflow=30 flaky=1
+  [guest] RELEASED
+[12:42:47] [run-all] index=198  verdict=NO_MATCH  n=0  label=
+[12:42:47] 
+[run-all] 98/1641 index=199  'Hypoxia'
+  [guest] loop index=199
+  [guest] LOOP_INDEX 199
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.36181660554520350256467013014761681053)
+  [guest] ============================================================
+  [guest]   Hypoxia
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a60f2000
+  [guest] input_ids base GPA: 0x00000001a60f2000
+  [guest] input_ids base page GPA: 0x00000001a60f2000
+  [guest] N_image_pad: 528
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=528
+  [guest] N_indication_tokens: 3
+  [guest] tok_start: 571
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a60f2000  N=528  N_ind=3  tok_start=571  HEADER_CONST=43
+[12:42:47] [blind] N=528 (live from guest)  indication starts at tok_start=571  HEADER_CONST=43  scan_len=3(exact)  scanning [571, 573] (3 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:42:59] [run-all] index=199  verdict=NO_MATCH  n=0  label=
+[12:42:59] 
+[run-all] 99/1641 index=200  'Hypoxemia'
+  [guest] loop index=200
+  [guest] LOOP_INDEX 200
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.83701267397800787640152303798050932708)
+  [guest] ============================================================
+  [guest]   Hypoxemia
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a61b3000
+  [guest] input_ids base GPA: 0x00000001a61b3000
+  [guest] input_ids base page GPA: 0x00000001a61b3000
+  [guest] N_image_pad: 594
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=594
+  [guest] N_indication_tokens: 3
+  [guest] tok_start: 637
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a61b3000  N=594  N_ind=3  tok_start=637  HEADER_CONST=43
+[12:42:59] [blind] N=594 (live from guest)  indication starts at tok_start=637  HEADER_CONST=43  scan_len=3(exact)  scanning [637, 639] (3 steps)
+[blind] No match: swap_fail=0 swap_self=0 no_blocks=30 weak_blocks=0 mismatch=30 overflow=30 flaky=0
+  [guest] RELEASED
+[12:43:11] [run-all] index=200  verdict=NO_MATCH  n=0  label=
+[12:43:11] 
+[run-all] 100/1641 index=201  'Six months of nonproductive cough, nonsmoker.'
+  [guest] loop index=201
+  [guest] LOOP_INDEX 201
+  [guest] 
+  [guest] ============================================================
+  [guest]   INDICATION (sample id: 1.2.826.0.1.3680043.8.498.20177004693679871616465521408636116717)
+  [guest] ============================================================
+  [guest]   Six months of nonproductive cough, nonsmoker.
+  [guest] ============================================================
+  [guest] 
+  [guest] [GPA] input/input_ids: GPA=0x00000001a6287000
+  [guest] input_ids base GPA: 0x00000001a6287000
+  [guest] input_ids base page GPA: 0x00000001a6287000
+  [guest] N_image_pad: 648
+  [guest] PINNED map_size=0x2000 ptr=0x7f1a3da8d000
+  [guest]   [GPA] <|image_pad|> count: N=648
+  [guest] N_indication_tokens: 11
+  [guest] tok_start: 691
+  [guest] HEADER_CONST_HINT: 43
+  [guest] HOLDING
+  [host] base_gpa=0x1a6287000  N=648  N_ind=11  tok_start=691  HEADER_CONST=43
+[12:43:11] [blind] N=648 (live from guest)  indication starts at tok_start=691  HEADER_CONST=43  scan_len=11(exact)  scanning [691, 701] (11 steps)

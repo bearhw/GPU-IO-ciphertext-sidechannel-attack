@@ -1,0 +1,13 @@
+{
+  "fixed_gpa": "0x30874b000",
+  "mean": 0.1307,
+  "std": 0.3081,
+  "n_ref": 1,
+  "refs": {
+    "0": {
+      "ref_gpa": "0x281502000",
+      "fixed_gpa": "0x30874b000",
+      "file": "/home/eun/proof_code/mnist/dict_pages_mnist/ref_000.out"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+Loading UNet_training_v5.json ...
+  .out_v5.list index count : 2501
+  v5.json matched samples  : 2501
+  RealListDataset: 2250 files loaded
+
+UNetGeneratorR (v8r2_new) | Device: cpu
+  json_train : 2250 (matched, augment_sparsity)
+  real_ds    : 2250 (.out_v5.list, real, val 제외)
+  train total: 4500
+  val        : 251 (matched, fixed sparsity)
+G params: 1,024,993  D params: 34,593
+--------------------------------------------------------------------------------

@@ -1,0 +1,100 @@
+!<thin>
+//                                              640       `
+sock.o/
+request_sock.o/
+skbuff.o/
+datagram.o/
+stream.o/
+scm.o/
+gen_stats.o/
+gen_estimator.o/
+net_namespace.o/
+secure_seq.o/
+flow_dissector.o/
+sysctl_net_core.o/
+dev.o/
+dev_addr_lists.o/
+dst.o/
+netevent.o/
+neighbour.o/
+rtnetlink.o/
+utils.o/
+link_watch.o/
+filter.o/
+sock_diag.o/
+dev_ioctl.o/
+tso.o/
+sock_reuseport.o/
+fib_notifier.o/
+xdp.o/
+flow_offload.o/
+gro.o/
+net-sysfs.o/
+page_pool.o/
+net-procfs.o/
+netpoll.o/
+fib_rules.o/
+net-traces.o/
+drop_monitor.o/
+selftests.o/
+timestamping.o/
+ptp_classifier.o/
+netprio_cgroup.o/
+netclassid_cgroup.o/
+lwtunnel.o/
+lwt_bpf.o/
+dst_cache.o/
+devlink.o/
+gro_cells.o/
+skmsg.o/
+sock_map.o/
+bpf_sk_storage.o/
+/0             /0           0     0     644     484352    `
+/8              0           0     0     644     18520     `
+/24             0           0     0     644     652912    `
+/34             0           0     0     644     108384    `
+/46             0           0     0     644     65944     `
+/56             0           0     0     644     56992     `
+/63             0           0     0     644     44744     `
+/76             0           0     0     644     52120     `
+/93             0           0     0     644     186904    `
+/110            0           0     0     644     30872     `
+/124            0           0     0     644     153040    `
+/142            0           0     0     644     73240     `
+/161            0           0     0     644     1193624   `
+/168            0           0     0     644     106352    `
+/186            0           0     0     644     66040     `
+/193            0           0     0     644     11024     `
+/205            0           0     0     644     421704    `
+/218            0           0     0     644     506464    `
+/231            0           0     0     644     52304     `
+/240            0           0     0     644     45080     `
+/254            0           0     0     644     898472    `
+/264            0           0     0     644     70360     `
+/277            0           0     0     644     61296     `
+/290            0           0     0     644     38640     `
+/297            0           0     0     644     76384     `
+/315            0           0     0     644     36352     `
+/331            0           0     0     644     136456    `
+/338            0           0     0     644     102184    `
+/354            0           0     0     644     122416    `
+/361            0           0     0     644     232904    `
+/374            0           0     0     644     141824    `
+/387            0           0     0     644     42648     `
+/401            0           0     0     644     162296    `
+/412            0           0     0     644     140248    `
+/425            0           0     0     644     712736    `
+/439            0           0     0     644     172016    `
+/455            0           0     0     644     50136     `
+/468            0           0     0     644     32248     `
+/484            0           0     0     644     18776     `
+/502            0           0     0     644     47472     `
+/520            0           0     0     644     36448     `
+/541            0           0     0     644     71552     `
+/553            0           0     0     644     99944     `
+/564            0           0     0     644     44936     `
+/577            0           0     0     644     1077832   `
+/588            0           0     0     644     39624     `
+/601            0           0     0     644     196584    `
+/610            0           0     0     644     179384    `
+/622            0           0     0     644     119816    `

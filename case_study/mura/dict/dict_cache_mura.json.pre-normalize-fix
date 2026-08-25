@@ -1,0 +1,325 @@
+{
+  "fixed_gpa": "0x12ac29000",
+  "refs": {
+    "0": {
+      "ref_gpa": "0x1150b1000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_000.out"
+    },
+    "4": {
+      "ref_gpa": "0x1150b7000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_004.out"
+    },
+    "1": {
+      "ref_gpa": "0x1150af000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_001.out"
+    },
+    "3": {
+      "ref_gpa": "0x115546000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_003.out"
+    },
+    "2": {
+      "ref_gpa": "0x11554d000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_002.out"
+    },
+    "5": {
+      "ref_gpa": "0x115554000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_005.out"
+    },
+    "29": {
+      "ref_gpa": "0x11555b000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_029.out"
+    },
+    "30": {
+      "ref_gpa": "0x115562000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_030.out"
+    },
+    "35": {
+      "ref_gpa": "0x11556a000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_035.out"
+    },
+    "32": {
+      "ref_gpa": "0x115571000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_032.out"
+    },
+    "34": {
+      "ref_gpa": "0x115578000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_034.out"
+    },
+    "33": {
+      "ref_gpa": "0x11557f000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_033.out"
+    },
+    "31": {
+      "ref_gpa": "0x1159c6000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_031.out"
+    },
+    "38": {
+      "ref_gpa": "0x121e95000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_038.out"
+    },
+    "10": {
+      "ref_gpa": "0x121ecc000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_010.out"
+    },
+    "28": {
+      "ref_gpa": "0x121eec000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_028.out"
+    },
+    "9": {
+      "ref_gpa": "0x107a93000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_009.out"
+    },
+    "36": {
+      "ref_gpa": "0x107a8b000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_036.out"
+    },
+    "27": {
+      "ref_gpa": "0x10886b000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_027.out"
+    },
+    "11": {
+      "ref_gpa": "0x11941a000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_011.out"
+    },
+    "8": {
+      "ref_gpa": "0x115742000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_008.out"
+    },
+    "37": {
+      "ref_gpa": "0x1150aa000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_037.out"
+    },
+    "6": {
+      "ref_gpa": "0x107db1000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_006.out"
+    },
+    "7": {
+      "ref_gpa": "0x107db8000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_007.out"
+    },
+    "26": {
+      "ref_gpa": "0x107daf000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_026.out"
+    },
+    "39": {
+      "ref_gpa": "0x11554e000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_039.out"
+    },
+    "50": {
+      "ref_gpa": "0x115556000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_050.out"
+    },
+    "40": {
+      "ref_gpa": "0x121efd000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_040.out"
+    },
+    "25": {
+      "ref_gpa": "0x11753e000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_025.out"
+    },
+    "57": {
+      "ref_gpa": "0x107fa5000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_057.out"
+    },
+    "41": {
+      "ref_gpa": "0x11556f000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_041.out"
+    },
+    "42": {
+      "ref_gpa": "0x107aff000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_042.out"
+    },
+    "58": {
+      "ref_gpa": "0x115541000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_058.out"
+    },
+    "56": {
+      "ref_gpa": "0x117db1000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_056.out"
+    },
+    "43": {
+      "ref_gpa": "0x115561000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_043.out"
+    },
+    "24": {
+      "ref_gpa": "0x115571000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_024.out"
+    },
+    "55": {
+      "ref_gpa": "0x11777b000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_055.out"
+    },
+    "44": {
+      "ref_gpa": "0x12a803000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_044.out"
+    },
+    "59": {
+      "ref_gpa": "0x117705000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_059.out"
+    },
+    "54": {
+      "ref_gpa": "0x117c2e000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_054.out"
+    },
+    "45": {
+      "ref_gpa": "0x117f70000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_045.out"
+    },
+    "53": {
+      "ref_gpa": "0x117f39000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_053.out"
+    },
+    "52": {
+      "ref_gpa": "0x121ecb000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_052.out"
+    },
+    "205": {
+      "ref_gpa": "0x121e84000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_205.out"
+    },
+    "23": {
+      "ref_gpa": "0x115266000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_023.out"
+    },
+    "46": {
+      "ref_gpa": "0x117aff000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_046.out"
+    },
+    "47": {
+      "ref_gpa": "0x115559000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_047.out"
+    },
+    "51": {
+      "ref_gpa": "0x117d82000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_051.out"
+    },
+    "49": {
+      "ref_gpa": "0x121e94000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_049.out"
+    },
+    "60": {
+      "ref_gpa": "0x117aad000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_060.out"
+    },
+    "22": {
+      "ref_gpa": "0x117ab7000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_022.out"
+    },
+    "48": {
+      "ref_gpa": "0x1159c8000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_048.out"
+    },
+    "12": {
+      "ref_gpa": "0x11ec3a000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_012.out"
+    },
+    "21": {
+      "ref_gpa": "0x11574b000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_021.out"
+    },
+    "61": {
+      "ref_gpa": "0x107a95000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_061.out"
+    },
+    "62": {
+      "ref_gpa": "0x115556000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_062.out"
+    },
+    "20": {
+      "ref_gpa": "0x107db0000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_020.out"
+    },
+    "63": {
+      "ref_gpa": "0x115549000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_063.out"
+    },
+    "16": {
+      "ref_gpa": "0x11941b000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_016.out"
+    },
+    "64": {
+      "ref_gpa": "0x1150ac000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_064.out"
+    },
+    "13": {
+      "ref_gpa": "0x117bb6000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_013.out"
+    },
+    "65": {
+      "ref_gpa": "0x117db7000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_065.out"
+    },
+    "19": {
+      "ref_gpa": "0x117679000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_019.out"
+    },
+    "66": {
+      "ref_gpa": "0x11766b000",
+      "fixed_gpa": "0x12ac29000",
+      "file": "/home/eun/proof_code/mura/dict_pages_mura/ref_066.out"
+    }
+  }
+}

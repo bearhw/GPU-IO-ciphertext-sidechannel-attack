@@ -1,0 +1,15 @@
+/* SPDX-License-Identifier: GPL-2.0 */
+#ifndef _ASM_X86_CACHEFLUSH_H
+#define _ASM_X86_CACHEFLUSH_H
+
+#include <linux/mm.h>
+
+/* Caches aren't brain-dead on the intel. */
+#include <asm-generic/cacheflush.h>
+#include <asm/special_insns.h>
+#include <linux/uaccess.h>
+
+void clflush_cache_range(void *addr, unsigned int size);
+void clflush_cache_range_user(void *vaddr, unsigned long size);
+
+#endif /* _ASM_X86_CACHEFLUSH_H */

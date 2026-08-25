@@ -1,0 +1,3021 @@
+{
+  "n_raw": 3463,
+  "n_resolved": 3462,
+  "min_count": 3,
+  "min_samples": 1,
+  "clinical_filter": true,
+  "dropped": {
+    "bpe_fragment": 381,
+    "punct_prefix": 214,
+    "drop_always": 6,
+    "starts_with_glue": 281,
+    "ends_with_glue": 114,
+    "glue_only": 77,
+    "deny_regex": 136,
+    "no_alpha": 31,
+    "weak_solo_punct": 12
+  },
+  "n_bigrams": 200,
+  "bigrams": [
+    {
+      "rank": 1,
+      "text": " of breath",
+      "ids": [
+        315,
+        11486
+      ],
+      "tok_texts": [
+        " of",
+        " breath"
+      ],
+      "abs": 565,
+      "samples": 562,
+      "coverage": 0.162334
+    },
+    {
+      "rank": 2,
+      "text": "ness of",
+      "ids": [
+        2090,
+        315
+      ],
+      "tok_texts": [
+        "ness",
+        " of"
+      ],
+      "abs": 519,
+      "samples": 515,
+      "coverage": 0.148758
+    },
+    {
+      "rank": 3,
+      "text": " Shortness",
+      "ids": [
+        10698,
+        2090
+      ],
+      "tok_texts": [
+        " Short",
+        "ness"
+      ],
+      "abs": 272,
+      "samples": 272,
+      "coverage": 0.078567
+    },
+    {
+      "rank": 4,
+      "text": " Cough",
+      "ids": [
+        356,
+        1384
+      ],
+      "tok_texts": [
+        " C",
+        "ough"
+      ],
+      "abs": 256,
+      "samples": 255,
+      "coverage": 0.073657
+    },
+    {
+      "rank": 5,
+      "text": " shortness",
+      "ids": [
+        2805,
+        2090
+      ],
+      "tok_texts": [
+        " short",
+        "ness"
+      ],
+      "abs": 246,
+      "samples": 245,
+      "coverage": 0.070768
+    },
+    {
+      "rank": 6,
+      "text": " breath.",
+      "ids": [
+        11486,
+        13
+      ],
+      "tok_texts": [
+        " breath",
+        "."
+      ],
+      "abs": 236,
+      "samples": 235,
+      "coverage": 0.06788
+    },
+    {
+      "rank": 7,
+      "text": " chest pain",
+      "ids": [
+        15138,
+        6646
+      ],
+      "tok_texts": [
+        " chest",
+        " pain"
+      ],
+      "abs": 214,
+      "samples": 212,
+      "coverage": 0.061236
+    },
+    {
+      "rank": 8,
+      "text": " Chest pain",
+      "ids": [
+        41771,
+        6646
+      ],
+      "tok_texts": [
+        " Chest",
+        " pain"
+      ],
+      "abs": 142,
+      "samples": 141,
+      "coverage": 0.040728
+    },
+    {
+      "rank": 9,
+      "text": " breath,",
+      "ids": [
+        11486,
+        11
+      ],
+      "tok_texts": [
+        " breath",
+        ","
+      ],
+      "abs": 125,
+      "samples": 124,
+      "coverage": 0.035817
+    },
+    {
+      "rank": 10,
+      "text": " Respiratory",
+      "ids": [
+        76834,
+        5269
+      ],
+      "tok_texts": [
+        " Respir",
+        "atory"
+      ],
+      "abs": 99,
+      "samples": 98,
+      "coverage": 0.028307
+    },
+    {
+      "rank": 11,
+      "text": "ough and",
+      "ids": [
+        1384,
+        323
+      ],
+      "tok_texts": [
+        "ough",
+        " and"
+      ],
+      "abs": 83,
+      "samples": 83,
+      "coverage": 0.023975
+    },
+    {
+      "rank": 12,
+      "text": ", short",
+      "ids": [
+        11,
+        2805
+      ],
+      "tok_texts": [
+        ",",
+        " short"
+      ],
+      "abs": 79,
+      "samples": 79,
+      "coverage": 0.022819
+    },
+    {
+      "rank": 13,
+      "text": " cough.",
+      "ids": [
+        39600,
+        13
+      ],
+      "tok_texts": [
+        " cough",
+        "."
+      ],
+      "abs": 76,
+      "samples": 75,
+      "coverage": 0.021664
+    },
+    {
+      "rank": 14,
+      "text": " pneumonia.",
+      "ids": [
+        68229,
+        13
+      ],
+      "tok_texts": [
+        " pneumonia",
+        "."
+      ],
+      "abs": 72,
+      "samples": 71,
+      "coverage": 0.020508
+    },
+    {
+      "rank": 15,
+      "text": " cough,",
+      "ids": [
+        39600,
+        11
+      ],
+      "tok_texts": [
+        " cough",
+        ","
+      ],
+      "abs": 69,
+      "samples": 68,
+      "coverage": 0.019642
+    },
+    {
+      "rank": 16,
+      "text": " rib pain",
+      "ids": [
+        20131,
+        6646
+      ],
+      "tok_texts": [
+        " rib",
+        " pain"
+      ],
+      "abs": 63,
+      "samples": 63,
+      "coverage": 0.018198
+    },
+    {
+      "rank": 17,
+      "text": " COPD",
+      "ids": [
+        67572,
+        35
+      ],
+      "tok_texts": [
+        " COP",
+        "D"
+      ],
+      "abs": 63,
+      "samples": 62,
+      "coverage": 0.017909
+    },
+    {
+      "rank": 18,
+      "text": " Follow-up",
+      "ids": [
+        11112,
+        5239
+      ],
+      "tok_texts": [
+        " Follow",
+        "-up"
+      ],
+      "abs": 59,
+      "samples": 59,
+      "coverage": 0.017042
+    },
+    {
+      "rank": 19,
+      "text": " Weakness",
+      "ids": [
+        41164,
+        2090
+      ],
+      "tok_texts": [
+        " Weak",
+        "ness"
+      ],
+      "abs": 56,
+      "samples": 56,
+      "coverage": 0.016176
+    },
+    {
+      "rank": 20,
+      "text": " wheez",
+      "ids": [
+        14894,
+        10125
+      ],
+      "tok_texts": [
+        " whe",
+        "ez"
+      ],
+      "abs": 53,
+      "samples": 53,
+      "coverage": 0.015309
+    },
+    {
+      "rank": 21,
+      "text": " PICC",
+      "ids": [
+        60606,
+        34
+      ],
+      "tok_texts": [
+        " PIC",
+        "C"
+      ],
+      "abs": 53,
+      "samples": 53,
+      "coverage": 0.015309
+    },
+    {
+      "rank": 22,
+      "text": " CABG",
+      "ids": [
+        80117,
+        38
+      ],
+      "tok_texts": [
+        " CAB",
+        "G"
+      ],
+      "abs": 52,
+      "samples": 52,
+      "coverage": 0.01502
+    },
+    {
+      "rank": 23,
+      "text": " COVID-",
+      "ids": [
+        19966,
+        12
+      ],
+      "tok_texts": [
+        " COVID",
+        "-"
+      ],
+      "abs": 49,
+      "samples": 49,
+      "coverage": 0.014154
+    },
+    {
+      "rank": 24,
+      "text": " fever.",
+      "ids": [
+        33553,
+        13
+      ],
+      "tok_texts": [
+        " fever",
+        "."
+      ],
+      "abs": 47,
+      "samples": 47,
+      "coverage": 0.013576
+    },
+    {
+      "rank": 25,
+      "text": " respiratory failure",
+      "ids": [
+        41531,
+        7901
+      ],
+      "tok_texts": [
+        " respiratory",
+        " failure"
+      ],
+      "abs": 47,
+      "samples": 47,
+      "coverage": 0.013576
+    },
+    {
+      "rank": 26,
+      "text": " pneumoth",
+      "ids": [
+        56123,
+        8767
+      ],
+      "tok_texts": [
+        " pneum",
+        "oth"
+      ],
+      "abs": 45,
+      "samples": 45,
+      "coverage": 0.012998
+    },
+    {
+      "rank": 27,
+      "text": " Fever.",
+      "ids": [
+        83901,
+        13
+      ],
+      "tok_texts": [
+        " Fever",
+        "."
+      ],
+      "abs": 45,
+      "samples": 45,
+      "coverage": 0.012998
+    },
+    {
+      "rank": 28,
+      "text": " Hypert",
+      "ids": [
+        38415,
+        529
+      ],
+      "tok_texts": [
+        " Hyp",
+        "ert"
+      ],
+      "abs": 43,
+      "samples": 43,
+      "coverage": 0.012421
+    },
+    {
+      "rank": 29,
+      "text": " catheter",
+      "ids": [
+        30647,
+        1404
+      ],
+      "tok_texts": [
+        " cath",
+        "eter"
+      ],
+      "abs": 44,
+      "samples": 42,
+      "coverage": 0.012132
+    },
+    {
+      "rank": 30,
+      "text": " Hypox",
+      "ids": [
+        38415,
+        5131
+      ],
+      "tok_texts": [
+        " Hyp",
+        "ox"
+      ],
+      "abs": 42,
+      "samples": 42,
+      "coverage": 0.012132
+    },
+    {
+      "rank": 31,
+      "text": " distress.",
+      "ids": [
+        34004,
+        13
+      ],
+      "tok_texts": [
+        " distress",
+        "."
+      ],
+      "abs": 41,
+      "samples": 41,
+      "coverage": 0.011843
+    },
+    {
+      "rank": 32,
+      "text": "-sided chest",
+      "ids": [
+        49758,
+        15138
+      ],
+      "tok_texts": [
+        "-sided",
+        " chest"
+      ],
+      "abs": 40,
+      "samples": 40,
+      "coverage": 0.011554
+    },
+    {
+      "rank": 33,
+      "text": " cancer.",
+      "ids": [
+        9387,
+        13
+      ],
+      "tok_texts": [
+        " cancer",
+        "."
+      ],
+      "abs": 39,
+      "samples": 39,
+      "coverage": 0.011265
+    },
+    {
+      "rank": 34,
+      "text": " Fever,",
+      "ids": [
+        83901,
+        11
+      ],
+      "tok_texts": [
+        " Fever",
+        ","
+      ],
+      "abs": 38,
+      "samples": 38,
+      "coverage": 0.010976
+    },
+    {
+      "rank": 35,
+      "text": "C line",
+      "ids": [
+        34,
+        1555
+      ],
+      "tok_texts": [
+        "C",
+        " line"
+      ],
+      "abs": 35,
+      "samples": 35,
+      "coverage": 0.01011
+    },
+    {
+      "rank": 36,
+      "text": " dysp",
+      "ids": [
+        21943,
+        79
+      ],
+      "tok_texts": [
+        " dys",
+        "p"
+      ],
+      "abs": 35,
+      "samples": 35,
+      "coverage": 0.01011
+    },
+    {
+      "rank": 37,
+      "text": " Preop",
+      "ids": [
+        4968,
+        453
+      ],
+      "tok_texts": [
+        " Pre",
+        "op"
+      ],
+      "abs": 34,
+      "samples": 34,
+      "coverage": 0.009821
+    },
+    {
+      "rank": 38,
+      "text": " Dysp",
+      "ids": [
+        64042,
+        79
+      ],
+      "tok_texts": [
+        " Dys",
+        "p"
+      ],
+      "abs": 34,
+      "samples": 34,
+      "coverage": 0.009821
+    },
+    {
+      "rank": 39,
+      "text": " intub",
+      "ids": [
+        526,
+        392
+      ],
+      "tok_texts": [
+        " int",
+        "ub"
+      ],
+      "abs": 33,
+      "samples": 33,
+      "coverage": 0.009532
+    },
+    {
+      "rank": 40,
+      "text": " reason:",
+      "ids": [
+        2874,
+        25
+      ],
+      "tok_texts": [
+        " reason",
+        ":"
+      ],
+      "abs": 33,
+      "samples": 33,
+      "coverage": 0.009532
+    },
+    {
+      "rank": 41,
+      "text": " Preoperative",
+      "ids": [
+        4968,
+        42619
+      ],
+      "tok_texts": [
+        " Pre",
+        "operative"
+      ],
+      "abs": 33,
+      "samples": 33,
+      "coverage": 0.009532
+    },
+    {
+      "rank": 42,
+      "text": " Visit reason",
+      "ids": [
+        19008,
+        2874
+      ],
+      "tok_texts": [
+        " Visit",
+        " reason"
+      ],
+      "abs": 33,
+      "samples": 33,
+      "coverage": 0.009532
+    },
+    {
+      "rank": 43,
+      "text": " respiratory distress",
+      "ids": [
+        41531,
+        34004
+      ],
+      "tok_texts": [
+        " respiratory",
+        " distress"
+      ],
+      "abs": 33,
+      "samples": 33,
+      "coverage": 0.009532
+    },
+    {
+      "rank": 44,
+      "text": " congestion.",
+      "ids": [
+        54046,
+        13
+      ],
+      "tok_texts": [
+        " congestion",
+        "."
+      ],
+      "abs": 33,
+      "samples": 33,
+      "coverage": 0.009532
+    },
+    {
+      "rank": 45,
+      "text": " edema",
+      "ids": [
+        1578,
+        9176
+      ],
+      "tok_texts": [
+        " ed",
+        "ema"
+      ],
+      "abs": 32,
+      "samples": 32,
+      "coverage": 0.009243
+    },
+    {
+      "rank": 46,
+      "text": " effusion",
+      "ids": [
+        3289,
+        7560
+      ],
+      "tok_texts": [
+        " eff",
+        "usion"
+      ],
+      "abs": 32,
+      "samples": 32,
+      "coverage": 0.009243
+    },
+    {
+      "rank": 47,
+      "text": " Followup",
+      "ids": [
+        11112,
+        454
+      ],
+      "tok_texts": [
+        " Follow",
+        "up"
+      ],
+      "abs": 32,
+      "samples": 32,
+      "coverage": 0.009243
+    },
+    {
+      "rank": 48,
+      "text": " newborn.",
+      "ids": [
+        45297,
+        13
+      ],
+      "tok_texts": [
+        " newborn",
+        "."
+      ],
+      "abs": 32,
+      "samples": 32,
+      "coverage": 0.009243
+    },
+    {
+      "rank": 49,
+      "text": " smoker.",
+      "ids": [
+        77220,
+        13
+      ],
+      "tok_texts": [
+        " smoker",
+        "."
+      ],
+      "abs": 32,
+      "samples": 32,
+      "coverage": 0.009243
+    },
+    {
+      "rank": 50,
+      "text": " today.",
+      "ids": [
+        3351,
+        13
+      ],
+      "tok_texts": [
+        " today",
+        "."
+      ],
+      "abs": 31,
+      "samples": 31,
+      "coverage": 0.008954
+    },
+    {
+      "rank": 51,
+      "text": " central line",
+      "ids": [
+        8622,
+        1555
+      ],
+      "tok_texts": [
+        " central",
+        " line"
+      ],
+      "abs": 30,
+      "samples": 30,
+      "coverage": 0.008666
+    },
+    {
+      "rank": 52,
+      "text": " Productive",
+      "ids": [
+        5643,
+        533
+      ],
+      "tok_texts": [
+        " Product",
+        "ive"
+      ],
+      "abs": 29,
+      "samples": 29,
+      "coverage": 0.008377
+    },
+    {
+      "rank": 53,
+      "text": " productive cough",
+      "ids": [
+        26236,
+        39600
+      ],
+      "tok_texts": [
+        " productive",
+        " cough"
+      ],
+      "abs": 29,
+      "samples": 29,
+      "coverage": 0.008377
+    },
+    {
+      "rank": 54,
+      "text": " weakness.",
+      "ids": [
+        23078,
+        13
+      ],
+      "tok_texts": [
+        " weakness",
+        "."
+      ],
+      "abs": 28,
+      "samples": 28,
+      "coverage": 0.008088
+    },
+    {
+      "rank": 55,
+      "text": " fever,",
+      "ids": [
+        33553,
+        11
+      ],
+      "tok_texts": [
+        " fever",
+        ","
+      ],
+      "abs": 28,
+      "samples": 28,
+      "coverage": 0.008088
+    },
+    {
+      "rank": 56,
+      "text": " Nause",
+      "ids": [
+        451,
+        3454
+      ],
+      "tok_texts": [
+        " N",
+        "ause"
+      ],
+      "abs": 27,
+      "samples": 27,
+      "coverage": 0.007799
+    },
+    {
+      "rank": 57,
+      "text": " disease.",
+      "ids": [
+        8457,
+        13
+      ],
+      "tok_texts": [
+        " disease",
+        "."
+      ],
+      "abs": 27,
+      "samples": 27,
+      "coverage": 0.007799
+    },
+    {
+      "rank": 58,
+      "text": " Wheez",
+      "ids": [
+        32004,
+        10125
+      ],
+      "tok_texts": [
+        " Whe",
+        "ez"
+      ],
+      "abs": 27,
+      "samples": 27,
+      "coverage": 0.007799
+    },
+    {
+      "rank": 59,
+      "text": " aortic",
+      "ids": [
+        264,
+        89338
+      ],
+      "tok_texts": [
+        " a",
+        "ortic"
+      ],
+      "abs": 28,
+      "samples": 26,
+      "coverage": 0.00751
+    },
+    {
+      "rank": 60,
+      "text": " Seps",
+      "ids": [
+        328,
+        7124
+      ],
+      "tok_texts": [
+        " S",
+        "eps"
+      ],
+      "abs": 26,
+      "samples": 26,
+      "coverage": 0.00751
+    },
+    {
+      "rank": 61,
+      "text": " endotr",
+      "ids": [
+        835,
+        86379
+      ],
+      "tok_texts": [
+        " end",
+        "otr"
+      ],
+      "abs": 26,
+      "samples": 26,
+      "coverage": 0.00751
+    },
+    {
+      "rank": 62,
+      "text": " Smoker",
+      "ids": [
+        4388,
+        10451
+      ],
+      "tok_texts": [
+        " Sm",
+        "oker"
+      ],
+      "abs": 26,
+      "samples": 26,
+      "coverage": 0.00751
+    },
+    {
+      "rank": 63,
+      "text": " pleural",
+      "ids": [
+        7100,
+        4176
+      ],
+      "tok_texts": [
+        " ple",
+        "ural"
+      ],
+      "abs": 26,
+      "samples": 26,
+      "coverage": 0.00751
+    },
+    {
+      "rank": 64,
+      "text": " vehicle accident",
+      "ids": [
+        7310,
+        11423
+      ],
+      "tok_texts": [
+        " vehicle",
+        " accident"
+      ],
+      "abs": 26,
+      "samples": 26,
+      "coverage": 0.00751
+    },
+    {
+      "rank": 65,
+      "text": " hypox",
+      "ids": [
+        9751,
+        5131
+      ],
+      "tok_texts": [
+        " hyp",
+        "ox"
+      ],
+      "abs": 26,
+      "samples": 26,
+      "coverage": 0.00751
+    },
+    {
+      "rank": 66,
+      "text": " Trauma",
+      "ids": [
+        17298,
+        13416
+      ],
+      "tok_texts": [
+        " Tra",
+        "uma"
+      ],
+      "abs": 26,
+      "samples": 26,
+      "coverage": 0.00751
+    },
+    {
+      "rank": 67,
+      "text": " Abdom",
+      "ids": [
+        3680,
+        5600
+      ],
+      "tok_texts": [
+        " Ab",
+        "dom"
+      ],
+      "abs": 26,
+      "samples": 25,
+      "coverage": 0.007221
+    },
+    {
+      "rank": 68,
+      "text": " Central line",
+      "ids": [
+        10684,
+        1555
+      ],
+      "tok_texts": [
+        " Central",
+        " line"
+      ],
+      "abs": 25,
+      "samples": 25,
+      "coverage": 0.007221
+    },
+    {
+      "rank": 69,
+      "text": " Motor vehicle",
+      "ids": [
+        17614,
+        7310
+      ],
+      "tok_texts": [
+        " Motor",
+        " vehicle"
+      ],
+      "abs": 25,
+      "samples": 25,
+      "coverage": 0.007221
+    },
+    {
+      "rank": 70,
+      "text": " Postop",
+      "ids": [
+        3877,
+        453
+      ],
+      "tok_texts": [
+        " Post",
+        "op"
+      ],
+      "abs": 24,
+      "samples": 24,
+      "coverage": 0.006932
+    },
+    {
+      "rank": 71,
+      "text": " heart failure",
+      "ids": [
+        4746,
+        7901
+      ],
+      "tok_texts": [
+        " heart",
+        " failure"
+      ],
+      "abs": 24,
+      "samples": 24,
+      "coverage": 0.006932
+    },
+    {
+      "rank": 72,
+      "text": " hypertension,",
+      "ids": [
+        62208,
+        11
+      ],
+      "tok_texts": [
+        " hypertension",
+        ","
+      ],
+      "abs": 24,
+      "samples": 24,
+      "coverage": 0.006932
+    },
+    {
+      "rank": 73,
+      "text": " fibrillation",
+      "ids": [
+        94135,
+        66084
+      ],
+      "tok_texts": [
+        " fibr",
+        "illation"
+      ],
+      "abs": 24,
+      "samples": 24,
+      "coverage": 0.006932
+    },
+    {
+      "rank": 74,
+      "text": " tightness",
+      "ids": [
+        10296,
+        2090
+      ],
+      "tok_texts": [
+        " tight",
+        "ness"
+      ],
+      "abs": 23,
+      "samples": 23,
+      "coverage": 0.006644
+    },
+    {
+      "rank": 75,
+      "text": " hypertension.",
+      "ids": [
+        62208,
+        13
+      ],
+      "tok_texts": [
+        " hypertension",
+        "."
+      ],
+      "abs": 23,
+      "samples": 23,
+      "coverage": 0.006644
+    },
+    {
+      "rank": 76,
+      "text": " motor vehicle",
+      "ids": [
+        8872,
+        7310
+      ],
+      "tok_texts": [
+        " motor",
+        " vehicle"
+      ],
+      "abs": 23,
+      "samples": 22,
+      "coverage": 0.006355
+    },
+    {
+      "rank": 77,
+      "text": " Follow up",
+      "ids": [
+        11112,
+        705
+      ],
+      "tok_texts": [
+        " Follow",
+        " up"
+      ],
+      "abs": 22,
+      "samples": 22,
+      "coverage": 0.006355
+    },
+    {
+      "rank": 78,
+      "text": "9 positive",
+      "ids": [
+        24,
+        6785
+      ],
+      "tok_texts": [
+        "9",
+        " positive"
+      ],
+      "abs": 21,
+      "samples": 21,
+      "coverage": 0.006066
+    },
+    {
+      "rank": 79,
+      "text": " lobe",
+      "ids": [
+        326,
+        15422
+      ],
+      "tok_texts": [
+        " l",
+        "obe"
+      ],
+      "abs": 21,
+      "samples": 21,
+      "coverage": 0.006066
+    },
+    {
+      "rank": 80,
+      "text": " follow-up",
+      "ids": [
+        1795,
+        5239
+      ],
+      "tok_texts": [
+        " follow",
+        "-up"
+      ],
+      "abs": 21,
+      "samples": 21,
+      "coverage": 0.006066
+    },
+    {
+      "rank": 81,
+      "text": " Left-sided",
+      "ids": [
+        13727,
+        49758
+      ],
+      "tok_texts": [
+        " Left",
+        "-sided"
+      ],
+      "abs": 21,
+      "samples": 21,
+      "coverage": 0.006066
+    },
+    {
+      "rank": 82,
+      "text": " pneumonia,",
+      "ids": [
+        68229,
+        11
+      ],
+      "tok_texts": [
+        " pneumonia",
+        ","
+      ],
+      "abs": 21,
+      "samples": 21,
+      "coverage": 0.006066
+    },
+    {
+      "rank": 83,
+      "text": " back pain",
+      "ids": [
+        1182,
+        6646
+      ],
+      "tok_texts": [
+        " back",
+        " pain"
+      ],
+      "abs": 21,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 84,
+      "text": " lung cancer",
+      "ids": [
+        20622,
+        9387
+      ],
+      "tok_texts": [
+        " lung",
+        " cancer"
+      ],
+      "abs": 21,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 85,
+      "text": " right-sided",
+      "ids": [
+        1290,
+        49758
+      ],
+      "tok_texts": [
+        " right",
+        "-sided"
+      ],
+      "abs": 20,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 86,
+      "text": " fall.",
+      "ids": [
+        4399,
+        13
+      ],
+      "tok_texts": [
+        " fall",
+        "."
+      ],
+      "abs": 20,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 87,
+      "text": " positive.",
+      "ids": [
+        6785,
+        13
+      ],
+      "tok_texts": [
+        " positive",
+        "."
+      ],
+      "abs": 20,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 88,
+      "text": " vehicle collision",
+      "ids": [
+        7310,
+        18752
+      ],
+      "tok_texts": [
+        " vehicle",
+        " collision"
+      ],
+      "abs": 20,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 89,
+      "text": " Premature",
+      "ids": [
+        11767,
+        1568
+      ],
+      "tok_texts": [
+        " Prem",
+        "ature"
+      ],
+      "abs": 20,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 90,
+      "text": " altered mental",
+      "ids": [
+        28752,
+        10502
+      ],
+      "tok_texts": [
+        " altered",
+        " mental"
+      ],
+      "abs": 20,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 91,
+      "text": " asthma.",
+      "ids": [
+        50543,
+        13
+      ],
+      "tok_texts": [
+        " asthma",
+        "."
+      ],
+      "abs": 20,
+      "samples": 20,
+      "coverage": 0.005777
+    },
+    {
+      "rank": 92,
+      "text": " tach",
+      "ids": [
+        259,
+        610
+      ],
+      "tok_texts": [
+        " t",
+        "ach"
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 93,
+      "text": " Intub",
+      "ids": [
+        1333,
+        392
+      ],
+      "tok_texts": [
+        " Int",
+        "ub"
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 94,
+      "text": " past ",
+      "ids": [
+        3267,
+        220
+      ],
+      "tok_texts": [
+        " past",
+        " "
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 95,
+      "text": " Endotr",
+      "ids": [
+        3972,
+        86379
+      ],
+      "tok_texts": [
+        " End",
+        "otr"
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 96,
+      "text": " infection.",
+      "ids": [
+        18873,
+        13
+      ],
+      "tok_texts": [
+        " infection",
+        "."
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 97,
+      "text": " COVID positive",
+      "ids": [
+        19966,
+        6785
+      ],
+      "tok_texts": [
+        " COVID",
+        " positive"
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 98,
+      "text": " Pulmonary",
+      "ids": [
+        34862,
+        54792
+      ],
+      "tok_texts": [
+        " Pul",
+        "monary"
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 99,
+      "text": " exertion",
+      "ids": [
+        42744,
+        290
+      ],
+      "tok_texts": [
+        " exert",
+        "ion"
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 100,
+      "text": " thoracent",
+      "ids": [
+        72733,
+        18181
+      ],
+      "tok_texts": [
+        " thor",
+        "acent"
+      ],
+      "abs": 19,
+      "samples": 19,
+      "coverage": 0.005488
+    },
+    {
+      "rank": 101,
+      "text": " infiltrate",
+      "ids": [
+        42264,
+        349
+      ],
+      "tok_texts": [
+        " infiltr",
+        "ate"
+      ],
+      "abs": 19,
+      "samples": 18,
+      "coverage": 0.005199
+    },
+    {
+      "rank": 102,
+      "text": " Tach",
+      "ids": [
+        350,
+        610
+      ],
+      "tok_texts": [
+        " T",
+        "ach"
+      ],
+      "abs": 18,
+      "samples": 18,
+      "coverage": 0.005199
+    },
+    {
+      "rank": 103,
+      "text": " Abnormal",
+      "ids": [
+        3680,
+        8252
+      ],
+      "tok_texts": [
+        " Ab",
+        "normal"
+      ],
+      "abs": 18,
+      "samples": 18,
+      "coverage": 0.005199
+    },
+    {
+      "rank": 104,
+      "text": " Initial evaluation",
+      "ids": [
+        4127,
+        16460
+      ],
+      "tok_texts": [
+        " Initial",
+        " evaluation"
+      ],
+      "abs": 18,
+      "samples": 18,
+      "coverage": 0.005199
+    },
+    {
+      "rank": 105,
+      "text": " surgery.",
+      "ids": [
+        14829,
+        13
+      ],
+      "tok_texts": [
+        " surgery",
+        "."
+      ],
+      "abs": 18,
+      "samples": 18,
+      "coverage": 0.005199
+    },
+    {
+      "rank": 106,
+      "text": " artery disease",
+      "ids": [
+        64315,
+        8457
+      ],
+      "tok_texts": [
+        " artery",
+        " disease"
+      ],
+      "abs": 18,
+      "samples": 18,
+      "coverage": 0.005199
+    },
+    {
+      "rank": 107,
+      "text": " x-ray",
+      "ids": [
+        856,
+        29530
+      ],
+      "tok_texts": [
+        " x",
+        "-ray"
+      ],
+      "abs": 17,
+      "samples": 17,
+      "coverage": 0.00491
+    },
+    {
+      "rank": 108,
+      "text": " congestion,",
+      "ids": [
+        54046,
+        11
+      ],
+      "tok_texts": [
+        " congestion",
+        ","
+      ],
+      "abs": 17,
+      "samples": 17,
+      "coverage": 0.00491
+    },
+    {
+      "rank": 109,
+      "text": " hemorrhage",
+      "ids": [
+        70317,
+        424
+      ],
+      "tok_texts": [
+        " hemorrh",
+        "age"
+      ],
+      "abs": 17,
+      "samples": 17,
+      "coverage": 0.00491
+    },
+    {
+      "rank": 110,
+      "text": " dizziness",
+      "ids": [
+        294,
+        96645
+      ],
+      "tok_texts": [
+        " d",
+        "izziness"
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 111,
+      "text": " seps",
+      "ids": [
+        511,
+        1690
+      ],
+      "tok_texts": [
+        " se",
+        "ps"
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 112,
+      "text": " injury.",
+      "ids": [
+        10895,
+        13
+      ],
+      "tok_texts": [
+        " injury",
+        "."
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 113,
+      "text": "-day-old",
+      "ids": [
+        11228,
+        6284
+      ],
+      "tok_texts": [
+        "-day",
+        "-old"
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 114,
+      "text": " accident.",
+      "ids": [
+        11423,
+        13
+      ],
+      "tok_texts": [
+        " accident",
+        "."
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 115,
+      "text": " stroke.",
+      "ids": [
+        12654,
+        13
+      ],
+      "tok_texts": [
+        " stroke",
+        "."
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 116,
+      "text": " chest.",
+      "ids": [
+        15138,
+        13
+      ],
+      "tok_texts": [
+        " chest",
+        "."
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 117,
+      "text": " Asthma",
+      "ids": [
+        20113,
+        40353
+      ],
+      "tok_texts": [
+        " Ast",
+        "hma"
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 118,
+      "text": " consciousness.",
+      "ids": [
+        24875,
+        13
+      ],
+      "tok_texts": [
+        " consciousness",
+        "."
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 119,
+      "text": " abdominal pain",
+      "ids": [
+        55956,
+        6646
+      ],
+      "tok_texts": [
+        " abdominal",
+        " pain"
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 120,
+      "text": " vomiting.",
+      "ids": [
+        62471,
+        13
+      ],
+      "tok_texts": [
+        " vomiting",
+        "."
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 121,
+      "text": " pulmonary ed",
+      "ids": [
+        69424,
+        1578
+      ],
+      "tok_texts": [
+        " pulmonary",
+        " ed"
+      ],
+      "abs": 16,
+      "samples": 16,
+      "coverage": 0.004622
+    },
+    {
+      "rank": 122,
+      "text": " C-section",
+      "ids": [
+        356,
+        21599
+      ],
+      "tok_texts": [
+        " C",
+        "-section"
+      ],
+      "abs": 15,
+      "samples": 15,
+      "coverage": 0.004333
+    },
+    {
+      "rank": 123,
+      "text": " aneur",
+      "ids": [
+        458,
+        12559
+      ],
+      "tok_texts": [
+        " an",
+        "eur"
+      ],
+      "abs": 15,
+      "samples": 15,
+      "coverage": 0.004333
+    },
+    {
+      "rank": 124,
+      "text": " extremity",
+      "ids": [
+        5876,
+        487
+      ],
+      "tok_texts": [
+        " extrem",
+        "ity"
+      ],
+      "abs": 15,
+      "samples": 15,
+      "coverage": 0.004333
+    },
+    {
+      "rank": 125,
+      "text": " Right-sided",
+      "ids": [
+        10083,
+        49758
+      ],
+      "tok_texts": [
+        " Right",
+        "-sided"
+      ],
+      "abs": 15,
+      "samples": 15,
+      "coverage": 0.004333
+    },
+    {
+      "rank": 126,
+      "text": " chest x",
+      "ids": [
+        15138,
+        856
+      ],
+      "tok_texts": [
+        " chest",
+        " x"
+      ],
+      "abs": 15,
+      "samples": 15,
+      "coverage": 0.004333
+    },
+    {
+      "rank": 127,
+      "text": " atrial",
+      "ids": [
+        29570,
+        530
+      ],
+      "tok_texts": [
+        " atr",
+        "ial"
+      ],
+      "abs": 15,
+      "samples": 15,
+      "coverage": 0.004333
+    },
+    {
+      "rank": 128,
+      "text": "C placement",
+      "ids": [
+        34,
+        21448
+      ],
+      "tok_texts": [
+        "C",
+        " placement"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 129,
+      "text": " Nons",
+      "ids": [
+        451,
+        2382
+      ],
+      "tok_texts": [
+        " N",
+        "ons"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 130,
+      "text": " Unstable",
+      "ids": [
+        1230,
+        27992
+      ],
+      "tok_texts": [
+        " Un",
+        "stable"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 131,
+      "text": " effusions",
+      "ids": [
+        3289,
+        35707
+      ],
+      "tok_texts": [
+        " eff",
+        "usions"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 132,
+      "text": " lower l",
+      "ids": [
+        4722,
+        326
+      ],
+      "tok_texts": [
+        " lower",
+        " l"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 133,
+      "text": " exam.",
+      "ids": [
+        7006,
+        13
+      ],
+      "tok_texts": [
+        " exam",
+        "."
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 134,
+      "text": " Congestion",
+      "ids": [
+        7261,
+        42498
+      ],
+      "tok_texts": [
+        " Cong",
+        "estion"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 135,
+      "text": " venous",
+      "ids": [
+        11208,
+        782
+      ],
+      "tok_texts": [
+        " ven",
+        "ous"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 136,
+      "text": " Confusion",
+      "ids": [
+        14974,
+        7560
+      ],
+      "tok_texts": [
+        " Conf",
+        "usion"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 137,
+      "text": " chest tube",
+      "ids": [
+        15138,
+        13705
+      ],
+      "tok_texts": [
+        " chest",
+        " tube"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 138,
+      "text": " chest congestion",
+      "ids": [
+        15138,
+        54046
+      ],
+      "tok_texts": [
+        " chest",
+        " congestion"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 139,
+      "text": " Rule out",
+      "ids": [
+        18100,
+        700
+      ],
+      "tok_texts": [
+        " Rule",
+        " out"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 140,
+      "text": " coughing",
+      "ids": [
+        39600,
+        287
+      ],
+      "tok_texts": [
+        " cough",
+        "ing"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 141,
+      "text": " Chest tube",
+      "ids": [
+        41771,
+        13705
+      ],
+      "tok_texts": [
+        " Chest",
+        " tube"
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 142,
+      "text": " carcinoma.",
+      "ids": [
+        88368,
+        13
+      ],
+      "tok_texts": [
+        " carcinoma",
+        "."
+      ],
+      "abs": 14,
+      "samples": 14,
+      "coverage": 0.004044
+    },
+    {
+      "rank": 143,
+      "text": " aches",
+      "ids": [
+        264,
+        8528
+      ],
+      "tok_texts": [
+        " a",
+        "ches"
+      ],
+      "abs": 13,
+      "samples": 13,
+      "coverage": 0.003755
+    },
+    {
+      "rank": 144,
+      "text": " left chest",
+      "ids": [
+        2115,
+        15138
+      ],
+      "tok_texts": [
+        " left",
+        " chest"
+      ],
+      "abs": 13,
+      "samples": 13,
+      "coverage": 0.003755
+    },
+    {
+      "rank": 145,
+      "text": " former smoker",
+      "ids": [
+        4741,
+        77220
+      ],
+      "tok_texts": [
+        " former",
+        " smoker"
+      ],
+      "abs": 13,
+      "samples": 13,
+      "coverage": 0.003755
+    },
+    {
+      "rank": 146,
+      "text": " Overd",
+      "ids": [
+        6065,
+        67
+      ],
+      "tok_texts": [
+        " Over",
+        "d"
+      ],
+      "abs": 13,
+      "samples": 13,
+      "coverage": 0.003755
+    },
+    {
+      "rank": 147,
+      "text": " replacement.",
+      "ids": [
+        13723,
+        13
+      ],
+      "tok_texts": [
+        " replacement",
+        "."
+      ],
+      "abs": 13,
+      "samples": 13,
+      "coverage": 0.003755
+    },
+    {
+      "rank": 148,
+      "text": " Syncope",
+      "ids": [
+        23153,
+        2417
+      ],
+      "tok_texts": [
+        " Syn",
+        "cope"
+      ],
+      "abs": 13,
+      "samples": 13,
+      "coverage": 0.003755
+    },
+    {
+      "rank": 149,
+      "text": " Ventil",
+      "ids": [
+        26407,
+        321
+      ],
+      "tok_texts": [
+        " Vent",
+        "il"
+      ],
+      "abs": 13,
+      "samples": 13,
+      "coverage": 0.003755
+    },
+    {
+      "rank": 150,
+      "text": " bronchos",
+      "ids": [
+        29971,
+        45248
+      ],
+      "tok_texts": [
+        " bron",
+        "chos"
+      ],
+      "abs": 13,
+      "samples": 13,
+      "coverage": 0.003755
+    },
+    {
+      "rank": 151,
+      "text": " Atrial",
+      "ids": [
+        362,
+        47347
+      ],
+      "tok_texts": [
+        " A",
+        "trial"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 152,
+      "text": " Unresponsive",
+      "ids": [
+        1230,
+        51297
+      ],
+      "tok_texts": [
+        " Un",
+        "responsive"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 153,
+      "text": " Newborn",
+      "ids": [
+        1532,
+        15998
+      ],
+      "tok_texts": [
+        " New",
+        "born"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 154,
+      "text": " left-sided",
+      "ids": [
+        2115,
+        49758
+      ],
+      "tok_texts": [
+        " left",
+        "-sided"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 155,
+      "text": " infar",
+      "ids": [
+        4132,
+        277
+      ],
+      "tok_texts": [
+        " inf",
+        "ar"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 156,
+      "text": " Congest",
+      "ids": [
+        7261,
+        477
+      ],
+      "tok_texts": [
+        " Cong",
+        "est"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 157,
+      "text": "-Cath",
+      "ids": [
+        7658,
+        587
+      ],
+      "tok_texts": [
+        "-C",
+        "ath"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 158,
+      "text": " gestational",
+      "ids": [
+        12743,
+        1663
+      ],
+      "tok_texts": [
+        " gest",
+        "ational"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 159,
+      "text": " Fall,",
+      "ids": [
+        14785,
+        11
+      ],
+      "tok_texts": [
+        " Fall",
+        ","
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 160,
+      "text": " Fall.",
+      "ids": [
+        14785,
+        13
+      ],
+      "tok_texts": [
+        " Fall",
+        "."
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 161,
+      "text": " chest tight",
+      "ids": [
+        15138,
+        10296
+      ],
+      "tok_texts": [
+        " chest",
+        " tight"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 162,
+      "text": " chest complaints",
+      "ids": [
+        15138,
+        21171
+      ],
+      "tok_texts": [
+        " chest",
+        " complaints"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 163,
+      "text": " shoulder pain",
+      "ids": [
+        16882,
+        6646
+      ],
+      "tok_texts": [
+        " shoulder",
+        " pain"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 164,
+      "text": " pacemaker",
+      "ids": [
+        22894,
+        58675
+      ],
+      "tok_texts": [
+        " pac",
+        "emaker"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 165,
+      "text": " weakness,",
+      "ids": [
+        23078,
+        11
+      ],
+      "tok_texts": [
+        " weakness",
+        ","
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 166,
+      "text": " dialysis",
+      "ids": [
+        27860,
+        4448
+      ],
+      "tok_texts": [
+        " dial",
+        "ysis"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 167,
+      "text": " valve replacement",
+      "ids": [
+        31430,
+        13723
+      ],
+      "tok_texts": [
+        " valve",
+        " replacement"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 168,
+      "text": " Pleural",
+      "ids": [
+        32440,
+        4176
+      ],
+      "tok_texts": [
+        " Ple",
+        "ural"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 169,
+      "text": " Former smoker",
+      "ids": [
+        32500,
+        77220
+      ],
+      "tok_texts": [
+        " Former",
+        " smoker"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 170,
+      "text": " nausea,",
+      "ids": [
+        60780,
+        11
+      ],
+      "tok_texts": [
+        " nausea",
+        ","
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 171,
+      "text": " hernia",
+      "ids": [
+        71809,
+        685
+      ],
+      "tok_texts": [
+        " hern",
+        "ia"
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 172,
+      "text": " aspiration.",
+      "ids": [
+        97641,
+        13
+      ],
+      "tok_texts": [
+        " aspiration",
+        "."
+      ],
+      "abs": 12,
+      "samples": 12,
+      "coverage": 0.003466
+    },
+    {
+      "rank": 173,
+      "text": " Interm",
+      "ids": [
+        1333,
+        4195
+      ],
+      "tok_texts": [
+        " Int",
+        "erm"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 174,
+      "text": " left pneum",
+      "ids": [
+        2115,
+        56123
+      ],
+      "tok_texts": [
+        " left",
+        " pneum"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 175,
+      "text": " Generalized",
+      "ids": [
+        3251,
+        1506
+      ],
+      "tok_texts": [
+        " General",
+        "ized"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 176,
+      "text": " lower extrem",
+      "ids": [
+        4722,
+        5876
+      ],
+      "tok_texts": [
+        " lower",
+        " extrem"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 177,
+      "text": " Port-A",
+      "ids": [
+        5776,
+        6691
+      ],
+      "tok_texts": [
+        " Port",
+        "-A"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 178,
+      "text": " Right rib",
+      "ids": [
+        10083,
+        20131
+      ],
+      "tok_texts": [
+        " Right",
+        " rib"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 179,
+      "text": " yesterday.",
+      "ids": [
+        13671,
+        13
+      ],
+      "tok_texts": [
+        " yesterday",
+        "."
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 180,
+      "text": " chest wall",
+      "ids": [
+        15138,
+        7002
+      ],
+      "tok_texts": [
+        " chest",
+        " wall"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 181,
+      "text": " evaluation.",
+      "ids": [
+        16460,
+        13
+      ],
+      "tok_texts": [
+        " evaluation",
+        "."
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 182,
+      "text": " complaints.",
+      "ids": [
+        21171,
+        13
+      ],
+      "tok_texts": [
+        " complaints",
+        "."
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 183,
+      "text": " Gunshot",
+      "ids": [
+        21707,
+        6340
+      ],
+      "tok_texts": [
+        " Gun",
+        "shot"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 184,
+      "text": " trauma.",
+      "ids": [
+        29888,
+        13
+      ],
+      "tok_texts": [
+        " trauma",
+        "."
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 185,
+      "text": " congestive",
+      "ids": [
+        43285,
+        533
+      ],
+      "tok_texts": [
+        " congest",
+        "ive"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 186,
+      "text": " swelling.",
+      "ids": [
+        54207,
+        13
+      ],
+      "tok_texts": [
+        " swelling",
+        "."
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 187,
+      "text": " fracture.",
+      "ids": [
+        58804,
+        13
+      ],
+      "tok_texts": [
+        " fracture",
+        "."
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 188,
+      "text": " ventilator",
+      "ids": [
+        70602,
+        850
+      ],
+      "tok_texts": [
+        " ventil",
+        "ator"
+      ],
+      "abs": 11,
+      "samples": 11,
+      "coverage": 0.003177
+    },
+    {
+      "rank": 189,
+      "text": " coronary artery",
+      "ids": [
+        65198,
+        64315
+      ],
+      "tok_texts": [
+        " coronary",
+        " artery"
+      ],
+      "abs": 11,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 190,
+      "text": " Dizziness",
+      "ids": [
+        422,
+        96645
+      ],
+      "tok_texts": [
+        " D",
+        "izziness"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 191,
+      "text": " mid chest",
+      "ids": [
+        5099,
+        15138
+      ],
+      "tok_texts": [
+        " mid",
+        " chest"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 192,
+      "text": " Code stroke",
+      "ids": [
+        6119,
+        12654
+      ],
+      "tok_texts": [
+        " Code",
+        " stroke"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 193,
+      "text": " syncope",
+      "ids": [
+        6782,
+        2417
+      ],
+      "tok_texts": [
+        " syn",
+        "cope"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 194,
+      "text": " upper chest",
+      "ids": [
+        8416,
+        15138
+      ],
+      "tok_texts": [
+        " upper",
+        " chest"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 195,
+      "text": " NG tube",
+      "ids": [
+        20018,
+        13705
+      ],
+      "tok_texts": [
+        " NG",
+        " tube"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 196,
+      "text": " breathing.",
+      "ids": [
+        25938,
+        13
+      ],
+      "tok_texts": [
+        " breathing",
+        "."
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 197,
+      "text": " cardiac arrest",
+      "ids": [
+        46245,
+        8004
+      ],
+      "tok_texts": [
+        " cardiac",
+        " arrest"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 198,
+      "text": " neonate",
+      "ids": [
+        46652,
+        349
+      ],
+      "tok_texts": [
+        " neon",
+        "ate"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 199,
+      "text": " Coronary",
+      "ids": [
+        47083,
+        658
+      ],
+      "tok_texts": [
+        " Coron",
+        "ary"
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    },
+    {
+      "rank": 200,
+      "text": " vomiting,",
+      "ids": [
+        62471,
+        11
+      ],
+      "tok_texts": [
+        " vomiting",
+        ","
+      ],
+      "abs": 10,
+      "samples": 10,
+      "coverage": 0.002889
+    }
+  ]
+}

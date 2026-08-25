@@ -1,0 +1,85 @@
+Device: cpu
+Train 36,808  Valid 3,197
+N_REF_64 = 64
+Loading train cache (memmap)...
+Loading valid cache (memmap)...
+Train: (36808, 64, 224, 56)  Valid: (3197, 64, 224, 56)
+[64-ref] params=5,056,455  batch=96  train batches=384  valid batches=34
+/home/eun/miniforge3/envs/mura/lib/python3.10/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[64-ref  1/50]  tr 1.5454/55.6%  va 2.2667/32.3%  5373s ← saved
+[64-ref  2/50]  tr 1.2691/70.5%  va 2.3699/30.2%  5376s
+[64-ref  3/50]  tr 1.1737/75.6%  va 1.7721/46.1%  3171s ← saved
+[64-ref  4/50]  tr 1.1224/78.2%  va 1.7344/52.1%  3079s ← saved
+[64-ref  5/50]  tr 1.0747/80.5%  va 1.3427/68.0%  3111s ← saved
+[64-ref  6/50]  tr 1.0470/81.4%  va 1.3698/67.8%  3067s
+[64-ref  7/50]  tr 1.0258/82.7%  va 1.3341/70.2%  3083s ← saved
+[64-ref  8/50]  tr 0.9969/84.0%  va 1.4547/58.9%  3063s
+[64-ref  9/50]  tr 0.9803/84.9%  va 1.3733/69.0%  3096s
+[64-ref 10/50]  tr 0.9620/85.5%  va 1.2147/75.3%  3049s ← saved
+[64-ref 11/50]  tr 0.9427/86.4%  va 1.2338/74.3%  3056s
+[64-ref 12/50]  tr 0.9235/87.4%  va 1.1744/77.5%  3099s ← saved
+[64-ref 13/50]  tr 0.9080/87.9%  va 1.2373/74.6%  3079s
+[64-ref 14/50]  tr 0.8944/88.5%  va 1.2232/76.0%  3087s
+[64-ref 15/50]  tr 0.8808/89.1%  va 1.1822/77.0%  3096s
+[64-ref 16/50]  tr 0.8673/89.8%  va 1.1685/77.8%  3128s ← saved
+[64-ref 17/50]  tr 0.8559/90.3%  va 1.2511/73.7%  1965s
+[64-ref 18/50]  tr 0.8398/91.1%  va 1.1620/77.9%  1651s ← saved
+[64-ref 19/50]  tr 0.8298/91.6%  va 1.2269/73.9%  1766s
+[64-ref 20/50]  tr 0.8165/92.1%  va 1.1786/76.6%  808s
+[64-ref 21/50]  tr 0.8115/92.2%  va 1.1616/78.0%  2197s ← saved
+[64-ref 22/50]  tr 0.8015/92.9%  va 1.1840/76.8%  2343s
+[64-ref 23/50]  tr 0.7887/93.4%  va 1.1607/78.6%  797s ← saved
+[64-ref 24/50]  tr 0.7827/93.8%  va 1.1590/78.9%  2197s ← saved
+[64-ref 25/50]  tr 0.7738/94.3%  va 1.1607/77.9%  3052s
+[64-ref 26/50]  tr 0.7679/94.4%  va 1.1878/77.2%  3081s
+[64-ref 27/50]  tr 0.7595/95.0%  va 1.1776/78.6%  3060s
+[64-ref 28/50]  tr 0.7554/95.1%  va 1.1600/78.4%  3060s
+[64-ref 29/50]  tr 0.7516/95.3%  va 1.1708/78.3%  3047s
+[64-ref 30/50]  tr 0.7461/95.6%  va 1.1468/80.0%  3064s ← saved
+[64-ref 31/50]  tr 0.7441/95.7%  va 1.1215/80.2%  3036s ← saved
+[64-ref 32/50]  tr 0.7374/95.9%  va 1.1525/78.9%  3061s
+[64-ref 33/50]  tr 0.7357/96.0%  va 1.1381/79.6%  3055s
+[64-ref 34/50]  tr 0.7326/96.1%  va 1.1720/78.8%  3012s
+[64-ref 35/50]  tr 0.7304/96.4%  va 1.1771/78.2%  3087s
+[64-ref 36/50]  tr 0.7272/96.3%  va 1.1537/79.3%  3068s
+[64-ref 37/50]  tr 0.7243/96.5%  va 1.1776/78.2%  3070s
+[64-ref 38/50]  tr 0.7236/96.4%  va 1.1471/78.6%  3040s
+[64-ref 39/50]  tr 0.7204/96.6%  va 1.1544/79.0%  3085s
+[64-ref 40/50]  tr 0.7191/96.6%  va 1.1436/79.0%  3060s
+[64-ref 41/50]  tr 0.7170/96.7%  va 1.1400/79.3%  3102s
+[64-ref 42/50]  tr 0.7163/96.6%  va 1.1516/78.9%  3040s
+[64-ref 43/50]  tr 0.7149/96.7%  va 1.1426/79.4%  3074s
+[64-ref 44/50]  tr 0.7136/96.9%  va 1.1421/79.3%  3074s
+[64-ref 45/50]  tr 0.7139/96.8%  va 1.1416/79.6%  3076s
+[64-ref 46/50]  tr 0.7125/96.9%  va 1.1433/79.2%  3065s
+[64-ref 47/50]  tr 0.7127/96.8%  va 1.1465/79.4%  3106s
+[64-ref 48/50]  tr 0.7117/96.9%  va 1.1435/79.5%  3107s
+[64-ref 49/50]  tr 0.7117/96.8%  va 1.1391/79.7%  3090s
+[64-ref 50/50]  tr 0.7112/96.9%  va 1.1443/79.4%  3092s
+
+[64-ref] Best val: 80.2%  → ./mura_xor_slice_64ref.pth
+===== 64-ref =====
+              precision    recall  f1-score   support
+
+       ELBOW       0.71      0.83      0.77       465
+      FINGER       0.82      0.84      0.83       461
+     FOREARM       0.83      0.58      0.69       301
+        HAND       0.89      0.82      0.85       460
+     HUMERUS       0.61      0.77      0.68       288
+    SHOULDER       0.96      0.86      0.90       563
+       WRIST       0.79      0.81      0.80       659
+
+    accuracy                           0.80      3197
+   macro avg       0.80      0.79      0.79      3197
+weighted avg       0.81      0.80      0.80      3197
+
+Per-class accuracy:
+  ELBOW     : 83.4%  (465 samples)
+  FINGER    : 84.2%  (461 samples)
+  FOREARM   : 58.5%  (301 samples)
+  HAND      : 82.4%  (460 samples)
+  HUMERUS   : 76.7%  (288 samples)
+  SHOULDER  : 85.6%  (563 samples)
+  WRIST     : 80.6%  (659 samples)
+Saved ref-64-heatmap.png + mura_xor64_confusion_matrix.pdf
