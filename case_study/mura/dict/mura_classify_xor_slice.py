@@ -26,7 +26,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 CLASSES = ["ELBOW", "FINGER", "FOREARM", "HAND", "HUMERUS", "SHOULDER", "WRIST"]
-CKPT_DEFAULT = "/home/eun/bnb/mura/mura_xor_slice_64ref_v2.pth"
+CKPT_DEFAULT = "./mura_xor_slice_64ref_v2.pth"
 
 
 # ── XorSliceSENet (v2) -- verbatim from mura_bodypart_attacker.ipynb cell 36 ─

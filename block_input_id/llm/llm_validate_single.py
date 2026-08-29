@@ -49,7 +49,7 @@ MIN_RUN = 2
 
 VLM_PYTHON = "/home/ubuntu/miniconda3/envs/vlm/bin/python3"
 INFERENCE_SCRIPT = "/home/ubuntu/medical_ml/med_vlm/scripts/single_inference.py"
-HOST_ADDR_ON_GUEST = "eun@10.0.2.2"
+HOST_ADDR_ON_GUEST = "user@10.0.2.2"
 
 RE_W = re.compile(r'^WRITE\s+gpa=0x([0-9a-f]+)\s+ts=(\d+)')
 RE_GPA_IDS = re.compile(r'\[GPA\] batch\d+/input/input_ids: GPA=0x([0-9a-f]+)')

@@ -329,6 +329,6 @@
   dict_gpa=0x14535a000  actual_landing=0x18  reg_start=0x18  byte_shift=2  (1 candidates, 1 at target)
   dump → t30_p3.out  (dict_gpa=0x14535a000)
   registered 128 offsets: ['0x18', '0x38', '0x58', '0x78']...
-[11:55:27] [build] Complete. 8192 (offset×token) entries in /home/eun/proof_code/llm/dict_cache_v4.json
+[11:55:27] [build] Complete. 8192 (offset×token) entries in [path-redacted]
 [11:55:27] [build] Draining guest ICMP receive buffer...
   [drain] drained 0 pkts

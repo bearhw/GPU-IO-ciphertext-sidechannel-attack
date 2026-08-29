@@ -72,7 +72,7 @@ device    = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 mnist     = datasets.MNIST('./data', train=True, download=True, transform=transforms.ToTensor())
 images_db = np.stack([mnist[i][0].squeeze().numpy() for i in range(len(mnist))])
 
-OUT_LIST_DIR = '/home/eun/proof_code/'
+OUT_LIST_DIR = './data/'
 dataset      = RealPairDataset(OUT_LIST_DIR, images_db)
 EPOCHS       = len(dataset)
 loader       = DataLoader(dataset, batch_size=64, shuffle=True, num_workers=2, pin_memory=False)

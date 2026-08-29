@@ -104,7 +104,7 @@ class V10Dataset(Dataset):
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
-LIST_DIR  = '/home/eun/proof_code/'
+LIST_DIR  = './data/'
 JSON_PATH = './UNet_training_v3.json'
 
 with open(JSON_PATH) as f:

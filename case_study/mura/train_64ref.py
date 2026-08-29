@@ -14,7 +14,7 @@ Output:
 Run:
   tmux new -s train
   conda activate mura
-  cd /home/eun/cc_uvm/pytorch_uvm310_test/mura
+  cd .
   python train_64ref.py 2>&1 | tee train_log.txt
 """
 import os, sys, glob, time

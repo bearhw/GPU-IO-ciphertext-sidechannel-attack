@@ -65,7 +65,7 @@ class MatchedJsonDataset(Dataset):
                 torch.tensor(img, dtype=torch.float32))
 
 # Collect .out_v5.list indices, then filter json
-LIST_DIR = '/home/eun/proof_code/'
+LIST_DIR = './data/'
 list_idx = {int(re.search(r'-(\d+)\.out_v5\.list$', f).group(1))
             for f in os.listdir(LIST_DIR) if f.endswith('.out_v5.list')}
 

@@ -138,7 +138,7 @@ class PatchDiscriminator(nn.Module):
 mnist     = datasets.MNIST('./data', train=True, download=True, transform=transforms.ToTensor())
 images_db = np.stack([mnist[i][0].squeeze().numpy() for i in range(len(mnist))])
 
-OUT_LIST_DIR = '/home/eun/proof_code/'
+OUT_LIST_DIR = './data/'
 real_index_set = set()
 for fname in os.listdir(OUT_LIST_DIR):
     if not fname.endswith('.out_v5.list'):
@@ -148,7 +148,7 @@ for fname in os.listdir(OUT_LIST_DIR):
         real_index_set.add(int(m.group(1)))
 
 print("Loading UNet_training_v5.json ...")
-with open('/home/eun/proof_code/UNet_training_v5.json') as f:
+with open('./UNet_training_v5.json') as f:
     all_samples = json.load(f)
 matched = [s for s in all_samples if s['sample_idx'] in real_index_set]
 print(f"  .out_v5.list index count : {len(real_index_set)}")

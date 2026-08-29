@@ -1,7 +1,7 @@
 """v10 retraining (new .out_v5.list + json matched targets)
 encoder: sparsity_encoder_v6r_new.pth (frozen) — run train_v6r_new.py first
 Output: v10_decoder_new.pth, train_v10_new_curves.pdf
-tmux: /home/eun/miniforge3/envs/mura/bin/python train_v10_new.py 2>&1 | tee train_v10_new.log
+tmux: python train_v10_new.py 2>&1 | tee train_v10_new.log
 """
 import torch
 import torch.nn as nn

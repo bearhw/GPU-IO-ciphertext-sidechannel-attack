@@ -1,6 +1,6 @@
 """v9r retraining (new .out_v5.list matched indices)
 Output: unet_gan_generator_v9r_new.pth
-tmux: /home/eun/miniforge3/envs/mura/bin/python train_v9r_new.py 2>&1 | tee train_v9r_new.log
+tmux: python train_v9r_new.py 2>&1 | tee train_v9r_new.log
 """
 import torch, torch.nn as nn, torch.nn.functional as F, torch.optim as optim
 import numpy as np, json, os, re

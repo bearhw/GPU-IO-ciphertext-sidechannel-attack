@@ -2,7 +2,7 @@
 # One-shot hard relaunch. Avoid pkill -f self-match.
 set -u
 LOG=/tmp/guest_relaunch_manual.log
-SEV=/home/eun/esp_bak/sev-step
+SEV=/path/to/sev-step
 
 echo "[relaunch] $(date -Is) begin"
 
@@ -10,7 +10,7 @@ echo "[relaunch] $(date -Is) begin"
 for pid in /proc/[0-9]*; do
   cmd=$(tr '\0' ' ' <"$pid/cmdline" 2>/dev/null || true)
   case "$cmd" in
-    *"/home/eun/proof_code/llm/orch_supervisor.sh"*)
+    *"/path/to/proof_code/llm/orch_supervisor.sh"*)
       echo "[relaunch] kill supervisor ${pid#/proc/}"
       kill -9 "${pid#/proc/}" 2>/dev/null || true
       ;;
@@ -27,7 +27,7 @@ done
 for pid in /proc/[0-9]*; do
   cmd=$(tr '\0' ' ' <"$pid/cmdline" 2>/dev/null || true)
   case "$cmd" in
-    *"/bin/bash ./launch-qemu-noncc.sh"*|*"bash /home/eun/esp_bak/sev-step/launch-qemu-noncc.sh"*)
+    *"/bin/bash ./launch-qemu-noncc.sh"*|*"bash /path/to/sev-step/launch-qemu-noncc.sh"*)
       echo "[relaunch] kill launch ${pid#/proc/}"
       kill -9 "${pid#/proc/}" 2>/dev/null || true
       ;;

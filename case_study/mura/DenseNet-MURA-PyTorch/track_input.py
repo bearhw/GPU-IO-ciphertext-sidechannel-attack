@@ -25,7 +25,7 @@ import torch
 from densenet import densenet169
 from pipeline import get_study_level_data, get_dataloaders
 
-_HOST_ADDR = "eun@10.0.2.2"
+_HOST_ADDR = "user@10.0.2.2"
 _SIGNAL_READY_WAIT_S = 2
 
 
@@ -115,7 +115,7 @@ def parse_args():
                    help="Number of iterations to track (default: 10)")
     p.add_argument("--phase", default="valid", choices=["train", "valid"])
     p.add_argument("--host-addr", default=None,
-                   help="Host SSH address (default: eun@10.0.2.2)")
+                   help="Host SSH address (default: user@10.0.2.2)")
     p.add_argument("--batch_size", type=int, default=1)
     return p.parse_args()
 

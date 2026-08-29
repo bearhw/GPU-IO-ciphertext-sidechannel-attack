@@ -1,6 +1,6 @@
 """v8r2 retraining (new .out_v5.list + UNet_training_v5.json)
 Output: unet_gan_generator_v8r2_new.pth
-tmux: /home/eun/miniforge3/envs/mura/bin/python train_v8r2_new.py 2>&1 | tee train_v8r2_new.log
+tmux: python train_v8r2_new.py 2>&1 | tee train_v8r2_new.log
 """
 import torch
 import torch.nn as nn

@@ -5,7 +5,7 @@
 #
 set -e
 
-HOST="eun@10.0.2.2"
+HOST="user@10.0.2.2"
 SSH_OPTS="-o StrictHostKeyChecking=no -o ConnectTimeout=3 -o BatchMode=yes"
 MNIST_PYTHON="/home/ubuntu/miniconda3/bin/python3"
 MNIST_SCRIPT="/home/ubuntu/cc_uvm/pytorch_uvm310_test/mnist/main.py"

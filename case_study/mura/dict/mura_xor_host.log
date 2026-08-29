@@ -250,10 +250,10 @@ is_swap_back=1, nr_times=1
 [2/2] Polling KVM_USP_SWAP_STATUS (timeout 30s)...
 [2/2] Swap complete after 47261 poll iterations.
 Page swap complete — check dmesg for kernel details.
-[pipeline] 5 host log(s) matched: /home/eun/esp_bak/sev-step/userspace/write-tracker/mura/mura_host_regB_1.log .. /home/eun/esp_bak/sev-step/userspace/write-tracker/mura/mura_host_regB_5.log
+[pipeline] 5 host log(s) matched: [path-redacted] .. [path-redacted]
 [mtu] host tap0 already 9000
 [mtu] guest enp0s4 already 9000
-[dict] /home/eun/proof_code/mura/dict_cache_mura.json not found -- building (64 refs, this takes a while)...
+[dict] [path-redacted] not found -- building (64 refs, this takes a while)...
 [build] 64 ref values: [0, 4, 1, 3, 2, 5, 29, 30, 35, 32, 34, 33, 31, 38, 10, 28, 9, 36, 27, 11, 8, 37, 6, 7, 26, 39, 50, 40, 25, 57, 41, 42, 58, 56, 43, 24, 55, 44, 59, 54, 45, 53, 52, 205, 23, 46, 47, 51, 49, 60, 22, 48, 12, 21, 61, 62, 20, 63, 16, 64, 13, 65, 19, 66]
 [build] Reloading guest ICMP module to reset rate-limit state...
   [reload] guest_large_icmp_monitor (/home/ubuntu/sev-h100-sidechannel/2026attack/flow/guest_tool/guest_large_icmp_monitor.ko): OK
@@ -1018,10 +1018,10 @@ Page swap complete — check dmesg for kernel details.
   GPA_ref066 = 0x11766b000
   do_swap_read(0x12ac29000, 0x11766b000) → ref_066.out
 
-[build] Done. 64/64 refs → /home/eun/proof_code/mura/dict_cache_mura.json
-[pipeline] loading classifier from /home/eun/bnb/mura/mura_xor_slice_64ref_v2.pth ...
+[build] Done. 64/64 refs → [path-redacted]
+[pipeline] loading classifier from [path-redacted] ...
 
-[pipeline] === /home/eun/esp_bak/sev-step/userspace/write-tracker/mura/mura_host_regB_1.log ===
+[pipeline] === [path-redacted] ===
   1156 candidates total, skipping top 2, attempting next 2
   [rank 3] block=0x188200000 best_range=(0x18838a000, 73p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -1822,7 +1822,7 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 64281 / 802816  (8.01%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_1_rank3.npy
+[infer] Saved → [path-redacted]
     -> SHOULDER  (p=0.620)
   [rank 4] block=0x175400000 best_range=(0x175404000, 198p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -1881,10 +1881,10 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 27632 / 802816  (3.44%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_1_rank4.npy
+[infer] Saved → [path-redacted]
     -> FINGER  (p=0.668)
 
-[pipeline] === /home/eun/esp_bak/sev-step/userspace/write-tracker/mura/mura_host_regB_2.log ===
+[pipeline] === [path-redacted] ===
   906 candidates total, skipping top 2, attempting next 2
   [rank 3] block=0x1c3800000 best_range=(0x1c3818000, 146p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -2685,7 +2685,7 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 14417 / 802816  (1.80%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_2_rank3.npy
+[infer] Saved → [path-redacted]
     -> SHOULDER  (p=0.660)
   [rank 4] block=0x1ad200000 best_range=(0x1ad261000, 30p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -2744,10 +2744,10 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 21 / 802816  (0.00%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_2_rank4.npy
+[infer] Saved → [path-redacted]
     -> HUMERUS  (p=0.578)
 
-[pipeline] === /home/eun/esp_bak/sev-step/userspace/write-tracker/mura/mura_host_regB_3.log ===
+[pipeline] === [path-redacted] ===
   906 candidates total, skipping top 2, attempting next 2
   [rank 3] block=0x1c3200000 best_range=(0x1c3213000, 202p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -3513,7 +3513,7 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 18044 / 802816  (2.25%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_3_rank3.npy
+[infer] Saved → [path-redacted]
     -> SHOULDER  (p=0.538)
   [rank 4] block=0x1ad000000 best_range=(0x1ad0ca000, 52p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -3572,10 +3572,10 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 0 / 802816  (0.00%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_3_rank4.npy
+[infer] Saved → [path-redacted]
     -> HUMERUS  (p=0.580)
 
-[pipeline] === /home/eun/esp_bak/sev-step/userspace/write-tracker/mura/mura_host_regB_4.log ===
+[pipeline] === [path-redacted] ===
   908 candidates total, skipping top 2, attempting next 2
   [rank 3] block=0x1a6800000 best_range=(0x1a699c000, 70p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -3634,7 +3634,7 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 0 / 802816  (0.00%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_4_rank3.npy
+[infer] Saved → [path-redacted]
     -> HUMERUS  (p=0.580)
   [rank 4] block=0x1b1a00000 best_range=(0x1b1ace000, 109p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -4435,10 +4435,10 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 30 / 802816  (0.00%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_4_rank4.npy
+[infer] Saved → [path-redacted]
     -> HUMERUS  (p=0.585)
 
-[pipeline] === /home/eun/esp_bak/sev-step/userspace/write-tracker/mura/mura_host_regB_5.log ===
+[pipeline] === [path-redacted] ===
   918 candidates total, skipping top 2, attempting next 2
   [rank 3] block=0x172a00000 best_range=(0x172b80000, 58p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -4497,7 +4497,7 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 7783 / 802816  (0.97%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_5_rank3.npy
+[infer] Saved → [path-redacted]
     -> SHOULDER  (p=0.576)
   [rank 4] block=0x174e00000 best_range=(0x174e8a000, 54p) -> infer ...
 [infer] FIXED_GPA   = 0x12ac29000
@@ -4822,7 +4822,7 @@ Page swap complete — check dmesg for kernel details.
 
 [infer] XOR slice shape : (64, 224, 56)
 [infer] Total hits      : 11735 / 802816  (1.46%)
-[infer] Saved → /home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_5_rank4.npy
+[infer] Saved → [path-redacted]
     -> FINGER  (p=0.488)
 
 [pipeline] done. 10/10 candidates succeeded -> test_results.csv

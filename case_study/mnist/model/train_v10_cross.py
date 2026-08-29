@@ -3,7 +3,7 @@ Train with train:val ratios 6:4 / 7:3 / 8:2.
 encoder: sparsity_encoder_v6r_new.pth (frozen)
 Output: v10_decoder_split60.pth / v10_decoder_split70.pth / v10_decoder_split80.pth
      train_v10_cross_split60_curves.pdf / ..._split70_ / ..._split80_
-tmux: /home/eun/miniforge3/envs/mura/bin/python train_v10_cross.py 2>&1 | tee train_v10_cross.log
+tmux: python train_v10_cross.py 2>&1 | tee train_v10_cross.log
 """
 import torch
 import torch.nn as nn

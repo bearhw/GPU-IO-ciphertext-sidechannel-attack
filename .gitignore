@@ -107,6 +107,13 @@ sev-step-module/mura/*.log
 sev-step-module/llm/**/*.log
 sev-step-module/output/
 
+# Compiled binaries
+sev-step-module/write_pattern_tracker
+sev-step-module/write_pattern_tracker_B
+sev-step-module/write_pattern_tracker_desc
+sev-step-module/write_pattern_tracker_early_exit
+sev-step-module/postcursor_input_tracker
+
 # Python
 __pycache__/
 *.pyc

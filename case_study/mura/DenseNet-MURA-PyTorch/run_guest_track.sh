@@ -9,7 +9,7 @@
 #
 # Environment variables:
 #   PYTHON=/path/to/python3   (default: /home/ubuntu/miniconda3/envs/vlm/bin/python3)
-#   HOST_ADDR=user@host       (default: eun@10.0.2.2)
+#   HOST_ADDR=user@host       (default: user@10.0.2.2)
 
 set -u
 
@@ -17,7 +17,7 @@ RUNS=${1:-5}
 MAX_ITERS=${2:-10}
 PHASE=${3:-valid}
 PYTHON=${PYTHON:-/home/ubuntu/miniconda3/envs/vlm/bin/python3}
-HOST_ADDR=${HOST_ADDR:-eun@10.0.2.2}
+HOST_ADDR=${HOST_ADDR:-user@10.0.2.2}
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 signal_host() {

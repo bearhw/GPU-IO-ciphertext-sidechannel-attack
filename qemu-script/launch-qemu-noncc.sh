@@ -7,9 +7,9 @@
 # -------------------------
 # User-configurable
 # -------------------------
-EXEC_PATH="/home/eun/esp_bak/sev-step/local-installation/usr/local"
+EXEC_PATH="/path/to/qemu-install"
 UEFI_PATH="${EXEC_PATH}/share/qemu"
-VDD_IMAGE="/home/eun/usenix.qcow2"
+VDD_IMAGE="/path/to/guest.qcow2"
 NVIDIA_GPU="0000:61:00.0"
 
 MEM_GB=256

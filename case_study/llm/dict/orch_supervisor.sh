@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # orch_supervisor.sh — unattended guest/orchestrate recover+resume.
-# Intended to run as root (NOPASSWD):  sudo /home/eun/proof_code/llm/orch_supervisor.sh
+# Intended to run as root (NOPASSWD):  sudo /path/to/proof_code/llm/orch_supervisor.sh
 set -u
 
-PROOF=/home/eun/proof_code
-SEV=/home/eun/esp_bak/sev-step
+PROOF=/path/to/proof_code
+SEV=/path/to/sev-step
 END=2500
-KEY=/home/eun/.ssh/id_ed25519
+KEY=~/.ssh/id_ed25519
 SSH=(ssh -p 7777 -i "$KEY" -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=5 ubuntu@localhost)
 LOG=/tmp/orch_auto_supervisor.log
 GUEST_LOG=/tmp/guest_relaunch_auto.log
@@ -20,7 +20,7 @@ echo "supervisor start $(date -Is) pid=$$ uid=$(id -u)"
 qemu_alive() { ps -C qemu-system-x86 --no-headers >/dev/null 2>&1; }
 orch_alive() {
   # Match the real orchestrate python process only (absolute interpreter+script).
-  pgrep -f '^/usr/bin/python3 -u /home/eun/proof_code/orchestrate\.py ' >/dev/null 2>&1
+  pgrep -f '^/usr/bin/python3 -u /path/to/proof_code/orchestrate\.py ' >/dev/null 2>&1
 }
 ssh_ok() { timeout 8 "${SSH[@]}" 'echo ok' 2>/dev/null | grep -q ok; }
 
@@ -33,7 +33,7 @@ last_idx() {
   python3 - <<'PY'
 import csv
 last = None
-with open("/home/eun/proof_code/match_rate.csv") as f:
+with open("/path/to/proof_code/match_rate.csv") as f:
     for row in csv.reader(f):
         if len(row) >= 2 and row[1].isdigit():
             last = int(row[1])

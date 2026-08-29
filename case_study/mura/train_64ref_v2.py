@@ -20,7 +20,7 @@ Output:
 
 Run:
   conda activate mura
-  cd /home/eun/bnb/mura
+  cd .
   python train_64ref_v2.py 2>&1 | tee train_64ref_v2.log
 """
 import os, sys, glob, time, math

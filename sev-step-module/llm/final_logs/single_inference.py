@@ -85,7 +85,7 @@ def dump_tensor_gpa_full(name, tensor):
     for base, length in runs:
         print(f"[GPA_RUN] {name}: 0x{base:x} len={length}", flush=True)
 
-_HOST_ADDR = "eun@10.0.2.2"
+_HOST_ADDR = "user@10.0.2.2"
 _SIGNAL_READY_WAIT_S = 2
 
 def _signal_host(remote_path):
@@ -147,7 +147,7 @@ def parse_args():
     p.add_argument("--input-only", action="store_true",
                    help="Print input GPA only, skip GPU compute (no generate)")
     p.add_argument("--host-addr", type=str, default=None,
-                   help="Host SSH address (e.g. eun@10.0.2.2). Sends scp signals before/after D2H.")
+                   help="Host SSH address (e.g. user@10.0.2.2). Sends scp signals before/after D2H.")
     return p.parse_args()
 
 

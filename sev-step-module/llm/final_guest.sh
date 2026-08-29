@@ -7,7 +7,7 @@
 #
 set -e
 
-HOST="eun@10.0.2.2"
+HOST="user@10.0.2.2"
 SSH_OPTS="-o StrictHostKeyChecking=no -o ConnectTimeout=3 -o BatchMode=yes"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 OUTDIR="${SCRIPT_DIR}"

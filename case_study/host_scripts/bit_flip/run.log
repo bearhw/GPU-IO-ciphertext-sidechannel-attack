@@ -1,5 +1,5 @@
-(base) eun@tiger:~/proof_code/bit_flip$  sudo python3 test_gpa_contiguity.py  
-[sudo] password for eun: 
+[user@host]:~/proof_code/bit_flip$  sudo python3 test_gpa_contiguity.py  
+[sudo] password for user: 
 [setup] Checking guest SSH...
 [setup] stress-ng not found on guest, using python mmap fallback
 
@@ -234,8 +234,8 @@
 
   [High] Result: 50/50 = 100.0%  avg_interior=1.00  avg_frags=1.28
 
-[save] /home/eun/proof_code/bit_flip/gpa_contiguity_results.json
-[save] /home/eun/proof_code/bit_flip/gpa_contiguity_summary.csv
+[save] [path-redacted]
+[save] [path-redacted]
 
 ============================================================
   SUMMARY

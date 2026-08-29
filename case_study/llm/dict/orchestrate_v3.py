@@ -295,7 +295,7 @@ def _reload_icmp_monitor() -> bool:
         # Push host-side .ko into the guest home as a last resort.
         host_ko = Path(__file__).resolve().parent.parent / "guest_large_icmp_monitor.ko"
         if not host_ko.is_file():
-            host_ko = Path("/home/eun/proof_code/guest_large_icmp_monitor.ko")
+            host_ko = Path("./guest_large_icmp_monitor.ko")
         if host_ko.is_file():
             log(f"  [recover] scp {host_ko} → guest:~/guest_large_icmp_monitor.ko")
             try:

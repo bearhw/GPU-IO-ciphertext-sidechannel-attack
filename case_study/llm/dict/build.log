@@ -794,7 +794,7 @@
   dict_gpa=0x112716000  actual_landing=0x18  reg_start=0x18  byte_shift=2  (1 candidates, 1 at target)
   dump → t30_p3.out  (dict_gpa=0x112716000)
   registered 128 offsets: ['0x18', '0x38', '0x58', '0x78']...
-[16:03:20] [build] Complete. 15872 (offset×token) entries in /home/eun/proof_code/llm/dict_cache.json
+[16:03:20] [build] Complete. 15872 (offset×token) entries in [path-redacted]
 [16:03:20] [build] Draining guest ICMP receive buffer...
   [drain] drained 0 pkts
 [11:54:32] [build] 31 labels  64 phases  ~64 sends (est.)
@@ -1621,7 +1621,7 @@ Connection reset by 127.0.0.1 port 7777
   dict_gpa=0x142e93000  actual_landing=0x18  reg_start=0x18  byte_shift=2  (1 candidates, 1 at target)
   dump → t30_p3.out  (dict_gpa=0x142e93000)
   registered 128 offsets: ['0x18', '0x38', '0x58', '0x78']...
-[12:22:19] [build] Complete. 15872 (offset×token) entries in /home/eun/proof_code/llm/dict_cache.json
+[12:22:19] [build] Complete. 15872 (offset×token) entries in [path-redacted]
 [12:22:19] [build] Draining guest ICMP receive buffer...
   [drain] drained 0 pkts
 [09:12:28] [build] 31 labels  64 phases  ~64 sends (est.)
@@ -2419,7 +2419,7 @@ Connection reset by 127.0.0.1 port 7777
   dict_gpa=0x118112000  actual_landing=0x18  reg_start=0x18  byte_shift=2  (1 candidates, 1 at target)
   dump → t30_p3.out  (dict_gpa=0x118112000)
   registered 128 offsets: ['0x18', '0x38', '0x58', '0x78']...
-[09:29:08] [build] Complete. 15872 (offset×token) entries in /home/eun/proof_code/llm/dict_cache_v4.json
+[09:29:08] [build] Complete. 15872 (offset×token) entries in [path-redacted]
 [09:29:08] [build] Draining guest ICMP receive buffer...
   [drain] drained 0 pkts
 [10:26:35] [build] 31 labels  34 phases  ~34 sends (est.)
@@ -2800,7 +2800,7 @@ Connection reset by 127.0.0.1 port 7777
   dict_gpa=0x114de1000  actual_landing=0x18  reg_start=0x18  byte_shift=2  (1 candidates, 1 at target)
   dump → t30_p3.out  (dict_gpa=0x114de1000)
   registered 128 offsets: ['0x18', '0x38', '0x58', '0x78']...
-[10:33:39] [build] Complete. 8192 (offset×token) entries in /home/eun/proof_code/llm/dict_cache_v4.json
+[10:33:39] [build] Complete. 8192 (offset×token) entries in [path-redacted]
 [10:33:39] [build] Draining guest ICMP receive buffer...
   [drain] drained 0 pkts
 [10:59:34] [build] 31 labels  34 phases  ~34 sends (est.)
@@ -3134,7 +3134,7 @@ Connection reset by 127.0.0.1 port 7777
   dict_gpa=0x145b0c000  actual_landing=0x18  reg_start=0x18  byte_shift=2  (1 candidates, 1 at target)
   dump → t30_p3.out  (dict_gpa=0x145b0c000)
   registered 128 offsets: ['0x18', '0x38', '0x58', '0x78']...
-[11:04:42] [build] Complete. 8192 (offset×token) entries in /home/eun/proof_code/llm/dict_cache_v4.json
+[11:04:42] [build] Complete. 8192 (offset×token) entries in [path-redacted]
 [11:04:42] [build] Draining guest ICMP receive buffer...
   [drain] drained 0 pkts
 [19:18:51] [build] 31 labels  34 phases  ~34 sends (est.)
@@ -3468,6 +3468,6 @@ Connection reset by 127.0.0.1 port 7777
   dict_gpa=0x11955b000  actual_landing=0x18  reg_start=0x18  byte_shift=2  (1 candidates, 1 at target)
   dump → t30_p3.out  (dict_gpa=0x11955b000)
   registered 128 offsets: ['0x18', '0x38', '0x58', '0x78']...
-[19:23:39] [build] Complete. 8192 (offset×token) entries in /home/eun/proof_code/llm/dict_cache_v4.json
+[19:23:39] [build] Complete. 8192 (offset×token) entries in [path-redacted]
 [19:23:39] [build] Draining guest ICMP receive buffer...
   [drain] drained 0 pkts

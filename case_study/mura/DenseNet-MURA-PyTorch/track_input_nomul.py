@@ -27,7 +27,7 @@ import torch
 from densenet import densenet169
 from pipeline import get_study_level_data, get_dataloaders
 
-_HOST_ADDR = "eun@10.0.2.2"
+_HOST_ADDR = "user@10.0.2.2"
 
 
 def _signal_host(remote_path):

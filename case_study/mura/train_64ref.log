@@ -5,7 +5,7 @@ Loading train cache (memmap)...
 Loading valid cache (memmap)...
 Train: (36808, 64, 224, 56)  Valid: (3197, 64, 224, 56)
 [64-ref] params=5,056,455  batch=96  train batches=384  valid batches=34
-/home/eun/miniforge3/envs/mura/lib/python3.10/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+[path-redacted] UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
   super().__init__(loader)
 [64-ref  1/50]  tr 1.5454/55.6%  va 2.2667/32.3%  5373s ← saved
 [64-ref  2/50]  tr 1.2691/70.5%  va 2.3699/30.2%  5376s

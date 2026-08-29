@@ -136,7 +136,7 @@ MATCH_CSV = HERE / "match_rate.csv"
 # detect_candidates(). A GPU-CC AES-GCM encryption write (Region B) precedes
 # the host-to-device DMA of the input tensor by a few 10s of microseconds;
 # the RAM pages written just after a Region-B fault are candidate image_gpa.
-TRACKER_PATH   = Path("/home/eun/esp_bak/sev-step/userspace/write-tracker/write_pattern_tracker")
+TRACKER_PATH   = Path("./write_pattern_tracker")
 _BLIND_B_LO, _BLIND_B_HI = 0x3f80000000, 0x3f90000000   # Region B: AES-GCM staging (precursor)
 _BLIND_A_LO, _BLIND_A_HI = 0x3f7fc00000, 0x3f7fd00000   # Region A: per-batch clock (excluded)
 _BLIND_LOOKAHEAD  = 12     # max WRITE events scanned after a Region-B precursor

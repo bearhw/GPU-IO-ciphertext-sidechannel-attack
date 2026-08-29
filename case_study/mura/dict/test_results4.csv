@@ -1,3 +1,3 @@
 log,rank,block_gpa,hits,max_run,best_range_base,best_range_len,npy_path,status,pred_class,pred_prob,dist_ELBOW,dist_FINGER,dist_FOREARM,dist_HAND,dist_HUMERUS,dist_SHOULDER,dist_WRIST
-mura_host_regB_ELBOW_1,3,0x102200000,735,2,0x102251000,2,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_ELBOW_1_rank3.npy,ok,SHOULDER,0.8175,0.0138,0.0241,0.0509,0.0104,0.0711,0.8175,0.0121
-mura_host_regB_ELBOW_1,4,0x1bfa00000,60,17,0x1bfa8d000,17,/home/eun/proof_code/mura/xor_slices_auto/xor_slice_mura_host_regB_ELBOW_1_rank4.npy,ok,HUMERUS,0.5798,0.0480,0.1338,0.0520,0.0494,0.5798,0.0803,0.0566
+mura_host_regB_ELBOW_1,3,0x102200000,735,2,0x102251000,2,[path-redacted]
+mura_host_regB_ELBOW_1,4,0x1bfa00000,60,17,0x1bfa8d000,17,[path-redacted]

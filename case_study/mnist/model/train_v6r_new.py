@@ -1,6 +1,6 @@
 """v6r retraining (new .out_v5.list data)
 Output: sparsity_encoder_v6r_new.pth, v6r_embeddings_new.npy, v6r_images_new.npy
-tmux: /home/eun/miniforge3/envs/mura/bin/python train_v6r_new.py 2>&1 | tee train_v6r_new.log
+tmux: python train_v6r_new.py 2>&1 | tee train_v6r_new.log
 """
 import torch
 import torch.nn as nn
