@@ -1,0 +1,18 @@
+device=cuda  ckpt val_acc=0.5083  chunk_pool=4  dim=384
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:431: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:437: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+
+accuracy = 0.5083  (1625/3197)
+
+class         prec  recall      f1      n
+ELBOW        0.564   0.312   0.402    465
+FINGER       0.643   0.523   0.577    461
+FOREARM      0.288   0.508   0.368    301
+HAND         0.392   0.767   0.519    460
+HUMERUS      0.531   0.476   0.502    288
+SHOULDER     0.707   0.714   0.710    563
+WRIST        0.632   0.294   0.402    659
+saved: /home/ubuntu/replica_pageset/pageset_confusion_matrix.png
+saved: /home/ubuntu/replica_pageset/pageset_confusion_matrix.pdf

@@ -1,0 +1,36 @@
+########## D) fine-tune 모델, 열화 반영, 정순만 ##########
+device=cuda  ckpt=reassembly_64ref.pth
+aspect prior=1.339 (공격자는 실제 종횡비 모름)  열화=on
+
+[열화 반영] accuracy = 0.8011  balanced = 0.7863  (2561/3197)
+평균 확보 페이지 = 39.4/49 (80%)
+
+class         prec  recall      f1      n
+ELBOW        0.723   0.791   0.756    465
+FINGER       0.816   0.837   0.827    461
+FOREARM      0.739   0.658   0.696    301
+HAND         0.902   0.857   0.878    460
+HUMERUS      0.614   0.684   0.647    288
+SHOULDER     0.850   0.908   0.878    563
+WRIST        0.862   0.769   0.813    659
+saved: cm_D_ft_fwd.png
+saved: cm_D_ft_fwd.pdf
+
+########## E) fine-tune 모델 + 정순/역순 탐색 ##########
+device=cuda  ckpt=reassembly_64ref.pth
+aspect prior=1.339 (공격자는 실제 종횡비 모름)  열화=on
+
+[열화 반영] accuracy = 0.7435  balanced = 0.7345  (2377/3197)
+평균 확보 페이지 = 39.4/49 (80%)
+역순 가설 채택 = 619/3197 (19%)
+
+class         prec  recall      f1      n
+ELBOW        0.755   0.690   0.721    465
+FINGER       0.699   0.811   0.751    461
+FOREARM      0.682   0.641   0.661    301
+HAND         0.919   0.809   0.860    460
+HUMERUS      0.516   0.656   0.578    288
+SHOULDER     0.715   0.861   0.782    563
+WRIST        0.877   0.672   0.761    659
+saved: cm_E_ft_search.png
+saved: cm_E_ft_search.pdf

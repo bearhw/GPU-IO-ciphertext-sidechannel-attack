@@ -1,0 +1,2 @@
+device=cuda  ckpt=mura_xor_slice_64ref.pth
+aspect prior = 1.339 (공격자는 실제 종횡비 모름)

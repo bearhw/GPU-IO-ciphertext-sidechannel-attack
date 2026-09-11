@@ -1,0 +1,62 @@
+device=cuda  (GPU 없으면 --limit-train 으로 규모를 줄여라)
+실측 배치 411개 로드
+train 36,808  valid 3,197
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:431: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+params=1,303,688
+class weight: ELBOW=1.07  FINGER=1.03  FOREARM=2.88  HAND=0.95  HUMERUS=4.13  SHOULDER=0.63  WRIST=0.54
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:437: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+ep  1  loss 1.8924  train 0.2545  val 0.3062  bal 0.2847  736s  *saved
+ep  2  loss 1.7909  train 0.3418  val 0.3553  bal 0.3316  743s  *saved
+ep  3  loss 1.7240  train 0.3730  val 0.3735  bal 0.3635  741s  *saved
+ep  4  loss 1.6711  train 0.3935  val 0.4041  bal 0.3779  747s  *saved
+ep  5  loss 1.6237  train 0.4086  val 0.4135  bal 0.3953  743s  *saved
+ep  6  loss 1.5845  train 0.4263  val 0.4288  bal 0.3975  728s  *saved
+ep  7  loss 1.5481  train 0.4473  val 0.4586  bal 0.4254  729s  *saved
+ep  8  loss 1.5158  train 0.4610  val 0.4561  bal 0.4409  750s
+ep  9  loss 1.4900  train 0.4662  val 0.4432  bal 0.4327  734s
+ep 10  loss 1.4641  train 0.4797  val 0.4623  bal 0.4472  742s  *saved
+ep 11  loss 1.4330  train 0.4951  val 0.4576  bal 0.4617  752s
+ep 12  loss 1.4126  train 0.5002  val 0.4520  bal 0.4444  760s
+ep 13  loss 1.3875  train 0.5099  val 0.4460  bal 0.4464  750s
+ep 14  loss 1.3706  train 0.5176  val 0.4607  bal 0.4580  758s
+ep 15  loss 1.3407  train 0.5247  val 0.4532  bal 0.4492  752s
+ep 16  loss 1.3266  train 0.5331  val 0.4332  bal 0.4433  726s
+ep 17  loss 1.3093  train 0.5371  val 0.4554  bal 0.4631  757s
+ep 18  loss 1.2940  train 0.5459  val 0.4532  bal 0.4613  751s
+ep 19  loss 1.2785  train 0.5478  val 0.4620  bal 0.4687  765s
+ep 20  loss 1.2592  train 0.5566  val 0.4905  bal 0.4881  755s  *saved
+ep 21  loss 1.2473  train 0.5625  val 0.4598  bal 0.4611  756s
+ep 22  loss 1.2257  train 0.5701  val 0.4676  bal 0.4766  758s
+ep 23  loss 1.2228  train 0.5704  val 0.4817  bal 0.4866  753s
+ep 24  loss 1.1994  train 0.5739  val 0.4439  bal 0.4427  755s
+ep 25  loss 1.1827  train 0.5811  val 0.4642  bal 0.4731  748s
+ep 26  loss 1.1674  train 0.5856  val 0.4761  bal 0.4828  758s
+ep 27  loss 1.1519  train 0.5936  val 0.4792  bal 0.4740  753s
+ep 28  loss 1.1381  train 0.5986  val 0.4770  bal 0.4762  762s
+ep 29  loss 1.1227  train 0.6030  val 0.4739  bal 0.4865  754s
+ep 30  loss 1.1097  train 0.6046  val 0.4642  bal 0.4756  752s
+ep 31  loss 1.0998  train 0.6101  val 0.4989  bal 0.4952  758s  *saved
+ep 32  loss 1.0801  train 0.6193  val 0.4614  bal 0.4763  759s
+ep 33  loss 1.0818  train 0.6174  val 0.5083  bal 0.5135  756s  *saved
+ep 34  loss 1.0635  train 0.6266  val 0.4751  bal 0.4851  765s
+ep 35  loss 1.0524  train 0.6294  val 0.4611  bal 0.4643  746s
+ep 36  loss 1.0347  train 0.6357  val 0.4673  bal 0.4701  754s
+ep 37  loss 1.0271  train 0.6369  val 0.4801  bal 0.4810  751s
+ep 38  loss 1.0182  train 0.6387  val 0.4901  bal 0.4961  752s
+ep 39  loss 1.0040  train 0.6430  val 0.4983  bal 0.5025  742s
+ep 40  loss 0.9948  train 0.6470  val 0.4582  bal 0.4601  745s
+ep 41  loss 0.9902  train 0.6470  val 0.4858  bal 0.4873  745s
+ep 42  loss 0.9730  train 0.6548  val 0.5055  bal 0.5072  751s
+ep 43  loss 0.9661  train 0.6578  val 0.4970  bal 0.4998  754s
+ep 44  loss 0.9533  train 0.6572  val 0.4664  bal 0.4727  754s
+ep 45  loss 0.9426  train 0.6638  val 0.4830  bal 0.4859  750s
+ep 46  loss 0.9398  train 0.6654  val 0.4845  bal 0.4907  757s
+ep 47  loss 0.9280  train 0.6680  val 0.4786  bal 0.4842  754s
+ep 48  loss 0.9252  train 0.6702  val 0.4805  bal 0.4850  754s
+ep 49  loss 0.9134  train 0.6749  val 0.4842  bal 0.4895  745s
+ep 50  loss 0.9039  train 0.6766  val 0.4789  bal 0.4894  756s
+ep 51  loss 0.9084  train 0.6758  val 0.4811  bal 0.4846  754s
+ep 52  loss 0.9063  train 0.6777  val 0.4873  bal 0.4957  969s
+Terminated

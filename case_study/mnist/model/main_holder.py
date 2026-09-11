@@ -24,6 +24,17 @@ _p.add_argument('--hold-batch', type=int, default=0)
 _wrapper_args, _main_argv = _p.parse_known_args()
 _HOLD_BATCH = _wrapper_args.hold_batch
 
+# ── ready gate ───────────────────────────────────────────────────────────────
+# Let the host complete the (comparatively expensive) SSH handshake and spawn
+# this process BEFORE arming anything timing-sensitive (e.g. write_pattern_tracker,
+# which write-protects guest RAM and can starve a single-vCPU guest badly enough
+# that a NEW incoming SSH connection's banner exchange times out). The host
+# arms its tracker only after seeing HOLDER_READY, then releases this gate --
+# no new connection needed for that, just a byte on the already-open stdin pipe.
+sys.stdout.write("HOLDER_READY\n")
+sys.stdout.flush()
+sys.stdin.readline()
+
 
 def _load_label(idx: int) -> int:
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)),

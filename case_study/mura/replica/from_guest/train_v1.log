@@ -1,0 +1,40 @@
+device=cuda  (GPU 없으면 --limit-train 으로 규모를 줄여라)
+실측 배치 411개 로드
+train 36,808  valid 3,197
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:431: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+params=228,360
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:437: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+ep  1  loss 1.6831  train 0.3617  val 0.3416  747s  *saved
+ep  2  loss 1.5572  train 0.4286  val 0.3688  755s  *saved
+ep  3  loss 1.4878  train 0.4589  val 0.3966  716s  *saved
+ep  4  loss 1.4474  train 0.4755  val 0.4010  721s  *saved
+ep  5  loss 1.4165  train 0.4892  val 0.4076  746s  *saved
+ep  6  loss 1.3813  train 0.5039  val 0.4232  742s  *saved
+ep  7  loss 1.3559  train 0.5146  val 0.4260  768s  *saved
+ep  8  loss 1.3380  train 0.5195  val 0.4248  773s
+ep  9  loss 1.3164  train 0.5281  val 0.4382  771s  *saved
+ep 10  loss 1.3008  train 0.5321  val 0.4357  753s
+ep 11  loss 1.2797  train 0.5411  val 0.4501  757s  *saved
+ep 12  loss 1.2624  train 0.5433  val 0.4451  758s
+ep 13  loss 1.2471  train 0.5481  val 0.4504  753s  *saved
+ep 14  loss 1.2292  train 0.5564  val 0.4564  749s  *saved
+ep 15  loss 1.2172  train 0.5581  val 0.4604  749s  *saved
+ep 16  loss 1.2003  train 0.5659  val 0.4704  749s  *saved
+ep 17  loss 1.1866  train 0.5715  val 0.4692  745s
+ep 18  loss 1.1753  train 0.5772  val 0.4670  751s
+ep 19  loss 1.1689  train 0.5764  val 0.4683  758s
+ep 20  loss 1.1596  train 0.5790  val 0.4711  759s  *saved
+ep 21  loss 1.1445  train 0.5857  val 0.4689  752s
+ep 22  loss 1.1329  train 0.5889  val 0.4689  757s
+ep 23  loss 1.1273  train 0.5929  val 0.4723  745s  *saved
+ep 24  loss 1.1193  train 0.5939  val 0.4779  747s  *saved
+ep 25  loss 1.1130  train 0.5965  val 0.4758  745s
+ep 26  loss 1.1110  train 0.5967  val 0.4805  756s  *saved
+ep 27  loss 1.1086  train 0.6000  val 0.4745  758s
+ep 28  loss 1.1066  train 0.6019  val 0.4795  737s
+ep 29  loss 1.1042  train 0.5998  val 0.4798  757s
+ep 30  loss 1.0977  train 0.6019  val 0.4833  748s  *saved
+
+best val acc = 0.4833 → /home/ubuntu/replica_pageset/pageset_64ref.pth

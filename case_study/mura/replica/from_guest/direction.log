@@ -1,0 +1,14 @@
+device=cuda  실측 배치 411개  aspect prior=1.339
+train 36,808  valid 3,197
+init backbone from reassembly_64ref.pth (head 새로 학습, missing=4)
+params=5,055,170
+ep  1  loss 0.1044  train 0.9408  val 0.9609  278s  *saved
+ep  2  loss 0.0814  train 0.9523  val 0.9643  298s  *saved
+ep  3  loss 0.0706  train 0.9576  val 0.9744  310s  *saved
+ep  4  loss 0.0633  train 0.9623  val 0.9725  301s
+ep  5  loss 0.0562  train 0.9660  val 0.9787  308s  *saved
+ep  6  loss 0.0527  train 0.9687  val 0.9772  314s
+ep  7  loss 0.0493  train 0.9688  val 0.9794  309s  *saved
+ep  8  loss 0.0486  train 0.9695  val 0.9790  313s
+
+best direction acc = 0.9794 → /home/ubuntu/replica_pageset/direction_64ref.pth

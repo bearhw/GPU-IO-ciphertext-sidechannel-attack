@@ -1,0 +1,27 @@
+{
+  "stage": 5,
+  "index": 1002,
+  "label": 1,
+  "metrics": {
+    "v6r (Retrieval)": {
+      "ssim": 1.0,
+      "psnr": 99.99,
+      "l1": 0.0
+    },
+    "v9r (UNet-GAN)": {
+      "ssim": 0.9420903877531935,
+      "psnr": 23.451140205781922,
+      "l1": 0.0138533511582901
+    },
+    "v10 (Decoder)": {
+      "ssim": 0.9813327165506857,
+      "psnr": 28.101366374372706,
+      "l1": 0.008238454950756301
+    }
+  },
+  "ssim_v6r": 1.0,
+  "ssim_v9r": 0.9420903877531935,
+  "ssim_v10": 0.9813327165506857,
+  "comparison_png": "/home/eun/open-science/case_study/mnist/pipeline/comparison_1002.png",
+  "timestamp": 1789134772.803464
+}

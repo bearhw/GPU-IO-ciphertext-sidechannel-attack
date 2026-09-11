@@ -1,0 +1,54 @@
+########## A) 상한: 열화 없음 ##########
+device=cuda  ckpt=mura_xor_slice_64ref.pth
+aspect prior=1.339 (공격자는 실제 종횡비 모름)  열화=off
+
+[이상적(열화 없음)] accuracy = 0.7667  balanced = 0.7486  (2451/3197)
+평균 확보 페이지 = 49.0/49 (100%)
+
+class         prec  recall      f1      n
+ELBOW        0.769   0.701   0.733    465
+FINGER       0.797   0.803   0.800    461
+FOREARM      0.722   0.561   0.632    301
+HAND         0.886   0.793   0.837    460
+HUMERUS      0.532   0.712   0.609    288
+SHOULDER     0.852   0.879   0.865    563
+WRIST        0.747   0.791   0.768    659
+saved: cm_A_ideal.png
+saved: cm_A_ideal.pdf
+
+########## B) 열화 반영, 정순만 ##########
+device=cuda  ckpt=mura_xor_slice_64ref.pth
+aspect prior=1.339 (공격자는 실제 종횡비 모름)  열화=on
+
+[열화 반영] accuracy = 0.6691  balanced = 0.6449  (2139/3197)
+평균 확보 페이지 = 39.4/49 (80%)
+
+class         prec  recall      f1      n
+ELBOW        0.674   0.563   0.614    465
+FINGER       0.714   0.683   0.698    461
+FOREARM      0.601   0.455   0.518    301
+HAND         0.777   0.667   0.718    460
+HUMERUS      0.443   0.580   0.502    288
+SHOULDER     0.779   0.840   0.809    563
+WRIST        0.629   0.725   0.674    659
+saved: cm_B_degraded_fwd.png
+saved: cm_B_degraded_fwd.pdf
+
+########## C) 열화 반영 + 정순/역순 탐색 ##########
+device=cuda  ckpt=mura_xor_slice_64ref.pth
+aspect prior=1.339 (공격자는 실제 종횡비 모름)  열화=on
+
+[열화 반영] accuracy = 0.5818  balanced = 0.5726  (1860/3197)
+평균 확보 페이지 = 39.4/49 (80%)
+역순 가설 채택 = 1068/3197 (33%)
+
+class         prec  recall      f1      n
+ELBOW        0.746   0.430   0.546    465
+FINGER       0.484   0.649   0.554    461
+FOREARM      0.411   0.475   0.441    301
+HAND         0.527   0.624   0.571    460
+HUMERUS      0.440   0.531   0.481    288
+SHOULDER     0.741   0.813   0.776    563
+WRIST        0.708   0.486   0.576    659
+saved: cm_C_degraded_search.png
+saved: cm_C_degraded_search.pdf

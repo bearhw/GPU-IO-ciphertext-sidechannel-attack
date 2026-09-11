@@ -1,0 +1,28 @@
+device=cuda  (GPU 없으면 --limit-train 으로 규모를 줄여라)
+실측 배치 411개 로드
+실측 블록 조성 로드: 타깃 48p / 같은이미지 81p / 다른이미지 294p (중앙값)
+입력 채널 = 65 (ref 64 + recency 1)
+train 36,808  valid 3,197
+params=767,112
+class weight: ELBOW=1.07  FINGER=1.03  FOREARM=2.88  HAND=0.95  HUMERUS=4.13  SHOULDER=0.63  WRIST=0.54
+ep  1  loss 1.9428  train 0.2104  val 0.3031  bal 0.2808  889s  *saved
+ep  2  loss 1.7992  train 0.3545  val 0.3791  bal 0.3506  897s  *saved
+ep  3  loss 1.7354  train 0.3966  val 0.3947  bal 0.3751  894s  *saved
+ep  4  loss 1.6870  train 0.4148  val 0.4379  bal 0.4325  892s  *saved
+ep  5  loss 1.6477  train 0.4365  val 0.4617  bal 0.4556  891s  *saved
+ep  6  loss 1.6140  train 0.4579  val 0.4861  bal 0.4759  886s  *saved
+ep  7  loss 1.5862  train 0.4752  val 0.4091  bal 0.4254  897s
+ep  8  loss 1.5602  train 0.4949  val 0.4439  bal 0.4484  897s
+ep  9  loss 1.5315  train 0.5077  val 0.3591  bal 0.3673  886s
+ep 10  loss 1.5103  train 0.5237  val 0.3741  bal 0.3996  880s
+ep 11  loss 1.4877  train 0.5338  val 0.4123  bal 0.4175  907s
+ep 12  loss 1.4642  train 0.5482  val 0.4013  bal 0.4223  891s
+ep 13  loss 1.4499  train 0.5535  val 0.3869  bal 0.3935  894s
+ep 14  loss 1.4276  train 0.5611  val 0.3187  bal 0.3411  884s
+ep 15  loss 1.4104  train 0.5681  val 0.3951  bal 0.4041  906s
+ep 16  loss 1.3982  train 0.5734  val 0.4157  bal 0.4346  912s
+ep 17  loss 1.3846  train 0.5801  val 0.3594  bal 0.3715  907s
+ep 18  loss 1.3659  train 0.5850  val 0.3556  bal 0.3778  898s
+ep 19  loss 1.3552  train 0.5926  val 0.3485  bal 0.3689  899s
+ep 20  loss 1.3408  train 0.6014  val 0.2537  bal 0.2867  903s
+Terminated

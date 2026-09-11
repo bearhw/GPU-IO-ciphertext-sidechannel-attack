@@ -1,0 +1,90 @@
+Device: cuda
+Train 36,808  Valid 3,197
+  ELBOW     : train 4,931  valid  465
+  FINGER    : train 5,106  valid  461
+  FOREARM   : train 1,825  valid  301
+  HAND      : train 5,543  valid  460
+  HUMERUS   : train 1,272  valid  288
+  SHOULDER  : train 8,379  valid  563
+  WRIST     : train 9,752  valid  659
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:431: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:431: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+Train batches: 1151  Valid batches: 50
+Downloading: "https://download.pytorch.org/models/densenet169-b2777c0a.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/densenet169-b2777c0a.pth
+  0%|          | 0.00/54.7M [00:00<?, ?B/s]  1%|          | 512k/54.7M [00:00<00:11, 4.91MB/s] 13%|█▎        | 7.25M/54.7M [00:00<00:01, 42.5MB/s] 34%|███▍      | 18.5M/54.7M [00:00<00:00, 76.2MB/s] 54%|█████▍    | 29.8M/54.7M [00:00<00:00, 92.3MB/s] 75%|███████▍  | 41.0M/54.7M [00:00<00:00, 101MB/s]  96%|█████████▌| 52.2M/54.7M [00:00<00:00, 107MB/s]100%|██████████| 54.7M/54.7M [00:00<00:00, 90.8MB/s]
+
+DenseNet-169  total params=12,496,135  trainable=12,496,135
+  classifier: Linear(1664, 7)
+
+Class weights: {'ELBOW': '1.066', 'FINGER': '1.030', 'FOREARM': '2.881', 'HAND': '0.949', 'HUMERUS': '4.134', 'SHOULDER': '0.628', 'WRIST': '0.539'}
+
+================================================================
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:437: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:437: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+[ep  1/30]  tr 0.7803/95.3%  va 0.8096/95.8%  lr=9.97e-05  306s ← saved
+[ep  2/30]  tr 0.7182/97.5%  va 0.7959/96.3%  lr=9.89e-05  305s ← saved
+[ep  3/30]  tr 0.7059/97.9%  va 0.7952/96.5%  lr=9.76e-05  305s ← saved
+[ep  4/30]  tr 0.6936/98.3%  va 0.7888/96.4%  lr=9.57e-05  306s
+[ep  5/30]  tr 0.6904/98.3%  va 0.7905/96.9%  lr=9.33e-05  306s ← saved
+[ep  6/30]  tr 0.6829/98.5%  va 0.7860/96.5%  lr=9.05e-05  317s
+[ep  7/30]  tr 0.6794/98.6%  va 0.7841/96.7%  lr=8.72e-05  309s
+[ep  8/30]  tr 0.6741/98.8%  va 0.7841/97.0%  lr=8.35e-05  309s ← saved
+[ep  9/30]  tr 0.6658/99.1%  va 0.8031/95.9%  lr=7.94e-05  309s
+[ep 10/30]  tr 0.6645/99.0%  va 0.7850/96.9%  lr=7.50e-05  309s
+[ep 11/30]  tr 0.6595/99.2%  va 0.7836/96.7%  lr=7.03e-05  320s
+[ep 12/30]  tr 0.6565/99.3%  va 0.7897/96.7%  lr=6.55e-05  307s
+[ep 13/30]  tr 0.6538/99.4%  va 0.7833/97.0%  lr=6.04e-05  306s
+[ep 14/30]  tr 0.6499/99.5%  va 0.7877/96.9%  lr=5.52e-05  307s
+[ep 15/30]  tr 0.6477/99.6%  va 0.7824/96.9%  lr=5.00e-05  305s
+[ep 16/30]  tr 0.6467/99.6%  va 0.7874/96.8%  lr=4.48e-05  307s
+[ep 17/30]  tr 0.6449/99.7%  va 0.7802/97.0%  lr=3.96e-05  307s ← saved
+[ep 18/30]  tr 0.6429/99.8%  va 0.7842/96.9%  lr=3.45e-05  307s
+[ep 19/30]  tr 0.6405/99.8%  va 0.7830/96.9%  lr=2.97e-05  307s
+[ep 20/30]  tr 0.6384/99.9%  va 0.7808/97.1%  lr=2.50e-05  307s ← saved
+[ep 21/30]  tr 0.6394/99.9%  va 0.7832/97.0%  lr=2.06e-05  308s
+[ep 22/30]  tr 0.6378/99.9%  va 0.7809/96.9%  lr=1.65e-05  308s
+[ep 23/30]  tr 0.6368/99.9%  va 0.7812/97.0%  lr=1.28e-05  308s
+[ep 24/30]  tr 0.6367/100.0%  va 0.7846/96.9%  lr=9.55e-06  308s
+[ep 25/30]  tr 0.6370/100.0%  va 0.7801/97.1%  lr=6.70e-06  308s ← saved
+[ep 26/30]  tr 0.6360/100.0%  va 0.7812/97.1%  lr=4.32e-06  306s
+[ep 27/30]  tr 0.6355/100.0%  va 0.7810/97.1%  lr=2.45e-06  308s
+[ep 28/30]  tr 0.6357/100.0%  va 0.7811/97.0%  lr=1.09e-06  310s
+[ep 29/30]  tr 0.6358/100.0%  va 0.7808/97.1%  lr=2.74e-07  330s
+[ep 30/30]  tr 0.6361/100.0%  va 0.7809/97.1%  lr=0.00e+00  329s
+
+Best val (micro): 97.1%  → ./mura_baseline_densenet169.pth
+
+===== Baseline (DenseNet-169) evaluation =====
+              precision    recall  f1-score   support
+
+       ELBOW       0.94      0.98      0.96       465
+      FINGER       0.99      0.98      0.98       461
+     FOREARM       0.96      0.87      0.91       301
+        HAND       0.97      0.99      0.98       460
+     HUMERUS       0.99      0.94      0.96       288
+    SHOULDER       0.98      0.99      0.99       563
+       WRIST       0.97      0.99      0.98       659
+
+    accuracy                           0.97      3197
+   macro avg       0.97      0.96      0.97      3197
+weighted avg       0.97      0.97      0.97      3197
+
+Per-class accuracy:
+  ELBOW     : 98.3%  (465 samples)
+  FINGER    : 97.6%  (461 samples)
+  FOREARM   : 87.4%  (301 samples)
+  HAND      : 98.7%  (460 samples)
+  HUMERUS   : 93.8%  (288 samples)
+  SHOULDER  : 99.5%  (563 samples)
+  WRIST     : 98.8%  (659 samples)
+
+Macro top-1 accuracy: 96.28%
+Saved → ./mura_baseline_confusion_matrix.pdf
+Traceback (most recent call last):
+  File "/home/ubuntu/mura/train_baseline.py", line 267, in <module>
+    import cv2  # for resize; fallback to PIL if not available
+ModuleNotFoundError: No module named 'cv2'

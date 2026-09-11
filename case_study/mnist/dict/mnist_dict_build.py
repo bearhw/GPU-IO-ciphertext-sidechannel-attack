@@ -60,6 +60,45 @@ DENSITY_SURVEY = HERE / "mnist_density_survey.npy"   # raw-u8 histogram (from gu
 BLOCK_SIZE       = 0x200000
 PAGES_PER_BLOCK  = BLOCK_SIZE // PAGE_SIZE            # 512
 
+# --- Safety ceilings on top of SWAP_PACE_SEC/SWAP_BURST_COOLDOWN, same
+# values/rationale as llm_e2e_combined.py's Pacer (case_study/llm/), added
+# there after the SAME 2026-09-04 host reboot this file's scan_block hit
+# twice in a row at full 512-page scale: the every-10-swaps/2s burst
+# cooldown alone was NOT enough to prevent a hard PSP/kernel hang over a
+# long sustained run. Do not weaken these without re-validating on real
+# hardware first (start with a small page count, not a full 512-page scan).
+MEGA_COOLDOWN_EVERY = 50
+MEGA_COOLDOWN_SLEEP = 12.0
+MAX_TOTAL_SWAPS_RUN = 3200   # sized like llm's MAX_LOC_SWAPS_SAMPLE: worst
+                             # case ~5 candidates x 512-page scan + margin
+
+
+class RunAborted(Exception):
+    pass
+
+
+class Pacer:
+    """Call .tick() immediately before each swap-read. Create ONE instance
+    per mnist_e2e.py run and thread it through every scan_block() call so
+    the cumulative swap count (and therefore MEGA cooldown timing and the
+    hard MAX_TOTAL_SWAPS_RUN ceiling) spans the whole run, not just one
+    candidate block."""
+    def __init__(self, max_total: int = MAX_TOTAL_SWAPS_RUN):
+        self.n = 0
+        self.max_total = max_total
+
+    def tick(self):
+        if self.n >= self.max_total:
+            raise RunAborted(f"MAX_TOTAL_SWAPS_RUN={self.max_total} reached")
+        if MEGA_COOLDOWN_EVERY and self.n and self.n % MEGA_COOLDOWN_EVERY == 0:
+            print(f"  [pace] MEGA cooldown after {self.n} swaps ({MEGA_COOLDOWN_SLEEP:.0f}s)")
+            time.sleep(MEGA_COOLDOWN_SLEEP)
+        elif SWAP_BURST_COOLDOWN and self.n and self.n % SWAP_BURST_COOLDOWN == 0:
+            time.sleep(SWAP_BURST_SLEEP)
+        else:
+            time.sleep(SWAP_PACE_SEC)
+        self.n += 1
+
 MNIST_MEAN, MNIST_STD = 0.1307, 0.3081
 DRAIN_EVERY = 16
 
@@ -151,10 +190,16 @@ def build(swap_tool: str, n_ref: int) -> None:
 
 # ── Phase 2: whole-block content scan (no assumed offset/length) ───────────
 def load_ref_dumps(cache: dict) -> dict[int, bytes]:
+    """entry["file"] was recorded relative to whatever cwd --build happened to
+    run from, so it does not reliably resolve later (e.g. from a different
+    invocation directory). Prefer the canonical DICT_DIR / ref_NNN.out path;
+    fall back to the recorded path only if that canonical file is missing."""
     ref_dumps = {}
-    missing = []
     for u8_str, entry in cache["refs"].items():
-        ref_dumps[int(u8_str)] = parse_dump(Path(entry["file"]))
+        u8 = int(u8_str)
+        canonical = DICT_DIR / f"ref_{u8:03d}.out"
+        path = canonical if canonical.exists() else Path(entry["file"])
+        ref_dumps[u8] = parse_dump(path)
     if not ref_dumps:
         print("[!] No ref dumps in cache -- run --build first.", file=sys.stderr)
         sys.exit(1)
@@ -162,27 +207,31 @@ def load_ref_dumps(cache: dict) -> dict[int, bytes]:
 
 
 def scan_block(fixed_gpa: int, block_base: int, ref_dumps: dict[int, bytes],
-               swap_tool: str) -> np.ndarray:
+               swap_tool: str, pacer: "Pacer | None" = None) -> np.ndarray:
     """Probe all 512 pages of a 2MB candidate block. For each of the 256
     16-byte chunk positions per page, record which reference u8 value (if
     any) it exactly matches -- position-wise (chunk j vs chunk j), same rule
     as mura_dict_build.py's infer(). Returns (512, 256) int16, -1 = no match,
-    else the matched raw pixel level (0-255)."""
+    else the matched raw pixel level (0-255).
+
+    pacer: pass one Pacer instance shared across every scan_block() call in
+    a run (e.g. across multiple candidate blocks) so MEGA-cooldown timing
+    and MAX_TOTAL_SWAPS_RUN reflect the TOTAL swap volume, not just this
+    call's. Raises RunAborted if that ceiling is hit -- treat as a failed
+    run, not a bug to retry past. A fresh, call-scoped Pacer is created if
+    none is given (standalone --scan-block CLI use)."""
+    if pacer is None:
+        pacer = Pacer()
     result = np.full((PAGES_PER_BLOCK, CHUNKS_PAGE), -1, dtype=np.int16)
     SCAN_TMP.mkdir(exist_ok=True)
 
     for k in range(PAGES_PER_BLOCK):
         page_gpa = block_base + k * PAGE_SIZE
         tmp = SCAN_TMP / f"scan_{page_gpa:x}.out"
-        if k > 0:
-            # PSP command-rate pacing -- see mura_dict_build.py's SWAP_PACE_SEC
-            # comment. A 512-page tight loop with no pacing rebooted the host
-            # (2026-08-25); do not remove this.
-            if SWAP_BURST_COOLDOWN > 0 and k % SWAP_BURST_COOLDOWN == 0:
-                print(f"  [pace] burst cooldown after {k} swaps ({SWAP_BURST_SLEEP:.1f}s)")
-                time.sleep(SWAP_BURST_SLEEP)
-            elif SWAP_PACE_SEC > 0:
-                time.sleep(SWAP_PACE_SEC)
+        # PSP command-rate pacing -- see the Pacer docstring. A 512-page
+        # tight loop with insufficient pacing rebooted the host (2026-08-25,
+        # again 2026-09-04 x2); do not remove or weaken this.
+        pacer.tick()
         try:
             do_swap_read(fixed_gpa, page_gpa, tmp, swap_tool)
             data = parse_dump(tmp)

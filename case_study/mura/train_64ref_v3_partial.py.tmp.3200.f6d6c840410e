@@ -1,0 +1,407 @@
+"""
+XorSliceSENet — ref-64 (v3, PARTIAL-image robust)
+
+Motivation
+  End-to-end attack tracks GPU writes at 2 MB block granularity. One MURA
+  image tensor = 224x224 f32 = 200,704 B = 49 pages. A 2 MB block holds
+  ~10 images, but an image straddling a 2 MB boundary is split: only a
+  contiguous *fraction* of its 49 pages lands in a given tracked block.
+  v2 assumes the full (64,224,56) slice; on a fraction it collapses to
+  near-chance (measured: 73% full -> ~15-25% at 25% capture, ~chance at 10%).
+
+What v3 changes vs v2 (train_64ref_v2.py)
+  1. Partial-capture augmentation: take a contiguous ROW band [r0, r0+R) of
+     the full slice and TOP-ALIGN it to rows [0, R); zero the rest. Attacker
+     cannot recover the band's absolute position in the image (image base GPA
+     unknown), so the model must be row-translation invariant -> top-align.
+  2. Scalar feature: v2 used orig aspect ratio (unknowable in the attack; the
+     classify script already faked it as 1.0). v3 replaces it with the
+     capture FRACTION = R/224, which the attacker DOES know (# captured pages
+     / 49). Same head input dim (641), so v2 weights load directly.
+  3. Global-stats branch normalized over the VALID (top-aligned) rows only,
+     not all 224 -- otherwise zero padding dilutes the per-ref match rate by
+     the capture fraction and the branch reads garbage on small fractions.
+
+Row-band sampling (per sample, each epoch)
+  - prob FULL_PROB: full image (R=224, frac=1.0) -> preserves full-image acc.
+  - else: n_pages log-uniform in [MIN_PAGES, 49] (oversamples small fractions),
+          R = round(n_pages/49*224), r0 ~ U(0, 224-R).
+
+Warm-start
+  --init-from mura_xor_slice_64ref_v2.pth  loads v2 weights (identical arch)
+  so this is a fine-tune, not a from-scratch run. Recommended.
+
+Cache: reuses ./xor_cache_64/ (full slices) built by train_64ref.py/v2.
+  Needs NOTHING else (no mura_downloads, no aspects).
+
+Output
+  ./mura_xor_slice_64ref_v3.pth
+  ./mura_xor64_v3_confusion_matrix.pdf
+  ./mura_xor64_v3_fraction_curve.csv   (val acc vs capture fraction)
+
+Run
+  conda activate mura
+  python train_64ref_v3_partial.py --init-from mura_xor_slice_64ref_v2.pth \
+      2>&1 | tee train_64ref_v3.log
+"""
+import os, sys, glob, time, math, argparse
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+from torch.utils.data import Dataset, DataLoader
+from sklearn.metrics import confusion_matrix, classification_report
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+# ── Constants ────────────────────────────────────────────────────────────────
+CLASSES     = ["ELBOW","FINGER","FOREARM","HAND","HUMERUS","SHOULDER","WRIST"]
+XOR_ROWS    = 224
+XOR_COLS    = 56
+N_REF       = 64
+IMG_PAGES   = 49           # 224x224 f32 = 49 pages
+MIN_PAGES   = 3            # smallest captured fraction we train on (~14 rows)
+FULL_PROB   = 0.15         # fraction of samples shown as full image
+EPOCHS      = 25           # fine-tune from v2; from-scratch use ~60
+WARMUP_EP   = 2
+SEED        = 42
+
+torch.manual_seed(SEED); np.random.seed(SEED)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+CACHE_DIR = "./xor_cache_64"
+# valid-set counts in CLASSES order (MURA valid split)
+VA_COUNTS = [465,461,301,460,288,563,659]
+# train-set counts in CLASSES order (MURA train split)
+TR_COUNTS = None   # derived from cache size below
+
+
+# ── Row-band -> top-aligned partial slice ────────────────────────────────────
+def sample_band(rng):
+    """Return (r0, R): contiguous row band to keep, in the FULL slice."""
+    if rng.random() < FULL_PROB:
+        return 0, XOR_ROWS
+    # log-uniform #pages in [MIN_PAGES, IMG_PAGES]
+    u = rng.random()
+    npages = int(round(MIN_PAGES * (IMG_PAGES / MIN_PAGES) ** u))
+    npages = max(MIN_PAGES, min(IMG_PAGES, npages))
+    R = int(round(npages / IMG_PAGES * XOR_ROWS))
+    R = max(4, min(XOR_ROWS, R))
+    r0 = int(rng.integers(0, XOR_ROWS - R + 1))
+    return r0, R
+
+
+def apply_partial(slice_full, r0, R, augment, rng):
+    """slice_full: (N_REF,224,56) float32. Returns top-aligned partial + frac."""
+    out = np.zeros_like(slice_full)
+    out[:, :R, :] = slice_full[:, r0:r0 + R, :]
+    if augment:
+        flip = (rng.random(out[:, :R, :].shape) < 0.005).astype(np.float32)
+        out[:, :R, :] = np.abs(out[:, :R, :] - flip)
+        if rng.random() < 0.5:
+            out[:, :R, :] = out[:, :R, ::-1]
+    return out, np.float32(R / XOR_ROWS)
+
+
+# ── Real captured samples (mura_collect_samples.py output) ───────────────────
+# study_type label -> CLASSES index
+_LABEL2IDX = {"XR_" + c: i for i, c in enumerate(CLASSES)}
+
+
+def load_real(real_dir):
+    """Read manifest.csv from a mura_collect_samples.py run. Returns
+    (files, fracs, labels). Each row is a blindly-captured, top-aligned slice
+    already at its real capture fraction."""
+    import csv
+    real_dir = os.path.abspath(real_dir)
+    manifest = os.path.join(real_dir, "manifest.csv")
+    if not os.path.exists(manifest):
+        sys.exit(f"ERROR: {manifest} not found (run mura_collect_samples.py first)")
+    files, fracs, labels = [], [], []
+    with open(manifest) as f:
+        for row in csv.DictReader(f):
+            lab = _LABEL2IDX.get(row["label"])
+            if lab is None:
+                continue
+            fp = os.path.join(real_dir, row["label"], row["file"])
+            if not os.path.exists(fp):
+                continue
+            files.append(fp)
+            fracs.append(float(row["frac"]))
+            labels.append(lab)
+    if not files:
+        sys.exit(f"ERROR: no usable samples in {manifest}")
+    return files, np.array(fracs, np.float32), np.array(labels, np.int64)
+
+
+def split_real(files, fracs, labels, val_frac, seed=SEED):
+    rng = np.random.default_rng(seed)
+    tr_i, va_i = [], []
+    for c in range(len(CLASSES)):
+        idx = np.where(labels == c)[0]
+        rng.shuffle(idx)
+        k = max(1, int(round(len(idx) * val_frac))) if len(idx) > 1 else 0
+        va_i.extend(idx[:k]); tr_i.extend(idx[k:])
+    tr_i, va_i = np.array(tr_i), np.array(va_i)
+    return tr_i, va_i
+
+
+class RealPartialDataset(Dataset):
+    """Real captured slices. The populated region is rows [0, R_cap) where
+    R_cap = round(frac_cap*224). Augment by (optionally) sub-cropping DOWN to a
+    smaller top-aligned band (never up -- we never invent rows we didn't
+    capture), so the model sees a spread of fractions <= the captured one."""
+    def __init__(self, files, fracs, labels, augment):
+        self.files, self.fracs, self.labels = files, fracs, labels
+        self.augment = augment
+
+    def __len__(self): return len(self.files)
+
+    def __getitem__(self, idx):
+        rng = np.random.default_rng()
+        sl = np.load(self.files[idx]).astype(np.float32)   # (N_REF,224,56)
+        f_cap = float(self.fracs[idx])
+        R_cap = max(1, min(XOR_ROWS, int(round(f_cap * XOR_ROWS))))
+        R = R_cap
+        if self.augment and R_cap > 8 and rng.random() < 0.5:
+            R = int(rng.integers(max(4, R_cap // 4), R_cap + 1))   # sub-crop down
+        out = np.zeros_like(sl)
+        out[:, :R, :] = sl[:, :R, :]
+        if self.augment:
+            flip = (rng.random(out[:, :R, :].shape) < 0.005).astype(np.float32)
+            out[:, :R, :] = np.abs(out[:, :R, :] - flip)
+            if rng.random() < 0.5:
+                out[:, :R, :] = out[:, :R, ::-1]
+        frac = np.float32(R / XOR_ROWS)
+        return (torch.from_numpy(out.copy()),
+                torch.tensor([frac], dtype=torch.float32),
+                self.labels[idx])
+
+
+# ── Dataset ──────────────────────────────────────────────────────────────────
+class PartialXorDataset(Dataset):
+    def __init__(self, slices_mm, labels, augment):
+        self.slices = slices_mm
+        self.labels = labels
+        self.augment = augment
+
+    def __len__(self): return len(self.labels)
+
+    def __getitem__(self, idx):
+        rng = np.random.default_rng()   # per-call randomness (worker-safe)
+        full = self.slices[idx].astype(np.float32)
+        r0, R = sample_band(rng)
+        part, frac = apply_partial(full, r0, R, self.augment, rng)
+        return (torch.from_numpy(part.copy()),
+                torch.tensor([frac], dtype=torch.float32),
+                self.labels[idx])
+
+
+# ── Model: XorSliceSENet (v3) — arch identical to v2, stats normed by frac ────
+class SELayer(nn.Module):
+    def __init__(self, ch, reduction=16):
+        super().__init__()
+        mid = max(ch // reduction, 4)
+        self.fc = nn.Sequential(
+            nn.Linear(ch, mid, bias=False), nn.ReLU(inplace=True),
+            nn.Linear(mid, ch, bias=False), nn.Sigmoid())
+    def forward(self, x):
+        return x * self.fc(x.mean(dim=(2, 3)))[:, :, None, None]
+
+
+class SEResBlock(nn.Module):
+    def __init__(self, in_ch, out_ch, stride=1, se_reduction=16):
+        super().__init__()
+        self.c1 = nn.Conv2d(in_ch, out_ch, 3, stride=stride, padding=1, bias=False)
+        self.b1 = nn.BatchNorm2d(out_ch)
+        self.c2 = nn.Conv2d(out_ch, out_ch, 3, padding=1, bias=False)
+        self.b2 = nn.BatchNorm2d(out_ch)
+        self.se = SELayer(out_ch, se_reduction)
+        self.down = nn.Sequential(
+            nn.Conv2d(in_ch, out_ch, 1, stride=stride, bias=False),
+            nn.BatchNorm2d(out_ch),
+        ) if (stride != 1 or in_ch != out_ch) else nn.Identity()
+    def forward(self, x):
+        h = F.relu(self.b1(self.c1(x)), inplace=True)
+        h = self.se(self.b2(self.c2(h)))
+        return F.relu(h + self.down(x), inplace=True)
+
+
+class XorSliceSENetV3(nn.Module):
+    def __init__(self, num_classes=7, n_ref=64):
+        super().__init__()
+        self.stem = nn.Sequential(
+            nn.Conv2d(n_ref, 64, kernel_size=(7, 3), stride=(2, 1),
+                      padding=(3, 1), bias=False),
+            nn.BatchNorm2d(64), nn.ReLU(inplace=True), SELayer(64))
+        self.pool1  = nn.MaxPool2d(kernel_size=(2, 1), stride=(2, 1))
+        self.layer1 = SEResBlock(64,  128, stride=1)
+        self.layer2 = SEResBlock(128, 256, stride=2)
+        self.layer3 = SEResBlock(256, 512, stride=2)
+        self.layer4 = SEResBlock(512, 512, stride=2)
+        self.gap    = nn.AdaptiveAvgPool2d(1)
+        self.stats_head = nn.Sequential(
+            nn.Linear(n_ref, 256), nn.BatchNorm1d(256), nn.ReLU(inplace=True),
+            nn.Dropout(0.3),
+            nn.Linear(256, 128), nn.ReLU(inplace=True))
+        self.head = nn.Sequential(
+            nn.Linear(512 + 128 + 1, 512), nn.ReLU(inplace=True),
+            nn.Dropout(0.4),
+            nn.Linear(512, num_classes))
+
+    def forward(self, x, frac):
+        # per-ref match rate over the VALID (top-aligned) region only.
+        valid = (frac.clamp(min=1e-3) * XOR_ROWS * XOR_COLS)   # (B,1)
+        stats = x.sum(dim=(2, 3)) / valid                       # (B, N_REF)
+        stats_feat = self.stats_head(stats)
+        x = self.pool1(self.stem(x))
+        x = self.layer1(x); x = self.layer2(x); x = self.layer3(x); x = self.layer4(x)
+        sp_feat = self.gap(x).flatten(1)
+        return self.head(torch.cat([sp_feat, stats_feat, frac], dim=1))
+
+
+# ── LR schedule ──────────────────────────────────────────────────────────────
+def lr_lambda(epoch, warmup=WARMUP_EP, total=EPOCHS):
+    if epoch < warmup:
+        return (epoch + 1) / warmup
+    progress = (epoch - warmup) / max(total - warmup, 1)
+    return 0.5 * (1 + math.cos(math.pi * progress))
+
+
+def load_caches():
+    tr = np.lib.format.open_memmap(os.path.join(CACHE_DIR, "tr_slices.npy"), mode='r')
+    va = np.lib.format.open_memmap(os.path.join(CACHE_DIR, "va_slices.npy"), mode='r')
+    va_labels = np.concatenate([np.full(c, i) for i, c in enumerate(VA_COUNTS)]).astype(np.int64)
+    # train labels: need per-class counts. If a sidecar exists use it, else derive.
+    tr_lab_path = os.path.join(CACHE_DIR, "tr_labels.npy")
+    if os.path.exists(tr_lab_path):
+        tr_labels = np.load(tr_lab_path)
+    else:
+        tr_labels = _derive_train_labels(tr.shape[0])
+    assert len(va_labels) == va.shape[0], (len(va_labels), va.shape[0])
+    assert len(tr_labels) == tr.shape[0], (len(tr_labels), tr.shape[0])
+    return tr, tr_labels, va, va_labels
+
+
+def _derive_train_labels(n):
+    """Rebuild train labels in CLASSES order from the dataset dir (same order
+    train_64ref_v2.collect_paths_labels used). Cache them for next time."""
+    for root in ("./mura_downloads", os.path.expanduser("~/bnb/mura/mura_downloads")):
+        if os.path.isdir(root):
+            counts = []
+            for c in CLASSES:
+                pat = os.path.join(root, "train", f"XR_{c}", "**", "*.png")
+                counts.append(len(glob.glob(pat, recursive=True)))
+            if sum(counts) == n:
+                lab = np.concatenate([np.full(c, i) for i, c in enumerate(counts)]).astype(np.int64)
+                np.save(os.path.join(CACHE_DIR, "tr_labels.npy"), lab)
+                print(f"[labels] derived train labels from {root}: {counts}", flush=True)
+                return lab
+            print(f"[labels] {root} count {sum(counts)} != cache {n}, skipping", flush=True)
+    sys.exit(f"ERROR: cannot derive train labels (cache n={n}). "
+             f"Provide {CACHE_DIR}/tr_labels.npy")
+
+
+# ── Fraction-curve evaluation (fixed bands, top-aligned, position-invariant) ──
+@torch.no_grad()
+def fraction_curve(model, va_mm, va_labels, batch=96):
+    model.eval()
+    rows_list = [224, 168, 112, 74, 56, 34, 22, 14]
+    print("\n[frac-curve] top-aligned prefix band (position-invariant eval)", flush=True)
+    curve = []
+    for R in rows_list:
+        frac = R / XOR_ROWS
+        preds = []
+        for s in range(0, len(va_labels), batch):
+            e = min(s + batch, len(va_labels))
+            x = np.zeros((e - s, N_REF, XOR_ROWS, XOR_COLS), dtype=np.float32)
+            x[:, :, :R, :] = va_mm[s:e][:, :, :R, :].astype(np.float32)
+            xt = torch.from_numpy(x).to(device)
+            fc = torch.full((e - s, 1), frac, dtype=torch.float32, device=device)
+            preds.append(model(xt, fc).argmax(1).cpu().numpy())
+        preds = np.concatenate(preds)
+        macro = np.mean([(preds[va_labels == i] == i).mean() for i in range(7)])
+        ov = (preds == va_labels).mean()
+        curve.append((R, frac, ov, macro))
+        print(f"  R={R:3d} ({frac*100:4.0f}% / {round(frac*IMG_PAGES):2d}p)  "
+              f"overall {ov*100:5.1f}%  macro {macro*100:5.1f}%", flush=True)
+    with open("./mura_xor64_v3_fraction_curve.csv", "w") as f:
+        f.write("rows,frac,pages,overall_acc,macro_acc\n")
+        for R, frac, ov, macro in curve:
+            f.write(f"{R},{frac:.4f},{round(frac*IMG_PAGES)},{ov:.4f},{macro:.4f}\n")
+    return curve
+
+
+def run(args):
+    tr_mm, tr_labels, va_mm, va_labels = load_caches()
+    print(f"Device: {device}  Train {tr_mm.shape}  Valid {va_mm.shape}", flush=True)
+
+    pin = torch.cuda.is_available()
+    tr_ds = PartialXorDataset(tr_mm, tr_labels, augment=True)
+    va_ds = PartialXorDataset(va_mm, va_labels, augment=False)
+    tr_ld = DataLoader(tr_ds, batch_size=args.batch, shuffle=True,
+                       num_workers=8, pin_memory=pin, persistent_workers=True)
+    va_ld = DataLoader(va_ds, batch_size=args.batch, shuffle=False,
+                       num_workers=4, pin_memory=pin, persistent_workers=True)
+
+    model = XorSliceSENetV3(len(CLASSES), n_ref=N_REF).to(device)
+    if args.init_from and os.path.exists(args.init_from):
+        sd = torch.load(args.init_from, map_location=device, weights_only=True)
+        missing, unexpected = model.load_state_dict(sd, strict=False)
+        print(f"[init] warm-start from {args.init_from}  "
+              f"missing={len(missing)} unexpected={len(unexpected)}", flush=True)
+    elif args.init_from:
+        print(f"[init] WARNING {args.init_from} not found -> from scratch", flush=True)
+
+    counts = np.bincount(tr_labels, minlength=len(CLASSES))
+    w = torch.tensor(counts.sum() / (len(CLASSES) * counts), dtype=torch.float32).to(device)
+    crit = nn.CrossEntropyLoss(weight=w, label_smoothing=0.1)
+    opt  = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
+    sched = optim.lr_scheduler.LambdaLR(opt, lr_lambda=lambda e: lr_lambda(e, WARMUP_EP, args.epochs))
+
+    model_path = "./mura_xor_slice_64ref_v3.pth"
+    best = 0.0
+    for epoch in range(1, args.epochs + 1):
+        t0 = time.time(); model.train()
+        trl = trc = trt = 0
+        for imgs, frac, lbl in tr_ld:
+            imgs, frac, lbl = imgs.to(device), frac.to(device), lbl.to(device)
+            opt.zero_grad()
+            out = model(imgs, frac); loss = crit(out, lbl)
+            loss.backward(); opt.step()
+            trl += loss.item() * imgs.size(0)
+            trc += out.argmax(1).eq(lbl).sum().item(); trt += imgs.size(0)
+        sched.step()
+
+        model.eval(); vac = vat = 0
+        with torch.no_grad():
+            for imgs, frac, lbl in va_ld:
+                imgs, frac, lbl = imgs.to(device), frac.to(device), lbl.to(device)
+                vac += model(imgs, frac).argmax(1).eq(lbl).sum().item(); vat += imgs.size(0)
+        va = 100. * vac / vat; tag = ""
+        if va > best:
+            best = va; torch.save(model.state_dict(), model_path); tag = " ← saved"
+        print(f"[ep {epoch:2d}/{args.epochs}]  tr {trl/trt:.4f}/{100.*trc/trt:.1f}%  "
+              f"va(mixed-frac) {va:.1f}%  lr={opt.param_groups[0]['lr']:.2e}  "
+              f"{time.time()-t0:.0f}s{tag}", flush=True)
+
+    print(f"\nBest mixed-frac val: {best:.1f}%  → {model_path}", flush=True)
+    model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
+    fraction_curve(model, va_mm, va_labels, batch=args.batch)
+    return model
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--init-from", default="mura_xor_slice_64ref_v2.pth",
+                    help="warm-start checkpoint (default v2). '' = from scratch")
+    ap.add_argument("--epochs", type=int, default=EPOCHS)
+    ap.add_argument("--batch",  type=int, default=96)
+    ap.add_argument("--lr",     type=float, default=1e-4)  # low: fine-tuning
+    args = ap.parse_args()
+    t0 = time.time()
+    run(args)
+    print(f"\nTotal time: {(time.time()-t0)/3600:.2f}h", flush=True)

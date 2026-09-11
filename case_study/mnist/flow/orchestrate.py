@@ -19,7 +19,7 @@ import sys
 import time
 from pathlib import Path
 
-HERE = Path(__file__).parent
+HERE = Path(__file__).resolve().parent
 GUEST_SSH  = "ubuntu@localhost"
 GUEST_PORT = "7777"
 # Non-interactive SSH commands never source ~/.bashrc, so the guest's `conda
@@ -71,22 +71,42 @@ def ssh(cmd: str, timeout: int = 15) -> str:
         return ""
 
 
-def acquire_image_gpa(index: int, use_main: bool = False):
-    """Run main_gpa_3.py (or main_holder.py) --index N on the guest via SSH.
-    Returns (label, image_gpa, pixel_offset, page2_gpa, proc).
+def acquire_image_gpa(index: int, use_main: bool = False, batch_size: int = 1,
+                      normalize: bool = False):
+    """Run main_gpa_3.py (or a main_holder*.py variant) --index N on the guest
+    via SSH. Returns (label, image_gpa, pixel_offset, page2_gpa, proc).
     page2_gpa is None when the guest does not output it.
     Close proc.stdin to release guest memory.
 
-    use_main=True: run main_holder.py; GPA line includes 'offset=N' (exact byte offset).
+    use_main=True: run a holder script; GPA line includes 'offset=N' (exact byte offset).
+      batch_size > 1 loads a full DataLoader batch (--no-accel -> shuffle=False,
+      fixed seed, so batch N = dataset[N*batch_size : (N+1)*batch_size], deterministic
+      and public -- ground truth for a large batch should be read from the host's own
+      copy of the MNIST label file instead of trusting this guest's single-sample
+      "Target Label" line, which is only valid for batch_size=1.
+      normalize=False (default): main_holder.py -- patches Normalize to a no-op, so
+        background pixel bytes are exactly 0.0 (matches main_gpa_3.py's convention;
+        required by the trained SparsityEncoder/V10Decoder pipeline).
+      normalize=True: main_holder_norm.py -- Normalize(0.1307, 0.3081) stays active,
+        matching main.py's real/native tensor content (background -> -0.4242129...).
+        Use this with a dictionary built for normalized values
+        (mnist_dict_build.py's normalize_u8) -- the two conventions are NOT
+        interchangeable; pairing normalize=False triggering with a normalized-value
+        dictionary (or vice versa) means every content match silently fails.
     use_main=False (default): run main_gpa_3.py with posix_memalign (offset always 0).
+      Does not support batching (single sample only); batch_size is ignored.
     """
     if use_main:
-        cmd = (f"cd ~/cc_uvm/pytorch_uvm310_test/mnist && "
-               f"sudo {GUEST_PY} -u main_holder.py "
-               f"--no-accel --batch-size 1 --epochs 1 --hold-batch {index}")
-    else:
-        cmd = (f"cd ~/cc_uvm/pytorch_uvm310_test/mnist && "
-               f"sudo {GUEST_PY} -u main_gpa_3.py --index {index}")
+        proc = _spawn_holder(index, batch_size, normalize)
+        if proc is None:
+            return None, None, None, None, None
+        label, image_gpa, pixel_offset = _release_holder(proc, index)
+        if label is None or image_gpa is None:
+            return None, None, None, None, None
+        return label, image_gpa, pixel_offset, None, proc
+
+    cmd = (f"cd ~/cc_uvm/pytorch_uvm310_test/mnist && "
+           f"sudo {GUEST_PY} -u main_gpa_3.py --index {index}")
     proc = subprocess.Popen(
         SSH_BASE + [cmd],
         stdin=subprocess.PIPE, stdout=subprocess.PIPE,
@@ -103,14 +123,14 @@ def acquire_image_gpa(index: int, use_main: bool = False):
             image_gpa = int(m.group(1), 16)
             if m.group(2):
                 pixel_offset = int(m.group(2))
-        # Both guest scripts emit "Target Label:" then "Image GPA (Aligned):"
-        # (main_holder.py puts offset on that same line) and then BLOCK on stdin,
-        # holding the tensor in memory for the host swap. Neither ever emits a
-        # page2 line — the host derives page2 as image_gpa + PAGE_SIZE (or via
-        # PAGE2_TABLE) in run_pipeline. So once we have both label and image_gpa
-        # there is nothing left to read; stop immediately. (The old code waited
-        # for up to 10 more lines hoping for a page2 that never comes, which
-        # deadlocked against the guest's now-blocked stdin.)
+        # main_gpa_3.py emits "Target Label:" then "Image GPA (Aligned):" and
+        # then BLOCKs on stdin, holding the tensor in memory for the host
+        # swap. It never emits a page2 line — the host derives page2 as
+        # image_gpa + PAGE_SIZE (or via PAGE2_TABLE) in run_pipeline. So once
+        # we have both label and image_gpa there is nothing left to read;
+        # stop immediately. (The old code waited for up to 10 more lines
+        # hoping for a page2 that never comes, which deadlocked against the
+        # guest's now-blocked stdin.)
         if label is not None and image_gpa is not None:
             break
     if label is None or image_gpa is None:
@@ -122,6 +142,71 @@ def acquire_image_gpa(index: int, use_main: bool = False):
             print(f"[!] guest stderr:\n{stderr_out}", file=sys.stderr)
         return None, None, None, None, None
     return label, image_gpa, pixel_offset, page2_gpa, proc
+
+
+def _spawn_holder(index: int, batch_size: int, normalize: bool):
+    """Open the SSH connection and start a main_holder*.py holder script NOW,
+    while the guest is still fully responsive -- stopping at its early
+    HOLDER_READY gate, before it touches the dataset/DataLoader at all.
+
+    Callers must arm anything timing-sensitive (write_pattern_tracker) only
+    AFTER this returns, then call _release_holder() to let the guest
+    proceed. Rationale: write_pattern_tracker write-protects a big chunk of
+    guest RAM and re-arms every ~20ms; on this guest (-smp 1, single vCPU)
+    that starves it badly enough that a NEW SSH connection's banner exchange
+    times out mid-tracking (observed live 2026-09-04 -- tracker was scoped to
+    the full 256GB guest RAM, no --track-size given). Opening the connection
+    before arming, then releasing an already-blocked process with one byte
+    on its existing stdin pipe, needs no new handshake during that window.
+    """
+    holder = "main_holder_norm.py" if normalize else "main_holder.py"
+    cmd = (f"cd ~/cc_uvm/pytorch_uvm310_test/mnist && "
+           f"sudo {GUEST_PY} -u {holder} "
+           f"--no-accel --batch-size {batch_size} --epochs 1 --hold-batch {index}")
+    proc = subprocess.Popen(
+        SSH_BASE + [cmd],
+        stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE, text=True,
+    )
+    for line in proc.stdout:
+        if "HOLDER_READY" in line:
+            return proc
+    stderr_out = proc.stderr.read()
+    proc.stdin.close()
+    proc.wait()
+    print(f"[!] holder never reached HOLDER_READY for index {index}", file=sys.stderr)
+    if stderr_out:
+        print(f"[!] guest stderr:\n{stderr_out}", file=sys.stderr)
+    return None
+
+
+def _release_holder(proc, index: int):
+    """Release a holder proc past its HOLDER_READY gate (one byte on its
+    already-open stdin -- no new SSH handshake), then read until it reports
+    the held batch's label/GPA and blocks again for the host swap."""
+    proc.stdin.write("\n")
+    proc.stdin.flush()
+    label, image_gpa, pixel_offset = None, None, 0
+    for line in proc.stdout:
+        print(f"  [guest] {line}", end="")
+        m = re.match(r"Target Label: (\d+)", line)
+        if m:
+            label = int(m.group(1))
+        m = re.match(r"Image GPA \(Aligned\): 0x([0-9a-f]+)(?:\s+offset=(\d+))?", line, re.IGNORECASE)
+        if m:
+            image_gpa = int(m.group(1), 16)
+            if m.group(2):
+                pixel_offset = int(m.group(2))
+        if label is not None and image_gpa is not None:
+            break
+    if label is None or image_gpa is None:
+        stderr_out = proc.stderr.read()
+        proc.stdin.close()
+        proc.wait()
+        print(f"[!] Failed to get GPA for index {index}", file=sys.stderr)
+        if stderr_out:
+            print(f"[!] guest stderr:\n{stderr_out}", file=sys.stderr)
+    return label, image_gpa, pixel_offset
 
 
 _ZERO_PAGE_SIZE = 4096
@@ -136,7 +221,7 @@ MATCH_CSV = HERE / "match_rate.csv"
 # detect_candidates(). A GPU-CC AES-GCM encryption write (Region B) precedes
 # the host-to-device DMA of the input tensor by a few 10s of microseconds;
 # the RAM pages written just after a Region-B fault are candidate image_gpa.
-TRACKER_PATH   = Path("./write_pattern_tracker")
+TRACKER_PATH   = HERE / "write_pattern_tracker"
 _BLIND_B_LO, _BLIND_B_HI = 0x3f80000000, 0x3f90000000   # Region B: AES-GCM staging (precursor)
 _BLIND_A_LO, _BLIND_A_HI = 0x3f7fc00000, 0x3f7fd00000   # Region A: per-batch clock (excluded)
 _BLIND_LOOKAHEAD  = 12     # max WRITE events scanned after a Region-B precursor
@@ -237,26 +322,56 @@ def detect_blind_candidates(log_path: Path) -> list[dict]:
 
 
 def acquire_image_gpa_blind(index: int, tracker_path: str, settle: int, duration: int,
-                            use_main: bool = False):
+                            use_main: bool = False, batch_size: int = 1,
+                            normalize: bool = False):
     """Arm write_pattern_tracker on the host, then trigger the guest sample
     load — WITHOUT trusting the guest's printed GPA. Returns
     (label, ranked_candidates, guest_proc). guest_proc.stdin must be closed
     by the caller to release guest memory. ranked_candidates may be empty.
+
+    batch_size > 1: label is the guest's (unreliable for batch_size > 1, see
+    acquire_image_gpa) single-sample report; callers wanting ground truth for
+    a whole batch should read it from the host's own copy of the MNIST label
+    file instead of relying on this return value.
+
+    normalize: see acquire_image_gpa -- must match whatever dictionary (or
+    lack thereof) the caller verifies candidates against.
     """
+    # Open the guest connection FIRST, while it's still fully responsive, and
+    # stop at the holder's HOLDER_READY gate (use_main only -- main_gpa_3.py
+    # has no such gate, so that path stays racy against the tracker window;
+    # normalize=True/False triggering always goes through a holder script).
+    guest_proc = None
+    if use_main:
+        guest_proc = _spawn_holder(index, batch_size, normalize)
+        if guest_proc is None:
+            return None, [], None
+
     log_path = HERE / f"blind_{index}.log"
     dbg_path = HERE / f"blind_{index}_dbg.log"
     log_f = open(log_path, "w")
     dbg_f = open(dbg_path, "w")
 
+    # Range 1 (candidate area): every reference/fixed GPA observed on this
+    # guest so far has landed under ~13GB; 16GB leaves generous margin.
+    # Range 2: the Region-B AES-GCM-staging precursor window used by
+    # detect_blind_candidates(). Tracking the tool's own default (the WHOLE
+    # 256GB guest RAM, no --track-size given) write-protects far more than
+    # needed and -- on this guest's single vCPU -- stalls it badly enough
+    # that a fresh SSH connection's banner exchange times out mid-run
+    # (observed live 2026-09-04). Scoping both ranges keeps the write-fault
+    # volume, and therefore the stall, down to what's actually relevant.
     tracker_proc = subprocess.Popen(
-        [tracker_path, "--duration", str(duration), "--settle", str(settle)],
+        [str(tracker_path), "--duration", str(duration), "--settle", str(settle),
+         "--start-gpa", "0x0", "--track-size", "0x400000000",
+         "--start-gpa2", hex(_BLIND_B_LO), "--track-size2", hex(_BLIND_B_HI - _BLIND_B_LO)],
         stdout=log_f, stderr=dbg_f,
     )
     print(f"[blind] armed write_pattern_tracker (settle={settle}s duration={duration}s) "
           f"-> {log_path.name}")
 
     # Wait for the tracker's own settle period to finish arming DST_TRACK
-    # before triggering the guest, so the capture window covers the load.
+    # before releasing the guest, so the capture window covers the load.
     deadline = time.time() + settle + 5
     armed = False
     while time.time() < deadline:
@@ -266,10 +381,15 @@ def acquire_image_gpa_blind(index: int, tracker_path: str, settle: int, duration
             break
     if not armed:
         print("[blind] WARNING: did not observe 'Settle done' in time; "
-              "triggering guest anyway", file=sys.stderr)
+              "releasing guest anyway", file=sys.stderr)
 
-    label, _reported_gpa, _pixel_offset, _page2, guest_proc = acquire_image_gpa(
-        index, use_main=use_main)
+    if use_main:
+        label, _reported_gpa, _pixel_offset = _release_holder(guest_proc, index)
+    else:
+        # No ready gate available for main_gpa_3.py -- this is the original,
+        # racy (fresh-connection-during-tracker-window) path.
+        label, _reported_gpa, _pixel_offset, _page2, guest_proc = acquire_image_gpa(
+            index, use_main=use_main, batch_size=batch_size, normalize=normalize)
     if guest_proc is None:
         tracker_proc.terminate()
         tracker_proc.wait()

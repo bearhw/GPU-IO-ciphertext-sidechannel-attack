@@ -1,0 +1,20 @@
+device=cuda  실측 배치 411개  aspect prior=1.339
+train 36,808  valid 3,197  열화=on
+init from mura_xor_slice_64ref.pth (fine-tune)
+params=5,056,455
+class weight: ELBOW=1.07  FINGER=1.03  FOREARM=2.88  HAND=0.95  HUMERUS=4.13  SHOULDER=0.63  WRIST=0.54
+[fine-tune 전] val 0.6691  bal 0.6449
+ep  1  loss 0.7828  train 0.8357  val 0.7429  bal 0.7336  pages 80%  403s  *saved
+ep  2  loss 0.7338  train 0.8550  val 0.7069  bal 0.6894  pages 80%  496s
+ep  3  loss 0.7049  train 0.8668  val 0.7620  bal 0.7505  pages 80%  414s  *saved
+ep  4  loss 0.6912  train 0.8670  val 0.7676  bal 0.7545  pages 80%  481s  *saved
+ep  5  loss 0.6745  train 0.8759  val 0.7767  bal 0.7556  pages 80%  296s  *saved
+ep  6  loss 0.6607  train 0.8827  val 0.7839  bal 0.7713  pages 80%  337s  *saved
+ep  7  loss 0.6453  train 0.8886  val 0.7920  bal 0.7780  pages 80%  341s  *saved
+ep  8  loss 0.6375  train 0.8917  val 0.7907  bal 0.7780  pages 80%  311s
+ep  9  loss 0.6223  train 0.8981  val 0.7876  bal 0.7708  pages 80%  315s
+ep 10  loss 0.6146  train 0.9015  val 0.7951  bal 0.7834  pages 80%  321s  *saved
+ep 11  loss 0.6099  train 0.9021  val 0.7886  bal 0.7704  pages 80%  340s
+ep 12  loss 0.6038  train 0.9052  val 0.8011  bal 0.7863  pages 80%  337s  *saved
+
+best val acc = 0.8011 → /home/ubuntu/replica_pageset/reassembly_64ref.pth

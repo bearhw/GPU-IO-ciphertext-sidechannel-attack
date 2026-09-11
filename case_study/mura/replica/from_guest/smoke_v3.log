@@ -1,0 +1,10 @@
+device=cuda  (GPU 없으면 --limit-train 으로 규모를 줄여라)
+실측 배치 411개 로드
+실측 블록 조성 로드: 타깃 48p / 같은이미지 81p / 다른이미지 294p (중앙값)
+입력 채널 = 65 (ref 64 + recency 1)
+train 256  valid 128
+params=767,112
+class weight: ELBOW=1.04  FINGER=1.11  FOREARM=4.06  HAND=1.02  HUMERUS=4.06  SHOULDER=0.62  WRIST=0.49
+ep  1  loss 2.0849  train 0.0938  val 0.1328  bal 0.1429  12s  *saved
+
+best val acc = 0.1328 → /home/ubuntu/replica_pageset/pageset_64ref.pth

