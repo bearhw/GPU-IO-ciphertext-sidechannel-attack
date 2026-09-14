@@ -1,188 +1,183 @@
-# 공격 파이프라인 (MURA vision workload)
+# Attack Pipeline (MURA Vision Workload)
 
-SEV-SNP guest 의 write fault 트레이스만 관측하는 host 측 공격자가
-피해자가 추론 중인 X-ray 의 신체 부위를 알아낸다.
+A host-side attacker observing only the write fault traces of an SEV-SNP guest
+identifies the body part in the X-ray being inferred by the victim.
 
-측정 기반: 5 run × 10 iteration, 채널 411개
+Empirical basis: 5 runs x 10 iterations, 411 channels
 (`mura_host_regB_{1..5}.log` + `mura_guest_nomul_{1..5}_raw.log`).
-분류 성능: MURA valid 3,197장.
+Classification benchmark: MURA valid (3,197 images).
 
 ---
 
-## 전체 흐름
+## Overall Workflow
 
 ```
- [1] write tracker
-      │  GPA + timestamp 스트림 (run당 300만~500만 write)
+ [1] Write Tracker
+      │  GPA + timestamp stream (3M - 5M writes per run)
       ▼
- [2] 2MB 블록 랭킹        S(b) = H(b) · R(b)
-      │  131,072 → 906~1,156 후보,  GT 블록 평균 rank 1.8
+ [2] 2MB Block Ranking        S(b) = H(b) · R(b)
+      │  131,072 → 906–1,156 candidates, GT block mean rank 1.8
       ▼
- [3] 상위 K개 + 인접 블록(±1) 로 스트림 제한
-      │  K=10 → 허용 블록 22~30개
+ [3] Stream Filtering to Top-K + Adjacent Blocks (±1)
+      │  K=10 → 22–30 allowed blocks
       ▼
- [4] 시간 연속 세그먼트 → 49페이지 후보 생성
-      │  후보 600~3,300개  (precision 0.03~0.16, recall 0.32~0.48)
+ [4] Temporal Contiguous Segments → 49-Page Candidates
+      │  600–3,300 candidates (precision 0.03–0.16, recall 0.32–0.48)
       ▼
- [5] 1페이지 probe (swap-read + 64-ref 매칭)          ← 비용 절감
-      │  통과한 후보만 다음 단계로 (~10배 감소)
+ [5] 1-Page Probe (swap-read + 64-ref matching)          ← Cost reduction
+      │  Only passing candidates proceed (~10x reduction)
       ▼
- [6] 49페이지 swap-read → write 순서대로 이어붙이기
-      │  물리 주소 무시. 시간 순서가 곧 논리 순서.
+ [6] 49-Page Swap-Read → Write-Order Concatenation
+      │  Ignore physical addresses. Temporal order is logical order.
       ▼
- [7] 64-ref xor slice 구성 → (64, 224, 56)
+ [7] 64-Ref XOR Slice Construction → (64, 224, 56)
       ▼
- [8] 방향 판별기 (정순/역순)  →  필요시 뒤집기
-      │  정확도 97.5%
+ [8] Direction Discriminator (Forward/Reverse) → Flip if needed
+      │  Accuracy 97.5%
       ▼
- [9] 신체 부위 분류 모델
+ [9] Body-Part Classification Model
          accuracy 80.0%  /  balanced 78.5%
 ```
 
 ---
 
-## 단계별 근거와 실측
+## Stage-by-Stage Rationale and Empirical Data
 
-### [2] 2MB 블록 랭킹
+### [2] 2MB Block Ranking
 
-H(b) = 블록 b 에서 finalize된 contiguous run 수, R(b) = 최장 run 길이(페이지).
+H(b) = number of finalized contiguous runs in block b, R(b) = longest run length (in pages).
 
-| | 값 |
+| Metric | Value |
 |---|---|
-| 전체 2MB 블록 | 131,072 (256 GB guest) |
-| 후보 블록 | 906–1,156 (0.7–0.9%) |
-| GT 블록 평균 rank | **1.8** (5 run 중 4개가 #1, 나머지 #5) |
-| GT 페이지가 write 스트림에 포착 | **100%** |
+| Total 2MB blocks | 131,072 (256 GB guest) |
+| Candidate blocks | 906–1,156 (0.7–0.9%) |
+| GT block mean rank | **1.8** (4 out of 5 runs at #1, remainder at #5) |
+| GT pages captured in write stream | **100%** |
 
-### [3]–[4] 시간 연속 세그먼트에서 49페이지 후보
+### [3]–[4] 49-Page Candidates from Temporal Contiguous Segments
 
-**핵심: 주소가 아니라 타임스탬프로 모은다.**
+**Key insight: Aggregate by timestamps, not physical addresses.**
 
-| 기준 | 값 |
+| Metric | Value |
 |---|---|
-| 채널 49페이지가 물리적으로 완전 연속 | 28% |
-| 채널 49페이지가 스트림에서 49연속 write (외부 write 0) | **90%** |
-| 지배 2MB 블록에 49페이지 전부 | 58% |
-| 채널이 걸치는 블록 수 | 1개 58% / 2개 31% / 3개 9% |
+| Channel 49 pages fully physically contiguous | 28% |
+| Channel 49 pages appear as 49 consecutive writes in stream (0 external writes) | **90%** |
+| Dominant 2MB block contains all 49 pages | 58% |
+| Number of blocks spanned per channel | 1 block 58% / 2 blocks 31% / 3 blocks 9% |
 
-블록을 걸치는 채널이 42% 이므로 **인접 블록(±1)까지 허용**해야 한다.
-허용하지 않으면 recall 이 0.05 로 무너진다.
+Because 42% of channels span across block boundaries, **adjacent blocks (±1) must be included**.
+Omitting adjacent blocks causes recall to collapse to 0.05.
 
-| K | recall | precision | 후보 수 | probe 없이 필요한 swap-read |
+| K | Recall | Precision | Candidate Count | Required Swap-Reads (Without Probe) |
 |---|---|---|---|---|
-| 10 | 0.09–0.51 (평균 0.32) | 0.03–0.16 | 622–1,256 | 3만–6만 |
-| 30 | 0.25–0.73 (평균 0.48) | 0.03–0.10 | 1,275–3,340 | 6만–16만 |
+| 10 | 0.09–0.51 (mean 0.32) | 0.03–0.16 | 622–1,256 | 30k–60k |
+| 30 | 0.25–0.73 (mean 0.48) | 0.03–0.10 | 1,275–3,340 | 60k–160k |
 
-recall 이 0.3~0.5 인 이유는 세그먼트 경계와 버스트 시작점이 어긋나기 때문이다.
-**한 번의 추론당 30~50% 확률로 포착**되며, MURA 는 run 당 25~30장을 처리하므로
-여러 추론을 관측하면 누적 성공률이 사실상 1 에 수렴한다.
+Recall is 0.3–0.5 due to slight offsets between segment boundaries and burst starting points.
+**Each inference has a 30–50% capture probability**. Since MURA processes 25–30 images per run,
+observing multiple inferences yields a cumulative success rate converging to 1.
 
-### [5] 1페이지 probe
+### [5] 1-Page Probe
 
-후보의 90% 는 이미지가 아니다. 후보마다 49페이지를 전부 뜨면 비용이 10배다.
-대표 1페이지만 swap-read 해서 64-ref 와 같은 오프셋 16바이트가 하나라도
-일치하는지 본다 (`mura_block_triage.py:probe_page`, 첫 매칭에서 early-exit).
+90% of candidates are not images. Reading all 49 pages for every candidate multiplies cost by 10x.
+Swap-reading a single representative page and checking if any 16-byte offset matches the 64-ref dictionary
+(`mura_block_triage.py:probe_page`, early-exit on first match) filters out non-image candidates.
 
-ref 는 `float32(u8/255)` 4바이트를 4회 반복한 16바이트다. 실제 이미지 페이지에는
-균일 픽셀 구간(배경)이 반드시 있어 매칭이 뜨지만, activation/weight 에서 그
-특정 패턴이 그 위치에 나올 확률은 사실상 0 이다.
+Each reference is a 16-byte chunk repeating 4 bytes of `float32(u8/255)` four times. Real image pages
+always contain uniform pixel areas (background) triggering matches, whereas the probability of activations
+or weights matching that exact pattern at that location is practically zero.
 
-### [6] write 순서 재조립
+### [6] Write-Order Reassembly
 
-물리 주소를 **무시하고** 스트림 등장 순서대로 4096바이트씩 이어붙인다.
-200,704 바이트 = 채널의 raw float32 배열.
+**Ignoring** physical addresses, concatenate 4096-byte blocks sequentially as they appear in the stream.
+200,704 bytes = raw float32 array of the channel.
 
-| write 순서 vs 논리 순서 | 비율 |
+| Write Order vs Logical Order | Proportion |
 |---|---|
-| 정순 | **75%** |
-| 역순 | **24%** |
-| 그 외 | 1% |
+| Forward | **75%** |
+| Reverse | **24%** |
+| Other | 1% |
 
-→ 두 가지 가설만 다루면 99% 를 덮는다.
+→ Considering only two hypotheses covers 99% of cases.
 
-### [8] 방향 판별기
+### [8] Direction Discriminator
 
-max-softmax 로 방향을 고르면 실패한다 (33% 과다 채택 → −5.6%p).
-정순/역순을 맞히는 전용 2-class 분류기를 따로 학습한다.
+Selecting direction via max-softmax fails (over-selects reverse at 33% → -5.6%p penalty).
+A dedicated 2-class classifier is trained specifically to distinguish forward from reverse.
 
-| | 값 |
+| Metric | Value |
 |---|---|
-| 방향 판별 정확도 | **97.5%** |
-| 되뒤집기 채택률 | 26% (실제 24%) |
+| Direction discrimination accuracy | **97.5%** |
+| Un-reverse selection rate | 26% (actual: 24%) |
 
-### [9] 분류 모델
+### [9] Classification Model
 
-입력 (64, 224, 56). 원본 `XorSliceResNet` 구조 그대로, 열화된 재조립 입력으로
-fine-tune 한다 (페이지 80% 확보 조건). 종횡비는 공격자가 모르므로 학습셋
-평균(1.339)을 prior 로 쓴다.
+Input shape: (64, 224, 56). Using the original `XorSliceResNet` architecture,
+fine-tune on degraded reassembly inputs (with ~80% page retention).
+Since the attacker does not know the true aspect ratio, the training set mean (1.339) is used as a prior.
 
 ---
 
-## 최종 성능
+## Final Performance
 
-| 방법 | acc | balanced |
+| Method | Acc | Balanced |
 |---|---|---|
-| 원본 모델 (정렬된 완전한 입력, **공격자 불가**) | 80.2% | — |
-| 2MB 블록 통째 입력, 순열 불변 모델 | 48.6% | 47.6% |
-| 재조립, 방향 무처리 | 67.2% | 66.0% |
-| 재조립 + max-softmax 방향 | 74.4% | 73.5% |
-| **재조립 + 방향 판별기 (최종)** | **80.0%** | **78.5%** |
-| 재조립 + oracle 방향 (상한) | 80.1% | 78.6% |
+| Original model (Clean aligned input, **infeasible for attacker**) | 80.2% | — |
+| Full 2MB block input, permutation-invariant model | 48.6% | 47.6% |
+| Reassembly, no direction handling | 67.2% | 66.0% |
+| Reassembly + max-softmax direction | 74.4% | 73.5% |
+| **Reassembly + direction discriminator (Final)** | **80.0%** | **78.5%** |
+| Reassembly + oracle direction (Upper bound) | 80.1% | 78.6% |
 
-랜덤 14.3%, 다수 클래스 prior 20.6%.
+Random baseline: 14.3%, majority class prior: 20.6%.
 
 ---
 
-## 왜 [5] content probe 가 필수인가
+## Why Content Probe [5] is Essential
 
-write 메타데이터(GPA + timestamp)만으로 채널을 특정하려는 시도를 8가지 했고
-전부 실패했다. 이미지 sweep 과 배경 memcpy 가 write 트레이스에서 구조적으로
-구분되지 않기 때문이다.
+We attempted 8 different strategies to isolate image channels using write metadata (GPA + timestamp) alone,
+and all of them failed. In the write trace, image sweeps and background memcpy operations are structurally indistinguishable.
 
-| 방법 | precision |
+| Strategy | Precision |
 |---|---|
-| 물리 연속 run 길이 | 0.03–0.11 |
-| 페이지별 write 횟수 | ≤0.03 |
-| Region-B precursor | 무용 (채널의 1,579배 노이즈) |
-| 49배수 세그먼트 길이 | recall ~0 |
-| 케이던스 CV 랭킹 | GT 중앙값 #872–#9,871 |
-| 블록 + 시간 에피소드 (stride 1) | 0.008–0.108 |
-| 블록 내 49연속 세그먼트 | 0.00–0.62, recall 0.05 |
-| 전체 스트림 49 분할 | 0.001, recall 0.50 |
-| **블록+인접 + 시간 세그먼트 (채택)** | **0.03–0.16, recall 0.32–0.48** |
+| Physically contiguous run length | 0.03–0.11 |
+| Per-page write count | ≤0.03 |
+| Region-B precursor | Ineffective (1,579x channel noise) |
+| Multiples of 49 segment length | Recall ~0 |
+| Cadence CV ranking | GT median rank #872–#9,871 |
+| Block + temporal episode (stride 1) | 0.008–0.108 |
+| Intra-block 49 contiguous segment | 0.00–0.62, recall 0.05 |
+| Full stream 49-way partition | 0.001, recall 0.50 |
+| **Block + Adjacent + Temporal Segment (Adopted)** | **0.03–0.16, recall 0.32–0.48** |
 
-다만 probe 는 "추가 단계"가 아니다. 모델 입력(xor slice)을 만들려면 어차피
-페이지 내용을 swap-read 해야 하므로, probe 는 그 비용을 줄이는 **최적화**다.
+Note that probing is not an "extra phase". Creating the model input (xor slice) requires swap-reading
+page contents anyway, so probing is simply a cost-cutting **optimization**.
 
 ---
 
-## 구현 상태
+## Implementation Status
 
-| 단계 | 상태 | 파일 |
+| Stage | Status | File |
 |---|---|---|
-| [1] write tracker | ✅ | `write_pattern_tracker_B.c` |
-| [2] 블록 랭킹 | ✅ | `mura/plot_mura_detect.py`, `compare_top7.py` |
-| [3]–[4] 세그먼트→후보 | ⚠️ 측정만, 도구 미구현 | — |
-| [5] 1페이지 probe | ⚠️ 코드 있음, 미연결 | `block_input_id/mura/mura_block_triage.py` |
-| [6]–[7] swap-read → xor slice | ❌ **미검증** | `block_input_id/mura/mura_dict_build.py` |
-| [8] 방향 판별기 | ✅ 97.5% | `replica/train_direction.py`, `direction_64ref.pth` |
-| [9] 분류 모델 | ✅ 80.0% | `replica/train_reassembly.py`, `reassembly_64ref.pth` |
+| [1] Write Tracker | Complete | `write_pattern_tracker_B.c` |
+| [2] Block Ranking | Complete | `mura/plot_mura_detect.py`, `compare_top7.py` |
+| [3]–[4] Segment → Candidate | Measurement only | — |
+| [5] 1-Page Probe | Code ready, unlinked | `block_input_id/mura/mura_block_triage.py` |
+| [6]–[7] Swap-read → XOR Slice | Unverified | `block_input_id/mura/mura_dict_build.py` |
+| [8] Direction Discriminator | Complete (97.5%) | `replica/train_direction.py`, `direction_64ref.pth` |
+| [9] Classification Model | Complete (80.0%) | `replica/train_reassembly.py`, `reassembly_64ref.pth` |
 
 ---
 
-## 한계 (논문에 명시 필요)
+## Limitations (For Paper Disclosure)
 
-1. **swap-read 미검증.** [6]–[7] 은 실행된 적이 없다. Phase 0 사전
-   (`dict_cache_mura.json`, 64개 ref 덤프)이 없고, 로그 시점(8월)과 현재 VM
-   메모리 상태가 불일치한다. 80.0% 는 **"페이지 내용이 정확히 획득된다는 가정
-   하의"** 분류 성능이다.
-2. **replica 가정.** 학습 데이터는 공격자가 동일 스택을 복제해 평문에서
-   생성한다고 본다. xor slice 는 평문에서 정확히 계산 가능하므로 원리상
-   타당하나, 피해자와 replica 의 메모리 배치 분포 일치는 미검증이다.
-   (양쪽 write 트레이스 통계 대조로 검증 가능)
-3. **결손 마스크 누수.** 페이지 결손 패턴만으로 방향이 55.6% 예측 가능하다
-   (랜덤 50%). 방향 판별기 97.5% 중 일부가 이 인공물 덕일 수 있다.
-4. **종횡비 미상.** 학습셋 평균을 prior 로 사용. 원본 대비 약 3%p 손실의
-   주된 원인이다.
-5. **대량 swap-back 위험.** 512 PSP page-move 가 호스트를 재부팅시킨 전례가
-   있다. [5] 의 1페이지 probe 로 대상을 줄인 뒤 [6] 을 수행해야 한다.
+1. **Unverified swap-read.** Stages [6]–[7] have not been executed online for MURA. There is no Phase 0 dictionary
+   (`dict_cache_mura.json` with 64 ref dumps), and past logs diverge from current VM memory state.
+   80.0% reflects classification accuracy **"under the assumption that page contents are accurately retrieved"**.
+2. **Replica assumption.** Assumes the attacker replicates the software stack to generate training data from plaintext.
+   Calculating XOR slices from plaintext is theoretically sound, but the exact memory layout distribution between victim and replica remains unverified (can be validated by comparing write trace statistics).
+3. **Missing-page mask leakage.** Page omission patterns alone predict direction with 55.6% accuracy (random: 50%).
+   A fraction of the 97.5% direction discriminator accuracy may stem from this artifact.
+4. **Unknown aspect ratio.** Using training set mean as prior accounts for ~3%p degradation compared to the clean baseline.
+5. **Mass swap-back risk.** Excessive PSP page moves have previously caused host resets. Stage [5] 1-page probing
+   must be used to prune candidates before executing full swap-reads in Stage [6].

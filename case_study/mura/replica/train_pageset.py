@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
 """
-train_pageset.py — 2MB 블록 통째로 먹는 순열 불변(page-set) 분류기 학습.
+train_pageset.py — Train permutation-invariant (page-set) classifier operating directly on entire 2MB blocks.
 
-기존 모델과의 차이:
-  기존: (64, 224, 56) — 채널 49페이지를 논리 순서대로 정렬한 깨끗한 입력.
-        공격자는 이걸 만들 수 없다. 페이지가 어디에 어떤 순서로 놓였는지 모르니까.
-  이것: (64, 512, C) — 2MB 블록의 512 페이지를 '집합'으로 입력.
-        페이지 순서 무관, 이미지 시작 위치 무관, 이물질 페이지 섞여도 됨.
-        전처리(offset 탐색 / 채널 구분 / content probe)가 전부 불필요해진다.
+Differences from previous model:
+  Previous: (64, 224, 56) — Clean input where 49 channel pages are arranged in logical order.
+            An attacker cannot create this because they don't know where or in what order pages were placed.
+  This model: (64, 512, C) — Takes all 512 pages of the 2MB block as a 'set'.
+              Independent of page order, image start offset, or interleaved contaminant pages.
+              Completely eliminates preprocessing (offset search / channel separation / content probe).
 
-입력 조립 (on-the-fly):
-  1. 기존 xor_cache_64 의 (64,224,56) bool 슬라이스를 (64, 49, 256) 로 재해석
-     (12544 chunk = 49 페이지 × 페이지당 256 chunk)
-  2. extract_layouts.py 가 뽑은 '실제 물리 배치'를 샘플링해 49페이지를 512슬롯에 흩뿌림
-  3. 남은 슬롯은 이물질 페이지로 채움. 측정에 근거한 혼합:
-       - zero 페이지: REF_U8_64[0]==0 이라 전 chunk가 ref-0에 매칭된다.
-         (갓 할당된 페이지. 진짜 배경 픽셀과 헷갈리게 만드는 핵심 confound)
-       - 고엔트로피 페이지: activation/weight. 어떤 ref와도 매칭 안 됨 → 전부 0
-       - 다른 이미지 페이지: 같은 블록을 5~10장이 돌려쓰는 것이 측정됨
+Input assembly (on-the-fly):
+  1. Reinterpret existing (64, 224, 56) bool slices in xor_cache_64 as (64, 49, 256)
+     (12544 chunks = 49 pages * 256 chunks per page)
+  2. Sample 'actual physical layouts' extracted by extract_layouts.py and scatter 49 pages into 512 slots
+  3. Fill remaining slots with contaminant pages. Measurement-based mixture:
+       - Zero pages: REF_U8_64[0]==0, so all chunks match ref-0.
+         (Freshly allocated pages; key confound that resembles true background pixels)
+       - High-entropy pages: Activations/weights; match no ref -> all zeros
+       - Pages from other images: Measured that 5-10 images share and rotate through the same block
 
-출력:
+Output:
   pageset_64ref.pth  (best val acc)
 """
 import argparse
@@ -42,13 +42,13 @@ DATA_ROOT = Path(os.environ.get("MURA_DATA",
 CLASSES = ["ELBOW", "FINGER", "FOREARM", "HAND", "HUMERUS", "SHOULDER", "WRIST"]
 
 N_REF = 64
-CH_PAGES = 49          # 이미지 한 채널이 차지하는 페이지 수
+CH_PAGES = 49          # Number of pages occupied by one image channel
 SLOTS = 512            # 2MB / 4KB
 CHUNKS_PER_PAGE = 256  # 4096 / 16
 
 
 def collect_labels(split):
-    """xor_cache_64 를 만들 때와 동일한 glob 순서 → 캐시 인덱스와 1:1 대응."""
+    """Matches glob order when creating xor_cache_64 -> 1:1 correspondence with cache index."""
     labels = []
     for i, cls in enumerate(CLASSES):
         pat = str(DATA_ROOT / split / f"XR_{cls}" / "**" / "*.png")
@@ -57,7 +57,7 @@ def collect_labels(split):
 
 
 class BlockDataset(Dataset):
-    """(64, 224, 56) 채널 슬라이스 → (64, 512, chunks) 2MB 블록 슬라이스."""
+    """(64, 224, 56) channel slice -> (64, 512, chunks) 2MB block slice."""
 
     def __init__(self, slices_mm, aspects, labels, layouts, *,
                  chunk_pool=4, train=True, zero_frac=0.15, other_frac=0.25,
@@ -65,34 +65,34 @@ class BlockDataset(Dataset):
         self.slices = slices_mm
         self.aspects = aspects
         self.labels = labels
-        self.layouts = layouts              # (L, 49) int16, -1 = 블록 밖
+        self.layouts = layouts              # (L, 49) int16, -1 = outside block
         self.train = train
         self.pool = chunk_pool
         self.zero_frac = zero_frac
         self.other_frac = other_frac
-        # v3: 실측 블록 조성 (composition.npz). layouts 와 인덱스 1:1.
+        # v3: Empirical block composition (composition.npz). 1:1 index with layouts.
         self.comp = comp
         self.recency = recency
         self.fp_ratio = fp_ratio
         self.n_chunk = CHUNKS_PER_PAGE // chunk_pool
         self.rng = np.random.default_rng(seed)
-        # donor 회전 뱅크: 매 샘플 8회 memmap 읽기는 vCPU 1개에서 병목이라
-        # 소수의 donor 를 캐시해두고 주기적으로 교체한다.
+        # Donor rotating bank: Reading memmap 8 times per sample bottlenecks on 1 vCPU,
+        # so cache a few donors and periodically rotate.
         self._bank = []
         self._bank_left = 0
-        self._bg = {}          # li -> 미리 조립된 배경 캔버스 (다른이미지 + 비GT)
+        self._bg = {}          # li -> pre-assembled background canvas (other images + non-GT)
         self._bg_uses = {}
-        self.bg_reuse = 24     # 배경 하나를 몇 샘플 재사용할지
+        self.bg_reuse = 24     # Number of samples to reuse one background canvas
 
     def __len__(self):
         return len(self.labels)
 
     def _background(self, li, rng):
-        """배치 li 에 대한 배경(다른 이미지 + 비-GT) 캔버스를 캐시해 재사용.
+        """Cache and reuse background (other images + non-GT) canvas for layout li.
 
-        vCPU 1개 환경에서 샘플마다 512슬롯을 처음부터 채우는 건 감당이 안 된다.
-        배경은 라벨과 무관하므로 재사용해도 정보 누수가 없고, bg_reuse 주기로
-        교체해 다양성을 유지한다.
+        Populating 512 slots from scratch per sample on a 1 vCPU environment is too costly.
+        Since background is independent of labels, reuse causes no information leakage,
+        and rotating every bg_reuse maintains diversity.
         """
         n = self._bg_uses.get(li, 0)
         if li not in self._bg or n >= self.bg_reuse:
@@ -114,31 +114,31 @@ class BlockDataset(Dataset):
                                 else np.union1d(tgt, same))
             if len(free):
                 fr = free.copy(); rng.shuffle(fr)
-                nz = int(len(fr) * 0.35)      # zero 페이지 → ref-0 전 chunk 매칭
+                nz = int(len(fr) * 0.35)      # zero pages -> match ref-0 across all chunks
                 if nz:
                     bg[fr[:nz], 0, :] = 1.0
             self._bg[li] = bg
             self._bg_uses[li] = 0
-            if len(self._bg) > 48:            # 캐시 상한
+            if len(self._bg) > 48:            # cache capacity upper bound
                 drop = next(iter(self._bg))
                 self._bg.pop(drop); self._bg_uses.pop(drop, None)
         self._bg_uses[li] = self._bg_uses.get(li, 0) + 1
         return self._bg[li]
 
     def _donors(self, rng, k):
-        """회전 donor 뱅크에서 k개 페이지 세트를 준다."""
+        """Provides set of k pages from rotating donor bank."""
         if self._bank_left <= 0 or len(self._bank) < k:
             self._bank = [self._pages_of(int(rng.integers(len(self.labels))))
                           for _ in range(max(k, 4))]
-            self._bank_left = 32          # 32 샘플마다 교체
+            self._bank_left = 32          # rotate every 32 samples
         self._bank_left -= 1
         return [self._bank[int(rng.integers(len(self._bank)))] for _ in range(k)]
 
     def _pages_of(self, idx):
-        """캐시 슬라이스를 (49, 64, n_chunk) 페이지 단위로 — 풀링까지 여기서.
+        """Convert cache slice to (49, 64, n_chunk) page units — including pooling here.
 
-        풀링을 흩뿌리기 전에 끝내면 캔버스가 (512,64,256) 대신
-        (512,64,n_chunk) 가 되어 pool=4 기준 메모리/연산이 1/4 로 준다.
+        Completing pooling before scattering reduces canvas from (512, 64, 256)
+        to (512, 64, n_chunk), cutting memory/compute to 1/4 with pool=4.
         """
         s = np.asarray(self.slices[idx])            # (64, 224, 56) bool
         p = s.reshape(N_REF, CH_PAGES, CHUNKS_PER_PAGE).transpose(1, 0, 2)
@@ -162,19 +162,19 @@ class BlockDataset(Dataset):
             canvas[tgt_slots, :N_REF] = img_pages[np.flatnonzero(valid)]
 
         if self.comp is not None:
-            # 배경(다른 이미지 294p + 비-GT 121p)은 캐시에서 복사만 한다
+            # Background (other images 294p + non-GT 121p) is copied directly from cache
             canvas = self._background(li, rng).copy()
 
-            # 1) 타깃 채널: 실측 물리 배치대로 (블록 밖 페이지는 소실)
+            # 1) Target channel: follow empirical physical layout (pages outside block are lost)
             canvas[tgt_slots, :N_REF] = img_pages[np.flatnonzero(valid)]
 
-            # 2) 같은 이미지의 다른 채널 (R=G=B 동일 → 복제). 같은 라벨 = 추가 신호.
+            # 2) Other channels of same image (R=G=B identical -> duplicate). Same label = additional signal.
             same = np.setdiff1d(np.flatnonzero(self.comp["same_slots"][li]), tgt_slots)
             if len(same):
                 canvas[same, :N_REF] = img_pages[rng.integers(CH_PAGES, size=len(same))]
             recent_true = np.concatenate([tgt_slots, same]) if len(same) else tgt_slots
         else:
-            # 구버전 경로 (v1/v2 재현용)
+            # Legacy path (for reproducing v1/v2)
             free = np.setdiff1d(np.arange(SLOTS), tgt_slots)
             rng.shuffle(free)
             n_zero = int(len(free) * self.zero_frac)
@@ -187,11 +187,11 @@ class BlockDataset(Dataset):
                     dp[rng.integers(CH_PAGES, size=n_other)]
             recent_true = tgt_slots
 
-        # 5) recency 채널: '이번 추론 burst 에 쓰인 페이지인가'.
-        #    write 트레이스로 실제 얻을 수 있는 정보이며, 블록에 이미지가
-        #    5~10장 섞여 있을 때 '현재 이미지'를 가르는 유일한 단서다.
-        #    측정된 시간 그룹핑 성능을 잡음으로 반영: recall 중앙값 100%,
-        #    p25 94%, p10 49% / 그룹 precision ~0.45 → 위양성도 넣는다.
+        # 5) Recency channel: 'Was this page written in the current inference burst?'.
+        #    This is real information obtainable from write traces, and serves as the
+        #    only clue to isolate the 'current image' when 5~10 images are mixed in the block.
+        #    Reflect measured temporal grouping performance with noise: recall median 100%,
+        #    p25 94%, p10 49% / group precision ~0.45 -> false positives included.
         if self.recency:
             keep = rng.uniform(0.55, 1.0)
             tp = recent_true[rng.random(len(recent_true)) < keep]
@@ -208,10 +208,10 @@ class BlockDataset(Dataset):
 
 
 class PageEncoder(nn.Module):
-    """페이지 하나(64 ref × chunk)를 임베딩으로. 페이지끼리 파라미터 공유.
+    """Embed single page (64 ref * chunk). Parameters shared across pages.
 
-    v2: 언더피팅(train 0.60 / val 0.48)이 관측되어 conv 한 단 추가 + 폭 확대.
-    GPU 사용률이 10%대라 모델을 키워도 벽시계 시간은 거의 늘지 않는다.
+    v2: Added 1 conv layer and widened channels after observing underfitting (train 0.60 / val 0.48).
+    GPU utilization is ~10%, so increasing model size barely increases wall-clock time.
     """
 
     def __init__(self, n_ref=N_REF, dim=384):
@@ -232,7 +232,7 @@ class PageEncoder(nn.Module):
 
 
 class PageSetNet(nn.Module):
-    """순열 불변: 페이지별 인코딩 → attention pooling → 분류."""
+    """Permutation-invariant: per-page encoding -> attention pooling -> classification."""
 
     def __init__(self, num_classes=7, n_ref=N_REF, dim=384):
         super().__init__()
@@ -253,11 +253,11 @@ class PageSetNet(nn.Module):
         e = self.enc(x.permute(0, 2, 1, 3).reshape(B * P, R, C)).reshape(B, P, -1)
         w = torch.softmax(self.attn(e), dim=1)          # (B, P, 1)
         pooled = (e * w).sum(dim=1)                     # attention pooling
-        strongest = e.max(dim=1).values                 # 가장 이미지다운 페이지
+        strongest = e.max(dim=1).values                 # Most image-like page
         return self.head(torch.cat([pooled, strongest, aspect], dim=1))
 
     def page_scores(self, x):
-        """진단용: 어느 페이지에 주목했는지 (B, P)."""
+        """Diagnostic: which pages were attended to (B, P)."""
         B, R, P, C = x.shape
         e = self.enc(x.permute(0, 2, 1, 3).reshape(B * P, R, C)).reshape(B, P, -1)
         return torch.softmax(self.attn(e), dim=1).squeeze(-1)
@@ -270,32 +270,32 @@ def main():
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--lr", type=float, default=3e-4)
     ap.add_argument("--chunk-pool", type=int, default=4,
-                    help="chunk 축 풀링 배수 (클수록 가볍고 정보 손실)")
+                    help="Chunk axis pooling factor (larger = lighter but more information loss)")
     ap.add_argument("--limit-train", type=int, default=None,
-                    help="학습 샘플 수 제한 (CPU 시험용)")
+                    help="Limit number of train samples (for CPU testing)")
     ap.add_argument("--limit-val", type=int, default=None)
     ap.add_argument("--dim", type=int, default=384,
-                    help="페이지 임베딩 차원 (v1=192, v2=384)")
+                    help="Page embedding dimension (v1=192, v2=384)")
     ap.add_argument("--no-recency", action="store_true",
-                    help="recency 채널(현재 burst 여부) 끄기")
+                    help="Disable recency channel (whether in current burst)")
     ap.add_argument("--no-composition", action="store_true",
-                    help="실측 블록 조성 대신 v1/v2 합성 조성 사용")
+                    help="Use v1/v2 synthetic composition instead of empirical block composition")
     ap.add_argument("--fp-ratio", type=float, default=0.8,
-                    help="recency 위양성 비율 (시간 그룹핑 precision~0.45 반영)")
+                    help="Recency false positive ratio (reflecting temporal grouping precision ~0.45)")
     ap.add_argument("--weight-decay", type=float, default=3e-4)
     ap.add_argument("--label-smooth", type=float, default=0.05)
     ap.add_argument("--no-class-weight", action="store_true",
-                    help="클래스 불균형 보정 끄기")
+                    help="Disable class imbalance weighting")
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--out", type=Path, default=HERE / "pageset_64ref.pth")
     ap.add_argument("--layouts", type=Path, default=HERE / "layouts.npz")
     args = ap.parse_args()
 
     dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"device={dev}  (GPU 없으면 --limit-train 으로 규모를 줄여라)", flush=True)
+    print(f"device={dev}  (Without GPU, reduce scale using --limit-train)", flush=True)
 
     layouts = np.load(args.layouts)["slots"]
-    print(f"실측 배치 {len(layouts)}개 로드", flush=True)
+    print(f"Loaded {len(layouts)} empirical layouts", flush=True)
 
     comp = None
     if not args.no_composition:
@@ -303,14 +303,14 @@ def main():
         if cpath.exists():
             c = np.load(cpath)
             comp = {"same_slots": c["same_slots"], "other_slots": c["other_slots"]}
-            print(f"실측 블록 조성 로드: 타깃 {int(np.median(c['n_target']))}p / "
-                  f"같은이미지 {int(np.median(c['n_same_img']))}p / "
-                  f"다른이미지 {int(np.median(c['n_other_img']))}p (중앙값)", flush=True)
+            print(f"Loaded empirical block composition: target {int(np.median(c['n_target']))}p / "
+                  f"same_image {int(np.median(c['n_same_img']))}p / "
+                  f"other_image {int(np.median(c['n_other_img']))}p (median)", flush=True)
         else:
-            print("composition.npz 없음 → 합성 조성으로 진행", flush=True)
+            print("composition.npz not found -> proceeding with synthetic composition", flush=True)
     recency = not args.no_recency
     n_in = N_REF + (1 if recency else 0)
-    print(f"입력 채널 = {n_in} (ref {N_REF}" + (" + recency 1)" if recency else ")"),
+    print(f"Input channels = {n_in} (ref {N_REF}" + (" + recency 1)" if recency else ")"),
           flush=True)
 
     tr_s = np.lib.format.open_memmap(CACHE / "tr_slices.npy", mode="r")
@@ -320,7 +320,7 @@ def main():
     tr_y = collect_labels("train")
     va_y = collect_labels("valid")
     assert len(tr_y) == tr_s.shape[0] and len(va_y) == va_s.shape[0], \
-        "캐시와 라벨 개수 불일치 — 데이터셋 경로/순서를 확인해라"
+        "Cache and label count mismatch — check dataset path and ordering"
 
     tr_idx = np.arange(len(tr_y))
     va_idx = np.arange(len(va_y))
@@ -351,8 +351,8 @@ def main():
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr,
                             weight_decay=args.weight_decay)
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=args.epochs)
-    # 클래스 불균형 보정: FOREARM(301)/HUMERUS(288) 가 다수 클래스에 흡수돼
-    # recall 0.3%/4.9% 로 붕괴했었다. 역빈도 가중치로 되살린다.
+    # Class imbalance compensation: FOREARM(301)/HUMERUS(288) collapsed to
+    # recall 0.3%/4.9% absorbed by majority classes. Restored via inverse frequency weighting.
     if args.no_class_weight:
         crit = nn.CrossEntropyLoss(label_smoothing=args.label_smooth)
         print("class weight: off", flush=True)

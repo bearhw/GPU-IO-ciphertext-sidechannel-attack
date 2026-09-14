@@ -151,7 +151,7 @@ class ModelSuite:
         self.dec10.eval()
 
     def reconstruct_all(self, sparsity: List[int]) -> Dict[str, np.ndarray]:
-        """Reconstruct 28x28 image using v6r, v9r, and v10."""
+        """Reconstruct single 28x28 image using v6r, v9r, and v10."""
         sp_t = torch.tensor(sparsity, dtype=torch.float32).unsqueeze(0).to(self.device)
         recons = {}
 
@@ -175,20 +175,50 @@ class ModelSuite:
 
         return recons
 
+    def reconstruct_batch(self, sparsities: np.ndarray) -> Dict[str, np.ndarray]:
+        """Reconstruct a batch of (B, 196) images using v6r, v9r, and v10."""
+        B = len(sparsities)
+        sp_t = torch.tensor(sparsities, dtype=torch.float32).to(self.device)
+        recons = {}
+
+        with torch.no_grad():
+            # v6r Retrieval
+            if self.v6r_emb_db is not None and self.v6r_img_db is not None:
+                q = self.encoder(sp_t).cpu().numpy()
+                sims = self.v6r_emb_db @ q.T   # (N_db, B)
+                best_indices = np.argmax(sims, axis=0)
+                recons["v6r"] = self.v6r_img_db[best_indices]
+            else:
+                recons["v6r"] = np.zeros((B, 28, 28), dtype=np.float32)
+
+            # v9r UNet-GAN
+            recon9 = self.g9(sp_t).cpu().numpy()
+            recons["v9r"] = np.clip(recon9, 0.0, 1.0)
+
+            # v10 Encoder-Decoder
+            emb = self.encoder(sp_t)
+            recon10 = self.dec10(emb).cpu().numpy()
+            recons["v10"] = np.clip(recon10, 0.0, 1.0)
+
+        return recons
+
+
+_MNIST_DATASET_CACHE = None
+
+def get_mnist_dataset():
+    global _MNIST_DATASET_CACHE
+    if _MNIST_DATASET_CACHE is None:
+        try:
+            from torchvision import datasets, transforms
+            _MNIST_DATASET_CACHE = datasets.MNIST(str(c.DEFAULT_DATA_DIR), train=True, download=False,
+                                                 transform=transforms.ToTensor())
+        except Exception:
+            _MNIST_DATASET_CACHE = False
+    return _MNIST_DATASET_CACHE
+
 
 def load_mnist_ground_truth(index: int) -> Tuple[Optional[np.ndarray], Optional[int]]:
     """Load Ground Truth MNIST image (28x28 float32 in [0, 1]) and label for index."""
-    try:
-        from torchvision import datasets, transforms
-        mnist = datasets.MNIST(str(c.DEFAULT_DATA_DIR), train=True, download=False,
-                               transform=transforms.ToTensor())
-        if 0 <= index < len(mnist):
-            img_tensor, label = mnist[index]
-            return img_tensor.squeeze().numpy(), int(label)
-    except Exception:
-        pass
-
-    # Fallback to raw binary files if torchvision dataset is not ready
     raw_images_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / "train-images-idx3-ubyte"
     raw_labels_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / "train-labels-idx1-ubyte"
     if raw_images_path.exists() and raw_labels_path.exists():
@@ -204,21 +234,112 @@ def load_mnist_ground_truth(index: int) -> Tuple[Optional[np.ndarray], Optional[
         except Exception:
             pass
 
+    ds = get_mnist_dataset()
+    if ds and 0 <= index < len(ds):
+        img_tensor, label = ds[index]
+        return img_tensor.squeeze().numpy(), int(label)
+
     return None, None
+
+
+def load_mnist_ground_truth_batch(start_idx: int, count: int) -> Tuple[Optional[np.ndarray], Optional[List[int]]]:
+    """Load batch of Ground Truth MNIST images (B, 28, 28) and labels quickly."""
+    raw_images_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / "train-images-idx3-ubyte"
+    raw_labels_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / "train-labels-idx1-ubyte"
+    if raw_images_path.exists() and raw_labels_path.exists():
+        try:
+            with open(raw_images_path, "rb") as f_img:
+                f_img.seek(16 + start_idx * 784)
+                buf = f_img.read(count * 784)
+                imgs = np.frombuffer(buf, dtype=np.uint8).reshape((count, 28, 28)).astype(np.float32) / 255.0
+            with open(raw_labels_path, "rb") as f_lbl:
+                f_lbl.seek(8 + start_idx)
+                lbuf = f_lbl.read(count)
+                labels = [int(b) for b in lbuf]
+            return imgs, labels
+        except Exception:
+            pass
+
+    imgs = []
+    labels = []
+    for i in range(start_idx, start_idx + count):
+        img, lbl = load_mnist_ground_truth(i)
+        if img is not None:
+            imgs.append(img)
+            labels.append(lbl)
+        else:
+            break
+    if len(imgs) == count:
+        return np.stack(imgs), labels
+    return None, None
+
+
+def plot_batch_grid(gt_imgs: Optional[np.ndarray], recons: Dict[str, np.ndarray],
+                    gt_labels: Optional[List[int]], index: int, batch_size: int,
+                    start_idx: int, end_idx: int, out_png: Path,
+                    per_image_results: List[Dict], num_samples: int = 8):
+    """Generate an 8-row x 4-col visual comparison grid across representative samples in the batch."""
+    if gt_imgs is None or len(gt_imgs) == 0:
+        return
+
+    B = len(gt_imgs)
+    # Pick up to 8 representative sample indices across the batch
+    if B <= num_samples:
+        sample_indices = list(range(B))
+    else:
+        sample_indices = [int(i * (B - 1) / (num_samples - 1)) for i in range(num_samples)]
+
+    n_rows = len(sample_indices)
+    n_cols = 4  # [GT, v6r, v9r, v10]
+    fig, axes = plt.subplots(n_rows, n_cols, figsize=(3.2 * n_cols, 2.7 * n_rows))
+    if n_rows == 1:
+        axes = np.expand_dims(axes, 0)
+
+    model_keys = ["v6r", "v9r", "v10"]
+    model_names = ["v6r (Retrieval)", "v9r (UNet-GAN)", "v10 (Decoder)"]
+
+    for r, local_idx in enumerate(sample_indices):
+        global_idx = start_idx + local_idx
+        lbl = gt_labels[local_idx] if gt_labels else "?"
+        rec_info = per_image_results[local_idx] if local_idx < len(per_image_results) else {}
+        ssim_dict = rec_info.get("ssim", {})
+
+        # Col 0: Ground Truth
+        ax_gt = axes[r, 0]
+        ax_gt.imshow(gt_imgs[local_idx], cmap="gray", vmin=0.0, vmax=1.0)
+        ax_gt.set_title(f"Image #{global_idx} (Digit {lbl})\nGround Truth", fontsize=9, fontweight="bold")
+        ax_gt.axis("off")
+
+        # Cols 1..3: Reconstructions
+        for c_idx, (m_key, m_name) in enumerate(zip(model_keys, model_names), start=1):
+            ax_m = axes[r, c_idx]
+            recon_img = recons[m_key][local_idx]
+            ax_m.imshow(recon_img, cmap="gray", vmin=0.0, vmax=1.0)
+            ssim_val = ssim_dict.get(m_key)
+            ssim_str = f"SSIM: {ssim_val*100:.2f}%" if ssim_val is not None else ""
+            ax_m.set_title(f"{m_name}\n{ssim_str}", fontsize=9)
+            ax_m.axis("off")
+
+    fig.suptitle(f"MNIST Batch #{index} (Batch Size: {batch_size}, Images #{start_idx} ~ #{end_idx}) — 8-Sample Visual Grid",
+                 fontsize=13, fontweight="bold", y=1.01)
+    plt.tight_layout()
+    fig.savefig(out_png, bbox_inches="tight", dpi=150)
+    plt.close(fig)
+    print(f"[stage5] Saved multi-sample comparison grid → {out_png.name}")
 
 
 def plot_comparison(gt_img: Optional[np.ndarray], recons: Dict[str, np.ndarray],
                     ssims: Dict[str, Optional[float]], label: Optional[int],
                     index: int, out_png: Path):
-    """Generate a clean side-by-side comparison figure for GT, v6r, v9r, v10."""
+    """Generate a clean side-by-side comparison figure for a single sample."""
     n_cols = 4 if gt_img is not None else 3
-    fig, axes = plt.subplots(1, n_cols, figsize=(3 * n_cols, 3.5))
+    fig, axes = plt.subplots(1, n_cols, figsize=(3.2 * n_cols, 3.8))
 
     titles = []
     imgs = []
 
     if gt_img is not None:
-        titles.append(f"Ground Truth (Digit {label if label is not None else '?'})")
+        titles.append(f"Ground Truth\n(Digit {label if label is not None else '?'})")
         imgs.append(gt_img)
 
     for m_key, m_name in [("v6r", "v6r (Retrieval)"), ("v9r", "v9r (UNet-GAN)"), ("v10", "v10 (Decoder)")]:
@@ -232,39 +353,163 @@ def plot_comparison(gt_img: Optional[np.ndarray], recons: Dict[str, np.ndarray],
         ax.set_title(title, fontsize=11, fontweight="bold")
         ax.axis("off")
 
-    fig.suptitle(f"MNIST Sample #{index} Side-Channel Reconstruction", fontsize=13, y=1.02)
+    fig.suptitle(f"MNIST Sample #{index} Side-Channel Reconstruction", fontsize=13, fontweight="bold", y=1.02)
     plt.tight_layout()
     fig.savefig(out_png, bbox_inches="tight", dpi=150)
     plt.close(fig)
     print(f"[stage5] Saved comparison figure → {out_png.name}")
 
 
-def print_ssim_table(index: int, label: Optional[int], metrics: Dict[str, Dict[str, float]]):
+def print_ssim_table(index: int, label: Optional[int], metrics: Dict[str, Dict[str, float]],
+                     batch_size: int = 1, start_idx: int = 0, end_idx: int = 0):
     """Format and print an ASCII comparison table."""
-    print("\n" + "=" * 65)
-    print(f"  SSIM & RECONSTRUCTION COMPARISON (Sample #{index}, Label: {label})")
-    print("=" * 65)
+    print("\n" + "=" * 68)
+    title = f"BATCH #{index} (Batch Size {batch_size}, Images #{start_idx} ~ #{end_idx}) AVERAGE" if batch_size > 1 else f"Sample #{index}, Label: {label}"
+    print(f"  SSIM & RECONSTRUCTION COMPARISON ({title})")
+    print("=" * 68)
     print(f"  {'Model':<18} | {'SSIM (%)':<12} | {'PSNR (dB)':<12} | {'L1 Error':<10}")
-    print("  " + "-" * 61)
+    print("  " + "-" * 64)
     for model_name, vals in metrics.items():
         ssim_str = f"{vals['ssim'] * 100:.2f}%" if vals.get('ssim') is not None else "N/A"
         psnr_str = f"{vals['psnr']:.2f} dB" if vals.get('psnr') is not None else "N/A"
         l1_str   = f"{vals['l1']:.4f}" if vals.get('l1') is not None else "N/A"
         print(f"  {model_name:<18} | {ssim_str:<12} | {psnr_str:<12} | {l1_str:<10}")
-    print("=" * 65 + "\n")
+    print("=" * 68 + "\n")
 
 
 def run_stage5(index: int, output_dir: Path, sparsity: Optional[List[int]] = None,
-               label: Optional[int] = None) -> Dict:
+               label: Optional[int] = None, batch_size: int = 1) -> Dict:
     """Execute Stage 5."""
-    output_dir.mkdir(parents=True, exist_ok=True)
-    metrics_json = output_dir / f"metrics_{index}.json"
+    dumps_dir, logs_dir, results_dir = c.get_output_subdirs(output_dir)
 
-    # 1. Resolve sparsity vector
-    if sparsity is None:
+    # Check for metadata batch size
+    feat_json = results_dir / f"features_{index}.json"
+    if not feat_json.exists():
         feat_json = output_dir / f"features_{index}.json"
-        if not feat_json.exists():
-            feat_json = HERE / f"features_{index}.json"
+    if feat_json.exists():
+        fdata = c.load_json(feat_json)
+        if fdata.get("batch_size"):
+            batch_size = fdata["batch_size"]
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    suite = ModelSuite(device)
+
+    # ── Batch Mode (batch_size > 1) ──────────────────────────────────
+    if batch_size > 1:
+        start_gt_idx = index * batch_size
+        end_gt_idx = (index + 1) * batch_size - 1
+        batch_tag = c.make_timestamp_tag(index, batch_size, start_gt_idx, end_gt_idx)
+        metrics_json = results_dir / f"metrics_{batch_tag}.json"
+
+        # Locate sparsities npy
+        npy_file = results_dir / f"sparsities_{batch_tag}.npy"
+        if not npy_file.exists():
+            candidates = sorted(results_dir.glob(f"*_bs{batch_size}_idx{start_gt_idx}-{end_gt_idx}*.npy"), reverse=True)
+            if candidates:
+                npy_file = candidates[0]
+        if not npy_file.exists():
+            npy_file = results_dir / f"batch_{index}_sparsities.npy"
+        if not npy_file.exists():
+            npy_file = output_dir / f"batch_{index}_sparsities.npy"
+        if not npy_file.exists():
+            raise FileNotFoundError(f"[stage5] batch sparsities array not found. Run stage4 first.")
+
+        sparsities_arr = np.load(npy_file)
+        B = len(sparsities_arr)
+        print(f"[stage5] Reconstructing {B} images (images #{start_gt_idx}..#{end_gt_idx}) using v6r, v9r, v10 in batch mode...")
+        t0 = time.time()
+        recons = suite.reconstruct_batch(sparsities_arr)
+        print(f"[stage5] Reconstructed {B} images in {time.time() - t0:.2f}s")
+
+        # Save batch reconstruction arrays with explicit descriptive names
+        for m_key in ["v6r", "v9r", "v10"]:
+            recon_path = results_dir / f"recons_{batch_tag}_{m_key}.npy"
+            np.save(recon_path, recons[m_key])
+            try:
+                (results_dir / f"batch_{index}_recons_{m_key}.npy").unlink(missing_ok=True)
+                (results_dir / f"batch_{index}_recons_{m_key}.npy").symlink_to(recon_path.name)
+            except Exception:
+                pass
+
+        # Evaluate against Ground Truth
+        gt_imgs, gt_labels = load_mnist_ground_truth_batch(start_gt_idx, B)
+
+        # Compute per-image metrics for all B images
+        s_dict = {}
+        p_dict = {}
+        l_dict = {}
+        metrics = {}
+        ssims = {}
+
+        for m_key, m_name in [("v6r", "v6r (Retrieval)"), ("v9r", "v9r (UNet-GAN)"), ("v10", "v10 (Decoder)")]:
+            if gt_imgs is not None:
+                s_list = [c.compute_ssim(gt_imgs[i], recons[m_key][i]) for i in range(B)]
+                p_list = [c.compute_psnr(gt_imgs[i], recons[m_key][i]) for i in range(B)]
+                l_list = [c.compute_l1(gt_imgs[i], recons[m_key][i]) for i in range(B)]
+                s_dict[m_key] = s_list
+                p_dict[m_key] = p_list
+                l_dict[m_key] = l_list
+                s_avg = float(np.mean(s_list))
+                p_avg = float(np.mean(p_list))
+                l_avg = float(np.mean(l_list))
+                metrics[m_name] = {"ssim": s_avg, "psnr": p_avg, "l1": l_avg}
+                ssims[m_key] = s_avg
+            else:
+                metrics[m_name] = {"ssim": None, "psnr": None, "l1": None}
+                ssims[m_key] = None
+
+        # Build full per-image individual results array for all 512 images
+        per_image_results = []
+        for i in range(B):
+            per_image_results.append({
+                "image_index": start_gt_idx + i,
+                "local_batch_offset": i,
+                "label": gt_labels[i] if gt_labels else None,
+                "ssim": {
+                    "v6r": float(s_dict["v6r"][i]) if "v6r" in s_dict else None,
+                    "v9r": float(s_dict["v9r"][i]) if "v9r" in s_dict else None,
+                    "v10": float(s_dict["v10"][i]) if "v10" in s_dict else None,
+                },
+                "psnr": {
+                    "v6r": float(p_dict["v6r"][i]) if "v6r" in p_dict else None,
+                    "v9r": float(p_dict["v9r"][i]) if "v9r" in p_dict else None,
+                    "v10": float(p_dict["v10"][i]) if "v10" in p_dict else None,
+                },
+                "l1": {
+                    "v6r": float(l_dict["v6r"][i]) if "v6r" in l_dict else None,
+                    "v9r": float(l_dict["v9r"][i]) if "v9r" in l_dict else None,
+                    "v10": float(l_dict["v10"][i]) if "v10" in l_dict else None,
+                },
+            })
+
+        comp_png = results_dir / f"comparison_{batch_tag}.png"
+        plot_batch_grid(gt_imgs, recons, gt_labels, index, B, start_gt_idx, end_gt_idx, comp_png, per_image_results, num_samples=8)
+        print_ssim_table(index, None, metrics, batch_size=B, start_idx=start_gt_idx, end_idx=end_gt_idx)
+
+        meta = {
+            "stage": 5,
+            "index": index,
+            "batch_size": B,
+            "start_image_index": start_gt_idx,
+            "end_image_index": end_gt_idx,
+            "batch_tag": batch_tag,
+            "summary_metrics": metrics,
+            "metrics": metrics,
+            "ssim_v6r": ssims.get("v6r"),
+            "ssim_v9r": ssims.get("v9r"),
+            "ssim_v10": ssims.get("v10"),
+            "comparison_png": str(comp_png),
+            "per_image_results": per_image_results,
+            "timestamp": time.time(),
+        }
+        c.save_json(metrics_json, meta)
+        # Also maintain metrics_{index}.json
+        c.save_json(results_dir / f"metrics_{index}.json", meta)
+        print(f"[stage5] Saved batch metrics (including all {B} per-image results) → {metrics_json.name}")
+        return meta
+
+    # ── Single Sample Mode (batch_size == 1) ─────────────────────────
+    if sparsity is None:
         if feat_json.exists():
             fdata = c.load_json(feat_json)
             sparsity = fdata.get("sparsity")
@@ -272,8 +517,7 @@ def run_stage5(index: int, output_dir: Path, sparsity: Optional[List[int]] = Non
                 label = fdata.get("label")
 
     if sparsity is None:
-        # Search for .out_v5.list
-        list_candidates = list(output_dir.glob(f"*-{index}.out_v5.list"))
+        list_candidates = list(results_dir.glob(f"*-{index}.out_v5.list")) + list(output_dir.glob(f"*-{index}.out_v5.list"))
         if not list_candidates:
             list_candidates = list(c.FLOW_DIR.glob(f"*-{index}.out_v5.list"))
         if list_candidates:
@@ -286,13 +530,8 @@ def run_stage5(index: int, output_dir: Path, sparsity: Optional[List[int]] = Non
     if sparsity is None or len(sparsity) != c.NUM_CHUNKS:
         raise ValueError(f"[stage5] Valid 196-dim sparsity vector not found for index {index}. Run stage4 first.")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    suite = ModelSuite(device)
-
-    # 2. Reconstruct across v6r, v9r, v10
     recons = suite.reconstruct_all(sparsity)
 
-    # 3. Ground truth evaluation
     gt_img, gt_label = load_mnist_ground_truth(index)
     if label is None:
         label = gt_label
@@ -311,18 +550,17 @@ def run_stage5(index: int, output_dir: Path, sparsity: Optional[List[int]] = Non
             metrics[m_name] = {"ssim": None, "psnr": None, "l1": None}
             ssims[m_key] = None
 
-        # Save individual npy and png
-        np.save(output_dir / f"recon_{index}_{m_key}.npy", recon)
-        plt.imsave(output_dir / f"recon_{index}_{m_key}.png", recon, cmap="gray", vmin=0.0, vmax=1.0)
+        np.save(results_dir / f"recon_{index}_{m_key}.npy", recon)
+        plt.imsave(results_dir / f"recon_{index}_{m_key}.png", recon, cmap="gray", vmin=0.0, vmax=1.0)
 
-    # 4. Save comparison figure & print table
-    comp_png = output_dir / f"comparison_{index}.png"
+    comp_png = results_dir / f"comparison_{index}.png"
     plot_comparison(gt_img, recons, ssims, label, index, comp_png)
-    print_ssim_table(index, label, metrics)
+    print_ssim_table(index, label, metrics, batch_size=1)
 
     meta = {
         "stage": 5,
         "index": index,
+        "batch_size": 1,
         "label": label,
         "metrics": metrics,
         "ssim_v6r": ssims.get("v6r"),
@@ -338,12 +576,13 @@ def run_stage5(index: int, output_dir: Path, sparsity: Optional[List[int]] = Non
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--index", type=int, required=True, help="MNIST sample index (0-59999)")
+    p.add_argument("--index", type=int, required=True, help="MNIST sample/batch index (0-59999)")
+    p.add_argument("--batch-size", type=int, default=1, help="Batch size (default: 1, e.g. 512)")
     p.add_argument("--label", type=int, default=None, help="MNIST digit label (0-9)")
     p.add_argument("--output-dir", default=str(HERE), help="Directory containing features and saving images")
     args = p.parse_args()
 
-    run_stage5(args.index, Path(args.output_dir), label=args.label)
+    run_stage5(args.index, Path(args.output_dir), label=args.label, batch_size=args.batch_size)
 
 
 if __name__ == "__main__":

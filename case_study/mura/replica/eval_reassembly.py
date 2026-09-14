@@ -1,26 +1,26 @@
 #!/usr/bin/env python3
 """
-eval_reassembly.py — write-순서 재조립 공격의 최종 평가 + confusion matrix.
+eval_reassembly.py — Final evaluation + confusion matrix for write-order reassembly attack.
 
-공격 절차:
-  1. host write 트레이스에서 연속된 49-write 버스트를 잘라낸다
-     (채널의 90% 가 외부 write 0개로 연달아 나타난다)
-  2. 등장 '순서대로' 페이지를 이어붙인다 — 물리 주소는 무시
-     (물리 연속은 29% 뿐이지만 시간 연속은 90%)
-  3. 그 순서는 논리 순서와 정순 75% / 역순 24% 로 일치한다.
-     역순이면 조립본이 뒤집혀 있으므로 되뒤집어야 한다.
-  4. (224,56) 격자로 재조립해 분류
+Attack Procedure:
+  1. Slice contiguous 49-write bursts from host write trace
+     (90% of channels appear consecutively with 0 external writes)
+  2. Concatenate pages in their appearance order — ignoring physical addresses
+     (Physical contiguity is only 29%, but temporal contiguity is 90%)
+  3. That order matches logical order: forward 75% / reverse 24%.
+     If reversed, the assembled tensor is inverted and must be un-reversed.
+  4. Reassemble into (224, 56) grid and classify
 
-평가 설계 (중요):
-  --sim-reverse-rate 로 '실제로 역순 조립된 관측' 을 실측 비율(24%)만큼 만든다.
-  이렇게 해야 방향 처리의 이득과 손실을 공정하게 잴 수 있다. 이게 없으면
-  모든 샘플이 정순이라 어떤 방향 탐색도 손해로만 보인다.
+Evaluation Design (Important):
+  --sim-reverse-rate creates 'actually reverse-assembled observations' at empirical rate (24%).
+  This allows fair measurement of the gains and losses of direction handling. Without this,
+  all samples would be forward and any direction search would only appear detrimental.
 
-비교 모드:
-  --order none       방향 처리 없음 (역순 샘플은 뒤집힌 채 분류)
-  --order oracle     정답 방향을 안다고 가정 (상한)
-  --order softmax    두 후보 중 max-softmax 높은 쪽 (실측상 부적절)
-  --order model      방향 판별기로 결정 (--direction-ckpt 필요)
+Comparison Modes:
+  --order none       No direction handling (reverse samples classified as-is)
+  --order oracle     Assume ground truth direction is known (upper bound)
+  --order softmax    Select candidate with higher max-softmax (inappropriate empirically)
+  --order model      Decide using direction discriminator (requires --direction-ckpt)
 """
 import argparse
 from pathlib import Path
@@ -36,7 +36,7 @@ from reassembly_common import (
 
 
 def predict(model, loader, dev):
-    """(확률, 라벨, 확보페이지비율, 실제역순여부)."""
+    """(probs, labels, kept_page_ratio, is_reverse)."""
     probs, ys, kfs, rs = [], [], [], []
     model.eval()
     with torch.no_grad():
@@ -55,12 +55,12 @@ def main():
     ap.add_argument("--order", choices=["none", "oracle", "softmax", "model"],
                     default="none")
     ap.add_argument("--sim-reverse-rate", type=float, default=0.24,
-                    help="실제 역순 조립 비율 (실측 24%%)")
+                    help="Simulated reverse assembly rate (empirical 24%%)")
     ap.add_argument("--layouts", type=Path, default=HERE / "layouts.npz")
     ap.add_argument("--batch", type=int, default=64)
     ap.add_argument("--workers", type=int, default=1)
     ap.add_argument("--limit", type=int, default=None)
-    ap.add_argument("--no-degrade", action="store_true", help="열화 없이 (상한)")
+    ap.add_argument("--no-degrade", action="store_true", help="Without degradation (upper bound)")
     ap.add_argument("--out", type=str,
                     default=str(HERE / "reassembly_confusion_matrix"))
     args = ap.parse_args()
@@ -75,7 +75,7 @@ def main():
     va_s, va_y = load_cache("valid")
     degrade = not args.no_degrade
     print(f"device={dev}  ckpt={args.ckpt.name}  order={args.order}  "
-          f"sim_reverse={args.sim_reverse_rate:.2f}  열화={'on' if degrade else 'off'}",
+          f"sim_reverse={args.sim_reverse_rate:.2f}  degradation={'on' if degrade else 'off'}",
           flush=True)
 
     idx = np.arange(len(va_y))
@@ -90,7 +90,7 @@ def main():
         return DataLoader(Subset(ds, idx.tolist()), batch_size=args.batch,
                           shuffle=False, num_workers=args.workers)
 
-    # 그대로 분류한 결과 / 되뒤집어 분류한 결과 (같은 seed 라 열화·역순여부 동일)
+    # Classified as-is / classified after flipping (same seed -> identical degradation & reversal status)
     p_as, y_true, kf, is_rev = predict(model, loader(False), dev)
     p_un, _, _, _ = predict(model, loader(True), dev)
 
@@ -102,7 +102,7 @@ def main():
         use_undo = p_un.max(1).values > p_as.max(1).values
     else:
         if not args.direction_ckpt:
-            raise SystemExit("--order model 에는 --direction-ckpt 가 필요하다")
+            raise SystemExit("--order model requires --direction-ckpt")
         dm = XorSliceResNet(2, N_REF).to(dev)
         dsd = torch.load(args.direction_ckpt, map_location=dev, weights_only=False)
         dm.load_state_dict(dsd["model"] if isinstance(dsd, dict) and "model" in dsd
@@ -110,8 +110,8 @@ def main():
         dprob, _, _, _ = predict(dm, loader(False), dev)
         use_undo = dprob.argmax(1) == 1
         da = (use_undo.numpy() == is_rev.astype(bool)).mean()
-        print(f"방향 판별기 {args.direction_ckpt.name}: "
-              f"이번 평가셋 방향 정확도 {da:.4f}", flush=True)
+        print(f"Direction discriminator {args.direction_ckpt.name}: "
+              f"evaluation set direction accuracy {da:.4f}", flush=True)
 
     pred = torch.where(use_undo, p_un.argmax(1), p_as.argmax(1)).numpy()
 
@@ -124,9 +124,9 @@ def main():
 
     print(f"\naccuracy = {acc:.4f}  balanced = {bal:.4f}  "
           f"({(y_true == pred).sum()}/{len(y_true)})")
-    print(f"평균 확보 페이지 = {kf.mean()*49:.1f}/49 ({kf.mean()*100:.0f}%)")
-    print(f"실제 역순 = {is_rev.sum()}/{len(is_rev)} ({100*is_rev.mean():.0f}%)  "
-          f"| 되뒤집기 적용 = {int(use_undo.sum())} ({100*float(use_undo.float().mean()):.0f}%)")
+    print(f"Mean recovered pages = {kf.mean()*49:.1f}/49 ({kf.mean()*100:.0f}%)")
+    print(f"Actual reverse = {is_rev.sum()}/{len(is_rev)} ({100*is_rev.mean():.0f}%)  "
+          f"| Flip back applied = {int(use_undo.sum())} ({100*float(use_undo.float().mean()):.0f}%)")
     print()
     print(f"{'class':<10}{'prec':>8}{'recall':>8}{'f1':>8}{'n':>7}")
     for i, c in enumerate(CLASSES):

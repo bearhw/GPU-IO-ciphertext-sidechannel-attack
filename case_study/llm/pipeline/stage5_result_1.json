@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "host_base": "0x2cd4aa000",
+  "gt_base": null,
+  "gt_indication": null,
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 14.834529876708984,
+  "timestamp": 1789397322.7736835,
+  "status": "SUCCESS"
+}

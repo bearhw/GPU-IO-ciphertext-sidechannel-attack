@@ -1,101 +1,100 @@
-# 결과 정리 (논문용)
+# Results Summary (Paper Ready)
 
-모든 수치는 MURA valid 3,197장 기준. write-trace 측정은 5 run × 10 iteration,
-채널 411개 (mura_host_regB_{1..5}.log + mura_guest_nomul_{1..5}_raw.log).
-
----
-
-## Table 1. Write-trace 로 관측되는 입력 채널의 성질
-
-공격 설계의 근거가 되는 실측값. 채널 = 224×224 float32 한 장 = 200,704 B = 49 페이지.
-
-| 성질 | 값 | 함의 |
-|---|---|---|
-| 물리적으로 완전 연속인 채널 | **29%** | 주소 기반 수집으로는 71% 를 놓친다 |
-| 스트림에서 49연속 write 로 관측 (외부 write 0) | **90%** | 시간축 수집이 훨씬 강건하다 |
-| write 순서 = 논리 순서 (정순) | **75%** | 순서는 복원 가능한 정보다 |
-| write 순서 = 역순 | **24%** | 정순/역순 2후보로 99% 커버 |
-| 그 외 순서 | 1% | |
-| 지배 2MB 블록에 49페이지 전부 포함 | **58%** | 나머지는 부분 결손 |
-| 지배 블록 내 페이지 수 (중앙값 / 평균) | 49 / 45.1 | |
-| 파이프라인 최종 확보 페이지 | **39.4 / 49 (80%)** | 블록 결손 + 시간 그룹핑 누락 반영 |
-
-### 2MB 블록의 구성 (512 페이지 중, 중앙값)
-
-| 구성 | 페이지 | 비율 |
-|---|---|---|
-| 타깃 채널 | 48 | 9% |
-| 같은 이미지의 다른 채널 (R=G=B 동일) | 81 | 16% |
-| 다른 이미지 | 294 | 57% |
-| 비-GT (activation 등) | 121 | 24% |
-
-→ 블록은 다른 이미지들로 지배된다. 어느 것이 현재 추론 대상인지는
-   write 타임스탬프 없이는 정의되지 않는다.
+All metrics are based on the MURA validation set (3,197 images).
+Write-trace measurements are derived from 5 runs x 10 iterations, 411 channels
+(`mura_host_regB_{1..5}.log` + `mura_guest_nomul_{1..5}_raw.log`).
 
 ---
 
-## Table 2. 탐색 공간 축소
+## Table 1. Properties of Input Channels Observed via Write Traces
 
-전체 2MB 블록 수 = 131,072 (256 GB guest).
+Empirical properties providing the foundation for the attack design.
+1 channel = 224x224 float32 plane = 200,704 B = 49 pages.
 
-| Workload | runs × iterations | 후보 블록 | 전체 대비 | GT 블록 평균 rank |
+| Property | Value | Implication |
+|---|---|---|
+| Physically fully contiguous channels | **29%** | Address-based collection misses 71% |
+| Observed as 49 consecutive writes in stream (0 external writes) | **90%** | Temporal aggregation is substantially more robust |
+| Write order = logical order (forward) | **75%** | Sequence order is recoverable information |
+| Write order = reverse order | **24%** | Forward / Reverse hypotheses cover 99% |
+| Other orderings | 1% | |
+| Dominant 2MB block contains all 49 pages | **58%** | Remainder suffer partial page loss |
+| Pages contained in dominant block (Median / Mean) | 49 / 45.1 | |
+| End-to-end recovered pages in pipeline | **39.4 / 49 (80%)** | Reflects block loss + temporal grouping omissions |
+
+### 2MB Block Composition (out of 512 pages, median)
+
+| Component | Pages | Percentage |
+|---|---|---|
+| Target channel | 48 | 9% |
+| Other channels of same image (R=G=B identical) | 81 | 16% |
+| Other images | 294 | 57% |
+| Non-GT (activations, etc.) | 121 | 24% |
+
+→ Blocks are dominated by pages from other images. Which pages belong to the current inference
+is undefined without write timestamps.
+
+---
+
+## Table 2. Search Space Reduction
+
+Total 2MB block count = 131,072 (256 GB guest).
+
+| Workload | Runs x Iterations | Candidate Blocks | % of Total | GT Block Mean Rank |
 |---|---|---|---|---|
-| MURA (vision) | 5 × 10 | **906–1,156** | 0.7–0.9% | **1.8** (4/5 runs 가 #1) |
-| Qwen2-VL (b=1) | 3 × 3,463 | 1,159–2,348 | 0.9–1.8% | 4.7 (전부 top-7) |
+| MURA (vision) | 5 x 10 | **906–1,156** | 0.7–0.9% | **1.8** (4/5 runs at #1) |
+| Qwen2-VL (b=1) | 3 x 3,463 | 1,159–2,348 | 0.9–1.8% | 4.7 (all top-7) |
 
-GT 페이지가 write 스트림에 포착된 비율: MURA **100%**, VLM 33–97%.
+Proportion of GT pages captured in write stream: MURA **100%**, VLM 33–97%.
 
 ---
 
-## Table 3. 분류 정확도 (본 결과)
+## Table 3. Classification Accuracy (Main Results)
 
-MURA 7-class 신체 부위. 랜덤 = 14.3%, 다수 클래스 prior = 20.6%.
-`재조립` 열화 = 페이지 80% 확보 + 역순 24% 시뮬레이션.
+MURA 7-class body-part classification. Random baseline = 14.3%, majority class prior = 20.6%.
+`Reassembly` degradation = 80% page recovery + 24% reverse order simulation.
 
-| # | 방법 | 입력 | acc | balanced | 비고 |
+| # | Method | Input | Acc | Balanced | Notes |
 |---|---|---|---|---|---|
-| 0 | 원본 모델 (참조) | 정렬된 완전한 49페이지 | 80.2% | — | **공격자가 만들 수 없음** |
-| 1 | Page-set (순열 불변) | 2MB 블록 512페이지 통째 | **48.6%** | 47.6% | 순서 정보를 버림 |
-| 2 | 재조립, 방향 처리 없음 | 재조립 (224,56) | 67.2% | 66.0% | 역순 24% 가 뒤집힌 채 분류 |
-| 3 | 재조립 + max-softmax 방향 | " | 74.4% | 73.5% | 33% 과다 채택 |
-| 4 | **재조립 + 방향 판별기** | " | **80.0%** | **78.5%** | **최종. 26% 채택 (실제 24%)** |
-| 5 | 재조립 + oracle 방향 (상한) | " | 80.1% | 78.6% | 방향을 안다고 가정 |
+| 0 | Original model (Reference) | Aligned complete 49 pages | 80.2% | — | **Infeasible for attacker** |
+| 1 | Page-set (Permutation-invariant) | Raw 512-page 2MB block | **48.6%** | 47.6% | Discards sequence order |
+| 2 | Reassembly, no orientation handling | Reassembled (224, 56) | 67.2% | 66.0% | 24% reverse samples classified inverted |
+| 3 | Reassembly + max-softmax orientation | " | 74.4% | 73.5% | 33% over-selection |
+| 4 | **Reassembly + orientation classifier** | " | **80.0%** | **78.5%** | **Final. 26% selected (actual 24%)** |
+| 5 | Reassembly + oracle orientation (Upper bound) | " | 80.1% | 78.6% | Assumes orientation known |
 
-방향 판별기 정확도: **97.5%** (2-class, 재조립 입력에서 정순/역순 판별).
+Orientation classifier accuracy: **97.5%** (2-class, distinguishes forward from reverse on reassembled inputs).
 
-**최종 공격 성능 80.0% 는 상한(80.1%) 대비 −0.1%p, 원본 모델(80.2%) 대비 −0.2%p.**
+**Final attack accuracy of 80.0% is -0.1%p vs upper bound (80.1%) and -0.2%p vs original model (80.2%).**
 
 ---
 
-## Table 4. Ablation — 각 요소의 기여
+## Table 4. Ablation — Contribution of Each Component
 
-| 제거한 요소 | acc | 손실 |
+| Component Removed | Acc | Delta |
 |---|---|---|
-| 최종 (전부 적용) | **80.0%** | — |
-| − 방향 판별기 (max-softmax 로 대체) | 74.4% | −5.6%p |
-| − 방향 처리 전체 | 67.2% | −12.8%p |
-| − 열화 fine-tune (clean 모델 사용) | 66.9%\* | −13.1%p |
-| − write 순서 재조립 (2MB 블록 직접 입력) | 48.6% | −31.4%p |
+| Final (All components applied) | **80.0%** | — |
+| − Orientation classifier (Replaced with max-softmax) | 74.4% | −5.6%p |
+| − All orientation handling | 67.2% | −12.8%p |
+| − Degradation fine-tuning (Using clean model) | 66.9%\* | −13.1%p |
+| − Write-order reassembly (Direct 2MB block input) | 48.6% | −31.4%p |
 
-\* clean 모델 + 열화 입력, 정순 기준.
+\* Clean model + degraded input, forward only.
 
-가장 큰 기여는 **write 순서 재조립(+31.4%p)**, 다음이 **방향 처리(+12.8%p)**,
-그 다음이 **열화 fine-tune(+13.1%p)** 이다.
+The largest gain comes from **write-order reassembly (+31.4%p)**, followed by **orientation handling (+12.8%p)**,
+and **degradation fine-tuning (+13.1%p)**.
 
 ---
 
-## 한계 (명시 필요)
+## Limitations (For Paper Disclosure)
 
-1. **swap-read 오차 미반영.** xor slice 를 평문에서 정확히 계산했다. 실제
-   PSP page-move 기반 swap-read 의 실패·오염은 모델링하지 않았다.
-   (Phase 0 사전 부재 + 로그 시점과 VM 메모리 상태 불일치로 미검증)
-2. **결손 마스크 누수.** 페이지 결손 패턴만으로 방향이 55.6% 예측 가능하다
-   (랜덤 50%). 방향 판별기 97.5% 중 일부가 이 인공물 덕일 수 있다.
-3. **replica 가정.** 학습 데이터는 공격자가 동일 스택을 복제해 생성한다고
-   가정한다. 피해자와 replica 의 메모리 배치 분포가 다르면 성능이 달라진다.
-   (양쪽 write 트레이스 통계 대조로 검증 가능하나 미수행)
-4. **종횡비 미상.** 공격자는 원본 종횡비를 모르므로 학습셋 평균(1.339)을
-   prior 로 사용했다. 이것이 원본 대비 약 3%p 손실의 주된 원인이다.
+1. **Unmodeled swap-read error.** XOR slices were computed from plaintext. Real swap-read failures/corruptions
+   during PSP page moves were not modeled (unverified due to absence of Phase 0 dictionary and historical VM divergence).
+2. **Missing-page mask leakage.** Page omission patterns alone predict direction with 55.6% accuracy (random: 50%).
+   A portion of the 97.5% orientation discriminator accuracy may stem from this artifact.
+3. **Replica assumption.** Assumes the attacker replicates the software stack to generate training data.
+   Divergence in memory layout distributions between victim and replica would impact accuracy.
+4. **Unknown aspect ratio.** Using the training set mean (1.339) as prior is the primary cause of the ~3%p degradation compared to ground-truth dimensions.
 
 ---
 

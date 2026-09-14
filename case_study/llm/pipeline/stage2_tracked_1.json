@@ -1,0 +1,140 @@
+{
+  "index": 1,
+  "host_log": "/home/eun/open-science/case_study/llm/e2e_combined_wpt.log",
+  "total_scored_blocks": 1109,
+  "candidate_blocks": [
+    "0x2be200000",
+    "0x2cf200000",
+    "0x2f6000000",
+    "0x2d7a00000",
+    "0x19d600000",
+    "0x1b2400000",
+    "0x2f5e00000"
+  ],
+  "candidate_details": {
+    "0x2be200000": {
+      "score": 379302,
+      "hits": 1642,
+      "max_run": 231
+    },
+    "0x2cf200000": {
+      "score": 286635,
+      "hits": 2955,
+      "max_run": 97
+    },
+    "0x2f6000000": {
+      "score": 227043,
+      "hits": 2803,
+      "max_run": 81
+    },
+    "0x2d7a00000": {
+      "score": 214490,
+      "hits": 1205,
+      "max_run": 178
+    },
+    "0x19d600000": {
+      "score": 166800,
+      "hits": 1390,
+      "max_run": 120
+    },
+    "0x1b2400000": {
+      "score": 166260,
+      "hits": 652,
+      "max_run": 255
+    },
+    "0x2f5e00000": {
+      "score": 95432,
+      "hits": 1208,
+      "max_run": 79
+    }
+  },
+  "candidate_run_bases": {
+    "0x2be200000": [
+      "0x2be283000",
+      "0x2be380000",
+      "0x2be3bc000",
+      "0x2be36b000",
+      "0x2be39f000",
+      "0x2be3ab000",
+      "0x2be37b000",
+      "0x2be3cf000",
+      "0x2be3e5000",
+      "0x2be3f6000"
+    ],
+    "0x2cf200000": [
+      "0x2cf385000",
+      "0x2cf245000",
+      "0x2cf33d000",
+      "0x2cf2f2000",
+      "0x2cf2c5000",
+      "0x2cf31f000",
+      "0x2cf2ef000",
+      "0x2cf29a000",
+      "0x2cf3f1000",
+      "0x2cf2d9000"
+    ],
+    "0x2f6000000": [
+      "0x2f611b000",
+      "0x2f6033000",
+      "0x2f605a000",
+      "0x2f613a000",
+      "0x2f60f8000",
+      "0x2f60b8000",
+      "0x2f617c000",
+      "0x2f61a1000",
+      "0x2f61bd000",
+      "0x2f61e1000"
+    ],
+    "0x2d7a00000": [
+      "0x2d7a8b000",
+      "0x2d7a1b000",
+      "0x2d7b84000",
+      "0x2d7bc3000",
+      "0x2d7bdd000",
+      "0x2d7b78000",
+      "0x2d7bd1000",
+      "0x2d7b4d000",
+      "0x2d7b65000",
+      "0x2d7b6e000"
+    ],
+    "0x19d600000": [
+      "0x19d700000",
+      "0x19d778000",
+      "0x19d6f1000",
+      "0x19d6db000",
+      "0x19d6f0000",
+      "0x19d683000",
+      "0x19d6a9000",
+      "0x19d6ae000",
+      "0x19d6c5000",
+      "0x19d6dd000"
+    ],
+    "0x1b2400000": [
+      "0x1b2401000",
+      "0x1b2480000",
+      "0x1b2412000",
+      "0x1b250c000",
+      "0x1b2508000",
+      "0x1b250d000",
+      "0x1b2509000",
+      "0x1b250e000"
+    ],
+    "0x2f5e00000": [
+      "0x2f5f72000",
+      "0x2f5e8b000",
+      "0x2f5ee0000",
+      "0x2f5e03000",
+      "0x2f5f25000",
+      "0x2f5e70000",
+      "0x2f5e44000",
+      "0x2f5fd8000",
+      "0x2f5e5a000",
+      "0x2f5fc1000"
+    ]
+  },
+  "gt_base": "0x2cd4a9000",
+  "gt_rank": 35,
+  "gt_indication": "Central chest pressure radiating to the left side of the neck and back since today.",
+  "gt_N": 484,
+  "timestamp": 1789396886.3378987
+}

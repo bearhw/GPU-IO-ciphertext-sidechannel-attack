@@ -1,17 +1,17 @@
 """
-XorSliceResNet 학습 스크립트 — ref-32 & ref-64 (density-based ref selection)
+XorSliceResNet Training Script — ref-32 & ref-64 (density-based ref selection)
 
-사전 조건:
-  ./mura_downloads/          MURA 데이터셋
-  ./xor_density_survey.npy   mura_bodypart_attacker.ipynb density survey 셀 결과
+Prerequisites:
+  ./mura_downloads/          MURA dataset
+  ./xor_density_survey.npy   mura_bodypart_attacker.ipynb density survey cell output
 
-출력:
+Outputs:
   ./mura_xor_slice_32ref.pth
   ./mura_xor_slice_64ref.pth
   ./mura_xor32_confusion_matrix.pdf
   ./mura_xor64_confusion_matrix.pdf
 
-실행:
+Execution:
   tmux new -s train
   conda activate mura
   cd /home/eun/cc_uvm/pytorch_uvm310_test/mura
@@ -31,7 +31,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-# ── 상수 ──────────────────────────────────────────────────────────────────────
+# ── Constants ─────────────────────────────────────────────────────────────────
 DATA_ROOT   = "./mura_downloads"
 CLASSES     = ["ELBOW","FINGER","FOREARM","HAND","HUMERUS","SHOULDER","WRIST"]
 CLASS2IDX   = {c: i for i, c in enumerate(CLASSES)}
@@ -45,7 +45,7 @@ torch.manual_seed(SEED)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Device: {device}", flush=True)
 
-# ── 데이터 경로 로드 ───────────────────────────────────────────────────────────
+# ── Load Data Paths ───────────────────────────────────────────────────────────
 def collect_paths_labels(split):
     paths, labels = [], []
     for cls in CLASSES:
@@ -58,17 +58,17 @@ tr_paths, tr_labels = collect_paths_labels("train")
 va_paths, va_labels = collect_paths_labels("valid")
 print(f"Train {len(tr_paths):,}  Valid {len(va_paths):,}", flush=True)
 
-# ── ref chunk 헬퍼 ────────────────────────────────────────────────────────────
+# ── Ref chunk helper ──────────────────────────────────────────────────────────
 def _make_ref_chunk(u8_val):
     f32 = np.array([u8_val], dtype=np.float32) / np.float32(255)
     return np.tile(f32.view(np.uint8), 4)   # (16,) bytes
 
-# ── density survey → ref 선택 ─────────────────────────────────────────────────
+# ── Density survey → ref selection ────────────────────────────────────────────
 DENSITY_SURVEY_PATH = "./xor_density_survey.npy"
 if not os.path.exists(DENSITY_SURVEY_PATH):
     sys.exit(
         f"ERROR: {DENSITY_SURVEY_PATH} not found.\n"
-        "mura_bodypart_attacker.ipynb 의 density survey 셀을 먼저 실행하세요."
+        "Run the density survey cell in mura_bodypart_attacker.ipynb first."
     )
 
 _hit    = np.load(DENSITY_SURVEY_PATH)           # (256,) int64
@@ -85,7 +85,7 @@ REF_CHUNKS_64 = np.array([_make_ref_chunk(k) for k in REF_U8_64], dtype=np.uint8
 print(f"REF_U8_32[:8] = {REF_U8_32[:8]}", flush=True)
 print(f"REF_U8_64[:8] = {REF_U8_64[:8]}", flush=True)
 
-# ── 64-ref 캐시 (32-ref 는 [:, :32] 슬라이싱으로 공유) ────────────────────────
+# ── 64-ref cache (32-ref is shared via [:, :32] slicing) ──────────────────────
 CACHE_DIR_64       = "./xor_cache_64"
 TR_SLICES_64_PATH  = os.path.join(CACHE_DIR_64, "tr_slices.npy")
 TR_ASPECTS_64_PATH = os.path.join(CACHE_DIR_64, "tr_aspects.npy")
@@ -162,7 +162,7 @@ class XorSliceCachedDataset(Dataset):
                 torch.tensor([self.aspects[idx]], dtype=torch.float32),
                 self.labels[idx])
 
-# ── 모델 ──────────────────────────────────────────────────────────────────────
+# ── Model ─────────────────────────────────────────────────────────────────────
 class ResBlock(nn.Module):
     def __init__(self, in_ch, out_ch, stride=1):
         super().__init__()
@@ -205,7 +205,7 @@ class XorSliceResNet(nn.Module):
         x = self.layer3(x); x = self.layer4(x)
         return self.head(torch.cat([self.gap(x).flatten(1), sc], dim=1))
 
-# ── 학습 + 평가 ───────────────────────────────────────────────────────────────
+# ── Training & Evaluation ─────────────────────────────────────────────────────
 def _make_loaders(n_ref, batch):
     pin = torch.cuda.is_available()
     tr_ds = XorSliceCachedDataset(tr_slices64_mm[:, :n_ref], tr_aspects64, tr_labels, augment=True)

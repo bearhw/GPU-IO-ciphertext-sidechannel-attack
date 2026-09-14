@@ -176,6 +176,9 @@ _LABEL_ORDER: list[int] = sorted(
     ),
 )
 
+TOKEN_LABELS.append((' <image_pad x4>', [IMAGE_PAD_TOKEN_ID] * 4))
+_IPAD4_IDX = len(TOKEN_LABELS) - 1
+
 DRAIN_EVERY = 1   # drain guest RX before every ICMP send — large payloads +
                   # mdelay(HOLD) pile up and eventually stop frag logging
 _GUEST_RECOVERY_TIMEOUT = 300

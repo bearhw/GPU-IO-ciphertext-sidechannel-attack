@@ -1,0 +1,414 @@
+{
+  "index": 0,
+  "host_base": "0x2c063a000",
+  "gt_base": null,
+  "gt_indication": null,
+  "recovered_labels": [
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG",
+    "ness of",
+    " cough,",
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 718,
+      "ind_gpa": 11817694832,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 718,
+      "ind_gpa": 11817694832,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 718,
+      "ind_gpa": 11817694832,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 720,
+      "ind_gpa": 11817694848,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 720,
+      "ind_gpa": 11817694848,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 720,
+      "ind_gpa": 11817694848,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 722,
+      "ind_gpa": 11817694864,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 722,
+      "ind_gpa": 11817694864,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 722,
+      "ind_gpa": 11817694864,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 724,
+      "ind_gpa": 11817694880,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 724,
+      "ind_gpa": 11817694880,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 724,
+      "ind_gpa": 11817694880,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 726,
+      "ind_gpa": 11817694896,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 726,
+      "ind_gpa": 11817694896,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 726,
+      "ind_gpa": 11817694896,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 728,
+      "ind_gpa": 11817694912,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 728,
+      "ind_gpa": 11817694912,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 728,
+      "ind_gpa": 11817694912,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 730,
+      "ind_gpa": 11817694928,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 730,
+      "ind_gpa": 11817694928,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 730,
+      "ind_gpa": 11817694928,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 732,
+      "ind_gpa": 11817694944,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 732,
+      "ind_gpa": 11817694944,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 732,
+      "ind_gpa": 11817694944,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 734,
+      "ind_gpa": 11817694960,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 734,
+      "ind_gpa": 11817694960,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 734,
+      "ind_gpa": 11817694960,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 736,
+      "ind_gpa": 11817694976,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 736,
+      "ind_gpa": 11817694976,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 736,
+      "ind_gpa": 11817694976,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 738,
+      "ind_gpa": 11817694992,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 738,
+      "ind_gpa": 11817694992,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 738,
+      "ind_gpa": 11817694992,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 740,
+      "ind_gpa": 11817695008,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 740,
+      "ind_gpa": 11817695008,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 740,
+      "ind_gpa": 11817695008,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 742,
+      "ind_gpa": 11817695024,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 742,
+      "ind_gpa": 11817695024,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 742,
+      "ind_gpa": 11817695024,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 39,
+    "false_positive_labels": [
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG"
+    ],
+    "false_positive_count": 39,
+    "recovered_labels": [
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG",
+      "ness of",
+      "cough,",
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 14.889151811599731,
+  "timestamp": 1789396806.964889,
+  "status": "SUCCESS"
+}

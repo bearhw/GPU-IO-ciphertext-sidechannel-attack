@@ -1,24 +1,25 @@
 #!/usr/bin/env python3
 """
-train_direction.py — 재조립 방향(정순/역순) 판별기.
+train_direction.py — Reassembly direction (forward/reverse) discriminator.
 
-왜 필요한가:
-  write 순서로 이어붙인 배열이 논리 순서와 같은지(정순 75%) 뒤집혔는지(역순 24%)
-  공격자는 모른다. 두 후보를 모두 분류기에 넣고 max-softmax 로 고르는 방식은
-  실측에서 오히려 손해였다:
-      clean 모델      66.91% → 58.18%  (역순 33% 채택, 실제 24%)
-      fine-tune 모델  80.11% → 74.35%  (역순 19% 채택, 실제 24%)
-  max-softmax 는 방향 판별 기준으로 부적절하다. 그래서 방향만 맞히는 전용
-  이진 분류기를 따로 학습한다.
+Why it is needed:
+  The attacker does not know whether an array assembled in write-order matches
+  logical order (forward 75%) or is inverted (reverse 24%).
+  Feeding both candidates into the classifier and selecting via max-softmax
+  proved detrimental in empirical tests:
+      clean model      66.91% -> 58.18%  (selected reverse 33%, actual 24%)
+      fine-tune model  80.11% -> 74.35%  (selected reverse 19%, actual 24%)
+  Max-softmax is inappropriate as a direction decision criterion.
+  Therefore, a dedicated binary classifier is trained specifically for direction.
 
-무엇을 학습하나:
-  입력  : 재조립된 (64,224,56) — 실측 열화 적용
-  라벨  : 0 = 정순, 1 = 역순(페이지 순서가 뒤집힌 채 조립됨)
-  주의  : 페이지 역순은 '이미지 상하 반전'이 아니다. 4096바이트(≈4.57 픽셀행)
-          단위로 블록 반전되고 페이지 내부 행 순서는 유지된다. 그 인공물이
-          오히려 뚜렷한 단서가 된다.
+What it learns:
+  Input : Reassembled (64, 224, 56) — with empirical degradations applied
+  Label : 0 = Forward, 1 = Reverse (assembled with reversed page sequence)
+  Note  : Page reversal is NOT 'vertical image flip'. It is a block reversal
+          at 4096-byte (~4.57 pixel rows) granularity while intra-page row
+          order is preserved. This artifact serves as a distinctive signature.
 
-출력: direction_64ref.pth
+Output: direction_64ref.pth
 """
 import argparse
 import time
@@ -36,7 +37,7 @@ from reassembly_common import (
 
 
 class DirectionDataset(Dataset):
-    """같은 이미지를 정순/역순 두 라벨로 만들어 방향 판별을 학습시킨다."""
+    """Train direction discrimination by generating both forward/reverse labels for each image."""
 
     def __init__(self, slices_mm, layouts, *, train=True, aspect_prior=1.339,
                  degrade=True, seed=0):
@@ -64,7 +65,7 @@ class DirectionDataset(Dataset):
                 keep &= (rng.random(CH_PAGES) < rng.uniform(0.49, 1.0))
         rec = np.where(keep[None, :, None], pages, False)
 
-        y = int(rng.integers(2))          # 0=정순, 1=역순
+        y = int(rng.integers(2))          # 0=forward, 1=reverse
         if y == 1:
             rec = rec[:, ::-1, :]
 
@@ -89,7 +90,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--init", type=Path,
-                    help="body-part 체크포인트에서 backbone 초기화 (head 제외)")
+                    help="Initialize backbone from body-part checkpoint (excluding head)")
     ap.add_argument("--epochs", type=int, default=8)
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--lr", type=float, default=2e-4)
@@ -104,7 +105,7 @@ def main():
     dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     layouts = np.load(args.layouts)["slots"]
     prior = train_aspect_prior()
-    print(f"device={dev}  실측 배치 {len(layouts)}개  aspect prior={prior:.3f}",
+    print(f"device={dev}  empirical layouts={len(layouts)}  aspect prior={prior:.3f}",
           flush=True)
 
     tr_s, _ = load_cache("train")
@@ -127,14 +128,14 @@ def main():
     va_ld = DataLoader(va_ds, batch_size=args.batch, shuffle=False,
                        num_workers=args.workers, pin_memory=(dev.type == "cuda"))
 
-    model = XorSliceResNet(2, N_REF).to(dev)       # 2-class: 정순 / 역순
+    model = XorSliceResNet(2, N_REF).to(dev)       # 2-class: forward / reverse
     if args.init:
         sd = torch.load(args.init, map_location=dev, weights_only=False)
         sd = sd["model"] if isinstance(sd, dict) and "model" in sd else sd
         sd = {k: v for k, v in sd.items() if not k.startswith("head.")}
         missing, unexpected = model.load_state_dict(sd, strict=False)
         print(f"init backbone from {args.init.name} "
-              f"(head 새로 학습, missing={len(missing)})", flush=True)
+              f"(training head from scratch, missing={len(missing)})", flush=True)
     print(f"params={sum(p.numel() for p in model.parameters()):,}", flush=True)
 
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr,

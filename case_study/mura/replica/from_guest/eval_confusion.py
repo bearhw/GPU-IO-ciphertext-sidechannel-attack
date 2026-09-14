@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-eval_confusion.py — 학습된 page-set 모델을 MURA valid 세트로 추론하고
-confusion matrix 를 png/pdf 로 저장.
+eval_confusion.py — Run inference with trained page-set model on MURA valid set
+and save confusion matrix as png/pdf.
 
   python eval_confusion.py --ckpt pageset_64ref.pth
 
-출력:
+Outputs:
   pageset_confusion_matrix.png
   pageset_confusion_matrix.pdf
-  (+ per-class precision/recall/F1 을 표준출력에)
+  (+ per-class precision/recall/F1 to stdout)
 """
 import argparse
 from pathlib import Path
@@ -68,13 +68,13 @@ def main():
     ap.add_argument("--ckpt", type=Path, default=HERE / "pageset_64ref.pth")
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--workers", type=int, default=4)
-    ap.add_argument("--limit", type=int, default=None, help="valid 샘플 수 제한")
+    ap.add_argument("--limit", type=int, default=None, help="Limit number of valid samples")
     ap.add_argument("--layouts", type=Path, default=HERE / "layouts.npz")
     ap.add_argument("--out", type=str, default=str(HERE / "pageset_confusion_matrix"))
     args = ap.parse_args()
 
     if not args.ckpt.exists():
-        raise SystemExit(f"{args.ckpt} 없음 — train_pageset.py 를 먼저 돌려라.")
+        raise SystemExit(f"{args.ckpt} not found — run train_pageset.py first.")
 
     dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     ck = torch.load(args.ckpt, map_location=dev, weights_only=False)
@@ -89,7 +89,7 @@ def main():
     va_s = np.lib.format.open_memmap(CACHE / "va_slices.npy", mode="r")
     va_a = np.load(CACHE / "va_aspects.npy")
     va_y = collect_labels("valid")
-    assert len(va_y) == va_s.shape[0], "캐시와 라벨 개수 불일치"
+    assert len(va_y) == va_s.shape[0], "Cache and label count mismatch"
 
     comp = None
     if ck.get("use_comp", False):

@@ -26,15 +26,28 @@ def _recv_until_prompt(sock: socket.socket) -> str:
     return buf.decode(errors="replace")
 
 
-def read_page(gpa: int) -> str:
+def connect_monitor() -> socket.socket:
+    """Open a connection to the QEMU HMP monitor and consume initial banner."""
     sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
     sock.settimeout(60)
     sock.connect(MONITOR_SOCK)
     _recv_until_prompt(sock)
-    sock.sendall(f"xp /512gx 0x{gpa:x}\n".encode())
-    raw = _recv_until_prompt(sock)
-    sock.close()
-    return raw
+    return sock
+
+
+def read_page(sock_or_gpa, gpa: int = None) -> str:
+    """Read xp /512gx <GPA>. Supports read_page(gpa) or read_page(sock, gpa)."""
+    if gpa is None:
+        gpa_val = int(sock_or_gpa, 16) if isinstance(sock_or_gpa, str) else int(sock_or_gpa)
+        sock = connect_monitor()
+        sock.sendall(f"xp /512gx 0x{gpa_val:x}\n".encode())
+        raw = _recv_until_prompt(sock)
+        sock.close()
+        return raw
+    else:
+        sock = sock_or_gpa
+        sock.sendall(f"xp /512gx 0x{gpa:x}\n".encode())
+        return _recv_until_prompt(sock)
 
 
 def main() -> None:

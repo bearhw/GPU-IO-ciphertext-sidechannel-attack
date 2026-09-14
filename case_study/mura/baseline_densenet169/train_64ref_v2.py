@@ -1,24 +1,24 @@
 """
-XorSliceSENet 학습 스크립트 — ref-64 (v2, SE-ResNet + global-stats branch)
+XorSliceSENet Training Script — ref-64 (v2, SE-ResNet + global-stats branch)
 
-v1 (XorSliceResNet) 대비 변경:
-  1. SEResBlock: Squeeze-and-Excitation — ref 채널 단위 중요도 가중치 학습
-  2. Global stats branch: 각 ref별 매칭 청크 수(공간 합산) → MLP → spatial feature와 concat
-  3. LR warmup 5 epoch + cosine annealing
-  4. stem/layer 채널 확장: 64→128→256→512→1024
+Changes from v1 (XorSliceResNet):
+  1. SEResBlock: Squeeze-and-Excitation — learns per-ref channel importance weights
+  2. Global stats branch: per-ref matched chunk counts (spatial sum) → MLP → concat with spatial features
+  3. LR warmup 5 epochs + cosine annealing
+  4. stem/layer channel expansion: 64→128→256→512→1024
 
-캐시 호환:
-  xor_cache_64/ 는 train_64ref.py 와 공유 (재사용)
+Cache Compatibility:
+  xor_cache_64/ is shared with train_64ref.py (reused)
 
-사전 조건:
-  ./mura_downloads/          MURA 데이터셋
-  ./xor_density_survey.npy   density survey 결과
+Prerequisites:
+  ./mura_downloads/          MURA dataset
+  ./xor_density_survey.npy   density survey results
 
-출력:
+Outputs:
   ./mura_xor_slice_64ref_v2.pth
   ./mura_xor64_v2_confusion_matrix.pdf
 
-실행:
+Execution:
   conda activate mura
   cd /home/eun/bnb/mura
   python train_64ref_v2.py 2>&1 | tee train_64ref_v2.log
@@ -37,7 +37,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-# ── 상수 ──────────────────────────────────────────────────────────────────────
+# ── Constants ─────────────────────────────────────────────────────────────────
 DATA_ROOT   = "./mura_downloads"
 CLASSES     = ["ELBOW","FINGER","FOREARM","HAND","HUMERUS","SHOULDER","WRIST"]
 CLASS2IDX   = {c: i for i, c in enumerate(CLASSES)}
@@ -54,7 +54,7 @@ np.random.seed(SEED)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Device: {device}", flush=True)
 
-# ── 데이터 경로 ────────────────────────────────────────────────────────────────
+# ── Load Data Paths ───────────────────────────────────────────────────────────
 def collect_paths_labels(split):
     paths, labels = [], []
     for cls in CLASSES:
@@ -67,7 +67,7 @@ tr_paths, tr_labels = collect_paths_labels("train")
 va_paths, va_labels = collect_paths_labels("valid")
 print(f"Train {len(tr_paths):,}  Valid {len(va_paths):,}", flush=True)
 
-# ── ref chunk 선택 ────────────────────────────────────────────────────────────
+# ── Select Ref Chunks ─────────────────────────────────────────────────────────
 DENSITY_SURVEY_PATH = "./xor_density_survey.npy"
 if not os.path.exists(DENSITY_SURVEY_PATH):
     sys.exit(f"ERROR: {DENSITY_SURVEY_PATH} not found.")
@@ -83,7 +83,7 @@ def _make_ref_chunk(u8_val):
 REF_CHUNKS_64 = np.array([_make_ref_chunk(k) for k in REF_U8_64], dtype=np.uint8)
 print(f"REF_U8_64[:8] = {REF_U8_64[:8]}", flush=True)
 
-# ── 캐시 (train_64ref.py 와 공유) ─────────────────────────────────────────────
+# ── Cache (shared with train_64ref.py) ─────────────────────────────────────────
 CACHE_DIR_64       = "./xor_cache_64"
 TR_SLICES_64_PATH  = os.path.join(CACHE_DIR_64, "tr_slices.npy")
 TR_ASPECTS_64_PATH = os.path.join(CACHE_DIR_64, "tr_aspects.npy")
@@ -162,7 +162,7 @@ class XorSliceCachedDataset(Dataset):
                 torch.tensor([self.aspects[idx]], dtype=torch.float32),
                 self.labels[idx])
 
-# ── 모델: XorSliceSENet ───────────────────────────────────────────────────────
+# ── Model: XorSliceSENet ───────────────────────────────────────────────────────
 class SELayer(nn.Module):
     """Channel squeeze-and-excitation (along channel dim = ref pages)."""
     def __init__(self, ch, reduction=16):
@@ -200,10 +200,10 @@ class SEResBlock(nn.Module):
 
 class XorSliceSENet(nn.Module):
     """
-    두 브랜치:
-      (A) Spatial branch: (B, N_REF, 224, 56) → SE-ResNet → GAP → (B, 512)
-      (B) Global stats branch: per-ref match ratio (B, N_REF) → MLP → (B, 128)
-    Merge + aspect ratio → (B, 641) → head → 7 classes
+    Two branches:
+      (A) Spatial branch: (B, N_REF, 224, 56) -> SE-ResNet -> GAP -> (B, 512)
+      (B) Global stats branch: per-ref match ratio (B, N_REF) -> MLP -> (B, 128)
+    Merge + aspect ratio -> (B, 641) -> head -> 7 classes
     """
     def __init__(self, num_classes=7, n_ref=64):
         super().__init__()
@@ -253,7 +253,7 @@ class XorSliceSENet(nn.Module):
         return self.head(torch.cat([sp_feat, stats_feat, sc], dim=1))
 
 
-# ── LR 스케줄: linear warmup + cosine ─────────────────────────────────────────
+# ── LR Schedule: linear warmup + cosine ────────────────────────────────────────
 def lr_lambda(epoch, warmup=WARMUP_EP, total=EPOCHS):
     if epoch < warmup:
         return (epoch + 1) / warmup
@@ -261,7 +261,7 @@ def lr_lambda(epoch, warmup=WARMUP_EP, total=EPOCHS):
     return 0.5 * (1 + math.cos(math.pi * progress))
 
 
-# ── 학습 + 평가 ───────────────────────────────────────────────────────────────
+# ── Training + Evaluation ──────────────────────────────────────────────────────
 def run(epochs=EPOCHS, batch=96):
     model_path = "./mura_xor_slice_64ref_v2.pth"
     pin = torch.cuda.is_available()
@@ -376,7 +376,7 @@ if __name__ == "__main__":
     t_start = time.time()
     model, model_path, va_ld = run(epochs=EPOCHS, batch=96)
 
-    # best checkpoint로 평가
+    # Evaluate with best checkpoint
     model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
     evaluate(model, va_ld, model_path)
 

@@ -1,0 +1,20 @@
+{
+  "stage": 3,
+  "index": 30,
+  "batch_size": 1,
+  "label": 3,
+  "zero_gpa": "0x3ca591000",
+  "image_gpa": "0x42dfe000",
+  "page_gpas": [
+    "0x42dfe000",
+    "0x42dff000"
+  ],
+  "dump_files": [
+    "/home/eun/open-science/case_study/mnist/pipeline/3-30.out",
+    "/home/eun/open-science/case_study/mnist/pipeline/3-30_p2.out"
+  ],
+  "dump_p1": "/home/eun/open-science/case_study/mnist/pipeline/3-30.out",
+  "dump_p2": "/home/eun/open-science/case_study/mnist/pipeline/3-30_p2.out",
+  "total_swap_time_sec": 0.23543882369995117,
+  "timestamp": 1789307735.1951396
+}

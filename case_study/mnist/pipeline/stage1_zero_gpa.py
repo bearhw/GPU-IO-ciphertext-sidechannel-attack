@@ -119,31 +119,60 @@ def acquire_zero_gpa(max_attempts: int = 5) -> int:
 
 
 def dump_zero_page(zero_gpa: int, zero_out: Path):
-    """Dump zero page via read_gpa.py."""
-    read_gpa_script = c.FLOW_DIR / "read_gpa.py"
-    if not read_gpa_script.exists():
-        read_gpa_script = c.HOST_SCRIPTS_DIR / "read_gpa.py"
+    """Dump zero page directly via QEMU HMP socket."""
+    import socket
+    monitor_sock = "/tmp/qemu-monitor.sock"
+    qemu_prompt = b"(qemu) "
 
     print(f"[stage1] Dumping zero page 0x{zero_gpa:x} → {zero_out}")
-    subprocess.run(
-        [sys.executable, str(read_gpa_script), "z", f"0x{zero_gpa:x}", "--output", str(zero_out)],
-        check=True,
-    )
+    sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+    sock.settimeout(60)
+    sock.connect(monitor_sock)
+    buf = b""
+    while qemu_prompt not in buf:
+        chunk = sock.recv(65536)
+        if not chunk:
+            break
+        buf += chunk
+    sock.sendall(f"xp /512gx 0x{zero_gpa:x}\n".encode())
+    buf = b""
+    while qemu_prompt not in buf:
+        chunk = sock.recv(65536)
+        if not chunk:
+            break
+        buf += chunk
+    sock.close()
+
+    raw_text = buf.decode(errors="replace")
+    zero_out.parent.mkdir(parents=True, exist_ok=True)
+    zero_out.write_text(raw_text)
+    print(f"[stage1] Successfully saved {len(raw_text.splitlines())} lines → {zero_out}")
+
+    # Also keep c.FLOW_DIR and c.HOST_SCRIPTS_DIR synchronized
+    try:
+        (c.FLOW_DIR / "z.out").write_text(raw_text)
+        (c.HOST_SCRIPTS_DIR / "z.out").write_text(raw_text)
+    except Exception:
+        pass
 
 
 def run_stage1(output_dir: Path, zero_gpa_override: int = None,
                force_refresh: bool = False, max_attempts: int = 5) -> dict:
-    output_dir.mkdir(parents=True, exist_ok=True)
-    json_path = output_dir / "zero_gpa.json"
-    zero_out  = output_dir / "z.out"
+    dumps_dir, logs_dir, results_dir = c.get_output_subdirs(output_dir)
+    json_path = results_dir / "zero_gpa.json"
+    zero_out  = dumps_dir / "z.out"
 
-    if not force_refresh and json_path.exists() and zero_out.exists() and zero_gpa_override is None:
-        try:
-            cached = c.load_json(json_path)
-            print(f"[stage1] Reusing cached zero_gpa: {cached.get('zero_gpa')} from {json_path.name}")
-            return cached
-        except Exception:
-            pass
+    # Also check base output_dir for existing cache
+    if not force_refresh and zero_gpa_override is None:
+        for candidate_json in [json_path, output_dir / "zero_gpa.json"]:
+            for candidate_out in [zero_out, output_dir / "z.out"]:
+                if candidate_json.exists() and candidate_out.exists():
+                    try:
+                        cached = c.load_json(candidate_json)
+                        print(f"[stage1] Reusing cached zero_gpa: {cached.get('zero_gpa')} from {candidate_json.name}")
+                        return cached
+                    except Exception:
+                        pass
 
     c.ensure_guest_suppressions()
     c.ensure_mtu_9000()

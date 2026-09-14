@@ -1,836 +1,437 @@
 ================================================================================
-  orchestrate_v2.py — 동작 방식 상세 문서
-  (2026-07-21 최초 작성 / 2026-07-29 대규모 개정 / 2026-08-03 dict·blind 업데이트)
+  orchestrate_v2.py — Detailed Operating Principles
+  (2026-07-21 initial draft / 2026-07-29 major revision / 2026-08-03 dict & blind update)
 ================================================================================
 
 # 1. rebuild
 sudo python3 orchestrate_v2.py --build
 
-# 2. sweep test (인덱스 5, indication = "Shortness of breath")
+# 2. sweep test (index 5, indication = "Shortness of breath")
 sudo python3 orchestrate_v2.py --index 5 --blind
 ────────────────────────────────────────────────────────────────────────────────
-0. 전체 목적
+0. Overall Objective
 ────────────────────────────────────────────────────────────────────────────────
 
-AMD SEV-SNP으로 암호화된 게스트 VM에서 LLM(의료 VLM) 추론을 실행할 때,
-호스트에서 게스트 메모리를 복호화하지 않고도 indication 토큰을 추론하는
-사이드채널 공격 PoC (Dictionary-based ciphertext comparison).
+When running LLM (Medical VLM) inference inside an AMD SEV-SNP encrypted guest VM,
+infer indication tokens from the host without decrypting guest memory
+using a side-channel attack PoC (Dictionary-based ciphertext comparison).
 
-핵심 원리:
-  AES-XEX 암호화에서 동일한 plaintext + 동일한 GPA(Guest Physical Address) =
-  항상 동일한 ciphertext. 따라서 미리 알려진 토큰을 알려진 GPA에서 캡처한
-  ciphertext와, 추론 중 indication 토큰이 위치한 GPA의 ciphertext를 비교하면
-  어떤 토큰인지 식별 가능.
+Core Principle:
+  In AES-XEX encryption, identical plaintext + identical GPA (Guest Physical Address) =
+  always identical ciphertext. Therefore, comparing ciphertext captured from a known
+  token at a known GPA against ciphertext at the GPA where the indication token resides
+  enables token identification.
 
 ────────────────────────────────────────────────────────────────────────────────
-1. 파일/경로 상수
+1. File / Path Constants
 ────────────────────────────────────────────────────────────────────────────────
 
-  SWAP_TOOL   = ./swap_pages_tool        # KVM ioctl 래퍼 (C 바이너리)
-  READ_GPA    = ./read_gpa.py            # QEMU HMP 소켓으로 4KB 페이지 덤프
-  SEND_TOKENS = ./send_tokens.py         # ICMP 패킷으로 토큰 GPA 획득
-  VERIFY      = ./verify.py             # AES 블록 단위 ciphertext 비교
-  DICT_CACHE  = ./dict_cache.json        # 빌드된 딕셔너리 (JSON)
-  DICT_DIR    = ./dict_pages/            # 딕셔너리 페이지 덤프 파일들 (*.out)
-  RESULTS_CSV = ./results_v2.csv         # 추론 결과 (append 모드)
+  SWAP_TOOL   = ./swap_pages_tool        # KVM ioctl wrapper (C binary)
+  READ_GPA    = ./read_gpa.py            # 4KB page dump via QEMU HMP socket
+  SEND_TOKENS = ./send_tokens.py         # Acquire token GPA via ICMP packets
+  VERIFY      = ./verify.py              # AES block ciphertext comparison
+  DICT_CACHE  = ./dict_cache.json        # Built dictionary (JSON)
+  DICT_DIR    = ./dict_pages/            # Dictionary page dump files (*.out)
+  RESULTS_CSV = ./results_v2.csv         # Inference results (append mode)
 
-  게스트 경로:
+  Guest Paths:
   GUEST_SCRIPT  = ~/medical_ml/med_vlm/scripts/single_inference_indication_gpa.py
   GUEST_CWD     = ~/medical_ml/med_vlm/scripts
   GUEST_DATASET = ~/medical_ml/med_vlm/rexgradient/ReXGradient/metadata/rexgradient_test.json
   GUEST_PYTHON  = /home/ubuntu/miniconda3/envs/vlm/bin/python3
 
 ────────────────────────────────────────────────────────────────────────────────
-2. 토큰 레이블 (TOKEN_LABELS)
+2. Token Labels (TOKEN_LABELS)
 ────────────────────────────────────────────────────────────────────────────────
 
-  추론 대상 indication 문자열과 그에 대응하는 int64 token ID 목록:
+  Target clinical indication strings and corresponding int64 token IDs:
 
-    token_idx=0: "Chest pain"          → [41771, 6646]          (2 tokens, 16 bytes)
-    token_idx=1: "Shortness of breath" → [10698, 2090, 315, 11486] (4 tokens, 32 bytes)
-    token_idx=2: "chest pain"          → [15138, 6646]           (2 tokens, 16 bytes)
-    token_idx=3: "shortness of breath" → [2805, 2090, 315, 11486]  (4 tokens, 32 bytes)
+    token_idx=0: "Chest pain"          -> [41771, 6646]          (2 tokens, 16 bytes)
+    token_idx=1: "Shortness of breath" -> [10698, 2090, 315, 11486] (4 tokens, 32 bytes)
+    token_idx=2: "chest pain"          -> [15138, 6646]           (2 tokens, 16 bytes)
+    token_idx=3: "shortness of breath" -> [2805, 2090, 315, 11486]  (4 tokens, 32 bytes)
 
-  각 token ID는 int64 little-endian으로 메모리에 저장됨 (8 bytes/token).
+  Each token ID is stored in memory as int64 little-endian (8 bytes/token).
 
-  [2026-07-29] TOKEN_LABELS가 4개 → 10개 → [2026-07-30] 35개로 확장됨:
+  [2026-07-29] TOKEN_LABELS expanded from 4 -> 10 -> [2026-07-30] 35 labels:
 
-    token_idx=0:  "Chest pain"                          → [41771, 6646]                            (2tok/16B)
-    token_idx=1:  "Shortness of breath"                 → [10698, 2090, 315, 11486]                (4tok/32B)
-    token_idx=2:  "chest pain"                          → [15138, 6646]                            (2tok/16B)
-    token_idx=3:  "shortness of breath"                 → [2805, 2090, 315, 11486]                 (4tok/32B)
-    token_idx=4:  "Chest Pain"                          → [41771, 34467]                           (2tok/16B)
-    token_idx=5:  "Chest PAIN"                          → [41771, 393, 6836]                       (3tok/24B)
-    token_idx=6:  "CHEST PAIN"                          → [49521, 784, 393, 6836]                  (4tok/32B)
-    token_idx=7:  "Shortness of Breath"                 → [10698, 2090, 315, 57192]                (4tok/32B)
-    token_idx=8:  "shortness of Breath"                 → [2805, 2090, 315, 57192]                 (4tok/32B)
-    token_idx=9:  "Respiratory failure"                 → [1061, 5565, 5269, 7901]                 (4tok/32B)
-    token_idx=10: "respiratory failure"                 → [416, 5565, 5269, 7901]                  (4tok/32B)
-    token_idx=11: "Short of breath"                     → [12472, 315, 11486]                      (3tok/24B)
-    token_idx=12: "short of breath"                     → [8676, 315, 11486]                       (3tok/24B)
-    token_idx=13: "Altered mental status"               → [2101, 33159, 10502, 2639]               (4tok/32B)
-    token_idx=14: "altered mental status"               → [278, 33159, 10502, 2639]                (4tok/32B)
-    token_idx=15: "Respiratory distress"                → [1061, 5565, 5269, 34004]                (4tok/32B)
-    token_idx=16: "respiratory distress"                → [416, 5565, 5269, 34004]                 (4tok/32B)
-    token_idx=17: "Productive cough"                    → [4816, 533, 39600]                       (3tok/24B)
-    token_idx=18: "productive cough"                    → [33270, 39600]                           (2tok/16B)
-    token_idx=19: "Abdominal pain"                      → [5830, 5600, 977, 6646]                  (4tok/32B)
-    token_idx=20: "abdominal pain"                      → [370, 5600, 977, 6646]                   (4tok/32B)
-    token_idx=21: "Cough, shortness of breath"          → [34, 1384, 11, 2805, 2090, 315, 11486]  (7tok/56B)
-    token_idx=22: "Cough and shortness of breath"       → [34, 1384, 323, 2805, 2090, 315, 11486] (7tok/56B)
-    token_idx=23: "Severe shortness of breath"          → [1514, 19289, 2805, 2090, 315, 11486]   (6tok/48B)
-    token_idx=24: "Worsening shortness of breath"       → [54, 1087, 6019, 2805, 2090, 315, 11486](7tok/56B)
-    token_idx=25: "Increasing shortness of breath"      → [80682, 2805, 2090, 315, 11486]         (5tok/40B)
-    token_idx=26: "Acute onset of shortness of breath"  → [11654, 1070, 40980, 315, 2805, 2090, 315, 11486] (8tok/64B)
-    token_idx=27: "Left-sided chest pain"               → [5415, 49758, 15138, 6646]               (4tok/32B)
-    token_idx=28: "Right-sided chest pain"              → [5979, 49758, 15138, 6646]               (4tok/32B)
-    token_idx=29: "Left chest pain"                     → [5415, 15138, 6646]                      (3tok/24B)
-    token_idx=30: "Central chest pain"                  → [43403, 15138, 6646]                     (3tok/24B)
-    token_idx=31: "Acute respiratory failure"           → [11654, 1070, 41531, 7901]               (4tok/32B)
-    token_idx=32: "Nonproductive cough"                 → [8121, 33270, 39600]                     (3tok/24B)
-    token_idx=33: "Cough, short of breath"              → [34, 1384, 11, 2805, 315, 11486]         (6tok/48B)
-    token_idx=34: "image_pad×4" (sentinel)              → [151655]*4                               (4tok/32B)
-                                                          ← blind sweep Phase 1 전용. indication이 아님.
+    token_idx=0:  "Chest pain"                          -> [41771, 6646]                            (2tok/16B)
+    token_idx=1:  "Shortness of breath"                 -> [10698, 2090, 315, 11486]                (4tok/32B)
+    token_idx=2:  "chest pain"                          -> [15138, 6646]                            (2tok/16B)
+    token_idx=3:  "shortness of breath"                 -> [2805, 2090, 315, 11486]                 (4tok/32B)
+    token_idx=4:  "Chest Pain"                          -> [41771, 34467]                           (2tok/16B)
+    token_idx=5:  "Chest PAIN"                          -> [41771, 393, 6836]                       (3tok/24B)
+    token_idx=6:  "CHEST PAIN"                          -> [49521, 784, 393, 6836]                  (4tok/32B)
+    token_idx=7:  "Shortness of Breath"                 -> [10698, 2090, 315, 57192]                (4tok/32B)
+    token_idx=8:  "shortness of Breath"                 -> [2805, 2090, 315, 57192]                 (4tok/32B)
+    token_idx=9:  "Respiratory failure"                 -> [1061, 5565, 5269, 7901]                 (4tok/32B)
+    token_idx=10: "respiratory failure"                 -> [416, 5565, 5269, 7901]                  (4tok/32B)
+    token_idx=11: "Short of breath"                     -> [12472, 315, 11486]                      (3tok/24B)
+    token_idx=12: "short of breath"                     -> [8676, 315, 11486]                       (3tok/24B)
+    token_idx=13: "Altered mental status"               -> [2101, 33159, 10502, 2639]               (4tok/32B)
+    token_idx=14: "altered mental status"               -> [278, 33159, 10502, 2639]                (4tok/32B)
+    token_idx=15: "Respiratory distress"                -> [1061, 5565, 5269, 34004]                (4tok/32B)
+    token_idx=16: "respiratory distress"                -> [416, 5565, 5269, 34004]                 (4tok/32B)
+    token_idx=17: "Productive cough"                    -> [4816, 533, 39600]                       (3tok/24B)
+    token_idx=18: "productive cough"                    -> [33270, 39600]                           (2tok/16B)
+    token_idx=19: "Abdominal pain"                      -> [5830, 5600, 977, 6646]                  (4tok/32B)
+    token_idx=20: "abdominal pain"                      -> [370, 5600, 977, 6646]                   (4tok/32B)
+    token_idx=21: "Cough, shortness of breath"          -> [34, 1384, 11, 2805, 2090, 315, 11486]  (7tok/56B)
+    token_idx=22: "Cough and shortness of breath"       -> [34, 1384, 323, 2805, 2090, 315, 11486] (7tok/56B)
+    token_idx=23: "Severe shortness of breath"          -> [1514, 19289, 2805, 2090, 315, 11486]   (6tok/48B)
+    token_idx=24: "Worsening shortness of breath"       -> [54, 1087, 6019, 2805, 2090, 315, 11486](7tok/56B)
+    token_idx=25: "Increasing shortness of breath"      -> [80682, 2805, 2090, 315, 11486]         (5tok/40B)
+    token_idx=26: "Acute onset of shortness of breath"  -> [11654, 1070, 40980, 315, 2805, 2090, 315, 11486] (8tok/64B)
+    token_idx=27: "Left-sided chest pain"               -> [5415, 49758, 15138, 6646]               (4tok/32B)
+    token_idx=28: "Right-sided chest pain"              -> [5979, 49758, 15138, 6646]               (4tok/32B)
+    token_idx=29: "Left chest pain"                     -> [5415, 15138, 6646]                      (3tok/24B)
+    token_idx=30: "Central chest pain"                  -> [43403, 15138, 6646]                     (3tok/24B)
+    token_idx=31: "Acute respiratory failure"           -> [11654, 1070, 41531, 7901]               (4tok/32B)
+    token_idx=32: "Nonproductive cough"                 -> [8121, 33270, 39600]                     (3tok/24B)
+    token_idx=33: "Cough, short of breath"              -> [34, 1384, 11, 2805, 315, 11486]         (6tok/48B)
+    token_idx=34: "image_padx4" (sentinel)              -> [151655]*4                               (4tok/32B)
+                                                           <- Dedicated to blind sweep Phase 1. Not an indication.
 
   IMAGE_PAD_TOKEN_ID = 151655 (<|image_pad|> in Qwen2-VL)
-  _IPAD4_IDX = 34 (TOKEN_LABELS에서 "image_pad×4"의 위치, 자동 계산)
+  _IPAD4_IDX = 34 (Position of "image_padx4" in TOKEN_LABELS, auto-computed)
 
-  TOKEN_LABELS 변경 후에는 반드시 --build 재실행 필요.
+  Re-run --build whenever TOKEN_LABELS changes.
 
 ────────────────────────────────────────────────────────────────────────────────
-3. HEADER_CONST와 indication_gpa 계산
+3. HEADER_CONST and indication_gpa Computation
 ────────────────────────────────────────────────────────────────────────────────
 
-  게스트에서 LLM 추론 시, input_ids 배열이 메모리에 배치될 때:
-    - 프롬프트 헤더 토큰이 HEADER_CONST개 먼저 나옴
-    - 이미지 패딩 토큰이 N_image_pad(=N)개 뒤따름
-    - 그 다음 위치에 indication 토큰이 위치
+  During guest LLM inference, when input_ids array is placed in memory:
+    - Prompt header tokens appear first (HEADER_CONST tokens)
+    - Image padding tokens follow (N_image_pad = N tokens)
+    - Clinical indication tokens appear immediately following
 
-  따라서:
+  Therefore:
     tok_start      = HEADER_CONST + N
     indication_gpa = base_gpa + tok_start * 8
 
-  현재 값: HEADER_CONST = 43 (코드에 하드코딩, 아래 §17·§19 참고)
-  indication_page_gpa = indication_gpa & ~0xFFF   (4KB 페이지 정렬)
-  token_offset        = indication_gpa & 0xFFF     (페이지 내 오프셋)
+  Current value: HEADER_CONST = 43 (hardcoded in codebase, see §17 and §19)
+  indication_page_gpa = indication_gpa & ~0xFFF   (4KB page-aligned)
+  token_offset        = indication_gpa & 0xFFF     (in-page byte offset)
 
 ────────────────────────────────────────────────────────────────────────────────
-4. Phase 0: 딕셔너리 빌드 (--build)
+4. Phase 0: Dictionary Build (--build)
 ────────────────────────────────────────────────────────────────────────────────
 
-목표: 모든 token_idx(0~3) × 모든 가능한 page offset 조합에 대해
-      ciphertext를 미리 캡처해 dict_cache.json에 저장.
+Goal: Pre-capture ciphertext for all token_idx (0~3) x all possible page offsets
+      and persist in dict_cache.json.
 
-4-1. 항상 새로 빌드
-  --build 실행 시 기존 dict_cache.json과 dict_pages/*.out 파일을 전부 삭제.
-  중간 resume 없음 — 처음부터 새로 시작.
+4-1. Always Fresh Build
+  Running --build deletes existing dict_cache.json and dict_pages/*.out.
+  No intermediate resumption — fresh build from scratch.
 
-4-2. Phase 기반 최적화
-  각 token_idx는 token_len(L) 바이트 길이의 payload를 가짐.
+4-2. Phase-Based Optimization
+  Each token_idx has payload length of token_len(L) bytes.
   L = len(token_ids) * 8    (token_idx=0,2: L=16,  token_idx=1,3: L=32)
   n_phases = L // 8          (token_idx=0,2: 2 phases,  token_idx=1,3: 4 phases)
 
-  phase p는 target_landing = p*8 위치에 첫 토큰 바이트가 오는 경우를 캡처.
-  payload가 L바이트 간격으로 반복되므로, 한 번의 dump로
-    p*8, p*8+L, p*8+2L, ... 위치를 모두 커버.
+  Phase p captures when the first token byte lands at target_landing = p*8.
+  Since payload repeats every L bytes, a single dump covers:
+    p*8, p*8+L, p*8+2L, ...
 
-  전체 phase 수: 143개 (TOKEN_LABELS 35개 기준, 상세 테이블은 §20 참고)
-  send 횟수: 각 token_idx의 첫 phase에서 probe 4회+aligned 1회, 이후 phase는 carry-forward 1회
-    → 35×5 + 108×1 = 283회 (착지 재시도 없는 경우)
-  [구 TOKEN_LABELS 10개: 33 phases, 구 2-probe 방식: ~99회]
+  Total phases: 143 phases (based on 35 TOKEN_LABELS, see §20)
+  Total transmissions: 4 probes + 1 aligned for first phase of each token_idx, 1 carry-forward for subsequent phases
+    -> 35x5 + 108x1 = 283 transmissions (assuming no landing retries)
 
-4-3. 각 phase 처리 흐름
-  a. 링 상태 carry-forward (첫 phase 제외):
-       이전 phase의 actual_frag_p1과 delta가 있으면 probe 생략.
-       expected_frag = (frag_p1_last - delta) % 4096  (1회 aligned send만 필요)
+4-3. Processing Flow per Phase
+  a. Ring state carry-forward (except first phase):
+       Reuse actual_frag_p1 and delta from previous phase if available.
+       expected_frag = (frag_p1_last - delta) % 4096 (requires only 1 aligned send)
 
-  b. probe 없을 때: 소형 probe × 2 (prefix=0):
-       acquire_token_gpa(token_idx, prefix=0) × 2
-       → frag_p1_a, frag_p1_b 획득
+  b. When probe missing: Small probe x 2 (prefix=0):
+       acquire_token_gpa(token_idx, prefix=0) x 2
+       -> obtain frag_p1_a, frag_p1_b
        delta_small = (frag_p1_a - frag_p1_b) % 4096
        expected_frag_rough = (frag_p1_b - delta_small) % 4096
 
-     이유: delta = ring advance per packet ≈ 보낸 패킷 크기 % 4096.
-     prefix=0(소형)와 aligned send(대형)의 패킷 크기가 다르면 delta도 달라
-     착지 예측이 빗나간다 → 아래 대형 probe로 정확한 delta 측정.
-
-  c. 대형 probe × 2 (prefix = target_landing + expected_frag_rough):
-       acquire_token_gpa(token_idx, prefix=_large_pfx) × 2
-       → frag_p1_c, frag_p1_d 획득 (aligned send과 동일한 패킷 크기)
+  c. Large probe x 2 (prefix = target_landing + expected_frag_rough):
+       acquire_token_gpa(token_idx, prefix=_large_pfx) x 2
+       -> obtain frag_p1_c, frag_p1_d (matching aligned send packet size)
        delta_large = (frag_p1_c - frag_p1_d) % 4096
        expected_frag = (frag_p1_d - delta_large) % 4096
        prefix = target_landing + expected_frag
 
-  d. 정렬 send:
+  d. Aligned send:
        acquire_token_gpa(token_idx, prefix=prefix)
-       → dict_gpa, actual_frag_p1 획득
+       -> obtain dict_gpa, actual_frag_p1
        actual_landing = (prefix - actual_frag_p1) % 4096
-       → target_landing과 정확히 일치해야 OK
+       -> must match target_landing exactly
 
-  e. 착지 재시도 (최대 _MAX_LANDING_TRIES=20회):
-       actual_landing ≠ target_landing이면:
+  e. Landing retries (max _MAX_LANDING_TRIES=20):
+       If actual_landing != target_landing:
          error = (actual_landing - target_landing) % 4096
          delta_corrected = (delta - error) % 4096
-         (fallback: 대형 probe 실패해서 소형 delta 사용 중일 때)
-       5회마다: re-probe (소형 2 + 대형 2 = 4패킷)
-       wrong-landing 항목은 캐시에 보존 (해당 offset의 유효한 ciphertext).
+       Every 5 tries: re-probe (2 small + 2 large = 4 packets)
+       Wrong-landing entries are preserved in cache as valid ciphertexts for their landed offsets.
 
-  f. 4KB 페이지 덤프:
-       read_gpa.py로 dict_gpa의 ciphertext 저장
-       → dict_pages/t{token_idx}_p{phase}.out
+  f. 4KB Page Dump:
+       Save ciphertext of dict_gpa via read_gpa.py -> dict_pages/t{token_idx}_p{phase}.out
 
-  g. 딕셔너리 등록:
-       actual_landing + k*L (k=0,1,2,...) 위치의 off_key들에 대해
-       cache[off_key][str(token_idx)] = {gpa, cp_file, landing_ok} 저장
+  g. Dictionary Registration:
+       For off_key at actual_landing + k*L (k=0,1,2,...):
+       save cache[off_key][str(token_idx)] = {gpa, cp_file, landing_ok}
 
-  h. token_idx 완료 후 dict_cache.json 저장 (진행 상황 보존)
+  h. Save dict_cache.json upon completing each token_idx.
 
-4-4. acquire_token_gpa 내부 동작
-  - 게스트 dmesg 초기화 (ssh "sudo dmesg -C")
-  - host에서 ICMP 패킷 전송 (send_tokens.py)
-  - 게스트 dmesg에서 "sub-page[N] GPA=0x..." 패턴 파싱 → GPA 획득
-  - "frag[0] ... off=NNN" 패턴 파싱 → frag_p1 계산
-  - 5회 실패 시 RuntimeError → 호출측에서 phase 스킵
+4-4. acquire_token_gpa Internal Mechanism
+  - Clear guest dmesg (ssh "sudo dmesg -C")
+  - Send ICMP packet from host (send_tokens.py)
+  - Parse "sub-page[N] GPA=0x..." pattern from guest dmesg -> obtain GPA
+  - Parse "frag[0] ... off=NNN" pattern -> compute frag_p1
+  - Raise RuntimeError after 5 failures -> caller skips phase
 
-4-5. drain 버퍼
-  DRAIN_EVERY(=16)번 phase마다 게스트 ICMP 수신 버퍼 강제 flush.
-  → 쌓인 패킷이 다음 측정에 영향 미치지 않도록.
-
-  probe 또는 aligned send가 5회 모두 실패하면 즉시 drain 후 phase 스킵.
-  → 버퍼 적체로 인한 연쇄 실패 방지.
+4-5. Buffer Drain
+  Force flush guest ICMP receive buffer every DRAIN_EVERY(=16) phases
+  to prevent buffer accumulation from distorting subsequent measurements.
 
 ────────────────────────────────────────────────────────────────────────────────
-5. do_swap_read: 원자적 swap-back 읽기
+5. do_swap_read: Atomic Swap-Back Read
 ────────────────────────────────────────────────────────────────────────────────
 
-compare와 calibrate 모두에서 사용하는 비파괴적 페이지 읽기:
+Non-destructive page reading used in both compare and calibrate:
 
-  1. swap_pages_tool --swap-back 호출:
-       forward swap(dict_gfn ↔ src_gfn)
-       → dict_gfn의 물리 프레임에 src 데이터가 배치됨 (AES-XEX: dict_gfn의 tweak 적용)
-       → 커널 버퍼로 ciphertext 복사
-       → backward swap (원래 상태 복원)
-     → 모두 svm_vcpu_run() 이전 한 번의 atomic 동작으로 실행
-     → 게스트는 swap 상태를 전혀 볼 수 없음 (SEV_TERM 없음)
+  1. Invoke swap_pages_tool --swap-back:
+       forward swap(dict_gfn <-> src_gfn)
+       -> src data placed in dict_gfn physical frame (AES-XEX: dict_gfn tweak applied)
+       -> copy ciphertext to kernel buffer
+       -> backward swap (restore original state)
+     -> All executed as a single atomic operation before svm_vcpu_run()
+     -> Guest never observes swapped state (no SEV_TERM)
 
-  2. /dev/kvm에 KVM_READ_PAGE_DUMP ioctl:
-       커널 버퍼의 4096바이트를 호스트 userspace로 복사
+  2. KVM_READ_PAGE_DUMP ioctl on /dev/kvm:
+       Copy 4096 bytes from kernel buffer to host userspace
 
-  3. xp /512gx 형식으로 포맷해 .out 파일로 저장
+  3. Format in xp /512gx format and save to .out file
 
-  KVM_READ_PAGE_DUMP = _IOR(0xAE, 0x2b, 4096) = 0x80100AE2b (계산값)
+  KVM_READ_PAGE_DUMP = _IOR(0xAE, 0x2b, 4096) = 0x80100AE2b
 
 ────────────────────────────────────────────────────────────────────────────────
-6. Phase 1a: HEADER_CONST 자동 교정 (--calibrate)
+6. Phase 1a: HEADER_CONST Auto-Calibration (--calibrate)
 ────────────────────────────────────────────────────────────────────────────────
 
-  HEADER_CONST의 정확한 값을 모르거나 검증하려 할 때 사용.
+  Used when exact value of HEADER_CONST is unknown or needs verification.
 
-  흐름:
-    1. 게스트에서 --gpa-only로 base_gpa, N 획득 (_acquire_gpa_raw)
-    2. h를 CAL_H_MIN(30)부터 CAL_H_MAX(60)까지 1씩 증가하며 sweep:
+  Workflow:
+    1. Acquire base_gpa, N from guest in --gpa-only mode (_acquire_gpa_raw)
+    2. Sweep h from CAL_H_MIN(30) to CAL_H_MAX(60) in steps of 1:
          tok_start    = h + N
          token_offset = (base_gpa + tok_start*8) & 0xFFF
          src_gpa      = (base_gpa + tok_start*8) & ~0xFFF
 
-         - token_offset이 dict에 없으면 skip
-         - dict에 있는 각 token_idx에 대해 do_swap_read 실행:
-             cal_h{h}_t{token_idx}.out 저장
-         - verify.py로 cp(딕셔너리 덤프) vs post(방금 읽은 덤프) 비교
-         - "Result: MATCH ✓"이면 h 반환 (sweep 중단)
+         - Skip if token_offset not in dict
+         - Execute do_swap_read for each token_idx in dict:
+             save cal_h{h}_t{token_idx}.out
+         - Compare cp (dict dump) vs post (read dump) via verify.py
+         - Return h upon "Result: MATCH" (terminate sweep)
 
-    3. 매칭되는 h가 없으면 None 반환 → 범위 확장 또는 딕셔너리 재빌드 필요
+    3. If no matching h found, return None -> expand range or rebuild dictionary.
 
-  참고: 게스트 프로세스는 GPA 획득 후 --gpa-only 모드로 대기 중이며,
-        calibration이 끝나면 프로세스를 종료함.
+  AES Alignment and Retry Logic:
+    - Cause of calibrate failure: When token_offset % 16 == 8:
+      2-token (16B) labels have 0 clean AES blocks -> verify always fails.
+      4-token (32B) labels contain at least 1 clean 16B block -> verifiable.
 
-  [2026-07-29 추가] AES 정렬 문제와 retry 로직:
-    - calibrate 실패 원인: token_offset % 16 == 8 일 때
-      2-token(16B) 레이블은 clean AES 블록이 0개 → verify 항상 실패.
-      4-token(32B) 레이블은 16B이므로 clean 블록 1개 존재 → 비교 가능.
-
-    - CAL_MAX_RETRIES = 3 (재시도 횟수)
-      각 시도마다 게스트에서 새 base_gpa를 획득한다.
-      base_gpa는 실행마다 달라지므로 token_offset도 달라짐 →
-      mod16=8 고착 확률이 약 50%이므로 3번 안에 좋은 정렬을 얻을 확률 ≈ 87%.
-
-    - 2026-07-29 실측: calibrate-index=28로 처음 실행했을 때
-      h=43 (구 HEADER_CONST)으로도 No match 발생.
-      retry로 새 base_gpa 획득 후 h=55에서 MATCH → HEADER_CONST=55 확정.
+    - CAL_MAX_RETRIES = 3
+      Each attempt acquires fresh base_gpa from guest.
+      Probability of acquiring favorable alignment within 3 tries approx 87%.
 
 ────────────────────────────────────────────────────────────────────────────────
-7. Phase 1b: 단일 인덱스 추론 (--index N)
+7. Phase 1b: Single Index Inference (--index N)
 ────────────────────────────────────────────────────────────────────────────────
 
-  _run_single(args, cache, index) 호출:
+  Calls _run_single(args, cache, index):
 
-  Step 1: indication_gpa 획득
-    - acquire_indication_gpa(index) 호출
-    - _acquire_gpa_raw: SSH로 게스트 스크립트 실행
-        단말 출력에서 "input_ids base GPA: 0x..." 와 "N_image_pad: N" 파싱
-        최대 3번 재시도, 타임아웃 150초
+  Step 1: Acquire indication_gpa
+    - Call acquire_indication_gpa(index)
+    - _acquire_gpa_raw: Execute guest script over SSH
+        Parse "input_ids base GPA: 0x..." and "N_image_pad: N" from terminal stdout
+        Max 3 retries, timeout 150s
     - indication_gpa = base_gpa + (HEADER_CONST + N) * 8
 
-  Step 2: 딕셔너리 비교
+  Step 2: Dictionary Comparison
     - indication_page_gpa = indication_gpa & ~0xFFF
     - token_offset = indication_gpa & 0xFFF
     - compare_with_dict(cache, indication_page_gpa, token_offset, swap_tool)
 
-  Step 3: 결과 저장
+  Step 3: Save Results
     - save_result(index, token_idx_found, verdict, indication_gpa, save_csv)
-    - --save-csv 지정 시 results_v2.csv에 append
+    - Append to results_v2.csv when --save-csv is specified
 
 ────────────────────────────────────────────────────────────────────────────────
-8. Phase 1c: 전체 인덱스 자동 순회 (--all-indices)
+8. Phase 1c: All Indices Auto-Sweep (--all-indices)
 ────────────────────────────────────────────────────────────────────────────────
 
   1. scan_matching_indices(dataset_path):
-       SSH로 게스트에 Python 스크립트 전송 (stdin으로 pipe)
-       게스트에서 dataset JSON 파싱 → indication 필드에 TOKEN_LABELS 레이블 포함하는
-       인덱스만 출력 → 호스트에서 수집
-     → 대상 인덱스 목록 반환 (전체 인덱스가 아닌 관련 인덱스만)
+       Send Python script to guest via SSH pipe
+       Parse dataset JSON -> filter indices containing TOKEN_LABELS
+     -> Returns list of matching target indices
 
-  2. --start-index N으로 중간부터 시작 가능 (이미 처리한 인덱스 건너뜀)
+  2. Support starting from midpoint via --start-index N
 
-  3. 각 인덱스에 대해 _run_single 실행
-       연속 실패 5회 → 전체 중단
+  3. Execute _run_single for each index (abort after 5 consecutive failures)
 
-  4. 인덱스 간 2초 대기
+  4. 2-second cooldown between indices
 
 ────────────────────────────────────────────────────────────────────────────────
-9. compare_with_dict 내부 동작
+9. compare_with_dict Internal Operation
 ────────────────────────────────────────────────────────────────────────────────
 
-  token_offset → off_key(hex) → cache[off_key] 조회
+  token_offset -> off_key(hex) -> query cache[off_key]
 
-  각 token_idx(0~3)에 대해:
-    1. cache에서 dict_gpa, cp_file(딕셔너리 덤프 경로) 조회
+  For each token_idx (0~3):
+    1. Query dict_gpa, cp_file (dict dump path) from cache
     2. do_swap_read(swap_tool, dict_gpa, indication_page_gpa, post_path)
-         → indication 페이지를 dict_gpa의 AES-XEX tweak으로 읽기
-         → post_path(post_off{offset}_t{token_idx}.out)에 저장
-    3. verify.py로 비교:
-         --cp:           딕셔너리 단계에서 캡처한 ciphertext (토큰 plaintext가 있을 때)
-         --post:         방금 do_swap_read로 읽은 indication 페이지 ciphertext
-         --token-offset: 페이지 내 토큰 오프셋
-         --token-ids:    해당 token_idx의 int64 ID 목록
-    4. "Result: MATCH ✓" → (token_idx, "MATCH") 반환 (즉시 중단)
-    5. 모두 MISMATCH → (None, "MISMATCH") 반환
+         -> read indication page using dict_gpa AES-XEX tweak
+         -> save to post_path
+    3. Compare via verify.py:
+         --cp:           Dictionary ciphertext
+         --post:         Captured indication page ciphertext
+         --token-offset: In-page token offset
+         --token-ids:    Token ID sequence
+    4. "Result: MATCH" -> return (token_idx, "MATCH") immediately
+    5. All MISMATCH -> return (None, "MISMATCH")
 
 ────────────────────────────────────────────────────────────────────────────────
-10. verify.py 비교 로직
+10. verify.py Comparison Logic
 ────────────────────────────────────────────────────────────────────────────────
 
-  parse_dump(path): xp /512gx 형식 텍스트 → raw bytes (little-endian 64-bit pair)
+  parse_dump(path): Convert xp /512gx text -> raw bytes
 
   clean_aes_blocks(token_offset, token_len):
-    토큰 바이트 범위 [token_offset, token_offset+token_len) 내에
-    완전히 포함되는 16-byte AES 블록의 오프셋 목록 반환.
-    경계에 걸치는 partial 블록은 제외 (주변 데이터가 달라서 비교 불가).
+    Return list of 16-byte AES block offsets fully contained within
+    token byte range [token_offset, token_offset+token_len).
+    Exclude partial boundary blocks.
 
   cmd_verify:
-    clean_aes_blocks 목록의 각 블록 위치에서 cp vs post 비교.
-    모든 블록 MATCH → "Result: MATCH ✓"
-    하나라도 불일치 → "Result: MISMATCH ✗"
+    Compare cp vs post across each block in clean_aes_blocks list.
+    All blocks match -> "Result: MATCH"
+    Any mismatch -> "Result: MISMATCH"
 
 ────────────────────────────────────────────────────────────────────────────────
-11. 결과 저장 (save_result)
+11. Results Logging (save_result)
 ────────────────────────────────────────────────────────────────────────────────
 
-  verdict 종류:
-    "MATCH"    : 딕셔너리에서 해당 token_idx의 ciphertext와 일치
-    "MISMATCH" : 모든 token_idx에서 불일치
-    "NO_DICT"  : 해당 token_offset이 딕셔너리에 없음
-    (SystemExit 1 → 상위에서 "ERROR"로 처리)
+  Verdict Categories:
+    "MATCH"    : Ciphertext matches token_idx from dictionary
+    "MISMATCH" : Mismatched against all dictionary tokens
+    "NO_DICT"  : token_offset missing in dictionary
 
-  --save-csv 지정 시 results_v2.csv에 추가 (append 모드):
-    컬럼: timestamp, index, verdict, token_label, token_ids, indication_gpa
-    헤더는 파일이 없을 때만 최초 1회 기록 → 재실행 시 이어서 append
+  Appends to results_v2.csv with columns:
+    timestamp, index, verdict, token_label, token_ids, indication_gpa
 
 ────────────────────────────────────────────────────────────────────────────────
-12. 게스트 초기화 (main 진입 시)
+12. Guest Initialization
 ────────────────────────────────────────────────────────────────────────────────
 
-  main() 첫 번째 동작으로 게스트에 SSH 명령 전송:
-    - kernel watchdog 비활성화 (softlockup_panic, hardlockup_panic, nmi_watchdog)
-    - RCU CPU stall suppress 활성화
-    - Transparent Hugepage 비활성화 (THP → never)
-  → 페이지 swap 중 커널 패닉 방지
+  Commands sent to guest via SSH upon main() startup:
+    - Disable kernel watchdogs (softlockup_panic, hardlockup_panic, nmi_watchdog)
+    - Suppress RCU CPU stalls
+    - Disable Transparent Hugepages (THP -> never)
+  -> Prevents kernel panics during page swaps
 
 ────────────────────────────────────────────────────────────────────────────────
-13. SSH 연결 설정
+13. SSH Connection Parameters
 ────────────────────────────────────────────────────────────────────────────────
 
-  대상: ubuntu@localhost:7777
-  키:   /home/{SUDO_USER}/.ssh/id_ed25519
-  옵션:
-    StrictHostKeyChecking=no   (게스트 재빌드 후 호스트 키 변경 허용)
-    BatchMode=yes              (비대화형)
-    ConnectTimeout=30
+  Target:  ubuntu@localhost:7777
+  Key:     /home/{SUDO_USER}/.ssh/id_ed25519
+  Options: StrictHostKeyChecking=no, BatchMode=yes, ConnectTimeout=30
 
 ────────────────────────────────────────────────────────────────────────────────
-14. 주요 CLI 인수
+14. Primary CLI Arguments
 ────────────────────────────────────────────────────────────────────────────────
 
-  --build                딕셔너리 새로 빌드 (항상 전체 재빌드)
+  --build                Rebuild dictionary from scratch
   --calibrate            HEADER_CONST sweep (30~60)
-  --calibrate-index N    calibration에 사용할 dataset index (기본: 0)
-  --index N              단일 인덱스 추론
-  --all-indices          매칭 인덱스 전체 순회
-  --start-index N        --all-indices 시작 위치 (기본: 0)
-  --header-const N       HEADER_CONST 수동 지정 (기본: 43)
-  --save-csv             결과를 results_v2.csv에 저장
-  --log-file FILE        로그를 파일에도 기록 (append)
-  --guest-script PATH    게스트 추론 스크립트 경로
-  --guest-cwd PATH       게스트 작업 디렉토리
-  --guest-python PATH    게스트 Python 인터프리터
-  --guest-dataset PATH   게스트 데이터셋 JSON 경로
-  --swap-tool PATH       swap_pages_tool 바이너리 경로
-  --dict-cache PATH      dict_cache.json 경로
+  --calibrate-index N    Dataset index for calibration (default: 0)
+  --index N              Single index inference
+  --all-indices          Iterate over all matching indices
+  --start-index N        Starting index for --all-indices (default: 0)
+  --header-const N       Manual HEADER_CONST override (default: 43)
+  --save-csv             Append results to results_v2.csv
+  --log-file FILE        Append logs to file
+  --guest-script PATH    Path to guest inference script
+  --guest-cwd PATH       Guest working directory
+  --guest-python PATH    Guest Python interpreter
+  --guest-dataset PATH   Path to guest dataset JSON
+  --swap-tool PATH       Path to swap_pages_tool binary
+  --dict-cache PATH      Path to dict_cache.json
 
 ────────────────────────────────────────────────────────────────────────────────
-15. 권장 실행 순서
+15. Recommended Execution Sequence
 ────────────────────────────────────────────────────────────────────────────────
 
-  # 1. 게스트에서 데이터셋 준비 (필요 시)
-  #    ssh ubuntu@localhost -p 7777 bash rex_dataset_pipeline.sh
-
-  # 2. 딕셔너리 빌드 (항상 새로 시작)
+  # 1. Build dictionary (clean start)
   sudo python3 orchestrate_v2.py --build --log-file build.log
 
-  # 3. HEADER_CONST 교정 (딕셔너리 빌드 후 1회 실행)
+  # 2. Calibrate HEADER_CONST (run once after dict build)
   sudo python3 orchestrate_v2.py --calibrate --calibrate-index 13 --log-file run.log
 
-  # 4. 단일 인덱스 테스트
-  sudo python3 orchestrate_v2.py --index 42 --header-const <N> --save-csv --log-file run.log
+  # 3. Single index evaluation
+  sudo python3 orchestrate_v2.py --index 42 --header-const 43 --save-csv --log-file run.log
 
-  # 5. 전체 자동 순회
-  sudo python3 orchestrate_v2.py --all-indices --save-csv --log-file run.log
-
-  # 6. 중간부터 재개 (N번 인덱스부터)
-  sudo python3 orchestrate_v2.py --all-indices --start-index N --header-const <N> --save-csv --log-file run.log
-
-  # 7. blind 모드 — 게스트에서 N 안 받고 호스트 단독으로 HEADER_CONST+N 계산
+  # 4. Blind mode — host standalone HEADER_CONST+N sweep without guest N
   sudo python3 orchestrate_v2.py --blind --index 42 --save-csv --log-file run.log
   sudo python3 orchestrate_v2.py --blind --all-indices --save-csv --log-file run.log
 
-================================================================================
-
 ────────────────────────────────────────────────────────────────────────────────
-19. 테스트 샘플 선정 (valid_indices.json)
+16. HEADER_CONST / N Concept and --blind Mode
 ────────────────────────────────────────────────────────────────────────────────
 
-19-1. 선정 기준
-────────────────
+16-1. Purpose of Both Parameters
+  Memory layout of input_ids in guest CPU memory:
+    [ Header tokens x HEADER_CONST ]
+    [ <|image_pad|> tokens x N     ]
+    [ Indication tokens            ]  <- Target
 
-  전체 데이터셋: 3,463개 샘플
+  Host computes indication GPA via:
+    indication_gpa = base_gpa + (HEADER_CONST + N) * 8
 
-  1차 필터 — substring match (771개):
-    indication 필드에 TOKEN_LABELS 중 하나라도 포함하는 샘플.
-    (exact match 불필요 — "Shortness of breath and fever"도
-     첫 4 token이 "Shortness of breath"와 동일하므로 비교 가능)
+  - base_gpa: GPA of input_ids[0].
+  - HEADER_CONST: Constant across all samples for a fixed prompt template (43).
+  - N: Number of <|image_pad|> tokens inserted per image (range: 80~1178).
 
-  2차 필터 — prefix_tokens == 28 (669개):
-    indication 앞에 오는 프롬프트 메타데이터 토큰 수가 28인 샘플만 선택.
-    이 조건 = "Age: X. Sex: Y." 형식(Ethnicity 없음)인 샘플.
-
-    제외되는 패턴:
-      prefix_tokens=36  (Ethnicity+Age+Sex, 61개)
-      prefix_tokens=20  (Sex만, 15개)
-      prefix_tokens=27  (Age+Sex 특수 케이스, 11개)
-      기타               (15개)
-
-  선택 이유:
-    HEADER_CONST = 고정 시스템 토큰 수 + prefix_tokens
-    prefix_tokens가 달라지면 HEADER_CONST도 달라짐.
-    단일 고정 HEADER_CONST로는 prefix_tokens=28인 샘플만 올바른
-    indication_gpa를 계산할 수 있다.
-    prefix_tokens=28이 771개 중 669개(86.8%)로 압도적 다수.
-
-19-2. 사전 계산 및 캐시
-────────────────────────
-
-  valid_indices.json: 669개의 index 목록 (JSON array)
-    - 게스트 tokenizer로 prefix_tokens를 계산해 사전 생성
-    - scan_matching_indices()가 이 파일 존재 시 자동 로드 (SSH 스캔 불필요)
-    - 파일 없으면 기존 SSH 스캔 방식(substring match만) fallback
-
-  재생성 방법:
-    ssh -p 7777 ubuntu@localhost (conda activate vlm 후 아래 실행)
-    → prefix_tokens=28 & substring-match 인덱스 추출 → valid_indices.json 저장
-
-19-3. exact-match 샘플 (4개)
-──────────────────────────────
-
-  indication이 TOKEN_LABELS 중 하나와 정확히 일치하는 샘플:
-    index=13:   "Shortness of breath"   (4-token, calibration 권장)
-    index=261:  "Chest Pain"            (2-token)
-    index=461:  "shortness of breath"   (4-token)
-    index=1105: "chest pain"            (2-token)
-
-  이 4개 모두 prefix_tokens=28 → valid_indices.json에 포함됨.
-
-================================================================================
-
-────────────────────────────────────────────────────────────────────────────────
-16. HEADER_CONST · N 개념 및 --blind 모드
-────────────────────────────────────────────────────────────────────────────────
-
-16-1. 두 값이 왜 필요한가
-──────────────────────────
-
-  게스트에서 LLM 추론이 시작되면, input_ids 배열이 CPU 메모리에 다음 순서로 배치됨:
-
-    [ 헤더 토큰 × HEADER_CONST ]
-    [ <|image_pad|> 토큰 × N  ]
-    [ indication 토큰          ]  ← 공격 목표
-
-  호스트가 indication 토큰을 읽으려면 정확한 GPA가 필요:
-
-    indication_gpa = base_gpa + (HEADER_CONST + N) × 8
-
-  - base_gpa   : input_ids[0]의 GPA. 게스트 스크립트가 stdout으로 출력.
-  - HEADER_CONST : 프롬프트 템플릿이 고정된 한 모든 샘플에서 동일한 상수.
-                   현재 값: 43. --calibrate로 검증.
-  - N          : 이미지 한 장당 삽입되는 <|image_pad|> 토큰 수.
-                 이미지 해상도마다 달라짐 (관측 범위: 80~1178).
-
-16-2. N은 어떻게 결정되나
-──────────────────────────
-
-  Qwen2-VL은 입력 이미지를 smart_resize()로 28의 배수 해상도로 조정한 뒤,
-  14×14 픽셀 패치로 분할하고 4개씩 묶어 하나의 토큰으로 압축:
-
+16-2. Determination of N
+  Qwen2-VL adjusts input images via smart_resize() to multiples of 28,
+  partitions them into 14x14 patches, and compresses groups of 4 into 1 token:
     resized_h, resized_w = smart_resize(orig_H, orig_W, factor=28)
-    N = (resized_h // 14) × (resized_w // 14) // 4
+    N = (resized_h // 14) * (resized_w // 14) // 4
 
-  예시:
-    원본 756×756  → N = 729
-    원본 420×504  → N = 270
-    원본 448×532  → N = 304
-
-  N은 이미지 해상도가 같으면 항상 동일 → 게스트 없이 계산 가능
-  (호스트가 게스트 디스크에서 DICOM 헤더를 읽어 H,W → N 계산).
-
-16-3. 기존 방식의 한계
-───────────────────────
-
-  기존 --calibrate / --index 흐름:
-    - 게스트 스크립트(single_inference_indication_gpa.py)가
-      base_gpa 와 N 을 stdout으로 출력
-    - 호스트가 SSH로 두 값을 파싱 → indication_gpa 계산
-
-  한계: 게스트가 N을 직접 알려줘야 함 (게스트 협조 필요).
-
-16-4. --blind 모드 동작 방식
-──────────────────────────────
-
-  핵심 관찰:
-    HEADER_CONST ∈ [30, 60] (CAL_H_MIN~MAX)
-    N            ∈ [80, 1180] (N_SWEEP_MIN~MAX, 관측 기반)
-    → tok_start = HEADER_CONST + N ∈ [110, 1240]
-
-  두 값을 개별로 sweep하는 게 아니라, 합(tok_start)만 sweep:
-    - 후보 수: 1240 - 110 + 1 = 1131개 (2D 탐색 불필요)
-    - 각 후보에서 indication_gpa 계산 → ciphertext 비교
-    - MATCH → tok_start, indication_gpa, token_idx 동시 확정
-
-  실행 흐름:
-    1. 게스트에서 base_gpa만 파싱 (N 출력 전에 reader 스레드 중단)
-    2. tok_start ∈ [110, 1240] 순서대로:
-         ind_gpa      = base_gpa + tok_start × 8
+16-3. Blind Mode Mechanism
+  Sweep tok_start = HEADER_CONST + N in [110, 1240]:
+    1. Parse base_gpa only from guest
+    2. Sequentially sweep tok_start in [110, 1240]:
+         ind_gpa = base_gpa + tok_start * 8
          token_offset = ind_gpa & 0xFFF
-         → cache에 없으면 skip
-         → swap-back read + verify (조용히, log 출력 없음)
-         → "Result: MATCH ✓" → 즉시 리턴
-    3. MATCH: tok_start, indication_gpa, token_idx 확정
-       MISMATCH 전체: verdict="MISMATCH" 저장
-
-  성능:
-    - base_gpa가 8-byte aligned이므로 token_offset은 항상 8의 배수
-    - cache는 8의 배수 offset을 전부 커버 → 모든 tok_start가 cache hit
-    - 최악 1131 × 4(token_idx) = 4524번 swap-back read ≈ 4.5초
-    - MATCH는 보통 훨씬 일찍 발생
-
-  [2026-07-29] 구 sweep_blind의 core dump 원인 및 새 구현:
-    → §18 참고.
-
-================================================================================
+         swap-back read + verify
+         "Result: MATCH" -> terminate and return match
+    3. Confirms tok_start, indication_gpa, and token_idx simultaneously.
 
 ────────────────────────────────────────────────────────────────────────────────
-17. HEADER_CONST 안정성 및 올바른 값 (2026-07-29 확인)
+17. Two-Phase Blind Sweep (Binary Search)
 ────────────────────────────────────────────────────────────────────────────────
 
-17-1. HEADER_CONST는 VM 세션마다 바뀌지 않는다
-───────────────────────────────────────────────
+  Array Structure of input_ids:
+    [0..FIRST_PAD_POS-1]       : Fixed header tokens (15)
+    [FIRST_PAD_POS..+N-1]      : <|image_pad|> x N
+    [FIRST_PAD_POS+N..+POST-1] : POST_SCAN tokens (20~60)
+    [FIRST_PAD_POS+N+POST..]   : Indication tokens <- Attack Target
 
-  HEADER_CONST = 모델 토크나이저 + 시스템 프롬프트가 생성하는 고정 헤더 토큰 수.
-  input_ids 배열 맨 앞에 항상 동일한 구조로 배치되는 토큰들:
-    [bos] [system_header] [시스템 프롬프트 토큰들] [vision_start] [image_pad...] ...
+  Phase 1 — Binary search for N estimation (_binary_search_ipad_end):
+    Target: Last tok_start where image_pad sentinel (token_idx=34) evaluates True.
+    Search range: lo = 15, hi = 1215.
+    Swap count: ceil(log2(1200)) approx 11 swaps (~100x improvement over linear).
+    N_est = last_true - FIRST_PAD_POS + 4
 
-  이 값이 변하려면 다음 중 하나가 바뀌어야 한다:
-    - 모델 자체 (Qwen2-VL 가중치 교체)
-    - 시스템 프롬프트 텍스트
-    - 토크나이저 어휘/설정
-
-  VM 재시작, QEMU 재실행, 이미지 교체는 영향 없음.
-  → 한 번 calibrate하면 이후 모든 세션에서 동일한 값 사용 가능.
-
-17-2. 올바른 값: HEADER_CONST = 43
-───────────────────────────────────
-
-  HEADER_CONST = 43 이 정확한 값이다.
-
-  과거에 잘못된 calibration 결과(h=55)가 기록된 적 있었으나, 이는
-  calibrate-index=28을 사용했기 때문이다. index=28의 indication은
-  "Chest pain."(마침표 포함)으로, TOKEN_LABELS에 없는 샘플이다.
-  해당 샘플은 prefix_tokens=20(Sex만 있는 짧은 메타데이터)으로,
-  prefix_tokens=28인 주류 샘플과 HEADER_CONST가 다르다.
-  → 엉뚱한 샘플로 calibrate하면 그 샘플에 맞는 h가 나올 뿐, 전체에 적용 불가.
-
-  올바른 calibration 방법:
-    - calibrate-index는 반드시 TOKEN_LABELS에 exact-match되는 샘플 사용
-    - 권장 index: 13 ("Shortness of breath", 4-token, prefix_tokens=28)
-    - sudo python3 orchestrate_v2.py --calibrate --calibrate-index 13
-
-  현재 코드: HEADER_CONST: int | None = 43
-
-17-3. AES 정렬 문제 (token_offset % 16 == 8)
-─────────────────────────────────────────────
-
-  AES-XEX는 16-byte 블록 단위로 암호화.
-  토큰 바이트 범위가 16-byte 경계와 어떻게 겹치느냐에 따라 비교 가능 블록 수가 달라짐.
-
-  2-token 레이블 (16B):
-    - token_offset % 16 == 0: 정확히 1개의 clean AES 블록 → 비교 가능
-    - token_offset % 16 == 8: 블록 2개에 걸침 → clean 블록 0개 → 비교 불가
-    - token_offset % 16의 다른 값: partial → 비교 불가
-
-  4-token 레이블 (32B):
-    - 어떤 token_offset에서도 32B 범위 안에 16B 블록이 최소 1개 완전히 들어감
-    - 최악(token_offset % 16 == 8): 첫 블록 일부 + 두 번째 16B 블록 완전히 포함
-    → 항상 비교 가능 (clean AES 블록 ≥ 1)
-
-  실전 의미:
-    - calibrate 실패 원인의 상당수가 이 정렬 문제
-    - token_offset % 16 == 8이면 4-token 레이블만 비교 가능
-    - retry로 새 base_gpa를 받으면 token_offset이 달라질 확률 ~50%
-
-────────────────────────────────────────────────────────────────────────────────
-18. --blind 모드 core dump 원인과 두 페이즈 재구현 (2026-07-29)
-────────────────────────────────────────────────────────────────────────────────
-
-18-1. 구 sweep_blind의 core dump 원인
-──────────────────────────────────────
-
-  구 구현: tok_start ∈ [CAL_H_MIN + N_SWEEP_MIN, CAL_H_MAX + N_SWEEP_MAX]
-           = [110, 1240] 전체를 순서대로 sweep.
-
-  문제:
-    tok_start=1240 이면 byte_offset = 1240 × 8 = 9920B.
-    4096B 경계를 3번 넘음 → 3개 물리 페이지 접근.
-
-    input_ids 텐서의 실제 크기:
-      N_image_pad × 8 + (헤더 + indication) × 8 ≈ N_actual × 8 바이트.
-      N_actual=80 이면 텐서 크기 ≈ 1168B → 페이지 1개 안에 들어감.
-
-    tok_start > (텐서 크기/8) 위치의 페이지는 input_ids 바깥 →
-    PyTorch 내부 메모리 할당 (텐서 메타데이터, 다른 텐서 등)에 속함.
-
-    그 페이지를 swap-back으로 교체하면 게스트 메모리 구조가 망가짐 →
-    SEV_TERM / KVM_SYSTEM_EVENT_SEV_TERM → 게스트 core dump.
-
-18-2. 구현: Two-Phase Blind Sweep (이진 탐색, 2026-08-03)
-──────────────────────────────────────────────────────────
-
-  input_ids 배열 구조:
-    [0..FIRST_PAD_POS-1]       : 고정 헤더 토큰 (15개)
-    [FIRST_PAD_POS..+N-1]      : <|image_pad|> × N
-    [FIRST_PAD_POS+N..+POST-1] : vision_end 등 POST_SCAN 토큰 (20~60개)
-    [FIRST_PAD_POS+N+POST..]   : indication 토큰  ← 공격 목표
-    (HEADER_CONST = FIRST_PAD_POS + POST_SCAN_typical = 15 + 28 = 43)
-
-  Phase 1 — 이진 탐색으로 N 추정 (_binary_search_ipad_end):
-    탐색 대상: image_pad×4 sentinel(token_idx=34)이 True인 마지막 tok_start.
-    image_pad가 [FIRST_PAD_POS, FIRST_PAD_POS+N-1]에 있으므로
-    _check_tok_is_image_pad(p) = True iff p ≤ FIRST_PAD_POS+N-4 (or ~N-3, mod16에 따라)
-
-    탐색 범위:
-      lo = FIRST_PAD_POS + N_SWEEP_MIN - 4 = 41
-      hi = FIRST_PAD_POS + N_SWEEP_MAX - 3 = 1212
-    swap 횟수: ⌈log2(1172)⌉ ≈ 11회 (구 선형: 최대 1101회, ~100× 개선)
-
-    last_true 반환 → N_est = last_true - FIRST_PAD_POS + 4
-
-  Phase 2 — indication 매칭:
-    tok_start ∈ [FIRST_PAD_POS + N_est + POST_SCAN_MIN - 1,
+  Phase 2 — Indication matching:
+    tok_start in [FIRST_PAD_POS + N_est + POST_SCAN_MIN - 1,
                  FIRST_PAD_POS + N_est + POST_SCAN_MAX + 1]
-    = N_est + 14 ~ N_est + 76  (≈63 steps)
-    TOKEN_LABELS 0~33 (sentinel 제외) 전체와 비교.
-    ≤63 tok_start × 34 token_idx = 최대 2142회 swap
-    (실측: 페이지 공유로 실제 swap 수 훨씬 적음)
-
-    linear fallback: binary search 실패 시
-      tok_p2_min = FIRST_PAD_POS + POST_SCAN_MIN
-      tok_p2_max = FIRST_PAD_POS + N_SWEEP_MAX + POST_SCAN_MAX  (전체 범위)
-
-  헬퍼 함수:
-    _swap_read_raw(swap_tool, dict_gpa, ind_page_gpa) → bytes | None
-      swap-back + KVM_READ_PAGE_DUMP를 묶어 raw bytes 반환.
-    _check_tok_is_image_pad(base_gpa, tok_start, cache, swap_tool) → True/False/None
-      None = swap-self (broken range) → binary search에서 hi = mid-1로 처리.
-
-18-3. 상수
-──────────
-
-  FIRST_PAD_POS     = 15    # input_ids에서 첫 image_pad 토큰의 위치
-  N_SWEEP_MIN       = 30    # N_image_pad 관측 최솟값 (margin 포함)
-  N_SWEEP_MAX       = 1200  # N_image_pad 관측 최댓값
-  POST_SCAN_MIN     = 20    # vision_end~indication 사이 토큰 수 최솟값
-  POST_SCAN_MAX     = 60    # vision_end~indication 사이 토큰 수 최댓값
-  IMAGE_PAD_TOKEN_ID= 151655
-  _IPAD4_IDX        = 34    # TOKEN_LABELS에서 "image_pad×4"의 위치 (자동 계산)
-  _BSEARCH_MARGIN   = 1     # Phase 2 범위 ±1 여유 (mod16==0 vs ==8 불확실성)
-
-18-4. dict rebuild 필요 조건
-─────────────────────────────
-
-  TOKEN_LABELS 변경 시 반드시 --build 재실행.
-  --build는 항상 기존 dict_cache.json + dict_pages/*.out 전체 삭제 후 재빌드.
-
-================================================================================
-
-────────────────────────────────────────────────────────────────────────────────
-20. orchestrate_v3.py — run_all 개선 (2026-08-05)
-────────────────────────────────────────────────────────────────────────────────
-
-v3는 v2의 --blind 로직을 run_all()에 통합한 버전. 파일: orchestrate_v3.py
-
-20-1. TOKEN_LABELS 토큰 ID 검증 완료
-──────────────────────────────────────
-
-  guest에서 실제 Qwen2-VL tokenizer(Qwen/Qwen2-VL-2B-Instruct, HF hub cache)를
-  돌려 TOKEN_LABELS의 모든 28개 라벨 토큰 ID를 재확인함.
-
-    ssh -p 7777 ubuntu@localhost
-    conda activate vlm
-    python3 -c "from transformers import AutoTokenizer; \
-      tok = AutoTokenizer.from_pretrained('Qwen/Qwen2-VL-2B-Instruct'); \
-      print(tok.encode(' <label>', add_special_tokens=False))"
-
-  결과: 현재 orchestrate_v3.py의 TOKEN_LABELS 전부 정확함 (오타/오매핑 없음).
-  → FP(false positive)의 원인은 토큰 ID 오류가 아니었음. 아래 20-2 참고.
-
-20-2. run_all FP의 진짜 원인: stale N_meta 기반 스캔
-──────────────────────────────────────────────────────
-
-  기존 run_all():
-    base_gpa, _, proc = _acquire_gpa_raw(index, base_only=True)   # N 버림
-    tok_start, ind_gpa, token_idx = sweep_blind(base_gpa, cache, swap_tool,
-                                                 N=sample.get("N"))  # stale N_meta 사용
-
-  filtered_samples.json의 N 필드(N_meta)는 오래된 값이라 실제 추론 시의
-  N_actual과 다를 수 있음 (delta = N_meta - N_actual ∈ [-30, +9], 62% 샘플에서 stale).
-  N_meta가 부정확하면 sweep_blind의 42-step 스캔 창이 실제 indication 위치와
-  어긋나거나, 짧은 indication에서 스캔 상한이 텐서 끝을 넘어가 엉뚱한 위치에서
-  라벨이 우연히 매칭되는 FP가 발생함 (예: index=322 "Short of breath,CHF" →
-  "Chest pain"으로 오매칭, index=303 "Chest pain,cough,congestion" →
-  "Shortness of breath"로 오매칭).
-
-  수정:
-    base_gpa, N_actual, proc = _acquire_gpa_raw(index, base_only=False)  # N 획득
-    tok_start, ind_gpa, token_idx, N_est = sweep_blind(base_gpa, cache, swap_tool,
-                                                        N=N_actual, exact=True)
-
-  exact=True 경로에서 sweep_blind는 스캔 없이 단일 위치만 확인:
-    tok_start_exact = HEADER_CONST + N_actual
-    tok_p2_min = tok_p2_max = tok_start_exact
-
-  단, base_only=False는 guest가 모델 forward pass를 끝내고 stdout에
-  "N_image_pad: X"를 출력할 때까지 기다려야 하므로 느림 (모델 추론 완료 필요).
-  → 20-3의 --blind 모드가 이 문제의 대안.
-
-20-3. --blind CLI 플래그: binary search로 N 없이 진행
-────────────────────────────────────────────────────────
-
-  신규 인수: --blind (run_all과 함께 사용)
-
-    sudo python3 orchestrate_v3.py --run-all --blind --swap-tool ./swap_pages_tool
-
-  동작:
-    base_gpa, _, proc = _acquire_gpa_raw(index, base_only=True)  # base_gpa만, N 안 기다림
-    tok_start, ind_gpa, token_idx, N_est = sweep_blind(base_gpa, cache, swap_tool)  # N=None
-
-  sweep_blind(N=None)일 때 Phase 1 이진탐색(_binary_search_ipad_end)이 실행됨.
-  guest가 N을 stdout에 출력하기 전에 base_gpa만 받고 바로 진행 가능
-  → 모델 forward pass 완료를 기다릴 필요 없음 (base_only=True가 더 빠름).
-
-  결과 CSV 분리:
-    RESULTS_CSV       = run_all_v3.csv         (--blind 없을 때, exact 모드)
-    RESULTS_CSV_BLIND = run_all_v3_blind.csv   (--blind 지정 시)
-
-  verdict 3종류 (CSV의 "verdict" 컬럼):
-    MATCH         : 라벨 매칭 성공
-    NO_MATCH      : N 확정(exact 또는 binary search) 후 스캔했지만 라벨 불일치
-    BSEARCH_FAIL  : binary search 자체가 N을 못 찾음 (last_true=None)
-
-  N_est 컬럼 추가: binary search가 추정한 N (또는 exact 모드의 N_actual).
-  BSEARCH_FAIL일 때는 N_est도 빈 값 — 실패 유형 구분 가능.
-
-20-4. binary search (_binary_search_ipad_end) 동작 원리
-──────────────────────────────────────────────────────────
-
-  전제: image_pad 토큰은 전부 동일 ID(151655). 같은 GPA로 swap하면
-  AES-XEX ciphertext도 동일하므로, dict의 "image_pad×4" sentinel과
-  비교해 "이 위치가 image_pad 구간 안인가"를 판별 가능.
-
-  단조성:
-    position:  15  16  17 ... N+14 | N+15  N+16 ...
-    token:     PAD PAD PAD... PAD  | END   TPL  ...
-    AES match:  T   T   T  ...  T  |  F     F  ...
-
-  → TRUE 구간이 앞쪽에 몰려 있으므로 이분탐색으로 마지막 TRUE 위치
-    (last_true)를 log2(범위) 회 만에 찾을 수 있음.
-
-  탐색 범위 (2026-08-05 수정):
-    이전: lo = FIRST_PAD_POS + N_SWEEP_MIN - 4 = 41   (N≥30 가정 — 불필요한 제약)
-    수정: lo = FIRST_PAD_POS = 15                      (image_pad 시작 위치, 고정값)
-          hi = FIRST_PAD_POS + N_SWEEP_MAX = 1215
-
-  mid = (lo+hi)//2 위치에서 _check_tok_is_image_pad 호출 →
-    True  → last_true=mid, lo=mid+1
-    False/None → hi=mid-1
-  약 11회 만에 last_true 확정 → N_est = last_true - FIRST_PAD_POS + 4
-
-20-5. swap 실패가 실제로 발생하는 경우
-──────────────────────────────────────
-
-  dict 커버리지는 512/512 offset 전부 확보되어 있어 "dict에 없어서 실패"하는
-  경우는 없음. 실제 swap 실패(BSEARCH_FAIL)가 발생할 수 있는 유일한 시나리오:
-
-    guest 프로세스가 sweep_blind 도중 종료되어, input_ids 텐서가 있던 물리
-    페이지가 free된 뒤 다른 용도(다음 네트워크 패킷 버퍼, 다른 텐서 등)로
-    재사용되는 경우. 이 경우 swap으로 읽은 내용이 더 이상 indication
-    토큰이 아니게 됨.
-
-  방지책 (기존에 이미 구현되어 있음):
-    run_all()은 _acquire_gpa_raw가 반환한 guest ssh subprocess(proc)를
-    sweep_blind가 완전히 끝날 때까지 kill하지 않고 살려둠 → guest 프로세스가
-    --gpa-only 모드로 대기 중이므로 텐서가 free되지 않음. sweep 종료 후에만
-    proc.kill() 호출.
-
-────────────────────────────────────────────────────────────────────────────────
-21. 요약: 실행 방법 (v3)
-────────────────────────────────────────────────────────────────────────────────
-
-  # 딕셔너리 빌드
-  sudo python3 orchestrate_v3.py --build --swap-tool ./swap_pages_tool
-
-  # 빠른 정확 모드 (guest가 N 출력할 때까지 대기, exact tok_start)
-  sudo python3 orchestrate_v3.py --run-all --swap-tool ./swap_pages_tool
-  → run_all_v3.csv
-
-  # blind 모드 (N 확인 없이 binary search로 추정, base_gpa만 받고 즉시 진행)
-  sudo python3 orchestrate_v3.py --run-all --blind --swap-tool ./swap_pages_tool
-  → run_all_v3_blind.csv
+    Compare against TOKEN_LABELS 0~33 (excluding sentinel).
+    Takes <= 63 candidate steps.
 
 ================================================================================

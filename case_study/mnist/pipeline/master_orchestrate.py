@@ -59,10 +59,13 @@ def process_single_sample(index: int, active_stages: Set[int], output_dir: Path,
     print(f"{'='*70}")
 
     sample_t0 = time.time()
-    metrics_file = output_dir / f"metrics_{index}.json"
+    dumps_dir, logs_dir, results_dir = c.get_output_subdirs(output_dir)
+    metrics_file = results_dir / f"metrics_{index}.json"
+    if not metrics_file.exists():
+        metrics_file = output_dir / f"metrics_{index}.json"
 
     if args.skip_existing and 5 in active_stages and metrics_file.exists():
-        print(f"[master] [skip] metrics_{index}.json already exists. Skipping sample #{index}.")
+        print(f"[master] [skip] {metrics_file.name} already exists. Skipping sample #{index}.")
         return c.load_json(metrics_file)
 
     guest_proc = None
@@ -74,18 +77,20 @@ def process_single_sample(index: int, active_stages: Set[int], output_dir: Path,
     try:
         # ── Stage 2: Target GPA Tracking ─────────────────────────────────
         if 2 in active_stages:
-            print(f"\n>>> [Stage 2/5] Tracking Target Image GPA for Index #{index}...")
+            print(f"\n>>> [Stage 2/5] Tracking Target Image GPA for Index #{index} (bs={args.batch_size})...")
             p2_override = int(args.page2_gpa, 16) if args.page2_gpa else None
             # Keep guest process holding memory if Stage 3 follows
             hold = 3 in active_stages
             target_meta, guest_proc = s2.run_stage2(
                 index, output_dir, blind=args.blind,
-                page2_gpa_override=p2_override, hold_guest=hold
+                batch_size=args.batch_size,
+                page2_gpa_override=p2_override, hold_guest=hold,
+                duration=args.duration, top_n=args.top_n
             )
 
         # ── Stage 3: Page Swap & Dump ────────────────────────────────────
         if 3 in active_stages:
-            print(f"\n>>> [Stage 3/5] Executing PSP Page Swap & Memory Dump for Index #{index}...")
+            print(f"\n>>> [Stage 3/5] Executing PSP Page Swap & Memory Dump for Index #{index} (bs={args.batch_size})...")
             z_gpa = zero_meta.get("zero_gpa_int") if zero_meta else None
             t_gpa = target_meta.get("image_gpa_int") if target_meta else None
             p2_gpa = target_meta.get("page2_gpa_int") if target_meta else None
@@ -93,7 +98,8 @@ def process_single_sample(index: int, active_stages: Set[int], output_dir: Path,
 
             swap_meta = s3.run_stage3(
                 index, output_dir, image_gpa=t_gpa,
-                page2_gpa=p2_gpa, zero_gpa=z_gpa, label=lbl
+                page2_gpa=p2_gpa, zero_gpa=z_gpa, label=lbl,
+                batch_size=args.batch_size
             )
 
             # Once swap & dump is complete, release the guest process
@@ -104,7 +110,7 @@ def process_single_sample(index: int, active_stages: Set[int], output_dir: Path,
 
         # ── Stage 4: Sparsity Extraction ────────────────────────────────
         if 4 in active_stages:
-            print(f"\n>>> [Stage 4/5] Extracting Sparsity Feature Vector for Index #{index}...")
+            print(f"\n>>> [Stage 4/5] Extracting Sparsity Feature Vector for Index #{index} (bs={args.batch_size})...")
             lbl = (swap_meta.get("label") if swap_meta else
                    (target_meta.get("label") if target_meta else args.label))
             off = (target_meta.get("pixel_offset") if target_meta else args.pixel_offset)
@@ -112,17 +118,20 @@ def process_single_sample(index: int, active_stages: Set[int], output_dir: Path,
 
             feature_meta = s4.run_stage4(
                 index, output_dir, pixel_offset=off,
-                label=lbl, json_path=j_path
+                label=lbl, json_path=j_path,
+                batch_size=args.batch_size,
+                clean_dumps=args.clean_dumps
             )
 
         # ── Stage 5: Multi-Model Reconstruction ─────────────────────────
         if 5 in active_stages:
-            print(f"\n>>> [Stage 5/5] Reconstructing Images & Computing SSIM for Index #{index}...")
+            print(f"\n>>> [Stage 5/5] Reconstructing Images & Computing SSIM for Index #{index} (bs={args.batch_size})...")
             sp = feature_meta.get("sparsity") if feature_meta else None
             lbl = (feature_meta.get("label") if feature_meta else
                    (target_meta.get("label") if target_meta else args.label))
 
-            recon_meta = s5.run_stage5(index, output_dir, sparsity=sp, label=lbl)
+            recon_meta = s5.run_stage5(index, output_dir, sparsity=sp, label=lbl,
+                                       batch_size=args.batch_size)
 
     finally:
         if guest_proc:
@@ -192,9 +201,13 @@ def main():
     p.add_argument("--all",   action="store_true", help="Process entire dataset (0-59999)")
 
     # Execution modes
+    p.add_argument("--batch-size", type=int, default=1, help="Batch size (default: 1, e.g. 512 for full batch)")
     p.add_argument("--blind", action="store_true", help="Use host write_pattern_tracker blind candidate detection")
+    p.add_argument("--duration", type=int, default=c.DEFAULT_TRACKER_DURATION, help="Blind tracker duration in seconds (default: 120)")
+    p.add_argument("--top-n", type=int, default=5, help="Number of blind top candidates to track (default: 5)")
+    p.add_argument("--clean-dumps", action="store_true",default=1, help="Auto-delete intermediate .out dump files after feature extraction")
     p.add_argument("--skip-existing", action="store_true", help="Skip already processed samples")
-    p.add_argument("--output-dir", default=str(HERE), help="Output directory for intermediate & final files")
+    p.add_argument("--output-dir", default=str(c.DEFAULT_OUTPUT_DIR), help="Output directory for intermediate & final files")
 
     # Overrides
     p.add_argument("--label", type=int, default=None, help="Explicit label override (0-9)")
@@ -217,12 +230,18 @@ def main():
 
     # ── Stage 1: Zero Page Acquisition (Run once upfront if Stage 1 or 3 is active) ─
     zero_meta = None
-    if 1 in active_stages or (3 in active_stages and not (output_dir / "zero_gpa.json").exists()):
+    z_json_cand = [output_dir / "results" / "zero_gpa.json", output_dir / "zero_gpa.json"]
+    has_cached_z = any(p.exists() for p in z_json_cand)
+
+    if 1 in active_stages or (3 in active_stages and not has_cached_z):
         print("\n>>> [Stage 1/5] Acquiring & Caching Zero Page GPA...")
         z_override = int(args.zero_gpa, 16) if args.zero_gpa else None
         zero_meta = s1.run_stage1(output_dir, zero_gpa_override=z_override, force_refresh=(1 in active_stages))
-    elif (output_dir / "zero_gpa.json").exists():
-        zero_meta = c.load_json(output_dir / "zero_gpa.json")
+    elif has_cached_z:
+        for p in z_json_cand:
+            if p.exists():
+                zero_meta = c.load_json(p)
+                break
 
     # Determine index list
     if args.index is not None:

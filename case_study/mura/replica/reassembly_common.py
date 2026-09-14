@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 """
-reassembly_common.py — write-순서 페이지 재조립 공격의 공용 모듈.
+reassembly_common.py — Shared module for write-order page reassembly attack.
 
-배경 (write 트레이스 실측, 채널 411개):
-  - 채널 = 49 페이지. 물리적으로 연속인 건 29% 뿐이라 주소로는 못 모은다.
-  - 그러나 스트림에서는 90% 가 '외부 write 0개인 49연속 write' 로 나타난다.
-  - 그 등장 순서가 논리 순서(ch_pg 0..48)와 일치: 정순 75% / 역순 24% / 기타 1%.
-  → 공격자는 물리 주소를 무시하고 '쓰인 순서대로' 이어붙이면 채널을 복원한다.
-    정순/역순 두 후보만 시도하면 99% 를 덮는다.
+Background (write trace measurements, 411 channels):
+  - Channel = 49 pages. Only 29% are physically contiguous, so cannot aggregate by address alone.
+  - However, in the stream, 90% appear as '49 consecutive writes with 0 external writes'.
+  - Their appearance order matches logical order (ch_pg 0..48): forward 75% / reverse 24% / other 1%.
+  -> An attacker can restore channels by concatenating in 'written order' ignoring physical addresses.
+     Trying just forward/reverse candidates covers 99%.
 
-공격자 관점의 열화 (모두 실측값):
-  1. 페이지 소실 — 지배 2MB 블록 밖으로 나간 페이지는 못 얻는다.
-     (layouts.npz: n_valid 중앙값 49/49, 평균 45.1, 49개 전부는 58%)
-  2. 시간 그룹핑 누락 — 블록 안이어도 burst 그룹에서 빠질 수 있다.
-     (채널 recall 중앙값 100%, p25 94%, p10 49%)
-  3. 순서 모호성 — 정순/역순. 학습은 정순만, 추론에서 두 후보 confidence 비교.
-  4. 종횡비 미상 — 공격자는 원본 aspect 를 모르므로 학습셋 평균을 prior 로 쓴다.
+Attacker degradation models (all empirical values):
+  1. Page loss — Pages falling outside the dominant 2MB block cannot be obtained.
+     (layouts.npz: n_valid median 49/49, mean 45.1, all 49 pages available: 58%)
+  2. Temporal grouping omission — May be omitted from burst group even within the block.
+     (channel recall median 100%, p25 94%, p10 49%)
+  3. Direction ambiguity — Forward vs Reverse. Training uses forward only; inference compares confidence between both candidates.
+  4. Unknown aspect ratio — Attacker does not know the original aspect ratio, so uses training set mean as prior.
 
-복원 실패한 페이지는 0 으로 둔다 (어떤 ref 와도 매칭 없음 = 관측 없음).
+Pages that fail recovery are zeroed out (no match with any ref = unobserved).
 """
 import glob
 import os
@@ -42,7 +42,7 @@ CHUNKS_PER_PAGE = 256    # 4096 / 16
 
 
 def collect_labels(split):
-    """xor_cache_64 생성 때와 같은 glob 순서 → 캐시 인덱스와 1:1."""
+    """Matches glob order when creating xor_cache_64 -> 1:1 with cache index."""
     labels = []
     for i, cls in enumerate(CLASSES):
         pat = str(DATA_ROOT / split / f"XR_{cls}" / "**" / "*.png")
@@ -50,12 +50,12 @@ def collect_labels(split):
     return np.asarray(labels, dtype=np.int64)
 
 
-# ── 재조립 데이터셋 ───────────────────────────────────────────────────────────
+# ── Reassembly Dataset ─────────────────────────────────────────────────────────
 class ReassemblyDataset(Dataset):
-    """캐시 슬라이스에 '공격자가 겪는 열화'를 씌워 재조립 입력을 만든다.
+    """Applies 'attacker-perceived degradations' to cache slices to create reassembly inputs.
 
-    출력은 원본 모델과 동일한 (64, 224, 56) 이므로 기존 XorSliceResNet 을
-    그대로 쓰거나 fine-tune 할 수 있다.
+    Output matches the original model dimension (64, 224, 56), so the existing
+    XorSliceResNet can be used directly or fine-tuned.
     """
 
     def __init__(self, slices_mm, labels, layouts, *, train=True,
@@ -63,14 +63,14 @@ class ReassemblyDataset(Dataset):
                  sim_reverse_rate=0.0, undo=False, seed=0):
         self.slices = slices_mm
         self.labels = labels
-        self.layouts = layouts          # (L, 49) int16, -1 = 지배 블록 밖
+        self.layouts = layouts          # (L, 49) int16, -1 = outside dominant block
         self.train = train
         self.aspect_prior = float(aspect_prior)
         self.degrade = degrade
-        self.reverse = reverse          # 역순 가설로 재조립 (추론 시 사용)
-        # sim_reverse_rate: 이 비율만큼 '실제로 역순으로 조립된' 관측을 만든다.
-        #   공격자가 보는 배열 X = flip(clean) 이 되는 경우. 실측 24%.
-        # undo: X 를 다시 뒤집어 정순 복원을 시도 (방향 판별기가 역순이라 판단한 경우)
+        self.reverse = reverse          # Reassemble with reverse hypothesis (used during inference)
+        # sim_reverse_rate: Rate of creating 'actually reverse assembled' observations.
+        #   Case where attacker sees array X = flip(clean). Measured at 24%.
+        # undo: Reverse X back to attempt forward recovery (when direction discriminator determines reverse)
         self.sim_reverse_rate = float(sim_reverse_rate)
         self.undo = undo
         self.rng = np.random.default_rng(seed)
@@ -79,14 +79,14 @@ class ReassemblyDataset(Dataset):
         return len(self.labels)
 
     def keep_mask(self, rng):
-        """이번 샘플에서 실제로 복원되는 논리 페이지 마스크."""
+        """Logical page mask actually recovered in this sample."""
         keep = np.ones(CH_PAGES, dtype=bool)
         if not self.degrade:
             return keep
-        # (1) 지배 블록 밖 페이지 소실 — 실측 배치에서 추출
+        # (1) Page loss outside dominant block — extracted from empirical layout
         lay = self.layouts[rng.integers(len(self.layouts))]
         keep &= (lay >= 0)
-        # (2) 시간 그룹핑 누락 — 채널 recall 중앙값 100%, p10 49%
+        # (2) Temporal grouping omission — channel recall median 100%, p10 49%
         if rng.random() < 0.5:
             keep &= (rng.random(CH_PAGES) < rng.uniform(0.49, 1.0))
         return keep
@@ -100,13 +100,13 @@ class ReassemblyDataset(Dataset):
         keep = self.keep_mask(rng)
         rec = np.where(keep[None, :, None], pages, False)
 
-        # (a) 실제 관측 생성: sim_reverse_rate 확률로 역순 조립본이 관측된다
+        # (a) Real observation generation: reverse-assembled slice observed with sim_reverse_rate probability
         is_rev = (self.sim_reverse_rate > 0
                   and rng.random() < self.sim_reverse_rate)
         if is_rev:
             rec = rec[:, ::-1, :]
 
-        # (b) 공격자 측 조작: undo 는 되뒤집기, reverse 는 역순 가설 생성
+        # (b) Attacker manipulation: undo flips back, reverse generates reverse hypothesis
         if self.undo or self.reverse:
             rec = rec[:, ::-1, :]
 
@@ -119,7 +119,7 @@ class ReassemblyDataset(Dataset):
                 np.int64(is_rev))
 
 
-# ── 모델 (train_64ref.py 의 XorSliceResNet 과 동일 구조) ──────────────────────
+# ── Model (Same architecture as XorSliceResNet in train_64ref.py) ──────────────
 class ResBlock(nn.Module):
     def __init__(self, in_ch, out_ch, stride=1):
         super().__init__()
@@ -167,12 +167,12 @@ def load_cache(split):
     slices = np.lib.format.open_memmap(CACHE / f"{name}_slices.npy", mode="r")
     labels = collect_labels(split)
     assert len(labels) == slices.shape[0], \
-        f"{split}: 캐시 {slices.shape[0]} vs 라벨 {len(labels)} 불일치"
+        f"{split}: cache {slices.shape[0]} vs labels {len(labels)} mismatch"
     return slices, labels
 
 
 def train_aspect_prior():
-    """공격자가 쓸 수 있는 유일한 종횡비 정보 = 학습셋 평균."""
+    """Only aspect ratio information available to attacker = training set mean."""
     return float(np.load(CACHE / "tr_aspects.npy").mean())
 
 
@@ -197,7 +197,7 @@ def plot_cm(cm, classes, out_stem, title, subtitle):
         for j in range(n):
             v = norm[i, j]
             ax.text(j, i, f"{cm[i, j]}\n{v*100:.0f}%", ha="center", va="center",
-                    fontsize=10, color="white" if v > 0.5 else "#222")
+                color="white" if v > 0.5 else "#222")
     cb = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     cb.set_label("row-normalized", fontsize=11)
     fig.tight_layout()

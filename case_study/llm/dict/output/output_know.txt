@@ -2,36 +2,36 @@
 OUTPUT TOKEN SIDE-CHANNEL — DICTIONARY DESIGN NOTES
 ================================================================================
 
-목적
-----
-VLM(Qwen2-VL-2B-Instruct)이 생성한 출력 텍스트의 첫 문장을
-SEV-SNP ciphertext 비교로 식별한다.
+Objective
+---------
+Identify the first sentence of generated output text from VLM (Qwen2-VL-2B-Instruct)
+via SEV-SNP ciphertext comparison.
 
-모델은 greedy decoding(do_sample=False, num_beams=1)을 사용하므로
-동일 입력에 대해 출력이 완전히 결정론적이다.
-→ 한 번 캡처한 ciphertext는 이후 동일 샘플에 항상 재사용 가능.
+Since the model uses greedy decoding (do_sample=False, num_beams=1),
+outputs are completely deterministic for identical inputs.
+-> Ciphertext captured once remains valid and reusable for matching samples.
 
 
-왜 첫 문장을 타겟으로 하는가
------------------------------
-output_dict.txt 분석(3463 샘플)에서 첫 문장이 소수의 고빈도 패턴으로
-수렴함을 확인:
+Why Target the First Sentence
+------------------------------
+Analysis of output_dict.txt (3,463 samples) shows the first sentence
+converges to a small set of high-frequency templates:
 
   283  "The chest x-ray in the image shows a normal chest with no visible abnormalities."
   122  "Based on the chest x-ray provided, the following findings can be observed:\n\n1."
   107  "The chest x-ray in the image shows a normal chest with no obvious abnormalities."
 
-첫 문장이 결정되면 이후 내용도 대부분 예측 가능(deterministic).
-"정상 vs 비정상" 판단을 위해 이 3개 구문이면 충분.
+Once the first sentence is determined, subsequent text is largely predictable.
+These 3 phrases suffice to distinguish "normal vs abnormal".
 
-제외한 구문:
+Excluded phrases:
   436  "Here are the key findings:\n\n1."
   71   "The chest x-ray in the image shows a few notable findings:\n\n1."
-→ 소견이 있다는 사실만 알 수 있고 내용이 없어 의미 없음.
+-> Only indicate existence of findings without descriptive content.
 
 
-타겟 구문 및 토큰 정보
------------------------
+Target Phrases & Token Information
+----------------------------------
 Tokenizer: Qwen2-VL-2B-Instruct (add_special_tokens=False)
 
 idx  label            phrase
@@ -54,47 +54,47 @@ idx  label            phrase
                  4622, 15138, 448, 902, 8036, 74715, 13]
      16 tokens / 128 B / 16 phases
 
-주의: normal_visible(0)과 normal_obvious(2)는 앞 14 토큰이 동일하다.
-token[13]에서 9434("visible") vs 8036("obvious")로 갈린다.
-매칭 시 verify.py가 전체 토큰 시퀀스를 비교해야 오탐 없음.
+Note: normal_visible(0) and normal_obvious(2) share the first 14 tokens.
+They diverge at token[13]: 9434 ("visible") vs 8036 ("obvious").
+During verification, verify.py must check the complete token sequence to avoid false positives.
 
 
-ICMP 기반 사전 구축 원리
-------------------------
-orchestrate_v2.py의 indication 사전과 동일한 메커니즘:
+ICMP-Based Dictionary Construction
+-----------------------------------
+Identical mechanism to the indication dictionary in orchestrate_v2.py:
 
 1. payload = b'\x00' * prefix + (token_bytes * repeat)[:4097+]
-   token_bytes = struct.pack("<Nq", *token_ids)  (little-endian int64 × N)
+   token_bytes = struct.pack("<Nq", *token_ids)  (little-endian int64 x N)
 
-2. prefix를 조정해 token sequence가 page 내 특정 offset에 정렬되도록
-   2-probe delta 측정 → expected_frag → prefix 계산
+2. Adjust prefix so token sequence aligns to specific in-page offsets
+   2-probe delta measurement -> expected_frag -> compute prefix
 
-3. 게스트 ICMP 수신 모듈이 GPA를 dmesg에 기록
-   → 호스트가 파싱 → read_gpa.py로 4KB 페이지 ciphertext 덤프 저장
+3. Guest ICMP monitor records GPA in dmesg
+   -> Host parses GPA -> read_gpa.py dumps 4KB page ciphertext
 
-4. 한 번의 덤프가 해당 페이지 내 L-byte 간격 모든 offset을 커버
-   (L = len(token_ids) × 8)
+4. A single dump covers all offsets at L-byte intervals in that page
+   (L = len(token_ids) * 8)
 
-총 전송 횟수: 49 phases × 3 sends = 147 ICMP packets
+Total transmissions: 49 phases x 3 sends = 147 ICMP packets
 
 
-파일 구조
----------
+Directory Structure
+-------------------
 output/
-├── output_orchestrate.py   호스트 실행 — --build, --print-phrase-ids
-├── output_dict_cache.json  빌드 결과 (offset_hex → {label: {gpa, cp_file}})
-├── output_dict_pages/      per-phase ciphertext 덤프 (out_t{idx}_p{phase}.out)
-├── output_dict.txt         사전 분석 원본 (3463샘플 반복 구문 빈도)
-└── output_know.txt         이 파일
+├── output_orchestrate.py   Host execution — --build, --print-phrase-ids
+├── output_dict_cache.json  Build outputs (offset_hex -> {label: {gpa, cp_file}})
+├── output_dict_pages/      Per-phase ciphertext dumps (out_t{idx}_p{phase}.out)
+├── output_dict.txt         Dictionary analysis source (frequency across 3,463 samples)
+└── output_know.txt         This file
 
 
-실행 순서
----------
-# 1. 게스트에서 토큰 ID 확인 (이미 완료)
+Execution Commands
+------------------
+# 1. Verify token IDs on guest (completed)
 python3 output_orchestrate.py --print-phrase-ids
 
-# 2. 호스트에서 사전 빌드
+# 2. Build dictionary on host
 sudo python3 output/output_orchestrate.py --build
 
-# 3. (향후) 추론 중 output tensor GPA 취득 후 compare
-#    → guest script 수정 필요 (gen_ids.data_ptr() → GPA 출력)
+# 3. (Future) Obtain output tensor GPA during inference and compare
+#    -> requires guest script update (gen_ids.data_ptr() -> GPA output)

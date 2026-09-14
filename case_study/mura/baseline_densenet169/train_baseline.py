@@ -1,17 +1,17 @@
 """
 Raw image baseline — DenseNet-169 fine-tuning for MURA 7-class body part classification
 
-DenseNet-MURA-PyTorch 를 참고:
-  - 입력: grayscale PNG → 3채널 repeat → 224×224 → ImageNet normalize
-  - 모델: torchvision densenet169 (ImageNet pretrained), fc → Linear(1664, 7)
+Referenced DenseNet-MURA-PyTorch:
+  - Input: grayscale PNG -> 3-channel repeat -> 224x224 -> ImageNet normalize
+  - Model: torchvision densenet169 (ImageNet pretrained), fc -> Linear(1664, 7)
   - Loss: class-weighted CrossEntropyLoss + label smoothing 0.1
-  - 목적: XOR side-channel 모델(ref-16/32/64)의 baseline 비교
+  - Purpose: Baseline comparison for XOR side-channel models (ref-16/32/64)
 
-출력:
+Outputs:
   ./mura_baseline_densenet169.pth
   ./mura_baseline_confusion_matrix.pdf
 
-실행:
+Execution:
   conda activate mura
   cd /home/eun/bnb/mura
   python train_baseline.py 2>&1 | tee train_baseline.log
@@ -29,7 +29,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-# ── 상수 ──────────────────────────────────────────────────────────────────────
+# ── Constants ─────────────────────────────────────────────────────────────────
 DATA_ROOT   = "./mura_downloads"
 CLASSES     = ["ELBOW","FINGER","FOREARM","HAND","HUMERUS","SHOULDER","WRIST"]
 CLASS2IDX   = {c: i for i, c in enumerate(CLASSES)}
@@ -42,7 +42,7 @@ np.random.seed(SEED)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Device: {device}", flush=True)
 
-# ── 데이터 경로 ────────────────────────────────────────────────────────────────
+# ── Data Paths ────────────────────────────────────────────────────────────────
 def collect_paths_labels(split):
     paths, labels = [], []
     for cls in CLASSES:
@@ -59,9 +59,9 @@ for cls in CLASSES:
     n_va = sum(1 for l in va_labels if l == CLASS2IDX[cls])
     print(f"  {cls:10s}: train {n_tr:>5,}  valid {n_va:>4,}", flush=True)
 
-# ── 전처리 (DenseNet-MURA-PyTorch 방식) ───────────────────────────────────────
-# MURA 이미지는 grayscale PNG지만 pil_loader 가 RGB 로 로드 → R==G==B.
-# 여기서는 명시적으로 L → RGB 변환 후 ImageNet normalize.
+# ── Preprocessing (DenseNet-MURA-PyTorch method) ───────────────────────────────
+# MURA images are grayscale PNGs, but pil_loader loads them as RGB -> R==G==B.
+# Here we explicitly convert L -> RGB and then apply ImageNet normalization.
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD  = [0.229, 0.224, 0.225]
 
@@ -89,7 +89,7 @@ class MURABodyPartDataset(Dataset):
     def __len__(self): return len(self.paths)
 
     def __getitem__(self, idx):
-        # L → RGB: MURA는 grayscale이므로 3채널 repeat (DenseNet-MURA-PyTorch의 pil_loader 동작과 동일)
+        # L -> RGB: MURA is grayscale so repeat across 3 channels (identical to DenseNet-MURA-PyTorch pil_loader behavior)
         img = Image.open(self.paths[idx]).convert("RGB")
         return self.transform(img), self.labels[idx]
 
@@ -103,9 +103,9 @@ va_ld = DataLoader(va_ds, batch_size=64, shuffle=False,
                    num_workers=4, pin_memory=pin, persistent_workers=True)
 print(f"Train batches: {len(tr_ld)}  Valid batches: {len(va_ld)}", flush=True)
 
-# ── 모델: DenseNet-169 pretrained → 7-class head ──────────────────────────────
+# ── Model: DenseNet-169 pretrained -> 7-class head ─────────────────────────────
 model = models.densenet169(weights=models.DenseNet169_Weights.IMAGENET1K_V1)
-# DenseNet-169의 classifier: Linear(1664, 1000) → Linear(1664, 7)
+# DenseNet-169 classifier: Linear(1664, 1000) -> Linear(1664, 7)
 in_features = model.classifier.in_features   # 1664
 model.classifier = nn.Linear(in_features, len(CLASSES))
 model = model.to(device)
@@ -124,7 +124,7 @@ crit  = nn.CrossEntropyLoss(weight=w, label_smoothing=0.1)
 opt   = optim.AdamW(model.parameters(), lr=1e-4, weight_decay=1e-4)
 sched = optim.lr_scheduler.CosineAnnealingLR(opt, T_max=EPOCHS)
 
-# ── 학습 ──────────────────────────────────────────────────────────────────────
+# ── Training ──────────────────────────────────────────────────────────────────
 model_path = "./mura_baseline_densenet169.pth"
 best_va = 0.0
 print(f"\n{'='*64}", flush=True)
@@ -167,7 +167,7 @@ for epoch in range(1, EPOCHS + 1):
 
 print(f"\nBest val (micro): {best_va:.1f}%  → {model_path}", flush=True)
 
-# ── 최종 평가 (best checkpoint) ───────────────────────────────────────────────
+# ── Final Evaluation (best checkpoint) ────────────────────────────────────────
 model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
 model.eval()
 
@@ -213,8 +213,8 @@ plt.close()
 print(f"Saved → {pdf_path}", flush=True)
 
 # ── Grad-CAM heatmap ──────────────────────────────────────────────────────────
-# DenseNet-169 forward: features(x) → ReLU → GAP → classifier
-# model.features 출력 (B, 1664, 7, 7) 에 hook
+# DenseNet-169 forward: features(x) -> ReLU -> GAP -> classifier
+# Hook into model.features output (B, 1664, 7, 7)
 
 class GradCAM:
     def __init__(self, model):
@@ -244,14 +244,14 @@ class GradCAM:
     def remove(self):
         self._fwd_h.remove(); self._bwd_h.remove()
 
-# 클래스당 4개 샘플 (정답 예측된 것 우선)
+# 4 samples per class (prioritizing correctly predicted samples)
 N_SAMP  = 4
 UNNORM  = transforms.Compose([
     transforms.Normalize(mean=[0., 0., 0.], std=[1/s for s in IMAGENET_STD]),
     transforms.Normalize(mean=[-m for m in IMAGENET_MEAN], std=[1., 1., 1.]),
 ])
 
-# val set에서 클래스별로 정답 샘플 수집
+# Collect correct samples per class from val set
 va_ds_plain = MURABodyPartDataset(va_paths, va_labels, va_transform)
 class_samples = {i: [] for i in range(len(CLASSES))}
 for idx in range(len(va_ds_plain)):
@@ -309,7 +309,7 @@ for row, cls_idx in enumerate(range(len(CLASSES))):
         ax_heat.set_title(f"→{CLASSES[pred_cls]}", fontsize=6,
                           color=color, pad=2)
 
-# 컬럼 헤더
+# Column headers
 for col_pair in range(N_SAMP):
     axes[0][col_pair * 2].set_title("orig", fontsize=7, pad=2)
     axes[0][col_pair * 2 + 1].set_title("Grad-CAM", fontsize=7, pad=2)

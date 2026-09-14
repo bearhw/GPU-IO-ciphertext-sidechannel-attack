@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
 """
-train_reassembly.py — write-순서로 재조립한 (열화된) 입력으로 분류기 학습.
+train_reassembly.py — Train classifier on write-order reassembled (degraded) inputs.
 
-왜 이게 맞는 설계인가:
-  앞서 만든 순열 불변 page-set 모델은 val 48.6% 에 그쳤다. 페이지 순서를
-  '모른다'고 가정하고 불변성을 강제했기 때문이다. 그러나 write 트레이스는
-  순서를 실제로 알려준다 (정순 75% / 역순 24%). 그 정보를 되살려 (224,56)
-  격자를 복원하면 clean 모델이 그대로 76.95% 를 낸다.
+Why this is the correct design:
+  The earlier permutation-invariant page-set model reached only 48.6% val acc
+  because it assumed page order was 'unknown' and enforced invariance.
+  However, write traces actually reveal order (forward 75% / reverse 24%).
+  Restoring the (224, 56) grid using that information allows the clean model
+  to achieve 76.95% out of the box.
 
-  다만 clean 모델은 '완전한 49페이지'로 학습돼 있어 페이지 소실에 취약하다.
-  여기서는 소실을 포함한 재조립 입력으로 학습해 그 열화에 맞춘다.
+  However, the clean model was trained on 'complete 49 pages' and is vulnerable
+  to page loss. Here, we train with reassembled inputs including page loss to adapt
+  to that degradation.
 
-기본은 기존 체크포인트에서 fine-tune (수렴이 훨씬 빠르다).
+Default is to fine-tune from existing checkpoint (converges much faster):
   python train_reassembly.py --init ../mura_xor_slice_64ref.pth --epochs 12
 
-출력: reassembly_64ref.pth  (best val acc)
+Output: reassembly_64ref.pth  (best val acc)
 """
 import argparse
 import time
@@ -32,7 +34,7 @@ from reassembly_common import (
 
 
 def evaluate(model, loader, dev, n_cls):
-    """정순 가설만으로 평가 (학습 중 모니터링용). 최종 평가는 eval_reassembly.py."""
+    """Evaluate with forward hypothesis only (for monitoring during training). Final evaluation in eval_reassembly.py."""
     model.eval()
     cm = np.zeros((n_cls, n_cls), dtype=int)
     with torch.no_grad():
@@ -49,7 +51,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--init", type=Path,
-                    help="기존 clean 체크포인트에서 fine-tune (권장)")
+                    help="Fine-tune from existing clean checkpoint (recommended)")
     ap.add_argument("--epochs", type=int, default=12)
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--lr", type=float, default=1e-4)
@@ -57,7 +59,7 @@ def main():
     ap.add_argument("--label-smooth", type=float, default=0.05)
     ap.add_argument("--no-class-weight", action="store_true")
     ap.add_argument("--no-degrade", action="store_true",
-                    help="열화 없이 학습 (상한 확인용)")
+                    help="Train without degradation (to check upper bound)")
     ap.add_argument("--limit-train", type=int, default=None)
     ap.add_argument("--limit-val", type=int, default=None)
     ap.add_argument("--workers", type=int, default=1)
@@ -68,7 +70,7 @@ def main():
     dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     layouts = np.load(args.layouts)["slots"]
     prior = train_aspect_prior()
-    print(f"device={dev}  실측 배치 {len(layouts)}개  aspect prior={prior:.3f}", flush=True)
+    print(f"device={dev}  empirical layouts={len(layouts)}  aspect prior={prior:.3f}", flush=True)
 
     tr_s, tr_y = load_cache("train")
     va_s, va_y = load_cache("valid")
@@ -88,7 +90,7 @@ def main():
             va_idx, size=min(args.limit_val, len(va_idx)), replace=False)
     tr_ds, va_ds = Subset(tr_ds, tr_idx.tolist()), Subset(va_ds, va_idx.tolist())
     print(f"train {len(tr_ds):,}  valid {len(va_ds):,}  "
-          f"열화={'on' if degrade else 'off'}", flush=True)
+          f"degradation={'on' if degrade else 'off'}", flush=True)
 
     tr_ld = DataLoader(tr_ds, batch_size=args.batch, shuffle=True,
                        num_workers=args.workers, pin_memory=(dev.type == "cuda"))
@@ -120,7 +122,7 @@ def main():
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=args.epochs)
 
     base_acc, base_bal = evaluate(model, va_ld, dev, len(CLASSES))
-    print(f"[fine-tune 전] val {base_acc:.4f}  bal {base_bal:.4f}", flush=True)
+    print(f"[Before fine-tuning] val {base_acc:.4f}  bal {base_bal:.4f}", flush=True)
 
     best = base_acc
     for ep in range(1, args.epochs + 1):

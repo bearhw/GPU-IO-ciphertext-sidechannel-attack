@@ -1,0 +1,55 @@
+{
+  "stage": 2,
+  "index": 30,
+  "batch_size": 1,
+  "num_pages": 2,
+  "label": 3,
+  "image_gpa": "0x42dfe000",
+  "image_gpa_int": 1121968128,
+  "page2_gpa": "0x42dff000",
+  "page2_gpa_int": 1121972224,
+  "page_gpas": [
+    "0x42dfe000",
+    "0x42dff000"
+  ],
+  "page_gpas_int": [
+    1121968128,
+    1121972224
+  ],
+  "pixel_offset": 3072,
+  "blind_detected": true,
+  "ground_truth_gpa": "0x1825dd2000",
+  "candidates": [
+    {
+      "aligned": 1119879168,
+      "exact": 1121968128,
+      "hits": 1,
+      "max_run": 12
+    },
+    {
+      "aligned": 4437573632,
+      "exact": 4438999040,
+      "hits": 2,
+      "max_run": 2
+    },
+    {
+      "aligned": 4393533440,
+      "exact": 4395110400,
+      "hits": 1,
+      "max_run": 3
+    },
+    {
+      "aligned": 4391436288,
+      "exact": 4392312832,
+      "hits": 1,
+      "max_run": 2
+    },
+    {
+      "aligned": 181252653056,
+      "exact": 181252739072,
+      "hits": 1,
+      "max_run": 2
+    }
+  ],
+  "timestamp": 1789307734.9575572
+}

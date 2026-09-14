@@ -1,0 +1,142 @@
+{
+  "index": 4,
+  "host_log": "/home/eun/open-science/case_study/llm/e2e_combined_wpt.log",
+  "total_scored_blocks": 3101,
+  "candidate_blocks": [
+    "0x2fec00000",
+    "0x2fdc00000",
+    "0x2fe000000",
+    "0x2be200000",
+    "0x2f6200000",
+    "0x2cf200000",
+    "0x26de00000"
+  ],
+  "candidate_details": {
+    "0x2fec00000": {
+      "score": 1686905,
+      "hits": 30671,
+      "max_run": 55
+    },
+    "0x2fdc00000": {
+      "score": 954738,
+      "hits": 1798,
+      "max_run": 531
+    },
+    "0x2fe000000": {
+      "score": 762010,
+      "hits": 2105,
+      "max_run": 362
+    },
+    "0x2be200000": {
+      "score": 517902,
+      "hits": 2242,
+      "max_run": 231
+    },
+    "0x2f6200000": {
+      "score": 449592,
+      "hits": 1144,
+      "max_run": 393
+    },
+    "0x2cf200000": {
+      "score": 439313,
+      "hits": 4529,
+      "max_run": 97
+    },
+    "0x26de00000": {
+      "score": 431450,
+      "hits": 43145,
+      "max_run": 10
+    }
+  },
+  "candidate_run_bases": {
+    "0x2fec00000": [
+      "0x2fece5000",
+      "0x2fecb3000",
+      "0x2fec8b000",
+      "0x2fecdb000",
+      "0x2fec28000",
+      "0x2fec01000",
+      "0x2fed7c000",
+      "0x2fec45000",
+      "0x2fed07000",
+      "0x2fed7d000"
+    ],
+    "0x2fdc00000": [
+      "0x2fddb4000",
+      "0x2fdc56000",
+      "0x2fddf1000",
+      "0x2fdcef000",
+      "0x2fdc6f000",
+      "0x2fdc7b000",
+      "0x2fddc0000",
+      "0x2fdd2a000",
+      "0x2fdca0000",
+      "0x2fdc83000"
+    ],
+    "0x2fe000000": [
+      "0x2fe04b000",
+      "0x2fe117000",
+      "0x2fe15e000",
+      "0x2fe14f000",
+      "0x2fe00e000",
+      "0x2fe182000",
+      "0x2fe01a000",
+      "0x2fe01d000",
+      "0x2fe14a000",
+      "0x2fe154000"
+    ],
+    "0x2be200000": [
+      "0x2be283000",
+      "0x2be380000",
+      "0x2be3bc000",
+      "0x2be36b000",
+      "0x2be39f000",
+      "0x2be3ab000",
+      "0x2be37b000",
+      "0x2be3cf000",
+      "0x2be3e5000",
+      "0x2be3f6000"
+    ],
+    "0x2f6200000": [
+      "0x2f62f1000",
+      "0x2f62dd000",
+      "0x2f624a000",
+      "0x2f627c000",
+      "0x2f633f000",
+      "0x2f631b000",
+      "0x2f629b000",
+      "0x2f6355000",
+      "0x2f6360000",
+      "0x2f6368000"
+    ],
+    "0x2cf200000": [
+      "0x2cf385000",
+      "0x2cf245000",
+      "0x2cf33d000",
+      "0x2cf2f2000",
+      "0x2cf2c5000",
+      "0x2cf31f000",
+      "0x2cf2ef000",
+      "0x2cf29a000",
+      "0x2cf3f1000",
+      "0x2cf2d9000"
+    ],
+    "0x26de00000": [
+      "0x26dec6000",
+      "0x26ded8000",
+      "0x26df80000",
+      "0x26df04000",
+      "0x26dec0000",
+      "0x26df68000",
+      "0x26dedb000",
+      "0x26def0000",
+      "0x26df90000",
+      "0x26def2000"
+    ]
+  },
+  "gt_base": "0x2f62ef000",
+  "gt_rank": 5,
+  "gt_indication": "Central line placement",
+  "gt_N": 480,
+  "timestamp": 1789398051.324897
+}

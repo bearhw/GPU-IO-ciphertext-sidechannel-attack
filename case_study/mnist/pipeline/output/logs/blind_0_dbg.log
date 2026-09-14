@@ -1,0 +1,13 @@
+[INFO] Write Pattern Tracker
+[INFO] Guest RAM  : 256 GB
+[INFO] Range 1    : GFN 0x0 + 0x4000000 pages (0x0 – 0x4000000000)
+[INFO] Duration   : 120 s
+[INFO] Drain      : 2 ms
+[INFO] Dst re-arm : 20 ms
+[INFO] Range 2    : GFN 0x3f80000 + 0x10000 pages (0x3f80000000 – 0x3f90000000)
+[INFO] DST_TRACK armed. Settling 2 s...
+[INFO] Settle done. Monitoring writes...
+
+
+[INFO] Done. Total writes: 135910
+[INFO] DST_TRACK disabled.

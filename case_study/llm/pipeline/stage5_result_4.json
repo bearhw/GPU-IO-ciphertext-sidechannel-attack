@@ -1,0 +1,12 @@
+{
+  "status": "LOC_FAIL",
+  "evaluation": {
+    "verdict": "LOC_FAIL",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  }
+}

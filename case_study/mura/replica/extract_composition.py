@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 """
-extract_composition.py — 실제 2MB 블록의 '구성'을 뽑는다.
+extract_composition.py — Extract the 'composition' of actual 2MB blocks.
 
-extract_layouts.py 가 '타깃 채널 49p 가 어느 슬롯에 놓이나'를 줬다면,
-이건 '그 블록의 나머지 463 슬롯에 뭐가 들어있나'를 준다. 측정값:
-    타깃 채널        중앙값  48p
-    같은 이미지 다른채널 중앙값  81p   ← 같은 라벨, 추가 신호
-    다른 이미지        중앙값 294p   ← 다른 라벨, 교란
-    비-GT             중앙값 121p
+While extract_layouts.py provided 'which slots the target 49p channels occupy',
+this provides 'what is inside the remaining 463 slots of that block'. Measured values:
+    Target channel               median  48p
+    Same image, other channels   median  81p   <- Same label, additional signal
+    Other images                 median 294p   <- Different label, confounder
+    Non-GT                       median 121p
 
-layouts.npz 와 인덱스가 1:1 대응한다 (같은 순회 순서).
+1:1 correspondence with layouts.npz index (same iteration order).
 
-출력: composition.npz
+Outputs: composition.npz
   n_target / n_same_img / n_other_img : (N,) int16
-  same_slots  : (N, 512) bool — 같은 이미지 다른 채널이 놓인 슬롯
-  other_slots : (N, 512) bool — 다른 이미지 페이지가 놓인 슬롯
+  same_slots  : (N, 512) bool — slots containing other channels of same image
+  other_slots : (N, 512) bool — slots containing pages from other images
 """
 import re
 from collections import defaultdict
@@ -76,6 +76,6 @@ np.savez_compressed(
     same_slots=np.stack(same_slots),
     other_slots=np.stack(other_slots),
 )
-print(f"채널 {len(nt)}개 → {out}")
-print(f"  타깃 중앙값 {int(np.median(nt))}p, 같은이미지 {int(np.median(ns))}p, "
-      f"다른이미지 {int(np.median(no))}p")
+print(f"Channels {len(nt)} -> {out}")
+print(f"  Target median {int(np.median(nt))}p, same image {int(np.median(ns))}p, "
+      f"other images {int(np.median(no))}p")
