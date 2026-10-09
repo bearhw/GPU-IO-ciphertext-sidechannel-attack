@@ -1,0 +1,4 @@
+index,indication,gt_base,host_base,loc_strategy,loc_swaps,loc_match,blind,N_pad_est,verdict,recovered_labels,top1_match,any_match,multi_match_count,false_positive_count,false_positive_labels,elapsed_sec
+2,Shortness of breath and fever,0x87783f000,,FAIL,40,False,True,,LOC_FAIL,,False,False,0,0,,118.3
+5,Shortness of breath and cough,0x2bdd7c000,,FAIL,40,False,True,,LOC_FAIL,,False,False,0,0,,103.6
+9,Respiratory distress. Twin born at 33.1 weeks gestational age.,0x6c5688000,,FAIL,40,False,True,,LOC_FAIL,,False,False,0,0,,84.5

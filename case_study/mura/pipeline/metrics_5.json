@@ -1,0 +1,27 @@
+{
+  "stage": 5,
+  "index": 5,
+  "target_class": "WRIST",
+  "predicted_class": "WRIST",
+  "confidence": 0.6606505513191223,
+  "top3": [
+    {
+      "class": "WRIST",
+      "prob": 0.6606505513191223
+    },
+    {
+      "class": "HUMERUS",
+      "prob": 0.10335433483123779
+    },
+    {
+      "class": "FOREARM",
+      "prob": 0.0811917632818222
+    }
+  ],
+  "is_correct": true,
+  "captured_pages": "49/49",
+  "captured_pages_count": 49,
+  "total_channel_pages": 49,
+  "capture_fraction": 1.0,
+  "timestamp": 1790100023.8950703
+}

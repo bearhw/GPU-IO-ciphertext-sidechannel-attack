@@ -7,6 +7,7 @@ and evaluation metrics for the LLM End-to-End Side-Channel Attack Pipeline.
 import json
 import os
 import re
+import struct
 import subprocess
 import sys
 import time
@@ -47,28 +48,85 @@ CHUNK_SIZE = 16
 CHUNKS_PAGE = PAGE_SIZE // CHUNK_SIZE     # 256
 
 IMAGE_PAD_TOKEN_ID = 151655 # Qwen2-VL <|image_pad|>
-IMAGE_PAD_MATCH_MIN = 40
+IMAGE_PAD_MATCH_MIN = 80    # require at least 80/256 chunk matches (~31% coverage; true pages have 140-240 chunks, noise <=40)
 
 # Tracker GPA Window (4GB - 256GB guest memory range)
 TRACK_START = 0x100000000
-TRACK_SIZE = 0x3f00000000
+TRACK_SIZE = 0x800000000     # 32GB tracking range (4GB - 36GB) covers all user tensor GPAs
 TRACKER_SETTLE_S = 3
+TRACKER_REARM_MS = 20  # 20ms interval for trigger-based tracking during inference window
 
 # Safety Ceilings & Pacing Defaults (Calibrated to prevent PSP resets & host reboots)
 # 1 round-trip swap (--swap-back) = 6 snp_guest_page_move = ~12 low-level PSP commands.
 # PSP platform-resets if sustained > ~60 commands/sec. 0.25s pace -> max ~48 cmds/s.
-SWAP_PACE_SEC = 0.25
-SWAP_BURST_COOLDOWN = 10
-SWAP_BURST_SLEEP = 2.0
-MEGA_COOLDOWN_EVERY = 50
-MEGA_COOLDOWN_SLEEP = 12.0
-INTER_TRY_SETTLE_SEC = 2.0
+#
+# Every knob below is overridable via env (SC_* prefix) so a run can be sped up without
+# editing code. Lowering SWAP_PACE_SEC / raising the cooldown cadence pushes the PSP
+# command rate up toward the ~60/s reset threshold — do it knowingly.
+def _envf(name: str, default: float) -> float:
+    try:
+        return float(os.environ[name])
+    except (KeyError, ValueError):
+        return default
 
-CONTINUE_TRY_BUDGET = 150
-FULL_BLOCK_TRY_BUDGET = 200
-MAX_LOC_SWAPS_SAMPLE = 1000     # strict safety ceiling to prevent runaway swap loops
-MAX_TOTAL_SWAPS_RUN = 50000
-N_TRACKER_CANDIDATES = 5
+
+def _envi(name: str, default: int) -> int:
+    try:
+        return int(os.environ[name])
+    except (KeyError, ValueError):
+        return default
+
+
+SWAP_PACE_SEC = _envf("SC_SWAP_PACE_SEC", 0.25)
+SWAP_BURST_COOLDOWN = _envi("SC_SWAP_BURST_COOLDOWN", 10)
+SWAP_BURST_SLEEP = _envf("SC_SWAP_BURST_SLEEP", 2.0)
+MEGA_COOLDOWN_EVERY = _envi("SC_MEGA_COOLDOWN_EVERY", 25)
+MEGA_COOLDOWN_SLEEP = _envf("SC_MEGA_COOLDOWN_SLEEP", 12.0)
+INTER_TRY_SETTLE_SEC = _envf("SC_INTER_TRY_SETTLE_SEC", 2.0)
+
+CONTINUE_TRY_BUDGET = _envi("SC_CONTINUE_TRY_BUDGET", 20)
+FULL_BLOCK_TRY_BUDGET = _envi("SC_FULL_BLOCK_TRY_BUDGET", 20)
+
+# Filtered 2MB Brute-force localization parameters (Safe bounded swap budget)
+PER_BLOCK_LOC_BUDGET = _envi("SC_PER_BLOCK_LOC_BUDGET", 8)   # 8 swaps max per candidate block
+RUN_START_PROBE_WINDOW = _envi("SC_RUN_START_PROBE_WINDOW", 6) # probe 0..5 pages from run start
+PIXEL_VALUES_SKIP_THRESHOLD = _envi("SC_PIXEL_VALUES_SKIP_THRESHOLD", 40) # skip dense float pixel spans
+
+# Run-aware localization: the image_pad landmark usually sits a few pages OFF the
+# tracker's captured run_start (the run often starts in the prefix/indication
+# text, not the image_pad region). Scan the run span plus this many pages BEFORE
+# the earliest run start to catch image_pad that precedes the captured writes.
+RUN_BACK_PAGES = _envi("SC_RUN_BACK_PAGES", 64)
+RUN_WINDOW_BUDGET = _envi("SC_RUN_WINDOW_BUDGET", 8)   # small safe burst to prevent QEMU SNP page-move segfaults
+# Cap exact run_start probes per candidate block (Phase 1) so the cheap 1-swap
+# probes spread across many blocks and leave budget for the run-window scan,
+# instead of one block's many run bases eating the whole per-sample ceiling.
+RUN_BASE_PER_BLOCK = _envi("SC_RUN_BASE_PER_BLOCK", 6)
+MAX_LOC_SWAPS_SAMPLE = _envi("SC_MAX_LOC_SWAPS", 40)  # safe per-sample swap ceiling (prevents QEMU segfaults)
+MAX_TOTAL_SWAPS_RUN = _envi("SC_MAX_TOTAL_SWAPS", 50000)
+N_TRACKER_CANDIDATES = _envi("SC_N_TRACKER_CANDIDATES", 40)  # safe top 40 candidate blocks
+
+# Contiguous write run bounds
+LOC_RUN_LEN_MIN = _envi("SC_LOC_RUN_LEN_MIN", 1)
+LOC_RUN_LEN_MAX = _envi("SC_LOC_RUN_LEN_MAX", 512)
+
+# Qwen vocab bound for the "indication text follows image_pad" confirmation: real
+# input_ids has plausible text token IDs (0 < id < vocab, not the image_pad id)
+# after the image_pad run; an image-only buffer does not.
+QWEN_VOCAB_SIZE = _envi("SC_QWEN_VOCAB_SIZE", 152064)
+# Min text-token chunks on a run page for the "indication follows image_pad"
+# confirmation (a genuine input_ids run holds image_pad AND text tokens; an
+# image-only buffer holds neither text nor a text tail).
+IND_TEXT_MIN_CHUNKS = _envi("SC_IND_TEXT_MIN_CHUNKS", 4)
+
+# Localization success criterion. loc_match counts a hit when the located page is
+# in the SAME 2MB block as the ground-truth input_ids base AND within this many
+# pages of it. The image_pad buffer spans many contiguous pages, so the blind
+# fingerprint scan / run-base probe commonly lands a page or two off the exact
+# base (observed: host = gt+1 with 80-213/256 image_pad chunk matches) — that is
+# a real localization of the input buffer (Stage 4 then estimates the bounds),
+# not a miss. Byte-exact gt_base was too strict and undercounted success ~2x.
+LOC_MATCH_PAGE_WINDOW = _envi("SC_LOC_MATCH_PAGE_WINDOW", 24)
 
 # Guest SSH Configuration
 _sudo_user = os.environ.get("SUDO_USER")
@@ -127,7 +185,7 @@ def run_net_preflight() -> bool:
             env = os.environ.copy()
             if "SUDO_USER" not in env or env["SUDO_USER"] == "root":
                 env["SUDO_USER"] = "eun"
-            cmd = [str(NET_PREFLIGHT)] if os.geteuid() == 0 else ["sudo", "-E", str(NET_PREFLIGHT)]
+            cmd = [str(NET_PREFLIGHT)] if os.geteuid() == 0 else ["sudo", str(NET_PREFLIGHT)]
             r = subprocess.run(cmd, env=env, check=True)
             return r.returncode == 0
         except Exception as e:
@@ -164,6 +222,33 @@ def imagepad_chunk() -> bytes:
     return np.array([IMAGE_PAD_TOKEN_ID, IMAGE_PAD_TOKEN_ID], dtype="<i8").tobytes()
 
 
+def loc_is_hit(host_base: Optional[int], gt_base: Optional[int]) -> bool:
+    """Localization success: located page is in the same 2MB block as the GT
+    input_ids base and within LOC_MATCH_PAGE_WINDOW pages of it. See the
+    LOC_MATCH_PAGE_WINDOW comment for why this is the right criterion (not
+    byte-exact gt_base). Returns False if either address is missing."""
+    if not host_base or not gt_base:
+        return False
+    if (host_base & ~(BLOCK_SIZE - 1)) != (gt_base & ~(BLOCK_SIZE - 1)):
+        return False
+    dpages = (host_base - gt_base) // PAGE_SIZE
+    return -LOC_MATCH_PAGE_WINDOW <= dpages <= LOC_MATCH_PAGE_WINDOW
+
+
+def text_token_chunks(data: bytes) -> int:
+    """Count 16-byte chunks in a 4096-byte page that look like a pair of real
+    text token IDs — each int64 in (0, vocab) and not the image_pad id. Used to
+    confirm the indication text that follows the image_pad run in a genuine
+    input_ids buffer (a distinguishing signal vs image-only buffers)."""
+    n = 0
+    for j in range(CHUNKS_PAGE):
+        a, b = struct.unpack_from("<qq", data, j * CHUNK_SIZE)
+        if 0 < a < QWEN_VOCAB_SIZE and a != IMAGE_PAD_TOKEN_ID and \
+           0 < b < QWEN_VOCAB_SIZE and b != IMAGE_PAD_TOKEN_ID:
+            n += 1
+    return n
+
+
 # ---------------------------------------------------------------------------
 # JSON I/O Helpers
 # ---------------------------------------------------------------------------
@@ -183,7 +268,7 @@ def save_json(path: Path, data: Dict[str, Any]) -> None:
 # ---------------------------------------------------------------------------
 SUMMARY_FIELDNAMES = [
     "index", "indication", "gt_base", "host_base", "loc_strategy",
-    "loc_swaps", "loc_match", "N_pad_est", "verdict", "recovered_labels",
+    "loc_swaps", "loc_match", "blind", "N_pad_est", "verdict", "recovered_labels",
     "top1_match", "any_match", "multi_match_count", "false_positive_count",
     "false_positive_labels", "elapsed_sec"
 ]
@@ -207,6 +292,16 @@ def load_summary_csv(csv_path: Path) -> Dict[int, Dict[str, Any]]:
     except Exception as e:
         print(f"[summary] Note reading {csv_path}: {e}", file=sys.stderr)
     return rows
+
+
+def init_summary_csv(csv_path: Path) -> None:
+    """Ensure summary CSV exists and has headers written."""
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    if not csv_path.exists() or csv_path.stat().st_size == 0:
+        import csv
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=SUMMARY_FIELDNAMES)
+            writer.writeheader()
 
 
 def update_summary_csv(csv_path: Path, new_row: Dict[str, Any]) -> None:

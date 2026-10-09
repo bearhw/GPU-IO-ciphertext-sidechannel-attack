@@ -1,0 +1,34 @@
+{
+  "index": 26,
+  "host_base": "0x6bf3fa000",
+  "gt_base": null,
+  "gt_indication": null,
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 612,
+      "ind_gpa": 28978426656,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "respiratory failure"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 18.88726568222046,
+  "timestamp": 1789744757.7016191,
+  "status": "SUCCESS"
+}

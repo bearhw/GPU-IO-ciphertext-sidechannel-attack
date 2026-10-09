@@ -106,6 +106,8 @@ sev-step-module/mnist/*.log
 sev-step-module/mura/*.log
 sev-step-module/llm/**/*.log
 sev-step-module/output/
+*.npy
+*.log
 
 # Compiled binaries
 sev-step-module/write_pattern_tracker

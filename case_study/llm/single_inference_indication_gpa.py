@@ -89,32 +89,46 @@ def find_indication_token_span(processor, full_text: str, input_ids_tensor, indi
         return None
     char_end = char_start + len(indication)
 
-    post_enc = tokenizer(post_image_text, return_offsets_mapping=True, add_special_tokens=False)
-    post_ids = post_enc["input_ids"]
-    post_offsets = post_enc["offset_mapping"]
-
-    tok_start, tok_end = None, None
-    for i, (s, e) in enumerate(post_offsets):
-        if s == e:
-            continue
-        if tok_start is None and e > char_start:
-            tok_start = i
-        if s < char_end:
-            tok_end = i + 1
-
-    if tok_start is None or tok_end is None:
+    if not indication:
         return None
 
-    indication_ids = post_ids[tok_start:tok_end]
-    candidate = vision_end_idx + 1 + tok_start
-    if ids_list[candidate:candidate + len(indication_ids)] == indication_ids:
-        return candidate, candidate + len(indication_ids)
+    # 1. Try offset mapping if available (FastTokenizer)
+    try:
+        post_enc = tokenizer(post_image_text, return_offsets_mapping=True, add_special_tokens=False)
+        post_ids = post_enc["input_ids"]
+        post_offsets = post_enc.get("offset_mapping")
+        if post_offsets:
+            tok_start, tok_end = None, None
+            for i, (s, e) in enumerate(post_offsets):
+                if s == e:
+                    continue
+                if tok_start is None and e > char_start:
+                    tok_start = i
+                if s < char_end:
+                    tok_end = i + 1
 
-    search_from = max(0, vision_end_idx + 1)
-    n = len(indication_ids)
-    for i in range(search_from, len(ids_list) - n + 1):
-        if ids_list[i:i + n] == indication_ids:
-            return i, i + n
+            if tok_start is not None and tok_end is not None:
+                indication_ids = post_ids[tok_start:tok_end]
+                candidate = vision_end_idx + 1 + tok_start
+                if ids_list[candidate:candidate + len(indication_ids)] == indication_ids:
+                    return candidate, candidate + len(indication_ids)
+
+                search_from = max(0, vision_end_idx + 1)
+                n = len(indication_ids)
+                for i in range(search_from, len(ids_list) - n + 1):
+                    if ids_list[i:i + n] == indication_ids:
+                        return i, i + n
+    except (NotImplementedError, TypeError, KeyError):
+        pass
+
+    # 2. Fallback: direct token sub-sequence matching (Python Tokenizer compatible)
+    ind_ids = tokenizer(indication, add_special_tokens=False)["input_ids"]
+    if ind_ids:
+        search_from = max(0, vision_end_idx + 1)
+        n = len(ind_ids)
+        for i in range(search_from, len(ids_list) - n + 1):
+            if ids_list[i:i + n] == ind_ids:
+                return i, i + n
 
     return None
 

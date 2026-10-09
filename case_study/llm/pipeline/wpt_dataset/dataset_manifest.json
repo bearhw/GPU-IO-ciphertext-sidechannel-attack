@@ -1,0 +1,222 @@
+[
+  {
+    "index": 2,
+    "wpt_log": "wpt_dataset/sample_2_wpt.log",
+    "log_size_kb": 22970.83203125,
+    "gt_base": "0x1a6da5000",
+    "gt_block": "0x1a6c00000",
+    "gt_N": 396,
+    "gt_indication": "Shortness of breath and fever",
+    "collection_time_s": 31.0,
+    "timestamp": 1789769282.4206438
+  },
+  {
+    "index": 5,
+    "wpt_log": "wpt_dataset/sample_5_wpt.log",
+    "log_size_kb": 20067.7,
+    "gt_base": "0x1b23d7000",
+    "gt_block": "0x1b2200000",
+    "gt_N": 675,
+    "gt_indication": "Shortness of breath and cough",
+    "collection_time_s": 21.44,
+    "timestamp": 1789769886.804641
+  },
+  {
+    "index": 9,
+    "wpt_log": "wpt_dataset/sample_9_wpt.log",
+    "log_size_kb": 19165.2,
+    "gt_base": "0x1b2c08000",
+    "gt_block": "0x1b2c00000",
+    "gt_N": 270,
+    "gt_indication": "Respiratory distress. Twin born at 33.1 weeks gestational age.",
+    "collection_time_s": 20.83,
+    "timestamp": 1789769907.6333337
+  },
+  {
+    "index": 11,
+    "wpt_log": "wpt_dataset/sample_11_wpt.log",
+    "log_size_kb": 20949.2,
+    "gt_base": "0x1b2df1000",
+    "gt_block": "0x1b2c00000",
+    "gt_N": 729,
+    "gt_indication": "MVC, complains of chest pain",
+    "collection_time_s": 22.13,
+    "timestamp": 1789769929.7632136
+  },
+  {
+    "index": 12,
+    "wpt_log": "wpt_dataset/sample_12_wpt.log",
+    "log_size_kb": 19804.4,
+    "gt_base": "0x1b2e57000",
+    "gt_block": "0x1b2e00000",
+    "gt_N": 304,
+    "gt_indication": "Coughing, right chest pain",
+    "collection_time_s": 19.35,
+    "timestamp": 1789769949.1134205
+  },
+  {
+    "index": 13,
+    "wpt_log": "wpt_dataset/sample_13_wpt.log",
+    "log_size_kb": 19477.5,
+    "gt_base": "0x1b2f0b000",
+    "gt_block": "0x1b2e00000",
+    "gt_N": 594,
+    "gt_indication": "Shortness of breath",
+    "collection_time_s": 21.82,
+    "timestamp": 1789769970.9387414
+  },
+  {
+    "index": 15,
+    "wpt_log": "wpt_dataset/sample_15_wpt.log",
+    "log_size_kb": 20099.2,
+    "gt_base": "0x1b2fb3000",
+    "gt_block": "0x1b2e00000",
+    "gt_N": 528,
+    "gt_indication": "Cough, right-sided chest pain, PICC line not flushing",
+    "collection_time_s": 21.53,
+    "timestamp": 1789769992.4642415
+  },
+  {
+    "index": 17,
+    "wpt_log": "wpt_dataset/sample_17_wpt.log",
+    "log_size_kb": 18576.9,
+    "gt_base": "0x1b2fdb000",
+    "gt_block": "0x1b2e00000",
+    "gt_N": 270,
+    "gt_indication": "Shortness of breath, congestion.",
+    "collection_time_s": 20.18,
+    "timestamp": 1789770012.6455004
+  },
+  {
+    "index": 22,
+    "wpt_log": "wpt_dataset/sample_22_wpt.log",
+    "log_size_kb": 19916.1,
+    "gt_base": "0x19c8a1000",
+    "gt_block": "0x19c800000",
+    "gt_N": 600,
+    "gt_indication": "Cough and shortness of breath for 3 days.",
+    "collection_time_s": 20.48,
+    "timestamp": 1789770033.1301165
+  },
+  {
+    "index": 24,
+    "wpt_log": "wpt_dataset/sample_24_wpt.log",
+    "log_size_kb": 20139.0,
+    "gt_base": "0x19c97b000",
+    "gt_block": "0x19c800000",
+    "gt_N": 729,
+    "gt_indication": "Cough and congestion.",
+    "collection_time_s": 19.52,
+    "timestamp": 1789770052.647005
+  },
+  {
+    "index": 26,
+    "wpt_log": "wpt_dataset/sample_26_wpt.log",
+    "log_size_kb": 18683.4,
+    "gt_base": "0x19c9ea000",
+    "gt_block": "0x19c800000",
+    "gt_N": 396,
+    "gt_indication": "Respiratory failure.",
+    "collection_time_s": 20.71,
+    "timestamp": 1789770073.3598087
+  },
+  {
+    "index": 28,
+    "wpt_log": "wpt_dataset/sample_28_wpt.log",
+    "log_size_kb": 20360.1,
+    "gt_base": "0x19bf1e000",
+    "gt_block": "0x19be00000",
+    "gt_N": 1178,
+    "gt_indication": "Chest pain.",
+    "collection_time_s": 22.53,
+    "timestamp": 1789770095.894713
+  },
+  {
+    "index": 29,
+    "wpt_log": "wpt_dataset/sample_29_wpt.log",
+    "log_size_kb": 19118.1,
+    "gt_base": "0x19bff1000",
+    "gt_block": "0x19be00000",
+    "gt_N": 729,
+    "gt_indication": "Cough. Congestion.",
+    "collection_time_s": 20.32,
+    "timestamp": 1789770116.2199957
+  },
+  {
+    "index": 31,
+    "wpt_log": "wpt_dataset/sample_31_wpt.log",
+    "log_size_kb": 19605.4,
+    "gt_base": "0x19f014000",
+    "gt_block": "0x19f000000",
+    "gt_N": 81,
+    "gt_indication": "Prematurity. Respiratory distress.",
+    "collection_time_s": 21.18,
+    "timestamp": 1789770137.399101
+  },
+  {
+    "index": 32,
+    "wpt_log": "wpt_dataset/sample_32_wpt.log",
+    "log_size_kb": 20357.3,
+    "gt_base": "0x19bd9e000",
+    "gt_block": "0x19bc00000",
+    "gt_N": 572,
+    "gt_indication": "Chest pain and throat pain.",
+    "collection_time_s": 19.73,
+    "timestamp": 1789770157.130709
+  },
+  {
+    "index": 34,
+    "wpt_log": "wpt_dataset/sample_34_wpt.log",
+    "log_size_kb": 18907.5,
+    "gt_base": "0x19be01000",
+    "gt_block": "0x19be00000",
+    "gt_N": 396,
+    "gt_indication": "wheezing altered mental status",
+    "collection_time_s": 20.94,
+    "timestamp": 1789770178.071675
+  },
+  {
+    "index": 36,
+    "wpt_log": "wpt_dataset/sample_36_wpt.log",
+    "log_size_kb": 18699.8,
+    "gt_base": "0x19be71000",
+    "gt_block": "0x19be00000",
+    "gt_N": 396,
+    "gt_indication": "Fever. Pancreatic cancer",
+    "collection_time_s": 20.73,
+    "timestamp": 1789770198.7994883
+  },
+  {
+    "index": 38,
+    "wpt_log": "wpt_dataset/sample_38_wpt.log",
+    "log_size_kb": 19134.5,
+    "gt_base": "0x19bf11000",
+    "gt_block": "0x19be00000",
+    "gt_N": 484,
+    "gt_indication": "Respiratory failure. Pneumonia.",
+    "collection_time_s": 21.09,
+    "timestamp": 1789770219.8910835
+  },
+  {
+    "index": 39,
+    "wpt_log": "wpt_dataset/sample_39_wpt.log",
+    "log_size_kb": 19127.2,
+    "gt_base": "0x19c7c3000",
+    "gt_block": "0x19c600000",
+    "gt_N": 594,
+    "gt_indication": "Acute respiratory failure",
+    "collection_time_s": 20.99,
+    "timestamp": 1789770240.8782592
+  },
+  {
+    "index": 41,
+    "wpt_log": "wpt_dataset/sample_41_wpt.log",
+    "log_size_kb": 19657.2,
+    "gt_base": "0x19bc1f000",
+    "gt_block": "0x19bc00000",
+    "gt_N": 304,
+    "gt_indication": "Follow up pneumonia and shortness of breath",
+    "collection_time_s": 20.72,
+    "timestamp": 1789770261.595554
+  }
+]

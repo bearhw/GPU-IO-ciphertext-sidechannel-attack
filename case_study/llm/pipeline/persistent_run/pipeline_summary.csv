@@ -1,0 +1,47 @@
+index,indication,gt_base,host_base,loc_strategy,loc_swaps,loc_match,blind,N_pad_est,verdict,recovered_labels,top1_match,any_match,multi_match_count,false_positive_count,false_positive_labels,elapsed_sec
+2,Shortness of breath and fever,0x2ad66b000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,168.0
+5,Shortness of breath and cough,0x2e1ff9000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,194.5
+9,Respiratory distress. Twin born at 33.1 weeks gestational age.,0x2ad713000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,196.6
+11,"MVC, complains of chest pain",0x2e22f2000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,168.7
+12,"Coughing, right chest pain",0x2c824e000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,821.3
+13,Shortness of breath,0x2b0cb8000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,167.2
+15,"Cough, right-sided chest pain, PICC line not flushing",0x2b0f51000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,140.4
+17,"Shortness of breath, congestion.",0x1a0557000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,141.2
+22,Cough and shortness of breath for 3 days.,0x2b0f3a000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,134.0
+24,Cough and congestion.,0x2b0f43000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,121.8
+26,Respiratory failure.,0x2b0879000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,142.0
+28,Chest pain.,0x2b0f17000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,133.2
+29,Cough. Congestion.,0x2b094f000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,143.3
+31,Prematurity. Respiratory distress.,0x2b0ee5000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,132.2
+32,Chest pain and throat pain.,0x2e87c1000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,128.7
+34,wheezing altered mental status,0x2e87bd000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,139.2
+36,Fever. Pancreatic cancer,0x2e8674000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,132.3
+38,Respiratory failure. Pneumonia.,0x2e86c2000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,136.1
+39,Acute respiratory failure,0x2e8675000,0x2e8675000,cluster@0x2e8675000,32,True,False,,LOC_SUCCESS,,False,False,0,0,,127.3
+41,Follow up pneumonia and shortness of breath,0x2e8674000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,122.1
+43,Weakness,0x2e7604000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,140.2
+44,Central line placement. Hypertension.,0x2e7604000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,216.5
+45,Shortness of breath and cough for 2 weeks,0x2e7609000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,133.4
+46,"8 pound weight loss over the past year, 1 month of cough, current smoker. History of COPD and abdominal aortic aneurysm.",0x2e760b000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,140.4
+47,PICC line placement.,0x2e7654000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,136.9
+50,Recent COVID-19 positive. Hyperglycemia.,0x2e7658000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,146.1
+51,Left anterior rib pain and abrasion; hit by tailgate of truck.,0x2e7656000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,137.6
+52,"Chest pain, pneumonia.",0x2e766e000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,141.4
+56,Shortness of breath and chest tightness for 3 weeks.,0x2e7876000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,133.2
+61,Fatigue and short of breath.,0x2e78d4000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,125.6
+62,"Severe shortness of breath, weakness.",0x2e789b000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,138.9
+63,Respiratory failure,0x2e78d3000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,138.8
+64,"COPD, pneumonia",0x2e78d2000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,133.1
+65,"Shortness of breath, fever, body aches, unknown COVID status.",0x2e7a36000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,140.8
+67,Premature neonate. Respiratory distress syndrome. On ventilator. Bilious emesis.,0x2e77ec000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,122.4
+69,Shortness of breath.,0x2e7911000,0x2e7912000,run-L@0x2e7912000,8,True,False,,LOC_SUCCESS,,False,False,0,0,,111.6
+70,Left-sided chest pain and shoulder pain. History of hypertension and asthma.,0x2e7916000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,135.4
+78,Back and flank pain. Shortness of breath.,0x2e7917000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,127.1
+79,"Fever, cough, shortness of breath, question pneumonia",0x2e7911000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,134.0
+83,"Cough, congestion",0x2e791a000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,135.8
+86,"Preop, mediastinal adenopathy, short of breath, smoking history",0x2e7918000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,127.7
+88,Short of breath.,0x2e791e000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,143.4
+92,"57-year-old male with respiratory failure, shortness of breath.",0x2e791f000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,134.3
+93,Pneumothorax. Follow-up.,0x2e791e000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,131.8
+96,Cough for 2 weeks.,0x2e7918000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,132.4
+97,"History of a spontaneous pneumothorax on the right, some chest pain and cough",0x2e7920000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,118.3

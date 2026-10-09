@@ -1,0 +1,14 @@
+index,indication,gt_base,host_base,loc_strategy,loc_swaps,loc_match,blind,N_pad_est,verdict,recovered_labels,top1_match,any_match,multi_match_count,false_positive_count,false_positive_labels,elapsed_sec
+2,Shortness of breath and fever,0x2c5912000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,163.5
+5,Shortness of breath and cough,0x1a2cd9000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,125.9
+9,Respiratory distress. Twin born at 33.1 weeks gestational age.,0x2d3312000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,126.7
+11,"MVC, complains of chest pain",0x2e60b5000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,159.0
+12,"Coughing, right chest pain",0x2e601a000,0x2e601b000,run-fast@0x2e601b000,27,True,False,160,NO_MATCH,,False,False,0,0,,152.6
+13,Shortness of breath,0x178fb7000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,651.0
+15,"Cough, right-sided chest pain, PICC line not flushing",0x2e8386000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,159.1
+17,"Shortness of breath, congestion.",0x2e8389000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,132.1
+22,Cough and shortness of breath for 3 days.,0x2df613000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,123.3
+24,Cough and congestion.,0x6bf427000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,120.8
+26,Respiratory failure.,0x6bf3fa000,0x6bf3fa000,run-R1A@0x6bf3fa000,33,True,False,396,MATCH, respiratory failure,False,False,1,1,respiratory failure,138.2
+28,Chest pain.,0x6bfa99000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,134.2
+29,Cough. Congestion.,0x6bf539000,,FAIL,40,False,False,,LOC_FAIL,,False,False,0,0,,129.3

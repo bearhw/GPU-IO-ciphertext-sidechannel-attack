@@ -1,12 +1,34 @@
 {
-  "status": "LOC_FAIL",
+  "index": 9,
+  "host_base": "0x480aa4000",
+  "gt_base": null,
+  "gt_indication": null,
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 464,
+      "ind_gpa": 19338514048,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
   "evaluation": {
-    "verdict": "LOC_FAIL",
+    "verdict": "MATCH",
     "top1_exact_match": false,
     "any_label_match": false,
-    "multi_match_count": 0,
-    "false_positive_labels": [],
-    "false_positive_count": 0,
-    "recovered_labels": []
-  }
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "Respiratory"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 22.9034321308136,
+  "timestamp": 1789416034.9711123,
+  "status": "SUCCESS"
 }

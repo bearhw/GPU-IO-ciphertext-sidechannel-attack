@@ -1,0 +1,16 @@
+{
+  "stage": 4,
+  "index": 8,
+  "target_class": "WRIST",
+  "shape": [
+    64,
+    224,
+    56
+  ],
+  "total_pages_used": 49,
+  "capture_fraction": 1.0,
+  "active_matches": 4013,
+  "match_density": 0.004998654735331632,
+  "npy_path": "/home/eun/open-science/case_study/mura/pipeline/xor_slice_8.npy",
+  "timestamp": 1790100195.2389586
+}

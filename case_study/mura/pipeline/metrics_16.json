@@ -1,0 +1,27 @@
+{
+  "stage": 5,
+  "index": 16,
+  "target_class": "ELBOW",
+  "predicted_class": "HUMERUS",
+  "confidence": 0.5798335075378418,
+  "top3": [
+    {
+      "class": "HUMERUS",
+      "prob": 0.5798335075378418
+    },
+    {
+      "class": "FINGER",
+      "prob": 0.133788600564003
+    },
+    {
+      "class": "SHOULDER",
+      "prob": 0.0803411602973938
+    }
+  ],
+  "is_correct": false,
+  "captured_pages": "0/49",
+  "captured_pages_count": 0,
+  "total_channel_pages": 49,
+  "capture_fraction": 0.0,
+  "timestamp": 1790031589.1753106
+}

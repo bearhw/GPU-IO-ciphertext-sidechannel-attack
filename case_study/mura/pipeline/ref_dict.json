@@ -1,9 +1,11 @@
 {
   "stage": 1,
-  "fixed_gpa": "0x140b3a000",
-  "fixed_gpa_int": 5380481024,
+  "fixed_gpa": "0x117e16000",
+  "fixed_gpa_int": 4695613440,
   "num_refs": 64,
   "available_refs_count": 64,
+  "usable_refs_count": 64,
+  "unusable_refs": [],
   "ref_list": [
     0,
     4,
@@ -71,5 +73,5 @@
     66
   ],
   "dict_dir": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura",
-  "timestamp": 1789317725.7045147
+  "timestamp": 1791475150.96774
 }

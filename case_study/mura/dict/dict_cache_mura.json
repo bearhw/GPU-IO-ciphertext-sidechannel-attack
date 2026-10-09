@@ -1,325 +1,251 @@
 {
-  "fixed_gpa": "0x140b3a000",
+  "fixed_gpa": "0x1111de000",
   "refs": {
     "0": {
-      "ref_gpa": "0x140b41000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_000.out"
+      "ref_gpa": "0x1227bb000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_000.out",
+      "verified": true
     },
     "4": {
-      "ref_gpa": "0x140b48000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_004.out"
+      "ref_gpa": "0x1111e0000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_004.out",
+      "verified": true
     },
     "1": {
-      "ref_gpa": "0x140b4f000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_001.out"
+      "ref_gpa": "0x1111e4000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_001.out",
+      "verified": true
     },
     "3": {
-      "ref_gpa": "0x140b57000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_003.out"
+      "ref_gpa": "0x1111e9000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_003.out",
+      "verified": true
     },
     "2": {
-      "ref_gpa": "0x140b5d000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_002.out"
+      "ref_gpa": "0x1111ed000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_002.out",
+      "verified": true
     },
     "5": {
-      "ref_gpa": "0x140b65000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_005.out"
+      "ref_gpa": "0x110c42000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_005.out",
+      "verified": true
     },
     "29": {
-      "ref_gpa": "0x140b6c000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_029.out"
+      "ref_gpa": "0x110c47000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_029.out",
+      "verified": true
     },
     "30": {
-      "ref_gpa": "0x140b73000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_030.out"
+      "ref_gpa": "0x110c4c000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_030.out",
+      "verified": true
     },
     "35": {
-      "ref_gpa": "0x140b7a000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_035.out"
+      "ref_gpa": "0x110c51000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_035.out",
+      "verified": true
     },
     "32": {
-      "ref_gpa": "0x140b81000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_032.out"
+      "ref_gpa": "0x110c55000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_032.out",
+      "verified": true
     },
     "34": {
-      "ref_gpa": "0x140b89000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_034.out"
+      "ref_gpa": "0x110c5a000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_034.out",
+      "verified": true
     },
     "33": {
-      "ref_gpa": "0x140b90000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_033.out"
+      "ref_gpa": "0x110c5f000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_033.out",
+      "verified": true
     },
     "31": {
-      "ref_gpa": "0x140b97000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_031.out"
+      "ref_gpa": "0x110c63000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_031.out",
+      "verified": true
     },
     "38": {
-      "ref_gpa": "0x140b9e000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_038.out"
+      "ref_gpa": "0x110c68000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_038.out",
+      "verified": true
     },
     "10": {
-      "ref_gpa": "0x1238c5000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_010.out"
+      "ref_gpa": "0x110c6d000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_010.out",
+      "verified": true
     },
     "28": {
-      "ref_gpa": "0x123875000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_028.out"
+      "ref_gpa": "0x110c71000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_028.out",
+      "verified": true
     },
     "9": {
-      "ref_gpa": "0x122bb4000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_009.out"
+      "ref_gpa": "0x110c7b000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_009.out",
+      "verified": true
     },
     "36": {
-      "ref_gpa": "0x122e0c000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_036.out"
+      "ref_gpa": "0x110c84000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_036.out",
+      "verified": true
     },
     "27": {
-      "ref_gpa": "0x122e03000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_027.out"
+      "ref_gpa": "0x108db9000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_027.out",
+      "verified": true
     },
     "11": {
-      "ref_gpa": "0x140bd4000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_011.out"
+      "ref_gpa": "0x108dbd000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_011.out",
+      "verified": true
     },
     "8": {
-      "ref_gpa": "0x1217dc000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_008.out"
+      "ref_gpa": "0x143ae2000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_008.out",
+      "verified": true
     },
     "37": {
-      "ref_gpa": "0x140b63000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_037.out"
+      "ref_gpa": "0x11962c000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_037.out",
+      "verified": true
     },
     "6": {
-      "ref_gpa": "0x140b3b000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_006.out"
+      "ref_gpa": "0x1111e1000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_006.out",
+      "verified": true
     },
     "7": {
-      "ref_gpa": "0x119ec2000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_007.out"
+      "ref_gpa": "0x108dab000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_007.out",
+      "verified": true
     },
     "26": {
-      "ref_gpa": "0x1238c9000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_026.out"
+      "ref_gpa": "0x110c4d000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_026.out",
+      "verified": true
     },
     "39": {
-      "ref_gpa": "0x140b79000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_039.out"
+      "ref_gpa": "0x1111ca000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_039.out",
+      "verified": true
     },
     "50": {
-      "ref_gpa": "0x140be1000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_050.out"
+      "ref_gpa": "0x1227b4000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_050.out",
+      "verified": true
     },
     "40": {
-      "ref_gpa": "0x140bb1000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_040.out"
+      "ref_gpa": "0x143bb1000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_040.out",
+      "verified": true
     },
     "25": {
-      "ref_gpa": "0x140be9000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_025.out"
+      "ref_gpa": "0x143b93000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_025.out",
+      "verified": true
     },
     "57": {
-      "ref_gpa": "0x140bb9000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_057.out"
+      "ref_gpa": "0x1244e1000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_057.out",
+      "verified": true
     },
     "41": {
-      "ref_gpa": "0x140b6b000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_041.out"
+      "ref_gpa": "0x1244e5000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_041.out",
+      "verified": true
     },
     "42": {
-      "ref_gpa": "0x1217d4000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_042.out"
+      "ref_gpa": "0x110c41000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_042.out",
+      "verified": true
     },
     "58": {
-      "ref_gpa": "0x148004000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_058.out"
+      "ref_gpa": "0x11963c000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_058.out",
+      "verified": true
     },
     "56": {
-      "ref_gpa": "0x14800d000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_056.out"
+      "ref_gpa": "0x110c91000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_056.out",
+      "verified": true
     },
     "43": {
-      "ref_gpa": "0x140ba6000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_043.out"
+      "ref_gpa": "0x1111ec000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_043.out",
+      "verified": true
     },
     "24": {
-      "ref_gpa": "0x140b97000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_024.out"
+      "ref_gpa": "0x143bd1000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_024.out",
+      "verified": true
     },
     "55": {
-      "ref_gpa": "0x140b27000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_055.out"
+      "ref_gpa": "0x143bdb000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_055.out",
+      "verified": true
     },
     "44": {
-      "ref_gpa": "0x140b99000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_044.out"
+      "ref_gpa": "0x110c51000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_044.out",
+      "verified": true
     },
     "59": {
-      "ref_gpa": "0x122bba000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_059.out"
+      "ref_gpa": "0x143ba4000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_059.out",
+      "verified": true
     },
     "54": {
-      "ref_gpa": "0x148014000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_054.out"
+      "ref_gpa": "0x110c62000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_054.out",
+      "verified": true
     },
     "45": {
-      "ref_gpa": "0x14802d000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_045.out"
-    },
-    "53": {
-      "ref_gpa": "0x148037000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_053.out"
-    },
-    "52": {
-      "ref_gpa": "0x140b58000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_052.out"
-    },
-    "205": {
-      "ref_gpa": "0x14803a000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_205.out"
-    },
-    "23": {
-      "ref_gpa": "0x140b84000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_023.out"
-    },
-    "46": {
-      "ref_gpa": "0x140bad000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_046.out"
-    },
-    "47": {
-      "ref_gpa": "0x1216ff000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_047.out"
-    },
-    "51": {
-      "ref_gpa": "0x140b59000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_051.out"
-    },
-    "49": {
-      "ref_gpa": "0x140bfb000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_049.out"
-    },
-    "60": {
-      "ref_gpa": "0x148085000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_060.out"
-    },
-    "22": {
-      "ref_gpa": "0x140b46000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_022.out"
-    },
-    "48": {
-      "ref_gpa": "0x140bf8000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_048.out"
-    },
-    "12": {
-      "ref_gpa": "0x140be2000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_012.out"
-    },
-    "21": {
-      "ref_gpa": "0x140bd4000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_021.out"
-    },
-    "61": {
-      "ref_gpa": "0x140b65000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_061.out"
-    },
-    "62": {
-      "ref_gpa": "0x1480a7000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_062.out"
-    },
-    "20": {
-      "ref_gpa": "0x140bf0000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_020.out"
-    },
-    "63": {
-      "ref_gpa": "0x119ec2000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_063.out"
-    },
-    "16": {
-      "ref_gpa": "0x140b6b000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_016.out"
-    },
-    "64": {
-      "ref_gpa": "0x14800d000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_064.out"
-    },
-    "13": {
-      "ref_gpa": "0x122bb6000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_013.out"
-    },
-    "65": {
-      "ref_gpa": "0x148080000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_065.out"
-    },
-    "19": {
-      "ref_gpa": "0x140b71000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_019.out"
-    },
-    "66": {
-      "ref_gpa": "0x140b9b000",
-      "fixed_gpa": "0x140b3a000",
-      "file": "./mura/dict_pages_mura/ref_066.out"
+      "ref_gpa": "0x110c59000",
+      "fixed_gpa": "0x1111de000",
+      "file": "/home/eun/open-science/case_study/mura/dict/dict_pages_mura/ref_045.out",
+      "verified": true
     }
   }
 }

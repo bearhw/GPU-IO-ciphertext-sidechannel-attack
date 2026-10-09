@@ -1,0 +1,27 @@
+{
+  "stage": 5,
+  "index": 8,
+  "target_class": "WRIST",
+  "predicted_class": "SHOULDER",
+  "confidence": 0.39480847120285034,
+  "top3": [
+    {
+      "class": "SHOULDER",
+      "prob": 0.39480847120285034
+    },
+    {
+      "class": "HUMERUS",
+      "prob": 0.17653495073318481
+    },
+    {
+      "class": "FINGER",
+      "prob": 0.17448174953460693
+    }
+  ],
+  "is_correct": false,
+  "captured_pages": "49/49",
+  "captured_pages_count": 49,
+  "total_channel_pages": 49,
+  "capture_fraction": 1.0,
+  "timestamp": 1790100196.080621
+}

@@ -1,0 +1,4 @@
+start,batch_base,batch_block,host_base,loc_block,loc_match,gt_rank,loc_swaps,rows,rows_recovered,elapsed_sec
+0,0x2c1d55000,0x2c1c00000,,,False,None,30,1,0,79.2
+1,0x2b357b000,0x2b3400000,0x2b357b000,0x2b3400000,True,5,30,1,0,89.9
+2,0x2b357b000,0x2b3400000,,,False,None,30,1,0,80.4

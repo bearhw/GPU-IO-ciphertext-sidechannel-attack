@@ -1,0 +1,27 @@
+{
+  "stage": 5,
+  "index": 3,
+  "target_class": "WRIST",
+  "predicted_class": "ELBOW",
+  "confidence": 0.5853343605995178,
+  "top3": [
+    {
+      "class": "ELBOW",
+      "prob": 0.5853343605995178
+    },
+    {
+      "class": "FOREARM",
+      "prob": 0.1482933610677719
+    },
+    {
+      "class": "HUMERUS",
+      "prob": 0.10961710661649704
+    }
+  ],
+  "is_correct": false,
+  "captured_pages": "49/49",
+  "captured_pages_count": 49,
+  "total_channel_pages": 49,
+  "capture_fraction": 1.0,
+  "timestamp": 1790099912.3722367
+}

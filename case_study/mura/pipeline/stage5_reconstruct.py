@@ -32,7 +32,7 @@ sys.path.insert(0, str(HERE))
 import common as c
 
 
-# ── Model Definition (XorSliceSENetV3) ───────────────────────────────────────
+# ── Model Definition (XorSliceSENet matching v2 checkpoint) ──────────────────
 class SELayer(nn.Module):
     def __init__(self, ch, reduction=16):
         super().__init__()
@@ -64,7 +64,7 @@ class SEResBlock(nn.Module):
         return F.relu(h + self.down(x), inplace=True)
 
 
-class XorSliceSENetV3(nn.Module):
+class XorSliceSENet(nn.Module):
     def __init__(self, num_classes=7, n_ref=64):
         super().__init__()
         self.stem = nn.Sequential(
@@ -86,18 +86,17 @@ class XorSliceSENetV3(nn.Module):
             nn.Dropout(0.4),
             nn.Linear(512, num_classes))
 
-    def forward(self, x, frac):
-        valid = (frac.clamp(min=1e-3) * c.XOR_ROWS * c.XOR_COLS)
-        stats = x.sum(dim=(2, 3)) / valid
+    def forward(self, x, sc):
+        stats = x.mean(dim=(2, 3))
         stats_feat = self.stats_head(stats)
         x = self.pool1(self.stem(x))
         x = self.layer1(x); x = self.layer2(x); x = self.layer3(x); x = self.layer4(x)
         sp_feat = self.gap(x).flatten(1)
-        return self.head(torch.cat([sp_feat, stats_feat, frac], dim=1))
+        return self.head(torch.cat([sp_feat, stats_feat, sc], dim=1))
 
 
 def run_stage5(index: int, output_dir: Path, mock: bool = False,
-               ckpt_path: Path = c.CHECKPOINT_V3) -> Dict:
+               ckpt_path: Path = c.CHECKPOINT_V2) -> Dict:
     """Execute Stage 5."""
     output_dir.mkdir(parents=True, exist_ok=True)
     features_json = output_dir / f"features_{index}.json"
@@ -130,17 +129,17 @@ def run_stage5(index: int, output_dir: Path, mock: bool = False,
 
     # 1. Classification
     device = torch.device("cpu")
-    model = XorSliceSENetV3(len(c.CLASSES), n_ref=c.NUM_REFS).to(device)
+    model = XorSliceSENet(len(c.CLASSES), n_ref=c.NUM_REFS).to(device)
     if ckpt_path.exists() and not mock:
         sd = torch.load(ckpt_path, map_location=device, weights_only=True)
-        model.load_state_dict(sd, strict=False)
+        model.load_state_dict(sd, strict=True)
     model.eval()
 
     x_t = torch.from_numpy(xor_slice).float().unsqueeze(0).to(device)
-    frac_t = torch.tensor([[frac]], dtype=torch.float32).to(device)
+    aspect_t = torch.tensor([[1.0]], dtype=torch.float32).to(device)
 
     with torch.no_grad():
-        logits = model(x_t, frac_t)
+        logits = model(x_t, aspect_t)
         probs = F.softmax(logits, dim=1)[0].cpu().numpy()
 
     pred_idx = int(np.argmax(probs))

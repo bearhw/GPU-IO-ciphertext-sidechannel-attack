@@ -51,7 +51,7 @@ def read_at_fixed(fixed_gpa: int, src_gpa: int, tag: str) -> bytes:
     return data
 
 
-def acquire_imagepad_reference(fixed_gpa: int, tries: int = 5) -> Tuple[bytes, Set[int]]:
+def acquire_imagepad_reference(fixed_gpa: int, tries: int = 15) -> Tuple[bytes, Set[int]]:
     """Acquire and validate <|image_pad|> reference page and confirmed 16B mask."""
     from mura_dict_build import acquire_gpa, drain_rxbuf
     zero_gpa = acquire_gpa(None)

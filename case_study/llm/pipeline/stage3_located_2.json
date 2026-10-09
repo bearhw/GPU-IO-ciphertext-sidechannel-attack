@@ -2,11 +2,11 @@
   "index": 2,
   "host_base": null,
   "loc_strategy": "FAIL",
-  "loc_swaps": 1000,
+  "loc_swaps": 0,
   "best_hits": 0,
   "loc_match": null,
-  "gt_base": "0x4a9142000",
-  "gt_indication": "Shortness of breath and fever",
+  "gt_base": null,
+  "gt_indication": null,
   "status": "LOC_FAIL",
-  "timestamp": 1789402469.9077902
+  "timestamp": 1789484352.6605117
 }

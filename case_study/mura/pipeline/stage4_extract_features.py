@@ -37,17 +37,38 @@ def load_ref_dictionary_patterns() -> Dict[int, List[bytes]]:
 
     for u8 in c.REF_U8_64:
         ref_file = dict_dir / f"ref_{u8:03d}.out"
-        chunks = []
-        if ref_file.exists():
-            raw = c.parse_dump(ref_file)
-            for j in range(c.CHUNKS_PER_PAGE):
-                chunks.append(raw[j * c.CHUNK_SIZE : (j + 1) * c.CHUNK_SIZE])
-        else:
-            # Fallback to computed normalized float32 pattern
-            expected_chunk = c.chunk16(u8, "R")
-            chunks = [expected_chunk] * c.CHUNKS_PER_PAGE
-        ref_patterns[u8] = chunks
+        if not ref_file.exists():
+            # A ref with no dump contributes nothing. The old fallback filled it
+            # with the computed plaintext pattern, which can never equal the
+            # ciphertext a dump holds, so it only cost comparisons — and made a
+            # partially built dictionary look complete.
+            continue
+        raw = c.parse_dump(ref_file)
+        ref_patterns[u8] = [raw[j * c.CHUNK_SIZE : (j + 1) * c.CHUNK_SIZE]
+                            for j in range(c.CHUNKS_PER_PAGE)]
+    if len(ref_patterns) < len(c.REF_U8_64):
+        print(f"[stage4] Using {len(ref_patterns)}/{len(c.REF_U8_64)} reference pages: "
+              f"{sorted(ref_patterns)}")
     return ref_patterns
+
+
+def count_page_matches(dump_path, ref_patterns: Dict[int, List[bytes]]) -> int:
+    """Reference-dictionary collisions in one dumped page.
+
+    Every ref was dumped at the same FIXED_GPA the victim page is swapped into, so
+    a chunk matches only when its plaintext equals that ref's injected pixel value
+    at the same intra-page offset. Real image pages collide often; unrelated guest
+    memory essentially never does, which is what Stage 3 probes on.
+    """
+    raw = c.parse_dump(Path(dump_path))
+    chunks = [raw[j * c.CHUNK_SIZE:(j + 1) * c.CHUNK_SIZE] for j in range(c.CHUNKS_PER_PAGE)]
+    zero = b"\x00" * c.CHUNK_SIZE
+    n = 0
+    for ref_list in ref_patterns.values():
+        for j, ch in enumerate(chunks):
+            if j < len(ref_list) and ch == ref_list[j] and ch != zero:
+                n += 1
+    return n
 
 
 def extract_xor_slice(dump_files: List[str], ref_patterns: Dict[int, List[bytes]]) -> Tuple[np.ndarray, float]:
