@@ -1,0 +1,174 @@
+{
+  "index": 206,
+  "host_base": "0x1a53b4000",
+  "gt_base": "0x1a53b4000",
+  "gt_indication": "Respiratory distress",
+  "recovered_labels": [
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 646,
+      "ind_gpa": 7067096112,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 648,
+      "ind_gpa": 7067096128,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 650,
+      "ind_gpa": 7067096144,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 652,
+      "ind_gpa": 7067096160,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 7067096176,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7067096192,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7067096208,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7067096224,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7067096240,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7067096256,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7067096272,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7067096288,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 670,
+      "ind_gpa": 7067096304,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 672,
+      "ind_gpa": 7067096320,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 674,
+      "ind_gpa": 7067096336,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 15,
+    "false_positive_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ],
+    "false_positive_count": 15,
+    "recovered_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.44480061531067,
+  "timestamp": 1792893906.4262195,
+  "status": "SUCCESS"
+}

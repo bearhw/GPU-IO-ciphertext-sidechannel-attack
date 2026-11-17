@@ -1,0 +1,144 @@
+{
+  "index": 133,
+  "host_base": "0x19d73f000",
+  "gt_base": "0x19d73f000",
+  "gt_indication": "Left chest pain. Patient complains of left sided chest pain for 3 weeks. History of smoking.",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 594,
+      "ind_gpa": 6936593040,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6936593040,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6936593040,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6936593056,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6936593056,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6936593056,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6936593072,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6936593072,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6936593072,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6936593088,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6936593088,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6936593088,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever."
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.21263551712036,
+  "timestamp": 1793054507.904018,
+  "status": "SUCCESS"
+}

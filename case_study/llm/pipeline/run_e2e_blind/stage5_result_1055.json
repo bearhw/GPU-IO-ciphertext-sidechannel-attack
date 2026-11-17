@@ -1,0 +1,50 @@
+{
+  "index": 1055,
+  "host_base": "0x1a45b5000",
+  "gt_base": "0x1a45b5000",
+  "gt_indication": "Shortness of breath. CABG.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 616,
+      "ind_gpa": 7052419904,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 7052419920,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 7052419936,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 17.043580055236816,
+  "timestamp": 1792929641.3330808,
+  "status": "SUCCESS"
+}

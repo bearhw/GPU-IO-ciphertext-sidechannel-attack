@@ -1,0 +1,204 @@
+{
+  "index": 1638,
+  "host_base": "0x1a6f0e000",
+  "gt_base": "0x1a6f0e000",
+  "gt_indication": "Right-sided PICC line placement. Colon cancer.",
+  "recovered_labels": [
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 362,
+      "ind_gpa": 7095774032,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7095774032,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7095774048,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7095774048,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7095774064,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7095774064,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7095774080,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7095774080,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7095774096,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7095774096,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7095774112,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7095774112,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7095774128,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7095774128,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7095774144,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7095774144,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7095774160,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7095774160,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.48233437538147,
+  "timestamp": 1792951360.979439,
+  "status": "SUCCESS"
+}

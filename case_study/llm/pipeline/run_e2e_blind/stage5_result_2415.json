@@ -1,0 +1,32 @@
+{
+  "index": 2415,
+  "host_base": "0x19ff54000",
+  "gt_base": "0x19ff53000",
+  "gt_indication": "COPD exacerbation.",
+  "recovered_labels": [
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 252,
+      "ind_gpa": 6978619360,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 17.54032588005066,
+  "timestamp": 1793302174.5274673,
+  "status": "SUCCESS"
+}

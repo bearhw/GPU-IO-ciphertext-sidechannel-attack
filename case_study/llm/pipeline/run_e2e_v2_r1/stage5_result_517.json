@@ -1,0 +1,198 @@
+{
+  "index": 517,
+  "host_base": "0x1a16c7000",
+  "gt_base": "0x1a16c7000",
+  "gt_indication": "Cough, chest congestion for 3 weeks",
+  "recovered_labels": [
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 464,
+      "ind_gpa": 7003209344,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 7003209344,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 7003209344,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7003209360,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7003209360,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7003209360,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7003209376,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7003209376,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7003209376,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7003209392,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7003209392,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7003209392,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 472,
+      "ind_gpa": 7003209408,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 472,
+      "ind_gpa": 7003209408,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 472,
+      "ind_gpa": 7003209408,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 474,
+      "ind_gpa": 7003209424,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 474,
+      "ind_gpa": 7003209424,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 474,
+      "ind_gpa": 7003209424,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.143665075302124,
+  "timestamp": 1793150767.0542367,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,124 @@
+{
+  "index": 3396,
+  "host_base": "0x1a25de000",
+  "gt_base": "0x1a25de000",
+  "gt_indication": "Ventilator dependent respiratory failure",
+  "recovered_labels": [
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 584,
+      "ind_gpa": 7019033152,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 586,
+      "ind_gpa": 7019033168,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 588,
+      "ind_gpa": 7019033184,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 590,
+      "ind_gpa": 7019033200,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 592,
+      "ind_gpa": 7019033216,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 7019033232,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 7019033248,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 7019033264,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 7019033280,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 7019033296,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 10,
+    "false_positive_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 17.442822217941284,
+  "timestamp": 1793028744.8079417,
+  "status": "SUCCESS"
+}

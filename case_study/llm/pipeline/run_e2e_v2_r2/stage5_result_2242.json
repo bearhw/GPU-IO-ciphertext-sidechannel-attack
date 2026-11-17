@@ -1,0 +1,224 @@
+{
+  "index": 2242,
+  "host_base": "0x13da66000",
+  "gt_base": "0x13da66000",
+  "gt_indication": "Cough x 6 months",
+  "recovered_labels": [
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 452,
+      "ind_gpa": 5329284640,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 452,
+      "ind_gpa": 5329284640,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 5329284656,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 5329284656,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5329284672,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5329284672,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5329284688,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5329284688,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5329284704,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5329284704,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5329284720,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5329284720,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5329284736,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5329284736,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5329284752,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5329284752,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5329284768,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5329284768,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5329284784,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5329284784,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever."
+    ],
+    "false_positive_count": 20,
+    "recovered_labels": [
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.469944477081299,
+  "timestamp": 1793407876.1096847,
+  "status": "SUCCESS"
+}

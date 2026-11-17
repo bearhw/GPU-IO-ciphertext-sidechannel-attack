@@ -1,0 +1,64 @@
+{
+  "index": 2751,
+  "host_base": "0x1a4bf2000",
+  "gt_base": "0x1a4bf2000",
+  "gt_indication": "COPD, tracheostomy patient, MAI infection, known large cavitary process in the right upper lobe.",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 558,
+      "ind_gpa": 7058960752,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7058960752,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7058960752,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7058960752,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.634881258010864,
+  "timestamp": 1793250473.0599546,
+  "status": "SUCCESS"
+}

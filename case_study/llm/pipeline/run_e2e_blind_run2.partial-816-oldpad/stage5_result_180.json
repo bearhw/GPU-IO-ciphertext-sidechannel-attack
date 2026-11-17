@@ -1,0 +1,360 @@
+{
+  "index": 180,
+  "host_base": "0x19c96a000",
+  "gt_base": "0x19c96a000",
+  "gt_indication": "Cough, fever",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " of breath",
+    " Cough",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 392,
+      "ind_gpa": 6922087488,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 392,
+      "ind_gpa": 6922087488,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 392,
+      "ind_gpa": 6922087488,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 394,
+      "ind_gpa": 6922087504,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 394,
+      "ind_gpa": 6922087504,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 394,
+      "ind_gpa": 6922087504,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 396,
+      "ind_gpa": 6922087520,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 396,
+      "ind_gpa": 6922087520,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 396,
+      "ind_gpa": 6922087520,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 398,
+      "ind_gpa": 6922087536,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 398,
+      "ind_gpa": 6922087536,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 398,
+      "ind_gpa": 6922087536,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 400,
+      "ind_gpa": 6922087552,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 400,
+      "ind_gpa": 6922087552,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 400,
+      "ind_gpa": 6922087552,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 402,
+      "ind_gpa": 6922087568,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 402,
+      "ind_gpa": 6922087568,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 402,
+      "ind_gpa": 6922087568,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 404,
+      "ind_gpa": 6922087584,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 404,
+      "ind_gpa": 6922087584,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 404,
+      "ind_gpa": 6922087584,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 406,
+      "ind_gpa": 6922087600,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 406,
+      "ind_gpa": 6922087600,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 406,
+      "ind_gpa": 6922087600,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 408,
+      "ind_gpa": 6922087616,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 408,
+      "ind_gpa": 6922087616,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 408,
+      "ind_gpa": 6922087616,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 410,
+      "ind_gpa": 6922087632,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 410,
+      "ind_gpa": 6922087632,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 410,
+      "ind_gpa": 6922087632,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 412,
+      "ind_gpa": 6922087648,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 412,
+      "ind_gpa": 6922087648,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 412,
+      "ind_gpa": 6922087648,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 414,
+      "ind_gpa": 6922087664,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 414,
+      "ind_gpa": 6922087664,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 414,
+      "ind_gpa": 6922087664,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 36,
+    "false_positive_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "of breath",
+      "Cough",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.937755823135376,
+  "timestamp": 1793055894.2013214,
+  "status": "SUCCESS"
+}

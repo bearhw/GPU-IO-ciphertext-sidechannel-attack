@@ -1,0 +1,104 @@
+{
+  "index": 895,
+  "host_base": "0x13fe8a000",
+  "gt_base": "0x13ff19000",
+  "gt_indication": "Short of breath and hemoptysis for 2 weeks",
+  "recovered_labels": [
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 278,
+      "ind_gpa": 5367179440,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 5367179456,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 5367179472,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 5367179488,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 5367179504,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 5367179520,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 5367179536,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 5367179552,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 17.092076539993286,
+  "timestamp": 1792925244.4352767,
+  "status": "SUCCESS"
+}

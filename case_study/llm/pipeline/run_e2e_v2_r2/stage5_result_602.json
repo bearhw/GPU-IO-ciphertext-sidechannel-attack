@@ -1,0 +1,32 @@
+{
+  "index": 602,
+  "host_base": "0x1a2441000",
+  "gt_base": "0x1a2440000",
+  "gt_indication": "Shortness of Breath/Dyspnea. Surgery 5 days ago.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 282,
+      "ind_gpa": 7017339088,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.560606002807617,
+  "timestamp": 1793342954.3479283,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 3013,
+  "host_base": "0x19671d000",
+  "gt_base": "0x19671d000",
+  "gt_indication": "Shortness of breath and wheezing",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 664,
+      "ind_gpa": 6819013824,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6819013840,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 14.993247985839844,
+  "timestamp": 1793257340.95158,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,44 @@
+{
+  "index": 3407,
+  "host_base": "0x1a2abb000",
+  "gt_base": "0x1a2abb000",
+  "gt_indication": "Fall with rib fracture and small pneumothorax.",
+  "recovered_labels": [
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 364,
+      "ind_gpa": 7024130912,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7024130928,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 17.918936491012573,
+  "timestamp": 1793029074.660449,
+  "status": "SUCCESS"
+}

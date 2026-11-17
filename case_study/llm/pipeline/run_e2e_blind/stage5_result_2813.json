@@ -1,0 +1,32 @@
+{
+  "index": 2813,
+  "host_base": "0x1a0476000",
+  "gt_base": "0x1a0475000",
+  "gt_indication": "Fever, shortness of breath, weakness",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 6984001584,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 20.137875080108643,
+  "timestamp": 1793005416.3139222,
+  "status": "SUCCESS"
+}

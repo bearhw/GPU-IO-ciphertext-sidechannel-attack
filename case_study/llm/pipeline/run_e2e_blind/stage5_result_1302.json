@@ -1,0 +1,184 @@
+{
+  "index": 1302,
+  "host_base": "0x1a08b4000",
+  "gt_base": "0x1a08b3000",
+  "gt_indication": "Left pneumothorax follow-up.",
+  "recovered_labels": [
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 274,
+      "ind_gpa": 6988449936,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6988449936,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6988449952,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6988449952,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6988449968,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6988449968,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6988449984,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6988449984,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6988450000,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6988450000,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6988450016,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6988450016,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6988450032,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6988450032,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6988450048,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6988450048,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ],
+    "false_positive_count": 16,
+    "recovered_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 20.472813606262207,
+  "timestamp": 1792942160.7176082,
+  "status": "SUCCESS"
+}

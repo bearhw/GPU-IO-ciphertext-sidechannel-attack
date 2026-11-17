@@ -1,0 +1,41 @@
+{
+  "index": 2172,
+  "host_base": "0x1a2c62000",
+  "gt_base": "0x1a2c62000",
+  "gt_indication": "Patient complains of shortness of breath. Decreased O2 saturation recorded in the emergency [HOSPITAL] with pneumonia 2 weeks ago.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 748,
+      "ind_gpa": 7025866592,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 750,
+      "ind_gpa": 7025866608,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.80383014678955,
+  "timestamp": 1793225301.9496865,
+  "status": "SUCCESS"
+}

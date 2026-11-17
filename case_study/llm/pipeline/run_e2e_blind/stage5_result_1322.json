@@ -1,0 +1,144 @@
+{
+  "index": 1322,
+  "host_base": "0x1a1005000",
+  "gt_base": "0x1a1005000",
+  "gt_indication": "Chest pain, altered mental status",
+  "recovered_labels": [
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 516,
+      "ind_gpa": 6996123680,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 516,
+      "ind_gpa": 6996123680,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 6996123696,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 6996123696,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 6996123712,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6996123728,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6996123744,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6996123760,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 6996123776,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6996123792,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6996123808,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6996123824,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 34.550968647003174,
+  "timestamp": 1792942874.315824,
+  "status": "SUCCESS"
+}

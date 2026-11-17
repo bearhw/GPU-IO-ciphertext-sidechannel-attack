@@ -1,0 +1,32 @@
+{
+  "index": 2144,
+  "host_base": "0x1a5c44000",
+  "gt_base": "0x1a5c44000",
+  "gt_indication": "Postop for CABG.",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 7076072176,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 15.145025253295898,
+  "timestamp": 1793223709.3936145,
+  "status": "SUCCESS"
+}

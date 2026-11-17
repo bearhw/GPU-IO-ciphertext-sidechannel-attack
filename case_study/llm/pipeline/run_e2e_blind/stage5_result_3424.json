@@ -1,0 +1,234 @@
+{
+  "index": 3424,
+  "host_base": "0x1a334b000",
+  "gt_base": "0x1a334b000",
+  "gt_indication": "Cough, chest pain and shortness of breath for a week.",
+  "recovered_labels": [
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 832,
+      "ind_gpa": 7033113088,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 834,
+      "ind_gpa": 7033113104,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 836,
+      "ind_gpa": 7033113120,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 838,
+      "ind_gpa": 7033113136,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 840,
+      "ind_gpa": 7033113152,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 842,
+      "ind_gpa": 7033113168,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 844,
+      "ind_gpa": 7033113184,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 846,
+      "ind_gpa": 7033113200,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 848,
+      "ind_gpa": 7033113216,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 850,
+      "ind_gpa": 7033113232,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 852,
+      "ind_gpa": 7033113248,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 854,
+      "ind_gpa": 7033113264,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 856,
+      "ind_gpa": 7033113280,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 858,
+      "ind_gpa": 7033113296,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 860,
+      "ind_gpa": 7033113312,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 862,
+      "ind_gpa": 7033113328,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 864,
+      "ind_gpa": 7033113344,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 866,
+      "ind_gpa": 7033113360,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 868,
+      "ind_gpa": 7033113376,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 870,
+      "ind_gpa": 7033113392,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 872,
+      "ind_gpa": 7033113408,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 21,
+    "false_positive_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 21,
+    "recovered_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 17.26614999771118,
+  "timestamp": 1793029551.7020662,
+  "status": "SUCCESS"
+}

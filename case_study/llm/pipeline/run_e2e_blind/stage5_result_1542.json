@@ -1,0 +1,104 @@
+{
+  "index": 1542,
+  "host_base": "0x1701cd000",
+  "gt_base": "0x1701cd000",
+  "gt_indication": "Left-sided chest pain. Asthma. History of pneumonia.",
+  "recovered_labels": [
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 520,
+      "ind_gpa": 6175907904,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6175907920,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6175907936,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6175907952,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 6175907968,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6175907984,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6175908000,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6175908016,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 34.00778675079346,
+  "timestamp": 1792948888.515737,
+  "status": "SUCCESS"
+}

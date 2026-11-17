@@ -1,0 +1,124 @@
+{
+  "index": 1187,
+  "host_base": "0x1a4f50000",
+  "gt_base": "0x1a4f50000",
+  "gt_indication": "Respiratory failure. Cardiac patient.",
+  "recovered_labels": [
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 7062489920,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7062489936,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7062489952,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7062489968,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7062489984,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7062490000,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7062490016,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7062490032,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7062490048,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7062490064,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 10,
+    "false_positive_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.202340364456177,
+  "timestamp": 1793178603.1764016,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,114 @@
+{
+  "index": 682,
+  "host_base": "0x19f50f000",
+  "gt_base": "0x19f50f000",
+  "gt_indication": "Left-sided chest pain. Nonsmoker.",
+  "recovered_labels": [
+    " Hypert",
+    " Hypert",
+    " Hypert",
+    " Hypert",
+    " Hypert",
+    " Hypert",
+    " Hypert",
+    " Hypert",
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 682,
+      "ind_gpa": 6967854416,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 684,
+      "ind_gpa": 6967854432,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 686,
+      "ind_gpa": 6967854448,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 688,
+      "ind_gpa": 6967854464,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 690,
+      "ind_gpa": 6967854480,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 692,
+      "ind_gpa": 6967854496,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 694,
+      "ind_gpa": 6967854512,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 696,
+      "ind_gpa": 6967854528,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 698,
+      "ind_gpa": 6967854544,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 9,
+    "false_positive_labels": [
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert",
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 18.755468368530273,
+  "timestamp": 1792912812.5820417,
+  "status": "SUCCESS"
+}

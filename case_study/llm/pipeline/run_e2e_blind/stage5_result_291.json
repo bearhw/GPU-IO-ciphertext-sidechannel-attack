@@ -1,0 +1,32 @@
+{
+  "index": 291,
+  "host_base": "0x1a6ef7000",
+  "gt_base": "0x1a6ef7000",
+  "gt_indication": "Cough, short of breath, body aches",
+  "recovered_labels": [
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7095679744,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 18.564247369766235,
+  "timestamp": 1792896133.1182466,
+  "status": "SUCCESS"
+}

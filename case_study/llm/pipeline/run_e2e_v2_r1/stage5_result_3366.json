@@ -1,0 +1,124 @@
+{
+  "index": 3366,
+  "host_base": "0x1a0756000",
+  "gt_base": "0x1a0756000",
+  "gt_indication": "Follow-up pneumothorax",
+  "recovered_labels": [
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 452,
+      "ind_gpa": 6987017760,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 6987017776,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 6987017792,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 6987017808,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6987017824,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6987017840,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6987017856,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6987017872,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6987017888,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6987017904,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 10,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.065656423568726,
+  "timestamp": 1793280221.8575537,
+  "status": "SUCCESS"
+}

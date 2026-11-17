@@ -1,0 +1,32 @@
+{
+  "index": 125,
+  "host_base": "0x19d5a2000",
+  "gt_base": "0x19d5a2000",
+  "gt_indication": "Acute respiratory failure.",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 612,
+      "ind_gpa": 6934901536,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 19.388585090637207,
+  "timestamp": 1793054335.5676599,
+  "status": "SUCCESS"
+}

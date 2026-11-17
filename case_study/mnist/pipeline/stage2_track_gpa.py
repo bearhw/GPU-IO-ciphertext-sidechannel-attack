@@ -29,8 +29,11 @@ BLIND_LINE_RE = re.compile(r'WRITE\s+gpa=0x([0-9a-fA-F]+)\s+ts=(\d+)')
 def spawn_holder(index: int, batch_size: int = 1, normalize: bool = False):
     """Start main_holder.py on guest stopping at HOLDER_READY gate."""
     holder = "main_holder_norm.py" if normalize else "main_holder.py"
+    # Forward the MNIST split to the guest: sudo drops the environment, so pass it
+    # explicitly via `env`. train capture -> MNIST_SPLIT=train, eval -> test (default).
+    split = os.environ.get("MNIST_SPLIT", "test")
     cmd = (f"cd ~/cc_uvm/pytorch_uvm310_test/mnist && "
-           f"sudo {c.GUEST_PY} -u {holder} "
+           f"sudo env MNIST_SPLIT={split} {c.GUEST_PY} -u {holder} "
            f"--no-accel --batch-size {batch_size} --epochs 1 --hold-batch {index}")
     proc = subprocess.Popen(
         c.SSH_BASE + [cmd],
@@ -84,8 +87,9 @@ def acquire_guest_gpa_direct(index: int, use_main: bool = True, normalize: bool 
         label, image_gpa, pixel_offset = release_holder(proc, index)
         return label, image_gpa, pixel_offset, proc
 
+    split = os.environ.get("MNIST_SPLIT", "test")
     cmd = (f"cd ~/cc_uvm/pytorch_uvm310_test/mnist && "
-           f"sudo {c.GUEST_PY} -u main_gpa_3.py --index {index}")
+           f"sudo env MNIST_SPLIT={split} {c.GUEST_PY} -u main_gpa_3.py --index {index}")
     proc = subprocess.Popen(
         c.SSH_BASE + [cmd],
         stdin=subprocess.PIPE, stdout=subprocess.PIPE,
@@ -275,6 +279,9 @@ def run_stage2(index: int, output_dir: Path, blind: bool = False,
 
     c.ensure_guest_suppressions()
 
+    # Write-tracking + 2MB block ranking latency (SEV-Step tracker arm -> harvest
+    # -> candidate ranking; includes waiting out the victim's batch inference).
+    _stage_t0 = time.time()
     if blind:
         label, gt_gpa, pixel_offset, candidates, guest_proc = track_image_gpa_blind(
             index, output_dir, settle=2, duration=duration, use_main=True,
@@ -337,8 +344,10 @@ def run_stage2(index: int, output_dir: Path, blind: bool = False,
         "blind_detected": blind_detected,
         "ground_truth_gpa": f"0x{gt_gpa:x}" if gt_gpa else None,
         "candidates": candidates,
+        "track_rank_time_sec": round(time.time() - _stage_t0, 4),
         "timestamp": time.time(),
     }
+    print(f"[stage2] Write-track + block-rank stage took {meta['track_rank_time_sec']:.2f}s")
     c.save_json(json_path, meta)
     print(f"[stage2] Saved tracking metadata → {json_path}")
 

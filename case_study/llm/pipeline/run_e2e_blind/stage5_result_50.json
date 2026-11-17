@@ -1,0 +1,304 @@
+{
+  "index": 50,
+  "host_base": "0x1a0bb6000",
+  "gt_base": "0x1a0bb6000",
+  "gt_indication": "Recent COVID-19 positive. Hyperglycemia.",
+  "recovered_labels": [
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " Shortness",
+    " pneumonia.",
+    " Follow-up",
+    " Shortness",
+    " pneumonia.",
+    " Follow-up",
+    " Shortness",
+    " pneumonia.",
+    " Follow-up",
+    " Shortness",
+    " pneumonia.",
+    " Follow-up",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 534,
+      "ind_gpa": 6991605936,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6991605952,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6991605968,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6991605984,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6991606000,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6991606016,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6991606032,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6991606048,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6991606064,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6991606080,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6991606080,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6991606080,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6991606096,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6991606096,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6991606096,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6991606112,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6991606112,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6991606112,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6991606128,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6991606128,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6991606128,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 6991606144,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6991606160,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 6991606176,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6991606192,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 6991606208,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 6991606224,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6991606240,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 28,
+    "false_positive_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ],
+    "false_positive_count": 28,
+    "recovered_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.002238035202026,
+  "timestamp": 1792889556.0800216,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 886,
+  "host_base": "0x1a54eb000",
+  "gt_base": "0x1a54eb000",
+  "gt_indication": "Possible pneumothorax.",
+  "recovered_labels": [
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 524,
+      "ind_gpa": 7068368992,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 18.858322858810425,
+  "timestamp": 1793086662.131444,
+  "status": "SUCCESS"
+}

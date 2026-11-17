@@ -1,0 +1,224 @@
+{
+  "index": 2336,
+  "host_base": "0x13d4dd000",
+  "gt_base": "0x13d4dd000",
+  "gt_indication": "chest pain; hx of smoking, copd, emphyzema; htn, and diabetes",
+  "recovered_labels": [
+    " PICC",
+    " Fever.",
+    " PICC",
+    " Fever.",
+    " PICC",
+    " CABG",
+    " COVID-",
+    " PICC",
+    " CABG",
+    " COVID-",
+    " PICC",
+    " CABG",
+    " COVID-",
+    " PICC",
+    " CABG",
+    " COVID-",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 514,
+      "ind_gpa": 5323481104,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 514,
+      "ind_gpa": 5323481104,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 5323481136,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 5323481136,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 5323481152,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 5323481152,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 5323481152,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5323481168,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5323481168,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5323481168,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 5323481184,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 5323481184,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 5323481184,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 5323481200,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 5323481200,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 5323481200,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 5323481216,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 5323481232,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5323481248,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5323481264,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "PICC",
+      "Fever.",
+      "PICC",
+      "Fever.",
+      "PICC",
+      "CABG",
+      "COVID-",
+      "PICC",
+      "CABG",
+      "COVID-",
+      "PICC",
+      "CABG",
+      "COVID-",
+      "PICC",
+      "CABG",
+      "COVID-",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC"
+    ],
+    "false_positive_count": 20,
+    "recovered_labels": [
+      "PICC",
+      "Fever.",
+      "PICC",
+      "Fever.",
+      "PICC",
+      "CABG",
+      "COVID-",
+      "PICC",
+      "CABG",
+      "COVID-",
+      "PICC",
+      "CABG",
+      "COVID-",
+      "PICC",
+      "CABG",
+      "COVID-",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 35.084288597106934,
+  "timestamp": 1792982381.3288293,
+  "status": "SUCCESS"
+}

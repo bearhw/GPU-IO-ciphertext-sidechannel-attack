@@ -1,0 +1,32 @@
+{
+  "index": 1697,
+  "host_base": "0x1a29df000",
+  "gt_base": "0x1a29de000",
+  "gt_indication": "Shortness of breath with exertion. Productive cough for 2 days. History of CHF and hypertension.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7023228960,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.767797708511353,
+  "timestamp": 1793201704.1811187,
+  "status": "SUCCESS"
+}

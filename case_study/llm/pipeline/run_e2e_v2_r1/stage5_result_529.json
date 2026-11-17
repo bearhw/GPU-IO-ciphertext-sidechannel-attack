@@ -1,0 +1,32 @@
+{
+  "index": 529,
+  "host_base": "0x1a19a1000",
+  "gt_base": "0x1a19a0000",
+  "gt_indication": "27 y/o M; motor vehicle collision with anterior chest pain.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 278,
+      "ind_gpa": 7006197936,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.752632141113281,
+  "timestamp": 1793151036.8105948,
+  "status": "SUCCESS"
+}

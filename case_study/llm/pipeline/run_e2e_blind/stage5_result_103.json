@@ -1,0 +1,154 @@
+{
+  "index": 103,
+  "host_base": "0x1a2d0b000",
+  "gt_base": "0x1a2d0b000",
+  "gt_indication": "Motor vehicle accident. Chest pain.",
+  "recovered_labels": [
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 758,
+      "ind_gpa": 7026558896,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 760,
+      "ind_gpa": 7026558912,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 762,
+      "ind_gpa": 7026558928,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 764,
+      "ind_gpa": 7026558944,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 766,
+      "ind_gpa": 7026558960,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 768,
+      "ind_gpa": 7026558976,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 770,
+      "ind_gpa": 7026558992,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 7026559008,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 7026559024,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 7026559040,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 778,
+      "ind_gpa": 7026559056,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 780,
+      "ind_gpa": 7026559072,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 782,
+      "ind_gpa": 7026559088,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 13,
+    "false_positive_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ],
+    "false_positive_count": 13,
+    "recovered_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.14936399459839,
+  "timestamp": 1792890900.8112946,
+  "status": "SUCCESS"
+}

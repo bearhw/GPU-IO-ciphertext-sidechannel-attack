@@ -1,0 +1,32 @@
+{
+  "index": 3381,
+  "host_base": "0x1a1416000",
+  "gt_base": "0x1a1415000",
+  "gt_indication": "Chest pain for 10 days",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 206,
+      "ind_gpa": 7000385136,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.451788425445557,
+  "timestamp": 1793280652.693796,
+  "status": "SUCCESS"
+}

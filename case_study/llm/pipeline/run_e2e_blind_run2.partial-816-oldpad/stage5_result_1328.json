@@ -1,0 +1,64 @@
+{
+  "index": 1328,
+  "host_base": "0x1a65c5000",
+  "gt_base": "0x1a65c5000",
+  "gt_indication": "Follow-up basilar pneumonia.",
+  "recovered_labels": [
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 536,
+      "ind_gpa": 7086039232,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 7086039232,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 7086039248,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 7086039248,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 18.821184158325195,
+  "timestamp": 1793102934.7174325,
+  "status": "SUCCESS"
+}

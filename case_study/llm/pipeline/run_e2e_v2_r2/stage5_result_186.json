@@ -1,0 +1,32 @@
+{
+  "index": 186,
+  "host_base": "0x1a0186000",
+  "gt_base": "0x1a0186000",
+  "gt_indication": "Chest pain; Two views of the chest in frontal and lateral projections are performed.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 560,
+      "ind_gpa": 6980923776,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.591598510742188,
+  "timestamp": 1793455747.9709241,
+  "status": "SUCCESS"
+}

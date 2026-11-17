@@ -1,0 +1,134 @@
+{
+  "index": 363,
+  "host_base": "0x1a10a3000",
+  "gt_base": "0x1a10a3000",
+  "gt_indication": "Status post CABG.",
+  "recovered_labels": [
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 6996769584,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6996769600,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6996769616,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6996769632,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6996769648,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6996769664,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6996769680,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6996769696,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6996769712,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6996769728,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6996769744,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 11,
+    "false_positive_labels": [
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure"
+    ],
+    "false_positive_count": 11,
+    "recovered_labels": [
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.321498394012451,
+  "timestamp": 1793332952.260036,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,74 @@
+{
+  "index": 204,
+  "host_base": "0x1a52a7000",
+  "gt_base": "0x1a52a6000",
+  "gt_indication": "Pre dialysis catheter placement; history of hypertension and diabetes and previous tobacco use.",
+  "recovered_labels": [
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 282,
+      "ind_gpa": 7065991376,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7065991392,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7065991408,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7065991424,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7065991440,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 5,
+    "false_positive_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ],
+    "false_positive_count": 5,
+    "recovered_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.392340898513794,
+  "timestamp": 1792893815.558934,
+  "status": "SUCCESS"
+}

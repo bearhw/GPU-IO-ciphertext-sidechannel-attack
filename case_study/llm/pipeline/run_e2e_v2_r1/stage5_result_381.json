@@ -1,0 +1,32 @@
+{
+  "index": 381,
+  "host_base": "0x1a6fa8000",
+  "gt_base": "0x1a6fa8000",
+  "gt_indication": "Cough. Prostate cancer. Fever. Chills.",
+  "recovered_labels": [
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 7096407072,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.789929628372192,
+  "timestamp": 1793144743.7851255,
+  "status": "SUCCESS"
+}

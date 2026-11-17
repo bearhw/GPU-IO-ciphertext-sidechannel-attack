@@ -1,0 +1,130 @@
+{
+  "index": 944,
+  "host_base": "0x170645000",
+  "gt_base": "0x170645000",
+  "gt_indication": "Hypertension; diaphoresis. Leg swelling and cough.",
+  "recovered_labels": [
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 522,
+      "ind_gpa": 6180593744,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6180593760,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6180593776,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 6180593792,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 6180593792,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6180593808,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6180593808,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6180593824,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6180593824,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6180593840,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6180593840,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 11,
+    "false_positive_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ],
+    "false_positive_count": 7,
+    "recovered_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 30.33840250968933,
+  "timestamp": 1793350770.8160906,
+  "status": "SUCCESS"
+}

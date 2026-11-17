@@ -1,0 +1,32 @@
+{
+  "index": 3102,
+  "host_base": "0x1a1558000",
+  "gt_base": "0x1a1558000",
+  "gt_indication": "Hypoxia. Sneezing.",
+  "recovered_labels": [
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 434,
+      "ind_gpa": 7001705872,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.201888084411621,
+  "timestamp": 1793442824.2608743,
+  "status": "SUCCESS"
+}

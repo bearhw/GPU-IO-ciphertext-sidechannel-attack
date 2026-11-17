@@ -1,0 +1,176 @@
+{
+  "index": 126,
+  "host_base": "0x1a0c6c000",
+  "gt_base": "0x1a0c6a000",
+  "gt_indication": "Left chest pain",
+  "recovered_labels": [
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 278,
+      "ind_gpa": 6992349360,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6992349360,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6992349376,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6992349376,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6992349392,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6992349392,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6992349408,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6992349408,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6992349424,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6992349424,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6992349440,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6992349440,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6992349456,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6992349456,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6992349472,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6992349472,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia."
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.40733003616333,
+  "timestamp": 1793285296.659124,
+  "status": "SUCCESS"
+}

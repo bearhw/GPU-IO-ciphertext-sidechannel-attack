@@ -1,0 +1,195 @@
+{
+  "index": 727,
+  "host_base": "0x19d9cb000",
+  "gt_base": "0x19d9cb000",
+  "gt_indication": "Cough and weakness",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 494,
+      "ind_gpa": 6939262832,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 494,
+      "ind_gpa": 6939262832,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 496,
+      "ind_gpa": 6939262848,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 496,
+      "ind_gpa": 6939262848,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 498,
+      "ind_gpa": 6939262864,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 498,
+      "ind_gpa": 6939262864,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 500,
+      "ind_gpa": 6939262880,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 500,
+      "ind_gpa": 6939262880,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 502,
+      "ind_gpa": 6939262896,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 502,
+      "ind_gpa": 6939262896,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 504,
+      "ind_gpa": 6939262912,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 504,
+      "ind_gpa": 6939262912,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 506,
+      "ind_gpa": 6939262928,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 506,
+      "ind_gpa": 6939262928,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 508,
+      "ind_gpa": 6939262944,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 508,
+      "ind_gpa": 6939262944,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 510,
+      "ind_gpa": 6939262960,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 510,
+      "ind_gpa": 6939262960,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 30.445875883102417,
+  "timestamp": 1793345631.517208,
+  "status": "SUCCESS"
+}

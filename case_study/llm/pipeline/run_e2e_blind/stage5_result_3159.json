@@ -1,0 +1,50 @@
+{
+  "index": 3159,
+  "host_base": "0x19d3be000",
+  "gt_base": "0x19d3be000",
+  "gt_indication": "Shortness of breath. Patient tested positive for COVID-03 November 10, 2002.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 6932918752,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6932918768,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 6932918816,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 19.248448848724365,
+  "timestamp": 1793019545.7828228,
+  "status": "SUCCESS"
+}

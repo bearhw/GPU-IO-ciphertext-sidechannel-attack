@@ -1,0 +1,384 @@
+{
+  "index": 2584,
+  "host_base": "0x19fbb5000",
+  "gt_base": "0x19fbb5000",
+  "gt_indication": "Respiratory distress. Meningitis.",
+  "recovered_labels": [
+    " cough.",
+    " wheez",
+    " CABG",
+    " COVID-",
+    " pneumoth",
+    " cough.",
+    " wheez",
+    " CABG",
+    " COVID-",
+    " pneumoth",
+    " cough.",
+    " wheez",
+    " CABG",
+    " COVID-",
+    " pneumoth",
+    " cough.",
+    " wheez",
+    " CABG",
+    " COVID-",
+    " pneumoth",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " Chest pain",
+    " wheez",
+    " Chest pain",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 536,
+      "ind_gpa": 6974824640,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6974824640,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6974824640,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6974824640,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6974824640,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6974824656,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6974824656,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6974824656,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6974824656,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6974824656,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974824672,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974824672,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974824672,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974824672,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974824672,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974824688,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974824688,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974824688,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974824688,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974824688,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6974824704,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6974824704,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6974824704,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6974824720,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6974824720,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6974824720,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6974824736,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6974824736,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6974824736,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6974824752,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6974824752,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6974824752,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974824768,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974824768,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974824784,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974824784,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 36,
+    "false_positive_labels": [
+      "cough.",
+      "wheez",
+      "CABG",
+      "COVID-",
+      "pneumoth",
+      "cough.",
+      "wheez",
+      "CABG",
+      "COVID-",
+      "pneumoth",
+      "cough.",
+      "wheez",
+      "CABG",
+      "COVID-",
+      "pneumoth",
+      "cough.",
+      "wheez",
+      "CABG",
+      "COVID-",
+      "pneumoth",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "Chest pain",
+      "wheez",
+      "Chest pain",
+      "wheez"
+    ],
+    "false_positive_count": 36,
+    "recovered_labels": [
+      "cough.",
+      "wheez",
+      "CABG",
+      "COVID-",
+      "pneumoth",
+      "cough.",
+      "wheez",
+      "CABG",
+      "COVID-",
+      "pneumoth",
+      "cough.",
+      "wheez",
+      "CABG",
+      "COVID-",
+      "pneumoth",
+      "cough.",
+      "wheez",
+      "CABG",
+      "COVID-",
+      "pneumoth",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "Chest pain",
+      "wheez",
+      "Chest pain",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.83417558670044,
+  "timestamp": 1793245239.8904853,
+  "status": "SUCCESS"
+}

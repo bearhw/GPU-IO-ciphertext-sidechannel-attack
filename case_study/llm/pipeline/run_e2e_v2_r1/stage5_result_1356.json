@@ -1,0 +1,138 @@
+{
+  "index": 1356,
+  "host_base": "0x19fcc7000",
+  "gt_base": "0x19fcc7000",
+  "gt_indication": "Cough and fever for 12 hr. Febrile seizure",
+  "recovered_labels": [
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 394,
+      "ind_gpa": 6975945808,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 394,
+      "ind_gpa": 6975945808,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 396,
+      "ind_gpa": 6975945824,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 396,
+      "ind_gpa": 6975945824,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 398,
+      "ind_gpa": 6975945840,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 398,
+      "ind_gpa": 6975945840,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 400,
+      "ind_gpa": 6975945856,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 400,
+      "ind_gpa": 6975945856,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 402,
+      "ind_gpa": 6975945872,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 402,
+      "ind_gpa": 6975945872,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 404,
+      "ind_gpa": 6975945888,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 404,
+      "ind_gpa": 6975945888,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 16.038315296173096,
+  "timestamp": 1793187538.2077785,
+  "status": "SUCCESS"
+}

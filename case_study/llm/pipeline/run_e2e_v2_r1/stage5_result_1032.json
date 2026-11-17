@@ -1,0 +1,294 @@
+{
+  "index": 1032,
+  "host_base": "0x13f44f000",
+  "gt_base": "0x13f44f000",
+  "gt_indication": "Fall, right lower rib pain.",
+  "recovered_labels": [
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " of breath",
+    "ough and",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 5356452672,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5356452672,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5356452672,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5356452688,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5356452688,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5356452688,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5356452704,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5356452704,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5356452704,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5356452720,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5356452720,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5356452720,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5356452736,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5356452736,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5356452736,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5356452752,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5356452752,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5356452752,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5356452768,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5356452768,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5356452768,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5356452784,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5356452784,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5356452784,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5356452800,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5356452800,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5356452800,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 27,
+    "false_positive_labels": [
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia."
+    ],
+    "false_positive_count": 27,
+    "recovered_labels": [
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "of breath",
+      "ough and",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.373681545257568,
+  "timestamp": 1793171347.0239093,
+  "status": "SUCCESS"
+}

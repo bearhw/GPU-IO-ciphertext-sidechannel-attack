@@ -1,0 +1,32 @@
+{
+  "index": 535,
+  "host_base": "0x1a073f000",
+  "gt_base": "0x1a073f000",
+  "gt_indication": "Acute respiratory failure, COPD, diabetes mellitus, CHF, COVID-19",
+  "recovered_labels": [
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 652,
+      "ind_gpa": 6986925152,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 18.83412766456604,
+  "timestamp": 1792907439.2188182,
+  "status": "SUCCESS"
+}

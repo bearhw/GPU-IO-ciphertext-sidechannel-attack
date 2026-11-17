@@ -1,0 +1,214 @@
+{
+  "index": 910,
+  "host_base": "0x1a8a42000",
+  "gt_base": "0x1a8a42000",
+  "gt_indication": "Productive cough and wheezing",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 650,
+      "ind_gpa": 7124300880,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 650,
+      "ind_gpa": 7124300880,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 652,
+      "ind_gpa": 7124300896,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 652,
+      "ind_gpa": 7124300896,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 7124300912,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 7124300912,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7124300928,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7124300928,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7124300944,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7124300944,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7124300960,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7124300960,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7124300976,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7124300976,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7124300992,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7124300992,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7124301008,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7124301008,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7124301024,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7124301024,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.348830461502075,
+  "timestamp": 1793349733.099879,
+  "status": "SUCCESS"
+}

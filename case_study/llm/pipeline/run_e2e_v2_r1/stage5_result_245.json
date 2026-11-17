@@ -1,0 +1,41 @@
+{
+  "index": 245,
+  "host_base": "0x19ef1d000",
+  "gt_base": "0x19ef1d000",
+  "gt_indication": "Cough and dizziness. Recent COVID-19 positive",
+  "recovered_labels": [
+    "ough and",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 550,
+      "ind_gpa": 6961619248,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6961619296,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.005452156066895,
+  "timestamp": 1793140010.0754943,
+  "status": "SUCCESS"
+}

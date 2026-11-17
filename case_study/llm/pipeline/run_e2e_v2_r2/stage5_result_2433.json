@@ -1,0 +1,32 @@
+{
+  "index": 2433,
+  "host_base": "0x1a2819000",
+  "gt_base": "0x1a2819000",
+  "gt_indication": "Chronic shortness of breath with headache cough for 1-2 days",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 620,
+      "ind_gpa": 7021372256,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.350051403045654,
+  "timestamp": 1793414076.749863,
+  "status": "SUCCESS"
+}

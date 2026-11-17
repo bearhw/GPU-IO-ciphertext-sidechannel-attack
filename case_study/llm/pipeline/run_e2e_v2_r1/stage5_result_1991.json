@@ -1,0 +1,41 @@
+{
+  "index": 1991,
+  "host_base": "0x1a30ba000",
+  "gt_base": "0x1a30ba000",
+  "gt_indication": "Follow-up COVID-19 pneumonia/ARDS.",
+  "recovered_labels": [
+    " Follow-up",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 568,
+      "ind_gpa": 7030419904,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 7030419920,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.77051568031311,
+  "timestamp": 1793219694.9659562,
+  "status": "SUCCESS"
+}

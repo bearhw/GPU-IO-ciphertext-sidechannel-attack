@@ -1,0 +1,2 @@
+date,split,index,mode,gpu,gt_class,gpu_pred,pred,correct,top3,n_cands,probe_choice,gt_overlap,gt_pages,dumped,base_off_est,base_off_gt,coverage,t_stage2,t_localize,t_dump,t_stage45,elapsed_sec,error
+2026-11-12 16:52:53,test,0,gt,True,cube,cube,cube,True,"[('cube', 1.0), ('sphere', 0.0), ('cylinder', 0.0)]",10,,148,148,148,2112,2112,"[0.5218, 0.832, 0.9205]",68.18,0.0,197.11,2.83,270.44,

@@ -1,0 +1,32 @@
+{
+  "index": 2477,
+  "host_base": "0x1a147d000",
+  "gt_base": "0x1a147d000",
+  "gt_indication": "Evaluate central line placement. Respiratory distress.",
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 7000810512,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 18.44893527030945,
+  "timestamp": 1792991453.9317985,
+  "status": "SUCCESS"
+}

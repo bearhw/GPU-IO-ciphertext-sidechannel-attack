@@ -1,0 +1,82 @@
+{
+  "index": 675,
+  "host_base": "0x1a456f000",
+  "gt_base": "0x1a456e000",
+  "gt_indication": "Mild shortness-of-breath with productive cough 6 months. History of smoking. Quit 25 years ago.",
+  "recovered_labels": [
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 290,
+      "ind_gpa": 7052130576,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7052130576,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7052130576,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7052130592,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7052130592,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7052130592,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.015764951705933,
+  "timestamp": 1793154296.735771,
+  "status": "SUCCESS"
+}

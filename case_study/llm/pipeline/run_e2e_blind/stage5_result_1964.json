@@ -1,0 +1,424 @@
+{
+  "index": 1964,
+  "host_base": "0x1a0de0000",
+  "gt_base": "0x1a0de0000",
+  "gt_indication": "Respiratory arrest. Intubated.",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 6993873728,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6993873728,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6993873728,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6993873728,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6993873744,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6993873744,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6993873744,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6993873744,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6993873760,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6993873760,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6993873760,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6993873760,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6993873776,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6993873776,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6993873776,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6993873776,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6993873792,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6993873792,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6993873792,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6993873792,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6993873808,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6993873808,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6993873808,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6993873808,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6993873824,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6993873824,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6993873824,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6993873824,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6993873840,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6993873840,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6993873840,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6993873840,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6993873856,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6993873856,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6993873856,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6993873856,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6993873872,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6993873872,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6993873872,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6993873872,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 40,
+    "false_positive_labels": [
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 40,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.00325322151184,
+  "timestamp": 1792967906.4556313,
+  "status": "SUCCESS"
+}

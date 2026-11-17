@@ -1,0 +1,32 @@
+{
+  "index": 665,
+  "host_base": "0x1a3788000",
+  "gt_base": "0x1a3788000",
+  "gt_indication": "Leg pain. Hypertension.",
+  "recovered_labels": [
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 526,
+      "ind_gpa": 7037554800,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 14.98085618019104,
+  "timestamp": 1793154163.004456,
+  "status": "SUCCESS"
+}

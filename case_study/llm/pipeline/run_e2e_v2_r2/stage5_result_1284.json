@@ -1,0 +1,137 @@
+{
+  "index": 1284,
+  "host_base": "0x1a06a2000",
+  "gt_base": "0x1a06a2000",
+  "gt_indication": "Cough. Asthma.",
+  "recovered_labels": [
+    " Cough",
+    " Cough",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " Cough",
+    " Cough",
+    " Cough",
+    " Cough",
+    " Cough",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 516,
+      "ind_gpa": 6986280992,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 6986281008,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 6986281024,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6986281040,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6986281056,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6986281072,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 6986281088,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6986281104,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6986281120,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6986281136,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6986281152,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6986281152,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ],
+    "false_positive_count": 5,
+    "recovered_labels": [
+      "Cough",
+      "Cough",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "Cough",
+      "Cough",
+      "Cough",
+      "Cough",
+      "Cough",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 30.863898992538452,
+  "timestamp": 1793363805.6861262,
+  "status": "SUCCESS"
+}

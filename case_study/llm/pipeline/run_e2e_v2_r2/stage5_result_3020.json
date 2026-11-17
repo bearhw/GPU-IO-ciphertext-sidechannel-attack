@@ -1,0 +1,41 @@
+{
+  "index": 3020,
+  "host_base": "0x1968af000",
+  "gt_base": "0x1968af000",
+  "gt_indication": "Shortness of breath. Recent esophagectomy.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 692,
+      "ind_gpa": 6820660640,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 694,
+      "ind_gpa": 6820660656,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.164350271224976,
+  "timestamp": 1793439408.2861226,
+  "status": "SUCCESS"
+}

@@ -422,6 +422,7 @@ SYMBOL_CRC(apic_backup, 0x08e81ee8, "");
 SYMBOL_CRC(my_idt_install_handler, 0xd5bb000f, "");
 SYMBOL_CRC(my_idt_prepare_apic_timer, 0x613cf9ed, "");
 SYMBOL_CRC(sev_step_config_mutex, 0xd91de72b, "");
+SYMBOL_CRC(sev_step_vcpu_pre_entry, 0x35a17f69, "");
 SYMBOL_CRC(global_sev_step_config, 0x5fb8deb8, "");
 SYMBOL_CRC(sev_step_is_single_stepping_active, 0x22c5ca50, "");
 SYMBOL_CRC(sev_step_get_rip, 0xf5132264, "");
@@ -960,4 +961,4 @@ __used __section("__versions") = {
 MODULE_INFO(depends, "ccp");
 
 
-MODULE_INFO(srcversion, "F7ECBB52577EA78BCD601B4");
+MODULE_INFO(srcversion, "B9404EFAA1D825A836166D8");

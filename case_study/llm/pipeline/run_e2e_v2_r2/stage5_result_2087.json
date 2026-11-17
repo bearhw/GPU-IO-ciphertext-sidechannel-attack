@@ -1,0 +1,44 @@
+{
+  "index": 2087,
+  "host_base": "0x198fba000",
+  "gt_base": "0x1a38c4000",
+  "gt_indication": "Constipation with abdominal pain. Cough",
+  "recovered_labels": [
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 304,
+      "ind_gpa": 6861597056,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 304,
+      "ind_gpa": 6861597056,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.71654462814331,
+  "timestamp": 1793400085.8249083,
+  "status": "SUCCESS"
+}

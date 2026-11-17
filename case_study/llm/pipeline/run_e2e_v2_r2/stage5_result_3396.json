@@ -1,0 +1,124 @@
+{
+  "index": 3396,
+  "host_base": "0x195fc2000",
+  "gt_base": "0x195fc2000",
+  "gt_indication": "Ventilator dependent respiratory failure",
+  "recovered_labels": [
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 584,
+      "ind_gpa": 6811300416,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 586,
+      "ind_gpa": 6811300432,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 588,
+      "ind_gpa": 6811300448,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 590,
+      "ind_gpa": 6811300464,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 592,
+      "ind_gpa": 6811300480,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6811300496,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6811300512,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6811300528,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6811300544,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 6811300560,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 10,
+    "false_positive_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.585272550582886,
+  "timestamp": 1793452608.392143,
+  "status": "SUCCESS"
+}

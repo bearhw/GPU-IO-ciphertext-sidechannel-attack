@@ -1,0 +1,144 @@
+{
+  "index": 1153,
+  "host_base": "0x1a31db000",
+  "gt_base": "0x1a31db000",
+  "gt_indication": "PICC placement.",
+  "recovered_labels": [
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 7031601952,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 7031601968,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 7031601984,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7031602000,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7031602016,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7031602032,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7031602048,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7031602064,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7031602080,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7031602096,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7031602112,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7031602128,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.587939977645874,
+  "timestamp": 1793177910.889515,
+  "status": "SUCCESS"
+}

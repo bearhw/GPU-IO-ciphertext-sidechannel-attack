@@ -1,0 +1,32 @@
+{
+  "index": 2038,
+  "host_base": "0x19a1eb000",
+  "gt_base": "0x1a3ad3000",
+  "gt_indication": "Hypoxia, CHF. Patient reports a hacking cough for 1 week. Hypertension, takes meds to control it. Pacemaker in 08766. Smoker for 50 years.",
+  "recovered_labels": [
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 300,
+      "ind_gpa": 6880672096,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.057973146438599,
+  "timestamp": 1793220665.7234833,
+  "status": "SUCCESS"
+}

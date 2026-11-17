@@ -1,0 +1,64 @@
+{
+  "index": 1216,
+  "host_base": "0x1a0c0e000",
+  "gt_base": "0x1a0c0e000",
+  "gt_indication": "Cough. Sore throat.",
+  "recovered_labels": [
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 6991964992,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6991965008,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6991965024,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6991965040,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 17.15947651863098,
+  "timestamp": 1793036910.3205018,
+  "status": "SUCCESS"
+}

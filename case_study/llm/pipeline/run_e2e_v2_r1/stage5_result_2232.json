@@ -1,0 +1,224 @@
+{
+  "index": 2232,
+  "host_base": "0x1a41da000",
+  "gt_base": "0x1a41da000",
+  "gt_indication": "Weakness for 7 days.",
+  "recovered_labels": [
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 650,
+      "ind_gpa": 7048377424,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 650,
+      "ind_gpa": 7048377424,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 652,
+      "ind_gpa": 7048377440,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 652,
+      "ind_gpa": 7048377440,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 7048377456,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 7048377456,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7048377472,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7048377472,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7048377488,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7048377488,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7048377504,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7048377504,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7048377520,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7048377520,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7048377536,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7048377536,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7048377552,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7048377552,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7048377568,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7048377568,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez"
+    ],
+    "false_positive_count": 20,
+    "recovered_labels": [
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.765100240707397,
+  "timestamp": 1793227571.2967625,
+  "status": "SUCCESS"
+}

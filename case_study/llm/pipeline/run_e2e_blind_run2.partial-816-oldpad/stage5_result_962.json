@@ -1,0 +1,20 @@
+{
+  "index": 962,
+  "host_base": "0x1a7a78000",
+  "gt_base": "0x1a7a78000",
+  "gt_indication": "Urethral retention. Follow-up right lower lobe atelectasis.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 19.807682037353516,
+  "timestamp": 1793088572.855553,
+  "status": "SUCCESS"
+}

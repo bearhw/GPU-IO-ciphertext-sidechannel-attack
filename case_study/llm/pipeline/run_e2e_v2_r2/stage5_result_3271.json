@@ -1,0 +1,124 @@
+{
+  "index": 3271,
+  "host_base": "0x1a23fd000",
+  "gt_base": "0x1a23fd000",
+  "gt_indication": "Respiratory failure. Hypoxia.",
+  "recovered_labels": [
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 650,
+      "ind_gpa": 7017063504,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 652,
+      "ind_gpa": 7017063520,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 7017063536,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7017063552,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7017063568,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7017063584,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7017063600,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7017063616,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7017063632,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7017063648,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 10,
+    "false_positive_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.218945264816284,
+  "timestamp": 1793448209.6234486,
+  "status": "SUCCESS"
+}

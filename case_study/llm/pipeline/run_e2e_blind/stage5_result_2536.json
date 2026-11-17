@@ -1,0 +1,32 @@
+{
+  "index": 2536,
+  "host_base": "0x1a1ccd000",
+  "gt_base": "0x1a1ccd000",
+  "gt_indication": "Right chest tube removed. COVID-19 negative",
+  "recovered_labels": [
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 7009526800,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 17.616426944732666,
+  "timestamp": 1792993642.8930516,
+  "status": "SUCCESS"
+}

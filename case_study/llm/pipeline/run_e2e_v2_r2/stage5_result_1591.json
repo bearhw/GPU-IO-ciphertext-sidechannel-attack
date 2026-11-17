@@ -1,0 +1,32 @@
+{
+  "index": 1591,
+  "host_base": "0x1a2a59000",
+  "gt_base": "0x1a2a59000",
+  "gt_indication": "Right pneumothorax and shortness of breath.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 616,
+      "ind_gpa": 7023731520,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 15.800618171691895,
+  "timestamp": 1793377838.0098107,
+  "status": "SUCCESS"
+}

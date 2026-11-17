@@ -1,0 +1,204 @@
+{
+  "index": 1709,
+  "host_base": "0x1a4e16000",
+  "gt_base": "0x1a4e16000",
+  "gt_indication": "Fall. Left posterior rib pain.",
+  "recovered_labels": [
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 7061203776,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 7061203776,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7061203792,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7061203792,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7061203808,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7061203808,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7061203824,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7061203824,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7061203840,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7061203840,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7061203856,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7061203856,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7061203872,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7061203872,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7061203888,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7061203888,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7061203904,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7061203904,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.602778196334839,
+  "timestamp": 1793380591.0877929,
+  "status": "SUCCESS"
+}

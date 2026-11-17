@@ -1,0 +1,32 @@
+{
+  "index": 1424,
+  "host_base": "0x1a0b73000",
+  "gt_base": "0x1a0b73000",
+  "gt_indication": "Status post motor vehicle collision, with chest pain.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 490,
+      "ind_gpa": 6991331152,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.606373071670532,
+  "timestamp": 1793191732.2836714,
+  "status": "SUCCESS"
+}

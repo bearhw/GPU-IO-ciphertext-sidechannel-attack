@@ -1,0 +1,244 @@
+{
+  "index": 1668,
+  "host_base": "0x1a217e000",
+  "gt_base": "0x1a217d000",
+  "gt_indication": "Asthma. Chest pain.",
+  "recovered_labels": [
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 272,
+      "ind_gpa": 7014443136,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 7014443136,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 7014443152,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 7014443152,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 7014443168,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 7014443168,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7014443184,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7014443184,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7014443200,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7014443200,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7014443216,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7014443216,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7014443232,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7014443232,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7014443248,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7014443248,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7014443264,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7014443264,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7014443280,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7014443280,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7014443296,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7014443296,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 22,
+    "false_positive_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ],
+    "false_positive_count": 22,
+    "recovered_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.21747612953186,
+  "timestamp": 1793200992.1176236,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,54 @@
+{
+  "index": 1095,
+  "host_base": "0x1a5ac7000",
+  "gt_base": "0x1a5ac6000",
+  "gt_indication": "Acute onset of generalized chest pain and syncope. Initial encounter.",
+  "recovered_labels": [
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 288,
+      "ind_gpa": 7074511104,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7074511120,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7074511136,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 3,
+    "false_positive_labels": [
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 3,
+    "recovered_labels": [
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 16.57574987411499,
+  "timestamp": 1792930586.4478981,
+  "status": "SUCCESS"
+}

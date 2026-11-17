@@ -1,0 +1,32 @@
+{
+  "index": 1120,
+  "host_base": "0x19a9e1000",
+  "gt_base": "0x19a9e1000",
+  "gt_indication": "wheezing/short of breath.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 6889020160,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 14.726349830627441,
+  "timestamp": 1793175984.7959206,
+  "status": "SUCCESS"
+}

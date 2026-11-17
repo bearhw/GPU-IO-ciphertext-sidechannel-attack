@@ -1,0 +1,32 @@
+{
+  "index": 1321,
+  "host_base": "0x1a0f76000",
+  "gt_base": "0x1a0f76000",
+  "gt_indication": "Severe chest pain for 30 minutes. Some shortness of breath. Ex-smoker.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 458,
+      "ind_gpa": 6995537488,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 19.107252836227417,
+  "timestamp": 1792942810.6953993,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,95 @@
+{
+  "index": 1584,
+  "host_base": "0x1acade000",
+  "gt_base": "0x1acade000",
+  "gt_indication": "Cough, fever and fatigue.",
+  "recovered_labels": [
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 7192046400,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 7192046400,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7192046416,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7192046416,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7192046432,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7192046432,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7192046448,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7192046448,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 8,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 16.847816467285156,
+  "timestamp": 1793110550.383824,
+  "status": "SUCCESS"
+}

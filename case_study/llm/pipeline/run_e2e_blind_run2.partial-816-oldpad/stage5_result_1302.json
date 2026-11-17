@@ -1,0 +1,184 @@
+{
+  "index": 1302,
+  "host_base": "0x19a184000",
+  "gt_base": "0x19a183000",
+  "gt_indication": "Left pneumothorax follow-up.",
+  "recovered_labels": [
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 274,
+      "ind_gpa": 6880250000,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6880250000,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6880250016,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6880250016,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6880250032,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6880250032,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6880250048,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6880250048,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6880250064,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6880250064,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6880250080,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6880250080,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6880250096,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6880250096,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6880250112,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6880250112,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez"
+    ],
+    "false_positive_count": 16,
+    "recovered_labels": [
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 20.345038175582886,
+  "timestamp": 1793101967.3145475,
+  "status": "SUCCESS"
+}

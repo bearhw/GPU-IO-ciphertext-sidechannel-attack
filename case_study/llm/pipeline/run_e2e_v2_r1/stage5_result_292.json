@@ -1,0 +1,41 @@
+{
+  "index": 292,
+  "host_base": "0x1a0235000",
+  "gt_base": "0x1a0235000",
+  "gt_indication": "Left lower leg cramps and shortness of breath. Left ankle and foot swelling for 2 days. Initial encounter.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 698,
+      "ind_gpa": 6981641680,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 700,
+      "ind_gpa": 6981641696,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.327085971832275,
+  "timestamp": 1793142336.2781253,
+  "status": "SUCCESS"
+}

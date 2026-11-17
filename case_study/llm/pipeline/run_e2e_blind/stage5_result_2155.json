@@ -1,0 +1,32 @@
+{
+  "index": 2155,
+  "host_base": "0x19d6fc000",
+  "gt_base": "0x19d6fb000",
+  "gt_indication": "Patient was in a motor vehicle collision today and is complaining of chest wall and sternal pain with associated shortness of breath, no pre-existing underlying cardiopulmonary problems, smoker.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 288,
+      "ind_gpa": 6936316160,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 20.50891137123108,
+  "timestamp": 1792974123.8837,
+  "status": "SUCCESS"
+}

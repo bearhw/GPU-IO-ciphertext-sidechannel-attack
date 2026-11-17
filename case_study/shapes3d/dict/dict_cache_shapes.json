@@ -1,0 +1,581 @@
+{
+  "fixed_gpa": "0x148b1f000",
+  "refs": {
+    "R00": {
+      "ref_gpa": "0x11773f000",
+      "ch": "R",
+      "pixels": [
+        153,
+        153,
+        153,
+        153
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R00.out",
+      "verified": true
+    },
+    "R01": {
+      "ref_gpa": "0x117733000",
+      "ch": "R",
+      "pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R01.out",
+      "verified": true
+    },
+    "R02": {
+      "ref_gpa": "0x117720000",
+      "ch": "R",
+      "pixels": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R02.out",
+      "verified": true
+    },
+    "R03": {
+      "ref_gpa": "0x117725000",
+      "ch": "R",
+      "pixels": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R03.out",
+      "verified": true
+    },
+    "R04": {
+      "ref_gpa": "0x1158fa000",
+      "ch": "R",
+      "pixels": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R04.out",
+      "verified": true
+    },
+    "R05": {
+      "ref_gpa": "0x114c03000",
+      "ch": "R",
+      "pixels": [
+        254,
+        254,
+        254,
+        254
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R05.out",
+      "verified": true
+    },
+    "R06": {
+      "ref_gpa": "0x114c08000",
+      "ch": "R",
+      "pixels": [
+        51,
+        51,
+        51,
+        51
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R06.out",
+      "verified": true
+    },
+    "R07": {
+      "ref_gpa": "0x114c0d000",
+      "ch": "R",
+      "pixels": [
+        152,
+        152,
+        152,
+        152
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R07.out",
+      "verified": true
+    },
+    "R08": {
+      "ref_gpa": "0x114c11000",
+      "ch": "R",
+      "pixels": [
+        154,
+        154,
+        154,
+        154
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R08.out",
+      "verified": true
+    },
+    "R09": {
+      "ref_gpa": "0x114c1b000",
+      "ch": "R",
+      "pixels": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R09.out",
+      "verified": true
+    },
+    "R10": {
+      "ref_gpa": "0x114c20000",
+      "ch": "R",
+      "pixels": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R10.out",
+      "verified": true
+    },
+    "R11": {
+      "ref_gpa": "0x114c24000",
+      "ch": "R",
+      "pixels": [
+        47,
+        47,
+        47,
+        47
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R11.out",
+      "verified": true
+    },
+    "R12": {
+      "ref_gpa": "0x114c29000",
+      "ch": "R",
+      "pixels": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R12.out",
+      "verified": true
+    },
+    "R13": {
+      "ref_gpa": "0x114c2e000",
+      "ch": "R",
+      "pixels": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R13.out",
+      "verified": true
+    },
+    "R14": {
+      "ref_gpa": "0x114c33000",
+      "ch": "R",
+      "pixels": [
+        54,
+        54,
+        54,
+        54
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R14.out",
+      "verified": true
+    },
+    "R15": {
+      "ref_gpa": "0x114c3c000",
+      "ch": "R",
+      "pixels": [
+        53,
+        53,
+        53,
+        53
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_R15.out",
+      "verified": true
+    },
+    "G00": {
+      "ref_gpa": "0x114c41000",
+      "ch": "G",
+      "pixels": [
+        226,
+        226,
+        226,
+        226
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G00.out",
+      "verified": true
+    },
+    "G01": {
+      "ref_gpa": "0x114c46000",
+      "ch": "G",
+      "pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G01.out",
+      "verified": true
+    },
+    "G02": {
+      "ref_gpa": "0x11773a000",
+      "ch": "G",
+      "pixels": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G02.out",
+      "verified": true
+    },
+    "G03": {
+      "ref_gpa": "0x117584000",
+      "ch": "G",
+      "pixels": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G03.out",
+      "verified": true
+    },
+    "G04": {
+      "ref_gpa": "0x117721000",
+      "ch": "G",
+      "pixels": [
+        254,
+        254,
+        254,
+        254
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G04.out",
+      "verified": true
+    },
+    "G05": {
+      "ref_gpa": "0x117725000",
+      "ch": "G",
+      "pixels": [
+        225,
+        225,
+        225,
+        225
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G05.out",
+      "verified": true
+    },
+    "G06": {
+      "ref_gpa": "0x1158aa000",
+      "ch": "G",
+      "pixels": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G06.out",
+      "verified": true
+    },
+    "G07": {
+      "ref_gpa": "0x117594000",
+      "ch": "G",
+      "pixels": [
+        224,
+        224,
+        224,
+        224
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G07.out",
+      "verified": true
+    },
+    "G08": {
+      "ref_gpa": "0x114ca1000",
+      "ch": "G",
+      "pixels": [
+        227,
+        227,
+        227,
+        227
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G08.out",
+      "verified": true
+    },
+    "G09": {
+      "ref_gpa": "0x114c0b000",
+      "ch": "G",
+      "pixels": [
+        242,
+        242,
+        242,
+        242
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G09.out",
+      "verified": true
+    },
+    "G10": {
+      "ref_gpa": "0x117729000",
+      "ch": "G",
+      "pixels": [
+        253,
+        253,
+        253,
+        253
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G10.out",
+      "verified": true
+    },
+    "G11": {
+      "ref_gpa": "0x114c13000",
+      "ch": "G",
+      "pixels": [
+        241,
+        241,
+        241,
+        241
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G11.out",
+      "verified": true
+    },
+    "G12": {
+      "ref_gpa": "0x1158f0000",
+      "ch": "G",
+      "pixels": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G12.out",
+      "verified": true
+    },
+    "G13": {
+      "ref_gpa": "0x1158f5000",
+      "ch": "G",
+      "pixels": [
+        255,
+        255,
+        255,
+        254
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G13.out",
+      "verified": true
+    },
+    "G14": {
+      "ref_gpa": "0x114c19000",
+      "ch": "G",
+      "pixels": [
+        235,
+        235,
+        235,
+        235
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G14.out",
+      "verified": true
+    },
+    "G15": {
+      "ref_gpa": "0x114c53000",
+      "ch": "G",
+      "pixels": [
+        255,
+        255,
+        254,
+        254
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_G15.out",
+      "verified": true
+    },
+    "B00": {
+      "ref_gpa": "0x122f18000",
+      "ch": "B",
+      "pixels": [
+        249,
+        249,
+        249,
+        249
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B00.out",
+      "verified": true
+    },
+    "B01": {
+      "ref_gpa": "0x114c2b000",
+      "ch": "B",
+      "pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B01.out",
+      "verified": true
+    },
+    "B02": {
+      "ref_gpa": "0x114cd1000",
+      "ch": "B",
+      "pixels": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B02.out",
+      "verified": true
+    },
+    "B03": {
+      "ref_gpa": "0x114cdc000",
+      "ch": "B",
+      "pixels": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B03.out",
+      "verified": true
+    },
+    "B04": {
+      "ref_gpa": "0x116f29000",
+      "ch": "B",
+      "pixels": [
+        254,
+        254,
+        254,
+        254
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B04.out",
+      "verified": true
+    },
+    "B05": {
+      "ref_gpa": "0x114c5b000",
+      "ch": "B",
+      "pixels": [
+        248,
+        248,
+        248,
+        248
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B05.out",
+      "verified": true
+    },
+    "B06": {
+      "ref_gpa": "0x114c79000",
+      "ch": "B",
+      "pixels": [
+        253,
+        253,
+        253,
+        253
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B06.out",
+      "verified": true
+    },
+    "B07": {
+      "ref_gpa": "0x114cc4000",
+      "ch": "B",
+      "pixels": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B07.out",
+      "verified": true
+    },
+    "B08": {
+      "ref_gpa": "0x114c41000",
+      "ch": "B",
+      "pixels": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B08.out",
+      "verified": true
+    },
+    "B09": {
+      "ref_gpa": "0x114ce3000",
+      "ch": "B",
+      "pixels": [
+        251,
+        251,
+        251,
+        251
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B09.out",
+      "verified": true
+    },
+    "B10": {
+      "ref_gpa": "0x114c71000",
+      "ch": "B",
+      "pixels": [
+        252,
+        252,
+        252,
+        252
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B10.out",
+      "verified": true
+    },
+    "B11": {
+      "ref_gpa": "0x114cbd000",
+      "ch": "B",
+      "pixels": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B11.out",
+      "verified": true
+    },
+    "B12": {
+      "ref_gpa": "0x114cab000",
+      "ch": "B",
+      "pixels": [
+        242,
+        242,
+        242,
+        242
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B12.out",
+      "verified": true
+    },
+    "B13": {
+      "ref_gpa": "0x14ac11000",
+      "ch": "B",
+      "pixels": [
+        241,
+        241,
+        241,
+        241
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B13.out",
+      "verified": true
+    },
+    "B14": {
+      "ref_gpa": "0x14ac2c000",
+      "ch": "B",
+      "pixels": [
+        255,
+        255,
+        255,
+        254
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B14.out",
+      "verified": true
+    },
+    "B15": {
+      "ref_gpa": "0x114cfb000",
+      "ch": "B",
+      "pixels": [
+        246,
+        246,
+        246,
+        246
+      ],
+      "file": "/home/eun/open-science/case_study/shapes3d/dict/dict_pages_shapes/ref_B15.out",
+      "verified": true
+    }
+  }
+}

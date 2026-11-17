@@ -1,0 +1,34 @@
+{
+  "index": 12,
+  "host_base": "0x19ff3b000",
+  "gt_base": null,
+  "gt_indication": null,
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 6978517760,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "chest pain"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 19.015641689300537,
+  "timestamp": 1792869540.352147,
+  "status": "SUCCESS"
+}

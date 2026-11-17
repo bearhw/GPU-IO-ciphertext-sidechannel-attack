@@ -1,0 +1,32 @@
+{
+  "index": 230,
+  "host_base": "0x1a5aa8000",
+  "gt_base": "0x1a5aa8000",
+  "gt_indication": "Cough, wheezing, rapid heart rate",
+  "recovered_labels": [
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 316,
+      "ind_gpa": 7074384352,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 18.44785714149475,
+  "timestamp": 1792894520.543945,
+  "status": "SUCCESS"
+}

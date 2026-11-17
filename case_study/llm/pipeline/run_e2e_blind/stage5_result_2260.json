@@ -1,0 +1,41 @@
+{
+  "index": 2260,
+  "host_base": "0x1a304b000",
+  "gt_base": "0x1a304b000",
+  "gt_indication": "Shortness of breath. Right lower extremity swelling. Congestive heart failure. Coronary artery disease.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 404,
+      "ind_gpa": 7029963936,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 406,
+      "ind_gpa": 7029963952,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 19.002275228500366,
+  "timestamp": 1792978449.1275272,
+  "status": "SUCCESS"
+}

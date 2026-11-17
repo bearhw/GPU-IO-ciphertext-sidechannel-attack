@@ -1,0 +1,32 @@
+{
+  "index": 15,
+  "host_base": "0x19fe4c000",
+  "gt_base": "0x19fe4c000",
+  "gt_indication": "Cough, right-sided chest pain, PICC line not flushing",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 576,
+      "ind_gpa": 6977540608,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 19.23387622833252,
+  "timestamp": 1792878175.9873228,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,50 @@
+{
+  "index": 3365,
+  "host_base": "0x1ac45b000",
+  "gt_base": "0x1ac45b000",
+  "gt_indication": "Dry cough, shortness of breath, dizziness and weakness for 2 weeks",
+  "recovered_labels": [
+    " cough,",
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 700,
+      "ind_gpa": 7185221088,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 702,
+      "ind_gpa": 7185221104,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 704,
+      "ind_gpa": 7185221120,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,",
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.303044080734253,
+  "timestamp": 1793296973.208133,
+  "status": "SUCCESS"
+}

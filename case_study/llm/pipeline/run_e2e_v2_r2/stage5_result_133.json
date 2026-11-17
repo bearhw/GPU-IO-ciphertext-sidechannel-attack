@@ -1,0 +1,180 @@
+{
+  "index": 133,
+  "host_base": "0x1a004c000",
+  "gt_base": "0x1a004c000",
+  "gt_indication": "Left chest pain. Patient complains of left sided chest pain for 3 weeks. History of smoking.",
+  "recovered_labels": [
+    " Cough",
+    " chest pain",
+    " fever.",
+    " Hypox",
+    " Cough",
+    " chest pain",
+    " fever.",
+    " Hypox",
+    " Cough",
+    " chest pain",
+    " fever.",
+    " Hypox",
+    " Cough",
+    " chest pain",
+    " fever.",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 594,
+      "ind_gpa": 6979637904,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6979637904,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6979637904,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6979637904,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6979637920,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6979637920,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6979637920,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6979637920,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6979637936,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6979637936,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6979637936,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6979637936,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6979637952,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6979637952,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6979637952,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6979637952,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "Cough",
+      "fever.",
+      "Hypox",
+      "Cough",
+      "fever.",
+      "Hypox",
+      "Cough",
+      "fever.",
+      "Hypox",
+      "Cough",
+      "fever.",
+      "Hypox"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "Cough",
+      "chest pain",
+      "fever.",
+      "Hypox",
+      "Cough",
+      "chest pain",
+      "fever.",
+      "Hypox",
+      "Cough",
+      "chest pain",
+      "fever.",
+      "Hypox",
+      "Cough",
+      "chest pain",
+      "fever.",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.607034683227539,
+  "timestamp": 1793316457.8832717,
+  "status": "SUCCESS"
+}

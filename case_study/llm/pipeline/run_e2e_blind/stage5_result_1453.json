@@ -1,0 +1,62 @@
+{
+  "index": 1453,
+  "host_base": "0x1a3655000",
+  "gt_base": "0x1a3654000",
+  "gt_indication": "Patient states he tested positive for COVID last week and this morning he woke up and felt short of breath.",
+  "recovered_labels": [
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 286,
+      "ind_gpa": 7036295408,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7036295408,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7036295424,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7036295424,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "fever.",
+      "fever."
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.672113180160522,
+  "timestamp": 1792946075.9986508,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 46,
+  "host_base": "0x1a0a87000",
+  "gt_base": "0x1a0a86000",
+  "gt_indication": "8 pound weight loss over the past year, 1 month of cough, current smoker. History of COPD and abdominal aortic aneurysm.",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 282,
+      "ind_gpa": 6990362832,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 20.876134157180786,
+  "timestamp": 1792879079.7032392,
+  "status": "SUCCESS"
+}

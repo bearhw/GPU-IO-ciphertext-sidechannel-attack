@@ -1,0 +1,32 @@
+{
+  "index": 12,
+  "host_base": "0x13cb85000",
+  "gt_base": "0x13cb85000",
+  "gt_indication": "Coughing, right chest pain",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 5313682176,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 19.291825532913208,
+  "timestamp": 1792884724.276626,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 2646,
+  "host_base": "0x1a4618000",
+  "gt_base": "0x1a4618000",
+  "gt_indication": "Left rib pain, prior history of left chest surgery, rib fracture, pleurectomy",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7052823264,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 18.708616018295288,
+  "timestamp": 1792999859.9006824,
+  "status": "SUCCESS"
+}

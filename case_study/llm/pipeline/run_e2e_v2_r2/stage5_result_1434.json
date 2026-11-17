@@ -1,0 +1,32 @@
+{
+  "index": 1434,
+  "host_base": "0x1a1171000",
+  "gt_base": "0x1a1171000",
+  "gt_indication": "Fall with RIGHT chest pain.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 640,
+      "ind_gpa": 6997615616,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.692654848098755,
+  "timestamp": 1793372182.9275556,
+  "status": "SUCCESS"
+}

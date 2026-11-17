@@ -1,0 +1,32 @@
+{
+  "index": 392,
+  "host_base": "0x1a88ed000",
+  "gt_base": "0x1a88ec000",
+  "gt_indication": "Cough and headache.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7122901024,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 18.789480209350586,
+  "timestamp": 1792898379.4035645,
+  "status": "SUCCESS"
+}

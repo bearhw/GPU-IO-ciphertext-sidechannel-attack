@@ -1,0 +1,41 @@
+{
+  "index": 2714,
+  "host_base": "0x19d6ef000",
+  "gt_base": "0x19d6ef000",
+  "gt_indication": "Follow-up BILATERAL pneumonia. Sepsis.",
+  "recovered_labels": [
+    " Follow-up",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 618,
+      "ind_gpa": 6936265552,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 624,
+      "ind_gpa": 6936265600,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.601195096969604,
+  "timestamp": 1793423110.3998544,
+  "status": "SUCCESS"
+}

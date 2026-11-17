@@ -1,0 +1,41 @@
+{
+  "index": 3339,
+  "host_base": "0x1a13dc000",
+  "gt_base": "0x1a13dc000",
+  "gt_indication": "Follow-up pneumonia, worsening shortness of breath.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 444,
+      "ind_gpa": 7000149472,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 446,
+      "ind_gpa": 7000149488,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 17.3319993019104,
+  "timestamp": 1793027233.9408233,
+  "status": "SUCCESS"
+}

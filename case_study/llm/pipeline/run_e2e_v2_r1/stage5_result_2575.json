@@ -1,0 +1,124 @@
+{
+  "index": 2575,
+  "host_base": "0x1a9f49000",
+  "gt_base": "0x1a9f49000",
+  "gt_indication": "Hypoxia, decreased breath sounds at the right lung base, post bronchoscopy",
+  "recovered_labels": [
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 462,
+      "ind_gpa": 7146348144,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 7146348144,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 7146348160,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 7146348160,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7146348176,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7146348176,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7146348192,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7146348192,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7146348208,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7146348208,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 10,
+    "false_positive_labels": [
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia."
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.287658214569092,
+  "timestamp": 1793294521.0588698,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 2715,
+  "host_base": "0x19d25c000",
+  "gt_base": "0x19d25b000",
+  "gt_indication": "51-year-old male diagnosed with right seventh rib fracture in Nabih. Shortness of Breath. Initial encounter.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 276,
+      "ind_gpa": 6931466400,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.325197696685791,
+  "timestamp": 1793423148.5958538,
+  "status": "SUCCESS"
+}

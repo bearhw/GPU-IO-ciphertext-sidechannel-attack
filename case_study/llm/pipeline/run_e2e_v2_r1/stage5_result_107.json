@@ -1,0 +1,32 @@
+{
+  "index": 107,
+  "host_base": "0x1a0f08000",
+  "gt_base": "0x1a0f08000",
+  "gt_indication": "Respiratory distress. Pneumonitis.",
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 438,
+      "ind_gpa": 6995086768,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 15.7591073513031,
+  "timestamp": 1793285056.7056603,
+  "status": "SUCCESS"
+}

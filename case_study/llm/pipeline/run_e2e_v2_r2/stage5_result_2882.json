@@ -1,0 +1,843 @@
+{
+  "index": 2882,
+  "host_base": "0x19fb84000",
+  "gt_base": "0x19fb83000",
+  "gt_indication": "Follow-up of pneumonia.",
+  "recovered_labels": [
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 338,
+      "ind_gpa": 6974622352,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 338,
+      "ind_gpa": 6974622352,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 338,
+      "ind_gpa": 6974622352,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 338,
+      "ind_gpa": 6974622352,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 340,
+      "ind_gpa": 6974622368,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 340,
+      "ind_gpa": 6974622368,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 340,
+      "ind_gpa": 6974622368,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 340,
+      "ind_gpa": 6974622368,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 342,
+      "ind_gpa": 6974622384,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 342,
+      "ind_gpa": 6974622384,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 342,
+      "ind_gpa": 6974622384,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 342,
+      "ind_gpa": 6974622384,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 344,
+      "ind_gpa": 6974622400,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 344,
+      "ind_gpa": 6974622400,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 344,
+      "ind_gpa": 6974622400,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 344,
+      "ind_gpa": 6974622400,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 346,
+      "ind_gpa": 6974622416,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 346,
+      "ind_gpa": 6974622416,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 346,
+      "ind_gpa": 6974622416,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 346,
+      "ind_gpa": 6974622416,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 348,
+      "ind_gpa": 6974622432,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 348,
+      "ind_gpa": 6974622432,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 348,
+      "ind_gpa": 6974622432,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 348,
+      "ind_gpa": 6974622432,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6974622448,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6974622448,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6974622448,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6974622448,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 6974622464,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 6974622464,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 6974622464,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 6974622464,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 6974622480,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 6974622480,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 6974622480,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 6974622480,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 6974622496,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 6974622496,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 6974622496,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 6974622496,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6974622512,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6974622512,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6974622512,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6974622512,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6974622528,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6974622528,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6974622528,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6974622528,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6974622544,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6974622544,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6974622544,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6974622544,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6974622560,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6974622560,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6974622560,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6974622560,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6974622576,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6974622576,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6974622576,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6974622576,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6974622592,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6974622592,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6974622592,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6974622592,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6974622608,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6974622608,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6974622608,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6974622608,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6974622624,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6974622624,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6974622624,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6974622624,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6974622640,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6974622640,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6974622640,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6974622640,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6974622656,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6974622656,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6974622656,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6974622656,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6974622672,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6974622672,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6974622672,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6974622672,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 84,
+    "false_positive_labels": [
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Hypert"
+    ],
+    "false_positive_count": 63,
+    "recovered_labels": [
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.282717943191528,
+  "timestamp": 1793434320.2913525,
+  "status": "SUCCESS"
+}

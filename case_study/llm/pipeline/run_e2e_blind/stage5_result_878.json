@@ -1,0 +1,74 @@
+{
+  "index": 878,
+  "host_base": "0x1a038d000",
+  "gt_base": "0x1a038d000",
+  "gt_indication": "CLL, chest pain",
+  "recovered_labels": [
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 6983047984,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6983048000,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6983048016,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6983048032,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6983048048,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 5,
+    "false_positive_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ],
+    "false_positive_count": 5,
+    "recovered_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 17.984560012817383,
+  "timestamp": 1793036268.1427658,
+  "status": "SUCCESS"
+}

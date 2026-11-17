@@ -1,0 +1,32 @@
+{
+  "index": 1275,
+  "host_base": "0x130049000",
+  "gt_base": "0x130049000",
+  "gt_indication": "62-year-old male with respiratory failure.",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 5100575504,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 19.293580293655396,
+  "timestamp": 1792941523.5212362,
+  "status": "SUCCESS"
+}

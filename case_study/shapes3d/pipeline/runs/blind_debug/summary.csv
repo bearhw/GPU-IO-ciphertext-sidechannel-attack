@@ -1,0 +1,4 @@
+date,split,index,mode,gpu,gt_class,gpu_pred,pred,correct,top3,n_cands,probe_choice,gt_overlap,gt_pages,dumped,base_off_est,base_off_gt,coverage,t_stage2,t_localize,t_dump,t_stage45,elapsed_sec,error
+2026-11-12 16:58:01,test,1,blind,True,cube,cube,cube,True,"[('cube', 0.9818), ('cylinder', 0.0179), ('capsule', 0.0003)]",10,5,0,148,148,4032,2368,"[0.6407, 0.0, 0.0]",67.55,103.17,205.4,2.42,399.43,
+2026-11-12 17:04:41,test,2,blind,True,,,cube,False,"[('cube', 0.9999), ('capsule', 0.0001), ('cylinder', 0.0)]",0,,0,0,0,0,,"[0.0, 0.0, 0.0]",11.02,0.0,10.01,1.28,62.81,
+2026-11-12 17:05:43,test,3,blind,True,,,cube,False,"[('cube', 0.9999), ('capsule', 0.0001), ('cylinder', 0.0)]",0,,0,0,0,0,,"[0.0, 0.0, 0.0]",11.02,0.0,10.01,1.19,62.73,

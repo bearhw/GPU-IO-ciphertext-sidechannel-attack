@@ -1,0 +1,32 @@
+{
+  "index": 1438,
+  "host_base": "0x1a1444000",
+  "gt_base": "0x1a1444000",
+  "gt_indication": "Pneumonia. Chest pain.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 488,
+      "ind_gpa": 7000575808,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.705957174301147,
+  "timestamp": 1793192146.3831542,
+  "status": "SUCCESS"
+}

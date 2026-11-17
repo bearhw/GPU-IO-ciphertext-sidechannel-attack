@@ -1,0 +1,32 @@
+{
+  "index": 1389,
+  "host_base": "0x1a4354000",
+  "gt_base": "0x1a4354000",
+  "gt_indication": "Atelectasis, previous CABG",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 674,
+      "ind_gpa": 7049925904,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 15.229212522506714,
+  "timestamp": 1793290560.0248072,
+  "status": "SUCCESS"
+}

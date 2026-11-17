@@ -1,0 +1,174 @@
+{
+  "index": 2922,
+  "host_base": "0x1993d2000",
+  "gt_base": "0x1993d1000",
+  "gt_indication": "Preoperative gastric sleeve resection. Hypertension.",
+  "recovered_labels": [
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 284,
+      "ind_gpa": 6865889504,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6865889504,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6865889504,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6865889520,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6865889520,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6865889520,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6865889536,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6865889536,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6865889536,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6865889552,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6865889552,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6865889552,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6865889568,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6865889568,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6865889568,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 15,
+    "false_positive_labels": [
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 15,
+    "recovered_labels": [
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.376791000366211,
+  "timestamp": 1793254914.8516781,
+  "status": "SUCCESS"
+}

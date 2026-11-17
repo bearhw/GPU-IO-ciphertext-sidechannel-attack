@@ -1,0 +1,32 @@
+{
+  "index": 2328,
+  "host_base": "0x1a0ba6000",
+  "gt_base": "0x1a0ba6000",
+  "gt_indication": "Recent diagnosis of pneumonia. Worsening symptoms/shortness of breath.",
+  "recovered_labels": [
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 560,
+      "ind_gpa": 6991540608,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.587059259414673,
+  "timestamp": 1793411556.402832,
+  "status": "SUCCESS"
+}

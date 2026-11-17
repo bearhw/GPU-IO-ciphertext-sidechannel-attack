@@ -1,0 +1,32 @@
+{
+  "index": 1385,
+  "host_base": "0x1b78c3000",
+  "gt_base": "0x1b78c2000",
+  "gt_indication": "Productive cough, sinus congestion, and wheezing for 1 month. History of COPD. Smoker.",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 7374387248,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 20.672375440597534,
+  "timestamp": 1793104565.2187064,
+  "status": "SUCCESS"
+}

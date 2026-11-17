@@ -1,0 +1,134 @@
+{
+  "index": 38,
+  "host_base": "0x1a00a9000",
+  "gt_base": "0x1a00a9000",
+  "gt_indication": "Respiratory failure. Pneumonia.",
+  "recovered_labels": [
+    " wheez",
+    " wheez",
+    " wheez",
+    " wheez",
+    " wheez",
+    " cough.",
+    " wheez",
+    " cough.",
+    " wheez",
+    " cough.",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 542,
+      "ind_gpa": 6980018416,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6980018432,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6980018448,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6980018464,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6980018480,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6980018496,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6980018496,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6980018512,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6980018512,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6980018528,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6980018528,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 11,
+    "false_positive_labels": [
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez"
+    ],
+    "false_positive_count": 11,
+    "recovered_labels": [
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 17.784230947494507,
+  "timestamp": 1793121508.8112655,
+  "status": "SUCCESS"
+}

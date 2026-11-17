@@ -1,0 +1,44 @@
+{
+  "index": 1485,
+  "host_base": "0x1a416d000",
+  "gt_base": "0x1a416d000",
+  "gt_indication": "One day history of left-sided lower anterior rib pain, status post injury when slipping and falling while pushing a below low are.",
+  "recovered_labels": [
+    " of breath",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 722,
+      "ind_gpa": 7047931536,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 722,
+      "ind_gpa": 7047931536,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "of breath",
+      "fever."
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "of breath",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.643265962600708,
+  "timestamp": 1792946971.7663877,
+  "status": "SUCCESS"
+}

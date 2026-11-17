@@ -1,0 +1,32 @@
+{
+  "index": 1408,
+  "host_base": "0x14488b000",
+  "gt_base": "0x14488b000",
+  "gt_indication": "Followup left pneumothorax. Status post left diaphragmatic hernia repair.",
+  "recovered_labels": [
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 5444778736,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 15.259536504745483,
+  "timestamp": 1793191560.744611,
+  "status": "SUCCESS"
+}

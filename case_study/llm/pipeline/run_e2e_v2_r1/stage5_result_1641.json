@@ -1,0 +1,144 @@
+{
+  "index": 1641,
+  "host_base": "0x1a19f9000",
+  "gt_base": "0x1a19f8000",
+  "gt_indication": "47-year-old male with wheezing for 1-2 years.",
+  "recovered_labels": [
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 282,
+      "ind_gpa": 7006558416,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7006558416,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7006558432,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7006558432,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7006558448,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7006558448,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7006558464,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7006558464,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7006558480,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7006558480,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7006558496,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7006558496,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.333076000213623,
+  "timestamp": 1793200316.5515645,
+  "status": "SUCCESS"
+}

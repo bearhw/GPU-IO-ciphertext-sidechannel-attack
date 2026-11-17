@@ -1,0 +1,41 @@
+{
+  "index": 438,
+  "host_base": "0x1974ea000",
+  "gt_base": "0x1974ea000",
+  "gt_indication": "Productive cough, fever",
+  "recovered_labels": [
+    " cough,",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 720,
+      "ind_gpa": 6833485440,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 722,
+      "ind_gpa": 6833485456,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.390696048736572,
+  "timestamp": 1793068858.7947505,
+  "status": "SUCCESS"
+}

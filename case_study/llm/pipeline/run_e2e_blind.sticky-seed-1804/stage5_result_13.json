@@ -1,0 +1,41 @@
+{
+  "index": 13,
+  "host_base": "0x19fda7000",
+  "gt_base": "0x19fda7000",
+  "gt_indication": "Shortness of breath",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 6976865264,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6976865280,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 19.29240107536316,
+  "timestamp": 1792878111.600744,
+  "status": "SUCCESS"
+}

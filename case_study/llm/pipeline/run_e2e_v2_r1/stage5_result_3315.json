@@ -1,0 +1,32 @@
+{
+  "index": 3315,
+  "host_base": "0x1aba39000",
+  "gt_base": "0x1aba39000",
+  "gt_indication": "Found on the ground. Shortness of breath.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 486,
+      "ind_gpa": 7174594352,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.66816782951355,
+  "timestamp": 1793296453.5762343,
+  "status": "SUCCESS"
+}

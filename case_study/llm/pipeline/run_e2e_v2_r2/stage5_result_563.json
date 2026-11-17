@@ -1,0 +1,32 @@
+{
+  "index": 563,
+  "host_base": "0x1a1281000",
+  "gt_base": "0x1a1281000",
+  "gt_indication": "Spontaneous pneumothorax, follow-up",
+  "recovered_labels": [
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 6998727408,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 15.773417949676514,
+  "timestamp": 1793342096.7480333,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,84 @@
+{
+  "index": 1026,
+  "host_base": "0x1a3d88000",
+  "gt_base": "0x1a3d88000",
+  "gt_indication": "Fever. Intermittent fever for 1 month. Cough. Initial encounter.",
+  "recovered_labels": [
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 282,
+      "ind_gpa": 7043844304,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7043844320,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7043844336,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7043844352,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7043844368,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7043844384,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 16.646969318389893,
+  "timestamp": 1792928848.9183688,
+  "status": "SUCCESS"
+}

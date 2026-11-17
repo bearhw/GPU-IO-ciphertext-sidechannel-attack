@@ -1,0 +1,32 @@
+{
+  "index": 488,
+  "host_base": "0x1a3e3d000",
+  "gt_base": "0x1a3e3d000",
+  "gt_indication": "Smoking history. Respiratory clearance.",
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 7044586224,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 19.3114812374115,
+  "timestamp": 1793070168.7572603,
+  "status": "SUCCESS"
+}

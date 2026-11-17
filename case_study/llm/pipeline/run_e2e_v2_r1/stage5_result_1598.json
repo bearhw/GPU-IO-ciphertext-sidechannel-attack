@@ -1,0 +1,32 @@
+{
+  "index": 1598,
+  "host_base": "0x1a0ee2000",
+  "gt_base": "0x1a0ee2000",
+  "gt_indication": "Diaphoresis and chest pain.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 698,
+      "ind_gpa": 6994933200,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.09207797050476,
+  "timestamp": 1793199304.7520478,
+  "status": "SUCCESS"
+}

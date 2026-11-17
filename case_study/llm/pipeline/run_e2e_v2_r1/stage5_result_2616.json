@@ -1,0 +1,204 @@
+{
+  "index": 2616,
+  "host_base": "0x1a1802000",
+  "gt_base": "0x1a1802000",
+  "gt_indication": "Sudden onset of chest pain.",
+  "recovered_labels": [
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 766,
+      "ind_gpa": 7004502000,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 766,
+      "ind_gpa": 7004502000,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 766,
+      "ind_gpa": 7004502000,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 768,
+      "ind_gpa": 7004502016,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 768,
+      "ind_gpa": 7004502016,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 768,
+      "ind_gpa": 7004502016,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 770,
+      "ind_gpa": 7004502032,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 770,
+      "ind_gpa": 7004502032,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 770,
+      "ind_gpa": 7004502032,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 7004502048,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 7004502048,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 7004502048,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 7004502064,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 7004502064,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 7004502064,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 7004502080,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 7004502080,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 7004502080,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.651132106781006,
+  "timestamp": 1793246509.8718212,
+  "status": "SUCCESS"
+}

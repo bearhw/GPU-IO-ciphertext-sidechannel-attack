@@ -1,0 +1,293 @@
+{
+  "index": 1978,
+  "host_base": "0x1a2bba000",
+  "gt_base": "0x1a2bb9000",
+  "gt_indication": "Cough, fever for 5 days",
+  "recovered_labels": [
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " Cough",
+    " fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 274,
+      "ind_gpa": 7025174672,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 7025174672,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 7025174672,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 7025174688,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 7025174688,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 7025174688,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7025174704,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7025174704,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7025174704,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7025174720,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7025174720,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7025174720,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7025174736,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7025174736,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7025174736,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7025174752,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7025174752,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7025174752,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7025174768,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7025174768,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7025174768,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7025174784,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7025174784,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7025174784,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7025174800,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7025174800,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7025174800,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7025174816,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7025174816,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7025174816,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 30,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "Cough",
+      "fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.57897424697876,
+  "timestamp": 1793219285.9077682,
+  "status": "SUCCESS"
+}

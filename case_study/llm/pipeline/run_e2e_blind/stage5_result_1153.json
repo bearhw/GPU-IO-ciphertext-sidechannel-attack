@@ -1,0 +1,144 @@
+{
+  "index": 1153,
+  "host_base": "0x19beb5000",
+  "gt_base": "0x19beb5000",
+  "gt_indication": "PICC placement.",
+  "recovered_labels": [
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 6910860064,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6910860080,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6910860096,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6910860112,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6910860128,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6910860144,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6910860160,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6910860176,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6910860192,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6910860208,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6910860224,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6910860240,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 16.757519483566284,
+  "timestamp": 1792932558.6153557,
+  "status": "SUCCESS"
+}

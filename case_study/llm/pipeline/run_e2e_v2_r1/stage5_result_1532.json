@@ -1,0 +1,82 @@
+{
+  "index": 1532,
+  "host_base": "0x1410ac000",
+  "gt_base": "0x1410ac000",
+  "gt_indication": "Productive cough, difficulty breathing. Smoker. History of COPD.",
+  "recovered_labels": [
+    " of breath",
+    " COPD",
+    " PICC",
+    " of breath",
+    " COPD",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 564,
+      "ind_gpa": 5386195360,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5386195360,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5386195360,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5386195376,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5386195376,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5386195376,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "of breath",
+      "COPD",
+      "PICC",
+      "of breath",
+      "COPD",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.356295108795166,
+  "timestamp": 1793197913.2164252,
+  "status": "SUCCESS"
+}

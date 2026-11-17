@@ -1,0 +1,111 @@
+{
+  "index": 2662,
+  "host_base": "0x1962af000",
+  "gt_base": "0x1962af000",
+  "gt_indication": "Cough, vomiting, tachycardia, COVID positive",
+  "recovered_labels": [
+    " Cough",
+    " chest pain",
+    " COPD",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " Cough",
+    " chest pain",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 616,
+      "ind_gpa": 6814368576,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 616,
+      "ind_gpa": 6814368576,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 616,
+      "ind_gpa": 6814368576,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 6814368592,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 6814368592,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 6814368592,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 6814368608,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 6814368608,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 6814368608,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 9,
+    "false_positive_labels": [
+      "chest pain",
+      "COPD",
+      "chest pain",
+      "COPD",
+      "chest pain",
+      "COPD"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "Cough",
+      "chest pain",
+      "COPD",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "Cough",
+      "chest pain",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.458993911743164,
+  "timestamp": 1793421467.346596,
+  "status": "SUCCESS"
+}

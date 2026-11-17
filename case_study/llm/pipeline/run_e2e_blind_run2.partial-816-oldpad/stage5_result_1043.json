@@ -1,0 +1,20 @@
+{
+  "index": 1043,
+  "host_base": "0x1a8968000",
+  "gt_base": "0x1a8968000",
+  "gt_indication": "Initial evaluation for acute cough, difficulty breathing.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 18.26694893836975,
+  "timestamp": 1793091000.0347097,
+  "status": "SUCCESS"
+}

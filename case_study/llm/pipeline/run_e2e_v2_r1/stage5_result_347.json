@@ -1,0 +1,140 @@
+{
+  "index": 347,
+  "host_base": "0x1a10a6000",
+  "gt_base": "0x1a10a6000",
+  "gt_indication": "Right chest pain for the past 1-2 days. Nausea and vomiting since this morning.",
+  "recovered_labels": [
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 694,
+      "ind_gpa": 6996784560,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 694,
+      "ind_gpa": 6996784560,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 694,
+      "ind_gpa": 6996784560,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 696,
+      "ind_gpa": 6996784576,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 696,
+      "ind_gpa": 6996784576,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 696,
+      "ind_gpa": 6996784576,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 698,
+      "ind_gpa": 6996784592,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 698,
+      "ind_gpa": 6996784592,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 698,
+      "ind_gpa": 6996784592,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 700,
+      "ind_gpa": 6996784608,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 700,
+      "ind_gpa": 6996784608,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 700,
+      "ind_gpa": 6996784608,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever."
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.367514371871948,
+  "timestamp": 1793143432.1651664,
+  "status": "SUCCESS"
+}

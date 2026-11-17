@@ -1,0 +1,32 @@
+{
+  "index": 1610,
+  "host_base": "0x1a68eb000",
+  "gt_base": "0x1a68eb000",
+  "gt_indication": "Fever with cough. History of CVA",
+  "recovered_labels": [
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 612,
+      "ind_gpa": 7089341216,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough."
+    ]
+  },
+  "elapsed_sec": 19.18167734146118,
+  "timestamp": 1792950740.026474,
+  "status": "SUCCESS"
+}

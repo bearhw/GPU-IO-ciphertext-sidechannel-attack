@@ -1,0 +1,113 @@
+{
+  "index": 238,
+  "host_base": "0x1a05d9000",
+  "gt_base": "0x1a05d9000",
+  "gt_indication": "Visit reason: Cough 4 days, fever/lll rales",
+  "recovered_labels": [
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 582,
+      "ind_gpa": 6985458224,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 584,
+      "ind_gpa": 6985458240,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 586,
+      "ind_gpa": 6985458256,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 588,
+      "ind_gpa": 6985458272,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 590,
+      "ind_gpa": 6985458288,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 592,
+      "ind_gpa": 6985458304,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6985458320,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6985458336,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6985458352,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6985458368,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 10,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.587586879730225,
+  "timestamp": 1793324638.6191447,
+  "status": "SUCCESS"
+}

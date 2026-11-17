@@ -1,0 +1,32 @@
+{
+  "index": 2080,
+  "host_base": "0x1a3a9b000",
+  "gt_base": "0x1a3a9b000",
+  "gt_indication": "Pneumonia, COPD.",
+  "recovered_labels": [
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7040776960,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.344264507293701,
+  "timestamp": 1793399912.6924386,
+  "status": "SUCCESS"
+}

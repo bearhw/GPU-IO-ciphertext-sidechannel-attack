@@ -1,0 +1,41 @@
+{
+  "index": 41,
+  "host_base": "0x19ebc8000",
+  "gt_base": "0x19ebc8000",
+  "gt_indication": "Follow up pneumonia and shortness of breath",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 6958123776,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 6958123792,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.548328876495361,
+  "timestamp": 1793299471.3396626,
+  "status": "SUCCESS"
+}

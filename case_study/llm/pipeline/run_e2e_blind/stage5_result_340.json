@@ -1,0 +1,50 @@
+{
+  "index": 340,
+  "host_base": "0x1a7c2d000",
+  "gt_base": "0x1a7c2c000",
+  "gt_indication": "High blood sugar. Shortness of breath. Mid chest pain for 2 weeks. History of smoking.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 264,
+      "ind_gpa": 7109531712,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 7109531728,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 270,
+      "ind_gpa": 7109531760,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 18.340850591659546,
+  "timestamp": 1792897217.8274176,
+  "status": "SUCCESS"
+}

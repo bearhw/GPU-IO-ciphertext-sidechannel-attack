@@ -1,0 +1,32 @@
+{
+  "index": 793,
+  "host_base": "0x16f744000",
+  "gt_base": "0x16f744000",
+  "gt_indication": "Syncopal episode. History of CHF and COPD.",
+  "recovered_labels": [
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 558,
+      "ind_gpa": 6164861296,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.226840496063232,
+  "timestamp": 1793287237.4777331,
+  "status": "SUCCESS"
+}

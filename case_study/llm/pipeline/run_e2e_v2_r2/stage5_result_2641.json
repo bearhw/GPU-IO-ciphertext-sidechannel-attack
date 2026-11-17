@@ -1,0 +1,32 @@
+{
+  "index": 2641,
+  "host_base": "0x1a05ec000",
+  "gt_base": "0x1a05eb000",
+  "gt_indication": "58-year-old male status post dialysis catheter placement. Initial encounter.",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 270,
+      "ind_gpa": 6985533552,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.229844808578491,
+  "timestamp": 1793421046.3130827,
+  "status": "SUCCESS"
+}

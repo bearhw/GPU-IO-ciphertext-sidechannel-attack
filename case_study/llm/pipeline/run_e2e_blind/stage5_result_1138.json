@@ -1,0 +1,59 @@
+{
+  "index": 1138,
+  "host_base": "0x19cc55000",
+  "gt_base": "0x19cc55000",
+  "gt_indication": "Flu like symptoms, vomiting, weakness, shortness of breath, wheezing, productive cough, and dehydration for 2-3 days, history asthma",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath,",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 650,
+      "ind_gpa": 6925149264,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 652,
+      "ind_gpa": 6925149280,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 6925149296,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 6925149312,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath,",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 16.653745651245117,
+  "timestamp": 1792931802.5501335,
+  "status": "SUCCESS"
+}

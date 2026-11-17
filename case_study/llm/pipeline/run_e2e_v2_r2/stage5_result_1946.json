@@ -1,0 +1,226 @@
+{
+  "index": 1946,
+  "host_base": "0x141e3a000",
+  "gt_base": "0x141e3a000",
+  "gt_indication": "Chest pain, shortness of breath. Code stroke.",
+  "recovered_labels": [
+    " of breath",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    " pneumonia.",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 546,
+      "ind_gpa": 5400408336,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5400408336,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5400408336,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5400408384,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5400408384,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5400408400,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5400408400,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5400408416,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5400408416,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5400408464,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5400408464,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5400408464,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5400408480,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5400408480,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5400408480,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5400408496,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5400408496,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5400408496,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5400408544,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5400408544,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5400408544,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 21,
+    "false_positive_labels": [
+      "pneumonia.",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "pneumonia.",
+      "PICC",
+      "pneumonia.",
+      "PICC",
+      "pneumonia.",
+      "PICC",
+      "pneumonia.",
+      "PICC"
+    ],
+    "false_positive_count": 13,
+    "recovered_labels": [
+      "of breath",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "pneumonia.",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.537500381469727,
+  "timestamp": 1793391322.738137,
+  "status": "SUCCESS"
+}

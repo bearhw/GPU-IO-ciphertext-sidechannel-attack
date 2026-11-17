@@ -1,0 +1,204 @@
+{
+  "index": 2595,
+  "host_base": "0x19a201000",
+  "gt_base": "0x19a201000",
+  "gt_indication": "Cough, fever, and chills for the past 2 weeks",
+  "recovered_labels": [
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 460,
+      "ind_gpa": 6880763488,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6880763488,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6880763488,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6880763504,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6880763504,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6880763504,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6880763520,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6880763520,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6880763520,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6880763536,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6880763536,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6880763536,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6880763552,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6880763552,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6880763552,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6880763568,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6880763568,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6880763568,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.018720149993896,
+  "timestamp": 1792998304.634658,
+  "status": "SUCCESS"
+}

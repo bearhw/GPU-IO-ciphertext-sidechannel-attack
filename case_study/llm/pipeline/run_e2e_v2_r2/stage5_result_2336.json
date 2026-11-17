@@ -1,0 +1,32 @@
+{
+  "index": 2336,
+  "host_base": "0x1a0da1000",
+  "gt_base": "0x1a0da1000",
+  "gt_indication": "chest pain; hx of smoking, copd, emphyzema; htn, and diabetes",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 568,
+      "ind_gpa": 6993617344,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.57735538482666,
+  "timestamp": 1793411779.605118,
+  "status": "SUCCESS"
+}

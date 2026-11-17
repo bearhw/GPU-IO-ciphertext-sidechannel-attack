@@ -1,0 +1,314 @@
+{
+  "index": 1122,
+  "host_base": "0x1438d0000",
+  "gt_base": "0x1438d0000",
+  "gt_indication": "Pneumonia. COVID-19.",
+  "recovered_labels": [
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " wheez",
+    " wheez",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 534,
+      "ind_gpa": 5428285616,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5428285632,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5428285632,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5428285648,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5428285648,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5428285664,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5428285664,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5428285680,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5428285680,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5428285696,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5428285696,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5428285712,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5428285712,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5428285728,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5428285728,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5428285744,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5428285744,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5428285760,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5428285776,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5428285808,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5428285824,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5428285824,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5428285840,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5428285840,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5428285872,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5428285872,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5428285888,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5428285904,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5428285920,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 29,
+    "false_positive_labels": [
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez"
+    ],
+    "false_positive_count": 29,
+    "recovered_labels": [
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 19.538636922836304,
+  "timestamp": 1793096836.351854,
+  "status": "SUCCESS"
+}

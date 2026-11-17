@@ -1,0 +1,144 @@
+{
+  "index": 1417,
+  "host_base": "0x144012000",
+  "gt_base": "0x144012000",
+  "gt_indication": "Follow-up CHF.",
+  "recovered_labels": [
+    " wheez",
+    " CABG",
+    " catheter",
+    " wheez",
+    " CABG",
+    " catheter",
+    " wheez",
+    " CABG",
+    " catheter",
+    " wheez",
+    " CABG",
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 552,
+      "ind_gpa": 5435896128,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5435896128,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5435896128,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5435896144,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5435896144,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5435896144,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5435896160,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5435896160,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5435896160,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5435896176,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5435896176,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5435896176,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "wheez",
+      "CABG",
+      "catheter",
+      "wheez",
+      "CABG",
+      "catheter",
+      "wheez",
+      "CABG",
+      "catheter",
+      "wheez",
+      "CABG",
+      "catheter"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "wheez",
+      "CABG",
+      "catheter",
+      "wheez",
+      "CABG",
+      "catheter",
+      "wheez",
+      "CABG",
+      "catheter",
+      "wheez",
+      "CABG",
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.46832275390625,
+  "timestamp": 1793191680.0803285,
+  "status": "SUCCESS"
+}

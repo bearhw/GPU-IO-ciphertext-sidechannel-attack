@@ -1,0 +1,32 @@
+{
+  "index": 1320,
+  "host_base": "0x1a1e12000",
+  "gt_base": "0x1a1e12000",
+  "gt_indication": "Altered mental status. Decreased oxygen saturation. Short of breath.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 7010855728,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.586798429489136,
+  "timestamp": 1793459526.9582434,
+  "status": "SUCCESS"
+}

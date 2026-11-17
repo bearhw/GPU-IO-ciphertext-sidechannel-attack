@@ -1,0 +1,444 @@
+{
+  "index": 1739,
+  "host_base": "0x1af43d000",
+  "gt_base": "0x1af43d000",
+  "gt_indication": "Football injury, left anterior chest pain",
+  "recovered_labels": [
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever.",
+    " fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 830,
+      "ind_gpa": 7235430896,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 830,
+      "ind_gpa": 7235430896,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 832,
+      "ind_gpa": 7235430912,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 832,
+      "ind_gpa": 7235430912,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 834,
+      "ind_gpa": 7235430928,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 834,
+      "ind_gpa": 7235430928,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 836,
+      "ind_gpa": 7235430944,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 836,
+      "ind_gpa": 7235430944,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 838,
+      "ind_gpa": 7235430960,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 838,
+      "ind_gpa": 7235430960,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 840,
+      "ind_gpa": 7235430976,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 840,
+      "ind_gpa": 7235430976,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 842,
+      "ind_gpa": 7235430992,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 842,
+      "ind_gpa": 7235430992,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 844,
+      "ind_gpa": 7235431008,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 844,
+      "ind_gpa": 7235431008,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 846,
+      "ind_gpa": 7235431024,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 846,
+      "ind_gpa": 7235431024,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 848,
+      "ind_gpa": 7235431040,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 848,
+      "ind_gpa": 7235431040,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 850,
+      "ind_gpa": 7235431056,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 850,
+      "ind_gpa": 7235431056,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 852,
+      "ind_gpa": 7235431072,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 852,
+      "ind_gpa": 7235431072,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 854,
+      "ind_gpa": 7235431088,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 854,
+      "ind_gpa": 7235431088,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 856,
+      "ind_gpa": 7235431104,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 856,
+      "ind_gpa": 7235431104,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 858,
+      "ind_gpa": 7235431120,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 858,
+      "ind_gpa": 7235431120,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 860,
+      "ind_gpa": 7235431136,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 860,
+      "ind_gpa": 7235431136,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 862,
+      "ind_gpa": 7235431152,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 862,
+      "ind_gpa": 7235431152,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 864,
+      "ind_gpa": 7235431168,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 864,
+      "ind_gpa": 7235431168,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 866,
+      "ind_gpa": 7235431184,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 866,
+      "ind_gpa": 7235431184,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 868,
+      "ind_gpa": 7235431200,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 868,
+      "ind_gpa": 7235431200,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 870,
+      "ind_gpa": 7235431216,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 870,
+      "ind_gpa": 7235431216,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 42,
+    "false_positive_labels": [
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever."
+    ],
+    "false_positive_count": 42,
+    "recovered_labels": [
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever.",
+      "fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 17.104419946670532,
+  "timestamp": 1793114492.4404566,
+  "status": "SUCCESS"
+}

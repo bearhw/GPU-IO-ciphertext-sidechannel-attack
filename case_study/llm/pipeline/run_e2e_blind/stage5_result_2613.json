@@ -1,0 +1,32 @@
+{
+  "index": 2613,
+  "host_base": "0x13d55b000",
+  "gt_base": "0x13d55b000",
+  "gt_indication": "History given of PICC placement.",
+  "recovered_labels": [
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 5323995888,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 18.881014347076416,
+  "timestamp": 1792998752.9494576,
+  "status": "SUCCESS"
+}

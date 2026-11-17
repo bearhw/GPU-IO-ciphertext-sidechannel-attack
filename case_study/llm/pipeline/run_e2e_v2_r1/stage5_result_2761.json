@@ -1,0 +1,285 @@
+{
+  "index": 2761,
+  "host_base": "0x19dbbb000",
+  "gt_base": "0x19dbba000",
+  "gt_indication": "Cough, subcutaneous emphysema.",
+  "recovered_labels": [
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 276,
+      "ind_gpa": 6941292704,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6941292704,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6941292704,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6941292720,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6941292720,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6941292720,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6941292736,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6941292736,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6941292736,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6941292752,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6941292752,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6941292752,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6941292768,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6941292768,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6941292768,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6941292784,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6941292784,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6941292784,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6941292800,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6941292800,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6941292800,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6941292816,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6941292816,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6941292816,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6941292832,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6941292832,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6941292832,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 27,
+    "false_positive_labels": [
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.702961683273315,
+  "timestamp": 1793250768.808866,
+  "status": "SUCCESS"
+}

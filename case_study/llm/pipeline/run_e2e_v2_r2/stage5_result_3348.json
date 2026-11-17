@@ -1,0 +1,84 @@
+{
+  "index": 3348,
+  "host_base": "0x19fd2d000",
+  "gt_base": "0x19fd2d000",
+  "gt_indication": "Cough for 1 week, fever, chills, body aches",
+  "recovered_labels": [
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 664,
+      "ind_gpa": 6976365760,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6976365776,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6976365792,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 670,
+      "ind_gpa": 6976365808,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 672,
+      "ind_gpa": 6976365824,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 674,
+      "ind_gpa": 6976365840,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.435654163360596,
+  "timestamp": 1793451353.2157722,
+  "status": "SUCCESS"
+}

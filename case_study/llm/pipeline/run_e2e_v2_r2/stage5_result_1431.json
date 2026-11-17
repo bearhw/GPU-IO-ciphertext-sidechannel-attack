@@ -1,0 +1,32 @@
+{
+  "index": 1431,
+  "host_base": "0x1a1072000",
+  "gt_base": "0x1a1072000",
+  "gt_indication": "Difficulty breathing and shortness of breath.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 672,
+      "ind_gpa": 6996571392,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.500115633010864,
+  "timestamp": 1793372093.5561104,
+  "status": "SUCCESS"
+}

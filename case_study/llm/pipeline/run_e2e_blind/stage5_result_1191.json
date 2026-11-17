@@ -1,0 +1,284 @@
+{
+  "index": 1191,
+  "host_base": "0x13ef58000",
+  "gt_base": "0x13ef58000",
+  "gt_indication": "Cough, chest pain and fatigue for 2 days.",
+  "recovered_labels": [
+    " Weakness",
+    " Hypox",
+    " Weakness",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    "ough and",
+    " Hypox",
+    "ough and",
+    " Hypox",
+    "ough and",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 540,
+      "ind_gpa": 5351248096,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5351248096,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5351248112,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5351248112,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5351248128,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5351248144,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5351248160,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5351248176,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5351248192,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5351248208,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5351248224,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5351248240,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5351248256,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5351248272,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5351248288,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5351248304,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5351248320,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5351248336,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5351248352,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 5351248368,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 5351248384,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 5351248384,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 578,
+      "ind_gpa": 5351248400,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 578,
+      "ind_gpa": 5351248400,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 5351248416,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 5351248416,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 26,
+    "false_positive_labels": [
+      "Weakness",
+      "Hypox",
+      "Weakness",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "ough and",
+      "Hypox",
+      "ough and",
+      "Hypox",
+      "ough and",
+      "Hypox"
+    ],
+    "false_positive_count": 26,
+    "recovered_labels": [
+      "Weakness",
+      "Hypox",
+      "Weakness",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "ough and",
+      "Hypox",
+      "ough and",
+      "Hypox",
+      "ough and",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 17.225093126296997,
+  "timestamp": 1792935207.717274,
+  "status": "SUCCESS"
+}

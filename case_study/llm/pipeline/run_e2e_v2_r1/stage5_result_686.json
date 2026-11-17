@@ -1,0 +1,32 @@
+{
+  "index": 686,
+  "host_base": "0x1a4d74000",
+  "gt_base": "0x1a4d74000",
+  "gt_indication": "Chest pain. Chest pressure. Short of breath. Right arm pain. History of CABG.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 7060540176,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.734090566635132,
+  "timestamp": 1793154606.6146111,
+  "status": "SUCCESS"
+}

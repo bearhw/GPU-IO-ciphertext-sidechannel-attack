@@ -1,0 +1,64 @@
+{
+  "index": 631,
+  "host_base": "0x1a2546000",
+  "gt_base": "0x1a2546000",
+  "gt_indication": "MI. Ventilator dependent respiratory failure. Intra-aortic balloon pump. Possible aspiration.",
+  "recovered_labels": [
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 372,
+      "ind_gpa": 7018408864,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7018408880,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7018408896,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7018408912,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 19.291722059249878,
+  "timestamp": 1792909726.6603787,
+  "status": "SUCCESS"
+}

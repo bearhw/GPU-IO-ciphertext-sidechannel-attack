@@ -1,0 +1,204 @@
+{
+  "index": 1623,
+  "host_base": "0x19ebf9000",
+  "gt_base": "0x19ebf9000",
+  "gt_indication": "Fall, right lower rib pain/contusion",
+  "recovered_labels": [
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 362,
+      "ind_gpa": 6958324560,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6958324560,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6958324576,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6958324576,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6958324592,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6958324592,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6958324608,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6958324608,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6958324624,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6958324624,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6958324640,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6958324640,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6958324656,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6958324656,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6958324672,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6958324672,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6958324688,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6958324688,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.888747692108154,
+  "timestamp": 1792951010.198973,
+  "status": "SUCCESS"
+}

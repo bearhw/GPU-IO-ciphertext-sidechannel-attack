@@ -1,0 +1,41 @@
+{
+  "index": 3269,
+  "host_base": "0x1a2340000",
+  "gt_base": "0x1a233f000",
+  "gt_indication": "Cough and sore throat. Chest pain dyspnea. Fatigue. COVID-19 virus infection.",
+  "recovered_labels": [
+    " Cough",
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7016286240,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 7016286288,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.230131387710571,
+  "timestamp": 1793448154.3355877,
+  "status": "SUCCESS"
+}

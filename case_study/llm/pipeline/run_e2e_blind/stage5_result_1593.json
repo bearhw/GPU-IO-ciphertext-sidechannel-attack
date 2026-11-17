@@ -1,0 +1,164 @@
+{
+  "index": 1593,
+  "host_base": "0x1a651b000",
+  "gt_base": "0x1a651a000",
+  "gt_indication": "Right rib pain for several months, no known injury",
+  "recovered_labels": [
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever.",
+    " of breath",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 276,
+      "ind_gpa": 7085340832,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 7085340832,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7085340848,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7085340848,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7085340864,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7085340864,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7085340880,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7085340880,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7085340896,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7085340896,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7085340912,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7085340912,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7085340928,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7085340928,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 14,
+    "false_positive_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ],
+    "false_positive_count": 14,
+    "recovered_labels": [
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever.",
+      "of breath",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 20.775180101394653,
+  "timestamp": 1792950357.23344,
+  "status": "SUCCESS"
+}

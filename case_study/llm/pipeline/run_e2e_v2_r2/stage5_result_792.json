@@ -1,0 +1,32 @@
+{
+  "index": 792,
+  "host_base": "0x1a6574000",
+  "gt_base": "0x1a6574000",
+  "gt_indication": "3rd degree heart block. Shortness of breath. Lung cancer.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 600,
+      "ind_gpa": 7085707968,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.354377508163452,
+  "timestamp": 1793347287.9213138,
+  "status": "SUCCESS"
+}

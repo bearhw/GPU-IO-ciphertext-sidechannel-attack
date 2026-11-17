@@ -1,0 +1,41 @@
+{
+  "index": 2132,
+  "host_base": "0x19ed34000",
+  "gt_base": "0x19ed34000",
+  "gt_indication": "COVID-19 positivity with shortness of breath and cough, initial encounter",
+  "recovered_labels": [
+    "ness of",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 6959617056,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 648,
+      "ind_gpa": 6959617088,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 19.076810836791992,
+  "timestamp": 1792972912.791299,
+  "status": "SUCCESS"
+}

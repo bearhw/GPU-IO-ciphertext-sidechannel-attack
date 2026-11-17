@@ -1,0 +1,104 @@
+{
+  "index": 384,
+  "host_base": "0x1a150f000",
+  "gt_base": "0x1a150f000",
+  "gt_indication": "Weakness. Abnormal lab values. Lung carcinoma.",
+  "recovered_labels": [
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 364,
+      "ind_gpa": 7001406304,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7001406320,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7001406336,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7001406352,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7001406368,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7001406384,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7001406400,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7001406416,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.332825183868408,
+  "timestamp": 1793333314.961522,
+  "status": "SUCCESS"
+}

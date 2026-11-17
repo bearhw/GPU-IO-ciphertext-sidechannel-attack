@@ -1,0 +1,734 @@
+{
+  "index": 414,
+  "host_base": "0x1404fb000",
+  "gt_base": "0x1404fb000",
+  "gt_indication": "Chest pain for 1 hour",
+  "recovered_labels": [
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " Respiratory",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " Respiratory",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " Respiratory",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " Respiratory",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " Respiratory",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " Respiratory",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " Respiratory",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " Respiratory",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 5373935776,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5373935776,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5373935776,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5373935792,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5373935792,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5373935792,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5373935808,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5373935808,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5373935808,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5373935824,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5373935824,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5373935824,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5373935840,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5373935840,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5373935840,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5373935856,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5373935856,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5373935856,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5373935872,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5373935872,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5373935872,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5373935888,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5373935888,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5373935888,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5373935904,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5373935904,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5373935904,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5373935920,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5373935920,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5373935920,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5373935936,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5373935936,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5373935936,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5373935936,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5373935952,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5373935952,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5373935952,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5373935952,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5373935968,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5373935968,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5373935968,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5373935968,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5373935984,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5373935984,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5373935984,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5373935984,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5373936000,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5373936000,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5373936000,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5373936000,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5373936016,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5373936016,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5373936016,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5373936016,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5373936032,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5373936032,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5373936032,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5373936032,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5373936048,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5373936048,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5373936048,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5373936048,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5373936064,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5373936064,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5373936064,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5373936080,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5373936080,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5373936080,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5373936096,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5373936096,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5373936096,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 71,
+    "false_positive_labels": [
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD"
+    ],
+    "false_positive_count": 71,
+    "recovered_labels": [
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "Respiratory",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.718711376190186,
+  "timestamp": 1793148090.258706,
+  "status": "SUCCESS"
+}

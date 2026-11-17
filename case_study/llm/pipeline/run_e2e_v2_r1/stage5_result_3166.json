@@ -1,0 +1,59 @@
+{
+  "index": 3166,
+  "host_base": "0x1a625f000",
+  "gt_base": "0x1a625e000",
+  "gt_indication": "Chest pain for 3 days, shortness of breath, hypertension, previous tobacco abuse",
+  "recovered_labels": [
+    " Chest pain",
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 206,
+      "ind_gpa": 7082473072,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 212,
+      "ind_gpa": 7082473120,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 214,
+      "ind_gpa": 7082473136,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 216,
+      "ind_gpa": 7082473152,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain",
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.073873043060303,
+  "timestamp": 1793295223.4668045,
+  "status": "SUCCESS"
+}

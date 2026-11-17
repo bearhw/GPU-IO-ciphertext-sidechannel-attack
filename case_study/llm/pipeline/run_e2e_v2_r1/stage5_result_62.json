@@ -1,0 +1,41 @@
+{
+  "index": 62,
+  "host_base": "0x13f885000",
+  "gt_base": "0x13f885000",
+  "gt_indication": "Severe shortness of breath, weakness.",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 5360868080,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 5360868096,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.773067235946655,
+  "timestamp": 1793283786.022238,
+  "status": "SUCCESS"
+}

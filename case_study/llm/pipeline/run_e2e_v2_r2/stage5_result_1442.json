@@ -1,0 +1,32 @@
+{
+  "index": 1442,
+  "host_base": "0x196efd000",
+  "gt_base": "0x1a131a000",
+  "gt_indication": "Wheezing, cough, fever",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 556,
+      "ind_gpa": 6827270496,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 15.63538646697998,
+  "timestamp": 1793372389.3853188,
+  "status": "SUCCESS"
+}

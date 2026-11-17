@@ -1,0 +1,32 @@
+{
+  "index": 142,
+  "host_base": "0x19d3ce000",
+  "gt_base": "0x19d3ce000",
+  "gt_indication": "Onset of shortness of breath today in a patient with a history of COPD.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 614,
+      "ind_gpa": 6932984624,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 18.78310751914978,
+  "timestamp": 1793054792.2112832,
+  "status": "SUCCESS"
+}

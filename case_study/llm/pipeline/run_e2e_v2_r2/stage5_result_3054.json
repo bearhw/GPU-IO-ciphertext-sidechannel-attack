@@ -1,0 +1,32 @@
+{
+  "index": 3054,
+  "host_base": "0x1a79b6000",
+  "gt_base": "0x1a79b6000",
+  "gt_indication": "Premature newborn. Follow-up respiratory distress syndrome.",
+  "recovered_labels": [
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 442,
+      "ind_gpa": 7106948560,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.659594297409058,
+  "timestamp": 1793464741.8763058,
+  "status": "SUCCESS"
+}

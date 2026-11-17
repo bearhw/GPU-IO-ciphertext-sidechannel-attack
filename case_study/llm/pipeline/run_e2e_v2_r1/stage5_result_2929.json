@@ -1,0 +1,32 @@
+{
+  "index": 2929,
+  "host_base": "0x1a8226000",
+  "gt_base": "0x1a8226000",
+  "gt_indication": "intraaortic balloon pump placement; chest pain",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 7115795216,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 14.776849508285522,
+  "timestamp": 1793255115.0530732,
+  "status": "SUCCESS"
+}

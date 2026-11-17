@@ -1,0 +1,64 @@
+{
+  "index": 1269,
+  "host_base": "0x1961c3000",
+  "gt_base": "0x1961c3000",
+  "gt_indication": "Cough. Upper back pain.",
+  "recovered_labels": [
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 6813399872,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6813399888,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6813399904,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6813399920,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 17.193156480789185,
+  "timestamp": 1793037417.805839,
+  "status": "SUCCESS"
+}

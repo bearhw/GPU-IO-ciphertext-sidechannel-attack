@@ -1,0 +1,32 @@
+{
+  "index": 1979,
+  "host_base": "0x1a12b5000",
+  "gt_base": "0x1a12b5000",
+  "gt_indication": "Back and flank pain, shortness of breath.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 750,
+      "ind_gpa": 6998943600,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 19.5093195438385,
+  "timestamp": 1792968297.4057372,
+  "status": "SUCCESS"
+}

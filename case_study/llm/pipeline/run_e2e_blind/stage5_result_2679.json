@@ -1,0 +1,220 @@
+{
+  "index": 2679,
+  "host_base": "0x1a4e36000",
+  "gt_base": "0x1a4e36000",
+  "gt_indication": "Acute respiratory failure, hypoxia, history of stroke",
+  "recovered_labels": [
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 656,
+      "ind_gpa": 7061337216,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7061337216,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7061337216,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7061337232,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7061337232,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7061337232,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7061337248,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7061337248,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7061337248,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7061337264,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7061337264,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7061337264,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7061337280,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7061337280,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7061337280,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7061337296,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7061337296,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7061337296,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7061337312,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7061337312,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7061337312,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 21,
+    "false_positive_labels": [
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez"
+    ],
+    "false_positive_count": 7,
+    "recovered_labels": [
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 19.312454223632812,
+  "timestamp": 1793000532.4423234,
+  "status": "SUCCESS"
+}

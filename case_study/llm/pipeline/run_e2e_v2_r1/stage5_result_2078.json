@@ -1,0 +1,50 @@
+{
+  "index": 2078,
+  "host_base": "0x1a5886000",
+  "gt_base": "0x1a5885000",
+  "gt_indication": "38-year-old female with history of shortness of breath. COVID-19 infection.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 270,
+      "ind_gpa": 7072147568,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 7072147584,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 7072147600,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.841070175170898,
+  "timestamp": 1793221834.7604342,
+  "status": "SUCCESS"
+}

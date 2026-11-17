@@ -1,0 +1,20 @@
+{
+  "index": 245,
+  "host_base": "0x13c116000",
+  "gt_base": "0x13c116000",
+  "gt_indication": "Cough and dizziness. Recent COVID-19 positive",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 16.032427310943604,
+  "timestamp": 1793059152.3508682,
+  "status": "SUCCESS"
+}

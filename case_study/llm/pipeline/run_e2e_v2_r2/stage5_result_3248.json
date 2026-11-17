@@ -1,0 +1,354 @@
+{
+  "index": 3248,
+  "host_base": "0x1a1da6000",
+  "gt_base": "0x1a1da6000",
+  "gt_indication": "Acute onset of shortness of breath",
+  "recovered_labels": [
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " pneumonia.",
+    " rib pain",
+    " Fever.",
+    " pneumonia.",
+    " rib pain",
+    " Fever.",
+    " pneumonia.",
+    " rib pain",
+    " Fever.",
+    " pneumonia.",
+    " rib pain",
+    " Fever.",
+    " pneumonia.",
+    " Fever.",
+    " pneumonia.",
+    " Fever.",
+    " pneumonia.",
+    " Fever.",
+    " pneumonia.",
+    " Fever.",
+    " Fever.",
+    " Fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 7010414752,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 7010414768,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 7010414784,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 7010414800,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 7010414816,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 7010414832,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 7010414848,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 7010414864,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 7010414880,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 7010414896,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7010414912,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7010414912,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7010414912,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7010414928,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7010414928,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7010414928,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7010414944,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7010414944,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7010414944,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7010414960,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7010414960,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7010414960,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7010414976,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7010414976,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7010414992,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7010414992,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7010415008,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7010415008,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7010415024,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7010415024,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 7010415040,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 7010415056,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 7010415072,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 33,
+    "false_positive_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "pneumonia.",
+      "rib pain",
+      "Fever.",
+      "pneumonia.",
+      "rib pain",
+      "Fever.",
+      "pneumonia.",
+      "rib pain",
+      "Fever.",
+      "pneumonia.",
+      "rib pain",
+      "Fever.",
+      "pneumonia.",
+      "Fever.",
+      "pneumonia.",
+      "Fever.",
+      "pneumonia.",
+      "Fever.",
+      "pneumonia.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ],
+    "false_positive_count": 33,
+    "recovered_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "pneumonia.",
+      "rib pain",
+      "Fever.",
+      "pneumonia.",
+      "rib pain",
+      "Fever.",
+      "pneumonia.",
+      "rib pain",
+      "Fever.",
+      "pneumonia.",
+      "rib pain",
+      "Fever.",
+      "pneumonia.",
+      "Fever.",
+      "pneumonia.",
+      "Fever.",
+      "pneumonia.",
+      "Fever.",
+      "pneumonia.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.792462587356567,
+  "timestamp": 1793447553.4672313,
+  "status": "SUCCESS"
+}

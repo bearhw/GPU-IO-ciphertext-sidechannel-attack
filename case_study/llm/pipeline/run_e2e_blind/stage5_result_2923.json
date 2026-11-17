@@ -1,0 +1,41 @@
+{
+  "index": 2923,
+  "host_base": "0x1a0ff0000",
+  "gt_base": "0x1a0feb000",
+  "gt_indication": "Cough, chest congestion and wheezing for 1 week. Intermittent fever.",
+  "recovered_labels": [
+    " Cough",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 6996035680,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6996035728,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 14.839854955673218,
+  "timestamp": 1793010688.8899002,
+  "status": "SUCCESS"
+}

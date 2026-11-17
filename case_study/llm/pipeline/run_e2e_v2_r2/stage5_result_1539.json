@@ -1,0 +1,104 @@
+{
+  "index": 1539,
+  "host_base": "0x1a1f31000",
+  "gt_base": "0x1a1f31000",
+  "gt_indication": "54-year-old with acute pancreatitis. Verify left PICC line placement.",
+  "recovered_labels": [
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 370,
+      "ind_gpa": 7012031376,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7012031376,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7012031392,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7012031392,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7012031408,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7012031408,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7012031424,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7012031424,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.132861137390137,
+  "timestamp": 1793376800.9598622,
+  "status": "SUCCESS"
+}

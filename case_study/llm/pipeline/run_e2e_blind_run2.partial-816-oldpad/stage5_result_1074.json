@@ -1,0 +1,294 @@
+{
+  "index": 1074,
+  "host_base": "0x141891000",
+  "gt_base": "0x141891000",
+  "gt_indication": "PICC",
+  "recovered_labels": [
+    " chest pain",
+    " Respiratory",
+    " Hypox",
+    " chest pain",
+    " Respiratory",
+    " Hypox",
+    " chest pain",
+    " Respiratory",
+    " Hypox",
+    " chest pain",
+    " Respiratory",
+    " Hypox",
+    " chest pain",
+    " Respiratory",
+    " Hypox",
+    " chest pain",
+    " Respiratory",
+    " Hypox",
+    " chest pain",
+    " Respiratory",
+    " Hypox",
+    " chest pain",
+    " Respiratory",
+    " Hypox",
+    " chest pain",
+    " Respiratory",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 5394471712,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 5394471712,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 5394471712,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 5394471728,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 5394471728,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 5394471728,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5394471744,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5394471744,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5394471744,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5394471760,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5394471760,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5394471760,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5394471776,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5394471776,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5394471776,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5394471792,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5394471792,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5394471792,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5394471808,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5394471808,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5394471808,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5394471824,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5394471824,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5394471824,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5394471840,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5394471840,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5394471840,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 27,
+    "false_positive_labels": [
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox"
+    ],
+    "false_positive_count": 27,
+    "recovered_labels": [
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox",
+      "chest pain",
+      "Respiratory",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 17.037062644958496,
+  "timestamp": 1793093230.1126492,
+  "status": "SUCCESS"
+}

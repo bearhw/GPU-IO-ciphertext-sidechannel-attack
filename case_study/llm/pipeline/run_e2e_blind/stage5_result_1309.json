@@ -1,0 +1,32 @@
+{
+  "index": 1309,
+  "host_base": "0x1a0c32000",
+  "gt_base": "0x1a0c32000",
+  "gt_indication": "Acute right upper chest pain, palpitations for 2 days",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 668,
+      "ind_gpa": 6992114912,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 18.713960886001587,
+  "timestamp": 1792942417.3755686,
+  "status": "SUCCESS"
+}

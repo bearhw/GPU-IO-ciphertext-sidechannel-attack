@@ -1,0 +1,41 @@
+{
+  "index": 802,
+  "host_base": "0x1a690a000",
+  "gt_base": "0x1a690a000",
+  "gt_indication": "Two weeks of cough, wheezing, and fatigue. Onset of fever 2 days ago.",
+  "recovered_labels": [
+    " cough,",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 606,
+      "ind_gpa": 7089468144,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 608,
+      "ind_gpa": 7089468160,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.768297910690308,
+  "timestamp": 1793347583.21252,
+  "status": "SUCCESS"
+}

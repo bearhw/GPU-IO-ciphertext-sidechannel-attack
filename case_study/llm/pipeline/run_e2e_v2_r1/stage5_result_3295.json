@@ -1,0 +1,41 @@
+{
+  "index": 3295,
+  "host_base": "0x19f670000",
+  "gt_base": "0x19f66f000",
+  "gt_indication": "Shortness of breath and cough for the past 2 weeks. Ex-smoker.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6969296928,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6969296944,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.098058938980103,
+  "timestamp": 1793273562.2643402,
+  "status": "SUCCESS"
+}

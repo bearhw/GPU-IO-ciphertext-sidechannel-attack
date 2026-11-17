@@ -1,0 +1,32 @@
+{
+  "index": 2007,
+  "host_base": "0x1a33e9000",
+  "gt_base": "0x1a33e9000",
+  "gt_indication": "Fever, headaches, tachycardia, shortness breath",
+  "recovered_labels": [
+    ", short"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 448,
+      "ind_gpa": 7033757184,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short"
+    ]
+  },
+  "elapsed_sec": 15.696533679962158,
+  "timestamp": 1793219998.4135315,
+  "status": "SUCCESS"
+}

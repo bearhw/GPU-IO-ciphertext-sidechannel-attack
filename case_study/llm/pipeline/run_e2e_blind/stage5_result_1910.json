@@ -1,0 +1,64 @@
+{
+  "index": 1910,
+  "host_base": "0x19fb09000",
+  "gt_base": "0x19fb09000",
+  "gt_indication": "Follow-up COVID-19 viral pneumonia.",
+  "recovered_labels": [
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 716,
+      "ind_gpa": 6974121568,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 716,
+      "ind_gpa": 6974121568,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 718,
+      "ind_gpa": 6974121584,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 718,
+      "ind_gpa": 6974121584,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 18.49946641921997,
+  "timestamp": 1792962151.649458,
+  "status": "SUCCESS"
+}

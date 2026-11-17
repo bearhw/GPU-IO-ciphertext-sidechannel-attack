@@ -1,0 +1,41 @@
+{
+  "index": 98,
+  "host_base": "0x1a138e000",
+  "gt_base": "0x1a138d000",
+  "gt_indication": "Coughing and chest pain.",
+  "recovered_labels": [
+    " Cough",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6999828512,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 6999828544,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.49920392036438,
+  "timestamp": 1793312942.4615657,
+  "status": "SUCCESS"
+}

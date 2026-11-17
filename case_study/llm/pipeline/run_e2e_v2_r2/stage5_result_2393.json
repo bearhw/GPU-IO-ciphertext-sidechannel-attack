@@ -1,0 +1,32 @@
+{
+  "index": 2393,
+  "host_base": "0x1a1e4a000",
+  "gt_base": "0x1a1e4a000",
+  "gt_indication": "Acute respiratory failure; MI and CABG 3 days ago",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 7011087392,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 15.656400918960571,
+  "timestamp": 1793413260.198668,
+  "status": "SUCCESS"
+}

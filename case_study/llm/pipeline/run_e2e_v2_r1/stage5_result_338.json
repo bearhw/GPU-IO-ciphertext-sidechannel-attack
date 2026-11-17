@@ -1,0 +1,41 @@
+{
+  "index": 338,
+  "host_base": "0x1a0d24000",
+  "gt_base": "0x1a0d24000",
+  "gt_indication": "Central catheter placement. Hypoxia.",
+  "recovered_labels": [
+    " catheter",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 6993105376,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 6993105408,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.162423133850098,
+  "timestamp": 1793143196.8414426,
+  "status": "SUCCESS"
+}

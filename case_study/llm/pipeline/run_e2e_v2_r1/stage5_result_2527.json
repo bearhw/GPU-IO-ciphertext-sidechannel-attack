@@ -1,0 +1,32 @@
+{
+  "index": 2527,
+  "host_base": "0x1a2632000",
+  "gt_base": "0x1a2632000",
+  "gt_indication": "Central chest pain after falling onto chest wall 1 week ago",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 528,
+      "ind_gpa": 7019376768,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.319047451019287,
+  "timestamp": 1793241322.7168024,
+  "status": "SUCCESS"
+}

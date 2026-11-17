@@ -1,0 +1,32 @@
+{
+  "index": 2673,
+  "host_base": "0x196f9c000",
+  "gt_base": "0x196f9c000",
+  "gt_indication": "Chills, sweats, congestion, cough, fatigue, headache, nausea, chest soreness with cough, ongoing symptoms for 5 days, smoker",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 668,
+      "ind_gpa": 6827922656,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 19.566737174987793,
+  "timestamp": 1793000315.974911,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,140 @@
+{
+  "index": 2669,
+  "host_base": "0x1a2457000",
+  "gt_base": "0x1a2457000",
+  "gt_indication": "Cough for 1 month, worse this morning.",
+  "recovered_labels": [
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 770,
+      "ind_gpa": 7017433104,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 770,
+      "ind_gpa": 7017433104,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 770,
+      "ind_gpa": 7017433104,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 7017433120,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 7017433120,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 7017433120,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 7017433136,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 7017433136,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 7017433136,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 7017433152,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 7017433152,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 7017433152,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.1812744140625,
+  "timestamp": 1793247609.4657505,
+  "status": "SUCCESS"
+}

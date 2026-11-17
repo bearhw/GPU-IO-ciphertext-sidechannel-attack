@@ -1,0 +1,32 @@
+{
+  "index": 1107,
+  "host_base": "0x1a6215000",
+  "gt_base": "0x1a6215000",
+  "gt_indication": "Low O2 sats. Hypoxia.",
+  "recovered_labels": [
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 670,
+      "ind_gpa": 7082173680,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.4824857711792,
+  "timestamp": 1793175675.3650355,
+  "status": "SUCCESS"
+}

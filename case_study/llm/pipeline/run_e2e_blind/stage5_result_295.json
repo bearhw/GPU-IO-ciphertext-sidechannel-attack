@@ -1,0 +1,41 @@
+{
+  "index": 295,
+  "host_base": "0x1a70c9000",
+  "gt_base": "0x1a70c9000",
+  "gt_indication": "Progressive shortness of breath over the past 2 days.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 7097590768,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 7097590784,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 21.384210109710693,
+  "timestamp": 1792896293.2721848,
+  "status": "SUCCESS"
+}

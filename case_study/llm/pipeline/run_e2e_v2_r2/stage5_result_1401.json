@@ -1,0 +1,134 @@
+{
+  "index": 1401,
+  "host_base": "0x1a0b8e000",
+  "gt_base": "0x1a0b8d000",
+  "gt_indication": "Syncope. Hypertension.",
+  "recovered_labels": [
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 272,
+      "ind_gpa": 6991440000,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6991440016,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6991440032,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6991440048,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6991440064,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6991440080,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6991440096,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6991440112,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6991440128,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6991440144,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6991440160,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 11,
+    "false_positive_labels": [
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC"
+    ],
+    "false_positive_count": 11,
+    "recovered_labels": [
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.841374635696411,
+  "timestamp": 1793371623.0639145,
+  "status": "SUCCESS"
+}

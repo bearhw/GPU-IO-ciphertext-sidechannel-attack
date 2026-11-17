@@ -1,0 +1,81 @@
+{
+  "index": 806,
+  "host_base": "0x196071000",
+  "gt_base": "0x196070000",
+  "gt_indication": "Productive cough for 2 days, weakness, mid chest pain off and on for a few days, smoker",
+  "recovered_labels": [
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 288,
+      "ind_gpa": 6812014848,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6812014848,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6812014864,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6812014864,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6812014880,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6812014880,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia."
+    ],
+    "false_positive_count": 3,
+    "recovered_labels": [
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 16.004473447799683,
+  "timestamp": 1793287437.8329263,
+  "status": "SUCCESS"
+}

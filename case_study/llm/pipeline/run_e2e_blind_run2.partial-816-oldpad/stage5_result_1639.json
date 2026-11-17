@@ -1,0 +1,32 @@
+{
+  "index": 1639,
+  "host_base": "0x1ad840000",
+  "gt_base": "0x1ad840000",
+  "gt_indication": "Left rib pain. Patient status post fall 4 days ago.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 7206080992,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 17.146097421646118,
+  "timestamp": 1793111761.2453415,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,144 @@
+{
+  "index": 1074,
+  "host_base": "0x1a3f8d000",
+  "gt_base": "0x1a3f8d000",
+  "gt_indication": "PICC",
+  "recovered_labels": [
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 7045962528,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 7045962544,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 7045962560,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7045962576,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7045962592,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7045962608,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7045962624,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7045962640,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7045962656,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7045962672,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7045962688,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7045962704,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.360575675964355,
+  "timestamp": 1793174477.811026,
+  "status": "SUCCESS"
+}

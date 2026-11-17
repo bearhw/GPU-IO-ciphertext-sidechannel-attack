@@ -1,0 +1,32 @@
+{
+  "index": 65,
+  "host_base": "0x1a0b0c000",
+  "gt_base": "0x1a0b0c000",
+  "gt_indication": "Shortness of breath, fever, body aches, unknown COVID status.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 558,
+      "ind_gpa": 6990909808,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 18.238447189331055,
+  "timestamp": 1792889974.8114645,
+  "status": "SUCCESS"
+}

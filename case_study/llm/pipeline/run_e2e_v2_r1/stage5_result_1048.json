@@ -1,0 +1,32 @@
+{
+  "index": 1048,
+  "host_base": "0x1a2b85000",
+  "gt_base": "0x1a2b85000",
+  "gt_indication": "Rule out diaphragmatic hernia. Respiratory distress and distended abdomen",
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 320,
+      "ind_gpa": 7024957952,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 15.427406072616577,
+  "timestamp": 1793288971.106358,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 3068,
+  "host_base": "0x1a019a000",
+  "gt_base": "0x1a019a000",
+  "gt_indication": "Syncope. Weakness.",
+  "recovered_labels": [
+    " Weakness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 596,
+      "ind_gpa": 6981005984,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Weakness"
+    ]
+  },
+  "elapsed_sec": 18.981147050857544,
+  "timestamp": 1793017576.4813042,
+  "status": "SUCCESS"
+}

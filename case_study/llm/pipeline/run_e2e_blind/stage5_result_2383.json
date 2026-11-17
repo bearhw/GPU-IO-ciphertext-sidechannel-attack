@@ -1,0 +1,32 @@
+{
+  "index": 2383,
+  "host_base": "0x19fac6000",
+  "gt_base": "0x19fac6000",
+  "gt_indication": "Cough. Hypertension.",
+  "recovered_labels": [
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 622,
+      "ind_gpa": 6973846384,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 17.86272096633911,
+  "timestamp": 1793301911.0805862,
+  "status": "SUCCESS"
+}

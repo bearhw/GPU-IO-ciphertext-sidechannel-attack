@@ -1,0 +1,244 @@
+{
+  "index": 1807,
+  "host_base": "0x1a070a000",
+  "gt_base": "0x1a070a000",
+  "gt_indication": "Motor vehicle accident. Follow-up.",
+  "recovered_labels": [
+    " PICC",
+    " fever.",
+    " Hypox",
+    " PICC",
+    " fever.",
+    " Hypox",
+    " PICC",
+    " fever.",
+    " Hypox",
+    " PICC",
+    " fever.",
+    " Hypox",
+    " PICC",
+    " fever.",
+    " PICC",
+    " fever.",
+    " PICC",
+    " fever.",
+    " PICC",
+    " fever.",
+    " PICC",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 536,
+      "ind_gpa": 6986707136,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6986707136,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6986707136,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6986707152,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6986707152,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6986707152,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6986707168,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6986707168,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6986707168,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6986707184,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6986707184,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6986707184,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6986707200,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6986707200,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6986707216,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6986707216,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6986707232,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6986707232,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6986707248,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6986707248,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6986707264,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6986707280,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 22,
+    "false_positive_labels": [
+      "PICC",
+      "fever.",
+      "Hypox",
+      "PICC",
+      "fever.",
+      "Hypox",
+      "PICC",
+      "fever.",
+      "Hypox",
+      "PICC",
+      "fever.",
+      "Hypox",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "PICC"
+    ],
+    "false_positive_count": 22,
+    "recovered_labels": [
+      "PICC",
+      "fever.",
+      "Hypox",
+      "PICC",
+      "fever.",
+      "Hypox",
+      "PICC",
+      "fever.",
+      "Hypox",
+      "PICC",
+      "fever.",
+      "Hypox",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever.",
+      "PICC",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 19.198256969451904,
+  "timestamp": 1792956967.1307657,
+  "status": "SUCCESS"
+}

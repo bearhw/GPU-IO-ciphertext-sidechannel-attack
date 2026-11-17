@@ -1,0 +1,32 @@
+{
+  "index": 1092,
+  "host_base": "0x1acab8000",
+  "gt_base": "0x1acab8000",
+  "gt_indication": "Acute onset of lower extremity swelling, numbness and tingling. Shortness of breath, wheezing and cough.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 652,
+      "ind_gpa": 7191893088,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.520564556121826,
+  "timestamp": 1793354778.8476284,
+  "status": "SUCCESS"
+}

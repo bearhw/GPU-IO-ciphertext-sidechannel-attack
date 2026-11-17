@@ -1,0 +1,41 @@
+{
+  "index": 924,
+  "host_base": "0x1a5cf0000",
+  "gt_base": "0x1a5cf0000",
+  "gt_indication": "53-year-old male with weakness and shortness of breath.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 7076778144,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 7076778160,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 19.10570216178894,
+  "timestamp": 1793087450.2617552,
+  "status": "SUCCESS"
+}

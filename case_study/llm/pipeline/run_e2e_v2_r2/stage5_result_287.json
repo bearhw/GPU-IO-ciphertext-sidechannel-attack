@@ -1,0 +1,214 @@
+{
+  "index": 287,
+  "host_base": "0x13f973000",
+  "gt_base": "0x13f972000",
+  "gt_indication": "Right posterior lower rib pain. Cough.",
+  "recovered_labels": [
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain",
+    " Cough",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 274,
+      "ind_gpa": 5361842320,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 5361842320,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 5361842336,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 5361842336,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 5361842352,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 5361842352,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 5361842368,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 5361842368,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 5361842384,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 5361842384,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 5361842400,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 5361842400,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 5361842416,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 5361842416,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 5361842432,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 5361842432,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 5361842448,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 5361842448,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 5361842464,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 5361842464,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain",
+      "Cough",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.532497644424438,
+  "timestamp": 1793327994.407847,
+  "status": "SUCCESS"
+}

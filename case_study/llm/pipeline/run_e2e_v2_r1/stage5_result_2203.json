@@ -1,0 +1,204 @@
+{
+  "index": 2203,
+  "host_base": "0x1a39f0000",
+  "gt_base": "0x1a39f0000",
+  "gt_indication": "Respiratory failure and status post intubation.",
+  "recovered_labels": [
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 454,
+      "ind_gpa": 7040077360,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 7040077360,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 7040077376,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 7040077376,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 7040077392,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 7040077392,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 7040077408,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 7040077408,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 7040077424,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 7040077424,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 7040077440,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 7040077440,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7040077456,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7040077456,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7040077472,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7040077472,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7040077488,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7040077488,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.595182418823242,
+  "timestamp": 1793226937.0526388,
+  "status": "SUCCESS"
+}

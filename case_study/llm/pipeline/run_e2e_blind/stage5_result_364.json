@@ -1,0 +1,32 @@
+{
+  "index": 364,
+  "host_base": "0x1a81c9000",
+  "gt_base": "0x1a81c9000",
+  "gt_indication": "Cough. Tracheostomy.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 664,
+      "ind_gpa": 7115416768,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 18.805444955825806,
+  "timestamp": 1792897733.7276738,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,62 @@
+{
+  "index": 1780,
+  "host_base": "0x1a77ea000",
+  "gt_base": "0x1a77ea000",
+  "gt_indication": "Respiratory failure, right-sided chest pain, history of GI bleeding, Barrett's esophagus, nonsmoker.",
+  "recovered_labels": [
+    " chest pain",
+    " pneumonia.",
+    " chest pain",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 666,
+      "ind_gpa": 7105066192,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7105066192,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7105066208,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7105066208,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "pneumonia.",
+      "pneumonia."
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "chest pain",
+      "pneumonia.",
+      "chest pain",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.061168670654297,
+  "timestamp": 1793291538.0668092,
+  "status": "SUCCESS"
+}

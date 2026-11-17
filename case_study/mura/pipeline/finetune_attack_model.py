@@ -139,12 +139,36 @@ class MapDataset(Dataset):
     SHIFTS = _SHIFTS
     SHIFT_P = _SHIFT_P
 
-    def __init__(self, x, y, augment=False, seed=0):
+    def __init__(self, x, y, augment=False, seed=0, shifts=None, shift_p=None,
+                 foreign_p=0.0, pool=None):
         self.x, self.y, self.augment = x, y, augment
+        self.seed = seed
         self.rng = np.random.default_rng(seed)
+        self._worker = None
+        # Override the default (block-given) shift distribution with a measured one,
+        # e.g. the blind distribution where the window runs 7+ pages late far more
+        # often. The model only becomes robust to shifts it is actually shown.
+        if shifts is not None:
+            self.SHIFTS = shifts
+            self.SHIFT_P = shift_p
+        # In blind captures the pages a shifted window picks up are not empty: samples
+        # missing 3-9 GT pages have the same empty-slot count as complete ones and a
+        # higher density. They hold the neighbouring image's pages. With probability
+        # foreign_p the shifted-in slots are filled from another sample (its head
+        # for a late window, its tail for an early one) instead of zeros.
+        self.foreign_p = foreign_p
+        self.pool = pool if pool is not None else range(len(y))
 
     def __len__(self):
         return len(self.y)
+
+    def _reseed_for_worker(self):
+        # Each DataLoader worker gets a copy of the same rng, so without this the
+        # workers draw identical augmentations. wi.seed differs per worker and epoch.
+        wi = torch.utils.data.get_worker_info()
+        if wi is not None and self._worker != (wi.id, wi.seed):
+            self.rng = np.random.default_rng(wi.seed)
+            self._worker = (wi.id, wi.seed)
 
     def _shift(self, m: np.ndarray) -> np.ndarray:
         k = int(self.rng.choice(self.SHIFTS, p=self.SHIFT_P))
@@ -154,13 +178,22 @@ class MapDataset(Dataset):
         flat = m.reshape(n_ref, rows * cols)
         off = abs(k) * self.PAGE_CHUNKS
         out = np.zeros_like(flat)
+        donor = None
+        if self.foreign_p > 0 and self.rng.random() < self.foreign_p:
+            j = self.pool[int(self.rng.integers(len(self.pool)))]
+            donor = np.asarray(self.x[j]).reshape(n_ref, rows * cols)
         if k < 0:                 # window started early: junk at the front
             out[:, off:] = flat[:, :-off]
+            if donor is not None:  # previous image's last pages
+                out[:, :off] = donor[:, -off:]
         else:                     # started late: junk at the back
             out[:, :-off] = flat[:, off:]
+            if donor is not None:  # next image's first pages
+                out[:, -off:] = donor[:, :off]
         return out.reshape(n_ref, rows, cols)
 
     def __getitem__(self, i):
+        self._reseed_for_worker()
         m = self.x[i]
         if self.augment:
             m = self._shift(np.asarray(m))
@@ -217,6 +250,40 @@ def report(tag, r):
     log("        " + "  ".join(f"{k} {v*100:.0f}%" for k, v in sorted(r["per_class"].items())))
 
 
+def _save_curve(history, path):
+    """Plot train accuracy / val macro / val top-1 (left axis) and train loss
+    (right axis) against epoch. Failing to plot must not fail a multi-hour run, so
+    the history JSON is the source of truth and this is best-effort on top of it."""
+    eps = history["epoch"]
+    if not eps:
+        return
+    try:
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        x = [e["ep"] for e in eps]
+        fig, ax = plt.subplots(figsize=(7, 4.5))
+        ax.plot(x, [e["train_acc"] * 100 for e in eps], "-o", ms=3, label="train acc", color="#1f77b4")
+        ax.plot(x, [e["val_top1"] * 100 for e in eps], "-o", ms=3, label="val top-1", color="#2ca02c")
+        ax.plot(x, [e["val_macro"] * 100 for e in eps], "-o", ms=3, label="val macro", color="#ff7f0e")
+        ax.axhline(history["zero_shot"]["macro"] * 100, ls="--", lw=1, color="#888",
+                   label=f"zero-shot macro {history['zero_shot']['macro']*100:.1f}%")
+        ax.set_xlabel("epoch"); ax.set_ylabel("accuracy (%)"); ax.set_ylim(0, 100)
+        ax.grid(alpha=0.3)
+        ax2 = ax.twinx()
+        ax2.plot(x, [e["train_loss"] for e in eps], ":", lw=1.2, color="#d62728", label="train loss")
+        ax2.set_ylabel("train loss", color="#d62728")
+        best = max(eps, key=lambda e: e["val_macro"])
+        ax.set_title(f"Dict-{history['n_ref']} blind fine-tune  "
+                     f"(best val macro {best['val_macro']*100:.1f}% @ ep{best['ep']})")
+        h1, l1 = ax.get_legend_handles_labels(); h2, l2 = ax2.get_legend_handles_labels()
+        ax.legend(h1 + h2, l1 + l2, loc="lower right", fontsize=8)
+        fig.tight_layout(); fig.savefig(path, dpi=130); plt.close(fig)
+        log(f"[curve] {path}")
+    except Exception as e:
+        log(f"[curve] skipped ({e}); history in {path.with_suffix('.json').name}")
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -240,6 +307,14 @@ def main():
     p.add_argument("--balance", action="store_true",
                    help="Subsample every class to the smallest instead of weighting the loss")
     p.add_argument("--no-augment", dest="augment", action="store_false")
+    p.add_argument("--shift-dist", default=None,
+                   help="JSON {k: prob} of the page-shift distribution to augment "
+                        "with (e.g. the blind distribution). Default: built-in "
+                        "block-given distribution (|k|<=3).")
+    p.add_argument("--foreign-fill", type=float, default=0.0,
+                   help="Probability that pages shifted into the window are filled from "
+                        "another training sample instead of zeros (blind captures pick "
+                        "up the neighbouring image's pages). Default 0 = zeros.")
     p.add_argument("--eval-only", action="store_true", help="Report zero-shot and stop")
     p.add_argument("--out", default=None)
     p.add_argument("--log", default=None,
@@ -283,7 +358,21 @@ def main():
     log(f"[data] eval classes: {dict(Counter(c.CLASSES[vy[i]] for i in val))}")
 
     # Index through the memmap lazily rather than materialising a 1.5GB copy.
-    tr_ld = DataLoader(_Subset(x, y, tr, augment=args.augment),
+    sh_k = sh_p = None
+    if args.shift_dist:
+        dd = json.loads(Path(args.shift_dist).read_text())
+        sh_k = [int(k) for k in dd]
+        tot = sum(dd.values())
+        sh_p = [dd[k] / tot for k in dd]
+        log(f"[aug] custom shift distribution: {len(sh_k)} shifts, "
+            f"k range [{min(sh_k)}, {max(sh_k)}], "
+            f"P(|k|>=4)={sum(p for k,p in zip(sh_k,sh_p) if abs(k)>=4):.2f}")
+
+    if args.foreign_fill > 0:
+        log(f"[aug] foreign fill: shifted-in pages from another sample with "
+            f"p={args.foreign_fill}")
+    tr_ld = DataLoader(_Subset(x, y, tr, augment=args.augment, shifts=sh_k, shift_p=sh_p,
+                               foreign_p=args.foreign_fill),
                        batch_size=args.batch, shuffle=True, num_workers=2)
     va_ld = DataLoader(_Subset(vx, vy, val, augment=False),
                        batch_size=args.batch, num_workers=2)
@@ -312,29 +401,46 @@ def main():
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=args.epochs)
 
     out = Path(args.out or HERE / f"mura_attack_{args.n_ref}ref_ft.pth")
+    hist_path = out.with_name(out.stem + "_history.json")
+    curve_path = out.with_name(out.stem + "_curve.png")
+    history = {"n_ref": args.n_ref, "epochs": args.epochs, "ckpt": Path(ckpt).name,
+               "shift_dist": args.shift_dist, "foreign_fill": args.foreign_fill,
+               "zero_shot": {"top1": base["top1"], "macro": base["macro"]},
+               "epoch": []}
     best = base["macro"]
     log(f"[train] {args.epochs} epochs, head lr {args.lr}, backbone lr {args.backbone_lr}, "
           f"{'balanced' if args.balance else 'class-weighted'}"
           f"{', shift-augmented' if args.augment else ''}")
     for ep in range(1, args.epochs + 1):
         model.train()
-        tot = n = 0
+        tot = n = correct = 0
         for xb, yb in tr_ld:
             xb, yb = xb.to(device), yb.to(device)
             sc = torch.ones(len(xb), 1, device=device)
             opt.zero_grad()
-            loss = crit(model(xb, sc), yb)
+            out_logits = model(xb, sc)
+            loss = crit(out_logits, yb)
             loss.backward()
             opt.step()
             tot += loss.item() * len(xb); n += len(xb)
+            correct += (out_logits.argmax(1) == yb).sum().item()
         sched.step()
+        tr_loss = tot / max(n, 1)
+        tr_acc = correct / max(n, 1)      # running train accuracy over the epoch
         r = evaluate(model, va_ld, device)
         mark = ""
-        if r["macro"] > best:
+        saved = r["macro"] > best
+        if saved:
             best = r["macro"]; torch.save(model.state_dict(), out); mark = "  *saved"
-        log(f"[ep {ep:>3}] loss {tot/max(n,1):.4f}  "
+        log(f"[ep {ep:>3}] loss {tr_loss:.4f}  train-acc {tr_acc*100:.1f}%  "
               f"val top-1 {r['top1']*100:.1f}%  macro {r['macro']*100:.1f}%{mark}")
+        # Write the curve after every epoch so a crash still leaves the history so far.
+        history["epoch"].append({"ep": ep, "train_loss": tr_loss, "train_acc": tr_acc,
+                                 "val_top1": r["top1"], "val_macro": r["macro"],
+                                 "lr": sched.get_last_lr()[0], "saved": saved})
+        hist_path.write_text(json.dumps(history, indent=2))
 
+    _save_curve(history, curve_path)
     log()
     model.load_state_dict(torch.load(out, map_location=device, weights_only=True))
     fin = evaluate(model, va_ld, device)
@@ -350,13 +456,17 @@ def main():
     for i, n in enumerate(c.CLASSES):
         log(f"{n:<10}" + " ".join(f"{v:>5}" for v in cm[i]))
     log(f"\n[saved] {out}")
+    log(f"[saved] history -> {hist_path}")
+    log(f"[saved] curve   -> {curve_path}")
     return 0
 
 
 class _Subset(Dataset):
-    def __init__(self, x, y, idx, augment):
+    def __init__(self, x, y, idx, augment, shifts=None, shift_p=None, foreign_p=0.0):
         self.x, self.y, self.idx = x, y, idx
-        self.ds = MapDataset(x, y, augment=augment)
+        # Donor pages come from the same training indices, never the holdout.
+        self.ds = MapDataset(x, y, augment=augment, shifts=shifts, shift_p=shift_p,
+                             foreign_p=foreign_p, pool=list(idx))
 
     def __len__(self):
         return len(self.idx)

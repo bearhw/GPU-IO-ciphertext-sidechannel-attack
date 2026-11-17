@@ -1,0 +1,204 @@
+{
+  "index": 1146,
+  "host_base": "0x1a2da9000",
+  "gt_base": "0x1a2da9000",
+  "gt_indication": "Chest pain and 28 weeks pregnant",
+  "recovered_labels": [
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 630,
+      "ind_gpa": 7027205040,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 630,
+      "ind_gpa": 7027205040,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 632,
+      "ind_gpa": 7027205056,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 632,
+      "ind_gpa": 7027205056,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 634,
+      "ind_gpa": 7027205072,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 634,
+      "ind_gpa": 7027205072,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 636,
+      "ind_gpa": 7027205088,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 636,
+      "ind_gpa": 7027205088,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 638,
+      "ind_gpa": 7027205104,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 638,
+      "ind_gpa": 7027205104,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 7027205120,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 7027205120,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 7027205136,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 7027205136,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 7027205152,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 7027205152,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 7027205168,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 7027205168,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 19.701261043548584,
+  "timestamp": 1793097350.0901575,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,20 @@
+{
+  "index": 770,
+  "host_base": "0x1a28de000",
+  "gt_base": "0x1a28de000",
+  "gt_indication": "Preoperative study prior to video-assisted thoracostomy in wedge resection on the right, history of COPD and right upper lung mass, current smoker.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 19.32994055747986,
+  "timestamp": 1793083482.0400152,
+  "status": "SUCCESS"
+}

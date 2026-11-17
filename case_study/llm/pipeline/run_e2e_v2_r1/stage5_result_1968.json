@@ -1,0 +1,32 @@
+{
+  "index": 1968,
+  "host_base": "0x1a2230000",
+  "gt_base": "0x1a2230000",
+  "gt_indication": "Umbilical artery catheter repositioning.",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 442,
+      "ind_gpa": 7015173584,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.198078155517578,
+  "timestamp": 1793219128.2452133,
+  "status": "SUCCESS"
+}

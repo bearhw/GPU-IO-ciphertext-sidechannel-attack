@@ -1,0 +1,294 @@
+{
+  "index": 2601,
+  "host_base": "0x199c34000",
+  "gt_base": "0x199c34000",
+  "gt_indication": "Umbilical venous catheter repositioned",
+  "recovered_labels": [
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox",
+    " Respiratory",
+    " wheez",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 314,
+      "ind_gpa": 6874679760,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 314,
+      "ind_gpa": 6874679760,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 314,
+      "ind_gpa": 6874679760,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 316,
+      "ind_gpa": 6874679776,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 316,
+      "ind_gpa": 6874679776,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 316,
+      "ind_gpa": 6874679776,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 318,
+      "ind_gpa": 6874679792,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 318,
+      "ind_gpa": 6874679792,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 318,
+      "ind_gpa": 6874679792,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 320,
+      "ind_gpa": 6874679808,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 320,
+      "ind_gpa": 6874679808,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 320,
+      "ind_gpa": 6874679808,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 322,
+      "ind_gpa": 6874679824,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 322,
+      "ind_gpa": 6874679824,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 322,
+      "ind_gpa": 6874679824,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 324,
+      "ind_gpa": 6874679840,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 324,
+      "ind_gpa": 6874679840,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 324,
+      "ind_gpa": 6874679840,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 326,
+      "ind_gpa": 6874679856,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 326,
+      "ind_gpa": 6874679856,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 326,
+      "ind_gpa": 6874679856,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 328,
+      "ind_gpa": 6874679872,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 328,
+      "ind_gpa": 6874679872,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 328,
+      "ind_gpa": 6874679872,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 330,
+      "ind_gpa": 6874679888,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 330,
+      "ind_gpa": 6874679888,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 330,
+      "ind_gpa": 6874679888,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 27,
+    "false_positive_labels": [
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox"
+    ],
+    "false_positive_count": 27,
+    "recovered_labels": [
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox",
+      "Respiratory",
+      "wheez",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 18.675089836120605,
+  "timestamp": 1792998415.3082514,
+  "status": "SUCCESS"
+}

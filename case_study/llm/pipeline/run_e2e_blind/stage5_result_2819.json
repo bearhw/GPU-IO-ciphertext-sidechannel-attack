@@ -1,0 +1,180 @@
+{
+  "index": 2819,
+  "host_base": "0x1a06a3000",
+  "gt_base": "0x1a06a2000",
+  "gt_indication": "Cough and cold for 2 weeks.",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 282,
+      "ind_gpa": 6986283216,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6986283216,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6986283216,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6986283216,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6986283232,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6986283232,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6986283232,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6986283232,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6986283248,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6986283248,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6986283248,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6986283248,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6986283264,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6986283264,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6986283264,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6986283264,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "of breath",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "fever.",
+      "Fever."
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 20.014463186264038,
+  "timestamp": 1793005624.5827844,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 2539,
+  "host_base": "0x1a4828000",
+  "gt_base": "0x1a4827000",
+  "gt_indication": "Shortness of breath, COPD. Flu symptoms.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7054985248,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 7054985264,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 17.285927534103394,
+  "timestamp": 1792993853.1259003,
+  "status": "SUCCESS"
+}

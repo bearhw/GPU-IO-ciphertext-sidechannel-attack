@@ -1,0 +1,32 @@
+{
+  "index": 1970,
+  "host_base": "0x1a0f9e000",
+  "gt_base": "0x1a0f9e000",
+  "gt_indication": "Shortness of breath, fever, history of cancer",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 568,
+      "ind_gpa": 6995702208,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 19.460086345672607,
+  "timestamp": 1792968123.9799533,
+  "status": "SUCCESS"
+}

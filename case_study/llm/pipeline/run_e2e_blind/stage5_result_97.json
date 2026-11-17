@@ -1,0 +1,32 @@
+{
+  "index": 97,
+  "host_base": "0x1a294a000",
+  "gt_base": "0x1a294a000",
+  "gt_indication": "History of a spontaneous pneumothorax on the right, some chest pain and cough",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 7022619456,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 18.17415452003479,
+  "timestamp": 1792890602.585718,
+  "status": "SUCCESS"
+}

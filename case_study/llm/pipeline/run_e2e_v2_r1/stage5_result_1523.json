@@ -1,0 +1,32 @@
+{
+  "index": 1523,
+  "host_base": "0x1a750a000",
+  "gt_base": "0x1a7509000",
+  "gt_indication": "Productive cough, sneezing for 2 weeks",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 7102048304,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 15.153023958206177,
+  "timestamp": 1793291249.976302,
+  "status": "SUCCESS"
+}

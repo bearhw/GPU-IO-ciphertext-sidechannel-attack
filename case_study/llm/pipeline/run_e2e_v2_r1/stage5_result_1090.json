@@ -1,0 +1,32 @@
+{
+  "index": 1090,
+  "host_base": "0x1a4618000",
+  "gt_base": "0x1a4618000",
+  "gt_indication": "Cough and congestion for 1 month, negative COVID testing last week, history of heart murmur",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 720,
+      "ind_gpa": 7052826240,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.374103784561157,
+  "timestamp": 1793174888.7024179,
+  "status": "SUCCESS"
+}

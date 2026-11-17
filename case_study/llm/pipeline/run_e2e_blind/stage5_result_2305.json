@@ -1,0 +1,41 @@
+{
+  "index": 2305,
+  "host_base": "0x1a3bbb000",
+  "gt_base": "0x1a3bbb000",
+  "gt_indication": "Cough and low grade fever",
+  "recovered_labels": [
+    "ough and",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 314,
+      "ind_gpa": 7041956304,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 318,
+      "ind_gpa": 7041956336,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.055327653884888,
+  "timestamp": 1792979443.0793414,
+  "status": "SUCCESS"
+}

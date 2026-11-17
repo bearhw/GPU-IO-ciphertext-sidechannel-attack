@@ -1,0 +1,204 @@
+{
+  "index": 1593,
+  "host_base": "0x1a0e24000",
+  "gt_base": "0x1a0e23000",
+  "gt_indication": "Right rib pain for several months, no known injury",
+  "recovered_labels": [
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 276,
+      "ind_gpa": 6994151584,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6994151584,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6994151600,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6994151600,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6994151616,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6994151616,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6994151632,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6994151632,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6994151648,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6994151648,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6994151664,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6994151664,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6994151680,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6994151680,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6994151696,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6994151696,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6994151712,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6994151712,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.673736572265625,
+  "timestamp": 1793199255.0387642,
+  "status": "SUCCESS"
+}

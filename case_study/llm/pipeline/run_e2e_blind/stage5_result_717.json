@@ -1,0 +1,124 @@
+{
+  "index": 717,
+  "host_base": "0x19fbf5000",
+  "gt_base": "0x19fbf5000",
+  "gt_indication": "Hypoxia. Question pneumonia.",
+  "recovered_labels": [
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 6975085376,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6975085392,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6975085408,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6975085424,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6975085440,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6975085456,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6975085472,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6975085488,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6975085504,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6975085520,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 10,
+    "false_positive_labels": [
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,"
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 17.155251502990723,
+  "timestamp": 1793032740.583535,
+  "status": "SUCCESS"
+}

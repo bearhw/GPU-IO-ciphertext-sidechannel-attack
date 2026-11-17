@@ -1,0 +1,50 @@
+{
+  "index": 2840,
+  "host_base": "0x1a69a6000",
+  "gt_base": "0x1a69a5000",
+  "gt_indication": "Shortness of breath and cough. Recent COVID-19 positive",
+  "recovered_labels": [
+    " Shortness",
+    " of breath",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7090104352,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 7090104368,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 268,
+      "ind_gpa": 7090104416,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.162363767623901,
+  "timestamp": 1793252711.2543488,
+  "status": "SUCCESS"
+}

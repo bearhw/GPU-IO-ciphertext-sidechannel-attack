@@ -1,0 +1,41 @@
+{
+  "index": 732,
+  "host_base": "0x1a5c51000",
+  "gt_base": "0x1a5c51000",
+  "gt_indication": "Right-sided chest pain, short of breath, cough, former smoker",
+  "recovered_labels": [
+    " breath,",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 510,
+      "ind_gpa": 7076126704,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 512,
+      "ind_gpa": 7076126720,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath,",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 30.975661516189575,
+  "timestamp": 1793155595.519661,
+  "status": "SUCCESS"
+}

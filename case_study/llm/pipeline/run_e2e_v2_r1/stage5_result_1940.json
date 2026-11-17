@@ -1,0 +1,32 @@
+{
+  "index": 1940,
+  "host_base": "0x142e55000",
+  "gt_base": "0x142e55000",
+  "gt_indication": "Right-sided chest trauma and rib pain.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 5417294592,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.288450002670288,
+  "timestamp": 1793216103.009035,
+  "status": "SUCCESS"
+}

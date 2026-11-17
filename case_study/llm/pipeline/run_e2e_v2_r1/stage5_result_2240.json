@@ -1,0 +1,204 @@
+{
+  "index": 2240,
+  "host_base": "0x1a4488000",
+  "gt_base": "0x1a4487000",
+  "gt_indication": "Chest discomfort. Intermittent chest pain.",
+  "recovered_labels": [
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 276,
+      "ind_gpa": 7051184288,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 7051184288,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7051184304,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7051184304,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7051184320,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7051184320,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7051184336,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7051184336,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7051184352,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7051184352,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7051184368,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7051184368,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7051184384,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7051184384,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7051184400,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7051184400,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7051184416,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7051184416,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 14.989738702774048,
+  "timestamp": 1793227752.0453424,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 518,
+  "host_base": "0x144f44000",
+  "gt_base": "0x144f44000",
+  "gt_indication": "Increased shortness of breath. Body aches. COVID-19 positive yesterday.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 448,
+      "ind_gpa": 5451828736,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 450,
+      "ind_gpa": 5451828752,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 19.488784313201904,
+  "timestamp": 1792906971.0282223,
+  "status": "SUCCESS"
+}

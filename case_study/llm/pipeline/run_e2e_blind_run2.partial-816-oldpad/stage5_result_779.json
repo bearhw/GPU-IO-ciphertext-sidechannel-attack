@@ -1,0 +1,59 @@
+{
+  "index": 779,
+  "host_base": "0x1a2d36000",
+  "gt_base": "0x1a2d36000",
+  "gt_indication": "Cough and right-sided chest pain for the past 2 days. Nonsmoker.",
+  "recovered_labels": [
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 552,
+      "ind_gpa": 7026733376,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7026733392,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7026733408,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7026733424,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough."
+    ]
+  },
+  "elapsed_sec": 18.032267808914185,
+  "timestamp": 1793083845.0109916,
+  "status": "SUCCESS"
+}

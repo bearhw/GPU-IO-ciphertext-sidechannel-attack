@@ -1,0 +1,32 @@
+{
+  "index": 2286,
+  "host_base": "0x1a3789000",
+  "gt_base": "0x1a3789000",
+  "gt_indication": "Pt comes to ER with respiratory distress recent hospitalization July 05-17, 7261 for sepsis/ pneumonia/ acute respiratory failure. Patient has history including, but not limited to, CAD with previous MI x 3; end-stage COPD; HTN; and anxiety.",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 668,
+      "ind_gpa": 7037560032,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 19.584234476089478,
+  "timestamp": 1792979087.533527,
+  "status": "SUCCESS"
+}

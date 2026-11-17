@@ -1,0 +1,257 @@
+{
+  "index": 385,
+  "host_base": "0x13ab17000",
+  "gt_base": "0x13ab17000",
+  "gt_indication": "Intermittent chest pain. COVID positive.",
+  "recovered_labels": [
+    "ness of",
+    " pneumonia.",
+    " COVID-",
+    " Hypox",
+    "ness of",
+    " pneumonia.",
+    " COVID-",
+    " Hypox",
+    "ness of",
+    " pneumonia.",
+    " COVID-",
+    " Hypox",
+    "ness of",
+    " COVID-",
+    " Hypox",
+    "ness of",
+    " COVID-",
+    " Hypox",
+    "ness of",
+    " COVID-",
+    " Hypox",
+    "ness of",
+    " COVID-",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 552,
+      "ind_gpa": 5279678784,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5279678784,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5279678784,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5279678784,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5279678800,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5279678800,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5279678800,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5279678800,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5279678832,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5279678832,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5279678832,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5279678832,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5279678848,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5279678848,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5279678848,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5279678864,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5279678864,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5279678864,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5279678880,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5279678880,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5279678880,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5279678896,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5279678896,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5279678896,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 24,
+    "false_positive_labels": [
+      "ness of",
+      "pneumonia.",
+      "Hypox",
+      "ness of",
+      "pneumonia.",
+      "Hypox",
+      "ness of",
+      "pneumonia.",
+      "Hypox",
+      "ness of",
+      "Hypox",
+      "ness of",
+      "Hypox",
+      "ness of",
+      "Hypox",
+      "ness of",
+      "Hypox"
+    ],
+    "false_positive_count": 17,
+    "recovered_labels": [
+      "ness of",
+      "pneumonia.",
+      "COVID-",
+      "Hypox",
+      "ness of",
+      "pneumonia.",
+      "COVID-",
+      "Hypox",
+      "ness of",
+      "pneumonia.",
+      "COVID-",
+      "Hypox",
+      "ness of",
+      "COVID-",
+      "Hypox",
+      "ness of",
+      "COVID-",
+      "Hypox",
+      "ness of",
+      "COVID-",
+      "Hypox",
+      "ness of",
+      "COVID-",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.697563409805298,
+  "timestamp": 1793145738.8936403,
+  "status": "SUCCESS"
+}

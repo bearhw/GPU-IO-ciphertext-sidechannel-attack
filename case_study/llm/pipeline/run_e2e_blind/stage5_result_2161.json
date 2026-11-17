@@ -1,0 +1,50 @@
+{
+  "index": 2161,
+  "host_base": "0x19d7f4000",
+  "gt_base": "0x19d7f4000",
+  "gt_indication": "soa, history of covid Patient has complaints of shortness of breath, chest pain, and a cough since the first part [DATE] which has recently turned productive. Diagnosed with COVID 05/08/2023.",
+  "recovered_labels": [
+    "ness of",
+    " breath,",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 6937332528,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6937332544,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6937332560,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 18.513240337371826,
+  "timestamp": 1792974214.4126463,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 1643,
+  "host_base": "0x1a759e000",
+  "gt_base": "0x1a759e000",
+  "gt_indication": "71-year-old female under preoperative evaluation for pacemaker placement. Shortness of breath.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 652,
+      "ind_gpa": 7102657632,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 18.89512825012207,
+  "timestamp": 1792951568.809097,
+  "status": "SUCCESS"
+}

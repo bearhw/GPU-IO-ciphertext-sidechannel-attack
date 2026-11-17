@@ -1,0 +1,20 @@
+{
+  "index": 2455,
+  "host_base": "0x129c38000",
+  "gt_base": "0x129c38000",
+  "gt_indication": "One month of productive cough associated with upper chest discomfort and shortness of breath. Nonsmoker. History of childhood pneumonia.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.768743991851807,
+  "timestamp": 1793239334.8320599,
+  "status": "SUCCESS"
+}

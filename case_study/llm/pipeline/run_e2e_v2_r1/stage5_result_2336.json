@@ -1,0 +1,44 @@
+{
+  "index": 2336,
+  "host_base": "0x1a0b48000",
+  "gt_base": "0x1a0b48000",
+  "gt_indication": "chest pain; hx of smoking, copd, emphyzema; htn, and diabetes",
+  "recovered_labels": [
+    " pneumonia.",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 6991155360,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6991155360,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "pneumonia.",
+      "wheez"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "pneumonia.",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.875976085662842,
+  "timestamp": 1793230407.1628757,
+  "status": "SUCCESS"
+}

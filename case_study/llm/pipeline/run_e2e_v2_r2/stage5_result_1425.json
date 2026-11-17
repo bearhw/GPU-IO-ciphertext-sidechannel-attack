@@ -1,0 +1,32 @@
+{
+  "index": 1425,
+  "host_base": "0x1a0e74000",
+  "gt_base": "0x1a0e74000",
+  "gt_indication": "Confusion. Fever. Nausea and vomiting.",
+  "recovered_labels": [
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 6994479856,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.542039394378662,
+  "timestamp": 1793371940.274108,
+  "status": "SUCCESS"
+}

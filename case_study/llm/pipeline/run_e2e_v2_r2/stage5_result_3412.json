@@ -1,0 +1,41 @@
+{
+  "index": 3412,
+  "host_base": "0x1a1251000",
+  "gt_base": "0x1a1250000",
+  "gt_indication": "COVID-19 pneumonia",
+  "recovered_labels": [
+    " COVID-",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6998530080,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 6998530112,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COVID-",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.332158088684082,
+  "timestamp": 1793452997.8818681,
+  "status": "SUCCESS"
+}

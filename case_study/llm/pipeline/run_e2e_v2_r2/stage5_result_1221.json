@@ -1,0 +1,34 @@
+{
+  "index": 1221,
+  "host_base": "0x19f6bb000",
+  "gt_base": "0x19f6bb000",
+  "gt_indication": "Chest pain. Portable chest film demonstrated possible right pulmonary nodule versus nipple shadow. Two view study is now repeated with nipple markers.",
+  "recovered_labels": [
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 378,
+      "ind_gpa": 6969605072,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "Hypox"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.038329601287842,
+  "timestamp": 1793360631.4763036,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 3194,
+  "host_base": "0x1a0cd3000",
+  "gt_base": "0x1a0cd3000",
+  "gt_indication": "Cough, shortness of breath and wheezing. Question pneumonia.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 6992771824,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 6992771840,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.326386213302612,
+  "timestamp": 1793446251.5955071,
+  "status": "SUCCESS"
+}

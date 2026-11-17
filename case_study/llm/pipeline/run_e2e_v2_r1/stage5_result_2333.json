@@ -1,0 +1,32 @@
+{
+  "index": 2333,
+  "host_base": "0x1a09ee000",
+  "gt_base": "0x1a09ee000",
+  "gt_indication": "Pneumonia, sepsis and increased shortness of breath.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 6989736752,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.385023593902588,
+  "timestamp": 1793230278.3918703,
+  "status": "SUCCESS"
+}

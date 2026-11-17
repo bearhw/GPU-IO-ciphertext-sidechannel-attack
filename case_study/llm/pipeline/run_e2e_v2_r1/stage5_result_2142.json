@@ -1,0 +1,32 @@
+{
+  "index": 2142,
+  "host_base": "0x19ff95000",
+  "gt_base": "0x19ff95000",
+  "gt_indication": "85-year-old male with wheezing. Heart block.",
+  "recovered_labels": [
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 530,
+      "ind_gpa": 6978887824,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.577565908432007,
+  "timestamp": 1793223593.7656474,
+  "status": "SUCCESS"
+}

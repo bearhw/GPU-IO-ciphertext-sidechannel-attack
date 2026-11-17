@@ -1,0 +1,20 @@
+{
+  "index": 1377,
+  "host_base": "0x1a20b0000",
+  "gt_base": "0x1a20af000",
+  "gt_indication": "Centralized chest pain for 2 days.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 6.983714818954468,
+  "timestamp": 1792944400.465594,
+  "status": "SUCCESS"
+}

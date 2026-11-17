@@ -1,0 +1,114 @@
+{
+  "index": 3372,
+  "host_base": "0x1a10dc000",
+  "gt_base": "0x1a10db000",
+  "gt_indication": "Follow up CABG, chest soreness",
+  "recovered_labels": [
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 248,
+      "ind_gpa": 6997002176,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 250,
+      "ind_gpa": 6997002192,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 252,
+      "ind_gpa": 6997002208,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 254,
+      "ind_gpa": 6997002224,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 256,
+      "ind_gpa": 6997002240,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 258,
+      "ind_gpa": 6997002256,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 260,
+      "ind_gpa": 6997002272,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6997002288,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 6997002304,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 9,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.638181447982788,
+  "timestamp": 1793280381.8211794,
+  "status": "SUCCESS"
+}

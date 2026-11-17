@@ -1,0 +1,174 @@
+{
+  "index": 1962,
+  "host_base": "0x145851000",
+  "gt_base": "0x145851000",
+  "gt_indication": "Acute respiratory failure. Hypoxia",
+  "recovered_labels": [
+    " COPD",
+    " Hypox",
+    " COPD",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " catheter",
+    " catheter",
+    " catheter",
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 5461319840,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5461319840,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5461319856,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5461319856,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5461319872,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5461319888,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5461319904,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5461319920,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5461319936,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5461319952,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5461319968,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5461319984,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5461320000,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5461320016,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5461320032,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5461320048,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "catheter",
+      "catheter",
+      "catheter",
+      "catheter"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "COPD",
+      "Hypox",
+      "COPD",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "catheter",
+      "catheter",
+      "catheter",
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.556199312210083,
+  "timestamp": 1793218463.1917486,
+  "status": "SUCCESS"
+}

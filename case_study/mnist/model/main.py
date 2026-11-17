@@ -151,7 +151,14 @@ def main():
         transforms.ToTensor(), #float32
         transforms.Normalize((0.1307,), (0.3081,))
         ])
-    dataset1 = datasets.MNIST('../data', train=True, download=True,
+    # The attack holds a batch out of dataset1 (the loader train() iterates). For a
+    # blind end-to-end *evaluation* that must use images none of the reconstruction
+    # models ever saw, dataset1 is the MNIST test split (t10k, 10k images) by default;
+    # the models' captures and v6r's retrieval DB are all the train split. Set
+    # MNIST_SPLIT=train to restore the original training-data-collection behavior.
+    _eval_on_train = os.environ.get("MNIST_SPLIT", "test").lower() == "train"
+    print(f"[split] dataset1 (held batch) = MNIST {'train' if _eval_on_train else 'test'} split", flush=True)
+    dataset1 = datasets.MNIST('../data', train=_eval_on_train, download=True,
                        transform=transform)
     dataset2 = datasets.MNIST('../data', train=False,
                        transform=transform)

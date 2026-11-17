@@ -1,0 +1,32 @@
+{
+  "index": 2511,
+  "host_base": "0x1a1b52000",
+  "gt_base": "0x1a1b52000",
+  "gt_indication": "Right rib pain for 2 weeks.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 694,
+      "ind_gpa": 7007974832,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 19.349329948425293,
+  "timestamp": 1793044423.7454598,
+  "status": "SUCCESS"
+}

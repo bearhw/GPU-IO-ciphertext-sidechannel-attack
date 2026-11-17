@@ -1,0 +1,32 @@
+{
+  "index": 3359,
+  "host_base": "0x1a1932000",
+  "gt_base": "0x1a1932000",
+  "gt_indication": "Leg and ankle swelling. Hypertension. Diabetes.",
+  "recovered_labels": [
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7005743872,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 17.208307027816772,
+  "timestamp": 1793027708.895538,
+  "status": "SUCCESS"
+}

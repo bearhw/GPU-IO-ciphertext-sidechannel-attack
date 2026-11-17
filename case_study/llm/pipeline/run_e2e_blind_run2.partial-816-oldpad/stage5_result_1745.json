@@ -1,0 +1,32 @@
+{
+  "index": 1745,
+  "host_base": "0x1af5b1000",
+  "gt_base": "0x1af5b1000",
+  "gt_indication": "Ovarian CA. Right portacath insertion. Reevaluate pneumothorax.",
+  "recovered_labels": [
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 7236950848,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 17.382840394973755,
+  "timestamp": 1793114645.7322664,
+  "status": "SUCCESS"
+}

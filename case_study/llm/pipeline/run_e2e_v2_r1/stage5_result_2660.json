@@ -1,0 +1,50 @@
+{
+  "index": 2660,
+  "host_base": "0x1a2279000",
+  "gt_base": "0x1a2279000",
+  "gt_indication": "History of coughing, shortness of breath, and weakness.",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 530,
+      "ind_gpa": 7015473296,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 7015473312,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 7015473328,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.480463027954102,
+  "timestamp": 1793247449.4564047,
+  "status": "SUCCESS"
+}

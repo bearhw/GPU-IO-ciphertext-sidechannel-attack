@@ -1,0 +1,32 @@
+{
+  "index": 1494,
+  "host_base": "0x1a1218000",
+  "gt_base": "0x1a1218000",
+  "gt_indication": "Shortness of breath, cough, evaluate for pneumonia",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 618,
+      "ind_gpa": 6998299472,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.54403829574585,
+  "timestamp": 1793375617.4086914,
+  "status": "SUCCESS"
+}

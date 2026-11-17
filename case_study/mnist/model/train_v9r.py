@@ -46,41 +46,35 @@ def ssim_loss(pred, target, window_size=7):
 # ── Dataset ───────────────────────────────────────────────────────────────────
 
 class MatchedJsonDataset(Dataset):
-    """
-    augment=True  (train): random offset via augment_sparsity on each call
-    augment=False (val)  : use stored input_sparsity_seq as-is
-    """
-    def __init__(self, samples, augment=True):
-        self.samples = samples
+    """Always feeds the REAL captured sparsity. (augment kept for call compatibility;
+    the old path synthesized input from the clean image via augment_sparsity, a
+    different distribution from the attack — that mismatch is what capped SSIM.)"""
+    def __init__(self, items, augment=True):
+        self.items   = items    # list of (real_sp: list[int], img: np.ndarray)
         self.augment = augment
 
     def __len__(self):
-        return len(self.samples)
+        return len(self.items)
 
     def __getitem__(self, idx):
-        s   = self.samples[idx]
-        img = np.array(s['target_image'], dtype=np.float32)
-        sp  = augment_sparsity(img) if self.augment else s['input_sparsity_seq']
-        return (torch.tensor(sp,  dtype=torch.float32),
-                torch.tensor(img, dtype=torch.float32))
+        real_sp, img = self.items[idx]
+        return (torch.tensor(real_sp, dtype=torch.float32),
+                torch.tensor(img,     dtype=torch.float32))
 
-# Collect .out_v5.list indices, then filter json
-LIST_DIR = './data/'
-list_idx = {int(re.search(r'-(\d+)\.out_v5\.list$', f).group(1))
-            for f in os.listdir(LIST_DIR) if f.endswith('.out_v5.list')}
+# Real end-to-end attack captures, shared with train_v6r / train_v10 (capture_data).
+from capture_data import load_items
+items, _msg = load_items()
+print(f'[v9r] {_msg}')
+if not items:
+    raise SystemExit('No training data: set CAPTURE_DIR to a dir with '
+                     'sparsities_*_bs*_idx*.npy, or provide legacy .out_v5.list files.')
 
-JSON_PATH = './UNet_training_v3.json'
-with open(JSON_PATH) as f:
-    all_samples = json.load(f)
-matched = [s for s in all_samples if s['sample_idx'] in list_idx]
-print(f'Matched samples: {len(matched)}')
-
-n_val   = max(1, len(matched) // 10)
-n_train = len(matched) - n_val
+n_val   = max(1, len(items) // 10)
+n_train = len(items) - n_val
 rng     = np.random.default_rng(42)
-perm    = rng.permutation(len(matched)).tolist()
-train_samples = [matched[i] for i in perm[:n_train]]
-val_samples   = [matched[i] for i in perm[n_train:]]
+perm    = rng.permutation(len(items)).tolist()
+train_samples = [items[i] for i in perm[:n_train]]
+val_samples   = [items[i] for i in perm[n_train:]]
 
 train_loader = DataLoader(MatchedJsonDataset(train_samples, augment=True),
                           batch_size=32, shuffle=True,  num_workers=2, pin_memory=False)

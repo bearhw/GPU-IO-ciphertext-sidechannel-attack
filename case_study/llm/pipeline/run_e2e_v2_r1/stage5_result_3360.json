@@ -1,0 +1,227 @@
+{
+  "index": 3360,
+  "host_base": "0x1a0894000",
+  "gt_base": "0x1a0894000",
+  "gt_indication": "Cough, fever times 1\u00bd months. Smoker.",
+  "recovered_labels": [
+    " of breath",
+    " PICC",
+    " fever.",
+    " of breath",
+    " PICC",
+    " fever.",
+    " of breath",
+    " PICC",
+    " fever.",
+    " of breath",
+    " PICC",
+    " fever.",
+    " of breath",
+    " PICC",
+    " fever.",
+    " of breath",
+    " PICC",
+    " fever.",
+    " of breath",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 458,
+      "ind_gpa": 6988320336,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 6988320336,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 6988320336,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6988320352,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6988320352,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6988320352,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6988320368,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6988320368,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6988320368,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6988320384,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6988320384,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6988320384,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6988320400,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6988320400,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6988320400,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6988320416,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6988320416,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6988320416,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6988320432,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6988320432,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6988320432,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 21,
+    "false_positive_labels": [
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC"
+    ],
+    "false_positive_count": 14,
+    "recovered_labels": [
+      "of breath",
+      "PICC",
+      "fever.",
+      "of breath",
+      "PICC",
+      "fever.",
+      "of breath",
+      "PICC",
+      "fever.",
+      "of breath",
+      "PICC",
+      "fever.",
+      "of breath",
+      "PICC",
+      "fever.",
+      "of breath",
+      "PICC",
+      "fever.",
+      "of breath",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.205229043960571,
+  "timestamp": 1793279363.7406695,
+  "status": "SUCCESS"
+}

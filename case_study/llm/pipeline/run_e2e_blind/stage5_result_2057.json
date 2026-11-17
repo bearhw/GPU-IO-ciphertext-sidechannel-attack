@@ -1,0 +1,50 @@
+{
+  "index": 2057,
+  "host_base": "0x1972e9000",
+  "gt_base": "0x1972e9000",
+  "gt_indication": "Altered mental status. Cough and shortness of breath. Respiratory distress.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 6831381280,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6831381296,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6831381312,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 19.005558729171753,
+  "timestamp": 1792970171.6641557,
+  "status": "SUCCESS"
+}

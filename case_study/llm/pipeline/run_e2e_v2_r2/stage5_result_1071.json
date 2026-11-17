@@ -1,0 +1,32 @@
+{
+  "index": 1071,
+  "host_base": "0x1ac38a000",
+  "gt_base": "0x1ac389000",
+  "gt_indication": "Weakness. Short of breath. Hypertension. Asthma. COPD. Left renal pelvic tumor.",
+  "recovered_labels": [
+    " Weakness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7184361504,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Weakness"
+    ]
+  },
+  "elapsed_sec": 15.515281438827515,
+  "timestamp": 1793354238.4880433,
+  "status": "SUCCESS"
+}

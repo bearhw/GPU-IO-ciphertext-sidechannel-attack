@@ -1,0 +1,663 @@
+{
+  "index": 1573,
+  "host_base": "0x197673000",
+  "gt_base": "0x197673000",
+  "gt_indication": "Recent pneumonia worsening shortness of breath",
+  "recovered_labels": [
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " Cough",
+    " chest pain",
+    " breath,",
+    ", short",
+    " wheez",
+    " PICC",
+    " Cough",
+    " chest pain",
+    " breath,",
+    ", short",
+    " wheez",
+    " PICC",
+    " Cough",
+    " chest pain",
+    " breath,",
+    ", short",
+    " wheez",
+    " PICC",
+    " Cough",
+    " chest pain",
+    " breath,",
+    ", short",
+    " wheez",
+    " PICC",
+    " Cough",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " Cough",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " Cough",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " Cough",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 6835093664,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6835093664,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6835093680,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6835093680,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6835093696,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6835093696,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6835093712,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6835093712,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6835093728,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6835093728,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6835093744,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6835093744,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6835093760,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6835093760,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6835093776,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6835093776,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6835093792,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6835093792,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6835093808,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6835093808,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6835093824,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6835093824,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6835093824,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6835093824,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6835093824,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6835093824,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6835093840,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6835093840,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6835093840,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6835093840,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6835093840,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6835093840,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6835093856,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6835093856,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6835093856,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6835093856,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6835093856,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6835093856,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6835093872,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6835093872,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6835093872,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6835093872,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6835093872,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6835093872,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 6835093888,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 6835093888,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 6835093888,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 6835093888,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6835093904,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6835093904,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6835093904,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6835093904,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 6835093920,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 6835093920,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 6835093920,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 6835093920,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6835093936,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6835093936,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6835093936,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6835093936,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 6835093952,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 6835093952,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 6835093968,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 6835093968,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6835093984,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6835093984,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 66,
+    "false_positive_labels": [
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Cough",
+      "chest pain",
+      "wheez",
+      "PICC",
+      "Cough",
+      "chest pain",
+      "wheez",
+      "PICC",
+      "Cough",
+      "chest pain",
+      "wheez",
+      "PICC",
+      "Cough",
+      "chest pain",
+      "wheez",
+      "PICC",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up"
+    ],
+    "false_positive_count": 45,
+    "recovered_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "Cough",
+      "chest pain",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "Cough",
+      "chest pain",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "Cough",
+      "chest pain",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "Cough",
+      "chest pain",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.935884952545166,
+  "timestamp": 1793377495.2361279,
+  "status": "SUCCESS"
+}

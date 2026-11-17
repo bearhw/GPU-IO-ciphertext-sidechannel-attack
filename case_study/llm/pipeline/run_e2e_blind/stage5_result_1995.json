@@ -1,0 +1,32 @@
+{
+  "index": 1995,
+  "host_base": "0x1a17b7000",
+  "gt_base": "0x1a17b7000",
+  "gt_indication": "Worsening shortness of breath and generalized weakness for several days. History of gastric cancer post chemotherapy.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 586,
+      "ind_gpa": 7004193360,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 19.143535137176514,
+  "timestamp": 1792968757.32022,
+  "status": "SUCCESS"
+}

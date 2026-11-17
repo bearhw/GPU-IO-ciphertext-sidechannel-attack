@@ -1,0 +1,50 @@
+{
+  "index": 405,
+  "host_base": "0x19c59c000",
+  "gt_base": "0x19c59b000",
+  "gt_indication": "Acute onset left chest pain. Shortness of breath. Dry cough. Fatigued. Smoker.",
+  "recovered_labels": [
+    " chest pain",
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 218,
+      "ind_gpa": 6918096592,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 222,
+      "ind_gpa": 6918096624,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 224,
+      "ind_gpa": 6918096640,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.381731510162354,
+  "timestamp": 1793457097.069908,
+  "status": "SUCCESS"
+}

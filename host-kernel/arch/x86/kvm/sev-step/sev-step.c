@@ -23,6 +23,9 @@
 DEFINE_MUTEX(sev_step_config_mutex);
 EXPORT_SYMBOL(sev_step_config_mutex);
 
+void (*sev_step_vcpu_pre_entry)(struct kvm_vcpu *vcpu);
+EXPORT_SYMBOL(sev_step_vcpu_pre_entry);
+
 #ifndef sev_step_dbg_log
 #define sev_step_dbg_log(fmt, ...) \
 	printk(KERN_DEBUG "%s:%d : %s " fmt, __FILE__, __LINE__, __FUNCTION__, ##__VA_ARGS__)

@@ -1,0 +1,122 @@
+{
+  "index": 3385,
+  "host_base": "0x196b2e000",
+  "gt_base": "0x196b2e000",
+  "gt_indication": "Right anterior chest pain.",
+  "recovered_labels": [
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 6823275312,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6823275328,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6823275344,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6823275360,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6823275376,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6823275392,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6823275408,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6823275424,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6823275440,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6823275456,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6823275472,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 11,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.280210018157959,
+  "timestamp": 1793452296.2763004,
+  "status": "SUCCESS"
+}

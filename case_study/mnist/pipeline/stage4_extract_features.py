@@ -206,7 +206,13 @@ def run_stage4(index: int, output_dir: Path, pixel_offset: Optional[int] = None,
             raise FileNotFoundError(f"[stage4] Batch dumps missing: {len(missing)}/{num_pages} files (e.g. {missing[0].name}).")
 
         print(f"[stage4] Extracting chunks across {num_pages} pages for batch_size={batch_size}...")
+        # Ciphermap / model-input build time: XOR dumps against z.out -> 196-bit
+        # sparsity vector that feeds the reconstruction model.
+        _t0 = time.time()
         sparsities_arr = extract_batch_sparsities(dump_files, z1, batch_size)
+        ciphermap_time = time.time() - _t0
+        print(f"[stage4] Ciphermap (model input) built in {ciphermap_time:.4f}s "
+              f"for {batch_size} images")
         start_idx = index * batch_size
         end_idx = (index + 1) * batch_size - 1
         batch_tag = c.make_timestamp_tag(index, batch_size, start_idx, end_idx)
@@ -240,6 +246,7 @@ def run_stage4(index: int, output_dir: Path, pixel_offset: Optional[int] = None,
             "sparsities_npy": str(npy_out),
             "total_active_chunks": int(sparsities_arr.sum()),
             "avg_active_per_image": float(sparsities_arr.sum(axis=1).mean()),
+            "ciphermap_build_time_sec": round(ciphermap_time, 4),
             "timestamp": time.time(),
         }
         c.save_json(features_json, meta)
@@ -288,6 +295,9 @@ def run_stage4(index: int, output_dir: Path, pixel_offset: Optional[int] = None,
     z2 = c.parse_dump(z_file)
     p2 = c.parse_dump(p2_file) if p2_file.exists() else z2
 
+    # Ciphermap / model-input build time: XOR dumps against z.out -> 196-bit
+    # sparsity vector that feeds the reconstruction model.
+    _t0 = time.time()
     if pixel_offset is not None and pixel_offset >= 0:
         print(f"[stage4] Using explicit pixel_offset: {pixel_offset}")
         sparsity = get_sparsity_two_pages(z1, p1, pixel_offset, z2, p2)
@@ -298,6 +308,8 @@ def run_stage4(index: int, output_dir: Path, pixel_offset: Optional[int] = None,
         pixel_offset, sparsity, score = infer_page_offset(z1, p1, z2, p2)
         inferred = True
         print(f"[stage4] Inferred optimal page_offset = {pixel_offset} (structure score = {score:.4f})")
+    ciphermap_time = time.time() - _t0
+    print(f"[stage4] Ciphermap (model input) built in {ciphermap_time:.4f}s")
 
     # Match rate check if JSON ground truth exists
     match_rate = None
@@ -334,6 +346,7 @@ def run_stage4(index: int, output_dir: Path, pixel_offset: Optional[int] = None,
         "match_rate": match_rate,
         "list_file": str(list_path),
         "sparsity": sparsity,
+        "ciphermap_build_time_sec": round(ciphermap_time, 4),
         "timestamp": time.time(),
     }
     c.save_json(features_json, meta)

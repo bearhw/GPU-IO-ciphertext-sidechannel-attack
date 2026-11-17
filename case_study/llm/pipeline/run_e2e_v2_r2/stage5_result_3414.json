@@ -1,0 +1,32 @@
+{
+  "index": 3414,
+  "host_base": "0x1a13de000",
+  "gt_base": "0x1a13de000",
+  "gt_indication": "Pneumonia, respiratory failure - ARDS",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 7000159248,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.301287174224854,
+  "timestamp": 1793453083.8744109,
+  "status": "SUCCESS"
+}

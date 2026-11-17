@@ -1,0 +1,32 @@
+{
+  "index": 160,
+  "host_base": "0x13d1a4000",
+  "gt_base": "0x13d1a4000",
+  "gt_indication": "Increased Weakness today per family member; HTN;",
+  "recovered_labels": [
+    " Weakness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 5320102368,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Weakness"
+    ]
+  },
+  "elapsed_sec": 15.771084785461426,
+  "timestamp": 1793319299.916213,
+  "status": "SUCCESS"
+}

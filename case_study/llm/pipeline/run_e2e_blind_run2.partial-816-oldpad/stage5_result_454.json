@@ -1,0 +1,20 @@
+{
+  "index": 454,
+  "host_base": "0x1a4824000",
+  "gt_base": "0x1a4824000",
+  "gt_indication": "86-year-old male intubated. Acute respiratory failure. Cerebral infarct status post revascularization. Initial encounter.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 18.84341049194336,
+  "timestamp": 1793069273.8923044,
+  "status": "SUCCESS"
+}

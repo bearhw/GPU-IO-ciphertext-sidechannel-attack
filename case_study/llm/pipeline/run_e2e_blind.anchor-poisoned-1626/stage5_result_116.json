@@ -1,0 +1,77 @@
+{
+  "index": 116,
+  "host_base": "0x19d575000",
+  "gt_base": "0x19d575000",
+  "gt_indication": "Chest pain and altered mental status. History of lung cancer on the right.",
+  "recovered_labels": [
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 564,
+      "ind_gpa": 6934716832,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6934716848,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 6934716864,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 6934716880,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6934716896,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6934716912,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 6,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 19.166403770446777,
+  "timestamp": 1792875459.1359406,
+  "status": "SUCCESS"
+}

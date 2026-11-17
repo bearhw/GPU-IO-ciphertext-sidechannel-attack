@@ -1,0 +1,32 @@
+{
+  "index": 2639,
+  "host_base": "0x1a0512000",
+  "gt_base": "0x1a0512000",
+  "gt_indication": "68 year-old female with dehydration. PICC repositioning.",
+  "recovered_labels": [
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 6984641312,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.099404573440552,
+  "timestamp": 1793421007.3332746,
+  "status": "SUCCESS"
+}

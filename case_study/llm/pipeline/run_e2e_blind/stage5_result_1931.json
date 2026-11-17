@@ -1,0 +1,32 @@
+{
+  "index": 1931,
+  "host_base": "0x1a07bd000",
+  "gt_base": "0x1a07bd000",
+  "gt_indication": "Motor vehicle accident, chest pain",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 530,
+      "ind_gpa": 6987440272,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 14.544275045394897,
+  "timestamp": 1792963911.8505974,
+  "status": "SUCCESS"
+}

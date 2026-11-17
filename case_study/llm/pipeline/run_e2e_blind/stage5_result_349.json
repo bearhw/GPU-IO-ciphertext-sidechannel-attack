@@ -1,0 +1,50 @@
+{
+  "index": 349,
+  "host_base": "0x1a7e9d000",
+  "gt_base": "0x1a7e9d000",
+  "gt_indication": "New onset of shortness of breath and mid chest pain last night. History of atypical chest pain, Barrett's esophagus, hypertension, nonsmoker.",
+  "recovered_labels": [
+    " shortness",
+    " of breath",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 618,
+      "ind_gpa": 7112090448,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 7112090464,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 624,
+      "ind_gpa": 7112090496,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 18.018945693969727,
+  "timestamp": 1792897414.4681723,
+  "status": "SUCCESS"
+}

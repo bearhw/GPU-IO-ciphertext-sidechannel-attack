@@ -1,0 +1,41 @@
+{
+  "index": 1024,
+  "host_base": "0x19dc5a000",
+  "gt_base": "0x1a3c8d000",
+  "gt_indication": "cough, fever. Patient's mother states a cough since Jojima.",
+  "recovered_labels": [
+    " cough,",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 6941944640,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6941944656,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 16.09908175468445,
+  "timestamp": 1792928732.401127,
+  "status": "SUCCESS"
+}

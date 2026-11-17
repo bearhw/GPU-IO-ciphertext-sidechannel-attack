@@ -1,0 +1,34 @@
+{
+  "index": 3062,
+  "host_base": "0x13ce17000",
+  "gt_base": "0x13ce17000",
+  "gt_indication": "Rib fractures. Shortness of breath.",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 544,
+      "ind_gpa": 5316378880,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "ough and"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.35321044921875,
+  "timestamp": 1793442127.5652974,
+  "status": "SUCCESS"
+}

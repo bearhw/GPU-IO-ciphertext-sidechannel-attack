@@ -1,0 +1,50 @@
+{
+  "index": 944,
+  "host_base": "0x1a6766000",
+  "gt_base": "0x1a6766000",
+  "gt_indication": "Hypertension; diaphoresis. Leg swelling and cough.",
+  "recovered_labels": [
+    " cough.",
+    " cough.",
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 522,
+      "ind_gpa": 7087747152,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7087747168,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7087747184,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough.",
+      "cough.",
+      "cough."
+    ]
+  },
+  "elapsed_sec": 34.40148854255676,
+  "timestamp": 1793087977.5508847,
+  "status": "SUCCESS"
+}

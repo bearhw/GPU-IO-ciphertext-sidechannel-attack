@@ -1,0 +1,50 @@
+{
+  "index": 2713,
+  "host_base": "0x19d650000",
+  "gt_base": "0x19d650000",
+  "gt_indication": "Shortness of breath, COVID-19 positive, headache, history of hypertension, diabetes mellitus",
+  "recovered_labels": [
+    "ness of",
+    " breath,",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 6935614448,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6935614464,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6935614480,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.585934162139893,
+  "timestamp": 1793423054.3949535,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 2871,
+  "host_base": "0x13dbe1000",
+  "gt_base": "0x13dbe1000",
+  "gt_indication": "Persistent cough. Diagnosed with pneumonia 2 days ago.",
+  "recovered_labels": [
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 314,
+      "ind_gpa": 5330835920,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough."
+    ]
+  },
+  "elapsed_sec": 15.35041356086731,
+  "timestamp": 1793433307.8056262,
+  "status": "SUCCESS"
+}

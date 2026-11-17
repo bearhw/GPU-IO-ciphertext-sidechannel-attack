@@ -1,0 +1,114 @@
+{
+  "index": 2143,
+  "host_base": "0x1aba96000",
+  "gt_base": "0x1aba96000",
+  "gt_indication": "83 year old male; congestive heart failure, chest pain, and atrial fibrillation.",
+  "recovered_labels": [
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 374,
+      "ind_gpa": 7174974384,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7174974384,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7174974384,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7174974400,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7174974400,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7174974400,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7174974416,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7174974416,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7174974416,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 9,
+    "false_positive_labels": [
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.495267868041992,
+  "timestamp": 1793402863.4392066,
+  "status": "SUCCESS"
+}

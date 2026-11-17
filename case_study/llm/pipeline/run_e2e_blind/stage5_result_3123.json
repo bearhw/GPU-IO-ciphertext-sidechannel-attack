@@ -1,0 +1,20 @@
+{
+  "index": 3123,
+  "host_base": "0x196018000",
+  "gt_base": "0x196018000",
+  "gt_indication": "Weakness and diarrhea; suspect sepsis",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 17.66510534286499,
+  "timestamp": 1793018839.6535969,
+  "status": "SUCCESS"
+}

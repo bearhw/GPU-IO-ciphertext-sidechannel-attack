@@ -1,0 +1,264 @@
+{
+  "index": 133,
+  "host_base": "0x19c7eb000",
+  "gt_base": "0x19c7eb000",
+  "gt_indication": "Left chest pain. Patient complains of left sided chest pain for 3 weeks. History of smoking.",
+  "recovered_labels": [
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " Shortness",
+    " pneumonia.",
+    " Follow-up",
+    " Shortness",
+    " pneumonia.",
+    " Follow-up",
+    " Shortness",
+    " pneumonia.",
+    " Follow-up",
+    " Shortness",
+    " pneumonia.",
+    " Follow-up",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 544,
+      "ind_gpa": 6920519936,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6920519952,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6920519968,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6920519984,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6920520000,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6920520000,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6920520000,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6920520016,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6920520016,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6920520016,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6920520032,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6920520032,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6920520032,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6920520048,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6920520048,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6920520048,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 6920520064,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6920520080,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 6920520096,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6920520112,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 6920520128,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 6920520144,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6920520160,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6920520176,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 24,
+    "false_positive_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ],
+    "false_positive_count": 24,
+    "recovered_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "Shortness",
+      "pneumonia.",
+      "Follow-up",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.097832918167114,
+  "timestamp": 1792891780.618813,
+  "status": "SUCCESS"
+}

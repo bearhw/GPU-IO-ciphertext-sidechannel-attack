@@ -1,0 +1,41 @@
+{
+  "index": 533,
+  "host_base": "0x1969ab000",
+  "gt_base": "0x1a0589000",
+  "gt_indication": "Coughing shortness of breath and asthma",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 552,
+      "ind_gpa": 6821691712,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6821691728,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 21.601771593093872,
+  "timestamp": 1792907347.234632,
+  "status": "SUCCESS"
+}

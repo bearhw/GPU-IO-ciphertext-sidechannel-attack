@@ -1,0 +1,660 @@
+{
+  "index": 1615,
+  "host_base": "0x1a2fd6000",
+  "gt_base": "0x1a2fd6000",
+  "gt_indication": "Left-sided chest pain for 30 minutes. Patient reports remote history of pulmonary embolus.",
+  "recovered_labels": [
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " Cough",
+    " chest pain",
+    " breath,",
+    ", short",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Hypox",
+    " Cough",
+    " chest pain",
+    " breath,",
+    ", short",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Hypox",
+    " Cough",
+    " chest pain",
+    " breath,",
+    ", short",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Hypox",
+    " Cough",
+    " chest pain",
+    " breath,",
+    ", short",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Hypox",
+    " Cough",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Cough",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Cough",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Cough",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 546,
+      "ind_gpa": 7029485840,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 7029485840,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 7029485856,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 7029485856,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 7029485872,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 7029485872,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7029485888,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7029485888,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7029485888,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7029485888,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7029485888,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7029485888,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7029485888,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7029485888,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7029485904,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7029485904,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7029485904,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7029485904,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7029485904,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7029485904,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7029485904,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7029485904,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7029485920,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7029485920,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7029485920,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7029485920,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7029485920,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7029485920,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7029485920,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7029485920,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7029485936,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7029485936,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7029485936,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7029485936,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7029485936,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7029485936,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7029485936,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7029485936,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7029485952,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7029485952,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7029485952,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7029485952,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7029485952,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7029485968,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7029485968,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7029485968,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7029485968,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7029485968,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7029485984,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7029485984,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7029485984,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7029485984,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7029485984,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7029486000,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7029486000,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7029486000,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7029486000,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7029486000,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 7029486016,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 7029486016,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 7029486032,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 7029486032,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 7029486048,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 7029486048,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 64,
+    "false_positive_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "Cough",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Cough",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Cough",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Cough",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ],
+    "false_positive_count": 60,
+    "recovered_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "Cough",
+      "chest pain",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Cough",
+      "chest pain",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Cough",
+      "chest pain",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Cough",
+      "chest pain",
+      "breath,",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Cough",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.587513208389282,
+  "timestamp": 1793378265.1919472,
+  "status": "SUCCESS"
+}

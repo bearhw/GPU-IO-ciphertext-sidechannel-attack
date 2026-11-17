@@ -1,0 +1,32 @@
+{
+  "index": 1695,
+  "host_base": "0x1a4982000",
+  "gt_base": "0x1a4981000",
+  "gt_indication": "3-4 weeks of shortness of breath, onset of medial chest pain and productive cough 1 week ago. Discontinued smoking in 4367.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 266,
+      "ind_gpa": 7056402512,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 15.590994834899902,
+  "timestamp": 1793380260.3899016,
+  "status": "SUCCESS"
+}

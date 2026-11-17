@@ -1,0 +1,54 @@
+{
+  "index": 2633,
+  "host_base": "0x1a0327000",
+  "gt_base": "0x1a0327000",
+  "gt_indication": "Worsening shortness of breath.",
+  "recovered_labels": [
+    " Cough",
+    " chest pain",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 6982631904,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6982631904,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6982631904,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 3,
+    "false_positive_labels": [
+      "Cough",
+      "chest pain",
+      "COPD"
+    ],
+    "false_positive_count": 3,
+    "recovered_labels": [
+      "Cough",
+      "chest pain",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.38128924369812,
+  "timestamp": 1793420812.0745258,
+  "status": "SUCCESS"
+}

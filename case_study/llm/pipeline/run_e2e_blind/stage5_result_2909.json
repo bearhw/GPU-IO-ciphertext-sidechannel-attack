@@ -1,0 +1,204 @@
+{
+  "index": 2909,
+  "host_base": "0x1a0f24000",
+  "gt_base": "0x1a0f21000",
+  "gt_indication": "Back pain and chest pain.",
+  "recovered_labels": [
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 272,
+      "ind_gpa": 6995200128,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 6995200128,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6995200144,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6995200144,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6995200160,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6995200160,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6995200176,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6995200176,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6995200192,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6995200192,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6995200208,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6995200208,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6995200224,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6995200224,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6995200240,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6995200240,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6995200256,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6995200256,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 20.812102794647217,
+  "timestamp": 1793010406.688861,
+  "status": "SUCCESS"
+}

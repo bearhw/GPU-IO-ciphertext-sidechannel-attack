@@ -1,0 +1,41 @@
+{
+  "index": 3274,
+  "host_base": "0x127bd6000",
+  "gt_base": "0x127bd6000",
+  "gt_indication": "Shortness of breath, interstitial lung disease, evaluate for pneumonia.",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 448,
+      "ind_gpa": 4961693184,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 450,
+      "ind_gpa": 4961693200,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 16.02563738822937,
+  "timestamp": 1793272680.3943005,
+  "status": "SUCCESS"
+}

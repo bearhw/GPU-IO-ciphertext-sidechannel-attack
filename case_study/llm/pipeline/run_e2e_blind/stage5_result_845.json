@@ -1,0 +1,32 @@
+{
+  "index": 845,
+  "host_base": "0x1a0555000",
+  "gt_base": "0x1a0555000",
+  "gt_indication": "63-year-old female with a history of shortness of breath and abdominal pain",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 648,
+      "ind_gpa": 6984918080,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 19.577759265899658,
+  "timestamp": 1792922317.8127134,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,114 @@
+{
+  "index": 1207,
+  "host_base": "0x19a558000",
+  "gt_base": "0x19a558000",
+  "gt_indication": "Left-sided chest pain after motor vehicle accident",
+  "recovered_labels": [
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 652,
+      "ind_gpa": 6884267104,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 6884267120,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 6884267136,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6884267152,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6884267168,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6884267184,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6884267200,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6884267216,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6884267232,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 9,
+    "false_positive_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.548027038574219,
+  "timestamp": 1793179565.8055162,
+  "status": "SUCCESS"
+}

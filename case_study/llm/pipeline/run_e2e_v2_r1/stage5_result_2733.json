@@ -1,0 +1,32 @@
+{
+  "index": 2733,
+  "host_base": "0x198f61000",
+  "gt_base": "0x198f61000",
+  "gt_indication": "Bronchitis symptoms, acute respiratory failure, community-acquired pneumonia, history of COPD and previous smoking",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 724,
+      "ind_gpa": 6861235872,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.51514220237732,
+  "timestamp": 1793250041.5396607,
+  "status": "SUCCESS"
+}

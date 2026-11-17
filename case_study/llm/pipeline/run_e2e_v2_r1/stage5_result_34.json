@@ -1,0 +1,214 @@
+{
+  "index": 34,
+  "host_base": "0x13b8e2000",
+  "gt_base": "0x13b8e2000",
+  "gt_indication": "wheezing altered mental status",
+  "recovered_labels": [
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever.",
+    " wheez",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 452,
+      "ind_gpa": 5294140960,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 452,
+      "ind_gpa": 5294140960,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 5294140976,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 5294140976,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5294140992,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5294140992,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5294141008,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5294141008,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5294141024,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5294141024,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5294141040,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5294141040,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5294141056,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5294141056,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5294141072,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5294141072,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5294141088,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5294141088,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5294141104,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5294141104,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever.",
+      "wheez",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.722692728042603,
+  "timestamp": 1793126311.4347222,
+  "status": "SUCCESS"
+}

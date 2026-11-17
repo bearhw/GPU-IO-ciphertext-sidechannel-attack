@@ -1,0 +1,444 @@
+{
+  "index": 44,
+  "host_base": "0x13f538000",
+  "gt_base": "0x13f538000",
+  "gt_indication": "Central line placement. Hypertension.",
+  "recovered_labels": [
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " Chest pain",
+    " CABG",
+    " Chest pain",
+    " CABG",
+    " Chest pain",
+    " CABG",
+    " Chest pain",
+    " CABG",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD",
+    " pneumonia.",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 5357408416,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5357408416,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5357408432,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5357408432,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5357408448,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5357408448,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5357408464,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5357408464,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5357408480,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5357408480,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5357408496,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5357408496,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5357408512,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5357408512,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5357408528,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5357408528,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5357408544,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5357408544,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5357408560,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5357408560,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5357408576,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5357408576,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5357408592,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5357408592,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5357408608,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5357408608,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5357408624,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5357408624,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5357408640,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5357408640,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5357408656,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5357408656,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5357408672,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5357408672,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5357408688,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5357408688,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5357408704,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5357408704,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5357408720,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5357408720,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5357408736,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5357408736,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 42,
+    "false_positive_labels": [
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "Chest pain",
+      "CABG",
+      "Chest pain",
+      "CABG",
+      "Chest pain",
+      "CABG",
+      "Chest pain",
+      "CABG",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD"
+    ],
+    "false_positive_count": 42,
+    "recovered_labels": [
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "Chest pain",
+      "CABG",
+      "Chest pain",
+      "CABG",
+      "Chest pain",
+      "CABG",
+      "Chest pain",
+      "CABG",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "pneumonia.",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.434398889541626,
+  "timestamp": 1793127057.1921966,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,114 @@
+{
+  "index": 1223,
+  "host_base": "0x19f787000",
+  "gt_base": "0x19f787000",
+  "gt_indication": "The chest pain intermittently for 1 week.",
+  "recovered_labels": [
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 734,
+      "ind_gpa": 6970443504,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 736,
+      "ind_gpa": 6970443520,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 738,
+      "ind_gpa": 6970443536,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 740,
+      "ind_gpa": 6970443552,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 742,
+      "ind_gpa": 6970443568,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 744,
+      "ind_gpa": 6970443584,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 746,
+      "ind_gpa": 6970443600,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 748,
+      "ind_gpa": 6970443616,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 750,
+      "ind_gpa": 6970443632,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 9,
+    "false_positive_labels": [
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.808897972106934,
+  "timestamp": 1793360687.2878773,
+  "status": "SUCCESS"
+}

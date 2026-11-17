@@ -1,0 +1,32 @@
+{
+  "index": 289,
+  "host_base": "0x13b63e000",
+  "gt_base": "0x13b651000",
+  "gt_indication": "History given of body edema and swelling. History of shortness of breath and diabetes and congestive heart failure.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 272,
+      "ind_gpa": 5291370624,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.289551734924316,
+  "timestamp": 1793328107.6192825,
+  "status": "SUCCESS"
+}

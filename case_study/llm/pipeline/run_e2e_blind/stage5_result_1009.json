@@ -1,0 +1,32 @@
+{
+  "index": 1009,
+  "host_base": "0x170085000",
+  "gt_base": "0x1a3876000",
+  "gt_indication": "Cough and fever to 105 degrees",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 326,
+      "ind_gpa": 6174562864,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 16.96469020843506,
+  "timestamp": 1792928362.2875078,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 2276,
+  "host_base": "0x1a68eb000",
+  "gt_base": "0x1a68ea000",
+  "gt_indication": "Shortness of breath, hypertension",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7089338400,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 7089338416,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.668107986450195,
+  "timestamp": 1793463696.7722938,
+  "status": "SUCCESS"
+}

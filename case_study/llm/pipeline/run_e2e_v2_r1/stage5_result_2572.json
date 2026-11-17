@@ -1,0 +1,44 @@
+{
+  "index": 2572,
+  "host_base": "0x1a9ed9000",
+  "gt_base": "0x1a9ed8000",
+  "gt_indication": "Low oxygen saturation on venous blood gas, COVID-19 diagnosis 07/28/2016",
+  "recovered_labels": [
+    " chest pain",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 292,
+      "ind_gpa": 7145888032,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7145888032,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "chest pain",
+      "pneumonia."
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "chest pain",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.272931098937988,
+  "timestamp": 1793294469.7225754,
+  "status": "SUCCESS"
+}

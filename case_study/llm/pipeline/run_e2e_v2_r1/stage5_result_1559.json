@@ -1,0 +1,32 @@
+{
+  "index": 1559,
+  "host_base": "0x1a0782000",
+  "gt_base": "0x1a0782000",
+  "gt_indication": "MVA. Shortness of breath, chest pain.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 640,
+      "ind_gpa": 6987199488,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.482783317565918,
+  "timestamp": 1793198604.0584583,
+  "status": "SUCCESS"
+}

@@ -329,6 +329,14 @@ int destroy_target_page_info(sev_step_config_t *config);
 extern sev_step_config_t global_sev_step_config;
 extern struct mutex sev_step_config_mutex;
 
+/*
+ * Set by kvm_amd. Called from vcpu_enter_guest() while the vCPU thread can still
+ * sleep (IRQs on, before prepare_switch_to_guest()), to service sev-step
+ * requests that sleep: page swap, page dump, gfn translation.
+ */
+struct kvm_vcpu;
+extern void (*sev_step_vcpu_pre_entry)(struct kvm_vcpu *vcpu);
+
 /* SEV-STEP FUNCTIONS */
 
 /**

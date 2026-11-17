@@ -1,0 +1,50 @@
+{
+  "index": 666,
+  "host_base": "0x1a3afe000",
+  "gt_base": "0x1a3afe000",
+  "gt_indication": "Shortness of breath. Chest pain. Hypertension. Two weeks postpartum from C-section delivery.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7041182432,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 7041182448,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 7041182464,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.570359945297241,
+  "timestamp": 1793344327.5157604,
+  "status": "SUCCESS"
+}

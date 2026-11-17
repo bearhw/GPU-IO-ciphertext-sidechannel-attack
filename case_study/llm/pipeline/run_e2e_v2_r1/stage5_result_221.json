@@ -1,0 +1,41 @@
+{
+  "index": 221,
+  "host_base": "0x19f78b000",
+  "gt_base": "0x19f78b000",
+  "gt_indication": "49-year-old male with shortness of breath.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 6970459168,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 6970459184,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.735029458999634,
+  "timestamp": 1793138884.3284492,
+  "status": "SUCCESS"
+}

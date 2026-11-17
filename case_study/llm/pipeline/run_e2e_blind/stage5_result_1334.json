@@ -1,0 +1,32 @@
+{
+  "index": 1334,
+  "host_base": "0x1a1353000",
+  "gt_base": "0x1a1352000",
+  "gt_indication": "Chest pain. Abdominal pain.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6999586848,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 21.014500617980957,
+  "timestamp": 1792943204.727692,
+  "status": "SUCCESS"
+}

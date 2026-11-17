@@ -1,0 +1,32 @@
+{
+  "index": 775,
+  "host_base": "0x197bd6000",
+  "gt_base": "0x197bd6000",
+  "gt_indication": "Persistent cough. Had COVID in Muaythai. Patient complains of cough and dyspnea with exertion. History of open heart surgery in 8610.",
+  "recovered_labels": [
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 6840740576,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough."
+    ]
+  },
+  "elapsed_sec": 15.741787195205688,
+  "timestamp": 1793346754.8260403,
+  "status": "SUCCESS"
+}

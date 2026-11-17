@@ -1,0 +1,64 @@
+{
+  "index": 2519,
+  "host_base": "0x1a17cd000",
+  "gt_base": "0x1a17cd000",
+  "gt_indication": "Respiratory failure, history of left pneumothorax",
+  "recovered_labels": [
+    " PICC",
+    " Hypert",
+    " PICC",
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 552,
+      "ind_gpa": 7004283200,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7004283200,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7004283216,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7004283216,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "PICC",
+      "Hypert",
+      "PICC",
+      "Hypert"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "PICC",
+      "Hypert",
+      "PICC",
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.826503276824951,
+  "timestamp": 1793241148.1074994,
+  "status": "SUCCESS"
+}

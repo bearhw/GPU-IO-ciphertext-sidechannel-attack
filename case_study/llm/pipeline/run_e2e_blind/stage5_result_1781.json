@@ -1,0 +1,59 @@
+{
+  "index": 1781,
+  "host_base": "0x1a0229000",
+  "gt_base": "0x1a0229000",
+  "gt_indication": "Cough, shortness of breath, fever",
+  "recovered_labels": [
+    " Cough",
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 568,
+      "ind_gpa": 6981591488,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 6981591504,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6981591520,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6981591536,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 19.391929149627686,
+  "timestamp": 1792956566.699761,
+  "status": "SUCCESS"
+}

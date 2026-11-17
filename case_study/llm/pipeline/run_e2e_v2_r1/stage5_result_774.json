@@ -1,0 +1,41 @@
+{
+  "index": 774,
+  "host_base": "0x19c7bd000",
+  "gt_base": "0x19c7bc000",
+  "gt_indication": "Shortness of breath, cold sweats, overheating, chest tightness; history of gastroesophageal reflux",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6920329248,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6920329264,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.471683740615845,
+  "timestamp": 1793156539.835364,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 839,
+  "host_base": "0x195c2b000",
+  "gt_base": "0x195c2b000",
+  "gt_indication": "Short of breath. Cough. Wheezing.",
+  "recovered_labels": [
+    " breath.",
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 404,
+      "ind_gpa": 6807534752,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 406,
+      "ind_gpa": 6807534768,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath.",
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.060611248016357,
+  "timestamp": 1793287837.9193206,
+  "status": "SUCCESS"
+}

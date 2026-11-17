@@ -1,0 +1,41 @@
+{
+  "index": 1296,
+  "host_base": "0x1a03d8000",
+  "gt_base": "0x1a03d8000",
+  "gt_indication": "Shortness of breath, weakness",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 528,
+      "ind_gpa": 6983356544,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6983356560,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 18.94480586051941,
+  "timestamp": 1792941983.4687293,
+  "status": "SUCCESS"
+}

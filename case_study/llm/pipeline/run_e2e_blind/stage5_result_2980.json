@@ -1,0 +1,20 @@
+{
+  "index": 2980,
+  "host_base": "0x197729000",
+  "gt_base": "0x1a136d000",
+  "gt_indication": "Cough since yesterday with chest congestion.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 21.42476224899292,
+  "timestamp": 1793014188.4554896,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,140 @@
+{
+  "index": 587,
+  "host_base": "0x195740000",
+  "gt_base": "0x195740000",
+  "gt_indication": "82-year-old female with COPD and history of hypertension. Difficulty breathing. Initial encounter.",
+  "recovered_labels": [
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD",
+    " Cough",
+    " pneumonia.",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 770,
+      "ind_gpa": 6802380816,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 770,
+      "ind_gpa": 6802380816,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 770,
+      "ind_gpa": 6802380816,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 6802380832,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 6802380832,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 772,
+      "ind_gpa": 6802380832,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 6802380848,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 6802380848,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 774,
+      "ind_gpa": 6802380848,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 6802380864,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 6802380864,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 776,
+      "ind_gpa": 6802380864,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "Cough",
+      "pneumonia.",
+      "Cough",
+      "pneumonia.",
+      "Cough",
+      "pneumonia.",
+      "Cough",
+      "pneumonia."
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD",
+      "Cough",
+      "pneumonia.",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.572758913040161,
+  "timestamp": 1793152425.716669,
+  "status": "SUCCESS"
+}

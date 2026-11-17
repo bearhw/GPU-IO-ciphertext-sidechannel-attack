@@ -1,0 +1,134 @@
+{
+  "index": 1909,
+  "host_base": "0x19faec000",
+  "gt_base": "0x19faec000",
+  "gt_indication": "Postop CABG",
+  "recovered_labels": [
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 342,
+      "ind_gpa": 6973999792,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 344,
+      "ind_gpa": 6973999808,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 346,
+      "ind_gpa": 6973999824,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 348,
+      "ind_gpa": 6973999840,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6973999856,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 6973999872,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 6973999888,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 6973999904,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6973999920,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6973999936,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6973999952,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 11,
+    "false_positive_labels": [
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC"
+    ],
+    "false_positive_count": 11,
+    "recovered_labels": [
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 16.004019260406494,
+  "timestamp": 1793386867.4988124,
+  "status": "SUCCESS"
+}

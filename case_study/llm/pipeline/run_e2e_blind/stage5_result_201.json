@@ -1,0 +1,32 @@
+{
+  "index": 201,
+  "host_base": "0x1a51da000",
+  "gt_base": "0x1a51da000",
+  "gt_indication": "Six months of nonproductive cough, nonsmoker.",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 696,
+      "ind_gpa": 7065155008,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 18.167253732681274,
+  "timestamp": 1792893771.4545968,
+  "status": "SUCCESS"
+}

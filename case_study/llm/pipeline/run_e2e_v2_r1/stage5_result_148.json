@@ -1,0 +1,32 @@
+{
+  "index": 148,
+  "host_base": "0x1a2160000",
+  "gt_base": "0x1a2160000",
+  "gt_indication": "Generalized weakness. Lethargy. Cough. Current history of bronchiectasis.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 646,
+      "ind_gpa": 7014323248,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.289978742599487,
+  "timestamp": 1793133270.6378388,
+  "status": "SUCCESS"
+}

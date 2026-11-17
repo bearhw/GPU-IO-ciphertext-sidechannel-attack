@@ -1,0 +1,224 @@
+{
+  "index": 1223,
+  "host_base": "0x1a44d9000",
+  "gt_base": "0x1a44d8000",
+  "gt_indication": "The chest pain intermittently for 1 week.",
+  "recovered_labels": [
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez",
+    " COPD",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 222,
+      "ind_gpa": 7051515632,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 222,
+      "ind_gpa": 7051515632,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 224,
+      "ind_gpa": 7051515648,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 224,
+      "ind_gpa": 7051515648,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 226,
+      "ind_gpa": 7051515664,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 226,
+      "ind_gpa": 7051515664,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 228,
+      "ind_gpa": 7051515680,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 228,
+      "ind_gpa": 7051515680,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 230,
+      "ind_gpa": 7051515696,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 230,
+      "ind_gpa": 7051515696,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 232,
+      "ind_gpa": 7051515712,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 232,
+      "ind_gpa": 7051515712,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 234,
+      "ind_gpa": 7051515728,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 234,
+      "ind_gpa": 7051515728,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 236,
+      "ind_gpa": 7051515744,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 236,
+      "ind_gpa": 7051515744,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 238,
+      "ind_gpa": 7051515760,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 238,
+      "ind_gpa": 7051515760,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 240,
+      "ind_gpa": 7051515776,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 240,
+      "ind_gpa": 7051515776,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez"
+    ],
+    "false_positive_count": 20,
+    "recovered_labels": [
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez",
+      "COPD",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 20.634506940841675,
+  "timestamp": 1793099438.3524115,
+  "status": "SUCCESS"
+}

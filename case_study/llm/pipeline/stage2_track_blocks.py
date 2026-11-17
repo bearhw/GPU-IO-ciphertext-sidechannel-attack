@@ -150,6 +150,47 @@ def score_blocks_from_log(host_log_path: str, start_offset: int = 0
     return scores, block_run_bases, page_ts_by_block
 
 
+def rank_blocks_in_window(page_ts_by_block: Dict[int, Dict[int, int]],
+                          lo: Optional[float] = None, hi: Optional[float] = None,
+                          pages_per_block: Optional[int] = None,
+                          n_blocks: Optional[int] = None) -> List[List[Any]]:
+    """Blind 2MB-block ranking: run*hit over the pages FIRST-WRITTEN inside the
+    [lo, hi] slice of the tracking window, where the input_ids page is written.
+
+    Over the whole window the KV cache / activations dominate every run and hit
+    count and bury the input block (median rank ~50); restricted to this slice
+    the input block rises to the top (see BLIND_WINDOW_* in common.py).
+
+    Returns [[block_hex, [page_hex, ...]], ...] best block first; each block's
+    pages are its in-slice pages, latest first-write first, up to
+    pages_per_block. Uses only the tracker log -- no anchor, no ground truth.
+    """
+    lo = c.BLIND_WINDOW_LO if lo is None else lo
+    hi = c.BLIND_WINDOW_HI if hi is None else hi
+    m = c.BLIND_WINDOW_PAGES_PER_BLOCK if pages_per_block is None else pages_per_block
+    n = c.BLIND_WINDOW_EXPORT_BLOCKS if n_blocks is None else n_blocks
+
+    tmax = max((ts for pts in page_ts_by_block.values() for ts in pts.values()), default=0)
+    if tmax <= 0:
+        return []
+    t_lo, t_hi = lo * tmax, hi * tmax
+
+    scored = []
+    for blk, pts in page_ts_by_block.items():
+        sel = {g: ts for g, ts in pts.items() if t_lo <= ts <= t_hi}
+        if not sel:
+            continue
+        pages = sorted(sel)
+        best = cur = 1
+        for a, b in zip(pages, pages[1:]):
+            cur = cur + 1 if b - a == c.PAGE_SIZE else 1
+            best = max(best, cur)
+        latest = [g for g, _ in sorted(sel.items(), key=lambda kv: -kv[1])[:m]]
+        scored.append((best * len(pages), blk, latest))
+    scored.sort(key=lambda x: -x[0])
+    return [[hex(blk), [hex(g) for g in latest]] for _, blk, latest in scored[:n]]
+
+
 def run_stage2_online(index: int, top_k: int = 40, max_new_tokens: int = 60,
                       output_dir: Optional[Path] = None,
                       active_arena_anchor: Optional[int] = None) -> Dict[str, Any]:
@@ -315,6 +356,14 @@ def process_tracked_log(index: int, host_log_path: str, gt: Optional[Dict[str, A
         for b in export_blocks
     }
 
+    window_candidates = rank_blocks_in_window(page_ts_by_block)
+    # Diagnostic only (never fed to the attack): where the time-windowed run*hit
+    # ranking put the true block, over ALL blocks, not just the exported ones.
+    gt_window_rank = None
+    if gt_blk is not None:
+        _full = [int(b, 16) for b, _ in rank_blocks_in_window(page_ts_by_block, n_blocks=10**9)]
+        gt_window_rank = (_full.index(gt_blk) + 1) if gt_blk in _full else None
+
     print(f"[Stage 2] {len(scores)} 2MB blocks scored (rank_mode={rank_mode}). Top candidates:")
     for rank, b in enumerate(top_candidates[:10], 1):
         s, h, r, ets = scores[b]
@@ -334,8 +383,10 @@ def process_tracked_log(index: int, host_log_path: str, gt: Optional[Dict[str, A
         "candidate_run_bases": candidate_run_bases,
         "candidate_runs": candidate_runs,
         "candidate_page_ts": candidate_page_ts,
+        "window_candidates": window_candidates,
         "gt_base": hex(gt_base) if gt_base else None,
         "gt_rank": gt_rank,
+        "gt_window_rank": gt_window_rank,
         "gt_indication": gt_dict.get("ind"),
         "gt_N": gt_dict.get("N"),
         "timestamp": time.time(),

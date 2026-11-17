@@ -1,0 +1,32 @@
+{
+  "index": 99,
+  "host_base": "0x19e279000",
+  "gt_base": "0x19e279000",
+  "gt_indication": "Shortness of breath (SOB)",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 560,
+      "ind_gpa": 6948364672,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 19.460684776306152,
+  "timestamp": 1793053708.2285414,
+  "status": "SUCCESS"
+}

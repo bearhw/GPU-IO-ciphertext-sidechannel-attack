@@ -1,0 +1,430 @@
+{
+  "index": 339,
+  "host_base": "0x1a0e19000",
+  "gt_base": "0x1a0e18000",
+  "gt_indication": "Left-sided chest pain.",
+  "recovered_labels": [
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 266,
+      "ind_gpa": 6994106448,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 6994106448,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 6994106448,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 268,
+      "ind_gpa": 6994106464,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 268,
+      "ind_gpa": 6994106464,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 268,
+      "ind_gpa": 6994106464,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 270,
+      "ind_gpa": 6994106480,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 270,
+      "ind_gpa": 6994106480,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 270,
+      "ind_gpa": 6994106480,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 6994106496,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 6994106496,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 6994106496,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6994106512,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6994106512,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6994106512,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6994106528,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6994106528,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6994106528,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6994106544,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6994106544,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6994106544,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6994106560,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6994106560,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6994106560,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6994106576,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6994106576,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6994106576,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6994106592,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6994106592,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6994106592,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6994106608,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6994106608,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6994106608,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6994106624,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6994106624,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6994106624,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6994106640,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6994106640,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6994106640,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6994106656,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6994106656,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6994106656,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 42,
+    "false_positive_labels": [
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever.",
+      "Respiratory",
+      "Fever."
+    ],
+    "false_positive_count": 28,
+    "recovered_labels": [
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.876234292984009,
+  "timestamp": 1793143234.4471848,
+  "status": "SUCCESS"
+}

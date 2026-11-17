@@ -1,0 +1,32 @@
+{
+  "index": 11,
+  "host_base": "0x19f710000",
+  "gt_base": "0x19f70f000",
+  "gt_indication": "MVC, complains of chest pain",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 270,
+      "ind_gpa": 6969952368,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 16.62404489517212,
+  "timestamp": 1793118930.812364,
+  "status": "SUCCESS"
+}

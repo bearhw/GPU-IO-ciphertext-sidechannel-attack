@@ -1,0 +1,763 @@
+{
+  "index": 298,
+  "host_base": "0x13da36000",
+  "gt_base": "0x13da36000",
+  "gt_indication": "Pain. Shortness of breath. History of asthma. Smoker",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " cough.",
+    " Hypox",
+    ", short",
+    " pneumonia.",
+    " COPD",
+    " Hypert",
+    ", short",
+    " pneumonia.",
+    " COPD",
+    " Hypert",
+    ", short",
+    " pneumonia.",
+    " COPD",
+    " Hypert",
+    ", short",
+    " pneumonia.",
+    " COPD",
+    " Hypert",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " of breath",
+    " Cough",
+    " rib pain",
+    " COPD",
+    " of breath",
+    " Cough",
+    " rib pain",
+    " COPD",
+    " of breath",
+    " Cough",
+    " rib pain",
+    " COPD",
+    " of breath",
+    " Cough",
+    " rib pain",
+    " COPD",
+    " of breath",
+    " Cough",
+    " COPD",
+    " of breath",
+    " Cough",
+    " COPD",
+    " of breath",
+    " Cough",
+    " COPD",
+    " of breath",
+    " Cough",
+    " COPD",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " Hypert",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " Hypert",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " Hypert",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 518,
+      "ind_gpa": 5329088560,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 5329088560,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 5329088560,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 5329088560,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 5329088576,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 5329088576,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 5329088576,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 5329088576,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5329088592,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5329088592,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5329088592,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5329088592,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 5329088608,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 5329088608,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 5329088608,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 5329088608,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 5329088624,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 5329088624,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 5329088624,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 5329088624,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 5329088640,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 5329088640,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 5329088656,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 5329088656,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5329088672,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5329088672,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5329088688,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5329088688,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5329088704,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5329088704,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5329088704,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5329088704,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5329088720,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5329088720,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5329088720,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5329088720,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5329088736,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5329088736,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5329088736,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5329088736,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5329088752,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5329088752,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5329088752,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5329088752,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5329088768,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5329088768,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5329088768,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5329088784,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5329088784,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5329088784,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5329088800,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5329088800,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5329088800,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5329088816,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5329088816,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5329088816,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5329088832,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5329088832,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5329088832,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5329088832,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5329088832,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5329088848,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5329088848,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5329088848,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5329088848,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5329088848,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5329088864,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5329088864,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5329088864,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5329088864,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5329088864,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5329088880,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5329088880,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5329088880,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5329088880,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5329088880,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 76,
+    "false_positive_labels": [
+      "Cough",
+      "cough.",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypert",
+      "pneumonia.",
+      "COPD",
+      "Hypert",
+      "pneumonia.",
+      "COPD",
+      "Hypert",
+      "pneumonia.",
+      "COPD",
+      "Hypert",
+      "Cough",
+      "Cough",
+      "Cough",
+      "Cough",
+      "Cough",
+      "rib pain",
+      "COPD",
+      "Cough",
+      "rib pain",
+      "COPD",
+      "Cough",
+      "rib pain",
+      "COPD",
+      "Cough",
+      "rib pain",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "Hypert",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "Hypert",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "Hypert",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "Hypert"
+    ],
+    "false_positive_count": 55,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "cough.",
+      "Hypox",
+      ", short",
+      "pneumonia.",
+      "COPD",
+      "Hypert",
+      ", short",
+      "pneumonia.",
+      "COPD",
+      "Hypert",
+      ", short",
+      "pneumonia.",
+      "COPD",
+      "Hypert",
+      ", short",
+      "pneumonia.",
+      "COPD",
+      "Hypert",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "of breath",
+      "Cough",
+      "rib pain",
+      "COPD",
+      "of breath",
+      "Cough",
+      "rib pain",
+      "COPD",
+      "of breath",
+      "Cough",
+      "rib pain",
+      "COPD",
+      "of breath",
+      "Cough",
+      "rib pain",
+      "COPD",
+      "of breath",
+      "Cough",
+      "COPD",
+      "of breath",
+      "Cough",
+      "COPD",
+      "of breath",
+      "Cough",
+      "COPD",
+      "of breath",
+      "Cough",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "Hypert",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "Hypert",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "Hypert",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.397077083587646,
+  "timestamp": 1793328965.3473065,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,54 @@
+{
+  "index": 2893,
+  "host_base": "0x1a71f8000",
+  "gt_base": "0x1a71f8000",
+  "gt_indication": "Followup pulmonary edema. Community acquired pneumonia. Sepsis. Acute on chronic diastolic congestive heart failure.",
+  "recovered_labels": [
+    " Cough",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 668,
+      "ind_gpa": 7098832096,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7098832096,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7098832096,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 3,
+    "false_positive_labels": [
+      "Cough",
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 3,
+    "recovered_labels": [
+      "Cough",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.762064933776855,
+  "timestamp": 1793254202.970334,
+  "status": "SUCCESS"
+}

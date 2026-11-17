@@ -1,0 +1,41 @@
+{
+  "index": 2811,
+  "host_base": "0x1a6bc6000",
+  "gt_base": "0x1a6bc6000",
+  "gt_indication": "33-year-old female with acute chest pain and shortness of breath today. History of sickle cell disease.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 704,
+      "ind_gpa": 7092336128,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 706,
+      "ind_gpa": 7092336144,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.34555959701538,
+  "timestamp": 1793463911.4171324,
+  "status": "SUCCESS"
+}

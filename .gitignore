@@ -120,3 +120,10 @@ sev-step-module/postcursor_input_tracker
 __pycache__/
 *.pyc
 case_study/llm/e2e_combined_wpt.log
+
+# Capture/experiment data (too large for GitHub; keep locally)
+case_study/**/captures/
+case_study/**/datasets/
+case_study/**/stage[0-9]_tracked_*.json
+*.npz
+*.pth

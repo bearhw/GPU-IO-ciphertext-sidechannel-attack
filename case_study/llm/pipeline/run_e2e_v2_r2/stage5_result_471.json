@@ -1,0 +1,41 @@
+{
+  "index": 471,
+  "host_base": "0x144c12000",
+  "gt_base": "0x144c12000",
+  "gt_indication": "Cough, short of breath, pre cardiac catheterization",
+  "recovered_labels": [
+    " breath,",
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 5448477440,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 5448477472,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath,",
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.225937128067017,
+  "timestamp": 1793338970.998279,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,94 @@
+{
+  "index": 3377,
+  "host_base": "0x1a0712000",
+  "gt_base": "0x1a0712000",
+  "gt_indication": "ARDS due to COVID-19, hypoxia",
+  "recovered_labels": [
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 656,
+      "ind_gpa": 6986740864,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6986740880,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6986740896,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6986740912,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6986740928,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6986740944,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6986740960,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 7,
+    "false_positive_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ],
+    "false_positive_count": 7,
+    "recovered_labels": [
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.50113296508789,
+  "timestamp": 1793452109.2450032,
+  "status": "SUCCESS"
+}

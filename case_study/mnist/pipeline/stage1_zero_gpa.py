@@ -177,6 +177,9 @@ def run_stage1(output_dir: Path, zero_gpa_override: int = None,
     c.ensure_guest_suppressions()
     c.ensure_mtu_9000()
 
+    # Dictionary-building time: zero-page acquisition + dump (MNIST's "dictionary"
+    # is the single zero page every XOR is taken against).
+    t0 = time.time()
     if zero_gpa_override is not None:
         zero_gpa = zero_gpa_override
         print(f"[stage1] Using user-provided zero_gpa: 0x{zero_gpa:x}")
@@ -184,14 +187,17 @@ def run_stage1(output_dir: Path, zero_gpa_override: int = None,
         zero_gpa = acquire_zero_gpa(max_attempts=max_attempts)
 
     dump_zero_page(zero_gpa, zero_out)
+    build_time = time.time() - t0
 
     meta = {
         "stage": 1,
         "zero_gpa": f"0x{zero_gpa:x}",
         "zero_gpa_int": zero_gpa,
         "zero_out": str(zero_out),
+        "dict_build_time_sec": round(build_time, 4),
         "timestamp": time.time(),
     }
+    print(f"[stage1] Dictionary (zero page) built in {build_time:.2f}s")
     c.save_json(json_path, meta)
     print(f"[stage1] Saved zero page metadata → {json_path}")
     return meta

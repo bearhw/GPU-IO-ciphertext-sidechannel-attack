@@ -1,0 +1,41 @@
+{
+  "index": 859,
+  "host_base": "0x1a8f59000",
+  "gt_base": "0x1a8f59000",
+  "gt_indication": "Cough and short of breath",
+  "recovered_labels": [
+    "ough and",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 7129637872,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 7129637904,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.356413125991821,
+  "timestamp": 1793161213.7058334,
+  "status": "SUCCESS"
+}

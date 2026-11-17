@@ -1,0 +1,50 @@
+{
+  "index": 3309,
+  "host_base": "0x19f553000",
+  "gt_base": "0x19f553000",
+  "gt_indication": "Cough and fever. COVID-19 positive.",
+  "recovered_labels": [
+    "ough and",
+    " fever.",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 6968132592,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6968132608,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6968132624,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and",
+      "fever.",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.578125476837158,
+  "timestamp": 1793274306.6016312,
+  "status": "SUCCESS"
+}

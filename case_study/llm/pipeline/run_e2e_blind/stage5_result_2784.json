@@ -1,0 +1,284 @@
+{
+  "index": 2784,
+  "host_base": "0x19fba7000",
+  "gt_base": "0x19fba7000",
+  "gt_indication": "Respiratory failure. Encounter for Endotracheal tube",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " of breath",
+    " Cough",
+    " fever.",
+    " Fever.",
+    " breath,",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974767328,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974767328,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974767328,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974767328,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974767344,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974767344,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974767344,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974767344,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6974767360,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6974767360,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6974767360,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6974767360,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6974767376,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6974767376,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6974767376,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6974767376,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6974767392,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6974767392,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6974767392,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6974767392,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6974767408,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6974767408,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6974767408,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6974767408,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974767424,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974767440,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 26,
+    "false_positive_labels": [
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "breath,",
+      "breath,"
+    ],
+    "false_positive_count": 26,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "of breath",
+      "Cough",
+      "fever.",
+      "Fever.",
+      "breath,",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 18.623412609100342,
+  "timestamp": 1793004669.2641027,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 1428,
+  "host_base": "0x1a0f0e000",
+  "gt_base": "0x1a0f0e000",
+  "gt_indication": "Cough and wheezing since Sunday. Congestion started Monday.",
+  "recovered_labels": [
+    "ough and",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 6995112416,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6995112432,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.834975481033325,
+  "timestamp": 1793371991.5464349,
+  "status": "SUCCESS"
+}

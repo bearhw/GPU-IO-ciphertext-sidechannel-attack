@@ -1,0 +1,20 @@
+{
+  "index": 2443,
+  "host_base": "0x1a06dd000",
+  "gt_base": "0x1a06dd000",
+  "gt_indication": "Of the chest pain. Short of breath.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.573989391326904,
+  "timestamp": 1793239094.9236684,
+  "status": "SUCCESS"
+}

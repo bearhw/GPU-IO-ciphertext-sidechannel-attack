@@ -1,0 +1,32 @@
+{
+  "index": 2752,
+  "host_base": "0x1a3cdb000",
+  "gt_base": "0x1a3cda000",
+  "gt_indication": "Initial evaluation for acute cough, congestion.",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 272,
+      "ind_gpa": 7043135616,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 15.047229528427124,
+  "timestamp": 1793250527.5334327,
+  "status": "SUCCESS"
+}

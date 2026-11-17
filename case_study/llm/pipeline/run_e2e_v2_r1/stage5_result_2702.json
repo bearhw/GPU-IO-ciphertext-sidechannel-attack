@@ -1,0 +1,336 @@
+{
+  "index": 2702,
+  "host_base": "0x198298000",
+  "gt_base": "0x198298000",
+  "gt_indication": "Patient with new right upper extremity PICC line.",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " respiratory failure",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " respiratory failure",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " respiratory failure",
+    " of breath",
+    " Cough",
+    " PICC",
+    " fever.",
+    " respiratory failure",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever.",
+    " Cough",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 520,
+      "ind_gpa": 6847828032,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 6847828032,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 6847828032,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 6847828032,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 6847828032,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6847828048,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6847828048,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6847828048,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6847828048,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6847828048,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6847828064,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6847828064,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6847828064,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6847828064,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6847828064,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6847828080,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6847828080,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6847828080,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6847828080,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6847828080,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 6847828096,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 6847828096,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 6847828096,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6847828112,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6847828112,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 6847828112,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6847828128,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6847828128,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6847828128,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6847828144,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6847828144,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6847828144,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 32,
+    "false_positive_labels": [
+      "of breath",
+      "Cough",
+      "fever.",
+      "respiratory failure",
+      "of breath",
+      "Cough",
+      "fever.",
+      "respiratory failure",
+      "of breath",
+      "Cough",
+      "fever.",
+      "respiratory failure",
+      "of breath",
+      "Cough",
+      "fever.",
+      "respiratory failure",
+      "Cough",
+      "fever.",
+      "Cough",
+      "fever.",
+      "Cough",
+      "fever.",
+      "Cough",
+      "fever."
+    ],
+    "false_positive_count": 24,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "of breath",
+      "Cough",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever.",
+      "Cough",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 30.429542303085327,
+  "timestamp": 1793248783.5196602,
+  "status": "SUCCESS"
+}

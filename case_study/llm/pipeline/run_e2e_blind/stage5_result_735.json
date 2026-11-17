@@ -1,0 +1,32 @@
+{
+  "index": 735,
+  "host_base": "0x19ffd3000",
+  "gt_base": "0x19ffd3000",
+  "gt_indication": "Renal failure. Diatek catheter placement.",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 6979140368,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 17.250269412994385,
+  "timestamp": 1792914922.714508,
+  "status": "SUCCESS"
+}

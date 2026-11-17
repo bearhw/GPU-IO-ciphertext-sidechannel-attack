@@ -1,0 +1,62 @@
+{
+  "index": 2958,
+  "host_base": "0x19f647000",
+  "gt_base": "0x19f647000",
+  "gt_indication": "Cough over the last 10 weeks. Right-sided chest pain.",
+  "recovered_labels": [
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 622,
+      "ind_gpa": 6969131888,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 622,
+      "ind_gpa": 6969131888,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 624,
+      "ind_gpa": 6969131904,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 624,
+      "ind_gpa": 6969131904,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "respiratory failure",
+      "respiratory failure"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.480889797210693,
+  "timestamp": 1793437592.0065007,
+  "status": "SUCCESS"
+}

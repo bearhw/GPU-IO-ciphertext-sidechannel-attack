@@ -1,0 +1,32 @@
+{
+  "index": 3006,
+  "host_base": "0x1a18ab000",
+  "gt_base": "0x1a18ab000",
+  "gt_indication": "Post CABG x4.",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 7005193200,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 19.122069120407104,
+  "timestamp": 1793014666.0335758,
+  "status": "SUCCESS"
+}

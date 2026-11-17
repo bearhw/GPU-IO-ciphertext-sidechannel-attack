@@ -1,0 +1,234 @@
+{
+  "index": 397,
+  "host_base": "0x19f518000",
+  "gt_base": "0x19f517000",
+  "gt_indication": "Left rib pain after fall.",
+  "recovered_labels": [
+    " Cough",
+    " COPD",
+    " wheez",
+    " Cough",
+    " COPD",
+    " wheez",
+    " Cough",
+    " COPD",
+    " wheez",
+    " Cough",
+    " COPD",
+    " wheez",
+    " Cough",
+    " COPD",
+    " wheez",
+    " Cough",
+    " COPD",
+    " wheez",
+    " Cough",
+    " COPD",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 280,
+      "ind_gpa": 6967888064,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6967888064,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6967888064,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6967888080,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6967888080,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6967888080,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6967888096,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6967888096,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6967888096,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6967888112,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6967888112,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6967888112,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6967888128,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6967888128,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6967888128,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6967888144,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6967888144,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6967888144,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6967888160,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6967888160,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6967888160,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 21,
+    "false_positive_labels": [
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez"
+    ],
+    "false_positive_count": 21,
+    "recovered_labels": [
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez",
+      "Cough",
+      "COPD",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.897257328033447,
+  "timestamp": 1793334184.203789,
+  "status": "SUCCESS"
+}

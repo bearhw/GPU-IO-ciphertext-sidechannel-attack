@@ -1,0 +1,32 @@
+{
+  "index": 1479,
+  "host_base": "0x1aab37000",
+  "gt_base": "0x1aab37000",
+  "gt_indication": "Pneumonia. Cough, smoker.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 7158858768,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 17.72694158554077,
+  "timestamp": 1793107865.4647095,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 3155,
+  "host_base": "0x19d321000",
+  "gt_base": "0x19d321000",
+  "gt_indication": "Shortness of breath, fever, myalgias and cough since 02/02/2013. The patient's son tested positive for COVID-19 on 2/11/2019. She had exposure to her son. Weaker today.",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 6932275680,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6932275696,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 19.185754537582397,
+  "timestamp": 1793019503.3352695,
+  "status": "SUCCESS"
+}

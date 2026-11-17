@@ -1,0 +1,258 @@
+{
+  "index": 2503,
+  "host_base": "0x1a124f000",
+  "gt_base": "0x1a124f000",
+  "gt_indication": "Follow-up pneumonia. Upper GI bleeding.",
+  "recovered_labels": [
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever.",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 6998522688,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6998522688,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6998522688,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6998522688,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6998522704,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6998522704,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6998522704,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6998522704,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6998522720,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6998522720,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6998522720,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6998522720,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6998522736,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6998522736,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6998522736,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6998522736,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6998522752,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6998522752,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6998522752,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6998522752,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6998522768,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6998522768,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6998522768,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6998522768,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 24,
+    "false_positive_labels": [
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever."
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever.",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 17.001523733139038,
+  "timestamp": 1792992288.8854706,
+  "status": "SUCCESS"
+}

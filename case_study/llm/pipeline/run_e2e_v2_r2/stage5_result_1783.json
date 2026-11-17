@@ -1,0 +1,32 @@
+{
+  "index": 1783,
+  "host_base": "0x1a6a11000",
+  "gt_base": "0x1a6a11000",
+  "gt_indication": "66-year-old male with history of shortness of breath. COVID-19 positive.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 646,
+      "ind_gpa": 7090545712,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 15.852937698364258,
+  "timestamp": 1793382276.1046026,
+  "status": "SUCCESS"
+}

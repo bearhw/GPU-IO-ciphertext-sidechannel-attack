@@ -1,0 +1,41 @@
+{
+  "index": 1047,
+  "host_base": "0x1a89d0000",
+  "gt_base": "0x1a89d0000",
+  "gt_indication": "Cough fever and wheezing",
+  "recovered_labels": [
+    " Cough",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 366,
+      "ind_gpa": 7123831664,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7123831696,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 14.596739292144775,
+  "timestamp": 1793091060.1616251,
+  "status": "SUCCESS"
+}

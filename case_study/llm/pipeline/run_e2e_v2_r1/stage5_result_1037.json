@@ -1,0 +1,404 @@
+{
+  "index": 1037,
+  "host_base": "0x1a2dfa000",
+  "gt_base": "0x1a2dfa000",
+  "gt_indication": "Fever. Cough.",
+  "recovered_labels": [
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 546,
+      "ind_gpa": 7027536144,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 7027536144,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 7027536160,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 7027536160,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 7027536176,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 7027536176,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7027536192,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7027536192,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7027536208,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 7027536208,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7027536224,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7027536224,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7027536240,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7027536240,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7027536256,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7027536256,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7027536272,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7027536272,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7027536288,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7027536288,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7027536304,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7027536304,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 7027536320,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 7027536320,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 7027536336,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 7027536336,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 7027536352,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 7027536352,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 7027536368,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 7027536368,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 7027536384,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 7027536384,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 578,
+      "ind_gpa": 7027536400,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 578,
+      "ind_gpa": 7027536400,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 7027536416,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 7027536416,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 582,
+      "ind_gpa": 7027536432,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 582,
+      "ind_gpa": 7027536432,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 38,
+    "false_positive_labels": [
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and"
+    ],
+    "false_positive_count": 38,
+    "recovered_labels": [
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.67566990852356,
+  "timestamp": 1793172243.1067,
+  "status": "SUCCESS"
+}

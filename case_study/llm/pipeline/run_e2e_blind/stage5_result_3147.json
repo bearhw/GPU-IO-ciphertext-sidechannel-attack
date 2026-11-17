@@ -1,0 +1,104 @@
+{
+  "index": 3147,
+  "host_base": "0x19d1c9000",
+  "gt_base": "0x19d1c9000",
+  "gt_indication": "Respiratory distress/intracranial hematoma",
+  "recovered_labels": [
+    " Shortness",
+    " Follow-up",
+    " Shortness",
+    " Follow-up",
+    " Shortness",
+    " Follow-up",
+    " Shortness",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 520,
+      "ind_gpa": 6930866240,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 6930866240,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6930866256,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 6930866256,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6930866272,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 6930866272,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6930866288,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 6930866288,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "Shortness",
+      "Follow-up",
+      "Shortness",
+      "Follow-up",
+      "Shortness",
+      "Follow-up",
+      "Shortness",
+      "Follow-up"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "Shortness",
+      "Follow-up",
+      "Shortness",
+      "Follow-up",
+      "Shortness",
+      "Follow-up",
+      "Shortness",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 34.54398965835571,
+  "timestamp": 1793019354.4656422,
+  "status": "SUCCESS"
+}

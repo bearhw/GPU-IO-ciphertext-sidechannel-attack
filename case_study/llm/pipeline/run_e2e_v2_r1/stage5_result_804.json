@@ -1,0 +1,162 @@
+{
+  "index": 804,
+  "host_base": "0x13c90d000",
+  "gt_base": "0x13c90d000",
+  "gt_indication": "68-year-old male with pleural effusion. Status post thoracentesis. Patient presenting with chest pain since the procedure.",
+  "recovered_labels": [
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " Chest pain",
+    " Follow-up",
+    " Weakness",
+    " Chest pain",
+    " Follow-up",
+    " Weakness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 536,
+      "ind_gpa": 5311094976,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5311094976,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5311095008,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5311095008,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5311095040,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5311095040,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5311095072,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5311095072,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5311095104,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5311095104,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5311095104,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5311095120,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5311095120,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5311095120,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 14,
+    "false_positive_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "Follow-up",
+      "Weakness",
+      "Follow-up",
+      "Weakness"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "Chest pain",
+      "Follow-up",
+      "Weakness",
+      "Chest pain",
+      "Follow-up",
+      "Weakness"
+    ]
+  },
+  "elapsed_sec": 15.628989219665527,
+  "timestamp": 1793158354.3471456,
+  "status": "SUCCESS"
+}

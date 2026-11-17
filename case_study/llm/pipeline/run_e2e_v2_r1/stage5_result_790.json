@@ -1,0 +1,384 @@
+{
+  "index": 790,
+  "host_base": "0x19fbe9000",
+  "gt_base": "0x19fbe8000",
+  "gt_indication": "Weakness, cough and congestion. Smoker.",
+  "recovered_labels": [
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth",
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth",
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth",
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth",
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth",
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth",
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth",
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth",
+    " Shortness",
+    " rib pain",
+    " COVID-",
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 248,
+      "ind_gpa": 6975035328,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 248,
+      "ind_gpa": 6975035328,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 248,
+      "ind_gpa": 6975035328,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 248,
+      "ind_gpa": 6975035328,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 250,
+      "ind_gpa": 6975035344,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 250,
+      "ind_gpa": 6975035344,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 250,
+      "ind_gpa": 6975035344,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 250,
+      "ind_gpa": 6975035344,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 252,
+      "ind_gpa": 6975035360,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 252,
+      "ind_gpa": 6975035360,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 252,
+      "ind_gpa": 6975035360,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 252,
+      "ind_gpa": 6975035360,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 254,
+      "ind_gpa": 6975035376,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 254,
+      "ind_gpa": 6975035376,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 254,
+      "ind_gpa": 6975035376,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 254,
+      "ind_gpa": 6975035376,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 256,
+      "ind_gpa": 6975035392,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 256,
+      "ind_gpa": 6975035392,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 256,
+      "ind_gpa": 6975035392,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 256,
+      "ind_gpa": 6975035392,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 258,
+      "ind_gpa": 6975035408,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 258,
+      "ind_gpa": 6975035408,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 258,
+      "ind_gpa": 6975035408,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 258,
+      "ind_gpa": 6975035408,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 260,
+      "ind_gpa": 6975035424,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 260,
+      "ind_gpa": 6975035424,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 260,
+      "ind_gpa": 6975035424,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 260,
+      "ind_gpa": 6975035424,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6975035440,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6975035440,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6975035440,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6975035440,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 6975035456,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 6975035456,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 6975035456,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 6975035456,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 36,
+    "false_positive_labels": [
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth"
+    ],
+    "false_positive_count": 36,
+    "recovered_labels": [
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth",
+      "Shortness",
+      "rib pain",
+      "COVID-",
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 15.282289028167725,
+  "timestamp": 1793157491.0010295,
+  "status": "SUCCESS"
+}

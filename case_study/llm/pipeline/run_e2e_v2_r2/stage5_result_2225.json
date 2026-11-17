@@ -1,0 +1,32 @@
+{
+  "index": 2225,
+  "host_base": "0x1a60d1000",
+  "gt_base": "0x1a60d0000",
+  "gt_indication": "Short of breath. Rash.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 208,
+      "ind_gpa": 7080842880,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.09965991973877,
+  "timestamp": 1793463060.9262407,
+  "status": "SUCCESS"
+}

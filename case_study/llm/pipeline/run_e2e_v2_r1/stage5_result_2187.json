@@ -1,0 +1,164 @@
+{
+  "index": 2187,
+  "host_base": "0x1a34fb000",
+  "gt_base": "0x1a34fa000",
+  "gt_indication": "Fever. Leukemia. Abdominal pain and bloody stool.",
+  "recovered_labels": [
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez",
+    " pneumonia.",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 728,
+      "ind_gpa": 7034881728,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 728,
+      "ind_gpa": 7034881728,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 730,
+      "ind_gpa": 7034881744,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 730,
+      "ind_gpa": 7034881744,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 732,
+      "ind_gpa": 7034881760,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 732,
+      "ind_gpa": 7034881760,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 734,
+      "ind_gpa": 7034881776,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 734,
+      "ind_gpa": 7034881776,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 736,
+      "ind_gpa": 7034881792,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 736,
+      "ind_gpa": 7034881792,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 738,
+      "ind_gpa": 7034881808,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 738,
+      "ind_gpa": 7034881808,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 740,
+      "ind_gpa": 7034881824,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 740,
+      "ind_gpa": 7034881824,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 14,
+    "false_positive_labels": [
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez"
+    ],
+    "false_positive_count": 14,
+    "recovered_labels": [
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez",
+      "pneumonia.",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.127151727676392,
+  "timestamp": 1793226551.2994432,
+  "status": "SUCCESS"
+}

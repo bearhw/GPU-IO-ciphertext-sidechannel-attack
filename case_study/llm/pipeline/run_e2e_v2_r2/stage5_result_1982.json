@@ -1,0 +1,41 @@
+{
+  "index": 1982,
+  "host_base": "0x1979ab000",
+  "gt_base": "0x1979ab000",
+  "gt_indication": "Cough and fever. Upper chest pain for 3 weeks.",
+  "recovered_labels": [
+    "ough and",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 6838467296,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6838467312,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.621702432632446,
+  "timestamp": 1793461669.302296,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 1347,
+  "host_base": "0x1a1673000",
+  "gt_base": "0x1a1673000",
+  "gt_indication": "chest pain with cough, shortness of breath",
+  "recovered_labels": [
+    " cough,",
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 442,
+      "ind_gpa": 7002865104,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 444,
+      "ind_gpa": 7002865120,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,",
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 18.84188151359558,
+  "timestamp": 1792943535.0769722,
+  "status": "SUCCESS"
+}

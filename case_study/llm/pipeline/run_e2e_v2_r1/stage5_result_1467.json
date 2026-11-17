@@ -1,0 +1,164 @@
+{
+  "index": 1467,
+  "host_base": "0x1a1dc1000",
+  "gt_base": "0x1a1dc1000",
+  "gt_indication": "Respiratory failure acute encephalopathy, history of diabetes.",
+  "recovered_labels": [
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 656,
+      "ind_gpa": 7010526336,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 7010526336,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7010526352,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7010526352,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7010526368,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 7010526368,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7010526384,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7010526384,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7010526400,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 7010526400,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7010526416,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 7010526416,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7010526432,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 7010526432,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 14,
+    "false_positive_labels": [
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever."
+    ],
+    "false_positive_count": 14,
+    "recovered_labels": [
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.712301969528198,
+  "timestamp": 1793193773.5839946,
+  "status": "SUCCESS"
+}

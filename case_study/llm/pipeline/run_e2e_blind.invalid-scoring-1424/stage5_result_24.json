@@ -1,0 +1,34 @@
+{
+  "index": 24,
+  "host_base": "0x1a02df000",
+  "gt_base": null,
+  "gt_indication": null,
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6982334496,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "Cough"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 19.942744970321655,
+  "timestamp": 1792869820.9228551,
+  "status": "SUCCESS"
+}

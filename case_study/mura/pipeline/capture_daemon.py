@@ -16,10 +16,14 @@ Usage:
 """
 
 import argparse
+import atexit
 import csv
+from collections import Counter
+import fcntl
 import json
 import os
 import re
+import signal
 import subprocess
 import sys
 import time
@@ -31,6 +35,52 @@ sys.path.insert(0, str(HERE))
 import common as c
 
 PY = "/home/eun/miniforge3/bin/python3"
+LOCKFILE = HERE / ".capture_daemon.lock"
+
+# The child that is running right now (stage1 build or a capture chunk). It and its
+# own children (master_orchestrate -> stage1/swap_pages_tool) run in a fresh process
+# group, so a single killpg takes the whole subtree down. Leaving them behind is
+# what let orphaned ICMP/PSP traffic keep hammering the host until it rebooted.
+_CURRENT_CHILD = None
+_LOCK_FH = None
+
+
+def _run_tracked(cmd, **kw):
+    """Run a child in its own process group, remembering it so a signal can reap
+    the entire subtree instead of just the top process."""
+    global _CURRENT_CHILD
+    p = subprocess.Popen(cmd, start_new_session=True, **kw)
+    _CURRENT_CHILD = p
+    try:
+        return p.wait()
+    finally:
+        _CURRENT_CHILD = None
+
+
+def _reap_child():
+    """Terminate the current child's whole process group (SIGTERM, then SIGKILL)."""
+    p = _CURRENT_CHILD
+    if p is None or p.poll() is not None:
+        return
+    try:
+        pgid = os.getpgid(p.pid)
+    except ProcessLookupError:
+        return
+    for sig in (signal.SIGTERM, signal.SIGKILL):
+        try:
+            os.killpg(pgid, sig)
+        except ProcessLookupError:
+            return
+        for _ in range(10):
+            time.sleep(0.5)
+            if p.poll() is not None:
+                return
+
+
+def _on_signal(signum, frame):
+    log(f"received signal {signum} — reaping child process group and exiting")
+    _reap_child()
+    sys.exit(128 + signum)
 GUEST_MODULE = "/home/ubuntu/guest_large_icmp_monitor.ko"
 GUEST_IFACE = "enp0s4"
 GUEST_IP = "192.168.100.2/24"
@@ -402,7 +452,7 @@ def rebuild_dictionary(bid: str, refs: str, dry: bool) -> bool:
                "--only", ",".join(str(u) for u in missing)]
         log(f"resuming: {len(have)} page(s) kept, {len(missing)} to build")
 
-    rc = subprocess.run(cmd, cwd=str(HERE)).returncode
+    rc = _run_tracked(cmd, cwd=str(HERE))
     still_missing, have = dictionary_state(bid, refs)
     log(f"dictionary now has {len(have)} ref page(s), {len(still_missing)} missing "
         f"(stage1 exit {rc})")
@@ -422,6 +472,32 @@ def done_indices(csv_path: Path, split: str) -> set:
             # A row whose capture failed is worth retrying after a guest repair.
             if idx.isdigit() and (row.get("gt_overlap") or "-") not in ("-", "", "0"):
                 out.add(int(idx))
+    return out
+
+
+def blind_done_indices(split: str) -> set:
+    """Indices in <split> that already have a BLIND capture, by the same provenance
+    test build_attack_dataset --blind-only uses: probe_choice is set (the 2MB block
+    was chosen from burst candidates, not handed over by the guest).
+
+    The pipeline CSV counts block-given captures as done too, so in blind mode it
+    would report a class complete when only its old block-given samples exist, and
+    --per-class would stop short of 324 *blind* samples. Failed blind attempts
+    (0 pages) count as done: they are honest data points, and retrying them would
+    cherry-pick the recovery rate upward.
+    """
+    out = set()
+    cap = CAPTURE_ROOT / split
+    for m in cap.glob("swap_meta_*.json"):
+        try:
+            d = json.loads(m.read_text())
+        except Exception:
+            continue
+        if d.get("probe_choice") is None:
+            continue
+        idx = d.get("index")
+        if isinstance(idx, int):
+            out.add(idx)
     return out
 
 
@@ -476,16 +552,21 @@ def run_chunk(indices: list, args, bid: str) -> int:
     out.mkdir(parents=True, exist_ok=True)
     cmd = [PY, "-u", str(HERE / "master_orchestrate.py"),
            "--indices", ",".join(str(i) for i in indices),
-           "--split", args.split, "--blind", "--block-from-guest",
+           "--split", args.split, "--blind",
            "--to-stage", str(args.to_stage), "--output-dir", str(out),
            "--max-dead", "3", "--max-loaders", str(MAX_LOADERS)]
+    if not args.blind_block:
+        # Default: guest names its 2MB block (the measured 94.4% setting).
+        # --blind-block drops it, so blocks come only from burst candidates and
+        # probe must pick among them — the fully-blind end-to-end attack.
+        cmd.append("--block-from-guest")
     if args.probe:
         cmd.append("--probe")
     log(f"chunk of {len(indices)} (first {indices[0]}, last {indices[-1]}) -> {out}")
     if args.dry_run:
         return 0
     env = dict(os.environ, MURA_BOOT_ID=bid)
-    return subprocess.run(cmd, cwd=str(HERE), env=env).returncode
+    return _run_tracked(cmd, cwd=str(HERE), env=env)
 
 
 def main():
@@ -493,10 +574,21 @@ def main():
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--split", default="train", choices=["train", "valid"])
     p.add_argument("--start", type=int, default=0)
-    p.add_argument("--end", type=int, required=True)
+    p.add_argument("--end", type=int, default=10**9,
+                   help="Upper index bound (exclusive). Default: the whole split. "
+                        "Note this is an INDEX bound, not a sample count — the valid "
+                        "CSV is ordered by body part, so a small --end lands entirely "
+                        "in one class. Use --per-class to cap how many are captured.")
+    p.add_argument("--per-class", type=int, default=None,
+                   help="Stop once every class has this many captures. With "
+                        "interleave this fills the classes evenly, which a plain "
+                        "--end cannot (that just truncates the index range).")
     p.add_argument("--chunk", type=int, default=100, help="Indices per supervised chunk")
     p.add_argument("--to-stage", type=int, default=3, choices=[2, 3, 5])
     p.add_argument("--probe", action="store_true")
+    p.add_argument("--blind-block", action="store_true",
+                   help="Do NOT take the 2MB block from the guest; find it blind "
+                        "from burst candidates (requires --probe to select)")
     p.add_argument("--refs", default="", help="Comma-separated u8 list for a partial dictionary")
     p.add_argument("--launch-script", default="/home/eun/esp_bak/sev-step/launch-qemu-noncc.sh",
                    help="Script that brings the guest up on the pipeline's SSH port")
@@ -507,8 +599,28 @@ def main():
     p.add_argument("--dry-run", action="store_true")
     args = p.parse_args()
 
-    global DRY
+    global DRY, _LOCK_FH
     DRY = args.dry_run
+
+    # Single instance only. A second daemon would drive the same ICMP/PSP hardware
+    # concurrently with the first, corrupting the dictionary and overloading the
+    # host — the failure that took the server down.
+    if not args.dry_run:
+        _LOCK_FH = open(LOCKFILE, "w")
+        try:
+            fcntl.flock(_LOCK_FH, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print(f"[daemon] another capture_daemon holds {LOCKFILE} — refusing to "
+                  f"start a second one", file=sys.stderr)
+            return 2
+        _LOCK_FH.write(str(os.getpid()))
+        _LOCK_FH.flush()
+
+    # Reap the running child's whole process group on any clean termination, so no
+    # stage1/swap_pages_tool is ever orphaned behind the daemon.
+    for s in (signal.SIGTERM, signal.SIGINT, signal.SIGHUP):
+        signal.signal(s, _on_signal)
+    atexit.register(_reap_child)
 
     csv_path = capture_dir(args.split) / "pipeline_summary.csv"
     # Read back from the dictionary itself, so a daemon restart does not mistake a
@@ -530,13 +642,34 @@ def main():
             if not args.dry_run:
                 HOST_BOOT_MARK.write_text(hb)
 
-        done = done_indices(csv_path, args.split)
-        todo = [i for i in range(args.start, args.end) if i not in done]
+        # In blind mode, "done" means a blind capture exists — old block-given
+        # captures in the same dir must not count toward a blind per-class target.
+        cap_done = (lambda: blind_done_indices(args.split)) if args.blind_block \
+            else (lambda: done_indices(csv_path, args.split))
+        done = cap_done()
+        classes = index_classes(args.split) if (args.interleave or args.per_class) else {}
+        # --end defaults to the whole split; restrict to indices that actually exist
+        # so a huge --end does not generate phantom todo entries.
+        universe = ([i for i in sorted(classes) if args.start <= i < args.end]
+                    if classes else list(range(args.start, args.end)))
+        todo = [i for i in universe if i not in done]
+
+        if args.per_class is not None and classes:
+            by_class = Counter(classes.get(i, "?") for i in done)
+            log("per-class done: "
+                + "  ".join(f"{k} {by_class.get(k,0)}" for k in sorted(set(classes.values()))))
+            under = {cls for cls in set(classes.values())
+                     if by_class.get(cls, 0) < args.per_class}
+            if not under:
+                log(f"every class reached {args.per_class} captures — done")
+                return 0
+            todo = [i for i in todo if classes.get(i) in under]
+
         if not todo:
-            log(f"all {args.end - args.start} indices captured — done")
+            log("all requested indices captured — done")
             return 0
         if args.interleave:
-            todo = interleave(todo, index_classes(args.split))
+            todo = interleave(todo, classes)
         log(f"{len(done)} captured, {len(todo)} remaining (next {todo[0]})")
 
         if not guest_up():
@@ -571,7 +704,7 @@ def main():
 
         before = len(done)
         run_chunk(todo[:args.chunk], args, last_boot or "")
-        gained = len(done_indices(csv_path, args.split)) - before
+        gained = len(cap_done()) - before
         log(f"chunk added {gained} capture(s)")
 
         if gained == 0:

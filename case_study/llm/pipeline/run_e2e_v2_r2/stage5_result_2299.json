@@ -1,0 +1,32 @@
+{
+  "index": 2299,
+  "host_base": "0x1a030e000",
+  "gt_base": "0x1a030e000",
+  "gt_indication": "Dyspnea today, chest pain. Smoker, prior renal transplant.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 576,
+      "ind_gpa": 6982529536,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.31316614151001,
+  "timestamp": 1793410958.8242517,
+  "status": "SUCCESS"
+}

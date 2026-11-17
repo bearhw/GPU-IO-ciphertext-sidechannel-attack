@@ -1,0 +1,144 @@
+{
+  "index": 696,
+  "host_base": "0x19f892000",
+  "gt_base": "0x19f892000",
+  "gt_indication": "PICC placement",
+  "recovered_labels": [
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 6971534112,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6971534128,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6971534144,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6971534160,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6971534176,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6971534192,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6971534208,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6971534224,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6971534240,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6971534256,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6971534272,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6971534288,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 17.997615337371826,
+  "timestamp": 1793032453.3305073,
+  "status": "SUCCESS"
+}

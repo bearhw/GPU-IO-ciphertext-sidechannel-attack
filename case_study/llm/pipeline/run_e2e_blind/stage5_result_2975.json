@@ -1,0 +1,41 @@
+{
+  "index": 2975,
+  "host_base": "0x1a1228000",
+  "gt_base": "0x1a1228000",
+  "gt_indication": "Cough for 3 months. Evaluate for pneumonia and asthma. No fever. Shortness of breath and wheezing.",
+  "recovered_labels": [
+    "ness of",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 456,
+      "ind_gpa": 6998363712,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6998363744,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 19.311875343322754,
+  "timestamp": 1793014025.7043614,
+  "status": "SUCCESS"
+}

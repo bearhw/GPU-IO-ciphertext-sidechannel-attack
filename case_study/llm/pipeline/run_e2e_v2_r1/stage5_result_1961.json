@@ -1,0 +1,84 @@
+{
+  "index": 1961,
+  "host_base": "0x13e8ae000",
+  "gt_base": "0x13e8ae000",
+  "gt_indication": "Ventilator dependent respiratory failure. Sepsis. Acute renal failure.",
+  "recovered_labels": [
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 368,
+      "ind_gpa": 5344258944,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5344258960,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5344258976,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5344258992,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5344259008,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5344259024,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.72307300567627,
+  "timestamp": 1793218396.817631,
+  "status": "SUCCESS"
+}

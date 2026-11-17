@@ -1,0 +1,50 @@
+{
+  "index": 362,
+  "host_base": "0x1a80bd000",
+  "gt_base": "0x1a80bd000",
+  "gt_indication": "Generalized weakness, shortness of breath. History coronary artery disease.",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 7114316528,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 7114316544,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 7114316560,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 18.56885027885437,
+  "timestamp": 1792897621.4177222,
+  "status": "SUCCESS"
+}

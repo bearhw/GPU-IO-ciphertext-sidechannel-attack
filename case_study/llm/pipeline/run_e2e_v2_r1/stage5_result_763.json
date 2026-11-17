@@ -1,0 +1,41 @@
+{
+  "index": 763,
+  "host_base": "0x1a650a000",
+  "gt_base": "0x1a650a000",
+  "gt_indication": "83-year-old female with history of shortness of breath for the past 2 weeks, worsening on exertion. History of bronchiectasis.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 7085273248,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 7085273264,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.318049430847168,
+  "timestamp": 1793156244.8430133,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,195 @@
+{
+  "index": 2240,
+  "host_base": "0x19f4ce000",
+  "gt_base": "0x19f4cd000",
+  "gt_indication": "Chest discomfort. Intermittent chest pain.",
+  "recovered_labels": [
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 276,
+      "ind_gpa": 6967584928,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6967584928,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6967584944,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6967584944,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6967584960,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6967584960,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6967584976,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6967584976,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6967584992,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6967584992,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6967585008,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6967585008,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6967585024,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6967585024,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6967585040,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6967585040,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6967585056,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6967585056,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever.",
+      "Fever."
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.435142993927002,
+  "timestamp": 1793407769.578889,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 1500,
+  "host_base": "0x1a44a4000",
+  "gt_base": "0x1a44a4000",
+  "gt_indication": "Fever and cough. Diminished breath sounds on the right.",
+  "recovered_labels": [
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 332,
+      "ind_gpa": 7051299424,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough."
+    ]
+  },
+  "elapsed_sec": 19.676872968673706,
+  "timestamp": 1792947370.6285717,
+  "status": "SUCCESS"
+}

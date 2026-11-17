@@ -1,0 +1,467 @@
+{
+  "index": 2893,
+  "host_base": "0x1a0a7f000",
+  "gt_base": "0x1a0a7f000",
+  "gt_indication": "Followup pulmonary edema. Community acquired pneumonia. Sepsis. Acute on chronic diastolic congestive heart failure.",
+  "recovered_labels": [
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    "ness of",
+    " Shortness",
+    " Cough",
+    "ness of",
+    " Shortness",
+    " Cough",
+    "ness of",
+    " Shortness",
+    " Cough",
+    "ness of",
+    " Shortness",
+    " Cough",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 534,
+      "ind_gpa": 6990332080,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6990332080,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6990332096,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6990332096,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6990332112,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6990332112,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6990332128,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6990332128,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6990332144,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6990332144,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6990332160,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6990332160,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6990332176,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6990332176,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6990332192,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6990332192,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6990332208,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6990332208,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6990332224,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6990332224,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6990332224,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6990332240,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6990332240,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6990332240,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6990332256,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6990332256,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6990332256,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6990332272,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6990332272,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6990332272,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 6990332288,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 6990332288,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6990332304,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6990332304,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 6990332320,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 6990332320,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6990332336,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 6990332336,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 6990332352,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 6990332352,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 6990332368,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 6990332368,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6990332384,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6990332384,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6990332400,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6990332400,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 46,
+    "false_positive_labels": [
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "ness of",
+      "Shortness",
+      "Cough",
+      "ness of",
+      "Shortness",
+      "Cough",
+      "ness of",
+      "Shortness",
+      "Cough",
+      "ness of",
+      "Shortness",
+      "Cough",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC"
+    ],
+    "false_positive_count": 29,
+    "recovered_labels": [
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "ness of",
+      "Shortness",
+      "Cough",
+      "ness of",
+      "Shortness",
+      "Cough",
+      "ness of",
+      "Shortness",
+      "Cough",
+      "ness of",
+      "Shortness",
+      "Cough",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 18.74248456954956,
+  "timestamp": 1793009867.4029121,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,50 @@
+{
+  "index": 1096,
+  "host_base": "0x1a4887000",
+  "gt_base": "0x1a4887000",
+  "gt_indication": "Cough, shortness of breath, and headache. COVID-19 positive.",
+  "recovered_labels": [
+    " shortness",
+    " of breath",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 640,
+      "ind_gpa": 7055377408,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 7055377424,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 648,
+      "ind_gpa": 7055377472,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.433493852615356,
+  "timestamp": 1793175054.4748752,
+  "status": "SUCCESS"
+}

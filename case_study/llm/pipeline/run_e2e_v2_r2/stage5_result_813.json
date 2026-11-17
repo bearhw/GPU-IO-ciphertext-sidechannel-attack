@@ -1,0 +1,32 @@
+{
+  "index": 813,
+  "host_base": "0x1a6d77000",
+  "gt_base": "0x1a6d76000",
+  "gt_indication": "Weakness. Cough.",
+  "recovered_labels": [
+    " Weakness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 7094106208,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Weakness"
+    ]
+  },
+  "elapsed_sec": 15.071027755737305,
+  "timestamp": 1793347902.4190807,
+  "status": "SUCCESS"
+}

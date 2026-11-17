@@ -1,0 +1,41 @@
+{
+  "index": 2447,
+  "host_base": "0x1a2d8e000",
+  "gt_base": "0x1a2d8d000",
+  "gt_indication": "Chest pain and shortness of breath since developing COVID 7 weeks ago.",
+  "recovered_labels": [
+    " Chest pain",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 7027091552,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 7027091584,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.855867385864258,
+  "timestamp": 1793414357.2254171,
+  "status": "SUCCESS"
+}

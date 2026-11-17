@@ -1,0 +1,14 @@
+{
+  "stage": 4,
+  "index": 2,
+  "batch_size": 512,
+  "start_image_index": 1024,
+  "end_image_index": 1535,
+  "batch_tag": "20261107_182332_bs512_idx1024-1535",
+  "num_pages": 392,
+  "sparsities_npy": "/home/eun/open-science/case_study/mnist/pipeline/output_timing/results/sparsities_20261107_182332_bs512_idx1024-1535.npy",
+  "total_active_chunks": 11351,
+  "avg_active_per_image": 22.169921875,
+  "ciphermap_build_time_sec": 0.3252,
+  "timestamp": 1794093812.5121117
+}

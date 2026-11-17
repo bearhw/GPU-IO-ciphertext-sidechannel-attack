@@ -1,0 +1,32 @@
+{
+  "index": 3395,
+  "host_base": "0x1a253f000",
+  "gt_base": "0x1a253f000",
+  "gt_indication": "Cough, Hx COPD; Pacemaker alerted for A.Fib, denies any chest pain. Recent cough x 4 days. H/O A.Fib, HTN, COPD, Pacemaker.",
+  "recovered_labels": [
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7018380032,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 17.420575380325317,
+  "timestamp": 1793028704.3675325,
+  "status": "SUCCESS"
+}

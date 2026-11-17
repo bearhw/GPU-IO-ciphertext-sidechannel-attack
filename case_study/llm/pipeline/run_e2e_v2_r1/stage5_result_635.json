@@ -1,0 +1,32 @@
+{
+  "index": 635,
+  "host_base": "0x1948f6000",
+  "gt_base": "0x1948f6000",
+  "gt_indication": "Chest pain. Recent common bile duct extraction. Anemia.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 560,
+      "ind_gpa": 6787395968,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.288421869277954,
+  "timestamp": 1793153473.3214931,
+  "status": "SUCCESS"
+}

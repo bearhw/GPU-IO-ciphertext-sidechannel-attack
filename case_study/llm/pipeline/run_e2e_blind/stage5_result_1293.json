@@ -1,0 +1,50 @@
+{
+  "index": 1293,
+  "host_base": "0x141b47000",
+  "gt_base": "0x141b47000",
+  "gt_indication": "Shortness of breath and wheezing. COPD. Arrhythmia.",
+  "recovered_labels": [
+    "ness of",
+    " wheez",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 5397314272,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 5397314304,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 5397314336,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "wheez",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 19.682031631469727,
+  "timestamp": 1792941855.0865734,
+  "status": "SUCCESS"
+}

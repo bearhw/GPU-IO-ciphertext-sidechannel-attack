@@ -1,0 +1,41 @@
+{
+  "index": 3167,
+  "host_base": "0x1a04be000",
+  "gt_base": "0x1a04be000",
+  "gt_indication": "Shortness of breath. Patient admitted to the hospital 10/11/1997 with a diagnosis of multilobar pneumonia.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 594,
+      "ind_gpa": 6984299152,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6984299168,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.148440837860107,
+  "timestamp": 1793445679.7492106,
+  "status": "SUCCESS"
+}

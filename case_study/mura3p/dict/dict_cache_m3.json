@@ -1,0 +1,1589 @@
+{
+  "fixed_gpa": "0x14672e000",
+  "refs": {
+    "R00": {
+      "ref_gpa": "0x1254b7000",
+      "ch": "R",
+      "pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R00.out",
+      "verified": true
+    },
+    "R01": {
+      "ref_gpa": "0x12205b000",
+      "ch": "R",
+      "pixels": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R01.out",
+      "verified": true
+    },
+    "R02": {
+      "ref_gpa": "0x1254c8000",
+      "ch": "R",
+      "pixels": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R02.out",
+      "verified": true
+    },
+    "R03": {
+      "ref_gpa": "0x1254cd000",
+      "ch": "R",
+      "pixels": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R03.out",
+      "verified": true
+    },
+    "R04": {
+      "ref_gpa": "0x1254d1000",
+      "ch": "R",
+      "pixels": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R04.out",
+      "verified": true
+    },
+    "R05": {
+      "ref_gpa": "0x1254db000",
+      "ch": "R",
+      "pixels": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R05.out",
+      "verified": true
+    },
+    "R06": {
+      "ref_gpa": "0x1254e4000",
+      "ch": "R",
+      "pixels": [
+        29,
+        29,
+        29,
+        29
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R06.out",
+      "verified": true
+    },
+    "R07": {
+      "ref_gpa": "0x1254e9000",
+      "ch": "R",
+      "pixels": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R07.out",
+      "verified": true
+    },
+    "R08": {
+      "ref_gpa": "0x1254ee000",
+      "ch": "R",
+      "pixels": [
+        35,
+        35,
+        35,
+        35
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R08.out",
+      "verified": true
+    },
+    "R09": {
+      "ref_gpa": "0x1254f2000",
+      "ch": "R",
+      "pixels": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R09.out",
+      "verified": true
+    },
+    "R10": {
+      "ref_gpa": "0x1254fc000",
+      "ch": "R",
+      "pixels": [
+        34,
+        34,
+        34,
+        34
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R10.out",
+      "verified": true
+    },
+    "R11": {
+      "ref_gpa": "0x125301000",
+      "ch": "R",
+      "pixels": [
+        33,
+        33,
+        33,
+        33
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R11.out",
+      "verified": true
+    },
+    "R12": {
+      "ref_gpa": "0x125305000",
+      "ch": "R",
+      "pixels": [
+        31,
+        31,
+        31,
+        31
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R12.out",
+      "verified": true
+    },
+    "R13": {
+      "ref_gpa": "0x12530a000",
+      "ch": "R",
+      "pixels": [
+        38,
+        38,
+        38,
+        38
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R13.out",
+      "verified": true
+    },
+    "R14": {
+      "ref_gpa": "0x125314000",
+      "ch": "R",
+      "pixels": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R14.out",
+      "verified": true
+    },
+    "R15": {
+      "ref_gpa": "0x125318000",
+      "ch": "R",
+      "pixels": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R15.out",
+      "verified": true
+    },
+    "R16": {
+      "ref_gpa": "0x12531d000",
+      "ch": "R",
+      "pixels": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R16.out",
+      "verified": true
+    },
+    "R17": {
+      "ref_gpa": "0x117b82000",
+      "ch": "R",
+      "pixels": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R17.out",
+      "verified": true
+    },
+    "R18": {
+      "ref_gpa": "0x12536b000",
+      "ch": "R",
+      "pixels": [
+        27,
+        27,
+        27,
+        27
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R18.out",
+      "verified": true
+    },
+    "R19": {
+      "ref_gpa": "0x1254c8000",
+      "ch": "R",
+      "pixels": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R19.out",
+      "verified": true
+    },
+    "R20": {
+      "ref_gpa": "0x1254cd000",
+      "ch": "R",
+      "pixels": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R20.out",
+      "verified": true
+    },
+    "R21": {
+      "ref_gpa": "0x125381000",
+      "ch": "R",
+      "pixels": [
+        37,
+        37,
+        37,
+        37
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R21.out",
+      "verified": true
+    },
+    "R22": {
+      "ref_gpa": "0x12532b000",
+      "ch": "R",
+      "pixels": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R22.out",
+      "verified": true
+    },
+    "R23": {
+      "ref_gpa": "0x1217c0000",
+      "ch": "R",
+      "pixels": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R23.out",
+      "verified": true
+    },
+    "R24": {
+      "ref_gpa": "0x1217c5000",
+      "ch": "R",
+      "pixels": [
+        26,
+        26,
+        26,
+        26
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R24.out",
+      "verified": true
+    },
+    "R25": {
+      "ref_gpa": "0x1254da000",
+      "ch": "R",
+      "pixels": [
+        39,
+        39,
+        39,
+        39
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R25.out",
+      "verified": true
+    },
+    "R26": {
+      "ref_gpa": "0x125364000",
+      "ch": "R",
+      "pixels": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R26.out",
+      "verified": true
+    },
+    "R27": {
+      "ref_gpa": "0x122b22000",
+      "ch": "R",
+      "pixels": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R27.out",
+      "verified": true
+    },
+    "R28": {
+      "ref_gpa": "0x1217d3000",
+      "ch": "R",
+      "pixels": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R28.out",
+      "verified": true
+    },
+    "R29": {
+      "ref_gpa": "0x1254d0000",
+      "ch": "R",
+      "pixels": [
+        57,
+        57,
+        57,
+        57
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R29.out",
+      "verified": true
+    },
+    "R30": {
+      "ref_gpa": "0x1254d4000",
+      "ch": "R",
+      "pixels": [
+        41,
+        41,
+        41,
+        41
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R30.out",
+      "verified": true
+    },
+    "R31": {
+      "ref_gpa": "0x1254e9000",
+      "ch": "R",
+      "pixels": [
+        42,
+        42,
+        42,
+        42
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R31.out",
+      "verified": true
+    },
+    "R32": {
+      "ref_gpa": "0x1254e3000",
+      "ch": "R",
+      "pixels": [
+        58,
+        58,
+        58,
+        58
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R32.out",
+      "verified": true
+    },
+    "R33": {
+      "ref_gpa": "0x1253a1000",
+      "ch": "R",
+      "pixels": [
+        56,
+        56,
+        56,
+        56
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R33.out",
+      "verified": true
+    },
+    "R34": {
+      "ref_gpa": "0x122053000",
+      "ch": "R",
+      "pixels": [
+        43,
+        43,
+        43,
+        43
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R34.out",
+      "verified": true
+    },
+    "R35": {
+      "ref_gpa": "0x1217c9000",
+      "ch": "R",
+      "pixels": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R35.out",
+      "verified": true
+    },
+    "R36": {
+      "ref_gpa": "0x12538b000",
+      "ch": "R",
+      "pixels": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R36.out",
+      "verified": true
+    },
+    "R37": {
+      "ref_gpa": "0x125321000",
+      "ch": "R",
+      "pixels": [
+        44,
+        44,
+        44,
+        44
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R37.out",
+      "verified": true
+    },
+    "R38": {
+      "ref_gpa": "0x1254fc000",
+      "ch": "R",
+      "pixels": [
+        59,
+        59,
+        59,
+        59
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R38.out",
+      "verified": true
+    },
+    "R39": {
+      "ref_gpa": "0x122f02000",
+      "ch": "R",
+      "pixels": [
+        54,
+        54,
+        54,
+        54
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R39.out",
+      "verified": true
+    },
+    "R40": {
+      "ref_gpa": "0x1254b1000",
+      "ch": "R",
+      "pixels": [
+        45,
+        45,
+        45,
+        45
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R40.out",
+      "verified": true
+    },
+    "R41": {
+      "ref_gpa": "0x1217dc000",
+      "ch": "R",
+      "pixels": [
+        53,
+        53,
+        53,
+        53
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R41.out",
+      "verified": true
+    },
+    "R42": {
+      "ref_gpa": "0x1253ba000",
+      "ch": "R",
+      "pixels": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R42.out",
+      "verified": true
+    },
+    "R43": {
+      "ref_gpa": "0x122f19000",
+      "ch": "R",
+      "pixels": [
+        205,
+        205,
+        205,
+        205
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R43.out",
+      "verified": true
+    },
+    "R44": {
+      "ref_gpa": "0x122f2d000",
+      "ch": "R",
+      "pixels": [
+        23,
+        23,
+        23,
+        23
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R44.out",
+      "verified": true
+    },
+    "R45": {
+      "ref_gpa": "0x12536c000",
+      "ch": "R",
+      "pixels": [
+        46,
+        46,
+        46,
+        46
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R45.out",
+      "verified": true
+    },
+    "R46": {
+      "ref_gpa": "0x122012000",
+      "ch": "R",
+      "pixels": [
+        47,
+        47,
+        47,
+        47
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R46.out",
+      "verified": true
+    },
+    "R47": {
+      "ref_gpa": "0x122f10000",
+      "ch": "R",
+      "pixels": [
+        51,
+        51,
+        51,
+        51
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R47.out",
+      "verified": true
+    },
+    "R48": {
+      "ref_gpa": "0x122f35000",
+      "ch": "R",
+      "pixels": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R48.out",
+      "verified": true
+    },
+    "R49": {
+      "ref_gpa": "0x12531b000",
+      "ch": "R",
+      "pixels": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R49.out",
+      "verified": true
+    },
+    "R50": {
+      "ref_gpa": "0x122f39000",
+      "ch": "R",
+      "pixels": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R50.out",
+      "verified": true
+    },
+    "R51": {
+      "ref_gpa": "0x125398000",
+      "ch": "R",
+      "pixels": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R51.out",
+      "verified": true
+    },
+    "R52": {
+      "ref_gpa": "0x1254cd000",
+      "ch": "R",
+      "pixels": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R52.out",
+      "verified": true
+    },
+    "R53": {
+      "ref_gpa": "0x1254f3000",
+      "ch": "R",
+      "pixels": [
+        21,
+        21,
+        21,
+        21
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R53.out",
+      "verified": true
+    },
+    "R54": {
+      "ref_gpa": "0x12532a000",
+      "ch": "R",
+      "pixels": [
+        61,
+        61,
+        61,
+        61
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R54.out",
+      "verified": true
+    },
+    "R55": {
+      "ref_gpa": "0x1253a8000",
+      "ch": "R",
+      "pixels": [
+        62,
+        62,
+        62,
+        62
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R55.out",
+      "verified": true
+    },
+    "R56": {
+      "ref_gpa": "0x1217d4000",
+      "ch": "R",
+      "pixels": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R56.out",
+      "verified": true
+    },
+    "R57": {
+      "ref_gpa": "0x117b82000",
+      "ch": "R",
+      "pixels": [
+        63,
+        63,
+        63,
+        63
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R57.out",
+      "verified": true
+    },
+    "R58": {
+      "ref_gpa": "0x122f09000",
+      "ch": "R",
+      "pixels": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R58.out",
+      "verified": true
+    },
+    "R59": {
+      "ref_gpa": "0x122f6c000",
+      "ch": "R",
+      "pixels": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R59.out",
+      "verified": true
+    },
+    "R60": {
+      "ref_gpa": "0x125313000",
+      "ch": "R",
+      "pixels": [
+        13,
+        13,
+        13,
+        13
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R60.out",
+      "verified": true
+    },
+    "R61": {
+      "ref_gpa": "0x122f51000",
+      "ch": "R",
+      "pixels": [
+        65,
+        65,
+        65,
+        65
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R61.out",
+      "verified": true
+    },
+    "R62": {
+      "ref_gpa": "0x1254e8000",
+      "ch": "R",
+      "pixels": [
+        19,
+        19,
+        19,
+        19
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R62.out",
+      "verified": true
+    },
+    "R63": {
+      "ref_gpa": "0x125385000",
+      "ch": "R",
+      "pixels": [
+        66,
+        66,
+        66,
+        66
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_R63.out",
+      "verified": true
+    },
+    "G00": {
+      "ref_gpa": "0x1254d3000",
+      "ch": "G",
+      "pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G00.out",
+      "verified": true
+    },
+    "G01": {
+      "ref_gpa": "0x122f61000",
+      "ch": "G",
+      "pixels": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G01.out",
+      "verified": true
+    },
+    "G02": {
+      "ref_gpa": "0x125308000",
+      "ch": "G",
+      "pixels": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G02.out",
+      "verified": true
+    },
+    "G03": {
+      "ref_gpa": "0x1253b4000",
+      "ch": "G",
+      "pixels": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G03.out",
+      "verified": true
+    },
+    "G04": {
+      "ref_gpa": "0x12538a000",
+      "ch": "G",
+      "pixels": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G04.out",
+      "verified": true
+    },
+    "G05": {
+      "ref_gpa": "0x122f21000",
+      "ch": "G",
+      "pixels": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G05.out",
+      "verified": true
+    },
+    "G06": {
+      "ref_gpa": "0x1254e5000",
+      "ch": "G",
+      "pixels": [
+        29,
+        29,
+        29,
+        29
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G06.out",
+      "verified": true
+    },
+    "G07": {
+      "ref_gpa": "0x122f03000",
+      "ch": "G",
+      "pixels": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G07.out",
+      "verified": true
+    },
+    "G08": {
+      "ref_gpa": "0x125322000",
+      "ch": "G",
+      "pixels": [
+        35,
+        35,
+        35,
+        35
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G08.out",
+      "verified": true
+    },
+    "G09": {
+      "ref_gpa": "0x122f80000",
+      "ch": "G",
+      "pixels": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G09.out",
+      "verified": true
+    },
+    "G10": {
+      "ref_gpa": "0x1254fc000",
+      "ch": "G",
+      "pixels": [
+        34,
+        34,
+        34,
+        34
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G10.out",
+      "verified": true
+    },
+    "G11": {
+      "ref_gpa": "0x122f73000",
+      "ch": "G",
+      "pixels": [
+        33,
+        33,
+        33,
+        33
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G11.out",
+      "verified": true
+    },
+    "G12": {
+      "ref_gpa": "0x1217c9000",
+      "ch": "G",
+      "pixels": [
+        31,
+        31,
+        31,
+        31
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G12.out",
+      "verified": true
+    },
+    "G13": {
+      "ref_gpa": "0x122f7c000",
+      "ch": "G",
+      "pixels": [
+        38,
+        38,
+        38,
+        38
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G13.out",
+      "verified": true
+    },
+    "G14": {
+      "ref_gpa": "0x12537a000",
+      "ch": "G",
+      "pixels": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G14.out",
+      "verified": true
+    },
+    "G15": {
+      "ref_gpa": "0x1254c8000",
+      "ch": "G",
+      "pixels": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G15.out",
+      "verified": true
+    },
+    "G16": {
+      "ref_gpa": "0x125365000",
+      "ch": "G",
+      "pixels": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G16.out",
+      "verified": true
+    },
+    "G17": {
+      "ref_gpa": "0x1253bb000",
+      "ch": "G",
+      "pixels": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G17.out",
+      "verified": true
+    },
+    "G18": {
+      "ref_gpa": "0x1253a1000",
+      "ch": "G",
+      "pixels": [
+        27,
+        27,
+        27,
+        27
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G18.out",
+      "verified": true
+    },
+    "G19": {
+      "ref_gpa": "0x125300000",
+      "ch": "G",
+      "pixels": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G19.out",
+      "verified": true
+    },
+    "G20": {
+      "ref_gpa": "0x1217d4000",
+      "ch": "G",
+      "pixels": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G20.out",
+      "verified": true
+    },
+    "G21": {
+      "ref_gpa": "0x1217db000",
+      "ch": "G",
+      "pixels": [
+        37,
+        37,
+        37,
+        37
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G21.out",
+      "verified": true
+    },
+    "G22": {
+      "ref_gpa": "0x1254f1000",
+      "ch": "G",
+      "pixels": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G22.out",
+      "verified": true
+    },
+    "G23": {
+      "ref_gpa": "0x1253ac000",
+      "ch": "G",
+      "pixels": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G23.out",
+      "verified": true
+    },
+    "G24": {
+      "ref_gpa": "0x122f6a000",
+      "ch": "G",
+      "pixels": [
+        26,
+        26,
+        26,
+        26
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G24.out",
+      "verified": true
+    },
+    "G25": {
+      "ref_gpa": "0x122f09000",
+      "ch": "G",
+      "pixels": [
+        39,
+        39,
+        39,
+        39
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G25.out",
+      "verified": true
+    },
+    "G26": {
+      "ref_gpa": "0x125314000",
+      "ch": "G",
+      "pixels": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G26.out",
+      "verified": true
+    },
+    "G27": {
+      "ref_gpa": "0x12532a000",
+      "ch": "G",
+      "pixels": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G27.out",
+      "verified": true
+    },
+    "G28": {
+      "ref_gpa": "0x122f41000",
+      "ch": "G",
+      "pixels": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G28.out",
+      "verified": true
+    },
+    "G29": {
+      "ref_gpa": "0x12536d000",
+      "ch": "G",
+      "pixels": [
+        57,
+        57,
+        57,
+        57
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G29.out",
+      "verified": true
+    },
+    "G30": {
+      "ref_gpa": "0x125374000",
+      "ch": "G",
+      "pixels": [
+        41,
+        41,
+        41,
+        41
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G30.out",
+      "verified": true
+    },
+    "G31": {
+      "ref_gpa": "0x12538a000",
+      "ch": "G",
+      "pixels": [
+        42,
+        42,
+        42,
+        42
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G31.out",
+      "verified": true
+    },
+    "G32": {
+      "ref_gpa": "0x122f10000",
+      "ch": "G",
+      "pixels": [
+        58,
+        58,
+        58,
+        58
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G32.out",
+      "verified": true
+    },
+    "G33": {
+      "ref_gpa": "0x1253b5000",
+      "ch": "G",
+      "pixels": [
+        56,
+        56,
+        56,
+        56
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G33.out",
+      "verified": true
+    },
+    "G34": {
+      "ref_gpa": "0x1254d4000",
+      "ch": "G",
+      "pixels": [
+        43,
+        43,
+        43,
+        43
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G34.out",
+      "verified": true
+    },
+    "G35": {
+      "ref_gpa": "0x125322000",
+      "ch": "G",
+      "pixels": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G35.out",
+      "verified": true
+    },
+    "G36": {
+      "ref_gpa": "0x1254e9000",
+      "ch": "G",
+      "pixels": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G36.out",
+      "verified": true
+    },
+    "G37": {
+      "ref_gpa": "0x12539c000",
+      "ch": "G",
+      "pixels": [
+        44,
+        44,
+        44,
+        44
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G37.out",
+      "verified": true
+    },
+    "G38": {
+      "ref_gpa": "0x122013000",
+      "ch": "G",
+      "pixels": [
+        59,
+        59,
+        59,
+        59
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G38.out",
+      "verified": true
+    },
+    "G39": {
+      "ref_gpa": "0x1217c9000",
+      "ch": "G",
+      "pixels": [
+        54,
+        54,
+        54,
+        54
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G39.out",
+      "verified": true
+    },
+    "G40": {
+      "ref_gpa": "0x125318000",
+      "ch": "G",
+      "pixels": [
+        45,
+        45,
+        45,
+        45
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G40.out",
+      "verified": true
+    },
+    "G41": {
+      "ref_gpa": "0x1254bd000",
+      "ch": "G",
+      "pixels": [
+        53,
+        53,
+        53,
+        53
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G41.out",
+      "verified": true
+    },
+    "G42": {
+      "ref_gpa": "0x122f63000",
+      "ch": "G",
+      "pixels": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G42.out",
+      "verified": true
+    },
+    "G43": {
+      "ref_gpa": "0x122f22000",
+      "ch": "G",
+      "pixels": [
+        205,
+        205,
+        205,
+        205
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G43.out",
+      "verified": true
+    },
+    "G44": {
+      "ref_gpa": "0x122f80000",
+      "ch": "G",
+      "pixels": [
+        23,
+        23,
+        23,
+        23
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G44.out",
+      "verified": true
+    },
+    "G45": {
+      "ref_gpa": "0x12537d000",
+      "ch": "G",
+      "pixels": [
+        46,
+        46,
+        46,
+        46
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G45.out",
+      "verified": true
+    },
+    "G46": {
+      "ref_gpa": "0x1217c4000",
+      "ch": "G",
+      "pixels": [
+        47,
+        47,
+        47,
+        47
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G46.out",
+      "verified": true
+    },
+    "G47": {
+      "ref_gpa": "0x122f72000",
+      "ch": "G",
+      "pixels": [
+        51,
+        51,
+        51,
+        51
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G47.out",
+      "verified": true
+    },
+    "G48": {
+      "ref_gpa": "0x1217d0000",
+      "ch": "G",
+      "pixels": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G48.out",
+      "verified": true
+    },
+    "G49": {
+      "ref_gpa": "0x122f55000",
+      "ch": "G",
+      "pixels": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G49.out",
+      "verified": true
+    },
+    "G50": {
+      "ref_gpa": "0x122f4c000",
+      "ch": "G",
+      "pixels": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G50.out",
+      "verified": true
+    },
+    "G51": {
+      "ref_gpa": "0x1254b2000",
+      "ch": "G",
+      "pixels": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G51.out",
+      "verified": true
+    },
+    "G52": {
+      "ref_gpa": "0x125360000",
+      "ch": "G",
+      "pixels": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G52.out",
+      "verified": true
+    },
+    "G53": {
+      "ref_gpa": "0x122f35000",
+      "ch": "G",
+      "pixels": [
+        21,
+        21,
+        21,
+        21
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G53.out",
+      "verified": true
+    },
+    "G54": {
+      "ref_gpa": "0x1253bb000",
+      "ch": "G",
+      "pixels": [
+        61,
+        61,
+        61,
+        61
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G54.out",
+      "verified": true
+    },
+    "G55": {
+      "ref_gpa": "0x12532a000",
+      "ch": "G",
+      "pixels": [
+        62,
+        62,
+        62,
+        62
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G55.out",
+      "verified": true
+    },
+    "G56": {
+      "ref_gpa": "0x122f78000",
+      "ch": "G",
+      "pixels": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G56.out",
+      "verified": true
+    },
+    "G57": {
+      "ref_gpa": "0x122f05000",
+      "ch": "G",
+      "pixels": [
+        63,
+        63,
+        63,
+        63
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G57.out",
+      "verified": true
+    },
+    "G58": {
+      "ref_gpa": "0x12530b000",
+      "ch": "G",
+      "pixels": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G58.out",
+      "verified": true
+    },
+    "G59": {
+      "ref_gpa": "0x125312000",
+      "ch": "G",
+      "pixels": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G59.out",
+      "verified": true
+    },
+    "G60": {
+      "ref_gpa": "0x125388000",
+      "ch": "G",
+      "pixels": [
+        13,
+        13,
+        13,
+        13
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G60.out",
+      "verified": true
+    },
+    "G61": {
+      "ref_gpa": "0x1254fd000",
+      "ch": "G",
+      "pixels": [
+        65,
+        65,
+        65,
+        65
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G61.out",
+      "verified": true
+    },
+    "G62": {
+      "ref_gpa": "0x125373000",
+      "ch": "G",
+      "pixels": [
+        19,
+        19,
+        19,
+        19
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G62.out",
+      "verified": true
+    },
+    "G63": {
+      "ref_gpa": "0x122f09000",
+      "ch": "G",
+      "pixels": [
+        66,
+        66,
+        66,
+        66
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_G63.out",
+      "verified": true
+    },
+    "B00": {
+      "ref_gpa": "0x125300000",
+      "ch": "B",
+      "pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_B00.out",
+      "verified": true
+    },
+    "B01": {
+      "ref_gpa": "0x125324000",
+      "ch": "B",
+      "pixels": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_B01.out",
+      "verified": true
+    },
+    "B02": {
+      "ref_gpa": "0x1253b3000",
+      "ch": "B",
+      "pixels": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_B02.out",
+      "verified": true
+    },
+    "B03": {
+      "ref_gpa": "0x1253a1000",
+      "ch": "B",
+      "pixels": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "file": "/home/eun/open-science/case_study/mura3p/dict/dict_pages_m3/ref_B03.out",
+      "verified": true
+    }
+  }
+}

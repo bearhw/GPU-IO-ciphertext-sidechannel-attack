@@ -1,0 +1,32 @@
+{
+  "index": 1455,
+  "host_base": "0x1a3701000",
+  "gt_base": "0x1a3701000",
+  "gt_indication": "Allergic reaction to peanuts tonight. Shortness of breath. Throat swelling.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 7037002784,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 18.724026918411255,
+  "timestamp": 1792946134.7350595,
+  "status": "SUCCESS"
+}

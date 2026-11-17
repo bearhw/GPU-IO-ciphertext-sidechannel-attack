@@ -1,0 +1,32 @@
+{
+  "index": 2526,
+  "host_base": "0x1a1a61000",
+  "gt_base": "0x1a1a61000",
+  "gt_indication": "Short of breath and chest pain",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 614,
+      "ind_gpa": 7006987056,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 17.341697931289673,
+  "timestamp": 1792993448.857255,
+  "status": "SUCCESS"
+}

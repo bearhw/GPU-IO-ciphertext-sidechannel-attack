@@ -1,0 +1,41 @@
+{
+  "index": 2192,
+  "host_base": "0x1ac7a4000",
+  "gt_base": "0x1ac7a4000",
+  "gt_indication": "Interscapular chest pain and shortness of breath.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 512,
+      "ind_gpa": 7188664320,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 514,
+      "ind_gpa": 7188664336,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 30.7022705078125,
+  "timestamp": 1793404164.1728818,
+  "status": "SUCCESS"
+}

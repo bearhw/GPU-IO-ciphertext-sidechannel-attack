@@ -1,0 +1,204 @@
+{
+  "index": 1750,
+  "host_base": "0x1a60ac000",
+  "gt_base": "0x1a60ac000",
+  "gt_indication": "Cough, sob, pneumonia.",
+  "recovered_labels": [
+    ", short",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Hypox",
+    ", short",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Hypox",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " pneumoth",
+    " Follow-up",
+    " wheez",
+    " PICC",
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 556,
+      "ind_gpa": 7080694112,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7080694112,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7080694112,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7080694112,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 7080694112,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7080694128,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7080694128,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7080694128,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7080694128,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 7080694128,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7080694144,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7080694144,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7080694144,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 7080694144,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7080694192,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7080694192,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7080694192,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7080694192,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      ", short",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Hypox",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth",
+      "Follow-up",
+      "wheez",
+      "PICC",
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 15.354406833648682,
+  "timestamp": 1793381515.7032425,
+  "status": "SUCCESS"
+}

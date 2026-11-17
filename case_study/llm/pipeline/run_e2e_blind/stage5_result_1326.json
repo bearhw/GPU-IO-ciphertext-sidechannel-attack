@@ -1,0 +1,41 @@
+{
+  "index": 1326,
+  "host_base": "0x1a10df000",
+  "gt_base": "0x1a10df000",
+  "gt_indication": "Shortness of breath. Pulmonary infiltrate.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 440,
+      "ind_gpa": 6997016000,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 442,
+      "ind_gpa": 6997016016,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 18.885194301605225,
+  "timestamp": 1792942987.5489523,
+  "status": "SUCCESS"
+}

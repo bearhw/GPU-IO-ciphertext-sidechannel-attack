@@ -1,0 +1,169 @@
+{
+  "index": 2747,
+  "host_base": "0x1a2913000",
+  "gt_base": "0x1a2912000",
+  "gt_indication": "43-year-old male with chest pain, vomiting, tingling into the left shoulder.",
+  "recovered_labels": [
+    " Cough",
+    " chest pain",
+    " COPD",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " Cough",
+    " chest pain",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 230,
+      "ind_gpa": 7022393136,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 230,
+      "ind_gpa": 7022393136,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 230,
+      "ind_gpa": 7022393136,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 232,
+      "ind_gpa": 7022393152,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 232,
+      "ind_gpa": 7022393152,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 232,
+      "ind_gpa": 7022393152,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 234,
+      "ind_gpa": 7022393168,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 234,
+      "ind_gpa": 7022393168,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 234,
+      "ind_gpa": 7022393168,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 236,
+      "ind_gpa": 7022393184,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 236,
+      "ind_gpa": 7022393184,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 236,
+      "ind_gpa": 7022393184,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 238,
+      "ind_gpa": 7022393200,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 238,
+      "ind_gpa": 7022393200,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 238,
+      "ind_gpa": 7022393200,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 15,
+    "false_positive_labels": [
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD"
+    ],
+    "false_positive_count": 10,
+    "recovered_labels": [
+      "Cough",
+      "chest pain",
+      "COPD",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "Cough",
+      "chest pain",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.530732870101929,
+  "timestamp": 1793424276.4746063,
+  "status": "SUCCESS"
+}

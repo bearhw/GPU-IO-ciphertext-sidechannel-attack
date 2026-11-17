@@ -1,0 +1,50 @@
+{
+  "index": 911,
+  "host_base": "0x1a8a9b000",
+  "gt_base": "0x1a8a9b000",
+  "gt_indication": "Shortness of breath. Respiratory distress.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7124663008,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 7124663024,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 7124663040,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 15.033475160598755,
+  "timestamp": 1793349796.114924,
+  "status": "SUCCESS"
+}

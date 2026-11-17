@@ -1,0 +1,32 @@
+{
+  "index": 2775,
+  "host_base": "0x1a27a3000",
+  "gt_base": "0x1a27a2000",
+  "gt_indication": "Weakness and cough",
+  "recovered_labels": [
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 284,
+      "ind_gpa": 7020886240,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough."
+    ]
+  },
+  "elapsed_sec": 15.714025020599365,
+  "timestamp": 1793425067.6767647,
+  "status": "SUCCESS"
+}

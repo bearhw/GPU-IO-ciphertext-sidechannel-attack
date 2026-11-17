@@ -1,0 +1,50 @@
+{
+  "index": 176,
+  "host_base": "0x1a1ab7000",
+  "gt_base": "0x1a1ab7000",
+  "gt_indication": "Shortness of breath. Chest pain. Chronic bronchitis. Reportedly diagnosed with laryngitis on 10/03/10.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7007337184,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 7007337200,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 7007337216,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.432382106781006,
+  "timestamp": 1793134641.9501925,
+  "status": "SUCCESS"
+}

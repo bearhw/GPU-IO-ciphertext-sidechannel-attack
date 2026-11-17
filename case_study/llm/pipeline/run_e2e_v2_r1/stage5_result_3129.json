@@ -1,0 +1,384 @@
+{
+  "index": 3129,
+  "host_base": "0x13ebbd000",
+  "gt_base": "0x13ebbd000",
+  "gt_indication": "Insertion of Diatek catheter.",
+  "recovered_labels": [
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert",
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert",
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert",
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert",
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert",
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert",
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert",
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert",
+    " Chest pain",
+    " cough,",
+    " PICC",
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 362,
+      "ind_gpa": 5347466064,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5347466064,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5347466064,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5347466064,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5347466080,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5347466080,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5347466080,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5347466080,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5347466096,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5347466096,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5347466096,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5347466096,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5347466112,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5347466112,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5347466112,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5347466112,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5347466128,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5347466128,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5347466128,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5347466128,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5347466144,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5347466144,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5347466144,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5347466144,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5347466160,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5347466160,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5347466160,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5347466160,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5347466176,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5347466176,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5347466176,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5347466176,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5347466192,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5347466192,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5347466192,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5347466192,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 36,
+    "false_positive_labels": [
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert"
+    ],
+    "false_positive_count": 36,
+    "recovered_labels": [
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert",
+      "Chest pain",
+      "cough,",
+      "PICC",
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.611244916915894,
+  "timestamp": 1793262810.6447058,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,50 @@
+{
+  "index": 1691,
+  "host_base": "0x1a8289000",
+  "gt_base": "0x1a8289000",
+  "gt_indication": "Shortness of breath. Hypoxia. Lung carcinoma.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 440,
+      "ind_gpa": 7116201408,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 442,
+      "ind_gpa": 7116201424,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 444,
+      "ind_gpa": 7116201440,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 18.466331005096436,
+  "timestamp": 1792953073.230166,
+  "status": "SUCCESS"
+}

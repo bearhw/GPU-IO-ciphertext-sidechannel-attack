@@ -1,0 +1,32 @@
+{
+  "index": 2615,
+  "host_base": "0x19fdc6000",
+  "gt_base": "0x19fdc5000",
+  "gt_indication": "Short of breath. Chest tightness. History of prostate carcinoma.",
+  "recovered_labels": [
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 6976989232,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.79245114326477,
+  "timestamp": 1793420375.967799,
+  "status": "SUCCESS"
+}

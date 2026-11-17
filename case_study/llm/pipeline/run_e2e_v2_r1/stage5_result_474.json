@@ -1,0 +1,32 @@
+{
+  "index": 474,
+  "host_base": "0x1a0cc3000",
+  "gt_base": "0x1a0cc3000",
+  "gt_indication": "Shortness of breath and chest congestion.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 6992706272,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.194507598876953,
+  "timestamp": 1793150001.5371072,
+  "status": "SUCCESS"
+}

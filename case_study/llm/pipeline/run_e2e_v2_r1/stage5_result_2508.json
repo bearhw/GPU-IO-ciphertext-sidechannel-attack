@@ -1,0 +1,41 @@
+{
+  "index": 2508,
+  "host_base": "0x1a1480000",
+  "gt_base": "0x1a1480000",
+  "gt_indication": "Shortness of breath, chest pain for 2 days. Cough. History of asthma.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 544,
+      "ind_gpa": 7000822016,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 7000822032,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.169860363006592,
+  "timestamp": 1793240784.920498,
+  "status": "SUCCESS"
+}

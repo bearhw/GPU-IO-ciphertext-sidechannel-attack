@@ -1,0 +1,41 @@
+{
+  "index": 2262,
+  "host_base": "0x19976d000",
+  "gt_base": "0x19976d000",
+  "gt_indication": "Shortness of breath, neck and back pain when sitting, history COPD, sleep apnea, CHF, coronary artery disease post CABG, pulmonary hypertension, cirrhosis, atrial fibrillation.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 610,
+      "ind_gpa": 6869672720,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 612,
+      "ind_gpa": 6869672736,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.715997219085693,
+  "timestamp": 1793228466.4516943,
+  "status": "SUCCESS"
+}

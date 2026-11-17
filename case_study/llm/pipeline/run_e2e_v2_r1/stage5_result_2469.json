@@ -1,0 +1,41 @@
+{
+  "index": 2469,
+  "host_base": "0x19792c000",
+  "gt_base": "0x19792b000",
+  "gt_indication": "Panic attack. Chest pain. Shortness of breath. Tachycardia.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 266,
+      "ind_gpa": 6837946448,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 268,
+      "ind_gpa": 6837946464,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.240179061889648,
+  "timestamp": 1793240057.484016,
+  "status": "SUCCESS"
+}

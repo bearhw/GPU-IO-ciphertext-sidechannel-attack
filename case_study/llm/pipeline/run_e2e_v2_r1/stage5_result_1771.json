@@ -1,0 +1,32 @@
+{
+  "index": 1771,
+  "host_base": "0x19f2be000",
+  "gt_base": "0x19f2be000",
+  "gt_indication": "Weakness. Hypotension. Confusion.",
+  "recovered_labels": [
+    " Weakness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 618,
+      "ind_gpa": 6965424976,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Weakness"
+    ]
+  },
+  "elapsed_sec": 15.38522219657898,
+  "timestamp": 1793204511.4665847,
+  "status": "SUCCESS"
+}

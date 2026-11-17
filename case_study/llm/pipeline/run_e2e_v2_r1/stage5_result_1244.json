@@ -1,0 +1,32 @@
+{
+  "index": 1244,
+  "host_base": "0x199ac6000",
+  "gt_base": "0x199ac6000",
+  "gt_indication": "SOB. Post operative Left IM nail. Hx PNA, HTN, COPD.",
+  "recovered_labels": [
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 566,
+      "ind_gpa": 6873182640,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.2323157787323,
+  "timestamp": 1793180929.2529697,
+  "status": "SUCCESS"
+}

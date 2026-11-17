@@ -1,0 +1,32 @@
+{
+  "index": 3204,
+  "host_base": "0x1a25a2000",
+  "gt_base": "0x1a25a2000",
+  "gt_indication": "Altered mental status. Hypoxia.",
+  "recovered_labels": [
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 7018787856,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 19.1567964553833,
+  "timestamp": 1793020758.0364132,
+  "status": "SUCCESS"
+}

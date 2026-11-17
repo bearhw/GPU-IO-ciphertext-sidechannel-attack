@@ -1,0 +1,32 @@
+{
+  "index": 425,
+  "host_base": "0x195ea4000",
+  "gt_base": "0x195ea4000",
+  "gt_indication": "74-year-old male, shortness of breath, history of lung carcinoma and pneumonia versus pulmonary edema.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 6810127120,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 18.972208738327026,
+  "timestamp": 1793068512.9842196,
+  "status": "SUCCESS"
+}

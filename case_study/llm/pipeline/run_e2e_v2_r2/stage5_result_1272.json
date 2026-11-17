@@ -1,0 +1,20 @@
+{
+  "index": 1272,
+  "host_base": "0x13be95000",
+  "gt_base": "0x13be95000",
+  "gt_indication": "Chronic respiratory failure with hypoxia.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.548019647598267,
+  "timestamp": 1793363498.792484,
+  "status": "SUCCESS"
+}

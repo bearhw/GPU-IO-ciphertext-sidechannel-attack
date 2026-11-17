@@ -109,6 +109,10 @@ SSH_BASE = [
     "ssh", "-p", GUEST_PORT,
     "-i", str(_ssh_key),
     "-o", "StrictHostKeyChecking=no",
+    # A guest reboot gives the VM a new host key; without discarding known_hosts the
+    # mismatch makes every ssh fail ("Host key verification failed"), which looks
+    # exactly like a dead guest and stalls the whole capture.
+    "-o", "UserKnownHostsFile=/dev/null",
     "-o", "BatchMode=yes",
     "-o", "ConnectTimeout=10",
     GUEST_SSH,

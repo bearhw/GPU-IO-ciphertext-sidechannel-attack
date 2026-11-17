@@ -1,0 +1,244 @@
+{
+  "index": 3154,
+  "host_base": "0x13e7c6000",
+  "gt_base": "0x13e7c6000",
+  "gt_indication": "Cough, chest congestion",
+  "recovered_labels": [
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-",
+    " wheez",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 5343308592,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 5343308592,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5343308608,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5343308608,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5343308624,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5343308624,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5343308640,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5343308640,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5343308656,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5343308656,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5343308672,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5343308672,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5343308688,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5343308688,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5343308704,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5343308704,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5343308720,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5343308720,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5343308736,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5343308736,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5343308752,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5343308752,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 22,
+    "false_positive_labels": [
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-"
+    ],
+    "false_positive_count": 22,
+    "recovered_labels": [
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-",
+      "wheez",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.481453657150269,
+  "timestamp": 1793263715.1189985,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 651,
+  "host_base": "0x1a1916000",
+  "gt_base": "0x1a1916000",
+  "gt_indication": "41-year-old male with shortness of breath for 2 weeks, worsening today. Initial encounter.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 7005631520,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 7005631536,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 18.61627459526062,
+  "timestamp": 1793077933.6281037,
+  "status": "SUCCESS"
+}

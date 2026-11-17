@@ -1,0 +1,32 @@
+{
+  "index": 134,
+  "host_base": "0x1a7c69000",
+  "gt_base": "0x1a7c69000",
+  "gt_indication": "Cough and fever for two days. Left lower rib pain.",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7109778144,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.670655012130737,
+  "timestamp": 1793317292.1534355,
+  "status": "SUCCESS"
+}

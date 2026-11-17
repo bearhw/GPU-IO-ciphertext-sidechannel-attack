@@ -1,0 +1,32 @@
+{
+  "index": 466,
+  "host_base": "0x19ebd2000",
+  "gt_base": "0x19ebd1000",
+  "gt_indication": "Right lateral rib pain for several days.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 6958164016,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 17.927125215530396,
+  "timestamp": 1792904317.066019,
+  "status": "SUCCESS"
+}

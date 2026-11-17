@@ -1,0 +1,324 @@
+{
+  "index": 396,
+  "host_base": "0x140dc3000",
+  "gt_base": "0x140dc3000",
+  "gt_indication": "Cough, 6 months duration.",
+  "recovered_labels": [
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox",
+    " COPD",
+    " wheez",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 360,
+      "ind_gpa": 5383142208,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5383142208,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5383142208,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5383142224,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5383142224,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5383142224,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5383142240,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5383142240,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5383142240,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5383142256,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5383142256,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5383142256,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5383142272,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5383142272,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5383142272,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5383142288,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5383142288,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5383142288,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5383142304,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5383142304,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5383142304,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5383142320,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5383142320,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5383142320,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5383142336,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5383142336,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5383142336,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5383142352,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5383142352,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5383142352,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 30,
+    "false_positive_labels": [
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox"
+    ],
+    "false_positive_count": 30,
+    "recovered_labels": [
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox",
+      "COPD",
+      "wheez",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.99577784538269,
+  "timestamp": 1793147259.9145117,
+  "status": "SUCCESS"
+}

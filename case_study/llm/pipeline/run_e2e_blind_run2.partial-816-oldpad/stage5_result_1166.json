@@ -1,0 +1,32 @@
+{
+  "index": 1166,
+  "host_base": "0x1a3221000",
+  "gt_base": "0x1a3220000",
+  "gt_indication": "Sharp mid and left-sided chest pain. Recent cardiac catheterization with diagnosis of pericarditis. Chills.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 238,
+      "ind_gpa": 7031887728,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 20.364126443862915,
+  "timestamp": 1793097744.2128012,
+  "status": "SUCCESS"
+}

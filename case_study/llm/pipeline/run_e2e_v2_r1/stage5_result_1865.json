@@ -1,0 +1,32 @@
+{
+  "index": 1865,
+  "host_base": "0x13e724000",
+  "gt_base": "0x13e724000",
+  "gt_indication": "Intermittent vomiting for 2 weeks. Recent cough. Sick sibling.",
+  "recovered_labels": [
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 282,
+      "ind_gpa": 5342644432,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough."
+    ]
+  },
+  "elapsed_sec": 15.33828067779541,
+  "timestamp": 1793209868.863952,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 1384,
+  "host_base": "0x1a4164000",
+  "gt_base": "0x1a4163000",
+  "gt_indication": "Chest pain. Left arm pain.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 7047891040,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.330637216567993,
+  "timestamp": 1793290426.1459527,
+  "status": "SUCCESS"
+}

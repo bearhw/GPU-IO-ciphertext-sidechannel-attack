@@ -1,0 +1,32 @@
+{
+  "index": 1272,
+  "host_base": "0x19f0c4000",
+  "gt_base": "0x19f0c4000",
+  "gt_indication": "Chronic respiratory failure with hypoxia.",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 594,
+      "ind_gpa": 6963352208,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.72432017326355,
+  "timestamp": 1793183491.8651214,
+  "status": "SUCCESS"
+}

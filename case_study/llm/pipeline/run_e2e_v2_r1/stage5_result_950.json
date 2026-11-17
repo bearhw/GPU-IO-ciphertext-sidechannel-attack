@@ -1,0 +1,32 @@
+{
+  "index": 950,
+  "host_base": "0x1a3293000",
+  "gt_base": "0x1a3293000",
+  "gt_indication": "Fall with left rib pain. Initial encounter.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 640,
+      "ind_gpa": 7032357888,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.19276475906372,
+  "timestamp": 1793165340.8689694,
+  "status": "SUCCESS"
+}

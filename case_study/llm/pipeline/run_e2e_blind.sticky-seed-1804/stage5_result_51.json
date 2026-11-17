@@ -1,0 +1,144 @@
+{
+  "index": 51,
+  "host_base": "0x1a0bd5000",
+  "gt_base": "0x1a0bd5000",
+  "gt_indication": "Left anterior rib pain and abrasion; hit by tailgate of truck.",
+  "recovered_labels": [
+    " pneumonia.",
+    " Hypox",
+    " pneumonia.",
+    " Hypox",
+    " pneumonia.",
+    " Hypox",
+    " pneumonia.",
+    " Hypox",
+    " pneumonia.",
+    " Hypox",
+    " pneumonia.",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 368,
+      "ind_gpa": 6991731584,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6991731584,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6991731600,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6991731600,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6991731616,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6991731616,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6991731632,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6991731632,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6991731648,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6991731648,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6991731664,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6991731664,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox",
+      "pneumonia.",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 18.7827365398407,
+  "timestamp": 1792879212.1809514,
+  "status": "SUCCESS"
+}

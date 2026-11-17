@@ -1,0 +1,32 @@
+{
+  "index": 2177,
+  "host_base": "0x1ad8ba000",
+  "gt_base": "0x1ad8b9000",
+  "gt_indication": "Left-sided chest pain today",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 7206578224,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.458701372146606,
+  "timestamp": 1793403739.7876487,
+  "status": "SUCCESS"
+}

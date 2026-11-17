@@ -1,0 +1,32 @@
+{
+  "index": 2043,
+  "host_base": "0x197014000",
+  "gt_base": "0x197014000",
+  "gt_indication": "Chest pain, punched in chest/shortness of breath. Additional history provided: Left-sided chest pain and mild shortness of breath after being punched in left side of chest today.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 690,
+      "ind_gpa": 6828414352,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 19.096293926239014,
+  "timestamp": 1792969818.5258904,
+  "status": "SUCCESS"
+}

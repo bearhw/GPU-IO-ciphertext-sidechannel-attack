@@ -1,0 +1,50 @@
+{
+  "index": 2222,
+  "host_base": "0x1a600e000",
+  "gt_base": "0x1a600e000",
+  "gt_indication": "Progressively worsening breathing. Cough, shortness of breath.",
+  "recovered_labels": [
+    " Cough",
+    ", short",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 7080047632,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 7080047648,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 7080047664,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      ", short",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.368366718292236,
+  "timestamp": 1793463024.959967,
+  "status": "SUCCESS"
+}

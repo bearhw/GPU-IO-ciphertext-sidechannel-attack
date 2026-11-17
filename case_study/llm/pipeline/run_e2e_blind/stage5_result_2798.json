@@ -1,0 +1,50 @@
+{
+  "index": 2798,
+  "host_base": "0x19ff59000",
+  "gt_base": "0x19ff59000",
+  "gt_indication": "Questionable sepsis, shortness of breath",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 508,
+      "ind_gpa": 6978641888,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 510,
+      "ind_gpa": 6978641904,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 512,
+      "ind_gpa": 6978641920,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 35.02729630470276,
+  "timestamp": 1793004981.654809,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,44 @@
+{
+  "index": 3224,
+  "host_base": "0x13d969000",
+  "gt_base": "0x13d969000",
+  "gt_indication": "Cough. Pregnancy.",
+  "recovered_labels": [
+    " pneumonia.",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 568,
+      "ind_gpa": 5328249280,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5328249296,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "pneumonia.",
+      "pneumonia."
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "pneumonia.",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 19.068769216537476,
+  "timestamp": 1793022418.981187,
+  "status": "SUCCESS"
+}

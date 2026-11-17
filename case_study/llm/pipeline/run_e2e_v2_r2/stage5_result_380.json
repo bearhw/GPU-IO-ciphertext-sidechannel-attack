@@ -1,0 +1,104 @@
+{
+  "index": 380,
+  "host_base": "0x1a1343000",
+  "gt_base": "0x1a1342000",
+  "gt_indication": "Patient with GI bleed denies dyspnea or chest pain.",
+  "recovered_labels": [
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 278,
+      "ind_gpa": 6999521456,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6999521472,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6999521488,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6999521504,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6999521520,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6999521536,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6999521552,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6999521568,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.531197786331177,
+  "timestamp": 1793333159.9915323,
+  "status": "SUCCESS"
+}

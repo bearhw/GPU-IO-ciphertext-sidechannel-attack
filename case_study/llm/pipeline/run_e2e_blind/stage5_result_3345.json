@@ -1,0 +1,32 @@
+{
+  "index": 3345,
+  "host_base": "0x1a152d000",
+  "gt_base": "0x1a152d000",
+  "gt_indication": "Followup left pneumothorax and pneumonia",
+  "recovered_labels": [
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 596,
+      "ind_gpa": 7001531040,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 17.062417030334473,
+  "timestamp": 1793027315.8565605,
+  "status": "SUCCESS"
+}

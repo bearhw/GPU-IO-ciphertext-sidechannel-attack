@@ -1,0 +1,50 @@
+{
+  "index": 608,
+  "host_base": "0x1a2777000",
+  "gt_base": "0x1a2776000",
+  "gt_indication": "Drug overdose, shortness of breath",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 7020705840,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 7020705856,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 7020705872,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.58029580116272,
+  "timestamp": 1793343201.5821013,
+  "status": "SUCCESS"
+}

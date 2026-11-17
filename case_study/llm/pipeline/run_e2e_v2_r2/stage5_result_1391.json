@@ -1,0 +1,532 @@
+{
+  "index": 1391,
+  "host_base": "0x13e464000",
+  "gt_base": "0x13e464000",
+  "gt_indication": "Stab wound to the left neck and chest, some shortness of breath",
+  "recovered_labels": [
+    ", short",
+    " PICC",
+    " pneumoth",
+    ", short",
+    " PICC",
+    " pneumoth",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " PICC",
+    " Respiratory",
+    " pneumonia.",
+    " Weakness",
+    " PICC",
+    " fever.",
+    " respiratory failure",
+    " Fever.",
+    " Respiratory",
+    " pneumonia.",
+    " Weakness",
+    " PICC",
+    " fever.",
+    " respiratory failure",
+    " Fever.",
+    " Respiratory",
+    " pneumonia.",
+    " Weakness",
+    " PICC",
+    " fever.",
+    " respiratory failure",
+    " Fever.",
+    " Respiratory",
+    " pneumonia.",
+    " Weakness",
+    " PICC",
+    " fever.",
+    " respiratory failure",
+    " Fever.",
+    " Respiratory",
+    " PICC",
+    " Respiratory",
+    " PICC",
+    " Respiratory",
+    " PICC",
+    " Respiratory",
+    " PICC",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 5339762848,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5339762848,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5339762848,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5339762864,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5339762864,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5339762864,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5339762880,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5339762896,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5339762912,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5339762928,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5339762944,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5339762960,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5339762976,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5339762992,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339763008,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339763008,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339763008,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339763008,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339763008,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339763008,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339763008,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5339763024,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5339763024,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5339763024,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5339763024,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5339763024,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5339763024,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5339763024,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5339763040,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5339763040,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5339763040,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5339763040,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5339763040,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5339763040,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5339763040,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5339763056,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5339763056,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5339763056,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5339763056,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5339763056,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5339763056,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5339763056,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5339763072,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5339763072,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5339763088,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5339763088,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5339763104,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5339763104,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5339763120,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5339763120,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5339763136,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 51,
+    "false_positive_labels": [
+      "PICC",
+      "pneumoth",
+      "PICC",
+      "pneumoth",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "Respiratory",
+      "pneumonia.",
+      "Weakness",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Fever.",
+      "Respiratory",
+      "pneumonia.",
+      "Weakness",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Fever.",
+      "Respiratory",
+      "pneumonia.",
+      "Weakness",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Fever.",
+      "Respiratory",
+      "pneumonia.",
+      "Weakness",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Fever.",
+      "Respiratory",
+      "PICC",
+      "Respiratory",
+      "PICC",
+      "Respiratory",
+      "PICC",
+      "Respiratory",
+      "PICC",
+      "PICC"
+    ],
+    "false_positive_count": 49,
+    "recovered_labels": [
+      ", short",
+      "PICC",
+      "pneumoth",
+      ", short",
+      "PICC",
+      "pneumoth",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "Respiratory",
+      "pneumonia.",
+      "Weakness",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Fever.",
+      "Respiratory",
+      "pneumonia.",
+      "Weakness",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Fever.",
+      "Respiratory",
+      "pneumonia.",
+      "Weakness",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Fever.",
+      "Respiratory",
+      "pneumonia.",
+      "Weakness",
+      "PICC",
+      "fever.",
+      "respiratory failure",
+      "Fever.",
+      "Respiratory",
+      "PICC",
+      "Respiratory",
+      "PICC",
+      "Respiratory",
+      "PICC",
+      "Respiratory",
+      "PICC",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.252730369567871,
+  "timestamp": 1793371451.9570737,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 2519,
+  "host_base": "0x19ce2c000",
+  "gt_base": "0x19ce2c000",
+  "gt_indication": "Respiratory failure, history of left pneumothorax",
+  "recovered_labels": [
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 6927078432,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 16.051436185836792,
+  "timestamp": 1793416603.356598,
+  "status": "SUCCESS"
+}

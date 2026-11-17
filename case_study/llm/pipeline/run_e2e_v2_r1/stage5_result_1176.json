@@ -1,0 +1,34 @@
+{
+  "index": 1176,
+  "host_base": "0x1a4d51000",
+  "gt_base": "0x1a4d51000",
+  "gt_indication": "65-year-old male with acute respiratory failure.",
+  "recovered_labels": [
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 536,
+      "ind_gpa": 7060398272,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "COVID-"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.300291776657104,
+  "timestamp": 1793178373.321967,
+  "status": "SUCCESS"
+}

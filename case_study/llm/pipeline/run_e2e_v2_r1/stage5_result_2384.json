@@ -1,0 +1,44 @@
+{
+  "index": 2384,
+  "host_base": "0x13e171000",
+  "gt_base": "0x13e171000",
+  "gt_indication": "79-year-old male with respiratory failure.",
+  "recovered_labels": [
+    " PICC",
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 522,
+      "ind_gpa": 5336670288,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5336670288,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "PICC",
+      "CABG"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "PICC",
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 15.599814414978027,
+  "timestamp": 1793234681.8130648,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 1669,
+  "host_base": "0x1a8d21000",
+  "gt_base": "0x1a8d21000",
+  "gt_indication": "Injured while tubing, injury to lower RIGHT rib cage laterally, contusion, shortness of breath",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 456,
+      "ind_gpa": 7127309888,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 19.306910753250122,
+  "timestamp": 1792952621.8744273,
+  "status": "SUCCESS"
+}

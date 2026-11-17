@@ -1,0 +1,41 @@
+{
+  "index": 963,
+  "host_base": "0x1aa009000",
+  "gt_base": "0x1aa009000",
+  "gt_indication": "Shortness of breath. Croup. Asthma. Breathing difficulty.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 464,
+      "ind_gpa": 7147134592,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7147134608,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.489770650863647,
+  "timestamp": 1793351364.2781959,
+  "status": "SUCCESS"
+}

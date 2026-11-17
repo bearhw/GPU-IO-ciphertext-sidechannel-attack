@@ -1,0 +1,32 @@
+{
+  "index": 2658,
+  "host_base": "0x1a21e7000",
+  "gt_base": "0x1a21e7000",
+  "gt_indication": "Acute left rib pain after fall in shower several days ago. Initial encounter.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 574,
+      "ind_gpa": 7014875632,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.788808584213257,
+  "timestamp": 1793247382.6920202,
+  "status": "SUCCESS"
+}

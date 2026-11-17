@@ -1,0 +1,309 @@
+{
+  "index": 2908,
+  "host_base": "0x1a0c5c000",
+  "gt_base": "0x1a0c5c000",
+  "gt_indication": "PICC tube insertion right",
+  "recovered_labels": [
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 6992286176,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 6992286176,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6992286192,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6992286192,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 6992286208,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 6992286208,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 578,
+      "ind_gpa": 6992286224,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 578,
+      "ind_gpa": 6992286224,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 6992286240,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 6992286240,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 582,
+      "ind_gpa": 6992286256,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 582,
+      "ind_gpa": 6992286256,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 584,
+      "ind_gpa": 6992286272,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 584,
+      "ind_gpa": 6992286272,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 586,
+      "ind_gpa": 6992286288,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 586,
+      "ind_gpa": 6992286288,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 588,
+      "ind_gpa": 6992286304,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 588,
+      "ind_gpa": 6992286304,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 590,
+      "ind_gpa": 6992286320,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 590,
+      "ind_gpa": 6992286320,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 592,
+      "ind_gpa": 6992286336,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 592,
+      "ind_gpa": 6992286336,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6992286352,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6992286352,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6992286368,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6992286368,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6992286384,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6992286384,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6992286400,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6992286400,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 30,
+    "false_positive_labels": [
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up"
+    ],
+    "false_positive_count": 15,
+    "recovered_labels": [
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 18.878249645233154,
+  "timestamp": 1793010353.3330054,
+  "status": "SUCCESS"
+}

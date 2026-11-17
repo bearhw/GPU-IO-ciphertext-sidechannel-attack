@@ -1,0 +1,41 @@
+{
+  "index": 1110,
+  "host_base": "0x1a6e53000",
+  "gt_base": "0x1a6e53000",
+  "gt_indication": "Increased shortness of breath",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 7095009760,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 7095009776,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.987955093383789,
+  "timestamp": 1792931029.332892,
+  "status": "SUCCESS"
+}

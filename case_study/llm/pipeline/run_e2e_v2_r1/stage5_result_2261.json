@@ -1,0 +1,32 @@
+{
+  "index": 2261,
+  "host_base": "0x1996b8000",
+  "gt_base": "0x1996b8000",
+  "gt_indication": "2-3 days of productive cough. Current smoker.",
+  "recovered_labels": [
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 752,
+      "ind_gpa": 6868932480,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough."
+    ]
+  },
+  "elapsed_sec": 15.576446771621704,
+  "timestamp": 1793228425.2456238,
+  "status": "SUCCESS"
+}

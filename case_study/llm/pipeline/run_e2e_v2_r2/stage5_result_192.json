@@ -1,0 +1,20 @@
+{
+  "index": 192,
+  "host_base": "0x146223000",
+  "gt_base": "0x146223000",
+  "gt_indication": "Chest and rib pain after a fall today.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.847410202026367,
+  "timestamp": 1793322628.728281,
+  "status": "SUCCESS"
+}

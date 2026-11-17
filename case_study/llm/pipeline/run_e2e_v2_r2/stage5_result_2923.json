@@ -1,0 +1,20 @@
+{
+  "index": 2923,
+  "host_base": "0x1a085b000",
+  "gt_base": "0x1a085a000",
+  "gt_indication": "Cough, chest congestion and wheezing for 1 week. Intermittent fever.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.178326845169067,
+  "timestamp": 1793435426.3974428,
+  "status": "SUCCESS"
+}

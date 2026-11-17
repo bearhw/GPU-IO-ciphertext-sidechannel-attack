@@ -1,0 +1,219 @@
+{
+  "index": 2971,
+  "host_base": "0x1a0ff1000",
+  "gt_base": "0x1a0ff0000",
+  "gt_indication": "Cough. Laryngitis. Chills. Seven days duration.",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " COPD",
+    " fever.",
+    " of breath",
+    " Cough",
+    " COPD",
+    " fever.",
+    " of breath",
+    " Cough",
+    " COPD",
+    " fever.",
+    " of breath",
+    " Cough",
+    " COPD",
+    " fever.",
+    " of breath",
+    " Cough",
+    " COPD",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 280,
+      "ind_gpa": 6996039872,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6996039872,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6996039872,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6996039872,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6996039888,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6996039888,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6996039888,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6996039888,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6996039904,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6996039904,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6996039904,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6996039904,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6996039920,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6996039920,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6996039920,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6996039920,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6996039936,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6996039936,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6996039936,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6996039936,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever.",
+      "of breath",
+      "COPD",
+      "fever."
+    ],
+    "false_positive_count": 15,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "COPD",
+      "fever.",
+      "of breath",
+      "Cough",
+      "COPD",
+      "fever.",
+      "of breath",
+      "Cough",
+      "COPD",
+      "fever.",
+      "of breath",
+      "Cough",
+      "COPD",
+      "fever.",
+      "of breath",
+      "Cough",
+      "COPD",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 20.55274987220764,
+  "timestamp": 1793013811.682381,
+  "status": "SUCCESS"
+}

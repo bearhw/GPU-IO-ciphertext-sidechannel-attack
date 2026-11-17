@@ -1,0 +1,32 @@
+{
+  "index": 1561,
+  "host_base": "0x19cee6000",
+  "gt_base": "0x19cee6000",
+  "gt_indication": "SOB, Cough",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 442,
+      "ind_gpa": 6927838672,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 18.758522272109985,
+  "timestamp": 1792949338.6668832,
+  "status": "SUCCESS"
+}

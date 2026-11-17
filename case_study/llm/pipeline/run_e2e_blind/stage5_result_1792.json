@@ -1,0 +1,32 @@
+{
+  "index": 1792,
+  "host_base": "0x1a041f000",
+  "gt_base": "0x1a041f000",
+  "gt_indication": "Acute on chronic respiratory failure.",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 6983647712,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 19.651682138442993,
+  "timestamp": 1792956712.0162551,
+  "status": "SUCCESS"
+}

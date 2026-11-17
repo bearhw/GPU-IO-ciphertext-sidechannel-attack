@@ -1,0 +1,43 @@
+{
+  "index": 1741,
+  "host_base": "0x1427d7000",
+  "gt_base": "0x1427d7000",
+  "gt_indication": "Fever. Occasional shortness of breath.",
+  "recovered_labels": [
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 544,
+      "ind_gpa": 5410488576,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5410488576,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "PICC"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.28096079826355,
+  "timestamp": 1792955597.5379198,
+  "status": "SUCCESS"
+}

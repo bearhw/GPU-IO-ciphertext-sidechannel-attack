@@ -1,0 +1,227 @@
+{
+  "index": 2206,
+  "host_base": "0x1acb75000",
+  "gt_base": "0x1acb75000",
+  "gt_indication": "COVID-19 pneumonia, hypoxia and bacterial pneumonia.",
+  "recovered_labels": [
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 612,
+      "ind_gpa": 7192666912,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 612,
+      "ind_gpa": 7192666912,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 612,
+      "ind_gpa": 7192666912,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 614,
+      "ind_gpa": 7192666928,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 614,
+      "ind_gpa": 7192666928,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 614,
+      "ind_gpa": 7192666928,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 616,
+      "ind_gpa": 7192666944,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 616,
+      "ind_gpa": 7192666944,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 616,
+      "ind_gpa": 7192666944,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 7192666960,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 7192666960,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 7192666960,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 7192666976,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 7192666976,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 7192666976,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 622,
+      "ind_gpa": 7192666992,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 622,
+      "ind_gpa": 7192666992,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 622,
+      "ind_gpa": 7192666992,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 624,
+      "ind_gpa": 7192667008,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 624,
+      "ind_gpa": 7192667008,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 624,
+      "ind_gpa": 7192667008,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 21,
+    "false_positive_labels": [
+      "ough and",
+      "PICC",
+      "ough and",
+      "PICC",
+      "ough and",
+      "PICC",
+      "ough and",
+      "PICC",
+      "ough and",
+      "PICC",
+      "ough and",
+      "PICC",
+      "ough and",
+      "PICC"
+    ],
+    "false_positive_count": 14,
+    "recovered_labels": [
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.347379207611084,
+  "timestamp": 1793404501.8247225,
+  "status": "SUCCESS"
+}

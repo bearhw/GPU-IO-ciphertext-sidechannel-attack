@@ -1,0 +1,41 @@
+{
+  "index": 2022,
+  "host_base": "0x1a1e43000",
+  "gt_base": "0x1a1e42000",
+  "gt_indication": "83-year-old male with shortness of breath, arrhythmia, mid chest pain.",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 7011055712,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 270,
+      "ind_gpa": 7011055728,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 21.40699005126953,
+  "timestamp": 1792969441.7656274,
+  "status": "SUCCESS"
+}

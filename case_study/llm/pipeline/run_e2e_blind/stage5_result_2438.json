@@ -1,0 +1,41 @@
+{
+  "index": 2438,
+  "host_base": "0x1a92c8000",
+  "gt_base": "0x1a92c7000",
+  "gt_indication": "Shortness of breath and productive cough 3 weeks ago and 2 weeks ago. Now having chills, sweats, and dizziness. History of asthma as a child. Smoker.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7133235232,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 7133235248,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 17.955926656723022,
+  "timestamp": 1792989643.092006,
+  "status": "SUCCESS"
+}

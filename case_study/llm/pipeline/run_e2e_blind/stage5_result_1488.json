@@ -1,0 +1,32 @@
+{
+  "index": 1488,
+  "host_base": "0x1a4282000",
+  "gt_base": "0x1a4282000",
+  "gt_indication": "Chest pain, congestion, cough, vomiting for several weeks. History of asthma. The patient is a smoker.",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7049063168,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 18.948559761047363,
+  "timestamp": 1792947078.469598,
+  "status": "SUCCESS"
+}

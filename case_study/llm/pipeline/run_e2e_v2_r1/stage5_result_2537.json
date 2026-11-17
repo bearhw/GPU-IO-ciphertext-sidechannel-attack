@@ -1,0 +1,32 @@
+{
+  "index": 2537,
+  "host_base": "0x19f986000",
+  "gt_base": "0x19f985000",
+  "gt_indication": "Follow-up pleural effusions.",
+  "recovered_labels": [
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6972532768,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.654787540435791,
+  "timestamp": 1793242056.6886199,
+  "status": "SUCCESS"
+}

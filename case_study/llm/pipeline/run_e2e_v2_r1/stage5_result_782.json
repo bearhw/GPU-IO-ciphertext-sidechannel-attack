@@ -1,0 +1,32 @@
+{
+  "index": 782,
+  "host_base": "0x16f60a000",
+  "gt_base": "0x16f60a000",
+  "gt_indication": "Abdominal pain. PICC placement.",
+  "recovered_labels": [
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 6163573504,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.36940622329712,
+  "timestamp": 1793287098.1770442,
+  "status": "SUCCESS"
+}

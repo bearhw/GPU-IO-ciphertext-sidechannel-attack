@@ -1,0 +1,32 @@
+{
+  "index": 3237,
+  "host_base": "0x1a0fd8000",
+  "gt_base": "0x1a0fd7000",
+  "gt_indication": "Cough with nausea and vomiting",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 6995937376,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.327287197113037,
+  "timestamp": 1793268992.2456856,
+  "status": "SUCCESS"
+}

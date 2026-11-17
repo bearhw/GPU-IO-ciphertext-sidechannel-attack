@@ -1,0 +1,50 @@
+{
+  "index": 1290,
+  "host_base": "0x1a020d000",
+  "gt_base": "0x1a020d000",
+  "gt_indication": "Shortness of breath, cough, evaluate effusion",
+  "recovered_labels": [
+    "ness of",
+    " breath,",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 6981477360,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6981477376,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6981477392,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 17.4402015209198,
+  "timestamp": 1792941810.7544346,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 3189,
+  "host_base": "0x1a2166000",
+  "gt_base": "0x1a2165000",
+  "gt_indication": "Dyspnea. Productive cough. History of COPD and lung cancer.",
+  "recovered_labels": [
+    " cough.",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 266,
+      "ind_gpa": 7014344784,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 270,
+      "ind_gpa": 7014344816,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough.",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 20.77425742149353,
+  "timestamp": 1793020364.8797238,
+  "status": "SUCCESS"
+}

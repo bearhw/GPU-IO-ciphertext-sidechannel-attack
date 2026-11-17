@@ -1,0 +1,64 @@
+{
+  "index": 347,
+  "host_base": "0x1a7df4000",
+  "gt_base": "0x1a7df4000",
+  "gt_indication": "Right chest pain for the past 1-2 days. Nausea and vomiting since this morning.",
+  "recovered_labels": [
+    " fever.",
+    " fever.",
+    " fever.",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 694,
+      "ind_gpa": 7111398832,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 696,
+      "ind_gpa": 7111398848,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 698,
+      "ind_gpa": 7111398864,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 700,
+      "ind_gpa": 7111398880,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "fever.",
+      "fever.",
+      "fever.",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 17.960206747055054,
+  "timestamp": 1792897371.0481899,
+  "status": "SUCCESS"
+}

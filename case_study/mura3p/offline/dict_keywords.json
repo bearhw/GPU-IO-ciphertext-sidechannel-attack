@@ -1,0 +1,1997 @@
+{
+ "source": "mura/xor_density_survey.npy top-64 (REF_U8_64)",
+ "levels": [
+  0,
+  4,
+  1,
+  3,
+  2,
+  5,
+  29,
+  30,
+  35,
+  32,
+  34,
+  33,
+  31,
+  38,
+  10,
+  28,
+  9,
+  36,
+  27,
+  11,
+  8,
+  37,
+  6,
+  7,
+  26,
+  39,
+  50,
+  40,
+  25,
+  57,
+  41,
+  42,
+  58,
+  56,
+  43,
+  24,
+  55,
+  44,
+  59,
+  54,
+  45,
+  53,
+  52,
+  205,
+  23,
+  46,
+  47,
+  51,
+  49,
+  60,
+  22,
+  48,
+  12,
+  21,
+  61,
+  62,
+  20,
+  63,
+  16,
+  64,
+  13,
+  65,
+  19,
+  66
+ ],
+ "channels": {
+  "R": [
+   {
+    "rank": 0,
+    "pixels": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "chunk_hex": "bd8b07c0bd8b07c0bd8b07c0bd8b07c0"
+   },
+   {
+    "rank": 1,
+    "pixels": [
+     4,
+     4,
+     4,
+     4
+    ],
+    "chunk_hex": "732903c0732903c0732903c0732903c0"
+   },
+   {
+    "rank": 2,
+    "pixels": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "chunk_hex": "2b7306c02b7306c02b7306c02b7306c0"
+   },
+   {
+    "rank": 3,
+    "pixels": [
+     3,
+     3,
+     3,
+     3
+    ],
+    "chunk_hex": "064204c0064204c0064204c0064204c0"
+   },
+   {
+    "rank": 4,
+    "pixels": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "chunk_hex": "985a05c0985a05c0985a05c0985a05c0"
+   },
+   {
+    "rank": 5,
+    "pixels": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "chunk_hex": "e11002c0e11002c0e11002c0e11002c0"
+   },
+   {
+    "rank": 6,
+    "pixels": [
+     29,
+     29,
+     29,
+     29
+    ],
+    "chunk_hex": "4e86cfbf4e86cfbf4e86cfbf4e86cfbf"
+   },
+   {
+    "rank": 7,
+    "pixels": [
+     30,
+     30,
+     30,
+     30
+    ],
+    "chunk_hex": "2955cdbf2955cdbf2955cdbf2955cdbf"
+   },
+   {
+    "rank": 8,
+    "pixels": [
+     35,
+     35,
+     35,
+     35
+    ],
+    "chunk_hex": "715fc2bf715fc2bf715fc2bf715fc2bf"
+   },
+   {
+    "rank": 9,
+    "pixels": [
+     32,
+     32,
+     32,
+     32
+    ],
+    "chunk_hex": "dff2c8bfdff2c8bfdff2c8bfdff2c8bf"
+   },
+   {
+    "rank": 10,
+    "pixels": [
+     34,
+     34,
+     34,
+     34
+    ],
+    "chunk_hex": "9690c4bf9690c4bf9690c4bf9690c4bf"
+   },
+   {
+    "rank": 11,
+    "pixels": [
+     33,
+     33,
+     33,
+     33
+    ],
+    "chunk_hex": "bbc1c6bfbbc1c6bfbbc1c6bfbbc1c6bf"
+   },
+   {
+    "rank": 12,
+    "pixels": [
+     31,
+     31,
+     31,
+     31
+    ],
+    "chunk_hex": "0424cbbf0424cbbf0424cbbf0424cbbf"
+   },
+   {
+    "rank": 13,
+    "pixels": [
+     38,
+     38,
+     38,
+     38
+    ],
+    "chunk_hex": "02ccbbbf02ccbbbf02ccbbbf02ccbbbf"
+   },
+   {
+    "rank": 14,
+    "pixels": [
+     10,
+     10,
+     10,
+     10
+    ],
+    "chunk_hex": "0a2cf9bf0a2cf9bf0a2cf9bf0a2cf9bf"
+   },
+   {
+    "rank": 15,
+    "pixels": [
+     28,
+     28,
+     28,
+     28
+    ],
+    "chunk_hex": "73b7d1bf73b7d1bf73b7d1bf73b7d1bf"
+   },
+   {
+    "rank": 16,
+    "pixels": [
+     9,
+     9,
+     9,
+     9
+    ],
+    "chunk_hex": "2f5dfbbf2f5dfbbf2f5dfbbf2f5dfbbf"
+   },
+   {
+    "rank": 17,
+    "pixels": [
+     36,
+     36,
+     36,
+     36
+    ],
+    "chunk_hex": "4c2ec0bf4c2ec0bf4c2ec0bf4c2ec0bf"
+   },
+   {
+    "rank": 18,
+    "pixels": [
+     27,
+     27,
+     27,
+     27
+    ],
+    "chunk_hex": "98e8d3bf98e8d3bf98e8d3bf98e8d3bf"
+   },
+   {
+    "rank": 19,
+    "pixels": [
+     11,
+     11,
+     11,
+     11
+    ],
+    "chunk_hex": "e5faf6bfe5faf6bfe5faf6bfe5faf6bf"
+   },
+   {
+    "rank": 20,
+    "pixels": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "chunk_hex": "548efdbf548efdbf548efdbf548efdbf"
+   },
+   {
+    "rank": 21,
+    "pixels": [
+     37,
+     37,
+     37,
+     37
+    ],
+    "chunk_hex": "27fdbdbf27fdbdbf27fdbdbf27fdbdbf"
+   },
+   {
+    "rank": 22,
+    "pixels": [
+     6,
+     6,
+     6,
+     6
+    ],
+    "chunk_hex": "4ff800c04ff800c04ff800c04ff800c0"
+   },
+   {
+    "rank": 23,
+    "pixels": [
+     7,
+     7,
+     7,
+     7
+    ],
+    "chunk_hex": "78bfffbf78bfffbf78bfffbf78bfffbf"
+   },
+   {
+    "rank": 24,
+    "pixels": [
+     26,
+     26,
+     26,
+     26
+    ],
+    "chunk_hex": "bc19d6bfbc19d6bfbc19d6bfbc19d6bf"
+   },
+   {
+    "rank": 25,
+    "pixels": [
+     39,
+     39,
+     39,
+     39
+    ],
+    "chunk_hex": "de9ab9bfde9ab9bfde9ab9bfde9ab9bf"
+   },
+   {
+    "rank": 26,
+    "pixels": [
+     50,
+     50,
+     50,
+     50
+    ],
+    "chunk_hex": "487ea1bf487ea1bf487ea1bf487ea1bf"
+   },
+   {
+    "rank": 27,
+    "pixels": [
+     40,
+     40,
+     40,
+     40
+    ],
+    "chunk_hex": "b969b7bfb969b7bfb969b7bfb969b7bf"
+   },
+   {
+    "rank": 28,
+    "pixels": [
+     25,
+     25,
+     25,
+     25
+    ],
+    "chunk_hex": "e14ad8bfe14ad8bfe14ad8bfe14ad8bf"
+   },
+   {
+    "rank": 29,
+    "pixels": [
+     57,
+     57,
+     57,
+     57
+    ],
+    "chunk_hex": "462692bf462692bf462692bf462692bf"
+   },
+   {
+    "rank": 30,
+    "pixels": [
+     41,
+     41,
+     41,
+     41
+    ],
+    "chunk_hex": "9438b5bf9438b5bf9438b5bf9438b5bf"
+   },
+   {
+    "rank": 31,
+    "pixels": [
+     42,
+     42,
+     42,
+     42
+    ],
+    "chunk_hex": "6f07b3bf6f07b3bf6f07b3bf6f07b3bf"
+   },
+   {
+    "rank": 32,
+    "pixels": [
+     58,
+     58,
+     58,
+     58
+    ],
+    "chunk_hex": "22f58fbf22f58fbf22f58fbf22f58fbf"
+   },
+   {
+    "rank": 33,
+    "pixels": [
+     56,
+     56,
+     56,
+     56
+    ],
+    "chunk_hex": "6b5794bf6b5794bf6b5794bf6b5794bf"
+   },
+   {
+    "rank": 34,
+    "pixels": [
+     43,
+     43,
+     43,
+     43
+    ],
+    "chunk_hex": "4ad6b0bf4ad6b0bf4ad6b0bf4ad6b0bf"
+   },
+   {
+    "rank": 35,
+    "pixels": [
+     24,
+     24,
+     24,
+     24
+    ],
+    "chunk_hex": "067cdabf067cdabf067cdabf067cdabf"
+   },
+   {
+    "rank": 36,
+    "pixels": [
+     55,
+     55,
+     55,
+     55
+    ],
+    "chunk_hex": "908896bf908896bf908896bf908896bf"
+   },
+   {
+    "rank": 37,
+    "pixels": [
+     44,
+     44,
+     44,
+     44
+    ],
+    "chunk_hex": "25a5aebf25a5aebf25a5aebf25a5aebf"
+   },
+   {
+    "rank": 38,
+    "pixels": [
+     59,
+     59,
+     59,
+     59
+    ],
+    "chunk_hex": "fdc38dbffdc38dbffdc38dbffdc38dbf"
+   },
+   {
+    "rank": 39,
+    "pixels": [
+     54,
+     54,
+     54,
+     54
+    ],
+    "chunk_hex": "b5b998bfb5b998bfb5b998bfb5b998bf"
+   },
+   {
+    "rank": 40,
+    "pixels": [
+     45,
+     45,
+     45,
+     45
+    ],
+    "chunk_hex": "0174acbf0174acbf0174acbf0174acbf"
+   },
+   {
+    "rank": 41,
+    "pixels": [
+     53,
+     53,
+     53,
+     53
+    ],
+    "chunk_hex": "daea9abfdaea9abfdaea9abfdaea9abf"
+   },
+   {
+    "rank": 42,
+    "pixels": [
+     52,
+     52,
+     52,
+     52
+    ],
+    "chunk_hex": "ff1b9dbfff1b9dbfff1b9dbfff1b9dbf"
+   },
+   {
+    "rank": 43,
+    "pixels": [
+     205,
+     205,
+     205,
+     205
+    ],
+    "chunk_hex": "0843b23f0843b23f0843b23f0843b23f"
+   },
+   {
+    "rank": 44,
+    "pixels": [
+     23,
+     23,
+     23,
+     23
+    ],
+    "chunk_hex": "2baddcbf2baddcbf2baddcbf2baddcbf"
+   },
+   {
+    "rank": 45,
+    "pixels": [
+     46,
+     46,
+     46,
+     46
+    ],
+    "chunk_hex": "dc42aabfdc42aabfdc42aabfdc42aabf"
+   },
+   {
+    "rank": 46,
+    "pixels": [
+     47,
+     47,
+     47,
+     47
+    ],
+    "chunk_hex": "b711a8bfb711a8bfb711a8bfb711a8bf"
+   },
+   {
+    "rank": 47,
+    "pixels": [
+     51,
+     51,
+     51,
+     51
+    ],
+    "chunk_hex": "244d9fbf244d9fbf244d9fbf244d9fbf"
+   },
+   {
+    "rank": 48,
+    "pixels": [
+     49,
+     49,
+     49,
+     49
+    ],
+    "chunk_hex": "6dafa3bf6dafa3bf6dafa3bf6dafa3bf"
+   },
+   {
+    "rank": 49,
+    "pixels": [
+     60,
+     60,
+     60,
+     60
+    ],
+    "chunk_hex": "d7928bbfd7928bbfd7928bbfd7928bbf"
+   },
+   {
+    "rank": 50,
+    "pixels": [
+     22,
+     22,
+     22,
+     22
+    ],
+    "chunk_hex": "50dedebf50dedebf50dedebf50dedebf"
+   },
+   {
+    "rank": 51,
+    "pixels": [
+     48,
+     48,
+     48,
+     48
+    ],
+    "chunk_hex": "92e0a5bf92e0a5bf92e0a5bf92e0a5bf"
+   },
+   {
+    "rank": 52,
+    "pixels": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "chunk_hex": "c0c9f4bfc0c9f4bfc0c9f4bfc0c9f4bf"
+   },
+   {
+    "rank": 53,
+    "pixels": [
+     21,
+     21,
+     21,
+     21
+    ],
+    "chunk_hex": "750fe1bf750fe1bf750fe1bf750fe1bf"
+   },
+   {
+    "rank": 54,
+    "pixels": [
+     61,
+     61,
+     61,
+     61
+    ],
+    "chunk_hex": "b36189bfb36189bfb36189bfb36189bf"
+   },
+   {
+    "rank": 55,
+    "pixels": [
+     62,
+     62,
+     62,
+     62
+    ],
+    "chunk_hex": "8e3087bf8e3087bf8e3087bf8e3087bf"
+   },
+   {
+    "rank": 56,
+    "pixels": [
+     20,
+     20,
+     20,
+     20
+    ],
+    "chunk_hex": "9940e3bf9940e3bf9940e3bf9940e3bf"
+   },
+   {
+    "rank": 57,
+    "pixels": [
+     63,
+     63,
+     63,
+     63
+    ],
+    "chunk_hex": "69ff84bf69ff84bf69ff84bf69ff84bf"
+   },
+   {
+    "rank": 58,
+    "pixels": [
+     16,
+     16,
+     16,
+     16
+    ],
+    "chunk_hex": "2d05ecbf2d05ecbf2d05ecbf2d05ecbf"
+   },
+   {
+    "rank": 59,
+    "pixels": [
+     64,
+     64,
+     64,
+     64
+    ],
+    "chunk_hex": "44ce82bf44ce82bf44ce82bf44ce82bf"
+   },
+   {
+    "rank": 60,
+    "pixels": [
+     13,
+     13,
+     13,
+     13
+    ],
+    "chunk_hex": "9b98f2bf9b98f2bf9b98f2bf9b98f2bf"
+   },
+   {
+    "rank": 61,
+    "pixels": [
+     65,
+     65,
+     65,
+     65
+    ],
+    "chunk_hex": "1f9d80bf1f9d80bf1f9d80bf1f9d80bf"
+   },
+   {
+    "rank": 62,
+    "pixels": [
+     19,
+     19,
+     19,
+     19
+    ],
+    "chunk_hex": "be71e5bfbe71e5bfbe71e5bfbe71e5bf"
+   },
+   {
+    "rank": 63,
+    "pixels": [
+     66,
+     66,
+     66,
+     66
+    ],
+    "chunk_hex": "f4d77cbff4d77cbff4d77cbff4d77cbf"
+   }
+  ],
+  "G": [
+   {
+    "rank": 0,
+    "pixels": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "chunk_hex": "244902c0244902c0244902c0244902c0"
+   },
+   {
+    "rank": 1,
+    "pixels": [
+     4,
+     4,
+     4,
+     4
+    ],
+    "chunk_hex": "9b9bfbbf9b9bfbbf9b9bfbbf9b9bfbbf"
+   },
+   {
+    "rank": 2,
+    "pixels": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "chunk_hex": "4f2a01c04f2a01c04f2a01c04f2a01c0"
+   },
+   {
+    "rank": 3,
+    "pixels": [
+     3,
+     3,
+     3,
+     3
+    ],
+    "chunk_hex": "47d9fdbf47d9fdbf47d9fdbf47d9fdbf"
+   },
+   {
+    "rank": 4,
+    "pixels": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "chunk_hex": "790b00c0790b00c0790b00c0790b00c0"
+   },
+   {
+    "rank": 5,
+    "pixels": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "chunk_hex": "f05df9bff05df9bff05df9bff05df9bf"
+   },
+   {
+    "rank": 6,
+    "pixels": [
+     29,
+     29,
+     29,
+     29
+    ],
+    "chunk_hex": "df95c3bfdf95c3bfdf95c3bfdf95c3bf"
+   },
+   {
+    "rank": 7,
+    "pixels": [
+     30,
+     30,
+     30,
+     30
+    ],
+    "chunk_hex": "3458c1bf3458c1bf3458c1bf3458c1bf"
+   },
+   {
+    "rank": 8,
+    "pixels": [
+     35,
+     35,
+     35,
+     35
+    ],
+    "chunk_hex": "da23b6bfda23b6bfda23b6bfda23b6bf"
+   },
+   {
+    "rank": 9,
+    "pixels": [
+     32,
+     32,
+     32,
+     32
+    ],
+    "chunk_hex": "dcdcbcbfdcdcbcbfdcdcbcbfdcdcbcbf"
+   },
+   {
+    "rank": 10,
+    "pixels": [
+     34,
+     34,
+     34,
+     34
+    ],
+    "chunk_hex": "8561b8bf8561b8bf8561b8bf8561b8bf"
+   },
+   {
+    "rank": 11,
+    "pixels": [
+     33,
+     33,
+     33,
+     33
+    ],
+    "chunk_hex": "309fbabf309fbabf309fbabf309fbabf"
+   },
+   {
+    "rank": 12,
+    "pixels": [
+     31,
+     31,
+     31,
+     31
+    ],
+    "chunk_hex": "881abfbf881abfbf881abfbf881abfbf"
+   },
+   {
+    "rank": 13,
+    "pixels": [
+     38,
+     38,
+     38,
+     38
+    ],
+    "chunk_hex": "d76aafbfd76aafbfd76aafbfd76aafbf"
+   },
+   {
+    "rank": 14,
+    "pixels": [
+     10,
+     10,
+     10,
+     10
+    ],
+    "chunk_hex": "9729eebf9729eebf9729eebf9729eebf"
+   },
+   {
+    "rank": 15,
+    "pixels": [
+     28,
+     28,
+     28,
+     28
+    ],
+    "chunk_hex": "8ad3c5bf8ad3c5bf8ad3c5bf8ad3c5bf"
+   },
+   {
+    "rank": 16,
+    "pixels": [
+     9,
+     9,
+     9,
+     9
+    ],
+    "chunk_hex": "4267f0bf4267f0bf4267f0bf4267f0bf"
+   },
+   {
+    "rank": 17,
+    "pixels": [
+     36,
+     36,
+     36,
+     36
+    ],
+    "chunk_hex": "2ee6b3bf2ee6b3bf2ee6b3bf2ee6b3bf"
+   },
+   {
+    "rank": 18,
+    "pixels": [
+     27,
+     27,
+     27,
+     27
+    ],
+    "chunk_hex": "3611c8bf3611c8bf3611c8bf3611c8bf"
+   },
+   {
+    "rank": 19,
+    "pixels": [
+     11,
+     11,
+     11,
+     11
+    ],
+    "chunk_hex": "ecebebbfecebebbfecebebbfecebebbf"
+   },
+   {
+    "rank": 20,
+    "pixels": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "chunk_hex": "eea4f2bfeea4f2bfeea4f2bfeea4f2bf"
+   },
+   {
+    "rank": 21,
+    "pixels": [
+     37,
+     37,
+     37,
+     37
+    ],
+    "chunk_hex": "83a8b1bf83a8b1bf83a8b1bf83a8b1bf"
+   },
+   {
+    "rank": 22,
+    "pixels": [
+     6,
+     6,
+     6,
+     6
+    ],
+    "chunk_hex": "4420f7bf4420f7bf4420f7bf4420f7bf"
+   },
+   {
+    "rank": 23,
+    "pixels": [
+     7,
+     7,
+     7,
+     7
+    ],
+    "chunk_hex": "99e2f4bf99e2f4bf99e2f4bf99e2f4bf"
+   },
+   {
+    "rank": 24,
+    "pixels": [
+     26,
+     26,
+     26,
+     26
+    ],
+    "chunk_hex": "e14ecabfe14ecabfe14ecabfe14ecabf"
+   },
+   {
+    "rank": 25,
+    "pixels": [
+     39,
+     39,
+     39,
+     39
+    ],
+    "chunk_hex": "2c2dadbf2c2dadbf2c2dadbf2c2dadbf"
+   },
+   {
+    "rank": 26,
+    "pixels": [
+     50,
+     50,
+     50,
+     50
+    ],
+    "chunk_hex": "cf8694bfcf8694bfcf8694bfcf8694bf"
+   },
+   {
+    "rank": 27,
+    "pixels": [
+     40,
+     40,
+     40,
+     40
+    ],
+    "chunk_hex": "81efaabf81efaabf81efaabf81efaabf"
+   },
+   {
+    "rank": 28,
+    "pixels": [
+     25,
+     25,
+     25,
+     25
+    ],
+    "chunk_hex": "8c8cccbf8c8cccbf8c8cccbf8c8cccbf"
+   },
+   {
+    "rank": 29,
+    "pixels": [
+     57,
+     57,
+     57,
+     57
+    ],
+    "chunk_hex": "20d784bf20d784bf20d784bf20d784bf"
+   },
+   {
+    "rank": 30,
+    "pixels": [
+     41,
+     41,
+     41,
+     41
+    ],
+    "chunk_hex": "d5b1a8bfd5b1a8bfd5b1a8bfd5b1a8bf"
+   },
+   {
+    "rank": 31,
+    "pixels": [
+     42,
+     42,
+     42,
+     42
+    ],
+    "chunk_hex": "2a74a6bf2a74a6bf2a74a6bf2a74a6bf"
+   },
+   {
+    "rank": 32,
+    "pixels": [
+     58,
+     58,
+     58,
+     58
+    ],
+    "chunk_hex": "759982bf759982bf759982bf759982bf"
+   },
+   {
+    "rank": 33,
+    "pixels": [
+     56,
+     56,
+     56,
+     56
+    ],
+    "chunk_hex": "cb1487bfcb1487bfcb1487bfcb1487bf"
+   },
+   {
+    "rank": 34,
+    "pixels": [
+     43,
+     43,
+     43,
+     43
+    ],
+    "chunk_hex": "7f36a4bf7f36a4bf7f36a4bf7f36a4bf"
+   },
+   {
+    "rank": 35,
+    "pixels": [
+     24,
+     24,
+     24,
+     24
+    ],
+    "chunk_hex": "38cacebf38cacebf38cacebf38cacebf"
+   },
+   {
+    "rank": 36,
+    "pixels": [
+     55,
+     55,
+     55,
+     55
+    ],
+    "chunk_hex": "775289bf775289bf775289bf775289bf"
+   },
+   {
+    "rank": 37,
+    "pixels": [
+     44,
+     44,
+     44,
+     44
+    ],
+    "chunk_hex": "d3f8a1bfd3f8a1bfd3f8a1bfd3f8a1bf"
+   },
+   {
+    "rank": 38,
+    "pixels": [
+     59,
+     59,
+     59,
+     59
+    ],
+    "chunk_hex": "c95b80bfc95b80bfc95b80bfc95b80bf"
+   },
+   {
+    "rank": 39,
+    "pixels": [
+     54,
+     54,
+     54,
+     54
+    ],
+    "chunk_hex": "22908bbf22908bbf22908bbf22908bbf"
+   },
+   {
+    "rank": 40,
+    "pixels": [
+     45,
+     45,
+     45,
+     45
+    ],
+    "chunk_hex": "28bb9fbf28bb9fbf28bb9fbf28bb9fbf"
+   },
+   {
+    "rank": 41,
+    "pixels": [
+     53,
+     53,
+     53,
+     53
+    ],
+    "chunk_hex": "cdcd8dbfcdcd8dbfcdcd8dbfcdcd8dbf"
+   },
+   {
+    "rank": 42,
+    "pixels": [
+     52,
+     52,
+     52,
+     52
+    ],
+    "chunk_hex": "780b90bf780b90bf780b90bf780b90bf"
+   },
+   {
+    "rank": 43,
+    "pixels": [
+     205,
+     205,
+     205,
+     205
+    ],
+    "chunk_hex": "f5cfc63ff5cfc63ff5cfc63ff5cfc63f"
+   },
+   {
+    "rank": 44,
+    "pixels": [
+     23,
+     23,
+     23,
+     23
+    ],
+    "chunk_hex": "e307d1bfe307d1bfe307d1bfe307d1bf"
+   },
+   {
+    "rank": 45,
+    "pixels": [
+     46,
+     46,
+     46,
+     46
+    ],
+    "chunk_hex": "7c7d9dbf7c7d9dbf7c7d9dbf7c7d9dbf"
+   },
+   {
+    "rank": 46,
+    "pixels": [
+     47,
+     47,
+     47,
+     47
+    ],
+    "chunk_hex": "d13f9bbfd13f9bbfd13f9bbfd13f9bbf"
+   },
+   {
+    "rank": 47,
+    "pixels": [
+     51,
+     51,
+     51,
+     51
+    ],
+    "chunk_hex": "244992bf244992bf244992bf244992bf"
+   },
+   {
+    "rank": 48,
+    "pixels": [
+     49,
+     49,
+     49,
+     49
+    ],
+    "chunk_hex": "7ac496bf7ac496bf7ac496bf7ac496bf"
+   },
+   {
+    "rank": 49,
+    "pixels": [
+     60,
+     60,
+     60,
+     60
+    ],
+    "chunk_hex": "3c3c7cbf3c3c7cbf3c3c7cbf3c3c7cbf"
+   },
+   {
+    "rank": 50,
+    "pixels": [
+     22,
+     22,
+     22,
+     22
+    ],
+    "chunk_hex": "8e45d3bf8e45d3bf8e45d3bf8e45d3bf"
+   },
+   {
+    "rank": 51,
+    "pixels": [
+     48,
+     48,
+     48,
+     48
+    ],
+    "chunk_hex": "260299bf260299bf260299bf260299bf"
+   },
+   {
+    "rank": 52,
+    "pixels": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "chunk_hex": "40aee9bf40aee9bf40aee9bf40aee9bf"
+   },
+   {
+    "rank": 53,
+    "pixels": [
+     21,
+     21,
+     21,
+     21
+    ],
+    "chunk_hex": "3a83d5bf3a83d5bf3a83d5bf3a83d5bf"
+   },
+   {
+    "rank": 54,
+    "pixels": [
+     61,
+     61,
+     61,
+     61
+    ],
+    "chunk_hex": "e5c077bfe5c077bfe5c077bfe5c077bf"
+   },
+   {
+    "rank": 55,
+    "pixels": [
+     62,
+     62,
+     62,
+     62
+    ],
+    "chunk_hex": "8e4573bf8e4573bf8e4573bf8e4573bf"
+   },
+   {
+    "rank": 56,
+    "pixels": [
+     20,
+     20,
+     20,
+     20
+    ],
+    "chunk_hex": "e5c0d7bfe5c0d7bfe5c0d7bfe5c0d7bf"
+   },
+   {
+    "rank": 57,
+    "pixels": [
+     63,
+     63,
+     63,
+     63
+    ],
+    "chunk_hex": "37ca6ebf37ca6ebf37ca6ebf37ca6ebf"
+   },
+   {
+    "rank": 58,
+    "pixels": [
+     16,
+     16,
+     16,
+     16
+    ],
+    "chunk_hex": "93b7e0bf93b7e0bf93b7e0bf93b7e0bf"
+   },
+   {
+    "rank": 59,
+    "pixels": [
+     64,
+     64,
+     64,
+     64
+    ],
+    "chunk_hex": "e04e6abfe04e6abfe04e6abfe04e6abf"
+   },
+   {
+    "rank": 60,
+    "pixels": [
+     13,
+     13,
+     13,
+     13
+    ],
+    "chunk_hex": "9570e7bf9570e7bf9570e7bf9570e7bf"
+   },
+   {
+    "rank": 61,
+    "pixels": [
+     65,
+     65,
+     65,
+     65
+    ],
+    "chunk_hex": "89d365bf89d365bf89d365bf89d365bf"
+   },
+   {
+    "rank": 62,
+    "pixels": [
+     19,
+     19,
+     19,
+     19
+    ],
+    "chunk_hex": "91fed9bf91fed9bf91fed9bf91fed9bf"
+   },
+   {
+    "rank": 63,
+    "pixels": [
+     66,
+     66,
+     66,
+     66
+    ],
+    "chunk_hex": "325861bf325861bf325861bf325861bf"
+   }
+  ],
+  "B": [
+   {
+    "rank": 0,
+    "pixels": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "chunk_hex": "09f8e6bf09f8e6bf09f8e6bf09f8e6bf"
+   },
+   {
+    "rank": 1,
+    "pixels": [
+     4,
+     4,
+     4,
+     4
+    ],
+    "chunk_hex": "8e0bdebf8e0bdebf8e0bdebf8e0bdebf"
+   },
+   {
+    "rank": 2,
+    "pixels": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "chunk_hex": "eabce4bfeabce4bfeabce4bfeabce4bf"
+   },
+   {
+    "rank": 3,
+    "pixels": [
+     3,
+     3,
+     3,
+     3
+    ],
+    "chunk_hex": "ad46e0bfad46e0bfad46e0bfad46e0bf"
+   },
+   {
+    "rank": 4,
+    "pixels": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "chunk_hex": "cc81e2bfcc81e2bfcc81e2bfcc81e2bf"
+   },
+   {
+    "rank": 5,
+    "pixels": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "chunk_hex": "70d0dbbf70d0dbbf70d0dbbf70d0dbbf"
+   },
+   {
+    "rank": 6,
+    "pixels": [
+     29,
+     29,
+     29,
+     29
+    ],
+    "chunk_hex": "9045a6bf9045a6bf9045a6bf9045a6bf"
+   },
+   {
+    "rank": 7,
+    "pixels": [
+     30,
+     30,
+     30,
+     30
+    ],
+    "chunk_hex": "710aa4bf710aa4bf710aa4bf710aa4bf"
+   },
+   {
+    "rank": 8,
+    "pixels": [
+     35,
+     35,
+     35,
+     35
+    ],
+    "chunk_hex": "d6e298bfd6e298bfd6e298bfd6e298bf"
+   },
+   {
+    "rank": 9,
+    "pixels": [
+     32,
+     32,
+     32,
+     32
+    ],
+    "chunk_hex": "32949fbf32949fbf32949fbf32949fbf"
+   },
+   {
+    "rank": 10,
+    "pixels": [
+     34,
+     34,
+     34,
+     34
+    ],
+    "chunk_hex": "f51d9bbff51d9bbff51d9bbff51d9bbf"
+   },
+   {
+    "rank": 11,
+    "pixels": [
+     33,
+     33,
+     33,
+     33
+    ],
+    "chunk_hex": "14599dbf14599dbf14599dbf14599dbf"
+   },
+   {
+    "rank": 12,
+    "pixels": [
+     31,
+     31,
+     31,
+     31
+    ],
+    "chunk_hex": "52cfa1bf52cfa1bf52cfa1bf52cfa1bf"
+   },
+   {
+    "rank": 13,
+    "pixels": [
+     38,
+     38,
+     38,
+     38
+    ],
+    "chunk_hex": "7a3192bf7a3192bf7a3192bf7a3192bf"
+   },
+   {
+    "rank": 14,
+    "pixels": [
+     10,
+     10,
+     10,
+     10
+    ],
+    "chunk_hex": "d6a8d0bfd6a8d0bfd6a8d0bfd6a8d0bf"
+   },
+   {
+    "rank": 15,
+    "pixels": [
+     28,
+     28,
+     28,
+     28
+    ],
+    "chunk_hex": "ae80a8bfae80a8bfae80a8bfae80a8bf"
+   },
+   {
+    "rank": 16,
+    "pixels": [
+     9,
+     9,
+     9,
+     9
+    ],
+    "chunk_hex": "f5e3d2bff5e3d2bff5e3d2bff5e3d2bf"
+   },
+   {
+    "rank": 17,
+    "pixels": [
+     36,
+     36,
+     36,
+     36
+    ],
+    "chunk_hex": "b8a796bfb8a796bfb8a796bfb8a796bf"
+   },
+   {
+    "rank": 18,
+    "pixels": [
+     27,
+     27,
+     27,
+     27
+    ],
+    "chunk_hex": "cdbbaabfcdbbaabfcdbbaabfcdbbaabf"
+   },
+   {
+    "rank": 19,
+    "pixels": [
+     11,
+     11,
+     11,
+     11
+    ],
+    "chunk_hex": "b86dcebfb86dcebfb86dcebfb86dcebf"
+   },
+   {
+    "rank": 20,
+    "pixels": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "chunk_hex": "141fd5bf141fd5bf141fd5bf141fd5bf"
+   },
+   {
+    "rank": 21,
+    "pixels": [
+     37,
+     37,
+     37,
+     37
+    ],
+    "chunk_hex": "996c94bf996c94bf996c94bf996c94bf"
+   },
+   {
+    "rank": 22,
+    "pixels": [
+     6,
+     6,
+     6,
+     6
+    ],
+    "chunk_hex": "5195d9bf5195d9bf5195d9bf5195d9bf"
+   },
+   {
+    "rank": 23,
+    "pixels": [
+     7,
+     7,
+     7,
+     7
+    ],
+    "chunk_hex": "325ad7bf325ad7bf325ad7bf325ad7bf"
+   },
+   {
+    "rank": 24,
+    "pixels": [
+     26,
+     26,
+     26,
+     26
+    ],
+    "chunk_hex": "ecf6acbfecf6acbfecf6acbfecf6acbf"
+   },
+   {
+    "rank": 25,
+    "pixels": [
+     39,
+     39,
+     39,
+     39
+    ],
+    "chunk_hex": "5cf68fbf5cf68fbf5cf68fbf5cf68fbf"
+   },
+   {
+    "rank": 26,
+    "pixels": [
+     50,
+     50,
+     50,
+     50
+    ],
+    "chunk_hex": "16d86ebf16d86ebf16d86ebf16d86ebf"
+   },
+   {
+    "rank": 27,
+    "pixels": [
+     40,
+     40,
+     40,
+     40
+    ],
+    "chunk_hex": "3ebb8dbf3ebb8dbf3ebb8dbf3ebb8dbf"
+   },
+   {
+    "rank": 28,
+    "pixels": [
+     25,
+     25,
+     25,
+     25
+    ],
+    "chunk_hex": "0a32afbf0a32afbf0a32afbf0a32afbf"
+   },
+   {
+    "rank": 29,
+    "pixels": [
+     57,
+     57,
+     57,
+     57
+    ],
+    "chunk_hex": "699c4fbf699c4fbf699c4fbf699c4fbf"
+   },
+   {
+    "rank": 30,
+    "pixels": [
+     41,
+     41,
+     41,
+     41
+    ],
+    "chunk_hex": "1f808bbf1f808bbf1f808bbf1f808bbf"
+   },
+   {
+    "rank": 31,
+    "pixels": [
+     42,
+     42,
+     42,
+     42
+    ],
+    "chunk_hex": "004589bf004589bf004589bf004589bf"
+   },
+   {
+    "rank": 32,
+    "pixels": [
+     58,
+     58,
+     58,
+     58
+    ],
+    "chunk_hex": "2b264bbf2b264bbf2b264bbf2b264bbf"
+   },
+   {
+    "rank": 33,
+    "pixels": [
+     56,
+     56,
+     56,
+     56
+    ],
+    "chunk_hex": "a61254bfa61254bfa61254bfa61254bf"
+   },
+   {
+    "rank": 34,
+    "pixels": [
+     43,
+     43,
+     43,
+     43
+    ],
+    "chunk_hex": "e20987bfe20987bfe20987bfe20987bf"
+   },
+   {
+    "rank": 35,
+    "pixels": [
+     24,
+     24,
+     24,
+     24
+    ],
+    "chunk_hex": "296db1bf296db1bf296db1bf296db1bf"
+   },
+   {
+    "rank": 36,
+    "pixels": [
+     55,
+     55,
+     55,
+     55
+    ],
+    "chunk_hex": "e38858bfe38858bfe38858bfe38858bf"
+   },
+   {
+    "rank": 37,
+    "pixels": [
+     44,
+     44,
+     44,
+     44
+    ],
+    "chunk_hex": "c3ce84bfc3ce84bfc3ce84bfc3ce84bf"
+   },
+   {
+    "rank": 38,
+    "pixels": [
+     59,
+     59,
+     59,
+     59
+    ],
+    "chunk_hex": "eeaf46bfeeaf46bfeeaf46bfeeaf46bf"
+   },
+   {
+    "rank": 39,
+    "pixels": [
+     54,
+     54,
+     54,
+     54
+    ],
+    "chunk_hex": "21ff5cbf21ff5cbf21ff5cbf21ff5cbf"
+   },
+   {
+    "rank": 40,
+    "pixels": [
+     45,
+     45,
+     45,
+     45
+    ],
+    "chunk_hex": "a49382bfa49382bfa49382bfa49382bf"
+   },
+   {
+    "rank": 41,
+    "pixels": [
+     53,
+     53,
+     53,
+     53
+    ],
+    "chunk_hex": "5e7561bf5e7561bf5e7561bf5e7561bf"
+   },
+   {
+    "rank": 42,
+    "pixels": [
+     52,
+     52,
+     52,
+     52
+    ],
+    "chunk_hex": "9beb65bf9beb65bf9beb65bf9beb65bf"
+   },
+   {
+    "rank": 43,
+    "pixels": [
+     205,
+     205,
+     205,
+     205
+    ],
+    "chunk_hex": "895fe23f895fe23f895fe23f895fe23f"
+   },
+   {
+    "rank": 44,
+    "pixels": [
+     23,
+     23,
+     23,
+     23
+    ],
+    "chunk_hex": "48a8b3bf48a8b3bf48a8b3bf48a8b3bf"
+   },
+   {
+    "rank": 45,
+    "pixels": [
+     46,
+     46,
+     46,
+     46
+    ],
+    "chunk_hex": "865880bf865880bf865880bf865880bf"
+   },
+   {
+    "rank": 46,
+    "pixels": [
+     47,
+     47,
+     47,
+     47
+    ],
+    "chunk_hex": "ce3a7cbfce3a7cbfce3a7cbfce3a7cbf"
+   },
+   {
+    "rank": 47,
+    "pixels": [
+     51,
+     51,
+     51,
+     51
+    ],
+    "chunk_hex": "d9616abfd9616abfd9616abfd9616abf"
+   },
+   {
+    "rank": 48,
+    "pixels": [
+     49,
+     49,
+     49,
+     49
+    ],
+    "chunk_hex": "534e73bf534e73bf534e73bf534e73bf"
+   },
+   {
+    "rank": 49,
+    "pixels": [
+     60,
+     60,
+     60,
+     60
+    ],
+    "chunk_hex": "b13942bfb13942bfb13942bfb13942bf"
+   },
+   {
+    "rank": 50,
+    "pixels": [
+     22,
+     22,
+     22,
+     22
+    ],
+    "chunk_hex": "66e3b5bf66e3b5bf66e3b5bf66e3b5bf"
+   },
+   {
+    "rank": 51,
+    "pixels": [
+     48,
+     48,
+     48,
+     48
+    ],
+    "chunk_hex": "91c477bf91c477bf91c477bf91c477bf"
+   },
+   {
+    "rank": 52,
+    "pixels": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "chunk_hex": "9932ccbf9932ccbf9932ccbf9932ccbf"
+   },
+   {
+    "rank": 53,
+    "pixels": [
+     21,
+     21,
+     21,
+     21
+    ],
+    "chunk_hex": "851eb8bf851eb8bf851eb8bf851eb8bf"
+   },
+   {
+    "rank": 54,
+    "pixels": [
+     61,
+     61,
+     61,
+     61
+    ],
+    "chunk_hex": "73c33dbf73c33dbf73c33dbf73c33dbf"
+   },
+   {
+    "rank": 55,
+    "pixels": [
+     62,
+     62,
+     62,
+     62
+    ],
+    "chunk_hex": "364d39bf364d39bf364d39bf364d39bf"
+   },
+   {
+    "rank": 56,
+    "pixels": [
+     20,
+     20,
+     20,
+     20
+    ],
+    "chunk_hex": "a459babfa459babfa459babfa459babf"
+   },
+   {
+    "rank": 57,
+    "pixels": [
+     63,
+     63,
+     63,
+     63
+    ],
+    "chunk_hex": "f9d634bff9d634bff9d634bff9d634bf"
+   },
+   {
+    "rank": 58,
+    "pixels": [
+     16,
+     16,
+     16,
+     16
+    ],
+    "chunk_hex": "1e46c3bf1e46c3bf1e46c3bf1e46c3bf"
+   },
+   {
+    "rank": 59,
+    "pixels": [
+     64,
+     64,
+     64,
+     64
+    ],
+    "chunk_hex": "ba6030bfba6030bfba6030bfba6030bf"
+   },
+   {
+    "rank": 60,
+    "pixels": [
+     13,
+     13,
+     13,
+     13
+    ],
+    "chunk_hex": "7af7c9bf7af7c9bf7af7c9bf7af7c9bf"
+   },
+   {
+    "rank": 61,
+    "pixels": [
+     65,
+     65,
+     65,
+     65
+    ],
+    "chunk_hex": "7dea2bbf7dea2bbf7dea2bbf7dea2bbf"
+   },
+   {
+    "rank": 62,
+    "pixels": [
+     19,
+     19,
+     19,
+     19
+    ],
+    "chunk_hex": "c294bcbfc294bcbfc294bcbfc294bcbf"
+   },
+   {
+    "rank": 63,
+    "pixels": [
+     66,
+     66,
+     66,
+     66
+    ],
+    "chunk_hex": "3f7427bf3f7427bf3f7427bf3f7427bf"
+   }
+  ]
+ }
+}

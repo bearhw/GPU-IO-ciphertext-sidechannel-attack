@@ -1,0 +1,20 @@
+{
+  "index": 3235,
+  "host_base": "0x196b0f000",
+  "gt_base": "0x196b0f000",
+  "gt_indication": "Chest pain, shortness of breath, dizziness, weakness.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 17.225722312927246,
+  "timestamp": 1793303599.6713643,
+  "status": "SUCCESS"
+}

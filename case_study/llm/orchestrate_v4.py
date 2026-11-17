@@ -1348,6 +1348,121 @@ def _find_pad_end(base_gpa: int, cache: dict, swap_tool: str, pad_start: int) ->
     return last_true
 
 
+def _ipad_page_bitmap(page_gpa: int, cache: dict,
+                      swap_tool: str) -> dict[int, bool] | None:
+    """One guest page -> {page_offset: bool} for every 16B-aligned block,
+    True iff the block holds two image_pad tokens. Two swap-reads per distinct
+    image_pad dict page (2 for the v4 dict), each compared at every offset it
+    is registered for, OR-ed together. None if no read of some dict page
+    succeeded.
+
+    Why two reads: a swap-read now and then returns a page with a few blocks
+    that do not match although the plaintext is pad (run 1 / v2-r1 sample 12:
+    the same page read N=302 in Stage 4 and N=88 in Stage 5). A wrong read can
+    only turn a pad block into a non-pad one -- equal ciphertext by accident
+    does not happen -- so OR-ing two reads removes those misses without ever
+    inventing pad."""
+    by_dict: dict[tuple[int, str], list[int]] = {}
+    for o in range(0, 4096, 16):
+        e = cache.get(hex(o), {}).get(str(_IPAD4_IDX))
+        if e is None:
+            return None
+        by_dict.setdefault((int(e["gpa"], 16), e["cp_file"]), []).append(o)
+    out: dict[int, bool] = {}
+    for (dict_gpa, cp_file), offs in by_dict.items():
+        cp = _parse_cp_file(Path(cp_file))
+        if cp is None:
+            return None
+        n_ok = 0
+        for _ in range(2):
+            time.sleep(_SWAP_PACE_SEC)
+            raw, _reason = _swap_read_raw(swap_tool, dict_gpa, page_gpa)
+            if raw is None:
+                continue
+            n_ok += 1
+            for o in offs:
+                out[o] = out.get(o, False) or raw[o:o + 16] == cp[o:o + 16]
+        if n_ok == 0:
+            return None
+    return out
+
+
+# Pad bounds measured by Stage 4 for a page, reused by Stage 5's sweep_blind
+# (same process, a second or two later) instead of re-reading the page:
+# {base_gpa: (time, pad_start, N)}. A later sample can reuse the same base_gpa
+# only after a fresh inference (tens of seconds), hence the short TTL.
+_PAD_BOUNDS_MEMO: dict[int, tuple[float, int, int]] = {}
+_PAD_BOUNDS_MEMO_TTL = 20.0
+
+# Non-pad blocks tolerated inside the run before it counts as ended. The real
+# end is followed by ~14 blocks of prompt template with no pad in it, so a
+# short gap cannot join the run to anything that is not padding.
+_PAD_RUN_GAP_BLOCKS = 3
+
+
+def _estimate_pad_bounds_bitmap(base_gpa: int, cache: dict,
+                                swap_tool: str) -> tuple[int | None, int | None]:
+    """Read the image_pad run directly instead of binary-searching for it.
+
+    The binary search in _find_pad_end trusts every single probe: one wrong
+    or inconclusive answer early on (e.g. the first mid landing on the next
+    tensor page) throws away half the range for good, which is how run 1 got
+    N_est=210 for a true N=729 over and over -- the Phase-2 window then sat
+    hundreds of tokens before the indication. Here every block of every page
+    the run touches is compared (two reads OR-ed, see _ipad_page_bitmap), and
+    the run ends only after _PAD_RUN_GAP_BLOCKS non-pad blocks in a row, so
+    neither one bad read nor one bad block can cut it short. 4 swaps per
+    tensor page, usually 4-8 in total (vs ~15 for start+binary search).
+
+    Block granularity leaves +-1 token at each edge; the Phase-2 window
+    (POST_SCAN_MIN..MAX past the end) is far wider than that. Returns
+    (pad_start, N) with pad_start + N = exclusive end of the run, or
+    (None, None) when no plausible run is seen (caller falls back).
+    """
+    if base_gpa % 16:
+        return None, None
+    page0     = base_gpa & ~0xFFF
+    start_max = HEADER_CONST_MAX + 8                 # pad never starts later
+    tok_limit = start_max + max(KNOWN_N_VALUES) + 16  # nor ends later
+    pad_start: int | None = None
+    last_pad: int | None = None      # token index of the last pad block seen
+    k = 0
+    while True:
+        page_gpa = page0 + k * 4096
+        bm = _ipad_page_bitmap(page_gpa, cache, swap_tool)
+        if bm is None:
+            log_err(f"  [pad-bitmap] read of tensor page {k} failed")
+            return None, None
+        for o in range(0, 4096, 16):
+            t = (page_gpa + o - base_gpa) // 8
+            if t < 0:
+                continue
+            if pad_start is None:
+                if bm[o]:
+                    pad_start = last_pad = t
+                elif t > start_max:
+                    log_err("  [pad-bitmap] no image_pad run near the start")
+                    return None, None
+            elif bm[o]:
+                last_pad = t
+            elif t - last_pad > 2 * _PAD_RUN_GAP_BLOCKS:
+                n = last_pad + 2 - pad_start
+                # Stage 3 often lands on a LATER page of the tensor, so the
+                # run can start at token 0 (it continues from the previous
+                # page) and only its tail is on this page -- any length is
+                # fine then. A run that starts on this page must be a full N.
+                if pad_start > 0 and n < min(KNOWN_N_VALUES) - 4:
+                    log_err(f"  [pad-bitmap] run too short (start={pad_start} n={n})")
+                    return None, None
+                log(f"  [pad-bitmap] pad_start={pad_start}  N={n}  "
+                    f"({k + 1} page(s) read)")
+                return pad_start, n
+        k += 1
+        if (page0 + k * 4096 - base_gpa) // 8 > tok_limit:
+            log_err("  [pad-bitmap] run never ends within the largest known N")
+            return None, None
+
+
 def _estimate_pad_bounds(base_gpa: int, cache: dict,
                          swap_tool: str) -> tuple[int | None, int | None]:
     """Two-stage replacement for the old single blind-search-for-N.
@@ -1356,7 +1471,20 @@ def _estimate_pad_bounds(base_gpa: int, cache: dict,
     located at all (see _find_pad_start). N_est is snapped to the nearest
     empirically observed N_image_pad value when within N_VALUE_SNAP_TOL,
     correcting small boundary-detection noise from the swap-based probes.
+
+    The block bitmap (_estimate_pad_bounds_bitmap) is tried first; the
+    probe-based search below is only the fallback when it sees no run.
     """
+    memo = _PAD_BOUNDS_MEMO.get(base_gpa)
+    if memo is not None and time.time() - memo[0] < _PAD_BOUNDS_MEMO_TTL:
+        log(f"  [pad-bounds] reusing this sample's estimate: "
+            f"pad_start={memo[1]}  N_est={memo[2]}")
+        return memo[1], memo[2]
+    pad_start, n_est = _estimate_pad_bounds_bitmap(base_gpa, cache, swap_tool)
+    if pad_start is not None:
+        _PAD_BOUNDS_MEMO[base_gpa] = (time.time(), pad_start, n_est)
+        return pad_start, n_est
+    log("  [pad-bounds] bitmap inconclusive -- falling back to probe search")
     pad_start = _find_pad_start(base_gpa, cache, swap_tool)
     if pad_start is None:
         return None, None
@@ -1370,6 +1498,7 @@ def _estimate_pad_bounds(base_gpa: int, cache: dict,
     else:
         n_est = n_raw
     log(f"  [pad-bounds] pad_start={pad_start}  N_est={n_est}")
+    _PAD_BOUNDS_MEMO[base_gpa] = (time.time(), pad_start, n_est)
     return pad_start, n_est
 
 

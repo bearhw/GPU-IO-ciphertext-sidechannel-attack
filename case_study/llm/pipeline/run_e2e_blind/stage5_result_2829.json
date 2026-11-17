@@ -1,0 +1,32 @@
+{
+  "index": 2829,
+  "host_base": "0x1a0a57000",
+  "gt_base": "0x1a0a56000",
+  "gt_indication": "Shortness of breath and coughing up blood.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 6990166112,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 20.09561848640442,
+  "timestamp": 1793005974.9899702,
+  "status": "SUCCESS"
+}

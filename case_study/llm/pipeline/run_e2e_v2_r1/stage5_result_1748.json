@@ -1,0 +1,32 @@
+{
+  "index": 1748,
+  "host_base": "0x1a3ae8000",
+  "gt_base": "0x1a3ae7000",
+  "gt_indication": "Left-sided chest pain today, painful inspiration.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 7041091632,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.737205743789673,
+  "timestamp": 1793202800.4189534,
+  "status": "SUCCESS"
+}

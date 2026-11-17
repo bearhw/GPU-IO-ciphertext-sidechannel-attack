@@ -1,0 +1,54 @@
+{
+  "index": 2105,
+  "host_base": "0x1a53db000",
+  "gt_base": "0x1a53db000",
+  "gt_indication": "Upper back pain to rule out pneumonia. Patient states upper back pain and slight trouble breathing. Rule out pneumonia. Denied pregnancy.",
+  "recovered_labels": [
+    " Cough",
+    " fever.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 378,
+      "ind_gpa": 7067253712,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7067253712,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7067253712,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 3,
+    "false_positive_labels": [
+      "Cough",
+      "fever.",
+      "Fever."
+    ],
+    "false_positive_count": 3,
+    "recovered_labels": [
+      "Cough",
+      "fever.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.772079944610596,
+  "timestamp": 1793222567.2183955,
+  "status": "SUCCESS"
+}

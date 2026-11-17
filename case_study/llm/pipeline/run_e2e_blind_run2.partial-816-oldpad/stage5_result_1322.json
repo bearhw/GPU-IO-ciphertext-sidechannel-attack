@@ -1,0 +1,84 @@
+{
+  "index": 1322,
+  "host_base": "0x1a6d0f000",
+  "gt_base": "0x1a6d0f000",
+  "gt_indication": "Chest pain, altered mental status",
+  "recovered_labels": [
+    " COPD",
+    " COPD",
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 516,
+      "ind_gpa": 7093682208,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 7093682224,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7093682240,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7093682256,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7093682272,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7093682288,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "COPD",
+      "COPD",
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 34.766950845718384,
+  "timestamp": 1793102778.1195033,
+  "status": "SUCCESS"
+}

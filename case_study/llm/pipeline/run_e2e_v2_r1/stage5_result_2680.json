@@ -1,0 +1,41 @@
+{
+  "index": 2680,
+  "host_base": "0x198630000",
+  "gt_base": "0x198630000",
+  "gt_indication": "Weakness, cough, and shortness of breath.",
+  "recovered_labels": [
+    " cough,",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 346,
+      "ind_gpa": 6851594960,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6851594992,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.627139806747437,
+  "timestamp": 1793247944.3821483,
+  "status": "SUCCESS"
+}

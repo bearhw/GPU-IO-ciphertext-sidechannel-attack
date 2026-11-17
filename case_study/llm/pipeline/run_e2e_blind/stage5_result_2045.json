@@ -1,0 +1,32 @@
+{
+  "index": 2045,
+  "host_base": "0x197066000",
+  "gt_base": "0x197066000",
+  "gt_indication": "Chest pain, short of breath, VFIB.",
+  "recovered_labels": [
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 6828747520,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 18.837812185287476,
+  "timestamp": 1792969868.507283,
+  "status": "SUCCESS"
+}

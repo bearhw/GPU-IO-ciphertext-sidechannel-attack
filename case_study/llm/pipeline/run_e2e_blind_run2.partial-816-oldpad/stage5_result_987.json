@@ -1,0 +1,32 @@
+{
+  "index": 987,
+  "host_base": "0x1a7329000",
+  "gt_base": "0x1a7329000",
+  "gt_indication": "Cough and congestion for 1 month. Left-sided chest pain. Initial encounter.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 756,
+      "ind_gpa": 7100082080,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 19.264601230621338,
+  "timestamp": 1793089278.5478914,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 1714,
+  "host_base": "0x1add9e000",
+  "gt_base": "0x1add9e000",
+  "gt_indication": "62-year-old with shortness of breath and chest pain.",
+  "recovered_labels": [
+    "ness of",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 7211707152,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 7211707184,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 19.17538022994995,
+  "timestamp": 1792953799.6555254,
+  "status": "SUCCESS"
+}

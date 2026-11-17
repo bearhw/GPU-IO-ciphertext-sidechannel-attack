@@ -84,6 +84,14 @@ def main():
                    help="Defaults to captures/<split>")
     p.add_argument("--out-dir", default=str(HERE / "datasets"))
     p.add_argument("--limit", type=int, default=None, help="Stop after N samples")
+    p.add_argument("--blind-only", action="store_true",
+                   help="Keep only blind captures — samples whose 2MB block was "
+                        "chosen by the probe (probe_choice set), not handed over by "
+                        "the guest. captures/<split> mixes both when a blind run "
+                        "overwrote only part of an earlier block-given run.")
+    p.add_argument("--tag", default=None,
+                   help="Output filename stem (default: <split>). Use e.g. "
+                        "valid_blind to keep the blind set beside the block-given one.")
     args = p.parse_args()
 
     cap = Path(args.capture_dir) if args.capture_dir else CAPTURE_ROOT / args.split
@@ -111,6 +119,11 @@ def main():
             continue
         if cls not in c.CLASS2IDX:
             skipped[f"unknown class {cls}"] += 1
+            continue
+        if args.blind_only and meta.get("probe_choice") is None:
+            # Block came from the guest, not the blind probe — not part of the blind
+            # evaluation set. (A blind sample always records which candidate won.)
+            skipped["not blind"] += 1
             continue
         if not bid:
             # Captured before boot ids were recorded: the matching references cannot
@@ -140,7 +153,7 @@ def main():
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    tag = f"{args.split}_{args.n_ref}ref"
+    tag = f"{args.tag or args.split}_{args.n_ref}ref"
     x = np.stack(maps)
     np.save(out_dir / f"{tag}_slices.npy", x)
     np.save(out_dir / f"{tag}_labels.npy", np.array(labels, dtype=np.int64))

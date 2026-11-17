@@ -1,0 +1,20 @@
+{
+  "index": 1566,
+  "host_base": "0x19221a000",
+  "gt_base": "0x1976c0000",
+  "gt_indication": "cough wheezing",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 31.50263261795044,
+  "timestamp": 1793377393.8803134,
+  "status": "SUCCESS"
+}

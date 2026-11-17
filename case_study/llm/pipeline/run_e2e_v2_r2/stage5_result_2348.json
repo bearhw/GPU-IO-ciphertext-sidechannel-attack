@@ -1,0 +1,50 @@
+{
+  "index": 2348,
+  "host_base": "0x1a10db000",
+  "gt_base": "0x1a10db000",
+  "gt_indication": "Fever, cough, shortness of breath. History lymphoma.",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 722,
+      "ind_gpa": 6997001872,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 724,
+      "ind_gpa": 6997001888,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 726,
+      "ind_gpa": 6997001904,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.444629192352295,
+  "timestamp": 1793412050.8083265,
+  "status": "SUCCESS"
+}

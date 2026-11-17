@@ -1,0 +1,84 @@
+{
+  "index": 865,
+  "host_base": "0x13a369000",
+  "gt_base": "0x13a369000",
+  "gt_indication": "Chest pain, sore throat, cough and back pain. Tachycardia. Weakness.",
+  "recovered_labels": [
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 556,
+      "ind_gpa": 5271626080,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5271626096,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5271626112,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5271626112,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5271626128,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5271626128,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 18.987333059310913,
+  "timestamp": 1792923367.1029112,
+  "status": "SUCCESS"
+}

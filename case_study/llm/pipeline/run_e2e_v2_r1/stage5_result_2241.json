@@ -1,0 +1,32 @@
+{
+  "index": 2241,
+  "host_base": "0x1a4531000",
+  "gt_base": "0x1a4531000",
+  "gt_indication": "Acute onset of central chest pain, radiating to the right arm. Initial encounter.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 620,
+      "ind_gpa": 7051879264,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.065211057662964,
+  "timestamp": 1793227792.4447682,
+  "status": "SUCCESS"
+}

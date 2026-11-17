@@ -1,0 +1,32 @@
+{
+  "index": 1577,
+  "host_base": "0x1a26ab000",
+  "gt_base": "0x1a26ab000",
+  "gt_indication": "central catheter placement",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 7019873264,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.776651859283447,
+  "timestamp": 1793377548.9913905,
+  "status": "SUCCESS"
+}

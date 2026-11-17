@@ -1,0 +1,59 @@
+{
+  "index": 3418,
+  "host_base": "0x1a3097000",
+  "gt_base": "0x1a3096000",
+  "gt_indication": "Cough, shortness of breath, pneumonia 3 weeks.",
+  "recovered_labels": [
+    " Cough",
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7030274080,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 7030274096,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 7030274112,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 7030274128,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 16.935417652130127,
+  "timestamp": 1793029342.0489533,
+  "status": "SUCCESS"
+}

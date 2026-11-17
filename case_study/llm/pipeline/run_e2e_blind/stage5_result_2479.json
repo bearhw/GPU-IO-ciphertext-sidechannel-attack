@@ -1,0 +1,20 @@
+{
+  "index": 2479,
+  "host_base": "0x198b9d000",
+  "gt_base": "0x1a14c2000",
+  "gt_indication": "4-month-old with wheezing, congestion and fever.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 21.27936363220215,
+  "timestamp": 1792991499.7733965,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 2638,
+  "host_base": "0x1a04b0000",
+  "gt_base": "0x1a04b0000",
+  "gt_indication": "Replacement of umbilical vein catheter. Left pneumothorax.",
+  "recovered_labels": [
+    " catheter",
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 318,
+      "ind_gpa": 6984239600,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 322,
+      "ind_gpa": 6984239632,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter",
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 15.271753311157227,
+  "timestamp": 1793420955.027383,
+  "status": "SUCCESS"
+}

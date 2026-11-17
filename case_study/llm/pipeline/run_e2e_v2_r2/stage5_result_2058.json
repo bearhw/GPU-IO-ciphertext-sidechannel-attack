@@ -1,0 +1,41 @@
+{
+  "index": 2058,
+  "host_base": "0x19b9f8000",
+  "gt_base": "0x19b9f8000",
+  "gt_indication": "Follow-up small left pneumothorax demonstrated on exams of July 16, 1998; continued left-sided chest discomfort and shortness of breath",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 376,
+      "ind_gpa": 6905891776,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6905891792,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.572502851486206,
+  "timestamp": 1793462481.0850463,
+  "status": "SUCCESS"
+}

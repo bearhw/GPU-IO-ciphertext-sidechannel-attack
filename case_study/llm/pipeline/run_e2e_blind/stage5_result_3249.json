@@ -1,0 +1,41 @@
+{
+  "index": 3249,
+  "host_base": "0x13fab1000",
+  "gt_base": "0x13c274000",
+  "gt_indication": "MVA - trauma with anterior left knee and left upper chest pain, shortness of breath, nonsmoker / asthma.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 274,
+      "ind_gpa": 5363144848,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 5363144864,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 20.387067556381226,
+  "timestamp": 1793047894.7956827,
+  "status": "SUCCESS"
+}

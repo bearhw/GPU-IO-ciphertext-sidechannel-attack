@@ -1,0 +1,32 @@
+{
+  "index": 179,
+  "host_base": "0x19f811000",
+  "gt_base": "0x19f810000",
+  "gt_indication": "Chest pain associated with headache and nausea; history of atrial fibrillation, rest angina, asthma, former smoker.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6971004960,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.550737619400024,
+  "timestamp": 1793320885.9483256,
+  "status": "SUCCESS"
+}

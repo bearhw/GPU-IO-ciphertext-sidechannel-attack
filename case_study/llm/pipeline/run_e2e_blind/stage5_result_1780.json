@@ -1,0 +1,64 @@
+{
+  "index": 1780,
+  "host_base": "0x1a0189000",
+  "gt_base": "0x1a0189000",
+  "gt_indication": "Respiratory failure, right-sided chest pain, history of GI bleeding, Barrett's esophagus, nonsmoker.",
+  "recovered_labels": [
+    " PICC",
+    " fever.",
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 666,
+      "ind_gpa": 6980936912,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6980936912,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6980936928,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6980936928,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "PICC",
+      "fever.",
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.649075269699097,
+  "timestamp": 1792956522.6254168,
+  "status": "SUCCESS"
+}

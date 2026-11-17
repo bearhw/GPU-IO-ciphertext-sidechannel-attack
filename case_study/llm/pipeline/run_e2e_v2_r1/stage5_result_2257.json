@@ -1,0 +1,41 @@
+{
+  "index": 2257,
+  "host_base": "0x199591000",
+  "gt_base": "0x199591000",
+  "gt_indication": "Short of breath. Respiratory failure.",
+  "recovered_labels": [
+    " breath.",
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 368,
+      "ind_gpa": 6867721088,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6867721104,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath.",
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 15.16080379486084,
+  "timestamp": 1793228314.516916,
+  "status": "SUCCESS"
+}

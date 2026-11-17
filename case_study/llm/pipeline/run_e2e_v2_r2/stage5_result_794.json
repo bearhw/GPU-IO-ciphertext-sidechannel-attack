@@ -1,0 +1,32 @@
+{
+  "index": 794,
+  "host_base": "0x1a66e2000",
+  "gt_base": "0x1a66e2000",
+  "gt_indication": "65 y/o M; shortness of breath and chest tightness. Status post radiation therapy on chemo for lung cancer.",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 760,
+      "ind_gpa": 7087208384,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 15.832523107528687,
+  "timestamp": 1793347383.6989856,
+  "status": "SUCCESS"
+}

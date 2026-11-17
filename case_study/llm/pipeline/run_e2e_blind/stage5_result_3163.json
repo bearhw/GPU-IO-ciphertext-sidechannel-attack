@@ -1,0 +1,20 @@
+{
+  "index": 3163,
+  "host_base": "0x1a17d4000",
+  "gt_base": "0x1a17d4000",
+  "gt_indication": "Cough and fever for 4 days",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 17.358336687088013,
+  "timestamp": 1793019722.0862875,
+  "status": "SUCCESS"
+}

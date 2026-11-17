@@ -1,0 +1,41 @@
+{
+  "index": 650,
+  "host_base": "0x1a184f000",
+  "gt_base": "0x1a184f000",
+  "gt_indication": "Shortness of breath. Asthma.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7004814048,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 7004814064,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 18.708284378051758,
+  "timestamp": 1793077850.477604,
+  "status": "SUCCESS"
+}

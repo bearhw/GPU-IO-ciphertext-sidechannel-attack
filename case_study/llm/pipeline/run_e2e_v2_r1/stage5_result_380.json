@@ -1,0 +1,104 @@
+{
+  "index": 380,
+  "host_base": "0x1a6ef2000",
+  "gt_base": "0x1a6ef1000",
+  "gt_indication": "Patient with GI bleed denies dyspnea or chest pain.",
+  "recovered_labels": [
+    " wheez",
+    " wheez",
+    " wheez",
+    " wheez",
+    " wheez",
+    " wheez",
+    " wheez",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 278,
+      "ind_gpa": 7095658672,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 7095658688,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 7095658704,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 7095658720,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 7095658736,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 7095658752,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7095658768,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 7095658784,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.738410711288452,
+  "timestamp": 1793144688.8184662,
+  "status": "SUCCESS"
+}

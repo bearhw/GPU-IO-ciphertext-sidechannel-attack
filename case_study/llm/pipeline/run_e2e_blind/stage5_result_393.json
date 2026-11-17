@@ -1,0 +1,41 @@
+{
+  "index": 393,
+  "host_base": "0x1a89db000",
+  "gt_base": "0x1a89da000",
+  "gt_indication": "Shortness of breath, getting worse last few days. History of stroke, CVA, hypertension, diabetes.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7123875872,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 7123875888,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 18.569098949432373,
+  "timestamp": 1792898424.7614305,
+  "status": "SUCCESS"
+}

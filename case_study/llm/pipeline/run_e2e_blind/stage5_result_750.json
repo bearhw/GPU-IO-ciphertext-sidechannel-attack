@@ -1,0 +1,41 @@
+{
+  "index": 750,
+  "host_base": "0x1a44ed000",
+  "gt_base": "0x1a44ec000",
+  "gt_indication": "Follow-up CABG.",
+  "recovered_labels": [
+    " Follow-up",
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7051597856,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 7051597872,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up",
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 20.655876874923706,
+  "timestamp": 1793300638.3242705,
+  "status": "SUCCESS"
+}

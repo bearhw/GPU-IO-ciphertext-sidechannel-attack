@@ -1,0 +1,32 @@
+{
+  "index": 1506,
+  "host_base": "0x1a15eb000",
+  "gt_base": "0x1a15ea000",
+  "gt_indication": "Fever. Recent drain removal.",
+  "recovered_labels": [
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 266,
+      "ind_gpa": 7002306640,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.569759607315063,
+  "timestamp": 1793375914.1958563,
+  "status": "SUCCESS"
+}

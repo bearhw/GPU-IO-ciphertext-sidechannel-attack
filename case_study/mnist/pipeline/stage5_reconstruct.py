@@ -205,13 +205,23 @@ class ModelSuite:
 
 _MNIST_DATASET_CACHE = None
 
+# Ground truth split. Blind end-to-end evaluation scores against the MNIST test
+# split (t10k) by default — the images the guest infers must be ones no model saw
+# (the captures and v6r's retrieval DB are all the train split). The guest apps
+# honor the same MNIST_SPLIT env var, so host and guest stay on the same images.
+# Set MNIST_SPLIT=train to score against the train split instead.
+USE_TRAIN_SPLIT = os.environ.get("MNIST_SPLIT", "test").lower() == "train"
+_RAW_IMAGES = "train-images-idx3-ubyte" if USE_TRAIN_SPLIT else "t10k-images-idx3-ubyte"
+_RAW_LABELS = "train-labels-idx1-ubyte" if USE_TRAIN_SPLIT else "t10k-labels-idx1-ubyte"
+
+
 def get_mnist_dataset():
     global _MNIST_DATASET_CACHE
     if _MNIST_DATASET_CACHE is None:
         try:
             from torchvision import datasets, transforms
-            _MNIST_DATASET_CACHE = datasets.MNIST(str(c.DEFAULT_DATA_DIR), train=True, download=False,
-                                                 transform=transforms.ToTensor())
+            _MNIST_DATASET_CACHE = datasets.MNIST(str(c.DEFAULT_DATA_DIR), train=USE_TRAIN_SPLIT,
+                                                 download=False, transform=transforms.ToTensor())
         except Exception:
             _MNIST_DATASET_CACHE = False
     return _MNIST_DATASET_CACHE
@@ -219,8 +229,8 @@ def get_mnist_dataset():
 
 def load_mnist_ground_truth(index: int) -> Tuple[Optional[np.ndarray], Optional[int]]:
     """Load Ground Truth MNIST image (28x28 float32 in [0, 1]) and label for index."""
-    raw_images_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / "train-images-idx3-ubyte"
-    raw_labels_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / "train-labels-idx1-ubyte"
+    raw_images_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / _RAW_IMAGES
+    raw_labels_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / _RAW_LABELS
     if raw_images_path.exists() and raw_labels_path.exists():
         try:
             with open(raw_images_path, "rb") as f_img:
@@ -244,8 +254,8 @@ def load_mnist_ground_truth(index: int) -> Tuple[Optional[np.ndarray], Optional[
 
 def load_mnist_ground_truth_batch(start_idx: int, count: int) -> Tuple[Optional[np.ndarray], Optional[List[int]]]:
     """Load batch of Ground Truth MNIST images (B, 28, 28) and labels quickly."""
-    raw_images_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / "train-images-idx3-ubyte"
-    raw_labels_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / "train-labels-idx1-ubyte"
+    raw_images_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / _RAW_IMAGES
+    raw_labels_path = c.DEFAULT_DATA_DIR / "MNIST" / "raw" / _RAW_LABELS
     if raw_images_path.exists() and raw_labels_path.exists():
         try:
             with open(raw_images_path, "rb") as f_img:
@@ -380,6 +390,7 @@ def print_ssim_table(index: int, label: Optional[int], metrics: Dict[str, Dict[s
 def run_stage5(index: int, output_dir: Path, sparsity: Optional[List[int]] = None,
                label: Optional[int] = None, batch_size: int = 1) -> Dict:
     """Execute Stage 5."""
+    _stage_t0 = time.time()
     dumps_dir, logs_dir, results_dir = c.get_output_subdirs(output_dir)
 
     # Check for metadata batch size
@@ -500,8 +511,10 @@ def run_stage5(index: int, output_dir: Path, sparsity: Optional[List[int]] = Non
             "ssim_v10": ssims.get("v10"),
             "comparison_png": str(comp_png),
             "per_image_results": per_image_results,
+            "recon_time_sec": round(time.time() - _stage_t0, 4),
             "timestamp": time.time(),
         }
+        print(f"[stage5] Reconstruction + SSIM stage took {meta['recon_time_sec']:.2f}s")
         c.save_json(metrics_json, meta)
         # Also maintain metrics_{index}.json
         c.save_json(results_dir / f"metrics_{index}.json", meta)
@@ -567,6 +580,7 @@ def run_stage5(index: int, output_dir: Path, sparsity: Optional[List[int]] = Non
         "ssim_v9r": ssims.get("v9r"),
         "ssim_v10": ssims.get("v10"),
         "comparison_png": str(comp_png),
+        "recon_time_sec": round(time.time() - _stage_t0, 4),
         "timestamp": time.time(),
     }
     c.save_json(metrics_json, meta)

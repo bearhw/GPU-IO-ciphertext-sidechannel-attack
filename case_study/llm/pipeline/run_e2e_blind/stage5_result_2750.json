@@ -1,0 +1,41 @@
+{
+  "index": 2750,
+  "host_base": "0x19f049000",
+  "gt_base": "0x19f049000",
+  "gt_indication": "Chest pain, chronic cough",
+  "recovered_labels": [
+    " Chest pain",
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 718,
+      "ind_gpa": 6962849392,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 722,
+      "ind_gpa": 6962849424,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain",
+      "cough."
+    ]
+  },
+  "elapsed_sec": 18.938146829605103,
+  "timestamp": 1793003721.7624714,
+  "status": "SUCCESS"
+}

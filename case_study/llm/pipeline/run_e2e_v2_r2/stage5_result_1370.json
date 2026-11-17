@@ -1,0 +1,364 @@
+{
+  "index": 1370,
+  "host_base": "0x12e98b000",
+  "gt_base": "0x12e98b000",
+  "gt_indication": "Cough, hemoptysis",
+  "recovered_labels": [
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " breath,",
+    " chest pain",
+    " breath,",
+    " chest pain",
+    " breath,",
+    " chest pain",
+    " breath,",
+    " chest pain",
+    " breath,",
+    " Fever.",
+    " chest pain",
+    " breath,",
+    " Fever.",
+    " chest pain",
+    " breath,",
+    " Fever.",
+    " chest pain",
+    " breath,",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever.",
+    " chest pain",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 544,
+      "ind_gpa": 5076730112,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5076730112,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5076730128,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5076730128,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5076730144,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5076730144,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5076730160,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5076730160,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5076730176,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5076730176,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5076730192,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5076730192,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5076730208,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5076730208,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5076730224,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5076730224,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5076730240,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5076730240,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5076730240,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5076730256,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5076730256,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5076730256,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5076730272,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5076730272,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5076730272,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5076730288,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5076730288,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5076730288,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5076730304,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5076730304,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5076730320,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5076730320,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5076730336,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5076730336,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 34,
+    "false_positive_labels": [
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "breath,",
+      "chest pain",
+      "breath,",
+      "chest pain",
+      "breath,",
+      "chest pain",
+      "breath,",
+      "chest pain",
+      "breath,",
+      "Fever.",
+      "chest pain",
+      "breath,",
+      "Fever.",
+      "chest pain",
+      "breath,",
+      "Fever.",
+      "chest pain",
+      "breath,",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever."
+    ],
+    "false_positive_count": 34,
+    "recovered_labels": [
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "breath,",
+      "chest pain",
+      "breath,",
+      "chest pain",
+      "breath,",
+      "chest pain",
+      "breath,",
+      "chest pain",
+      "breath,",
+      "Fever.",
+      "chest pain",
+      "breath,",
+      "Fever.",
+      "chest pain",
+      "breath,",
+      "Fever.",
+      "chest pain",
+      "breath,",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever.",
+      "chest pain",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.541788339614868,
+  "timestamp": 1793370247.116023,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,50 @@
+{
+  "index": 2219,
+  "host_base": "0x198162000",
+  "gt_base": "0x198161000",
+  "gt_indication": "Nausea. Shortness of breath. COVID-19 positive.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 238,
+      "ind_gpa": 6846556016,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 240,
+      "ind_gpa": 6846556032,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 242,
+      "ind_gpa": 6846556048,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 21.504026174545288,
+  "timestamp": 1792977196.6231709,
+  "status": "SUCCESS"
+}

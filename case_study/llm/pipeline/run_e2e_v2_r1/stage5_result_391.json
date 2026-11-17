@@ -1,0 +1,154 @@
+{
+  "index": 391,
+  "host_base": "0x139d9b000",
+  "gt_base": "0x139d9b000",
+  "gt_indication": "84-year-old female with chest pain.",
+  "recovered_labels": [
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 5265539232,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5265539248,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5265539264,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5265539296,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5265539312,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5265539328,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5265539344,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5265539392,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5265539440,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5265539456,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5265539472,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5265539488,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5265539504,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 13,
+    "false_positive_labels": [
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough."
+    ],
+    "false_positive_count": 13,
+    "recovered_labels": [
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough."
+    ]
+  },
+  "elapsed_sec": 15.464150428771973,
+  "timestamp": 1793299514.452003,
+  "status": "SUCCESS"
+}

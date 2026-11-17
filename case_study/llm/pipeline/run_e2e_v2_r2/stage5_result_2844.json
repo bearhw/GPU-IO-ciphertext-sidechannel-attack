@@ -1,0 +1,41 @@
+{
+  "index": 2844,
+  "host_base": "0x13a110000",
+  "gt_base": "0x13a110000",
+  "gt_indication": "Cough, short of breath, fever",
+  "recovered_labels": [
+    " breath,",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 5269162752,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 5269162768,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath,",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.954384803771973,
+  "timestamp": 1793430189.3015914,
+  "status": "SUCCESS"
+}

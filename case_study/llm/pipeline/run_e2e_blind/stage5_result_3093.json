@@ -1,0 +1,20 @@
+{
+  "index": 3093,
+  "host_base": "0x1a073d000",
+  "gt_base": "0x1a073c000",
+  "gt_indication": "Pacemaker insertion 1 week ago, pain and shortness of breath",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 6.689032793045044,
+  "timestamp": 1793018012.538032,
+  "status": "SUCCESS"
+}

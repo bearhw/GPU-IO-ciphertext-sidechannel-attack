@@ -1,0 +1,41 @@
+{
+  "index": 3131,
+  "host_base": "0x13e00e000",
+  "gt_base": "0x13e00e000",
+  "gt_indication": "chest pressure; shortness of breath",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 442,
+      "ind_gpa": 5335215568,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 444,
+      "ind_gpa": 5335215584,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.701677322387695,
+  "timestamp": 1793262874.7395656,
+  "status": "SUCCESS"
+}

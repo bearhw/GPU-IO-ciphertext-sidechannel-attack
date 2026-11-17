@@ -1,0 +1,41 @@
+{
+  "index": 1415,
+  "host_base": "0x144533000",
+  "gt_base": "0x144533000",
+  "gt_indication": "82 year old with atrial fibrillation, shortness of breath, and cough.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 5441272624,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5441272640,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.558593511581421,
+  "timestamp": 1793191613.6526234,
+  "status": "SUCCESS"
+}

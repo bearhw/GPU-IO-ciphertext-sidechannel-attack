@@ -1,0 +1,41 @@
+{
+  "index": 1705,
+  "host_base": "0x19dace000",
+  "gt_base": "0x19dace000",
+  "gt_indication": "Early pneumonia. Follow-up. Cough, congestion, fever.",
+  "recovered_labels": [
+    " pneumonia.",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 692,
+      "ind_gpa": 6940325280,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 694,
+      "ind_gpa": 6940325296,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumonia.",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.705472469329834,
+  "timestamp": 1793201810.852706,
+  "status": "SUCCESS"
+}

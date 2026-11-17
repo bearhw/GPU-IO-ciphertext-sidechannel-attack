@@ -1,0 +1,32 @@
+{
+  "index": 484,
+  "host_base": "0x1a1043000",
+  "gt_base": "0x1a1043000",
+  "gt_indication": "Cough fever. Cough since Tuesday, Flu test negative, Covid last Jan.",
+  "recovered_labels": [
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 570,
+      "ind_gpa": 6996378064,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.542595148086548,
+  "timestamp": 1793150246.537563,
+  "status": "SUCCESS"
+}

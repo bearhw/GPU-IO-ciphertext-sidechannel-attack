@@ -1,0 +1,394 @@
+{
+  "index": 459,
+  "host_base": "0x1a40b3000",
+  "gt_base": "0x1a40b3000",
+  "gt_indication": "Hypertension.",
+  "recovered_labels": [
+    " Respiratory",
+    " COVID-",
+    " Respiratory",
+    " COVID-",
+    " Respiratory",
+    " COVID-",
+    " shortness",
+    " breath.",
+    " Respiratory",
+    " cough.",
+    " shortness",
+    " breath.",
+    " Respiratory",
+    " cough.",
+    " shortness",
+    " breath.",
+    " Respiratory",
+    " cough.",
+    " shortness",
+    " breath.",
+    " Respiratory",
+    " cough.",
+    " breath.",
+    " Respiratory",
+    " COVID-",
+    " breath.",
+    " Respiratory",
+    " COVID-",
+    " breath.",
+    " Respiratory",
+    " COVID-",
+    " breath.",
+    " Respiratory",
+    " COVID-",
+    " Respiratory",
+    " cough.",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 514,
+      "ind_gpa": 7047168016,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 514,
+      "ind_gpa": 7047168016,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 516,
+      "ind_gpa": 7047168032,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 516,
+      "ind_gpa": 7047168032,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 7047168048,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 518,
+      "ind_gpa": 7047168048,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7047168064,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7047168064,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7047168064,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7047168064,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7047168080,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7047168080,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7047168080,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7047168080,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7047168096,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7047168096,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7047168096,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7047168096,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7047168112,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7047168112,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7047168112,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7047168112,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7047168128,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7047168128,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7047168128,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 7047168144,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 7047168144,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 7047168144,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 7047168160,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 7047168160,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 7047168160,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 7047168176,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 7047168176,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 7047168176,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 7047168192,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 7047168192,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 7047168192,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 37,
+    "false_positive_labels": [
+      "Respiratory",
+      "COVID-",
+      "Respiratory",
+      "COVID-",
+      "Respiratory",
+      "COVID-",
+      "shortness",
+      "breath.",
+      "Respiratory",
+      "cough.",
+      "shortness",
+      "breath.",
+      "Respiratory",
+      "cough.",
+      "shortness",
+      "breath.",
+      "Respiratory",
+      "cough.",
+      "shortness",
+      "breath.",
+      "Respiratory",
+      "cough.",
+      "breath.",
+      "Respiratory",
+      "COVID-",
+      "breath.",
+      "Respiratory",
+      "COVID-",
+      "breath.",
+      "Respiratory",
+      "COVID-",
+      "breath.",
+      "Respiratory",
+      "COVID-",
+      "Respiratory",
+      "cough.",
+      "COVID-"
+    ],
+    "false_positive_count": 37,
+    "recovered_labels": [
+      "Respiratory",
+      "COVID-",
+      "Respiratory",
+      "COVID-",
+      "Respiratory",
+      "COVID-",
+      "shortness",
+      "breath.",
+      "Respiratory",
+      "cough.",
+      "shortness",
+      "breath.",
+      "Respiratory",
+      "cough.",
+      "shortness",
+      "breath.",
+      "Respiratory",
+      "cough.",
+      "shortness",
+      "breath.",
+      "Respiratory",
+      "cough.",
+      "breath.",
+      "Respiratory",
+      "COVID-",
+      "breath.",
+      "Respiratory",
+      "COVID-",
+      "breath.",
+      "Respiratory",
+      "COVID-",
+      "breath.",
+      "Respiratory",
+      "COVID-",
+      "Respiratory",
+      "cough.",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 33.944902181625366,
+  "timestamp": 1793300591.2470949,
+  "status": "SUCCESS"
+}

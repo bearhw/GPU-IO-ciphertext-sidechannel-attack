@@ -1,0 +1,20 @@
+{
+  "index": 2937,
+  "host_base": "0x1a1ea6000",
+  "gt_base": "0x1a1ea6000",
+  "gt_indication": "Cold like symptoms. Cough. History of hypertension and MI.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.328963279724121,
+  "timestamp": 1793435768.1471722,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 546,
+  "host_base": "0x1a0a76000",
+  "gt_base": "0x1a0a76000",
+  "gt_indication": "Pneumonia. Respiratory failure.",
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 598,
+      "ind_gpa": 6990295728,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 19.32761836051941,
+  "timestamp": 1792907750.8809757,
+  "status": "SUCCESS"
+}

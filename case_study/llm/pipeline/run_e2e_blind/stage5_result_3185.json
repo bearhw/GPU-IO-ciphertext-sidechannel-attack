@@ -1,0 +1,32 @@
+{
+  "index": 3185,
+  "host_base": "0x1a1f96000",
+  "gt_base": "0x1a1f96000",
+  "gt_indication": "Cough and chest congestion, previous history of esophageal tear",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 668,
+      "ind_gpa": 7012447456,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 19.01787567138672,
+  "timestamp": 1793020272.5211408,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,50 @@
+{
+  "index": 1338,
+  "host_base": "0x1a6f37000",
+  "gt_base": "0x1a6f37000",
+  "gt_indication": "Respiratory distress, shortness of breath for 2 hours.",
+  "recovered_labels": [
+    " Respiratory",
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 610,
+      "ind_gpa": 7095943952,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 614,
+      "ind_gpa": 7095943984,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 616,
+      "ind_gpa": 7095944000,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Respiratory",
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 19.040233373641968,
+  "timestamp": 1793103222.5956757,
+  "status": "SUCCESS"
+}

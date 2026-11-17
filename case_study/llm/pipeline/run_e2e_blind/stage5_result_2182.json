@@ -1,0 +1,41 @@
+{
+  "index": 2182,
+  "host_base": "0x1a2a47000",
+  "gt_base": "0x1a2a46000",
+  "gt_indication": "Chest pain and shortness of breath for 3 hours.",
+  "recovered_labels": [
+    " Chest pain",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7023654944,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 7023654976,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 20.468553066253662,
+  "timestamp": 1792976332.933283,
+  "status": "SUCCESS"
+}

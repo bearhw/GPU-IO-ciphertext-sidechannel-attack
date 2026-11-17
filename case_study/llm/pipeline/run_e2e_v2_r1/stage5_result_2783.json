@@ -1,0 +1,32 @@
+{
+  "index": 2783,
+  "host_base": "0x1a4edb000",
+  "gt_base": "0x1a4edb000",
+  "gt_indication": "Left anterior rib pain after fall.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 612,
+      "ind_gpa": 7062012704,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.356720209121704,
+  "timestamp": 1793251269.4700537,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 1173,
+  "host_base": "0x196569000",
+  "gt_base": "0x19656b000",
+  "gt_indication": "Shortness of breath. Hypoxia.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6817224736,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.443716526031494,
+  "timestamp": 1793356871.4228084,
+  "status": "SUCCESS"
+}

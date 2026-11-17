@@ -1,0 +1,41 @@
+{
+  "index": 3079,
+  "host_base": "0x1a00f5000",
+  "gt_base": "0x1a00f4000",
+  "gt_indication": "Cough. Short of breath.",
+  "recovered_labels": [
+    " Cough",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6980327456,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 6980327488,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 20.529810428619385,
+  "timestamp": 1793017804.6184847,
+  "status": "SUCCESS"
+}

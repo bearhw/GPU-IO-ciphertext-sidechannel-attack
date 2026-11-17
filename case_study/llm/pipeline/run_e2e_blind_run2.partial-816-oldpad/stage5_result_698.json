@@ -1,0 +1,64 @@
+{
+  "index": 698,
+  "host_base": "0x140b3f000",
+  "gt_base": "0x140b3f000",
+  "gt_indication": "Chest pain. Shortness of breath.",
+  "recovered_labels": [
+    " cough.",
+    " cough.",
+    " cough.",
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 520,
+      "ind_gpa": 5380505664,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 5380505680,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 5380505696,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 5380505712,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough."
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "cough.",
+      "cough.",
+      "cough.",
+      "cough."
+    ]
+  },
+  "elapsed_sec": 19.028985738754272,
+  "timestamp": 1793081723.3813124,
+  "status": "SUCCESS"
+}

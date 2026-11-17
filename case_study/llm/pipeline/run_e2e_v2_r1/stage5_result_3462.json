@@ -1,0 +1,32 @@
+{
+  "index": 3462,
+  "host_base": "0x197adf000",
+  "gt_base": "0x197ade000",
+  "gt_indication": "Hypoxia, weakness",
+  "recovered_labels": [
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 206,
+      "ind_gpa": 6839727728,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.640200853347778,
+  "timestamp": 1793282206.422783,
+  "status": "SUCCESS"
+}

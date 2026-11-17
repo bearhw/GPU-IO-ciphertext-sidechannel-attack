@@ -1,0 +1,32 @@
+{
+  "index": 3311,
+  "host_base": "0x19f93d000",
+  "gt_base": "0x19f93d000",
+  "gt_indication": "Followup rib fracture. Small right pneumothorax.",
+  "recovered_labels": [
+    " pneumoth"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 6972234512,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumoth"
+    ]
+  },
+  "elapsed_sec": 15.230015993118286,
+  "timestamp": 1793274429.8971603,
+  "status": "SUCCESS"
+}

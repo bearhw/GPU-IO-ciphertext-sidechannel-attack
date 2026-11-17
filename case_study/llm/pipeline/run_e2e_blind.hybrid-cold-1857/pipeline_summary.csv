@@ -1,0 +1,11 @@
+index,indication,gt_base,host_base,loc_strategy,loc_swaps,loc_match,page_delta,blind,N_pad_est,verdict,recovered_labels,top1_match,any_match,multi_match_count,false_positive_count,false_positive_labels,t_stage2,t_stage3,t_stage4,t_stage5,elapsed_sec,gt_block_rank,loc_best_hits,reason
+2,Shortness of breath and fever,0x19f8e9000,None,FAIL,40,None,None,True,,LOC_FAIL,,,,0,0,,,,,,,,0,recovered from stage3_located JSON; stage4/5 columns were never written for this sample
+5,Shortness of breath and cough,0x19f8cb000,None,FAIL,40,None,None,True,,LOC_FAIL,,,,0,0,,,,,,,,0,recovered from stage3_located JSON; stage4/5 columns were never written for this sample
+9,Respiratory distress. Twin born at 33.1 weeks gestational age.,0x1a0103000,None,FAIL,40,None,None,True,,LOC_FAIL,,,,0,0,,,,,,,,0,recovered from stage3_located JSON; stage4/5 columns were never written for this sample
+11,"MVC, complains of chest pain",0x19f73a000,None,FAIL,40,None,None,True,,LOC_FAIL,,,,0,0,,,,,,,,0,recovered from stage3_located JSON; stage4/5 columns were never written for this sample
+12,"Coughing, right chest pain",0x13cb85000,0x13cb85000,blind_cold@0x13cb85000,38,True,0,True,304,MATCH, chest pain,True,True,1,0,,21.4,40.4,3.0,19.3,84.3,332,127,"stage2: true block ranked #332 of 532 | stage3: confirmed page 0x13cb85000 via blind_cold@0x13cb85000 after 38 swap-read(s), image_pad 127/225 >= 80 | stage4: pad_start=15 N_est=304, indication window [338,380] | stage5: top-1 label matches the true indication (1 match(es) total)"
+13,Shortness of breath,0x13d062000,None,FAIL,40,None,None,True,,LOC_FAIL,,,,0,0,,,,,,,,0,recovered from stage3_located JSON; stage4/5 columns were never written for this sample
+15,,,,,,,,,,GEN_FAIL,,,,,,,16.1,,,,16.1,,,"stage2: guest inference never reported a buffer (Guest VLM stdout closed unexpectedly); no ground truth, nothing to localize"
+17,,,,,,,,,,SAMPLE_ERROR,,,,,,,,,,,,,,
+22,,,,,,,,,,SAMPLE_ERROR,,,,,,,,,,,,,,
+24,,,,,,,,,,SAMPLE_ERROR,,,,,,,,,,,,,,

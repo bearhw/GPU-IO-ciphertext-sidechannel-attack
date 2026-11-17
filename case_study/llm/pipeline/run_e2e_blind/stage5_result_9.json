@@ -1,0 +1,32 @@
+{
+  "index": 9,
+  "host_base": "0x196a2e000",
+  "gt_base": "0x19f61e000",
+  "gt_indication": "Respiratory distress. Twin born at 33.1 weeks gestational age.",
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 504,
+      "ind_gpa": 6822227904,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 21.34760046005249,
+  "timestamp": 1792888398.8482041,
+  "status": "SUCCESS"
+}

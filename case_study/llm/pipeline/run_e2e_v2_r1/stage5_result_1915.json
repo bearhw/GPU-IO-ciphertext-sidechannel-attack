@@ -1,0 +1,41 @@
+{
+  "index": 1915,
+  "host_base": "0x1a8233000",
+  "gt_base": "0x1a8232000",
+  "gt_indication": "80-year-old male with shortness of breath. Palpitations. History of congestive heart failure. Initial encounter.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 276,
+      "ind_gpa": 7115847840,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 7115847856,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.33684754371643,
+  "timestamp": 1793292307.8177257,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 1340,
+  "host_base": "0x1a15a4000",
+  "gt_base": "0x1a15a4000",
+  "gt_indication": "Cough and syncope",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 594,
+      "ind_gpa": 7002018448,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 19.550780296325684,
+  "timestamp": 1792943406.822316,
+  "status": "SUCCESS"
+}

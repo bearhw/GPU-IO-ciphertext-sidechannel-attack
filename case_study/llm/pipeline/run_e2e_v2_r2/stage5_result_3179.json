@@ -1,0 +1,32 @@
+{
+  "index": 3179,
+  "host_base": "0x1a06a0000",
+  "gt_base": "0x1a06a0000",
+  "gt_indication": "COVID pneumonia. COVID positive 11/06/2020. Patient reports persistent shortness of breath.",
+  "recovered_labels": [
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 534,
+      "ind_gpa": 6986272944,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.932697057723999,
+  "timestamp": 1793445811.7485228,
+  "status": "SUCCESS"
+}

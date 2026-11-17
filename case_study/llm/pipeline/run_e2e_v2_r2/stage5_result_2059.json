@@ -1,0 +1,20 @@
+{
+  "index": 2059,
+  "host_base": "0x19ba57000",
+  "gt_base": "0x19ba57000",
+  "gt_indication": "Cough. Strep throat one month ago. Bronchitis.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.741354703903198,
+  "timestamp": 1793462526.8402026,
+  "status": "SUCCESS"
+}

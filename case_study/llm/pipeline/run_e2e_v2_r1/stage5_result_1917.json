@@ -1,0 +1,408 @@
+{
+  "index": 1917,
+  "host_base": "0x13d452000",
+  "gt_base": "0x13d452000",
+  "gt_indication": "Chest pain, shortness of breath, atrial fibrillation. History of hypertension. Nonsmoker.",
+  "recovered_labels": [
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " CABG",
+    " pneumoth",
+    " Fever.",
+    " Respiratory",
+    " CABG",
+    " pneumoth",
+    " Fever.",
+    " Respiratory",
+    " CABG",
+    " pneumoth",
+    " Fever.",
+    " Respiratory",
+    " CABG",
+    " pneumoth",
+    " Fever.",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    " Respiratory",
+    "ness of",
+    " breath.",
+    " Respiratory",
+    "ness of",
+    " breath.",
+    " Respiratory",
+    "ness of",
+    " breath.",
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 5322911904,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5322911920,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5322911936,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 5322911952,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 5322911968,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 5322911984,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5322912000,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5322912016,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5322912032,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5322912048,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5322912064,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5322912064,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5322912064,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5322912064,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5322912080,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5322912080,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5322912080,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 5322912080,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5322912096,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5322912096,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5322912096,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 5322912096,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5322912112,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5322912112,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5322912112,
+      "token_idx": 25,
+      "n_blocks": 1,
+      "label": " pneumoth"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 5322912112,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 560,
+      "ind_gpa": 5322912128,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 5322912144,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 5322912160,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5322912176,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5322912192,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5322912192,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5322912192,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5322912208,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5322912208,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5322912208,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5322912224,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5322912224,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 5322912224,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 39,
+    "false_positive_labels": [
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "CABG",
+      "pneumoth",
+      "Fever.",
+      "Respiratory",
+      "CABG",
+      "pneumoth",
+      "Fever.",
+      "Respiratory",
+      "CABG",
+      "pneumoth",
+      "Fever.",
+      "Respiratory",
+      "CABG",
+      "pneumoth",
+      "Fever.",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory"
+    ],
+    "false_positive_count": 33,
+    "recovered_labels": [
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "CABG",
+      "pneumoth",
+      "Fever.",
+      "Respiratory",
+      "CABG",
+      "pneumoth",
+      "Fever.",
+      "Respiratory",
+      "CABG",
+      "pneumoth",
+      "Fever.",
+      "Respiratory",
+      "CABG",
+      "pneumoth",
+      "Fever.",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "Respiratory",
+      "ness of",
+      "breath.",
+      "Respiratory",
+      "ness of",
+      "breath.",
+      "Respiratory",
+      "ness of",
+      "breath.",
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 15.427883625030518,
+  "timestamp": 1793213355.330517,
+  "status": "SUCCESS"
+}

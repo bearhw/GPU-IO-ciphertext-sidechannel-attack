@@ -1,0 +1,41 @@
+{
+  "index": 1759,
+  "host_base": "0x1719cd000",
+  "gt_base": "0x1a63d9000",
+  "gt_indication": "Cough and wheezing for 2 days. Intermittent fever suggested. Fever to 102.5",
+  "recovered_labels": [
+    "ough and",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 626,
+      "ind_gpa": 6201074576,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 628,
+      "ind_gpa": 6201074592,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 15.520055770874023,
+  "timestamp": 1793381757.6931999,
+  "status": "SUCCESS"
+}

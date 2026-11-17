@@ -1,0 +1,33 @@
+{
+  "stage": 5,
+  "index": 3,
+  "target_class": null,
+  "pred": "cube",
+  "correct": false,
+  "top3": [
+    [
+      "cube",
+      0.9999
+    ],
+    [
+      "capsule",
+      0.0001
+    ],
+    [
+      "cylinder",
+      0.0
+    ]
+  ],
+  "base_off_est": 0,
+  "base_off_gt": null,
+  "hits_consistent": 0,
+  "hits_inconsistent": 0,
+  "coverage": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "t_stage4": 0.02,
+  "t_stage5": 1.17,
+  "timestamp": 1794521186.25386
+}

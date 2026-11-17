@@ -1,0 +1,20 @@
+{
+  "index": 1132,
+  "host_base": "0x19681e000",
+  "gt_base": "0x19681e000",
+  "gt_indication": "Traumatic hemo pneumothorax with right-sided chest tube treatment, status post gunshot wound, smoker.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.802367925643921,
+  "timestamp": 1793356038.2252738,
+  "status": "SUCCESS"
+}

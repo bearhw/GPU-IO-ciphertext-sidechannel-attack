@@ -1,0 +1,32 @@
+{
+  "index": 904,
+  "host_base": "0x1a56cf000",
+  "gt_base": "0x1a56cf000",
+  "gt_indication": "MVC yesterday. Restrained driver. Chest pain with deep inspiration.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 698,
+      "ind_gpa": 7070352848,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 18.840358018875122,
+  "timestamp": 1793086808.7997835,
+  "status": "SUCCESS"
+}

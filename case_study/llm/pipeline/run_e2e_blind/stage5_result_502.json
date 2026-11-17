@@ -1,0 +1,32 @@
+{
+  "index": 502,
+  "host_base": "0x19f5d1000",
+  "gt_base": "0x19f5d0000",
+  "gt_indication": "Left anterior chest pain for about 3 months, smoker.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 6968645680,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 17.450793266296387,
+  "timestamp": 1793032184.9626417,
+  "status": "SUCCESS"
+}

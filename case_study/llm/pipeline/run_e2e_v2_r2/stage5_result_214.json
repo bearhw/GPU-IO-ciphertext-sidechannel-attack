@@ -1,0 +1,59 @@
+{
+  "index": 214,
+  "host_base": "0x1a00ef000",
+  "gt_base": "0x1a00ef000",
+  "gt_indication": "One week history of chest pain, shortness of breath, and cough; history of tobacco use.",
+  "recovered_labels": [
+    " chest pain",
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 722,
+      "ind_gpa": 6980306576,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 724,
+      "ind_gpa": 6980306592,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 726,
+      "ind_gpa": 6980306608,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 728,
+      "ind_gpa": 6980306624,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.52922511100769,
+  "timestamp": 1793324193.3546467,
+  "status": "SUCCESS"
+}

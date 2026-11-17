@@ -1,0 +1,32 @@
+{
+  "index": 1025,
+  "host_base": "0x1a3313000",
+  "gt_base": "0x1a3313000",
+  "gt_indication": "Right PICC line reposition.",
+  "recovered_labels": [
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 7032882160,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.587876319885254,
+  "timestamp": 1793170413.9350083,
+  "status": "SUCCESS"
+}

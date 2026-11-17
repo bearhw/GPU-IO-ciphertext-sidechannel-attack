@@ -1,0 +1,41 @@
+{
+  "index": 2130,
+  "host_base": "0x1ab502000",
+  "gt_base": "0x1ab502000",
+  "gt_indication": "Shortness of breath. Recent discharge from green Valley campus for COVID-19. Progressive shortness of breath tonight. Decreased oxygen saturation.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 7169126880,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 7169126896,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.666339635848999,
+  "timestamp": 1793402346.0432587,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 1211,
+  "host_base": "0x1991af000",
+  "gt_base": "0x1991af000",
+  "gt_indication": "Preop lung mass. Short of breath. Chest pain.",
+  "recovered_labels": [
+    " breath.",
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 6863649552,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 6863649568,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath.",
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 19.032449960708618,
+  "timestamp": 1793098994.420316,
+  "status": "SUCCESS"
+}

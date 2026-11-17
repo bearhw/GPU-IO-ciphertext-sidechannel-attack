@@ -1,0 +1,32 @@
+{
+  "index": 530,
+  "host_base": "0x19f909000",
+  "gt_base": "0x19f909000",
+  "gt_indication": "Tachycardia and shortness of breath beginning last night. Chest pain.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 6972023840,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 18.96383786201477,
+  "timestamp": 1793073624.7678466,
+  "status": "SUCCESS"
+}

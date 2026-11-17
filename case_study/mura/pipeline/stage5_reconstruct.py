@@ -95,8 +95,18 @@ class XorSliceSENet(nn.Module):
         return self.head(torch.cat([sp_feat, stats_feat, sc], dim=1))
 
 
+def _build_model(n_ref: int, num_classes: int):
+    """The 64-ref attack model is the SE variant (v2); 16/32 are plain ResNet (v1).
+    Kept in sync with finetune_attack_model.build_model so Stage 5 can classify with
+    whichever fine-tuned checkpoint the attack produced."""
+    if n_ref == 64:
+        return XorSliceSENet(num_classes, n_ref=n_ref)
+    import finetune_attack_model as ft
+    return ft.XorSliceResNet(num_classes, n_ref=n_ref)
+
+
 def run_stage5(index: int, output_dir: Path, mock: bool = False,
-               ckpt_path: Path = c.CHECKPOINT_V2) -> Dict:
+               ckpt_path: Path = c.CHECKPOINT_V2, n_ref: int = None) -> Dict:
     """Execute Stage 5."""
     output_dir.mkdir(parents=True, exist_ok=True)
     features_json = output_dir / f"features_{index}.json"
@@ -129,7 +139,8 @@ def run_stage5(index: int, output_dir: Path, mock: bool = False,
 
     # 1. Classification
     device = torch.device("cpu")
-    model = XorSliceSENet(len(c.CLASSES), n_ref=c.NUM_REFS).to(device)
+    nref = n_ref or c.NUM_REFS
+    model = _build_model(nref, len(c.CLASSES)).to(device)
     if ckpt_path.exists() and not mock:
         sd = torch.load(ckpt_path, map_location=device, weights_only=True)
         model.load_state_dict(sd, strict=True)

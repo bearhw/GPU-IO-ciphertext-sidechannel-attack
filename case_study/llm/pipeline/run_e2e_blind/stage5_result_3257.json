@@ -1,0 +1,84 @@
+{
+  "index": 3257,
+  "host_base": "0x13c806000",
+  "gt_base": "0x13c806000",
+  "gt_indication": "Status post PICC line placement.",
+  "recovered_labels": [
+    " pneumonia.",
+    " pneumonia.",
+    " pneumonia.",
+    " pneumonia.",
+    " pneumonia.",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 5310016288,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 5310016304,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5310016320,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5310016336,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5310016352,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5310016368,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia."
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 17.297024726867676,
+  "timestamp": 1793024208.3729293,
+  "status": "SUCCESS"
+}

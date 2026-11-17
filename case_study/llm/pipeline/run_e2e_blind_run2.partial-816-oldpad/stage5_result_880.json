@@ -1,0 +1,50 @@
+{
+  "index": 880,
+  "host_base": "0x19ff79000",
+  "gt_base": "0x19ff78000",
+  "gt_indication": "Shortness of breath. Possible PICC line infection. On antibiotics.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6978770976,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6978770992,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 6978771024,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 19.95255446434021,
+  "timestamp": 1793086571.7428577,
+  "status": "SUCCESS"
+}

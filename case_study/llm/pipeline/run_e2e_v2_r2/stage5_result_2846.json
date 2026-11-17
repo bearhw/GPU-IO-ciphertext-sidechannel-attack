@@ -1,0 +1,343 @@
+{
+  "index": 2846,
+  "host_base": "0x13d058000",
+  "gt_base": "0x13d058000",
+  "gt_indication": "Respiratory distress. Evaluate pneumonia.",
+  "recovered_labels": [
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-",
+    " chest pain",
+    " Respiratory",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 450,
+      "ind_gpa": 5318741520,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 450,
+      "ind_gpa": 5318741520,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 450,
+      "ind_gpa": 5318741520,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 452,
+      "ind_gpa": 5318741536,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 452,
+      "ind_gpa": 5318741536,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 452,
+      "ind_gpa": 5318741536,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 5318741552,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 5318741552,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 5318741552,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5318741568,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5318741568,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5318741568,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5318741584,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5318741584,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5318741584,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5318741600,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5318741600,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5318741600,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5318741616,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5318741616,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5318741616,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5318741632,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5318741632,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5318741632,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5318741648,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5318741648,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5318741648,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5318741664,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5318741664,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5318741664,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5318741680,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5318741680,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5318741680,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 33,
+    "false_positive_labels": [
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-",
+      "chest pain",
+      "COVID-"
+    ],
+    "false_positive_count": 22,
+    "recovered_labels": [
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-",
+      "chest pain",
+      "Respiratory",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.607043981552124,
+  "timestamp": 1793430235.917654,
+  "status": "SUCCESS"
+}

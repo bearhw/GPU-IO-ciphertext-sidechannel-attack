@@ -1,0 +1,32 @@
+{
+  "index": 1513,
+  "host_base": "0x1a7b2c000",
+  "gt_base": "0x1a7b2c000",
+  "gt_indication": "Cough for 3 weeks.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 434,
+      "ind_gpa": 7108480400,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 17.148508310317993,
+  "timestamp": 1793108978.5189714,
+  "status": "SUCCESS"
+}

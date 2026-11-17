@@ -1,0 +1,195 @@
+{
+  "index": 2661,
+  "host_base": "0x1a15a2000",
+  "gt_base": "0x1a15a2000",
+  "gt_indication": "Respiratory failure. Follow-up infiltrate.",
+  "recovered_labels": [
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez",
+    " Respiratory",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 362,
+      "ind_gpa": 7002008400,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7002008400,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7002008416,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7002008416,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7002008432,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7002008432,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7002008448,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7002008448,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7002008464,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7002008464,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7002008480,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7002008480,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7002008496,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7002008496,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7002008512,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7002008512,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7002008528,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7002008528,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez",
+      "wheez"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez",
+      "Respiratory",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 19.89106583595276,
+  "timestamp": 1793000112.7235963,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 1441,
+  "host_base": "0x1a9662000",
+  "gt_base": "0x1a9662000",
+  "gt_indication": "Motor vehicle collision with liver laceration. Follow-up chest.",
+  "recovered_labels": [
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 356,
+      "ind_gpa": 7137012512,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 17.242487907409668,
+  "timestamp": 1793106704.318523,
+  "status": "SUCCESS"
+}

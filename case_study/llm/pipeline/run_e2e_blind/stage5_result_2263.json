@@ -1,0 +1,32 @@
+{
+  "index": 2263,
+  "host_base": "0x1a3217000",
+  "gt_base": "0x1a3217000",
+  "gt_indication": "Cough and respiratory distress",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 314,
+      "ind_gpa": 7031847376,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 19.26600980758667,
+  "timestamp": 1792978642.3406193,
+  "status": "SUCCESS"
+}

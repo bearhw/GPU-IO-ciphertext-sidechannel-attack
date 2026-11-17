@@ -1,0 +1,32 @@
+{
+  "index": 512,
+  "host_base": "0x1415b5000",
+  "gt_base": "0x13ea97000",
+  "gt_indication": "Acute chest pain after motorcycle accident.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 5391472688,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 19.973181009292603,
+  "timestamp": 1793071781.0097735,
+  "status": "SUCCESS"
+}

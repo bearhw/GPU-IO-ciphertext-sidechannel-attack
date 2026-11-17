@@ -1,0 +1,134 @@
+{
+  "index": 444,
+  "host_base": "0x19fb50000",
+  "gt_base": "0x19fb50000",
+  "gt_indication": "Chest pain for three days.",
+  "recovered_labels": [
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 678,
+      "ind_gpa": 6974412080,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 680,
+      "ind_gpa": 6974412096,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 682,
+      "ind_gpa": 6974412112,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 684,
+      "ind_gpa": 6974412128,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 686,
+      "ind_gpa": 6974412144,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 688,
+      "ind_gpa": 6974412160,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 690,
+      "ind_gpa": 6974412176,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 692,
+      "ind_gpa": 6974412192,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 694,
+      "ind_gpa": 6974412208,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 696,
+      "ind_gpa": 6974412224,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 698,
+      "ind_gpa": 6974412240,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 11,
+    "false_positive_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ],
+    "false_positive_count": 11,
+    "recovered_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.199533700942993,
+  "timestamp": 1793337192.7459407,
+  "status": "SUCCESS"
+}

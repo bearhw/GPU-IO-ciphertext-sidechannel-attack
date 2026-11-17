@@ -1,0 +1,41 @@
+{
+  "index": 3150,
+  "host_base": "0x19d223000",
+  "gt_base": "0x19d223000",
+  "gt_indication": "Shortness of breath. Fall.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 6931233504,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6931233520,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 19.117267370224,
+  "timestamp": 1793019401.3818116,
+  "status": "SUCCESS"
+}

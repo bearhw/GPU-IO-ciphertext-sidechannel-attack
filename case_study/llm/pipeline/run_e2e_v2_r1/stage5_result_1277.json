@@ -1,0 +1,184 @@
+{
+  "index": 1277,
+  "host_base": "0x19f35f000",
+  "gt_base": "0x19f35f000",
+  "gt_indication": "Respiratory failure. Status post surgery for left renal mass.",
+  "recovered_labels": [
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 364,
+      "ind_gpa": 6966082400,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6966082400,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6966082416,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6966082416,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6966082432,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6966082432,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6966082448,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6966082448,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6966082464,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6966082464,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6966082480,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6966082480,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6966082496,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6966082496,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6966082512,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6966082512,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox"
+    ],
+    "false_positive_count": 16,
+    "recovered_labels": [
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 16.043709754943848,
+  "timestamp": 1793183676.410197,
+  "status": "SUCCESS"
+}

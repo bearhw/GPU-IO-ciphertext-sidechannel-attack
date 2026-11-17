@@ -1,0 +1,32 @@
+{
+  "index": 2847,
+  "host_base": "0x194c3d000",
+  "gt_base": "0x194c3d000",
+  "gt_indication": "Acute pancreatitis. PICC line placement.",
+  "recovered_labels": [
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 6790830848,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 16.862836360931396,
+  "timestamp": 1793303089.0904162,
+  "status": "SUCCESS"
+}

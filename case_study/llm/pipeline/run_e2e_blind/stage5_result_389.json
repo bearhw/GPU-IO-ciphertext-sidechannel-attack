@@ -1,0 +1,32 @@
+{
+  "index": 389,
+  "host_base": "0x1a874d000",
+  "gt_base": "0x1a874c000",
+  "gt_indication": "Cough and wheezing",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7121197088,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 18.99403953552246,
+  "timestamp": 1792898248.9216466,
+  "status": "SUCCESS"
+}

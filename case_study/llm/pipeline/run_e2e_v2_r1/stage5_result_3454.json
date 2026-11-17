@@ -1,0 +1,32 @@
+{
+  "index": 3454,
+  "host_base": "0x197e91000",
+  "gt_base": "0x197e91000",
+  "gt_indication": "15-year-old female status post blunt trauma with posterior right rib pain and abrasion. Initial encounter.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 562,
+      "ind_gpa": 6843605392,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.29487419128418,
+  "timestamp": 1793282149.1151485,
+  "status": "SUCCESS"
+}

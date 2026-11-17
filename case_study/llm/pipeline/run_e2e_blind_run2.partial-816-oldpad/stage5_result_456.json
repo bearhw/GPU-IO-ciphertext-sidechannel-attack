@@ -1,0 +1,32 @@
+{
+  "index": 456,
+  "host_base": "0x1a45bd000",
+  "gt_base": "0x1a45bd000",
+  "gt_indication": "Left upper chest pain with shortness of breath",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 444,
+      "ind_gpa": 7052451296,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 18.124298334121704,
+  "timestamp": 1793069407.7226253,
+  "status": "SUCCESS"
+}

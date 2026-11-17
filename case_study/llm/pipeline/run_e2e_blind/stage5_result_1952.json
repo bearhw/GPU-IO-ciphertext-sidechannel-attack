@@ -1,0 +1,32 @@
+{
+  "index": 1952,
+  "host_base": "0x195fe2000",
+  "gt_base": "0x195fe2000",
+  "gt_indication": "Chest pain, PT states has upper chest pain x 1 day. History of asthma.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 6811429648,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 16.868786334991455,
+  "timestamp": 1793037895.4982483,
+  "status": "SUCCESS"
+}

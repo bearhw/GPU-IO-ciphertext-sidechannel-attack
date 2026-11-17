@@ -1,0 +1,59 @@
+{
+  "index": 1461,
+  "host_base": "0x1a1ab5000",
+  "gt_base": "0x1a1ab5000",
+  "gt_indication": "Shortness of breath, wheezing, and productive cough",
+  "recovered_labels": [
+    "ness of",
+    " breath,",
+    " wheez",
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 668,
+      "ind_gpa": 7007331552,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 670,
+      "ind_gpa": 7007331568,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 672,
+      "ind_gpa": 7007331584,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 678,
+      "ind_gpa": 7007331632,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,",
+      "wheez",
+      "cough."
+    ]
+  },
+  "elapsed_sec": 15.427721500396729,
+  "timestamp": 1793193562.0952337,
+  "status": "SUCCESS"
+}

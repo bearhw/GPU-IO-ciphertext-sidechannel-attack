@@ -1,0 +1,32 @@
+{
+  "index": 700,
+  "host_base": "0x19d742000",
+  "gt_base": "0x19d742000",
+  "gt_indication": "Chest pain. Shortness of breath. History of sarcoidosis.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 530,
+      "ind_gpa": 6936604816,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.486810684204102,
+  "timestamp": 1793345073.7953472,
+  "status": "SUCCESS"
+}

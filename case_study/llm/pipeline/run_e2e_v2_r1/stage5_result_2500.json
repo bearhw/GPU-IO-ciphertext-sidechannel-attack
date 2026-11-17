@@ -1,0 +1,32 @@
+{
+  "index": 2500,
+  "host_base": "0x19760a000",
+  "gt_base": "0x19760a000",
+  "gt_indication": "Back pain. Right posterior rib pain for 1 week.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 598,
+      "ind_gpa": 6834664112,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.768098831176758,
+  "timestamp": 1793240536.5083385,
+  "status": "SUCCESS"
+}

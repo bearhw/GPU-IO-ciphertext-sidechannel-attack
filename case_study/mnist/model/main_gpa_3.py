@@ -27,8 +27,11 @@ def main():
     args = p.parse_args()
 
     # 1. Load MNIST dataset (keep as 0.0~1.0 float32)
+    # Eval uses the MNIST test split by default so the image is one no reconstruction
+    # model was trained on; MNIST_SPLIT=train restores the original behavior.
+    _eval_on_train = os.environ.get("MNIST_SPLIT", "test").lower() == "train"
     transform = transforms.Compose([transforms.ToTensor()])
-    dataset = datasets.MNIST('../data', train=True, download=True, transform=transform)
+    dataset = datasets.MNIST('../data', train=_eval_on_train, download=True, transform=transform)
 
     data, target = dataset[args.index]
     

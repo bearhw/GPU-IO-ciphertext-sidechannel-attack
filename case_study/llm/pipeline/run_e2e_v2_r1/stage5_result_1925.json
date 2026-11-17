@@ -1,0 +1,41 @@
+{
+  "index": 1925,
+  "host_base": "0x1a66d2000",
+  "gt_base": "0x1a66d2000",
+  "gt_indication": "Shortness of breath, swelling in the hands and feet, mid chest pain with cough and congestion",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7087139552,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 7087139568,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.488687753677368,
+  "timestamp": 1793214398.2310014,
+  "status": "SUCCESS"
+}

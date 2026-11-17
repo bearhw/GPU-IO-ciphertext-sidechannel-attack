@@ -1,0 +1,41 @@
+{
+  "index": 2031,
+  "host_base": "0x1a3a35000",
+  "gt_base": "0x1a3a35000",
+  "gt_indication": "Chest pain, shortness of breath and tachypnea; left-sided chest pain radiates down both arms.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 526,
+      "ind_gpa": 7040360560,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7040360576,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.024523496627808,
+  "timestamp": 1793220546.3621972,
+  "status": "SUCCESS"
+}

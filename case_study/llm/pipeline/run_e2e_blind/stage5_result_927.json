@@ -1,0 +1,32 @@
+{
+  "index": 927,
+  "host_base": "0x1a056b000",
+  "gt_base": "0x1a056a000",
+  "gt_indication": "Mid back, rib pain.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 284,
+      "ind_gpa": 6985005280,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 16.575866222381592,
+  "timestamp": 1792926102.3180935,
+  "status": "SUCCESS"
+}

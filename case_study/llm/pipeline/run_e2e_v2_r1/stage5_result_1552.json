@@ -1,0 +1,32 @@
+{
+  "index": 1552,
+  "host_base": "0x1a05ad000",
+  "gt_base": "0x1a05ac000",
+  "gt_indication": "Cough with mid back pain and chest pain",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6985275424,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.345607280731201,
+  "timestamp": 1793198434.0498595,
+  "status": "SUCCESS"
+}

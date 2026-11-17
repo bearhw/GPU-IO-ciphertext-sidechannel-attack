@@ -1,0 +1,32 @@
+{
+  "index": 755,
+  "host_base": "0x1a5a37000",
+  "gt_base": "0x1a5a36000",
+  "gt_indication": "Chest pain. Onset of symptoms at 7846 hr today.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7073921056,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.317917108535767,
+  "timestamp": 1793346264.109142,
+  "status": "SUCCESS"
+}

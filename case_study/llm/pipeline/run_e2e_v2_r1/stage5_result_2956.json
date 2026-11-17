@@ -1,0 +1,32 @@
+{
+  "index": 2956,
+  "host_base": "0x1a946d000",
+  "gt_base": "0x1a946d000",
+  "gt_indication": "Pneumonia. Fever. Evaluate for tuberculosis.",
+  "recovered_labels": [
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7134960384,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.392517805099487,
+  "timestamp": 1793255813.9945226,
+  "status": "SUCCESS"
+}

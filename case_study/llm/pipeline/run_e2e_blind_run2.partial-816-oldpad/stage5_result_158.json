@@ -1,0 +1,32 @@
+{
+  "index": 158,
+  "host_base": "0x1a24d8000",
+  "gt_base": "0x1a24d8000",
+  "gt_indication": "Coronary artery disease. Status post CABG.",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 7017960480,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 18.27695631980896,
+  "timestamp": 1793055264.5371013,
+  "status": "SUCCESS"
+}

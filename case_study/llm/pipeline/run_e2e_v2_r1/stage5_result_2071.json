@@ -1,0 +1,32 @@
+{
+  "index": 2071,
+  "host_base": "0x1a435b000",
+  "gt_base": "0x1a435b000",
+  "gt_indication": "Status post fall yesterday, mid left sided rib pain.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 534,
+      "ind_gpa": 7049953456,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.93287444114685,
+  "timestamp": 1793221574.4008439,
+  "status": "SUCCESS"
+}

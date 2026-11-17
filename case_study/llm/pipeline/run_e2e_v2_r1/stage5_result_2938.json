@@ -1,0 +1,32 @@
+{
+  "index": 2938,
+  "host_base": "0x1a97ec000",
+  "gt_base": "0x1a97ec000",
+  "gt_indication": "Abnormal chest x-ray, follow-up. History of COVID-19.",
+  "recovered_labels": [
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 756,
+      "ind_gpa": 7138629536,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.101284503936768,
+  "timestamp": 1793255336.9775639,
+  "status": "SUCCESS"
+}

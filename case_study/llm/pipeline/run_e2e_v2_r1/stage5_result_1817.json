@@ -1,0 +1,354 @@
+{
+  "index": 1817,
+  "host_base": "0x1a0286000",
+  "gt_base": "0x1a0286000",
+  "gt_indication": "Follow-up CABG",
+  "recovered_labels": [
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 626,
+      "ind_gpa": 6981972880,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 626,
+      "ind_gpa": 6981972880,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 626,
+      "ind_gpa": 6981972880,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 628,
+      "ind_gpa": 6981972896,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 628,
+      "ind_gpa": 6981972896,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 628,
+      "ind_gpa": 6981972896,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 630,
+      "ind_gpa": 6981972912,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 630,
+      "ind_gpa": 6981972912,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 630,
+      "ind_gpa": 6981972912,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 632,
+      "ind_gpa": 6981972928,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 632,
+      "ind_gpa": 6981972928,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 632,
+      "ind_gpa": 6981972928,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 634,
+      "ind_gpa": 6981972944,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 634,
+      "ind_gpa": 6981972944,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 634,
+      "ind_gpa": 6981972944,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 636,
+      "ind_gpa": 6981972960,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 636,
+      "ind_gpa": 6981972960,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 636,
+      "ind_gpa": 6981972960,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 638,
+      "ind_gpa": 6981972976,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 638,
+      "ind_gpa": 6981972976,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 638,
+      "ind_gpa": 6981972976,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6981972992,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6981972992,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6981972992,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6981973008,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6981973008,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6981973008,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 6981973024,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 6981973024,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 6981973024,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 6981973040,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 6981973040,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 6981973040,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 33,
+    "false_positive_labels": [
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC"
+    ],
+    "false_positive_count": 33,
+    "recovered_labels": [
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.824172019958496,
+  "timestamp": 1793207423.5029707,
+  "status": "SUCCESS"
+}

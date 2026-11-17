@@ -1,0 +1,41 @@
+{
+  "index": 738,
+  "host_base": "0x1a1f24000",
+  "gt_base": "0x1a1f24000",
+  "gt_indication": "Wheezing, cough, chest pain",
+  "recovered_labels": [
+    " cough,",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 302,
+      "ind_gpa": 7011977584,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 304,
+      "ind_gpa": 7011977600,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 18.406175136566162,
+  "timestamp": 1793082729.5995493,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 408,
+  "host_base": "0x1969f8000",
+  "gt_base": "0x1969f8000",
+  "gt_indication": "Chest pain. Back pain. Short of breath.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 6822005520,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.587514877319336,
+  "timestamp": 1793286892.860986,
+  "status": "SUCCESS"
+}

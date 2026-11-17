@@ -1,0 +1,32 @@
+{
+  "index": 2711,
+  "host_base": "0x19d5a1000",
+  "gt_base": "0x19d5a1000",
+  "gt_indication": "78 year-old male, CHF. Shortness of breath.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 6934895408,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.440753698348999,
+  "timestamp": 1793423011.393767,
+  "status": "SUCCESS"
+}

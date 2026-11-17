@@ -1,0 +1,41 @@
+{
+  "index": 1260,
+  "host_base": "0x1a3004000",
+  "gt_base": "0x1a3003000",
+  "gt_indication": "Chest pain and shortness of breath for 1 day",
+  "recovered_labels": [
+    " Chest pain",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7029671968,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 264,
+      "ind_gpa": 7029672000,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.753661155700684,
+  "timestamp": 1793289303.9709544,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,198 @@
+{
+  "index": 1852,
+  "host_base": "0x1a0b06000",
+  "gt_base": "0x1a0b06000",
+  "gt_indication": "30-year-old female with cough and wheezing and emesis.",
+  "recovered_labels": [
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    "ough and",
+    " pneumonia.",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 658,
+      "ind_gpa": 6990886032,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6990886032,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6990886032,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6990886048,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6990886048,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6990886048,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6990886064,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6990886064,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6990886064,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6990886080,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6990886080,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6990886080,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6990886096,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6990886096,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6990886096,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6990886112,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6990886112,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6990886112,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "pneumonia.",
+      "PICC",
+      "pneumonia.",
+      "PICC",
+      "pneumonia.",
+      "PICC",
+      "pneumonia.",
+      "PICC",
+      "pneumonia.",
+      "PICC",
+      "pneumonia.",
+      "PICC"
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "ough and",
+      "pneumonia.",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.667505741119385,
+  "timestamp": 1793208127.5352824,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,164 @@
+{
+  "index": 1932,
+  "host_base": "0x12c8da000",
+  "gt_base": "0x12c8da000",
+  "gt_indication": "Lung lesion, right IJ catheter placement and bronchoscopy.",
+  "recovered_labels": [
+    " Chest pain",
+    " Hypert",
+    " Chest pain",
+    " Hypert",
+    " Chest pain",
+    " Hypert",
+    " Chest pain",
+    " Hypert",
+    " Chest pain",
+    " Hypert",
+    " Chest pain",
+    " Hypert",
+    " Chest pain",
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 366,
+      "ind_gpa": 5042449264,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5042449264,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5042449280,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5042449280,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5042449296,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5042449296,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5042449312,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5042449312,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5042449328,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5042449328,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5042449344,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5042449344,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5042449360,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5042449360,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 14,
+    "false_positive_labels": [
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert"
+    ],
+    "false_positive_count": 14,
+    "recovered_labels": [
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert",
+      "Chest pain",
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.783291339874268,
+  "timestamp": 1793390470.396541,
+  "status": "SUCCESS"
+}

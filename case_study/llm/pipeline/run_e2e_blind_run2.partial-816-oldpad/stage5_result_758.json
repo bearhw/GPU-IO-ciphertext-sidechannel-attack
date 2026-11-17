@@ -1,0 +1,32 @@
+{
+  "index": 758,
+  "host_base": "0x1a257a000",
+  "gt_base": "0x1a257a000",
+  "gt_indication": "Hypoxia, acute respiratory failure.",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 576,
+      "ind_gpa": 7018623488,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 22.877057552337646,
+  "timestamp": 1793083128.4027557,
+  "status": "SUCCESS"
+}

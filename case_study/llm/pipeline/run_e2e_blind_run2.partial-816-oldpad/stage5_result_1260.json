@@ -1,0 +1,44 @@
+{
+  "index": 1260,
+  "host_base": "0x19fe72000",
+  "gt_base": "0x19fe72000",
+  "gt_indication": "Chest pain and shortness of breath for 1 day",
+  "recovered_labels": [
+    " COPD",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 536,
+      "ind_gpa": 6977695936,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6977695936,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "COPD",
+      "wheez"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "COPD",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 19.70237398147583,
+  "timestamp": 1793100601.7960112,
+  "status": "SUCCESS"
+}

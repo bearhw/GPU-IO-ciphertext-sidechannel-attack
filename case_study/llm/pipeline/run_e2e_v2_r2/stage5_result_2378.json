@@ -1,0 +1,32 @@
+{
+  "index": 2378,
+  "host_base": "0x196f2a000",
+  "gt_base": "0x196f2a000",
+  "gt_indication": "Shortness of breath following chlorine inhalation",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 628,
+      "ind_gpa": 6827455392,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.135168552398682,
+  "timestamp": 1793412742.9051032,
+  "status": "SUCCESS"
+}

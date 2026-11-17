@@ -1,0 +1,32 @@
+{
+  "index": 70,
+  "host_base": "0x1a0c36000",
+  "gt_base": "0x1a0c35000",
+  "gt_indication": "Left-sided chest pain and shoulder pain. History of hypertension and asthma.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 6992128048,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.286877870559692,
+  "timestamp": 1793311170.062925,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,64 @@
+{
+  "index": 3180,
+  "host_base": "0x12d345000",
+  "gt_base": "0x12d345000",
+  "gt_indication": "Left-sided chest pain for 2 weeks.",
+  "recovered_labels": [
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 564,
+      "ind_gpa": 5053374880,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 5053374896,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 5053374912,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 5053374928,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.358231782913208,
+  "timestamp": 1793265503.2980506,
+  "status": "SUCCESS"
+}

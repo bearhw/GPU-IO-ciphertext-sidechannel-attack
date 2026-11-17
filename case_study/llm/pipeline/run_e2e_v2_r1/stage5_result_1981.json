@@ -1,0 +1,32 @@
+{
+  "index": 1981,
+  "host_base": "0x1a2ce2000",
+  "gt_base": "0x1a2ce2000",
+  "gt_indication": "Central venous catheter placement. Status post L5-S1 ALIF.",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 7026387696,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.553894281387329,
+  "timestamp": 1793219408.5227766,
+  "status": "SUCCESS"
+}

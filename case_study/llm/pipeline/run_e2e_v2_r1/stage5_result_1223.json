@@ -1,0 +1,114 @@
+{
+  "index": 1223,
+  "host_base": "0x1991f5000",
+  "gt_base": "0x1991f4000",
+  "gt_indication": "The chest pain intermittently for 1 week.",
+  "recovered_labels": [
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 222,
+      "ind_gpa": 6863935216,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 224,
+      "ind_gpa": 6863935232,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 226,
+      "ind_gpa": 6863935248,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 228,
+      "ind_gpa": 6863935264,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 230,
+      "ind_gpa": 6863935280,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 232,
+      "ind_gpa": 6863935296,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 234,
+      "ind_gpa": 6863935312,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 236,
+      "ind_gpa": 6863935328,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 238,
+      "ind_gpa": 6863935344,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 9,
+    "false_positive_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.122581481933594,
+  "timestamp": 1793180470.6027367,
+  "status": "SUCCESS"
+}

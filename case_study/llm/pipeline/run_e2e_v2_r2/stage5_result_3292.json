@@ -1,0 +1,41 @@
+{
+  "index": 3292,
+  "host_base": "0x1a2b3f000",
+  "gt_base": "0x1a2b3e000",
+  "gt_indication": "Post CABG, some shortness of breath, history coronary artery disease post MI, hypertension, GERD, former smoker",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 266,
+      "ind_gpa": 7024670800,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 268,
+      "ind_gpa": 7024670816,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.555990934371948,
+  "timestamp": 1793448676.6390817,
+  "status": "SUCCESS"
+}

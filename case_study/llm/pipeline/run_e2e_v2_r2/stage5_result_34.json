@@ -1,0 +1,324 @@
+{
+  "index": 34,
+  "host_base": "0x19f940000",
+  "gt_base": "0x19f940000",
+  "gt_indication": "wheezing altered mental status",
+  "recovered_labels": [
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC",
+    " of breath",
+    " Follow-up",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 452,
+      "ind_gpa": 6972247584,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 452,
+      "ind_gpa": 6972247584,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 452,
+      "ind_gpa": 6972247584,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 6972247600,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 6972247600,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 6972247600,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 6972247616,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 6972247616,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 6972247616,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 6972247632,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 6972247632,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 6972247632,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6972247648,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6972247648,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 6972247648,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6972247664,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6972247664,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 6972247664,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6972247680,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6972247680,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 6972247680,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6972247696,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6972247696,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6972247696,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6972247712,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6972247712,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6972247712,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6972247728,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6972247728,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6972247728,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 30,
+    "false_positive_labels": [
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC"
+    ],
+    "false_positive_count": 30,
+    "recovered_labels": [
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC",
+      "of breath",
+      "Follow-up",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.224968671798706,
+  "timestamp": 1793308631.4881968,
+  "status": "SUCCESS"
+}

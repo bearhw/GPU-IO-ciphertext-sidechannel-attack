@@ -1,0 +1,32 @@
+{
+  "index": 413,
+  "host_base": "0x197f05000",
+  "gt_base": "0x197f05000",
+  "gt_indication": "Right sided chest pain",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 562,
+      "ind_gpa": 6844080528,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 18.68581485748291,
+  "timestamp": 1793068133.8906474,
+  "status": "SUCCESS"
+}

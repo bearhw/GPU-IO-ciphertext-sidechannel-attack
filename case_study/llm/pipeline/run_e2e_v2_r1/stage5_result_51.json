@@ -1,0 +1,204 @@
+{
+  "index": 51,
+  "host_base": "0x1a07df000",
+  "gt_base": "0x1a07df000",
+  "gt_indication": "Left anterior rib pain and abrasion; hit by tailgate of truck.",
+  "recovered_labels": [
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 368,
+      "ind_gpa": 6987578240,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6987578240,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6987578240,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6987578256,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6987578256,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6987578256,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6987578272,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6987578272,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6987578272,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6987578288,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6987578288,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6987578288,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6987578304,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6987578304,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6987578304,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6987578320,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6987578320,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6987578320,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.742391347885132,
+  "timestamp": 1793128050.4632473,
+  "status": "SUCCESS"
+}

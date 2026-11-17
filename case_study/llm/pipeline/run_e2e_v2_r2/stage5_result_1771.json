@@ -1,0 +1,64 @@
+{
+  "index": 1771,
+  "host_base": "0x1a66d6000",
+  "gt_base": "0x1a66d6000",
+  "gt_indication": "Weakness. Hypotension. Confusion.",
+  "recovered_labels": [
+    " of breath",
+    " of breath",
+    " of breath",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 634,
+      "ind_gpa": 7087158224,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 636,
+      "ind_gpa": 7087158240,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 638,
+      "ind_gpa": 7087158256,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 7087158272,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "of breath",
+      "of breath",
+      "of breath",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.743279695510864,
+  "timestamp": 1793382020.6665897,
+  "status": "SUCCESS"
+}

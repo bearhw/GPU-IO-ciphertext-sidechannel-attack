@@ -1,0 +1,32 @@
+{
+  "index": 3121,
+  "host_base": "0x1a1b74000",
+  "gt_base": "0x1a1b74000",
+  "gt_indication": "Post COVID cough. Question pneumonia. COVID in Bardina.",
+  "recovered_labels": [
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 7008113680,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.600621223449707,
+  "timestamp": 1793443282.5614803,
+  "status": "SUCCESS"
+}

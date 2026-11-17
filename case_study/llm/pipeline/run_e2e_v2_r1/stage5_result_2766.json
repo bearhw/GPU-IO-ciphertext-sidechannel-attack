@@ -1,0 +1,32 @@
+{
+  "index": 2766,
+  "host_base": "0x1a4127000",
+  "gt_base": "0x1a4127000",
+  "gt_indication": "Cough and elevated white blood cell count",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 550,
+      "ind_gpa": 7047643440,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.270383358001709,
+  "timestamp": 1793250851.5201042,
+  "status": "SUCCESS"
+}

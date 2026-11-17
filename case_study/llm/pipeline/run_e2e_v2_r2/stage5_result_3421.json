@@ -1,0 +1,50 @@
+{
+  "index": 3421,
+  "host_base": "0x1a1771000",
+  "gt_base": "0x1a1770000",
+  "gt_indication": "Assault with left lateral and posterior rib pain. Some shortness of breath. Nonsmoker.",
+  "recovered_labels": [
+    " rib pain",
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 266,
+      "ind_gpa": 7003904080,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 270,
+      "ind_gpa": 7003904112,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 7003904128,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain",
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.811870336532593,
+  "timestamp": 1793453321.8634074,
+  "status": "SUCCESS"
+}

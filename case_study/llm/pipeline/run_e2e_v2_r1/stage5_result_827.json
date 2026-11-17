@@ -1,0 +1,32 @@
+{
+  "index": 827,
+  "host_base": "0x1963b9000",
+  "gt_base": "0x1963b9000",
+  "gt_indication": "Diatek catheter placement.",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 6815455984,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.845450162887573,
+  "timestamp": 1793287777.3252842,
+  "status": "SUCCESS"
+}

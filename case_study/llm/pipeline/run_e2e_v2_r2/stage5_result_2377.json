@@ -1,0 +1,32 @@
+{
+  "index": 2377,
+  "host_base": "0x196d6c000",
+  "gt_base": "0x196d6c000",
+  "gt_indication": "Cough and chest congestion for 2-3 days. Also fever.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 274,
+      "ind_gpa": 6825625744,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.572695016860962,
+  "timestamp": 1793412702.5158312,
+  "status": "SUCCESS"
+}

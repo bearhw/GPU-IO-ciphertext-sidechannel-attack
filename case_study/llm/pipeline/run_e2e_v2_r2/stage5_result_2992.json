@@ -1,0 +1,41 @@
+{
+  "index": 2992,
+  "host_base": "0x1a0497000",
+  "gt_base": "0x1a0497000",
+  "gt_indication": "Shortness of breath. History of dyspnea.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 616,
+      "ind_gpa": 6984139584,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 6984139600,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.288665771484375,
+  "timestamp": 1793438519.500213,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 3242,
+  "host_base": "0x1a1af7000",
+  "gt_base": "0x1a1af7000",
+  "gt_indication": "Premature newborn. Follow-up respiratory distress syndrome and left pneumothorax.",
+  "recovered_labels": [
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 442,
+      "ind_gpa": 7007600080,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.512697458267212,
+  "timestamp": 1793447415.2321496,
+  "status": "SUCCESS"
+}

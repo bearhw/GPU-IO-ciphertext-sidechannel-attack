@@ -1,0 +1,32 @@
+{
+  "index": 2635,
+  "host_base": "0x1a1dcf000",
+  "gt_base": "0x1a1dcf000",
+  "gt_indication": "Cough and nausea. Former smoker.",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 572,
+      "ind_gpa": 7010583008,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.178816080093384,
+  "timestamp": 1793246978.9658446,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 2121,
+  "host_base": "0x1985cd000",
+  "gt_base": "0x1985cc000",
+  "gt_indication": "Shortness of breath; rapid heart",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6851188768,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 20.293654918670654,
+  "timestamp": 1792972645.7120159,
+  "status": "SUCCESS"
+}

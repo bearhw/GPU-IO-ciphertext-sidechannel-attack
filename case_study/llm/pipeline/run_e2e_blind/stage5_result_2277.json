@@ -1,0 +1,50 @@
+{
+  "index": 2277,
+  "host_base": "0x1a35d1000",
+  "gt_base": "0x1a35d1000",
+  "gt_indication": "Shortness of breath, cough, pneumonia.",
+  "recovered_labels": [
+    "ness of",
+    " breath,",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7035755232,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 7035755248,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 7035755264,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 18.75374746322632,
+  "timestamp": 1792978931.5289352,
+  "status": "SUCCESS"
+}

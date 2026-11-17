@@ -1,0 +1,157 @@
+{
+  "index": 139,
+  "host_base": "0x1a1ee1000",
+  "gt_base": "0x1a1ee1000",
+  "gt_indication": "PICC line placement",
+  "recovered_labels": [
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 458,
+      "ind_gpa": 7011704400,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 7011704400,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 7011704416,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 7011704416,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 7011704432,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 7011704432,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 7011704448,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 7011704448,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7011704464,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 7011704464,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7011704480,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 7011704480,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7011704496,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 7011704496,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 14,
+    "false_positive_labels": [
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up",
+      "Follow-up"
+    ],
+    "false_positive_count": 7,
+    "recovered_labels": [
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.372478008270264,
+  "timestamp": 1793133088.2525556,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 5,
+  "host_base": "0x13cedf000",
+  "gt_base": "0x140f83000",
+  "gt_indication": "Shortness of breath and cough",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 206,
+      "ind_gpa": 5317195376,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 208,
+      "ind_gpa": 5317195392,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.313891649246216,
+  "timestamp": 1793124484.260797,
+  "status": "SUCCESS"
+}

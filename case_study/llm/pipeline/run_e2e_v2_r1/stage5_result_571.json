@@ -1,0 +1,20 @@
+{
+  "index": 571,
+  "host_base": "0x1a288c000",
+  "gt_base": "0x1a288c000",
+  "gt_indication": "Two-day history of mid and right-sided chest pain, shortness of breath and productive cough. Current history of asthma.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.074414491653442,
+  "timestamp": 1793152112.1288476,
+  "status": "SUCCESS"
+}

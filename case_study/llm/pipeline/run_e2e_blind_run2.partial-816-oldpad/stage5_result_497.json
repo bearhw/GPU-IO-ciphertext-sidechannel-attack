@@ -1,0 +1,32 @@
+{
+  "index": 497,
+  "host_base": "0x1a3ce6000",
+  "gt_base": "0x1a3ce5000",
+  "gt_indication": "53-year-old male with 1 week history of shortness of breath, cough and chest pain",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 272,
+      "ind_gpa": 7043180672,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 19.720218420028687,
+  "timestamp": 1793070332.6318598,
+  "status": "SUCCESS"
+}

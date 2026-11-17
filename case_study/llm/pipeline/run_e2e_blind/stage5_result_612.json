@@ -1,0 +1,41 @@
+{
+  "index": 612,
+  "host_base": "0x1a223a000",
+  "gt_base": "0x1a223a000",
+  "gt_indication": "Increasing shortness of breath for 2 weeks. Swelling. Wheezing.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 616,
+      "ind_gpa": 7015215936,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 618,
+      "ind_gpa": 7015215952,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 19.3952796459198,
+  "timestamp": 1792909433.6715379,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,74 @@
+{
+  "index": 3255,
+  "host_base": "0x143158000",
+  "gt_base": "0x143158000",
+  "gt_indication": "Wheezing with shortness of breath. Evaluate endotracheal tube.",
+  "recovered_labels": [
+    " pneumonia.",
+    " pneumonia.",
+    " pneumonia.",
+    " pneumonia.",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 542,
+      "ind_gpa": 5420454128,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 5420454144,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 5420454160,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 5420454176,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 5420454192,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 5,
+    "false_positive_labels": [
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia."
+    ],
+    "false_positive_count": 5,
+    "recovered_labels": [
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia.",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 17.28172540664673,
+  "timestamp": 1793024103.183971,
+  "status": "SUCCESS"
+}

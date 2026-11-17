@@ -1,0 +1,32 @@
+{
+  "index": 822,
+  "host_base": "0x19764a000",
+  "gt_base": "0x1a0c7b000",
+  "gt_indication": "Premature newborn. RDS. Status post umbilical catheter repositioning.",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 6834923616,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 19.071637868881226,
+  "timestamp": 1792920280.1220548,
+  "status": "SUCCESS"
+}

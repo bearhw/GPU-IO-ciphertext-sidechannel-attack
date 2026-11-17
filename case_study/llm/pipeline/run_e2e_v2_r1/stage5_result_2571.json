@@ -1,0 +1,32 @@
+{
+  "index": 2571,
+  "host_base": "0x1a9e01000",
+  "gt_base": "0x1a9e00000",
+  "gt_indication": "Cough, fever, nasal congestion, generalized body aches, headaches for 4 days, wet sounding cough but not coughing up much mucus, temperature 100.5 degrees with mild tachycardia in triage, rhonchi and expiratory wheezing on LEFT, former smoker.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 7145003104,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.491838693618774,
+  "timestamp": 1793294432.8922682,
+  "status": "SUCCESS"
+}

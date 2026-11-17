@@ -1,0 +1,104 @@
+{
+  "index": 1783,
+  "host_base": "0x13d445000",
+  "gt_base": "0x13d445000",
+  "gt_indication": "66-year-old male with history of shortness of breath. COVID-19 positive.",
+  "recovered_labels": [
+    " chest pain",
+    " rib pain",
+    " Hypox",
+    " chest pain",
+    " rib pain",
+    " Hypox",
+    " chest pain",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 5322858656,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5322858656,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 5322858656,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5322858672,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5322858672,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5322858672,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5322858688,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5322858688,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "chest pain",
+      "rib pain",
+      "Hypox",
+      "chest pain",
+      "rib pain",
+      "Hypox",
+      "chest pain",
+      "Hypox"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "chest pain",
+      "rib pain",
+      "Hypox",
+      "chest pain",
+      "rib pain",
+      "Hypox",
+      "chest pain",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.55595350265503,
+  "timestamp": 1793205461.8158321,
+  "status": "SUCCESS"
+}

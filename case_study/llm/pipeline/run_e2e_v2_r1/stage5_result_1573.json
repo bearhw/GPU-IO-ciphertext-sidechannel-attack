@@ -1,0 +1,32 @@
+{
+  "index": 1573,
+  "host_base": "0x1a09b5000",
+  "gt_base": "0x1a09b5000",
+  "gt_indication": "Recent pneumonia worsening shortness of breath",
+  "recovered_labels": [
+    " shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 694,
+      "ind_gpa": 6989505968,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness"
+    ]
+  },
+  "elapsed_sec": 15.54616904258728,
+  "timestamp": 1793198864.9786077,
+  "status": "SUCCESS"
+}

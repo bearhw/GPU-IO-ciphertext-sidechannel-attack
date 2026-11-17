@@ -1,0 +1,50 @@
+{
+  "index": 120,
+  "host_base": "0x19fe72000",
+  "gt_base": "0x19fe72000",
+  "gt_indication": "Cough and shortness of breath. Right lower back pain.",
+  "recovered_labels": [
+    "ough and",
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 638,
+      "ind_gpa": 6977696752,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6977696768,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6977696784,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and",
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.296448230743408,
+  "timestamp": 1793455458.6723,
+  "status": "SUCCESS"
+}

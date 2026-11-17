@@ -1,0 +1,50 @@
+{
+  "index": 1808,
+  "host_base": "0x1a00c0000",
+  "gt_base": "0x1a00c0000",
+  "gt_indication": "Mid chest pain and tightness, shortness of breath, diaphoresis, all beginning last night, smoker",
+  "recovered_labels": [
+    " chest pain",
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 692,
+      "ind_gpa": 6980113824,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 698,
+      "ind_gpa": 6980113872,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 700,
+      "ind_gpa": 6980113888,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 16.19669008255005,
+  "timestamp": 1793207282.9567108,
+  "status": "SUCCESS"
+}

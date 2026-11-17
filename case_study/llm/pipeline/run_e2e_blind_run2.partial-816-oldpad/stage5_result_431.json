@@ -1,0 +1,32 @@
+{
+  "index": 431,
+  "host_base": "0x195fd9000",
+  "gt_base": "0x195fd9000",
+  "gt_indication": "Cough. Chest congestion. Shortness of breath.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 6811392784,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 18.626762628555298,
+  "timestamp": 1793068677.9607291,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,104 @@
+{
+  "index": 459,
+  "host_base": "0x1a2799000",
+  "gt_base": "0x1a2799000",
+  "gt_indication": "Hypertension.",
+  "recovered_labels": [
+    " chest pain",
+    " Weakness",
+    " chest pain",
+    " Weakness",
+    " chest pain",
+    " Weakness",
+    " chest pain",
+    " Weakness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 520,
+      "ind_gpa": 7020847168,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7020847168,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7020847184,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7020847184,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7020847200,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7020847200,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7020847216,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7020847216,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "chest pain",
+      "Weakness",
+      "chest pain",
+      "Weakness",
+      "chest pain",
+      "Weakness",
+      "chest pain",
+      "Weakness"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "chest pain",
+      "Weakness",
+      "chest pain",
+      "Weakness",
+      "chest pain",
+      "Weakness",
+      "chest pain",
+      "Weakness"
+    ]
+  },
+  "elapsed_sec": 30.83128309249878,
+  "timestamp": 1793457926.4057062,
+  "status": "SUCCESS"
+}

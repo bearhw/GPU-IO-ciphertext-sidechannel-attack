@@ -1,0 +1,32 @@
+{
+  "index": 2009,
+  "host_base": "0x1a34a3000",
+  "gt_base": "0x1a34a3000",
+  "gt_indication": "[AGE] female with a history of shortness of breath and positive viral test",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 624,
+      "ind_gpa": 7034520448,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.550108194351196,
+  "timestamp": 1793220042.300886,
+  "status": "SUCCESS"
+}

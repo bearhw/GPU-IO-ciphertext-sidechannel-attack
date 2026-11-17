@@ -29,7 +29,8 @@ import common as c
 
 def run_stage5(index: int, stage4_json: Optional[Path] = None,
                base_gpa: Optional[int] = None,
-               output_dir: Optional[Path] = None) -> Dict[str, Any]:
+               output_dir: Optional[Path] = None,
+               gt_indication: Optional[str] = None) -> Dict[str, Any]:
     out_dir = output_dir or c.PIPELINE_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     out_json = out_dir / f"stage5_result_{index}.json"
@@ -39,7 +40,7 @@ def run_stage5(index: int, stage4_json: Optional[Path] = None,
     print("=" * 70)
 
     gt_base = None
-    gt_ind = None
+    gt_ind = gt_indication
 
     if base_gpa is None:
         st4_path = stage4_json or (out_dir / f"stage4_bounds_{index}.json")
@@ -63,6 +64,25 @@ def run_stage5(index: int, stage4_json: Optional[Path] = None,
     if base_gpa is None:
         print(f"[!] No valid base_gpa available for index {index}", file=sys.stderr)
         return {"status": "NO_BASE_GPA"}
+
+    # The ground truth lives in the Stage 3 output. The two blocks above only
+    # read it while DERIVING base_gpa from a stage file, so a caller that passes
+    # base_gpa directly -- which master_orchestrate always does -- used to land
+    # here with gt_ind=None. evaluate_recovery() then has nothing to compare
+    # against: every correctly recovered label is scored as a false positive and
+    # top1/any_match come out False even for a fully successful recovery. Load
+    # it explicitly instead of inferring it from how base_gpa arrived.
+    if not gt_ind or gt_base is None:
+        st3_path = out_dir / f"stage3_located_{index}.json"
+        if st3_path.exists():
+            st3 = c.load_json(st3_path)
+            if not gt_ind:
+                gt_ind = st3.get("gt_indication")
+            if gt_base is None and st3.get("gt_base"):
+                gt_base = int(st3["gt_base"], 16)
+    if not gt_ind:
+        print(f"[Stage 5] WARNING: no ground-truth indication for sample {index}; "
+              f"match/false-positive columns will be meaningless.", file=sys.stderr)
 
     if not c.DICT_CACHE.exists():
         print(f"[!] Dictionary cache {c.DICT_CACHE} missing", file=sys.stderr)

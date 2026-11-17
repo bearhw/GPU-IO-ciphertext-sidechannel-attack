@@ -1,0 +1,50 @@
+{
+  "index": 2291,
+  "host_base": "0x1a38f2000",
+  "gt_base": "0x1a38f2000",
+  "gt_indication": "Shortness of breath, cough, congestion, pregnant",
+  "recovered_labels": [
+    "ness of",
+    " breath,",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 524,
+      "ind_gpa": 7039037536,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7039037552,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7039037568,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 19.402544021606445,
+  "timestamp": 1792979196.6720564,
+  "status": "SUCCESS"
+}

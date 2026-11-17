@@ -1,0 +1,41 @@
+{
+  "index": 2704,
+  "host_base": "0x19cbdd000",
+  "gt_base": "0x19cbdd000",
+  "gt_indication": "SOB, cough. PT states cough, SOA. DEGNES",
+  "recovered_labels": [
+    " cough.",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 6924655344,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 6924655376,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough.",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 15.706127643585205,
+  "timestamp": 1793422842.6669056,
+  "status": "SUCCESS"
+}

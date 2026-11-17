@@ -70,14 +70,16 @@ def do_swap_read(dict_gpa: int, src_gpa: int, out_path: Path,
         # The dump buffer is not always ready the instant the swap reports done;
         # the ioctl then returns EAGAIN. Retrying costs milliseconds, while letting
         # it propagate throws away the whole dictionary build (seen at ref 20/64).
-        for attempt in range(8):
+        # Right after a host reboot the PSP/KVM path is briefly unstable and EAGAIN
+        # can persist for tens of seconds, so retry generously (capped backoff).
+        for attempt in range(20):
             try:
                 fcntl.ioctl(kvm_fd, KVM_READ_PAGE_DUMP, buf)
                 break
             except BlockingIOError:
-                if attempt == 7:
+                if attempt == 19:
                     raise
-                time.sleep(0.25 * (attempt + 1))
+                time.sleep(min(0.25 * (attempt + 1), 2.0))
         raw = bytes(buf)
     finally:
         os.close(kvm_fd)

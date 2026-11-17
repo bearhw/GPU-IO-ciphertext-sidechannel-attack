@@ -1,0 +1,59 @@
+{
+  "index": 861,
+  "host_base": "0x1a0c9e000",
+  "gt_base": "0x1a0c9e000",
+  "gt_indication": "Left-sided chest pain, shortness of breath",
+  "recovered_labels": [
+    " chest pain",
+    ", short",
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 670,
+      "ind_gpa": 6992557296,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 672,
+      "ind_gpa": 6992557312,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 674,
+      "ind_gpa": 6992557328,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 676,
+      "ind_gpa": 6992557344,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      ", short",
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 19.04018211364746,
+  "timestamp": 1792923245.1745517,
+  "status": "SUCCESS"
+}

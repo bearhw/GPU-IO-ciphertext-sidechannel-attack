@@ -1,0 +1,224 @@
+{
+  "index": 2886,
+  "host_base": "0x1a010c000",
+  "gt_base": "0x1a010c000",
+  "gt_indication": "Positive PPD test. Cough.",
+  "recovered_labels": [
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC",
+    " Follow-up",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 312,
+      "ind_gpa": 6980422080,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 312,
+      "ind_gpa": 6980422080,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 314,
+      "ind_gpa": 6980422096,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 314,
+      "ind_gpa": 6980422096,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 316,
+      "ind_gpa": 6980422112,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 316,
+      "ind_gpa": 6980422112,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 318,
+      "ind_gpa": 6980422128,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 318,
+      "ind_gpa": 6980422128,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 320,
+      "ind_gpa": 6980422144,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 320,
+      "ind_gpa": 6980422144,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 322,
+      "ind_gpa": 6980422160,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 322,
+      "ind_gpa": 6980422160,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 324,
+      "ind_gpa": 6980422176,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 324,
+      "ind_gpa": 6980422176,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 326,
+      "ind_gpa": 6980422192,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 326,
+      "ind_gpa": 6980422192,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 328,
+      "ind_gpa": 6980422208,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 328,
+      "ind_gpa": 6980422208,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 330,
+      "ind_gpa": 6980422224,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 330,
+      "ind_gpa": 6980422224,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC"
+    ],
+    "false_positive_count": 20,
+    "recovered_labels": [
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC",
+      "Follow-up",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 18.76347255706787,
+  "timestamp": 1793009640.5358438,
+  "status": "SUCCESS"
+}

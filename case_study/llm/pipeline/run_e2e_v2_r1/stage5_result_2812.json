@@ -1,0 +1,32 @@
+{
+  "index": 2812,
+  "host_base": "0x1a575b000",
+  "gt_base": "0x1a575b000",
+  "gt_indication": "Status post aorto mesenteric aneurysm repair, follow-up line placement. History of COPD",
+  "recovered_labels": [
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 592,
+      "ind_gpa": 7070925440,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.523258447647095,
+  "timestamp": 1793251974.307728,
+  "status": "SUCCESS"
+}

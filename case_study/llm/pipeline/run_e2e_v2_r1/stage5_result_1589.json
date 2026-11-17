@@ -1,0 +1,32 @@
+{
+  "index": 1589,
+  "host_base": "0x1a0cb9000",
+  "gt_base": "0x1a0cb8000",
+  "gt_indication": "Cough, chest pain, and SOB. Former smoker.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6992664608,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.516029119491577,
+  "timestamp": 1793199169.8693755,
+  "status": "SUCCESS"
+}

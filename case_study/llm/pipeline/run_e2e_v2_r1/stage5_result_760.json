@@ -1,0 +1,50 @@
+{
+  "index": 760,
+  "host_base": "0x1a6478000",
+  "gt_base": "0x1a6478000",
+  "gt_indication": "Shortness of breath. Hypertension. Alcohol dependence.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 388,
+      "ind_gpa": 7084674080,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 390,
+      "ind_gpa": 7084674096,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 392,
+      "ind_gpa": 7084674112,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.549890756607056,
+  "timestamp": 1793156206.8130956,
+  "status": "SUCCESS"
+}

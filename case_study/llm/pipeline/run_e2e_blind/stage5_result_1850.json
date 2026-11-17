@@ -1,0 +1,44 @@
+{
+  "index": 1850,
+  "host_base": "0x19d1c7000",
+  "gt_base": "0x19d1c7000",
+  "gt_indication": "Awakened this morning with left-sided substernal chest pain extending into the left upper extremity. New onset dyspnea.",
+  "recovered_labels": [
+    " PICC",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 574,
+      "ind_gpa": 6930858480,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 6930858480,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "PICC",
+      "fever."
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "PICC",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.343172788619995,
+  "timestamp": 1792958203.0363743,
+  "status": "SUCCESS"
+}

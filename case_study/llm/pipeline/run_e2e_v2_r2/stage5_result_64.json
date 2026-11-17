@@ -1,0 +1,32 @@
+{
+  "index": 64,
+  "host_base": "0x1a0556000",
+  "gt_base": "0x1a0556000",
+  "gt_indication": "COPD, pneumonia",
+  "recovered_labels": [
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 6984919792,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.548020839691162,
+  "timestamp": 1793310395.3598433,
+  "status": "SUCCESS"
+}

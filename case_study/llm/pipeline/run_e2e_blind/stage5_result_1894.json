@@ -1,0 +1,32 @@
+{
+  "index": 1894,
+  "host_base": "0x195de7000",
+  "gt_base": "0x195de6000",
+  "gt_indication": "Inspiratory chest pain. Syncope.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 6809352240,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 17.716713190078735,
+  "timestamp": 1793037688.5496757,
+  "status": "SUCCESS"
+}

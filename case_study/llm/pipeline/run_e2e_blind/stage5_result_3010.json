@@ -1,0 +1,32 @@
+{
+  "index": 3010,
+  "host_base": "0x1a1a6f000",
+  "gt_base": "0x1a1a6e000",
+  "gt_indication": "Shortness of breath and history of pneumothorax.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7007041568,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 20.10033679008484,
+  "timestamp": 1793014800.9485364,
+  "status": "SUCCESS"
+}

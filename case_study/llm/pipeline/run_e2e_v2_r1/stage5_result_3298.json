@@ -1,0 +1,32 @@
+{
+  "index": 3298,
+  "host_base": "0x1ab72e000",
+  "gt_base": "0x1ab72d000",
+  "gt_indication": "Status post CABG procedure.",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 7171401776,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 15.509184837341309,
+  "timestamp": 1793296210.2749648,
+  "status": "SUCCESS"
+}

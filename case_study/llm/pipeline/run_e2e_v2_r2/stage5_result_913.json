@@ -1,0 +1,32 @@
+{
+  "index": 913,
+  "host_base": "0x1a8ba0000",
+  "gt_base": "0x1a8ba0000",
+  "gt_indication": "Shortness of breath beginning today. History of hypertension, diabetes, former smoker.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 664,
+      "ind_gpa": 7125734592,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.328319072723389,
+  "timestamp": 1793349914.547731,
+  "status": "SUCCESS"
+}

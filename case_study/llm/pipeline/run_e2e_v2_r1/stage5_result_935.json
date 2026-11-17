@@ -1,0 +1,32 @@
+{
+  "index": 935,
+  "host_base": "0x1a1b62000",
+  "gt_base": "0x1a1b62000",
+  "gt_indication": "Shortness of breath and fever.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 594,
+      "ind_gpa": 7008039568,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.575428247451782,
+  "timestamp": 1793164811.296029,
+  "status": "SUCCESS"
+}

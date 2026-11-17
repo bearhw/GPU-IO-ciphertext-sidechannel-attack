@@ -394,6 +394,7 @@
 0xd5bb000f	my_idt_install_handler	arch/x86/kvm/kvm	EXPORT_SYMBOL	
 0x613cf9ed	my_idt_prepare_apic_timer	arch/x86/kvm/kvm	EXPORT_SYMBOL	
 0xd91de72b	sev_step_config_mutex	arch/x86/kvm/kvm	EXPORT_SYMBOL	
+0x35a17f69	sev_step_vcpu_pre_entry	arch/x86/kvm/kvm	EXPORT_SYMBOL	
 0x5fb8deb8	global_sev_step_config	arch/x86/kvm/kvm	EXPORT_SYMBOL	
 0x22c5ca50	sev_step_is_single_stepping_active	arch/x86/kvm/kvm	EXPORT_SYMBOL	
 0xf5132264	sev_step_get_rip	arch/x86/kvm/kvm	EXPORT_SYMBOL	

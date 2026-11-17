@@ -1,0 +1,64 @@
+{
+  "index": 970,
+  "host_base": "0x196fea000",
+  "gt_base": "0x196fe9000",
+  "gt_indication": "Sore throat for 2 months. Laryngitis. Nonproductive cough. Smoker.",
+  "recovered_labels": [
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 286,
+      "ind_gpa": 6828239088,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6828239104,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6828239120,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6828239136,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 16.553118467330933,
+  "timestamp": 1792927223.8238146,
+  "status": "SUCCESS"
+}

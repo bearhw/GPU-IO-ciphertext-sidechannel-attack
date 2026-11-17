@@ -1,0 +1,234 @@
+{
+  "index": 277,
+  "host_base": "0x1400c6000",
+  "gt_base": "0x1400c6000",
+  "gt_indication": "Left lower lobe pneumonia. Failure to thrive. Intubated.",
+  "recovered_labels": [
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever.",
+    " chest pain",
+    " Respiratory",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 366,
+      "ind_gpa": 5369523056,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5369523056,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5369523056,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5369523072,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5369523072,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5369523072,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5369523088,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5369523088,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5369523088,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5369523104,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5369523104,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5369523104,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5369523120,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5369523120,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5369523120,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5369523136,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5369523136,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5369523136,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5369523152,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5369523152,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5369523152,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 21,
+    "false_positive_labels": [
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever."
+    ],
+    "false_positive_count": 21,
+    "recovered_labels": [
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever.",
+      "chest pain",
+      "Respiratory",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.45085072517395,
+  "timestamp": 1793141865.5426202,
+  "status": "SUCCESS"
+}

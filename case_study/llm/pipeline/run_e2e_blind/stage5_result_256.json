@@ -1,0 +1,50 @@
+{
+  "index": 256,
+  "host_base": "0x1a658b000",
+  "gt_base": "0x1a658a000",
+  "gt_indication": "Shortness of breath. Left chest pain. Left shoulder pain. Cough.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7085799456,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 7085799472,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 7085799504,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 17.706796169281006,
+  "timestamp": 1792895179.3387053,
+  "status": "SUCCESS"
+}

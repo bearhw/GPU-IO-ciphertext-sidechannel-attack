@@ -1,0 +1,32 @@
+{
+  "index": 416,
+  "host_base": "0x195d38000",
+  "gt_base": "0x195d38000",
+  "gt_indication": "Fever. Tachycardia. Short of breath.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 556,
+      "ind_gpa": 6808637792,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 18.83384108543396,
+  "timestamp": 1793068292.599058,
+  "status": "SUCCESS"
+}

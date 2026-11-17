@@ -1,0 +1,44 @@
+{
+  "index": 2924,
+  "host_base": "0x1973e2000",
+  "gt_base": "0x1973e2000",
+  "gt_indication": "Wheezing. Congestion. Cough.",
+  "recovered_labels": [
+    " Hypox",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 454,
+      "ind_gpa": 6832401968,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 6832401984,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "Hypox",
+      "Hypox"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "Hypox",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 16.910089015960693,
+  "timestamp": 1793303216.3315897,
+  "status": "SUCCESS"
+}

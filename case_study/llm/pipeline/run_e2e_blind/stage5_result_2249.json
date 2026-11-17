@@ -1,0 +1,50 @@
+{
+  "index": 2249,
+  "host_base": "0x196c93000",
+  "gt_base": "0x196c93000",
+  "gt_indication": "Hypoxia, shortness of breath, acute respiratory failure.",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 618,
+      "ind_gpa": 6824739664,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 620,
+      "ind_gpa": 6824739680,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 622,
+      "ind_gpa": 6824739696,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 18.943535566329956,
+  "timestamp": 1792978116.1698093,
+  "status": "SUCCESS"
+}

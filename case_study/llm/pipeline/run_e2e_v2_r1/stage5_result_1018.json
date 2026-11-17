@@ -1,0 +1,224 @@
+{
+  "index": 1018,
+  "host_base": "0x1a311a000",
+  "gt_base": "0x1a311a000",
+  "gt_indication": "Follow-up pneumonia. Subsequent encounter.",
+  "recovered_labels": [
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 562,
+      "ind_gpa": 7030813072,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 7030813072,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7030813088,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7030813088,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7030813104,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 566,
+      "ind_gpa": 7030813104,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 7030813120,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 568,
+      "ind_gpa": 7030813120,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 7030813136,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 570,
+      "ind_gpa": 7030813136,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 7030813152,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 572,
+      "ind_gpa": 7030813152,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 7030813168,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 574,
+      "ind_gpa": 7030813168,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 7030813184,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 576,
+      "ind_gpa": 7030813184,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 578,
+      "ind_gpa": 7030813200,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 578,
+      "ind_gpa": 7030813200,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 7030813216,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 580,
+      "ind_gpa": 7030813216,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 20,
+    "false_positive_labels": [
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox"
+    ],
+    "false_positive_count": 20,
+    "recovered_labels": [
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.643434524536133,
+  "timestamp": 1793170220.319324,
+  "status": "SUCCESS"
+}

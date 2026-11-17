@@ -1,0 +1,256 @@
+{
+  "index": 50,
+  "host_base": "0x1a0781000",
+  "gt_base": "0x1a0781000",
+  "gt_indication": "Recent COVID-19 positive. Hyperglycemia.",
+  "recovered_labels": [
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-",
+    " cough.",
+    " wheez",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 586,
+      "ind_gpa": 6987194960,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 586,
+      "ind_gpa": 6987194960,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 586,
+      "ind_gpa": 6987194960,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 588,
+      "ind_gpa": 6987194976,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 588,
+      "ind_gpa": 6987194976,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 588,
+      "ind_gpa": 6987194976,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 590,
+      "ind_gpa": 6987194992,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 590,
+      "ind_gpa": 6987194992,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 590,
+      "ind_gpa": 6987194992,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 592,
+      "ind_gpa": 6987195008,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 592,
+      "ind_gpa": 6987195008,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 592,
+      "ind_gpa": 6987195008,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6987195024,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6987195024,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 594,
+      "ind_gpa": 6987195024,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6987195040,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6987195040,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6987195040,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6987195056,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6987195056,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6987195056,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6987195072,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6987195072,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6987195072,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 24,
+    "false_positive_labels": [
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez",
+      "cough.",
+      "wheez"
+    ],
+    "false_positive_count": 16,
+    "recovered_labels": [
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-",
+      "cough.",
+      "wheez",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.699322938919067,
+  "timestamp": 1793127992.6316988,
+  "status": "SUCCESS"
+}

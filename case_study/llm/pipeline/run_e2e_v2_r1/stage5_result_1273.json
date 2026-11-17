@@ -1,0 +1,64 @@
+{
+  "index": 1273,
+  "host_base": "0x19f20f000",
+  "gt_base": "0x19f20f000",
+  "gt_indication": "Aspiration. Hypertension.",
+  "recovered_labels": [
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 544,
+      "ind_gpa": 6964707584,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6964707600,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6964707616,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6964707632,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.613124132156372,
+  "timestamp": 1793183531.5466971,
+  "status": "SUCCESS"
+}

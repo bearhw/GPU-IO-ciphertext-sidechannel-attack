@@ -1,0 +1,32 @@
+{
+  "index": 1234,
+  "host_base": "0x1a2378000",
+  "gt_base": "0x1a2378000",
+  "gt_indication": "Chest pain. Diabetes. Hypertension. Coronary artery disease.",
+  "recovered_labels": [
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7016516352,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.553919553756714,
+  "timestamp": 1793458524.149786,
+  "status": "SUCCESS"
+}

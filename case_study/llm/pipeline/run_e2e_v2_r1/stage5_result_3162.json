@@ -1,0 +1,41 @@
+{
+  "index": 3162,
+  "host_base": "0x19fa77000",
+  "gt_base": "0x19fa77000",
+  "gt_indication": "Shortness of breath and chest pain over the last 2 weeks. Asthma.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 718,
+      "ind_gpa": 6973523568,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 720,
+      "ind_gpa": 6973523584,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.508591175079346,
+  "timestamp": 1793264588.3849776,
+  "status": "SUCCESS"
+}

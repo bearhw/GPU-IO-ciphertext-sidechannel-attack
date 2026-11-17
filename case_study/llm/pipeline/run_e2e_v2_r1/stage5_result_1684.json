@@ -1,0 +1,32 @@
+{
+  "index": 1684,
+  "host_base": "0x1a25e4000",
+  "gt_base": "0x1a25e3000",
+  "gt_indication": "Left lower rib pain",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 262,
+      "ind_gpa": 7019055152,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.337361812591553,
+  "timestamp": 1793201315.2736719,
+  "status": "SUCCESS"
+}

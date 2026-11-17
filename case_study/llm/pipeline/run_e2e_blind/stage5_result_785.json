@@ -1,0 +1,195 @@
+{
+  "index": 785,
+  "host_base": "0x19f78a000",
+  "gt_base": "0x19f78a000",
+  "gt_indication": "Productive cough, body aches, fever",
+  "recovered_labels": [
+    " Cough",
+    " COPD",
+    " Cough",
+    " COPD",
+    " Cough",
+    " COPD",
+    " Cough",
+    " COPD",
+    " Cough",
+    " COPD",
+    " Cough",
+    " COPD",
+    " Cough",
+    " COPD",
+    " Cough",
+    " COPD",
+    " Cough",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 598,
+      "ind_gpa": 6970454704,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6970454704,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6970454720,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 6970454720,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 6970454736,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 6970454736,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 604,
+      "ind_gpa": 6970454752,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 604,
+      "ind_gpa": 6970454752,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 606,
+      "ind_gpa": 6970454768,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 606,
+      "ind_gpa": 6970454768,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 608,
+      "ind_gpa": 6970454784,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 608,
+      "ind_gpa": 6970454784,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 610,
+      "ind_gpa": 6970454800,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 610,
+      "ind_gpa": 6970454800,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 612,
+      "ind_gpa": 6970454816,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 612,
+      "ind_gpa": 6970454816,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 614,
+      "ind_gpa": 6970454832,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 614,
+      "ind_gpa": 6970454832,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD",
+      "COPD"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD",
+      "Cough",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 22.16857099533081,
+  "timestamp": 1793034533.3007214,
+  "status": "SUCCESS"
+}

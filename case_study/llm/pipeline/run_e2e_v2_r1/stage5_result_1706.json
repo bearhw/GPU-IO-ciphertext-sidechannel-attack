@@ -1,0 +1,32 @@
+{
+  "index": 1706,
+  "host_base": "0x17b8b0000",
+  "gt_base": "0x19db3a000",
+  "gt_indication": "History of coughing for 1-1/2 weeks. Shortness of breath.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 690,
+      "ind_gpa": 6367679888,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 16.018912315368652,
+  "timestamp": 1793201860.1560779,
+  "status": "SUCCESS"
+}

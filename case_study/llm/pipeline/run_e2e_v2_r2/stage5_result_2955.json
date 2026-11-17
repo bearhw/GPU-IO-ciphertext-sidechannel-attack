@@ -1,0 +1,244 @@
+{
+  "index": 2955,
+  "host_base": "0x140241000",
+  "gt_base": "0x140241000",
+  "gt_indication": "Postoperative CABG.",
+  "recovered_labels": [
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 5371075376,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 5371075376,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5371075392,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 5371075392,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5371075408,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 5371075408,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5371075424,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5371075424,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5371075440,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5371075440,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5371075456,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5371075456,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5371075472,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5371075472,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5371075488,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5371075488,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5371075504,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5371075504,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5371075520,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5371075520,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5371075536,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5371075536,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 22,
+    "false_positive_labels": [
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure"
+    ],
+    "false_positive_count": 22,
+    "recovered_labels": [
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.355085372924805,
+  "timestamp": 1793437454.940549,
+  "status": "SUCCESS"
+}

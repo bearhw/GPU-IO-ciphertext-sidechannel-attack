@@ -1,0 +1,204 @@
+{
+  "index": 1393,
+  "host_base": "0x142c7f000",
+  "gt_base": "0x142c7f000",
+  "gt_indication": "COPD wheezing and crackles",
+  "recovered_labels": [
+    " of breath",
+    " pneumonia.",
+    " of breath",
+    " pneumonia.",
+    " of breath",
+    " pneumonia.",
+    " of breath",
+    " pneumonia.",
+    " of breath",
+    " pneumonia.",
+    " of breath",
+    " pneumonia.",
+    " of breath",
+    " pneumonia.",
+    " of breath",
+    " pneumonia.",
+    " of breath",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 454,
+      "ind_gpa": 5415370288,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 5415370288,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5415370304,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 5415370304,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5415370320,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 5415370320,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5415370336,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 460,
+      "ind_gpa": 5415370336,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5415370352,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 462,
+      "ind_gpa": 5415370352,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5415370368,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 464,
+      "ind_gpa": 5415370368,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5415370384,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 5415370384,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5415370400,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 5415370400,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5415370416,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 5415370416,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia."
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia.",
+      "of breath",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 15.363601446151733,
+  "timestamp": 1793190210.4458075,
+  "status": "SUCCESS"
+}

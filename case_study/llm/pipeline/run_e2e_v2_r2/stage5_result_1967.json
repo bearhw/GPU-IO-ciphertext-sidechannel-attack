@@ -1,0 +1,32 @@
+{
+  "index": 1967,
+  "host_base": "0x19784e000",
+  "gt_base": "0x19784e000",
+  "gt_indication": "Abdominal pain for 3 weeks. Previous peritoneal catheter placed with abscess surrounding the catheter. Right upper chest hemodialysis catheter placed yesterday. Abdominal pain, vomiting, temperature.",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 628,
+      "ind_gpa": 6837040032,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.444175958633423,
+  "timestamp": 1793461509.3143902,
+  "status": "SUCCESS"
+}

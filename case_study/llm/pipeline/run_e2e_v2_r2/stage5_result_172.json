@@ -1,0 +1,41 @@
+{
+  "index": 172,
+  "host_base": "0x196e4b000",
+  "gt_base": "0x196e4b000",
+  "gt_indication": "Cough, wheezing and chest pain for 4 days.",
+  "recovered_labels": [
+    " wheez",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 600,
+      "ind_gpa": 6826541760,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 604,
+      "ind_gpa": 6826541792,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "wheez",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.823016166687012,
+  "timestamp": 1793319919.7949717,
+  "status": "SUCCESS"
+}

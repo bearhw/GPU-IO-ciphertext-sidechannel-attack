@@ -1,0 +1,41 @@
+{
+  "index": 298,
+  "host_base": "0x1a72bb000",
+  "gt_base": "0x1a72bb000",
+  "gt_indication": "Pain. Shortness of breath. History of asthma. Smoker",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 528,
+      "ind_gpa": 7099629696,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 7099629712,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 18.290451526641846,
+  "timestamp": 1792896441.8244026,
+  "status": "SUCCESS"
+}

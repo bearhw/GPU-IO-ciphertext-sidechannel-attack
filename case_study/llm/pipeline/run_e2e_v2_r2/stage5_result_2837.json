@@ -1,0 +1,32 @@
+{
+  "index": 2837,
+  "host_base": "0x1a7497000",
+  "gt_base": "0x1a7497000",
+  "gt_indication": "Chest pain for 3 days. Weakness in legs.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 618,
+      "ind_gpa": 7101580112,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 16.09480309486389,
+  "timestamp": 1793464231.300548,
+  "status": "SUCCESS"
+}

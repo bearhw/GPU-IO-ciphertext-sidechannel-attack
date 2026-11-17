@@ -1,0 +1,41 @@
+{
+  "index": 2,
+  "host_base": "0x19e9b0000",
+  "gt_base": "0x19e9b0000",
+  "gt_indication": "Shortness of breath and fever",
+  "recovered_labels": [
+    "ness of",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 448,
+      "ind_gpa": 6955929088,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 452,
+      "ind_gpa": 6955929120,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 16.144386529922485,
+  "timestamp": 1793117864.8725634,
+  "status": "SUCCESS"
+}

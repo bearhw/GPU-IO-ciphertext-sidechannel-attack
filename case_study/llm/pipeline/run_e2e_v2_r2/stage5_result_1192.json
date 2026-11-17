@@ -1,0 +1,50 @@
+{
+  "index": 1192,
+  "host_base": "0x140f0e000",
+  "gt_base": "0x140f0e000",
+  "gt_indication": "Shortness of breath. Fever. Nausea and vomiting.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 5384497888,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 5384497904,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 5384497920,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 15.537668704986572,
+  "timestamp": 1793358641.8811104,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,50 @@
+{
+  "index": 2857,
+  "host_base": "0x1a6c85000",
+  "gt_base": "0x1a6c85000",
+  "gt_indication": "[AGE] female failure to thrive, shortness of breath, fever.",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 7093115664,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 7093115680,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 7093115696,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.250765800476074,
+  "timestamp": 1793253063.670665,
+  "status": "SUCCESS"
+}

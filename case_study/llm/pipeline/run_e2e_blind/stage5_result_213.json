@@ -1,0 +1,34 @@
+{
+  "index": 213,
+  "host_base": "0x16f2cd000",
+  "gt_base": "0x1a5645000",
+  "gt_indication": "wheezing",
+  "recovered_labels": [
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 6160179360,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "fever."
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "fever."
+    ]
+  },
+  "elapsed_sec": 36.71241998672485,
+  "timestamp": 1792894137.4662292,
+  "status": "SUCCESS"
+}

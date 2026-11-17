@@ -1,0 +1,32 @@
+{
+  "index": 353,
+  "host_base": "0x1a14ea000",
+  "gt_base": "0x1a14ea000",
+  "gt_indication": "Cough and congestion for 3 weeks, no fever",
+  "recovered_labels": [
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7001254624,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "fever."
+    ]
+  },
+  "elapsed_sec": 19.179508686065674,
+  "timestamp": 1793066188.2509592,
+  "status": "SUCCESS"
+}

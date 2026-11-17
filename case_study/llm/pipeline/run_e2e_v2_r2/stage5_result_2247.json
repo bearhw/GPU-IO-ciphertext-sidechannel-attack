@@ -1,0 +1,50 @@
+{
+  "index": 2247,
+  "host_base": "0x195105000",
+  "gt_base": "0x195105000",
+  "gt_indication": "Left chest pain, shortness of breath and generalized weakness for 5 days.",
+  "recovered_labels": [
+    " chest pain",
+    ", short",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 594,
+      "ind_gpa": 6795846288,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 596,
+      "ind_gpa": 6795846304,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 598,
+      "ind_gpa": 6795846320,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      ", short",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.581143140792847,
+  "timestamp": 1793463356.9272146,
+  "status": "SUCCESS"
+}

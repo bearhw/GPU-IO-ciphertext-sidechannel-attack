@@ -1,0 +1,44 @@
+{
+  "index": 206,
+  "host_base": "0x13fa2d000",
+  "gt_base": "0x13fa2d000",
+  "gt_indication": "Respiratory distress",
+  "recovered_labels": [
+    " chest pain",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 5362606240,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 5362606256,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "chest pain",
+      "chest pain"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "chest pain",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.173431158065796,
+  "timestamp": 1793138501.8170211,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 198,
+  "host_base": "0x1a4fa8000",
+  "gt_base": "0x1a4fa8000",
+  "gt_indication": "3 y/o F; fever, cough, congestion. Seizure episode.",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 306,
+      "ind_gpa": 7062849936,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 18.264819383621216,
+  "timestamp": 1792893626.8267546,
+  "status": "SUCCESS"
+}

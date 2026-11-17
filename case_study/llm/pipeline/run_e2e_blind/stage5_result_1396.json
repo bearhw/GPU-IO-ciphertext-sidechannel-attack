@@ -1,0 +1,32 @@
+{
+  "index": 1396,
+  "host_base": "0x1a2656000",
+  "gt_base": "0x1a2656000",
+  "gt_indication": "Chest pain. Cough.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 560,
+      "ind_gpa": 7019524480,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 18.9841947555542,
+  "timestamp": 1792944877.578124,
+  "status": "SUCCESS"
+}

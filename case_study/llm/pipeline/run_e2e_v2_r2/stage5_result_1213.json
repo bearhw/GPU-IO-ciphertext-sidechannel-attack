@@ -1,0 +1,424 @@
+{
+  "index": 1213,
+  "host_base": "0x19f998000",
+  "gt_base": "0x19f998000",
+  "gt_indication": "Urinary tract infection. Hypertension.",
+  "recovered_labels": [
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC",
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 532,
+      "ind_gpa": 6972608672,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6972608672,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6972608672,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 6972608672,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6972608688,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6972608688,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6972608688,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6972608688,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6972608704,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6972608704,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6972608704,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6972608704,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6972608720,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6972608720,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6972608720,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6972608720,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6972608736,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6972608736,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6972608736,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6972608736,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6972608752,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6972608752,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6972608752,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6972608752,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6972608768,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6972608768,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6972608768,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6972608768,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6972608784,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6972608784,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6972608784,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6972608784,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6972608800,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6972608800,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6972608800,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6972608800,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6972608816,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6972608816,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6972608816,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6972608816,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 40,
+    "false_positive_labels": [
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC"
+    ],
+    "false_positive_count": 40,
+    "recovered_labels": [
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC",
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.799723625183105,
+  "timestamp": 1793359120.374395,
+  "status": "SUCCESS"
+}

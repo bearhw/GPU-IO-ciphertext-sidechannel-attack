@@ -1,0 +1,50 @@
+{
+  "index": 795,
+  "host_base": "0x1a330f000",
+  "gt_base": "0x1a330f000",
+  "gt_indication": "Decreased level of consciousness, shortness of breath",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7032863488,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 7032863504,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 7032863520,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 19.262248039245605,
+  "timestamp": 1793084375.2146966,
+  "status": "SUCCESS"
+}

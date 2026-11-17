@@ -1,0 +1,32 @@
+{
+  "index": 1022,
+  "host_base": "0x197690000",
+  "gt_base": "0x197690000",
+  "gt_indication": "Status post peripherally inserted central catheter (PICC) central line placement",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 6835213344,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.767628192901611,
+  "timestamp": 1793352909.0437472,
+  "status": "SUCCESS"
+}

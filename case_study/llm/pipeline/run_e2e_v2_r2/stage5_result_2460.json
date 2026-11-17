@@ -1,0 +1,50 @@
+{
+  "index": 2460,
+  "host_base": "0x19df6b000",
+  "gt_base": "0x19df6b000",
+  "gt_indication": "Shortness of breath, chest pain, cough for 2 weeks",
+  "recovered_labels": [
+    "ness of",
+    " breath,",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 746,
+      "ind_gpa": 6945163088,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 748,
+      "ind_gpa": 6945163104,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 750,
+      "ind_gpa": 6945163120,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 15.528028964996338,
+  "timestamp": 1793414587.9356134,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,50 @@
+{
+  "index": 1242,
+  "host_base": "0x199a3e000",
+  "gt_base": "0x199a3d000",
+  "gt_indication": "Shortness of breath. COPD. Follow-up upper right apical disease. Abnormal chest x-ray.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6872623136,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 262,
+      "ind_gpa": 6872623152,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 268,
+      "ind_gpa": 6872623200,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.284857034683228,
+  "timestamp": 1793180888.202893,
+  "status": "SUCCESS"
+}

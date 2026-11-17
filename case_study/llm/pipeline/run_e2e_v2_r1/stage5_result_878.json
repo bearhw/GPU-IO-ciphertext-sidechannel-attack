@@ -1,0 +1,354 @@
+{
+  "index": 878,
+  "host_base": "0x1a95e1000",
+  "gt_base": "0x1a95e1000",
+  "gt_indication": "CLL, chest pain",
+  "recovered_labels": [
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox",
+    " pneumonia.",
+    " COPD",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 7136484144,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 7136484144,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 7136484144,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 7136484160,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 7136484160,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 7136484160,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7136484176,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7136484176,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7136484176,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7136484192,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7136484192,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7136484192,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7136484208,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7136484208,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7136484208,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7136484224,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7136484224,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7136484224,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7136484240,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7136484240,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7136484240,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7136484256,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7136484256,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7136484256,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7136484272,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7136484272,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7136484272,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7136484288,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7136484288,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7136484288,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7136484304,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7136484304,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7136484304,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 33,
+    "false_positive_labels": [
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox"
+    ],
+    "false_positive_count": 33,
+    "recovered_labels": [
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox",
+      "pneumonia.",
+      "COPD",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.59291934967041,
+  "timestamp": 1793161787.671864,
+  "status": "SUCCESS"
+}

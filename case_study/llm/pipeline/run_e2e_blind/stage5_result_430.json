@@ -1,0 +1,32 @@
+{
+  "index": 430,
+  "host_base": "0x193ad9000",
+  "gt_base": "0x19ecee000",
+  "gt_indication": "Acute onset of fever and cough. Initial encounter.",
+  "recovered_labels": [
+    " cough."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 382,
+      "ind_gpa": 6772595696,
+      "token_idx": 12,
+      "n_blocks": 1,
+      "label": " cough."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough."
+    ]
+  },
+  "elapsed_sec": 19.971981048583984,
+  "timestamp": 1792900663.7032626,
+  "status": "SUCCESS"
+}

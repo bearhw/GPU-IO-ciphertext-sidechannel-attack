@@ -1,0 +1,32 @@
+{
+  "index": 1530,
+  "host_base": "0x1ab1d8000",
+  "gt_base": "0x1ab1d8000",
+  "gt_indication": "Shortness of breath; history of coronary artery disease and remote history of tobacco use",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7165807328,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 16.79537796974182,
+  "timestamp": 1793109378.923588,
+  "status": "SUCCESS"
+}

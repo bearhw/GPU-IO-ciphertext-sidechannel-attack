@@ -1,0 +1,34 @@
+{
+  "index": 3360,
+  "host_base": "0x1a19b3000",
+  "gt_base": "0x1a19b3000",
+  "gt_indication": "Cough, fever times 1\u00bd months. Smoker.",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 458,
+      "ind_gpa": 7006273104,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "ough and"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 17.52169442176819,
+  "timestamp": 1793027772.810415,
+  "status": "SUCCESS"
+}

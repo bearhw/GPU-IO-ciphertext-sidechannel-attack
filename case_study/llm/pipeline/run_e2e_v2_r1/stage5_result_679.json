@@ -1,0 +1,32 @@
+{
+  "index": 679,
+  "host_base": "0x19ceaf000",
+  "gt_base": "0x19ceae000",
+  "gt_indication": "58-year-old male with history of pneumonia from COVID-19 infection.",
+  "recovered_labels": [
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 494,
+      "ind_gpa": 6927613808,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.211091995239258,
+  "timestamp": 1793154398.0036063,
+  "status": "SUCCESS"
+}

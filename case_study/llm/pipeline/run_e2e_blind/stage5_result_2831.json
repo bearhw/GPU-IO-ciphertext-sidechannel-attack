@@ -1,0 +1,41 @@
+{
+  "index": 2831,
+  "host_base": "0x1a0b1e000",
+  "gt_base": "0x1a0b1e000",
+  "gt_indication": "Acute onset of shortness of breath. Recent C-section. Initial encounter.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 6990984208,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 6990984224,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 18.778477907180786,
+  "timestamp": 1793006020.1027107,
+  "status": "SUCCESS"
+}

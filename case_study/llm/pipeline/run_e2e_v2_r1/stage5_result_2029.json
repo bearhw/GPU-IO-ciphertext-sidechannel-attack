@@ -1,0 +1,41 @@
+{
+  "index": 2029,
+  "host_base": "0x1a39b8000",
+  "gt_base": "0x1a39b7000",
+  "gt_indication": "Intermittent shortness of breath for 2 months.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 264,
+      "ind_gpa": 7039846464,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 266,
+      "ind_gpa": 7039846480,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.31587815284729,
+  "timestamp": 1793220503.0916672,
+  "status": "SUCCESS"
+}

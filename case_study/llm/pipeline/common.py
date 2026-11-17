@@ -89,6 +89,34 @@ FULL_BLOCK_TRY_BUDGET = _envi("SC_FULL_BLOCK_TRY_BUDGET", 20)
 
 # Filtered 2MB Brute-force localization parameters (Safe bounded swap budget)
 PER_BLOCK_LOC_BUDGET = _envi("SC_PER_BLOCK_LOC_BUDGET", 8)   # 8 swaps max per candidate block
+# Blind localization: pages probed per candidate 2MB block (latest-written
+# first). Optimum from a trace-driven sweep over the 1,640-sample completed run:
+# m=1 33.9%, m=2 75.2%, m=3 75.6%, m=4 74.0%, m=8 68.1%, m=40 45.9%. Larger m
+# wastes swaps on wrong blocks and shortens how far down the block ranking the
+# MAX_LOC_SWAPS_SAMPLE budget reaches.
+BLIND_PAGES_PER_BLOCK = _envi("SC_BLIND_PAGES_PER_BLOCK", 3)
+# The m-sweep above was measured on traces from the known-block run, where
+# every sample's Stage 2 ranking was boosted around the PREVIOUS sample's
+# correctly-localized block. That warm anchor is what put the true block in the
+# top ranks; with no anchor the whole-window block score leaves it at a median
+# rank of ~50 (top-13 for ~2% of samples), because the tracker covers the whole
+# inference and KV-cache / activation blocks dominate any run or hit count.
+#
+# Blind localization therefore ranks blocks by run*hit computed ONLY over pages
+# first-written inside [BLIND_WINDOW_LO, BLIND_WINDOW_HI] of the tracking window
+# (as a fraction of the last first-write ts), and probes, per block, the
+# BLIND_WINDOW_PAGES_PER_BLOCK latest pages first-written inside that window.
+# The input page is first-written at p10/p50/p90 = 0.47/0.54/0.60 of the window.
+# No anchor, no history, no ground truth. Cross-boot validation on 164 saved
+# live samples (window picked on one boot, scored on the others): 85.0% and
+# 79.5% held-out on the two large boots; both boots pick the same window.
+BLIND_WINDOW_LO = _envf("SC_BLIND_WINDOW_LO", 0.45)
+BLIND_WINDOW_HI = _envf("SC_BLIND_WINDOW_HI", 0.65)
+BLIND_WINDOW_PAGES_PER_BLOCK = _envi("SC_BLIND_WINDOW_PAGES_PER_BLOCK", 2)
+BLIND_WINDOW_EXPORT_BLOCKS = _envi("SC_BLIND_WINDOW_EXPORT_BLOCKS", 40)
+# Anchor bookkeeping is kept for the (non-default) Phase KB fallback: a miss
+# never writes the anchor, and BLIND_ANCHOR_RESET_MISSES consecutive misses drop it.
+BLIND_ANCHOR_RESET_MISSES = _envi("SC_BLIND_ANCHOR_RESET_MISSES", 2)
 RUN_START_PROBE_WINDOW = _envi("SC_RUN_START_PROBE_WINDOW", 6) # probe 0..5 pages from run start
 PIXEL_VALUES_SKIP_THRESHOLD = _envi("SC_PIXEL_VALUES_SKIP_THRESHOLD", 40) # skip dense float pixel spans
 
@@ -268,9 +296,18 @@ def save_json(path: Path, data: Dict[str, Any]) -> None:
 # ---------------------------------------------------------------------------
 SUMMARY_FIELDNAMES = [
     "index", "indication", "gt_base", "host_base", "loc_strategy",
-    "loc_swaps", "loc_match", "blind", "N_pad_est", "verdict", "recovered_labels",
+    "loc_swaps", "loc_match", "page_delta", "blind", "N_pad_est", "verdict",
+    "recovered_labels",
     "top1_match", "any_match", "multi_match_count", "false_positive_count",
-    "false_positive_labels", "elapsed_sec"
+    "false_positive_labels",
+    # Per-stage wall clock, so a slow run can be attributed to the right stage
+    # (write tracking vs swap-read localization vs bounds vs dictionary sweep).
+    "t_stage2", "t_stage3", "t_stage4", "t_stage5", "elapsed_sec",
+    # Why this sample ended the way it did. Each stage appends its own clause,
+    # so a row explains itself without cross-referencing the run log: which
+    # stage stopped it, and on what evidence (block rank, swap budget, best
+    # image_pad hit count, pad-bounds outcome, match counts).
+    "gt_block_rank", "loc_best_hits", "reason",
 ]
 
 

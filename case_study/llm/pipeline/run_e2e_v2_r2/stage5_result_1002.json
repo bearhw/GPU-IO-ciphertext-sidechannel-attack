@@ -1,0 +1,32 @@
+{
+  "index": 1002,
+  "host_base": "0x1aace0000",
+  "gt_base": "0x1aace0000",
+  "gt_indication": "Shortness of breath, nausea, possible aspiration",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 664,
+      "ind_gpa": 7160599744,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.919973373413086,
+  "timestamp": 1793352465.3891885,
+  "status": "SUCCESS"
+}

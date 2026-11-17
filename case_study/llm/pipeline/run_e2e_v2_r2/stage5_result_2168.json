@@ -1,0 +1,32 @@
+{
+  "index": 2168,
+  "host_base": "0x1abe4b000",
+  "gt_base": "0x1abe4b000",
+  "gt_indication": "Cough, congestion, fever, and shortness of breath all day",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 298,
+      "ind_gpa": 7178860880,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.03602385520935,
+  "timestamp": 1793403300.358783,
+  "status": "SUCCESS"
+}

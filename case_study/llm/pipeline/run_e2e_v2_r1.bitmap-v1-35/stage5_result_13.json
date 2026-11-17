@@ -1,0 +1,34 @@
+{
+  "index": 13,
+  "host_base": "0x13cdb7000",
+  "gt_base": "0x13cdb7000",
+  "gt_indication": "Shortness of breath",
+  "recovered_labels": [
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 546,
+      "ind_gpa": 5315985680,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "fever."
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "fever."
+    ]
+  },
+  "elapsed_sec": 16.997310876846313,
+  "timestamp": 1793119037.2344549,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,184 @@
+{
+  "index": 2486,
+  "host_base": "0x1a1529000",
+  "gt_base": "0x1a1529000",
+  "gt_indication": "Central line placement and PICC placement. Seizure.",
+  "recovered_labels": [
+    "ough and",
+    " pneumonia.",
+    "ough and",
+    " pneumonia.",
+    "ough and",
+    " pneumonia.",
+    "ough and",
+    " pneumonia.",
+    "ough and",
+    " pneumonia.",
+    "ough and",
+    " pneumonia.",
+    "ough and",
+    " pneumonia.",
+    "ough and",
+    " pneumonia."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 478,
+      "ind_gpa": 7001513712,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 478,
+      "ind_gpa": 7001513712,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 480,
+      "ind_gpa": 7001513728,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 480,
+      "ind_gpa": 7001513728,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 482,
+      "ind_gpa": 7001513744,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 482,
+      "ind_gpa": 7001513744,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 484,
+      "ind_gpa": 7001513760,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 484,
+      "ind_gpa": 7001513760,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 486,
+      "ind_gpa": 7001513776,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 486,
+      "ind_gpa": 7001513776,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 488,
+      "ind_gpa": 7001513792,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 488,
+      "ind_gpa": 7001513792,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 490,
+      "ind_gpa": 7001513808,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 490,
+      "ind_gpa": 7001513808,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 492,
+      "ind_gpa": 7001513824,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 492,
+      "ind_gpa": 7001513824,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia."
+    ],
+    "false_positive_count": 16,
+    "recovered_labels": [
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia.",
+      "ough and",
+      "pneumonia."
+    ]
+  },
+  "elapsed_sec": 19.28562092781067,
+  "timestamp": 1793043618.4856036,
+  "status": "SUCCESS"
+}

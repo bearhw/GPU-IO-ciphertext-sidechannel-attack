@@ -1,0 +1,32 @@
+{
+  "index": 850,
+  "host_base": "0x19e882000",
+  "gt_base": "0x19e882000",
+  "gt_indication": "Shortness of breath ascites abdominal pain",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 590,
+      "ind_gpa": 6954693232,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 18.79192876815796,
+  "timestamp": 1793085865.0399966,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 3252,
+  "host_base": "0x19fc87000",
+  "gt_base": "0x19fc87000",
+  "gt_indication": "Abdominal pain, weakness, hypertension, shortness of breath",
+  "recovered_labels": [
+    ", short"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 672,
+      "ind_gpa": 6975685888,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short"
+    ]
+  },
+  "elapsed_sec": 16.98995018005371,
+  "timestamp": 1793023995.6715362,
+  "status": "SUCCESS"
+}

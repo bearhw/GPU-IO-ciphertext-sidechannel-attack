@@ -1,0 +1,32 @@
+{
+  "index": 2976,
+  "host_base": "0x1a129e000",
+  "gt_base": "0x1a129e000",
+  "gt_indication": "Short of breath, abdominal aortic aneurysm",
+  "recovered_labels": [
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 482,
+      "ind_gpa": 6998847248,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 19.365226984024048,
+  "timestamp": 1793014078.8401878,
+  "status": "SUCCESS"
+}

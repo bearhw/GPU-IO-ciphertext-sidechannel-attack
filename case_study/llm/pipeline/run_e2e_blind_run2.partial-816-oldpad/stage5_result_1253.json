@@ -1,0 +1,20 @@
+{
+  "index": 1253,
+  "host_base": "0x19fc2d000",
+  "gt_base": "0x19fc2d000",
+  "gt_indication": "Dyspnea, COVID-19, diabetes mellitus",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 18.880528211593628,
+  "timestamp": 1793100449.3670418,
+  "status": "SUCCESS"
+}

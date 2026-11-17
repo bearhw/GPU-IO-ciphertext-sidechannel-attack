@@ -1,0 +1,32 @@
+{
+  "index": 995,
+  "host_base": "0x1a350c000",
+  "gt_base": "0x1a350c000",
+  "gt_indication": "86-year-old male with shortness of breath and fever.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 456,
+      "ind_gpa": 7034949184,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 16.412967443466187,
+  "timestamp": 1792927966.645219,
+  "status": "SUCCESS"
+}

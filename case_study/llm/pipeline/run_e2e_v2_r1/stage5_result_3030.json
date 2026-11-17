@@ -1,0 +1,32 @@
+{
+  "index": 3030,
+  "host_base": "0x1aa39f000",
+  "gt_base": "0x1aa39f000",
+  "gt_indication": "Central venous catheter placement, COVID pneumonia",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 596,
+      "ind_gpa": 7150895776,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 15.718291997909546,
+  "timestamp": 1793257744.852558,
+  "status": "SUCCESS"
+}

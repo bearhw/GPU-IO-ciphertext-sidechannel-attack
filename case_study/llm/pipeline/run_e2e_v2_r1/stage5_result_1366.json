@@ -1,0 +1,34 @@
+{
+  "index": 1366,
+  "host_base": "0x13fe6e000",
+  "gt_base": "0x13fe6e000",
+  "gt_indication": "Weakness. Altered mental status. Fever.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 558,
+      "ind_gpa": 5367066992,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "ness of"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.75596308708191,
+  "timestamp": 1793188629.1995256,
+  "status": "SUCCESS"
+}

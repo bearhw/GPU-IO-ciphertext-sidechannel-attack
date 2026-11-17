@@ -1,0 +1,20 @@
+{
+  "index": 2313,
+  "host_base": "0x1a0e22000",
+  "gt_base": "0x1a0e22000",
+  "gt_indication": "Cough, dyspnea",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.898900985717773,
+  "timestamp": 1793229906.1716216,
+  "status": "SUCCESS"
+}

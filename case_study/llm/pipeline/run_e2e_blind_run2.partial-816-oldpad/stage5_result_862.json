@@ -1,0 +1,41 @@
+{
+  "index": 862,
+  "host_base": "0x19f1b7000",
+  "gt_base": "0x19f1b7000",
+  "gt_indication": "76-year-old male with shortness of breath and respiratory distress.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 354,
+      "ind_gpa": 6964345616,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 6964345632,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 18.71847677230835,
+  "timestamp": 1793086016.4625235,
+  "status": "SUCCESS"
+}

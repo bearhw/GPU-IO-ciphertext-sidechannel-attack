@@ -1,0 +1,32 @@
+{
+  "index": 1608,
+  "host_base": "0x1a2dfe000",
+  "gt_base": "0x1a2dfe000",
+  "gt_indication": "Cough and 38",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 7027550944,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.897402048110962,
+  "timestamp": 1793378101.6976848,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 3225,
+  "host_base": "0x196a5e000",
+  "gt_base": "0x196a5e000",
+  "gt_indication": "Status post right jugular dialysis catheter placement",
+  "recovered_labels": [
+    " catheter"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 6822425632,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "catheter"
+    ]
+  },
+  "elapsed_sec": 17.001688718795776,
+  "timestamp": 1793303495.9919446,
+  "status": "SUCCESS"
+}

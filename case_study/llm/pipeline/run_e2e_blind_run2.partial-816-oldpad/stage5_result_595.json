@@ -1,0 +1,32 @@
+{
+  "index": 595,
+  "host_base": "0x1a0b96000",
+  "gt_base": "0x1a0b96000",
+  "gt_indication": "Follow-up post intubation",
+  "recovered_labels": [
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 568,
+      "ind_gpa": 6991475136,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 19.149811267852783,
+  "timestamp": 1793076747.1794617,
+  "status": "SUCCESS"
+}

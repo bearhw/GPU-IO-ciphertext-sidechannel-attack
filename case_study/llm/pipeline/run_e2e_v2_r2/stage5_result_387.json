@@ -1,0 +1,32 @@
+{
+  "index": 387,
+  "host_base": "0x1a1661000",
+  "gt_base": "0x1a1661000",
+  "gt_indication": "Persistent intermittently productive cough with mid upper chest tightness and shortness of breath on exertion since an episode of flu in March of 2001.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 628,
+      "ind_gpa": 7002792864,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 14.972147703170776,
+  "timestamp": 1793333416.9344676,
+  "status": "SUCCESS"
+}

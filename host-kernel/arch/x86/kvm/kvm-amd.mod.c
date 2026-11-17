@@ -63,6 +63,7 @@ __used __section("__versions") = {
 	{ 0x58f995db, "kvm_deliver_exception_payload" },
 	{ 0xc071e99f, "__SCT__tp_func_kvm_entry" },
 	{ 0xa800fa81, "__tracepoint_kvm_avic_incomplete_ipi" },
+	{ 0x35a17f69, "sev_step_vcpu_pre_entry" },
 	{ 0x5897cdd4, "param_ops_ushort" },
 	{ 0x63270977, "kvm_default_tsc_scaling_ratio" },
 	{ 0x2fc7944, "__tracepoint_kvm_nested_vmexit" },
@@ -426,4 +427,4 @@ MODULE_INFO(depends, "kvm,ccp");
 
 MODULE_ALIAS("cpu:type:x86,ven*fam*mod*:feature:*00C2*");
 
-MODULE_INFO(srcversion, "9B8EEAF09F57784E8A858CA");
+MODULE_INFO(srcversion, "E5276B1B90F1779D0D83808");

@@ -1,0 +1,32 @@
+{
+  "index": 2882,
+  "host_base": "0x1a6f39000",
+  "gt_base": "0x1a6f38000",
+  "gt_indication": "Follow-up of pneumonia.",
+  "recovered_labels": [
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7095949344,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.742172956466675,
+  "timestamp": 1793253857.1545963,
+  "status": "SUCCESS"
+}

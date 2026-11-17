@@ -1,0 +1,274 @@
+{
+  "index": 713,
+  "host_base": "0x19fb0d000",
+  "gt_base": "0x19fb0d000",
+  "gt_indication": "CABG, postop day #1",
+  "recovered_labels": [
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " Shortness",
+    " Cough",
+    " breath.",
+    " Chest pain",
+    " breath,",
+    " cough,",
+    " Shortness",
+    " Cough",
+    " breath.",
+    " Chest pain",
+    " breath,",
+    " cough,",
+    " Shortness",
+    " Cough",
+    " breath.",
+    " Chest pain",
+    " breath,",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 538,
+      "ind_gpa": 6974136528,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6974136544,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6974136560,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6974136576,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6974136592,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6974136608,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6974136624,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974136640,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974136640,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974136640,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974136640,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974136640,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6974136640,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974136656,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974136656,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974136656,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974136656,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974136656,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6974136656,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6974136672,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6974136672,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6974136672,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6974136672,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6974136672,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6974136672,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 25,
+    "false_positive_labels": [
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "Shortness",
+      "Cough",
+      "breath.",
+      "Chest pain",
+      "breath,",
+      "cough,",
+      "Shortness",
+      "Cough",
+      "breath.",
+      "Chest pain",
+      "breath,",
+      "cough,",
+      "Shortness",
+      "Cough",
+      "breath.",
+      "Chest pain",
+      "breath,",
+      "cough,"
+    ],
+    "false_positive_count": 25,
+    "recovered_labels": [
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "Shortness",
+      "Cough",
+      "breath.",
+      "Chest pain",
+      "breath,",
+      "cough,",
+      "Shortness",
+      "Cough",
+      "breath.",
+      "Chest pain",
+      "breath,",
+      "cough,",
+      "Shortness",
+      "Cough",
+      "breath.",
+      "Chest pain",
+      "breath,",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 17.32883882522583,
+  "timestamp": 1793032639.8202713,
+  "status": "SUCCESS"
+}

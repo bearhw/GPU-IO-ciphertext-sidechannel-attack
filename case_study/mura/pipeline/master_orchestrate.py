@@ -84,7 +84,11 @@ def orchestrate_single(index: int, output_dir: Path, from_stage: int = 1,
     # Stage 5: Classification & Reconstruction
     if from_stage <= 5 <= to_stage:
         print("\n--- [Stage 5: Classification & Captured Pages Summary] ---")
-        meta5 = s5.run_stage5(index, output_dir, mock=mock)
+        from pathlib import Path as _P
+        _nref = c.NUM_REFS
+        _ft = HERE / f"mura_attack_{_nref}ref_ft.pth"
+        _ck = _ft if _ft.exists() else c.CHECKPOINT_V2
+        meta5 = s5.run_stage5(index, output_dir, mock=mock, ckpt_path=_ck, n_ref=_nref)
         summary["stage5"] = meta5
 
     elapsed = time.time() - t_start

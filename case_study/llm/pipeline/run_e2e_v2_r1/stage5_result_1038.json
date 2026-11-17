@@ -1,0 +1,43 @@
+{
+  "index": 1038,
+  "host_base": "0x199731000",
+  "gt_base": "0x13e73e000",
+  "gt_indication": "Cough and congestion for several months with hemoptysis",
+  "recovered_labels": [
+    " Chest pain",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 298,
+      "ind_gpa": 6869424464,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 298,
+      "ind_gpa": 6869424464,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "Chest pain"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "Chest pain",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.268842697143555,
+  "timestamp": 1793172282.856483,
+  "status": "SUCCESS"
+}

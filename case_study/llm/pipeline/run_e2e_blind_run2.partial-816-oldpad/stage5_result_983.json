@@ -1,0 +1,41 @@
+{
+  "index": 983,
+  "host_base": "0x1a7426000",
+  "gt_base": "0x1a7426000",
+  "gt_indication": "COVID-19 positive, fever and shortness of breath",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 762,
+      "ind_gpa": 7101118416,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 764,
+      "ind_gpa": 7101118432,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 22.663311004638672,
+  "timestamp": 1793089091.2236297,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 3198,
+  "host_base": "0x1aaffb000",
+  "gt_base": "0x1aaffb000",
+  "gt_indication": "Coronary artery disease and CABG procedure.",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 528,
+      "ind_gpa": 7163854976,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 15.582228422164917,
+  "timestamp": 1793295598.5342824,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 2681,
+  "host_base": "0x1a4f4e000",
+  "gt_base": "0x1a4f4e000",
+  "gt_indication": "Initial evaluation for acute respiratory distress, chest pain.",
+  "recovered_labels": [
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 7062484000,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 18.84487748146057,
+  "timestamp": 1793000622.8403141,
+  "status": "SUCCESS"
+}

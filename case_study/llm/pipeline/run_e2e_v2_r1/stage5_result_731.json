@@ -1,0 +1,41 @@
+{
+  "index": 731,
+  "host_base": "0x1a57d9000",
+  "gt_base": "0x1a57d9000",
+  "gt_indication": "Severe shortness of breath. Fibrosis.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 526,
+      "ind_gpa": 7071441008,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7071441024,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.524812459945679,
+  "timestamp": 1793155535.4837546,
+  "status": "SUCCESS"
+}

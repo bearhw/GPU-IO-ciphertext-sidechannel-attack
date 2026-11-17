@@ -1,0 +1,284 @@
+{
+  "index": 1542,
+  "host_base": "0x1a1fab000",
+  "gt_base": "0x1a1fab000",
+  "gt_indication": "Left-sided chest pain. Asthma. History of pneumonia.",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " wheez",
+    " PICC",
+    " Hypox",
+    " of breath",
+    " Cough",
+    " wheez",
+    " PICC",
+    " Hypox",
+    " of breath",
+    " Cough",
+    " wheez",
+    " PICC",
+    " Hypox",
+    " of breath",
+    " Cough",
+    " wheez",
+    " PICC",
+    " Hypox",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up",
+    " of breath",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 520,
+      "ind_gpa": 7012532288,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7012532288,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7012532288,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7012532288,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7012532288,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7012532304,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7012532304,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7012532304,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7012532304,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7012532304,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7012532320,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7012532320,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7012532320,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7012532320,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7012532320,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7012532336,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7012532336,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7012532336,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7012532336,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7012532336,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7012532352,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7012532352,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 7012532368,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 7012532368,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 7012532384,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 7012532384,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 26,
+    "false_positive_labels": [
+      "of breath",
+      "Cough",
+      "wheez",
+      "PICC",
+      "Hypox",
+      "of breath",
+      "Cough",
+      "wheez",
+      "PICC",
+      "Hypox",
+      "of breath",
+      "Cough",
+      "wheez",
+      "PICC",
+      "Hypox",
+      "of breath",
+      "Cough",
+      "wheez",
+      "PICC",
+      "Hypox",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ],
+    "false_positive_count": 26,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "wheez",
+      "PICC",
+      "Hypox",
+      "of breath",
+      "Cough",
+      "wheez",
+      "PICC",
+      "Hypox",
+      "of breath",
+      "Cough",
+      "wheez",
+      "PICC",
+      "Hypox",
+      "of breath",
+      "Cough",
+      "wheez",
+      "PICC",
+      "Hypox",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up",
+      "of breath",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 31.761158227920532,
+  "timestamp": 1793376859.5726552,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,50 @@
+{
+  "index": 2781,
+  "host_base": "0x1a4db5000",
+  "gt_base": "0x1a4db5000",
+  "gt_indication": "History of pneumonia, cough, congestion, shortness of breath, former smoking history, followup chest x-ray of 6/13/2006",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 622,
+      "ind_gpa": 7060808560,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 624,
+      "ind_gpa": 7060808576,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 626,
+      "ind_gpa": 7060808592,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.806554079055786,
+  "timestamp": 1793251164.0734894,
+  "status": "SUCCESS"
+}

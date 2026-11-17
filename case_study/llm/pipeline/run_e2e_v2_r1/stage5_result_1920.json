@@ -1,0 +1,34 @@
+{
+  "index": 1920,
+  "host_base": "0x13d1a4000",
+  "gt_base": "0x13d1a4000",
+  "gt_indication": "75-year-old female with congestive heart failure. Hypertension.",
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 564,
+      "ind_gpa": 5320102304,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "Respiratory"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 15.491284370422363,
+  "timestamp": 1793213451.7359643,
+  "status": "SUCCESS"
+}

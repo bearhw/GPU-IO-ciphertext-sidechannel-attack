@@ -1,0 +1,74 @@
+{
+  "index": 2405,
+  "host_base": "0x19fd0f000",
+  "gt_base": "0x19fd0f000",
+  "gt_indication": "Acute onset of cough, wheezing and dyspnea. Initial encounter.",
+  "recovered_labels": [
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 660,
+      "ind_gpa": 6976242848,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6976242864,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6976242880,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6976242896,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6976242912,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 5,
+    "false_positive_labels": [
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox"
+    ],
+    "false_positive_count": 5,
+    "recovered_labels": [
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 16.925601720809937,
+  "timestamp": 1793302049.668147,
+  "status": "SUCCESS"
+}

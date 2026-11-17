@@ -1,0 +1,32 @@
+{
+  "index": 587,
+  "host_base": "0x1a198c000",
+  "gt_base": "0x1a198c000",
+  "gt_indication": "82-year-old female with COPD and history of hypertension. Difficulty breathing. Initial encounter.",
+  "recovered_labels": [
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 752,
+      "ind_gpa": 7006115712,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.579362392425537,
+  "timestamp": 1793342577.3574579,
+  "status": "SUCCESS"
+}

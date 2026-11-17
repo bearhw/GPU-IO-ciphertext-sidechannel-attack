@@ -1,0 +1,41 @@
+{
+  "index": 3008,
+  "host_base": "0x19d62e000",
+  "gt_base": "0x19d62e000",
+  "gt_indication": "Shortness of breath, fever, hypoxia.",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 348,
+      "ind_gpa": 6935472864,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 350,
+      "ind_gpa": 6935472880,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.252829790115356,
+  "timestamp": 1793257193.8723938,
+  "status": "SUCCESS"
+}

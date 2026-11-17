@@ -1,0 +1,41 @@
+{
+  "index": 2518,
+  "host_base": "0x1a113c000",
+  "gt_base": "0x1a113c000",
+  "gt_indication": "Chest pain, shortness of breath. Patient max needed but living with sign waist COVID positive.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 640,
+      "ind_gpa": 6997398528,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6997398544,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 17.26966118812561,
+  "timestamp": 1792993263.771289,
+  "status": "SUCCESS"
+}

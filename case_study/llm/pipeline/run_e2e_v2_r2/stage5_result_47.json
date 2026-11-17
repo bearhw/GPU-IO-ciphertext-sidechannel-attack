@@ -1,0 +1,244 @@
+{
+  "index": 47,
+  "host_base": "0x1a0446000",
+  "gt_base": "0x1a0446000",
+  "gt_indication": "PICC line placement.",
+  "recovered_labels": [
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure",
+    " cough,",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 6983805744,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 6983805744,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6983805760,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6983805760,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6983805776,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 6983805776,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6983805792,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6983805792,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6983805808,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6983805808,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6983805824,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6983805824,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6983805840,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6983805840,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6983805856,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6983805856,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6983805872,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6983805872,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6983805888,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6983805888,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6983805904,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6983805904,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 22,
+    "false_positive_labels": [
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure"
+    ],
+    "false_positive_count": 22,
+    "recovered_labels": [
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure",
+      "cough,",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.186073303222656,
+  "timestamp": 1793309568.219421,
+  "status": "SUCCESS"
+}

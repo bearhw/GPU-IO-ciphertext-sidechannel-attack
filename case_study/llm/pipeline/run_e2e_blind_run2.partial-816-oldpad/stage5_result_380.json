@@ -1,0 +1,43 @@
+{
+  "index": 380,
+  "host_base": "0x197498000",
+  "gt_base": "0x1a1842000",
+  "gt_indication": "Patient with GI bleed denies dyspnea or chest pain.",
+  "recovered_labels": [
+    " Shortness",
+    " chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 952,
+      "ind_gpa": 6833151424,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 958,
+      "ind_gpa": 6833151472,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "Shortness"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "Shortness",
+      "chest pain"
+    ]
+  },
+  "elapsed_sec": 21.470163822174072,
+  "timestamp": 1793066560.667364,
+  "status": "SUCCESS"
+}

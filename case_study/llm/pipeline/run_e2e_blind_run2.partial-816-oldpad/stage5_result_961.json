@@ -1,0 +1,41 @@
+{
+  "index": 961,
+  "host_base": "0x1a7a19000",
+  "gt_base": "0x1a7a19000",
+  "gt_indication": "49-year-old female with left-sided chest pain and mild shortness of breath",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 732,
+      "ind_gpa": 7107356384,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 734,
+      "ind_gpa": 7107356400,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 18.623070001602173,
+  "timestamp": 1793088509.203506,
+  "status": "SUCCESS"
+}

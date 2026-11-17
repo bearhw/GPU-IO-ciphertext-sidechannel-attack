@@ -1,0 +1,50 @@
+{
+  "index": 1304,
+  "host_base": "0x1a328e000",
+  "gt_base": "0x1a328d000",
+  "gt_indication": "Post CABG, pleural effusion, shortness of breath",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 7032334432,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 270,
+      "ind_gpa": 7032334448,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 7032334464,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.545833587646484,
+  "timestamp": 1793289504.2718878,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 1904,
+  "host_base": "0x1a8056000",
+  "gt_base": "0x1a8056000",
+  "gt_indication": "CHF, cough, COPD",
+  "recovered_labels": [
+    " cough,",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 550,
+      "ind_gpa": 7113896240,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 7113896256,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.190121412277222,
+  "timestamp": 1793292171.6732202,
+  "status": "SUCCESS"
+}

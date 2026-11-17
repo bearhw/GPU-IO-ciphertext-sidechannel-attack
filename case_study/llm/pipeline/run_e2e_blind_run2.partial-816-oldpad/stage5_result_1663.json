@@ -1,0 +1,32 @@
+{
+  "index": 1663,
+  "host_base": "0x1adf18000",
+  "gt_base": "0x1adf18000",
+  "gt_indication": "Right rib pain since a fall 3 days ago. Shortness of breath.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 630,
+      "ind_gpa": 7213257648,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 17.50583505630493,
+  "timestamp": 1793112369.9205208,
+  "status": "SUCCESS"
+}

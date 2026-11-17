@@ -1,0 +1,32 @@
+{
+  "index": 1505,
+  "host_base": "0x1a1527000",
+  "gt_base": "0x1a1527000",
+  "gt_indication": "Central line placement. Hypoxemic respiratory failure.",
+  "recovered_labels": [
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 7001506848,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.367456912994385,
+  "timestamp": 1793375871.2962544,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 1444,
+  "host_base": "0x1a976d000",
+  "gt_base": "0x1a976d000",
+  "gt_indication": "Acute shortness of breath.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 640,
+      "ind_gpa": 7138108416,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 17.156079530715942,
+  "timestamp": 1793106799.735921,
+  "status": "SUCCESS"
+}

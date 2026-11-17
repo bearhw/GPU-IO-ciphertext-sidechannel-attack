@@ -1,0 +1,41 @@
+{
+  "index": 3364,
+  "host_base": "0x19756a000",
+  "gt_base": "0x19756a000",
+  "gt_indication": "Shortness of breath, cough and fever.",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 440,
+      "ind_gpa": 6834007488,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 442,
+      "ind_gpa": 6834007504,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 17.045609712600708,
+  "timestamp": 1793027954.5743291,
+  "status": "SUCCESS"
+}

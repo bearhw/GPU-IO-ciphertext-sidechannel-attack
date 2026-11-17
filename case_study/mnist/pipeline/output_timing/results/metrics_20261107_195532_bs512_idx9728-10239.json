@@ -1,0 +1,10290 @@
+{
+  "stage": 5,
+  "index": 19,
+  "batch_size": 512,
+  "start_image_index": 9728,
+  "end_image_index": 10239,
+  "batch_tag": "20261107_195532_bs512_idx9728-10239",
+  "summary_metrics": {
+    "v6r (Retrieval)": {
+      "ssim": null,
+      "psnr": null,
+      "l1": null
+    },
+    "v9r (UNet-GAN)": {
+      "ssim": null,
+      "psnr": null,
+      "l1": null
+    },
+    "v10 (Decoder)": {
+      "ssim": null,
+      "psnr": null,
+      "l1": null
+    }
+  },
+  "metrics": {
+    "v6r (Retrieval)": {
+      "ssim": null,
+      "psnr": null,
+      "l1": null
+    },
+    "v9r (UNet-GAN)": {
+      "ssim": null,
+      "psnr": null,
+      "l1": null
+    },
+    "v10 (Decoder)": {
+      "ssim": null,
+      "psnr": null,
+      "l1": null
+    }
+  },
+  "ssim_v6r": null,
+  "ssim_v9r": null,
+  "ssim_v10": null,
+  "comparison_png": "/home/eun/open-science/case_study/mnist/pipeline/output_timing/results/comparison_20261107_195532_bs512_idx9728-10239.png",
+  "per_image_results": [
+    {
+      "image_index": 9728,
+      "local_batch_offset": 0,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9729,
+      "local_batch_offset": 1,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9730,
+      "local_batch_offset": 2,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9731,
+      "local_batch_offset": 3,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9732,
+      "local_batch_offset": 4,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9733,
+      "local_batch_offset": 5,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9734,
+      "local_batch_offset": 6,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9735,
+      "local_batch_offset": 7,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9736,
+      "local_batch_offset": 8,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9737,
+      "local_batch_offset": 9,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9738,
+      "local_batch_offset": 10,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9739,
+      "local_batch_offset": 11,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9740,
+      "local_batch_offset": 12,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9741,
+      "local_batch_offset": 13,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9742,
+      "local_batch_offset": 14,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9743,
+      "local_batch_offset": 15,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9744,
+      "local_batch_offset": 16,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9745,
+      "local_batch_offset": 17,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9746,
+      "local_batch_offset": 18,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9747,
+      "local_batch_offset": 19,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9748,
+      "local_batch_offset": 20,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9749,
+      "local_batch_offset": 21,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9750,
+      "local_batch_offset": 22,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9751,
+      "local_batch_offset": 23,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9752,
+      "local_batch_offset": 24,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9753,
+      "local_batch_offset": 25,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9754,
+      "local_batch_offset": 26,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9755,
+      "local_batch_offset": 27,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9756,
+      "local_batch_offset": 28,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9757,
+      "local_batch_offset": 29,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9758,
+      "local_batch_offset": 30,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9759,
+      "local_batch_offset": 31,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9760,
+      "local_batch_offset": 32,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9761,
+      "local_batch_offset": 33,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9762,
+      "local_batch_offset": 34,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9763,
+      "local_batch_offset": 35,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9764,
+      "local_batch_offset": 36,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9765,
+      "local_batch_offset": 37,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9766,
+      "local_batch_offset": 38,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9767,
+      "local_batch_offset": 39,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9768,
+      "local_batch_offset": 40,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9769,
+      "local_batch_offset": 41,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9770,
+      "local_batch_offset": 42,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9771,
+      "local_batch_offset": 43,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9772,
+      "local_batch_offset": 44,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9773,
+      "local_batch_offset": 45,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9774,
+      "local_batch_offset": 46,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9775,
+      "local_batch_offset": 47,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9776,
+      "local_batch_offset": 48,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9777,
+      "local_batch_offset": 49,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9778,
+      "local_batch_offset": 50,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9779,
+      "local_batch_offset": 51,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9780,
+      "local_batch_offset": 52,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9781,
+      "local_batch_offset": 53,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9782,
+      "local_batch_offset": 54,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9783,
+      "local_batch_offset": 55,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9784,
+      "local_batch_offset": 56,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9785,
+      "local_batch_offset": 57,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9786,
+      "local_batch_offset": 58,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9787,
+      "local_batch_offset": 59,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9788,
+      "local_batch_offset": 60,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9789,
+      "local_batch_offset": 61,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9790,
+      "local_batch_offset": 62,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9791,
+      "local_batch_offset": 63,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9792,
+      "local_batch_offset": 64,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9793,
+      "local_batch_offset": 65,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9794,
+      "local_batch_offset": 66,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9795,
+      "local_batch_offset": 67,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9796,
+      "local_batch_offset": 68,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9797,
+      "local_batch_offset": 69,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9798,
+      "local_batch_offset": 70,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9799,
+      "local_batch_offset": 71,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9800,
+      "local_batch_offset": 72,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9801,
+      "local_batch_offset": 73,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9802,
+      "local_batch_offset": 74,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9803,
+      "local_batch_offset": 75,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9804,
+      "local_batch_offset": 76,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9805,
+      "local_batch_offset": 77,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9806,
+      "local_batch_offset": 78,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9807,
+      "local_batch_offset": 79,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9808,
+      "local_batch_offset": 80,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9809,
+      "local_batch_offset": 81,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9810,
+      "local_batch_offset": 82,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9811,
+      "local_batch_offset": 83,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9812,
+      "local_batch_offset": 84,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9813,
+      "local_batch_offset": 85,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9814,
+      "local_batch_offset": 86,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9815,
+      "local_batch_offset": 87,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9816,
+      "local_batch_offset": 88,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9817,
+      "local_batch_offset": 89,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9818,
+      "local_batch_offset": 90,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9819,
+      "local_batch_offset": 91,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9820,
+      "local_batch_offset": 92,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9821,
+      "local_batch_offset": 93,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9822,
+      "local_batch_offset": 94,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9823,
+      "local_batch_offset": 95,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9824,
+      "local_batch_offset": 96,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9825,
+      "local_batch_offset": 97,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9826,
+      "local_batch_offset": 98,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9827,
+      "local_batch_offset": 99,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9828,
+      "local_batch_offset": 100,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9829,
+      "local_batch_offset": 101,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9830,
+      "local_batch_offset": 102,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9831,
+      "local_batch_offset": 103,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9832,
+      "local_batch_offset": 104,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9833,
+      "local_batch_offset": 105,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9834,
+      "local_batch_offset": 106,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9835,
+      "local_batch_offset": 107,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9836,
+      "local_batch_offset": 108,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9837,
+      "local_batch_offset": 109,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9838,
+      "local_batch_offset": 110,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9839,
+      "local_batch_offset": 111,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9840,
+      "local_batch_offset": 112,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9841,
+      "local_batch_offset": 113,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9842,
+      "local_batch_offset": 114,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9843,
+      "local_batch_offset": 115,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9844,
+      "local_batch_offset": 116,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9845,
+      "local_batch_offset": 117,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9846,
+      "local_batch_offset": 118,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9847,
+      "local_batch_offset": 119,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9848,
+      "local_batch_offset": 120,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9849,
+      "local_batch_offset": 121,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9850,
+      "local_batch_offset": 122,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9851,
+      "local_batch_offset": 123,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9852,
+      "local_batch_offset": 124,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9853,
+      "local_batch_offset": 125,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9854,
+      "local_batch_offset": 126,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9855,
+      "local_batch_offset": 127,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9856,
+      "local_batch_offset": 128,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9857,
+      "local_batch_offset": 129,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9858,
+      "local_batch_offset": 130,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9859,
+      "local_batch_offset": 131,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9860,
+      "local_batch_offset": 132,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9861,
+      "local_batch_offset": 133,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9862,
+      "local_batch_offset": 134,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9863,
+      "local_batch_offset": 135,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9864,
+      "local_batch_offset": 136,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9865,
+      "local_batch_offset": 137,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9866,
+      "local_batch_offset": 138,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9867,
+      "local_batch_offset": 139,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9868,
+      "local_batch_offset": 140,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9869,
+      "local_batch_offset": 141,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9870,
+      "local_batch_offset": 142,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9871,
+      "local_batch_offset": 143,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9872,
+      "local_batch_offset": 144,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9873,
+      "local_batch_offset": 145,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9874,
+      "local_batch_offset": 146,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9875,
+      "local_batch_offset": 147,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9876,
+      "local_batch_offset": 148,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9877,
+      "local_batch_offset": 149,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9878,
+      "local_batch_offset": 150,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9879,
+      "local_batch_offset": 151,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9880,
+      "local_batch_offset": 152,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9881,
+      "local_batch_offset": 153,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9882,
+      "local_batch_offset": 154,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9883,
+      "local_batch_offset": 155,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9884,
+      "local_batch_offset": 156,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9885,
+      "local_batch_offset": 157,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9886,
+      "local_batch_offset": 158,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9887,
+      "local_batch_offset": 159,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9888,
+      "local_batch_offset": 160,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9889,
+      "local_batch_offset": 161,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9890,
+      "local_batch_offset": 162,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9891,
+      "local_batch_offset": 163,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9892,
+      "local_batch_offset": 164,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9893,
+      "local_batch_offset": 165,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9894,
+      "local_batch_offset": 166,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9895,
+      "local_batch_offset": 167,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9896,
+      "local_batch_offset": 168,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9897,
+      "local_batch_offset": 169,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9898,
+      "local_batch_offset": 170,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9899,
+      "local_batch_offset": 171,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9900,
+      "local_batch_offset": 172,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9901,
+      "local_batch_offset": 173,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9902,
+      "local_batch_offset": 174,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9903,
+      "local_batch_offset": 175,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9904,
+      "local_batch_offset": 176,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9905,
+      "local_batch_offset": 177,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9906,
+      "local_batch_offset": 178,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9907,
+      "local_batch_offset": 179,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9908,
+      "local_batch_offset": 180,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9909,
+      "local_batch_offset": 181,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9910,
+      "local_batch_offset": 182,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9911,
+      "local_batch_offset": 183,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9912,
+      "local_batch_offset": 184,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9913,
+      "local_batch_offset": 185,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9914,
+      "local_batch_offset": 186,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9915,
+      "local_batch_offset": 187,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9916,
+      "local_batch_offset": 188,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9917,
+      "local_batch_offset": 189,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9918,
+      "local_batch_offset": 190,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9919,
+      "local_batch_offset": 191,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9920,
+      "local_batch_offset": 192,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9921,
+      "local_batch_offset": 193,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9922,
+      "local_batch_offset": 194,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9923,
+      "local_batch_offset": 195,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9924,
+      "local_batch_offset": 196,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9925,
+      "local_batch_offset": 197,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9926,
+      "local_batch_offset": 198,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9927,
+      "local_batch_offset": 199,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9928,
+      "local_batch_offset": 200,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9929,
+      "local_batch_offset": 201,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9930,
+      "local_batch_offset": 202,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9931,
+      "local_batch_offset": 203,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9932,
+      "local_batch_offset": 204,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9933,
+      "local_batch_offset": 205,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9934,
+      "local_batch_offset": 206,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9935,
+      "local_batch_offset": 207,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9936,
+      "local_batch_offset": 208,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9937,
+      "local_batch_offset": 209,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9938,
+      "local_batch_offset": 210,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9939,
+      "local_batch_offset": 211,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9940,
+      "local_batch_offset": 212,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9941,
+      "local_batch_offset": 213,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9942,
+      "local_batch_offset": 214,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9943,
+      "local_batch_offset": 215,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9944,
+      "local_batch_offset": 216,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9945,
+      "local_batch_offset": 217,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9946,
+      "local_batch_offset": 218,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9947,
+      "local_batch_offset": 219,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9948,
+      "local_batch_offset": 220,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9949,
+      "local_batch_offset": 221,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9950,
+      "local_batch_offset": 222,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9951,
+      "local_batch_offset": 223,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9952,
+      "local_batch_offset": 224,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9953,
+      "local_batch_offset": 225,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9954,
+      "local_batch_offset": 226,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9955,
+      "local_batch_offset": 227,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9956,
+      "local_batch_offset": 228,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9957,
+      "local_batch_offset": 229,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9958,
+      "local_batch_offset": 230,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9959,
+      "local_batch_offset": 231,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9960,
+      "local_batch_offset": 232,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9961,
+      "local_batch_offset": 233,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9962,
+      "local_batch_offset": 234,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9963,
+      "local_batch_offset": 235,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9964,
+      "local_batch_offset": 236,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9965,
+      "local_batch_offset": 237,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9966,
+      "local_batch_offset": 238,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9967,
+      "local_batch_offset": 239,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9968,
+      "local_batch_offset": 240,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9969,
+      "local_batch_offset": 241,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9970,
+      "local_batch_offset": 242,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9971,
+      "local_batch_offset": 243,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9972,
+      "local_batch_offset": 244,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9973,
+      "local_batch_offset": 245,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9974,
+      "local_batch_offset": 246,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9975,
+      "local_batch_offset": 247,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9976,
+      "local_batch_offset": 248,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9977,
+      "local_batch_offset": 249,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9978,
+      "local_batch_offset": 250,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9979,
+      "local_batch_offset": 251,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9980,
+      "local_batch_offset": 252,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9981,
+      "local_batch_offset": 253,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9982,
+      "local_batch_offset": 254,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9983,
+      "local_batch_offset": 255,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9984,
+      "local_batch_offset": 256,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9985,
+      "local_batch_offset": 257,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9986,
+      "local_batch_offset": 258,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9987,
+      "local_batch_offset": 259,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9988,
+      "local_batch_offset": 260,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9989,
+      "local_batch_offset": 261,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9990,
+      "local_batch_offset": 262,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9991,
+      "local_batch_offset": 263,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9992,
+      "local_batch_offset": 264,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9993,
+      "local_batch_offset": 265,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9994,
+      "local_batch_offset": 266,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9995,
+      "local_batch_offset": 267,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9996,
+      "local_batch_offset": 268,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9997,
+      "local_batch_offset": 269,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9998,
+      "local_batch_offset": 270,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 9999,
+      "local_batch_offset": 271,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10000,
+      "local_batch_offset": 272,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10001,
+      "local_batch_offset": 273,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10002,
+      "local_batch_offset": 274,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10003,
+      "local_batch_offset": 275,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10004,
+      "local_batch_offset": 276,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10005,
+      "local_batch_offset": 277,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10006,
+      "local_batch_offset": 278,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10007,
+      "local_batch_offset": 279,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10008,
+      "local_batch_offset": 280,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10009,
+      "local_batch_offset": 281,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10010,
+      "local_batch_offset": 282,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10011,
+      "local_batch_offset": 283,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10012,
+      "local_batch_offset": 284,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10013,
+      "local_batch_offset": 285,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10014,
+      "local_batch_offset": 286,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10015,
+      "local_batch_offset": 287,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10016,
+      "local_batch_offset": 288,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10017,
+      "local_batch_offset": 289,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10018,
+      "local_batch_offset": 290,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10019,
+      "local_batch_offset": 291,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10020,
+      "local_batch_offset": 292,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10021,
+      "local_batch_offset": 293,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10022,
+      "local_batch_offset": 294,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10023,
+      "local_batch_offset": 295,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10024,
+      "local_batch_offset": 296,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10025,
+      "local_batch_offset": 297,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10026,
+      "local_batch_offset": 298,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10027,
+      "local_batch_offset": 299,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10028,
+      "local_batch_offset": 300,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10029,
+      "local_batch_offset": 301,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10030,
+      "local_batch_offset": 302,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10031,
+      "local_batch_offset": 303,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10032,
+      "local_batch_offset": 304,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10033,
+      "local_batch_offset": 305,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10034,
+      "local_batch_offset": 306,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10035,
+      "local_batch_offset": 307,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10036,
+      "local_batch_offset": 308,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10037,
+      "local_batch_offset": 309,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10038,
+      "local_batch_offset": 310,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10039,
+      "local_batch_offset": 311,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10040,
+      "local_batch_offset": 312,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10041,
+      "local_batch_offset": 313,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10042,
+      "local_batch_offset": 314,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10043,
+      "local_batch_offset": 315,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10044,
+      "local_batch_offset": 316,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10045,
+      "local_batch_offset": 317,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10046,
+      "local_batch_offset": 318,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10047,
+      "local_batch_offset": 319,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10048,
+      "local_batch_offset": 320,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10049,
+      "local_batch_offset": 321,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10050,
+      "local_batch_offset": 322,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10051,
+      "local_batch_offset": 323,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10052,
+      "local_batch_offset": 324,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10053,
+      "local_batch_offset": 325,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10054,
+      "local_batch_offset": 326,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10055,
+      "local_batch_offset": 327,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10056,
+      "local_batch_offset": 328,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10057,
+      "local_batch_offset": 329,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10058,
+      "local_batch_offset": 330,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10059,
+      "local_batch_offset": 331,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10060,
+      "local_batch_offset": 332,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10061,
+      "local_batch_offset": 333,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10062,
+      "local_batch_offset": 334,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10063,
+      "local_batch_offset": 335,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10064,
+      "local_batch_offset": 336,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10065,
+      "local_batch_offset": 337,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10066,
+      "local_batch_offset": 338,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10067,
+      "local_batch_offset": 339,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10068,
+      "local_batch_offset": 340,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10069,
+      "local_batch_offset": 341,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10070,
+      "local_batch_offset": 342,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10071,
+      "local_batch_offset": 343,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10072,
+      "local_batch_offset": 344,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10073,
+      "local_batch_offset": 345,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10074,
+      "local_batch_offset": 346,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10075,
+      "local_batch_offset": 347,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10076,
+      "local_batch_offset": 348,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10077,
+      "local_batch_offset": 349,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10078,
+      "local_batch_offset": 350,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10079,
+      "local_batch_offset": 351,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10080,
+      "local_batch_offset": 352,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10081,
+      "local_batch_offset": 353,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10082,
+      "local_batch_offset": 354,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10083,
+      "local_batch_offset": 355,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10084,
+      "local_batch_offset": 356,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10085,
+      "local_batch_offset": 357,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10086,
+      "local_batch_offset": 358,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10087,
+      "local_batch_offset": 359,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10088,
+      "local_batch_offset": 360,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10089,
+      "local_batch_offset": 361,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10090,
+      "local_batch_offset": 362,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10091,
+      "local_batch_offset": 363,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10092,
+      "local_batch_offset": 364,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10093,
+      "local_batch_offset": 365,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10094,
+      "local_batch_offset": 366,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10095,
+      "local_batch_offset": 367,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10096,
+      "local_batch_offset": 368,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10097,
+      "local_batch_offset": 369,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10098,
+      "local_batch_offset": 370,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10099,
+      "local_batch_offset": 371,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10100,
+      "local_batch_offset": 372,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10101,
+      "local_batch_offset": 373,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10102,
+      "local_batch_offset": 374,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10103,
+      "local_batch_offset": 375,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10104,
+      "local_batch_offset": 376,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10105,
+      "local_batch_offset": 377,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10106,
+      "local_batch_offset": 378,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10107,
+      "local_batch_offset": 379,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10108,
+      "local_batch_offset": 380,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10109,
+      "local_batch_offset": 381,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10110,
+      "local_batch_offset": 382,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10111,
+      "local_batch_offset": 383,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10112,
+      "local_batch_offset": 384,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10113,
+      "local_batch_offset": 385,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10114,
+      "local_batch_offset": 386,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10115,
+      "local_batch_offset": 387,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10116,
+      "local_batch_offset": 388,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10117,
+      "local_batch_offset": 389,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10118,
+      "local_batch_offset": 390,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10119,
+      "local_batch_offset": 391,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10120,
+      "local_batch_offset": 392,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10121,
+      "local_batch_offset": 393,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10122,
+      "local_batch_offset": 394,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10123,
+      "local_batch_offset": 395,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10124,
+      "local_batch_offset": 396,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10125,
+      "local_batch_offset": 397,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10126,
+      "local_batch_offset": 398,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10127,
+      "local_batch_offset": 399,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10128,
+      "local_batch_offset": 400,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10129,
+      "local_batch_offset": 401,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10130,
+      "local_batch_offset": 402,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10131,
+      "local_batch_offset": 403,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10132,
+      "local_batch_offset": 404,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10133,
+      "local_batch_offset": 405,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10134,
+      "local_batch_offset": 406,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10135,
+      "local_batch_offset": 407,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10136,
+      "local_batch_offset": 408,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10137,
+      "local_batch_offset": 409,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10138,
+      "local_batch_offset": 410,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10139,
+      "local_batch_offset": 411,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10140,
+      "local_batch_offset": 412,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10141,
+      "local_batch_offset": 413,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10142,
+      "local_batch_offset": 414,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10143,
+      "local_batch_offset": 415,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10144,
+      "local_batch_offset": 416,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10145,
+      "local_batch_offset": 417,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10146,
+      "local_batch_offset": 418,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10147,
+      "local_batch_offset": 419,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10148,
+      "local_batch_offset": 420,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10149,
+      "local_batch_offset": 421,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10150,
+      "local_batch_offset": 422,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10151,
+      "local_batch_offset": 423,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10152,
+      "local_batch_offset": 424,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10153,
+      "local_batch_offset": 425,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10154,
+      "local_batch_offset": 426,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10155,
+      "local_batch_offset": 427,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10156,
+      "local_batch_offset": 428,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10157,
+      "local_batch_offset": 429,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10158,
+      "local_batch_offset": 430,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10159,
+      "local_batch_offset": 431,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10160,
+      "local_batch_offset": 432,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10161,
+      "local_batch_offset": 433,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10162,
+      "local_batch_offset": 434,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10163,
+      "local_batch_offset": 435,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10164,
+      "local_batch_offset": 436,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10165,
+      "local_batch_offset": 437,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10166,
+      "local_batch_offset": 438,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10167,
+      "local_batch_offset": 439,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10168,
+      "local_batch_offset": 440,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10169,
+      "local_batch_offset": 441,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10170,
+      "local_batch_offset": 442,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10171,
+      "local_batch_offset": 443,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10172,
+      "local_batch_offset": 444,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10173,
+      "local_batch_offset": 445,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10174,
+      "local_batch_offset": 446,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10175,
+      "local_batch_offset": 447,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10176,
+      "local_batch_offset": 448,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10177,
+      "local_batch_offset": 449,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10178,
+      "local_batch_offset": 450,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10179,
+      "local_batch_offset": 451,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10180,
+      "local_batch_offset": 452,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10181,
+      "local_batch_offset": 453,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10182,
+      "local_batch_offset": 454,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10183,
+      "local_batch_offset": 455,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10184,
+      "local_batch_offset": 456,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10185,
+      "local_batch_offset": 457,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10186,
+      "local_batch_offset": 458,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10187,
+      "local_batch_offset": 459,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10188,
+      "local_batch_offset": 460,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10189,
+      "local_batch_offset": 461,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10190,
+      "local_batch_offset": 462,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10191,
+      "local_batch_offset": 463,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10192,
+      "local_batch_offset": 464,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10193,
+      "local_batch_offset": 465,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10194,
+      "local_batch_offset": 466,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10195,
+      "local_batch_offset": 467,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10196,
+      "local_batch_offset": 468,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10197,
+      "local_batch_offset": 469,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10198,
+      "local_batch_offset": 470,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10199,
+      "local_batch_offset": 471,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10200,
+      "local_batch_offset": 472,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10201,
+      "local_batch_offset": 473,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10202,
+      "local_batch_offset": 474,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10203,
+      "local_batch_offset": 475,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10204,
+      "local_batch_offset": 476,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10205,
+      "local_batch_offset": 477,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10206,
+      "local_batch_offset": 478,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10207,
+      "local_batch_offset": 479,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10208,
+      "local_batch_offset": 480,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10209,
+      "local_batch_offset": 481,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10210,
+      "local_batch_offset": 482,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10211,
+      "local_batch_offset": 483,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10212,
+      "local_batch_offset": 484,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10213,
+      "local_batch_offset": 485,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10214,
+      "local_batch_offset": 486,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10215,
+      "local_batch_offset": 487,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10216,
+      "local_batch_offset": 488,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10217,
+      "local_batch_offset": 489,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10218,
+      "local_batch_offset": 490,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10219,
+      "local_batch_offset": 491,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10220,
+      "local_batch_offset": 492,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10221,
+      "local_batch_offset": 493,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10222,
+      "local_batch_offset": 494,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10223,
+      "local_batch_offset": 495,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10224,
+      "local_batch_offset": 496,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10225,
+      "local_batch_offset": 497,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10226,
+      "local_batch_offset": 498,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10227,
+      "local_batch_offset": 499,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10228,
+      "local_batch_offset": 500,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10229,
+      "local_batch_offset": 501,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10230,
+      "local_batch_offset": 502,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10231,
+      "local_batch_offset": 503,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10232,
+      "local_batch_offset": 504,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10233,
+      "local_batch_offset": 505,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10234,
+      "local_batch_offset": 506,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10235,
+      "local_batch_offset": 507,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10236,
+      "local_batch_offset": 508,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10237,
+      "local_batch_offset": 509,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10238,
+      "local_batch_offset": 510,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    },
+    {
+      "image_index": 10239,
+      "local_batch_offset": 511,
+      "label": null,
+      "ssim": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "psnr": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      },
+      "l1": {
+        "v6r": null,
+        "v9r": null,
+        "v10": null
+      }
+    }
+  ],
+  "recon_time_sec": 2.7541,
+  "timestamp": 1794099334.9313724
+}

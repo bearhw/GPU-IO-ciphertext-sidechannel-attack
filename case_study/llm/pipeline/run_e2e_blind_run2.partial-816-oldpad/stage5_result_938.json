@@ -1,0 +1,20 @@
+{
+  "index": 938,
+  "host_base": "0x1a65de000",
+  "gt_base": "0x1a65de000",
+  "gt_indication": "Respiratory distress, COPD",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 19.49922513961792,
+  "timestamp": 1793087807.744944,
+  "status": "SUCCESS"
+}

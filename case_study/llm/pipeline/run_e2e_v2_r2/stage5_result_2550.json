@@ -1,0 +1,32 @@
+{
+  "index": 2550,
+  "host_base": "0x1bbad6000",
+  "gt_base": "0x1bbad5000",
+  "gt_indication": "Chest pain, generalized heavy chest pain, nausea, shortness of breath and headache for 2 days, pain increases at night when lying flat, history hypertension",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 7443671072,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.807295322418213,
+  "timestamp": 1793417383.7575593,
+  "status": "SUCCESS"
+}

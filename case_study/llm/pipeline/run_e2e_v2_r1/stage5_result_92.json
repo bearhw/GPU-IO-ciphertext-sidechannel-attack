@@ -1,0 +1,50 @@
+{
+  "index": 92,
+  "host_base": "0x1a0e85000",
+  "gt_base": "0x1a0e84000",
+  "gt_indication": "57-year-old male with respiratory failure, shortness of breath.",
+  "recovered_labels": [
+    " respiratory failure",
+    ", short",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 214,
+      "ind_gpa": 6994548400,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 216,
+      "ind_gpa": 6994548416,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 218,
+      "ind_gpa": 6994548432,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "respiratory failure",
+      ", short",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.40166687965393,
+  "timestamp": 1793284938.1395864,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 2934,
+  "host_base": "0x1a990a000",
+  "gt_base": "0x1a990a000",
+  "gt_indication": "Right rib pain post fall.",
+  "recovered_labels": [
+    " rib pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 548,
+      "ind_gpa": 7139799328,
+      "token_idx": 15,
+      "n_blocks": 1,
+      "label": " rib pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "rib pain"
+    ]
+  },
+  "elapsed_sec": 15.60585331916809,
+  "timestamp": 1793255205.037528,
+  "status": "SUCCESS"
+}

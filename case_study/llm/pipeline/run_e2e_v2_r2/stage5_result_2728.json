@@ -1,0 +1,32 @@
+{
+  "index": 2728,
+  "host_base": "0x1a1cca000",
+  "gt_base": "0x1a1cca000",
+  "gt_indication": "PICC line placement. Weakness. Hyponatremia. Acute renal failure.",
+  "recovered_labels": [
+    " Weakness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7009512192,
+      "token_idx": 18,
+      "n_blocks": 1,
+      "label": " Weakness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Weakness"
+    ]
+  },
+  "elapsed_sec": 14.992545366287231,
+  "timestamp": 1793423538.9480526,
+  "status": "SUCCESS"
+}

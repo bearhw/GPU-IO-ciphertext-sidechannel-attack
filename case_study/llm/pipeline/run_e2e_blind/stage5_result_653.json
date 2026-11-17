@@ -1,0 +1,20 @@
+{
+  "index": 653,
+  "host_base": "0x1a297a000",
+  "gt_base": "0x1a297a000",
+  "gt_indication": "Severe shortness of breath. COPD. Congestive heart failure.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 18.540796041488647,
+  "timestamp": 1792910142.0280526,
+  "status": "SUCCESS"
+}

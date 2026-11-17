@@ -1,0 +1,32 @@
+{
+  "index": 412,
+  "host_base": "0x1a8dbd000",
+  "gt_base": "0x1a8dbd000",
+  "gt_indication": "Pneumonia. Septic shock. Fall. Respiratory distress.",
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 7127948080,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 19.292979955673218,
+  "timestamp": 1792898864.6102052,
+  "status": "SUCCESS"
+}

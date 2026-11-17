@@ -1,0 +1,50 @@
+{
+  "index": 2013,
+  "host_base": "0x1a1bad000",
+  "gt_base": "0x1a1bad000",
+  "gt_indication": "Acute onset of shortness of breath. Fever. Initial encounter.",
+  "recovered_labels": [
+    "ness of",
+    " breath.",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 7008347152,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 7008347168,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 7008347184,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath.",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 22.526893377304077,
+  "timestamp": 1792969155.153538,
+  "status": "SUCCESS"
+}

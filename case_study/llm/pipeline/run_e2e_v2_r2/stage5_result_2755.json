@@ -1,0 +1,41 @@
+{
+  "index": 2755,
+  "host_base": "0x1a207b000",
+  "gt_base": "0x1a207b000",
+  "gt_indication": "Left-sided chest pain and shortness of breath.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7013382912,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 7013382928,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.847074508666992,
+  "timestamp": 1793424602.5095668,
+  "status": "SUCCESS"
+}

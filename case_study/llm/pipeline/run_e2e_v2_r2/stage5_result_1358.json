@@ -1,0 +1,195 @@
+{
+  "index": 1358,
+  "host_base": "0x1a00fd000",
+  "gt_base": "0x1a00fc000",
+  "gt_indication": "Chest pain, epigastric pain, nausea",
+  "recovered_labels": [
+    " Chest pain",
+    " PICC",
+    " Chest pain",
+    " PICC",
+    " Chest pain",
+    " PICC",
+    " Chest pain",
+    " PICC",
+    " Chest pain",
+    " PICC",
+    " Chest pain",
+    " PICC",
+    " Chest pain",
+    " PICC",
+    " Chest pain",
+    " PICC",
+    " Chest pain",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 276,
+      "ind_gpa": 6980360352,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6980360352,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6980360368,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6980360368,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6980360384,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6980360384,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6980360400,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6980360400,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6980360416,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6980360416,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6980360432,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6980360432,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6980360448,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6980360448,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6980360464,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6980360464,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6980360480,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6980360480,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC",
+      "PICC"
+    ],
+    "false_positive_count": 9,
+    "recovered_labels": [
+      "Chest pain",
+      "PICC",
+      "Chest pain",
+      "PICC",
+      "Chest pain",
+      "PICC",
+      "Chest pain",
+      "PICC",
+      "Chest pain",
+      "PICC",
+      "Chest pain",
+      "PICC",
+      "Chest pain",
+      "PICC",
+      "Chest pain",
+      "PICC",
+      "Chest pain",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 15.018022060394287,
+  "timestamp": 1793369263.2747555,
+  "status": "SUCCESS"
+}

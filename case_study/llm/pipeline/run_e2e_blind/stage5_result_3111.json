@@ -1,0 +1,20 @@
+{
+  "index": 3111,
+  "host_base": "0x1a0b94000",
+  "gt_base": "0x1a0b94000",
+  "gt_indication": "Persistent cough and intermittent shortness of air for about a week.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 6.261157751083374,
+  "timestamp": 1793018458.29261,
+  "status": "SUCCESS"
+}

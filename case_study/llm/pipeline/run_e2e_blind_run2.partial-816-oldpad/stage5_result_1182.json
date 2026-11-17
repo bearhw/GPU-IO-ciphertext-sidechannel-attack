@@ -1,0 +1,41 @@
+{
+  "index": 1182,
+  "host_base": "0x1a37c6000",
+  "gt_base": "0x1a37c6000",
+  "gt_indication": "50-year-old male with shortness of breath status post intubation.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 7037809696,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 7037809712,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 19.09918785095215,
+  "timestamp": 1793098210.2949228,
+  "status": "SUCCESS"
+}

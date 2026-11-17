@@ -1,0 +1,32 @@
+{
+  "index": 1356,
+  "host_base": "0x1a0d3d000",
+  "gt_base": "0x1a0d3d000",
+  "gt_indication": "Cough and fever for 12 hr. Febrile seizure",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 374,
+      "ind_gpa": 6993206192,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.320174932479858,
+  "timestamp": 1793459877.3834753,
+  "status": "SUCCESS"
+}

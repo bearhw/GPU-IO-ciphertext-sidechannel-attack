@@ -1,0 +1,84 @@
+{
+  "index": 3040,
+  "host_base": "0x19672b000",
+  "gt_base": "0x19672b000",
+  "gt_indication": "Fall. Right-sided rib pain. Diminished breath sounds on the right at physical examination. Former smoker.",
+  "recovered_labels": [
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure",
+    " Chest pain",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 466,
+      "ind_gpa": 6819069584,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 466,
+      "ind_gpa": 6819069584,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6819069600,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 468,
+      "ind_gpa": 6819069600,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6819069616,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 470,
+      "ind_gpa": 6819069616,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 6,
+    "false_positive_labels": [
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure"
+    ],
+    "false_positive_count": 6,
+    "recovered_labels": [
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure",
+      "Chest pain",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.201868295669556,
+  "timestamp": 1793439859.3356738,
+  "status": "SUCCESS"
+}

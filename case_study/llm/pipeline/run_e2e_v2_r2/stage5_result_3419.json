@@ -1,0 +1,32 @@
+{
+  "index": 3419,
+  "host_base": "0x1a15da000",
+  "gt_base": "0x1a15da000",
+  "gt_indication": "Coughing congestion over the last 10 days. Fever and diarrhea for the last 4 days.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 328,
+      "ind_gpa": 7002237504,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.813331127166748,
+  "timestamp": 1793453225.8192072,
+  "status": "SUCCESS"
+}

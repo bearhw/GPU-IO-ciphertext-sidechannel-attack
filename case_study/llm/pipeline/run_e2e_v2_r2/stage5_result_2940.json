@@ -1,0 +1,184 @@
+{
+  "index": 2940,
+  "host_base": "0x1a1cd4000",
+  "gt_base": "0x1a1cd4000",
+  "gt_indication": "Dyspnea, wheezing and hypoxia",
+  "recovered_labels": [
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert",
+    " of breath",
+    "ough and",
+    " Follow-up",
+    " Hypert"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 600,
+      "ind_gpa": 7009555136,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 7009555136,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 7009555136,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 7009555136,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 7009555152,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 7009555152,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 7009555152,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 7009555152,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 604,
+      "ind_gpa": 7009555168,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 604,
+      "ind_gpa": 7009555168,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 604,
+      "ind_gpa": 7009555168,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 604,
+      "ind_gpa": 7009555168,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    },
+    {
+      "tok_start": 606,
+      "ind_gpa": 7009555184,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 606,
+      "ind_gpa": 7009555184,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 606,
+      "ind_gpa": 7009555184,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 606,
+      "ind_gpa": 7009555184,
+      "token_idx": 27,
+      "n_blocks": 1,
+      "label": " Hypert"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert"
+    ],
+    "false_positive_count": 16,
+    "recovered_labels": [
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert",
+      "of breath",
+      "ough and",
+      "Follow-up",
+      "Hypert"
+    ]
+  },
+  "elapsed_sec": 15.155784130096436,
+  "timestamp": 1793435912.3679771,
+  "status": "SUCCESS"
+}

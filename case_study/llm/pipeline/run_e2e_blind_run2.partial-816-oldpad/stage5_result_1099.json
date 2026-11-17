@@ -1,0 +1,174 @@
+{
+  "index": 1099,
+  "host_base": "0x1a2dad000",
+  "gt_base": "0x1a2dad000",
+  "gt_indication": "Acute MI, PICC line reposition.",
+  "recovered_labels": [
+    " chest pain",
+    " Fever.",
+    " Hypox",
+    " chest pain",
+    " Fever.",
+    " Hypox",
+    " chest pain",
+    " Fever.",
+    " Hypox",
+    " chest pain",
+    " Fever.",
+    " Hypox",
+    " chest pain",
+    " Fever.",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 362,
+      "ind_gpa": 7027219280,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7027219280,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 362,
+      "ind_gpa": 7027219280,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7027219296,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7027219296,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 7027219296,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7027219312,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7027219312,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 7027219312,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7027219328,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7027219328,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7027219328,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7027219344,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7027219344,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7027219344,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 15,
+    "false_positive_labels": [
+      "chest pain",
+      "Fever.",
+      "Hypox",
+      "chest pain",
+      "Fever.",
+      "Hypox",
+      "chest pain",
+      "Fever.",
+      "Hypox",
+      "chest pain",
+      "Fever.",
+      "Hypox",
+      "chest pain",
+      "Fever.",
+      "Hypox"
+    ],
+    "false_positive_count": 15,
+    "recovered_labels": [
+      "chest pain",
+      "Fever.",
+      "Hypox",
+      "chest pain",
+      "Fever.",
+      "Hypox",
+      "chest pain",
+      "Fever.",
+      "Hypox",
+      "chest pain",
+      "Fever.",
+      "Hypox",
+      "chest pain",
+      "Fever.",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 16.7699191570282,
+  "timestamp": 1793095124.724985,
+  "status": "SUCCESS"
+}

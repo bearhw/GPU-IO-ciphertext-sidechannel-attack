@@ -1,0 +1,32 @@
+{
+  "index": 719,
+  "host_base": "0x19d89e000",
+  "gt_base": "0x19d89e000",
+  "gt_indication": "Shortness of breath, Covid-19 positive.",
+  "recovered_labels": [
+    " Shortness"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 664,
+      "ind_gpa": 6938031296,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness"
+    ]
+  },
+  "elapsed_sec": 15.6518075466156,
+  "timestamp": 1793345519.326259,
+  "status": "SUCCESS"
+}

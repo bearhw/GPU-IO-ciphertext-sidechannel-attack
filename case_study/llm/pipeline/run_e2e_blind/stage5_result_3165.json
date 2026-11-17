@@ -1,0 +1,50 @@
+{
+  "index": 3165,
+  "host_base": "0x1a193a000",
+  "gt_base": "0x1a193a000",
+  "gt_indication": "Follow-up for right middle lobe mass. The patient is experiencing experience cough, chest congestion, shortness of breath, and wheezing for the past 3-4 weeks. Patient is a former smoker. History of chronic respiratory failure, COPD.",
+  "recovered_labels": [
+    " shortness",
+    " of breath",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 656,
+      "ind_gpa": 7005779072,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 7005779088,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 7005779120,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 18.73480749130249,
+  "timestamp": 1793019827.1992486,
+  "status": "SUCCESS"
+}

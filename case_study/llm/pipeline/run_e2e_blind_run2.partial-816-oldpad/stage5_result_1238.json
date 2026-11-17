@@ -1,0 +1,32 @@
+{
+  "index": 1238,
+  "host_base": "0x1a4794000",
+  "gt_base": "0x1a4794000",
+  "gt_indication": "Suspected COVID-19. Sore throat for 4 days. Cough. Chills.",
+  "recovered_labels": [
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 470,
+      "ind_gpa": 7054380720,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 19.228057861328125,
+  "timestamp": 1793099742.6105008,
+  "status": "SUCCESS"
+}

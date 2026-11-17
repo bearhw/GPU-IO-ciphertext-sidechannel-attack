@@ -3825,6 +3825,15 @@ static noinstr void svm_vcpu_enter_exit(struct kvm_vcpu *vcpu)
 
 	//luca: also includes sev-snp, i.e. is inclusive hierachy
 	if (sev_es_guest(vcpu->kvm)) {
+		/*
+		 * GIF=0 and IRQs off from here to VMRUN: a contended mutex would
+		 * sleep with GIF clear and leave this CPU deaf to interrupts and
+		 * NMIs. Only single-stepping needs the mutex here, so check that
+		 * first without it.
+		 */
+		bool ss_active = sev_step_is_single_stepping_active(&global_sev_step_config);
+
+		if (ss_active) {
 		mutex_lock(&sev_step_config_mutex);
 		if(sev_step_is_single_stepping_active(&global_sev_step_config)) {
 			//sanity checks for nemesis: check vmcb stays the same
@@ -3870,9 +3879,10 @@ static noinstr void svm_vcpu_enter_exit(struct kvm_vcpu *vcpu)
 				}
 			}
 
-			
+
 		}
 		mutex_unlock(&sev_step_config_mutex);
+		}
 
 		//function checks if single stepping is enabled
 		guest_state_enter_irqoff();
@@ -3883,9 +3893,10 @@ static noinstr void svm_vcpu_enter_exit(struct kvm_vcpu *vcpu)
 		__svm_sev_es_vcpu_run(vmcb_pa,chase,apic_timer_value,chase_rev, APIC_BASE + APIC_TMICT, &vm_enter_exit_latency);
 		guest_state_exit_irqoff();
 
+		if (ss_active || sev_step_is_single_stepping_active(&global_sev_step_config)) {
 		mutex_lock(&sev_step_config_mutex);
 		if(sev_step_is_single_stepping_active(&global_sev_step_config)) {
-			
+
 			global_sev_step_config.tsc_latency = vm_enter_exit_latency;
 		
 			if( global_sev_step_config.cache_attack_config != NULL &&
@@ -3903,6 +3914,7 @@ static noinstr void svm_vcpu_enter_exit(struct kvm_vcpu *vcpu)
 		}
 		}
 		mutex_unlock(&sev_step_config_mutex);
+		}
 
 		/*
 		 * NV BB stepping: re-unmap pages faulted in the last
@@ -3915,6 +3927,7 @@ static noinstr void svm_vcpu_enter_exit(struct kvm_vcpu *vcpu)
 		else if (unlikely(atomic_read(&nv_bb_trigger_armed)))
 			nv_bb_trigger_post_vmexit(&svm->vcpu);
 
+	if (READ_ONCE(global_sev_step_config.decrypt_vmsa)) {
 	mutex_lock(&sev_step_config_mutex);
 	if(global_sev_step_config.decrypt_vmsa) {
 		struct vmcb_save_area vmcb_sa;
@@ -3979,6 +3992,7 @@ static noinstr void svm_vcpu_enter_exit(struct kvm_vcpu *vcpu)
 		}
 	}
 	mutex_unlock(&sev_step_config_mutex);
+	}
 
 	} else {
 		struct svm_cpu_data *sd = per_cpu(svm_data, vcpu->cpu);
@@ -4408,6 +4422,15 @@ static int _swap_guest_pages_loop_body(struct kvm_vcpu *vcpu, bool is_swap_back,
 		memset(tmp_page_addr, 0, PAGE_SIZE);
 	}
 
+	/*
+	 * tmp_page is the PAGE_MOVE destination twice per swap. Dirty host
+	 * lines for it (the memset above, or whoever owned the page before
+	 * alloc_page) must reach DRAM now: written back after the PSP filled
+	 * the page, they would overwrite guest ciphertext that is then moved
+	 * into gfn1/gfn2, i.e. random 64B corruption of live guest pages.
+	 */
+	clflush_cache_range(tmp_page_addr, PAGE_SIZE);
+
 	is_assign_swap_gfns = (*nr_gfn1_new_assignments > 0) || (*nr_gfn2_new_assignments > 0);
 
 	if (is_assign_swap_gfns) {
@@ -4734,6 +4757,7 @@ static int swap_guest_pages(struct kvm_vcpu *vcpu, bool is_swap_pages,
 			tmp_page = alloc_page(GFP_KERNEL);
 			if (!tmp_page) {
 				printk(KERN_ERR "%s: failed to allocate tmp_page\n", __func__);
+				break;
 			}
 			tmp_page_addr = page_address(tmp_page);
 			ret = _swap_guest_pages_loop_body(vcpu, is_swap_back, tmp_page_addr, four_pages_ptr, &nr_gfn1_new_assignments, &nr_gfn2_new_assignments, &swap_gfn1, &swap_gfn2);
@@ -4753,6 +4777,152 @@ static int swap_guest_pages(struct kvm_vcpu *vcpu, bool is_swap_pages,
 }
 
 #endif // ENABLE_OLD_SWAP_PAGES_SUPPORT
+
+/*
+ * Service sev-step requests that sleep (PSP page moves, vmalloc, gfn_to_pfn,
+ * usp_send_and_block). Called from vcpu_enter_guest() before
+ * prepare_switch_to_guest() and local_irq_disable(), so a sleep here is an
+ * ordinary reschedule: the next entry re-prepares host state on whatever CPU
+ * the thread lands on. The guest is not running, exactly as when these ran
+ * right before/after VMRUN in svm_vcpu_run().
+ */
+static void svm_sev_step_pre_entry(struct kvm_vcpu *vcpu)
+{
+	WARN_ON_ONCE(irqs_disabled());
+
+#ifdef ENABLE_OLD_SWAP_PAGES_SUPPORT
+	if (READ_ONCE(global_sev_step_config.is_swap_pages)) {
+		// Handle KVM_SWAP_GUEST_PAGES request in this code block
+		int nr_gfn1_new_assignments, nr_gfn2_new_assignments;
+		int nr_swap_times;
+		bool is_swap_pages;
+		bool is_swap_back;
+		uint64_t swap_gfn1, swap_gfn2;
+
+		mutex_lock(&sev_step_config_mutex);
+		nr_swap_times = global_sev_step_config.nr_swap_times;
+		nr_gfn1_new_assignments = global_sev_step_config.nr_gfn1_new_assignments;
+		nr_gfn2_new_assignments = global_sev_step_config.nr_gfn2_new_assignments;
+		swap_gfn1 = global_sev_step_config.swap_gfn1;
+		swap_gfn2 = global_sev_step_config.swap_gfn2;
+		is_swap_pages = global_sev_step_config.is_swap_pages;
+		is_swap_back = global_sev_step_config.is_swap_back;
+		mutex_unlock(&sev_step_config_mutex);
+
+		if (is_swap_pages) {
+			int swap_guest_pages_ret = 0;
+
+			printk("KVM_PAGE_SWAP: is_swap_pages=%d, nr_swap_times=%d, is_swap_back=%d, swap_gfn1=0x%llx, swap_gfn2=0x%llx, nr_gfn1_new_assignments=%d, nr_gfn2_new_assignments=%d\n",
+			       is_swap_pages, nr_swap_times, is_swap_back, swap_gfn1,
+			       swap_gfn2, nr_gfn1_new_assignments,
+			       nr_gfn2_new_assignments);
+			swap_guest_pages_ret = swap_guest_pages(
+				vcpu, is_swap_pages, nr_swap_times, is_swap_back,
+				swap_gfn1, swap_gfn2, nr_gfn1_new_assignments,
+				nr_gfn2_new_assignments);
+
+			if (swap_guest_pages_ret) {
+				printk(KERN_ERR "%s: failed to swap guest pages\n", __func__);
+			}
+
+			mutex_lock(&sev_step_config_mutex);
+			global_sev_step_config.is_swap_pages = false;
+			global_sev_step_config.nr_swap_times = 0;
+			global_sev_step_config.swap_gfn1 = -1;
+			global_sev_step_config.swap_gfn2 = -1;
+			global_sev_step_config.nr_gfn1_new_assignments = 0;
+			global_sev_step_config.nr_gfn2_new_assignments = 0;
+			global_sev_step_config.swap_done = swap_guest_pages_ret == 0 ? 1 : -1;
+			mutex_unlock(&sev_step_config_mutex);
+		}
+	}
+#endif // ENABLE_OLD_SWAP_PAGES_SUPPORT
+
+	if (READ_ONCE(global_sev_step_config.is_dump_page)) {
+		bool is_dump_page;
+		uint64_t *dump_page_gpas;
+		unsigned int nr_dump_pages;
+		bool is_decrypt_when_dump;
+		bool is_relocate_when_dump;
+
+		mutex_lock(&sev_step_config_mutex);
+		is_dump_page = global_sev_step_config.is_dump_page;
+		dump_page_gpas = global_sev_step_config.dump_page_gpas;
+		nr_dump_pages = global_sev_step_config.nr_dump_pages;
+		is_decrypt_when_dump = global_sev_step_config.is_decrypt_when_dump;
+		is_relocate_when_dump = global_sev_step_config.is_relocate_when_dump;
+
+		if (is_dump_page) {
+			int ret;
+			ret = dump_guest_pages(vcpu, dump_page_gpas,
+					       nr_dump_pages, is_decrypt_when_dump,
+					       is_relocate_when_dump);
+
+			if (ret) {
+				printk(KERN_ERR
+				       "%s: failed to dump guest pages\n",
+				       __func__);
+			}
+
+			if (global_sev_step_config.dump_page_gpas)
+				kfree(global_sev_step_config.dump_page_gpas);
+
+			global_sev_step_config.is_dump_page = false;
+			global_sev_step_config.nr_dump_pages = 0;
+			global_sev_step_config.dump_page_gpas = NULL;
+			global_sev_step_config.is_decrypt_when_dump = false;
+			global_sev_step_config.is_relocate_when_dump = false;
+		}
+		mutex_unlock(&sev_step_config_mutex);
+	}
+
+	if (READ_ONCE(global_sev_step_config.gfn_to_translate) != (u64)-1 &&
+	    READ_ONCE(global_sev_step_config.translated_pfn_of_gfn) == (u64)-1) {
+		u64 gfn_to_translate;
+		u64 translated_pfn;
+
+		mutex_lock(&sev_step_config_mutex);
+		gfn_to_translate = global_sev_step_config.gfn_to_translate;
+		translated_pfn = global_sev_step_config.translated_pfn_of_gfn;
+		if ((gfn_to_translate != (u64)-1) &&
+		    (translated_pfn == (u64)-1)) {
+			u64 pfn = kvm_vcpu_gfn_to_pfn(vcpu, gfn_to_translate);
+			global_sev_step_config.translated_pfn_of_gfn = pfn;
+			if (pfn_valid(pfn)) {
+				printk(KERN_INFO
+				       "%s: gfn_to_translate=0x%llx, pfn=0x%llx (valid)\n",
+				       __func__, gfn_to_translate, pfn);
+
+			} else {
+				printk(KERN_ERR
+				       "%s: gfn_to_translate=0x%llx, pfn=0x%llx (invalid)\n",
+				       __func__, gfn_to_translate, pfn);
+			}
+		}
+		mutex_unlock(&sev_step_config_mutex);
+	}
+
+	if (READ_ONCE(global_sev_step_config.is_dump_private_pages)) {
+		bool is_dump_private_pages;
+
+		mutex_lock(&sev_step_config_mutex);
+		is_dump_private_pages = global_sev_step_config.is_dump_private_pages;
+		if (is_dump_private_pages) {
+			int ret;
+			ret = dump_private_pages();
+
+			if (ret) {
+				printk(KERN_ERR
+				       "%s: failed to dump private pages\n",
+				       __func__);
+			}
+
+			global_sev_step_config.is_dump_private_pages = false;
+		}
+
+		mutex_unlock(&sev_step_config_mutex);
+	}
+}
 
 static __no_kcsan fastpath_t svm_vcpu_run(struct kvm_vcpu *vcpu)
 {
@@ -4809,6 +4979,14 @@ static __no_kcsan fastpath_t svm_vcpu_run(struct kvm_vcpu *vcpu)
 	//
 
 
+	/*
+	 * IRQs are off here and the host state is already prepared for VMRUN, so
+	 * this thread must not sleep: only take the mutex when there is something
+	 * to do (first entry, or a single-stepping state change).
+	 */
+	if (!READ_ONCE(global_sev_step_config.state_save_values_valid) ||
+	    READ_ONCE(global_sev_step_config.single_stepping_status) == SEV_STEP_STEPPING_STATUS_DISABLED_WANT_INIT ||
+	    READ_ONCE(global_sev_step_config.single_stepping_status) == SEV_STEP_STEPPING_STATUS_ENABLED_WANT_DISABLE) {
 	mutex_lock(&sev_step_config_mutex);
 	if( !global_sev_step_config.state_save_values_valid ) {
 		global_sev_step_config.vmsa_hpa = svm->vmcb->control.vmsa_pa;
@@ -4845,54 +5023,9 @@ static __no_kcsan fastpath_t svm_vcpu_run(struct kvm_vcpu *vcpu)
 
 	}
 	mutex_unlock(&sev_step_config_mutex);
-
-#ifdef ENABLE_OLD_SWAP_PAGES_SUPPORT
-	{
-		// Handle KVM_SWAP_GUEST_PAGES request in this code block
-		int nr_gfn1_new_assignments, nr_gfn2_new_assignments;
-		int nr_swap_times;
-		bool is_swap_pages;
-		bool is_swap_back;
-		uint64_t swap_gfn1, swap_gfn2;
-
-		mutex_lock(&sev_step_config_mutex);
-		nr_swap_times = global_sev_step_config.nr_swap_times;
-		nr_gfn1_new_assignments = global_sev_step_config.nr_gfn1_new_assignments;
-		nr_gfn2_new_assignments = global_sev_step_config.nr_gfn2_new_assignments;
-		swap_gfn1 = global_sev_step_config.swap_gfn1;
-		swap_gfn2 = global_sev_step_config.swap_gfn2;
-		is_swap_pages = global_sev_step_config.is_swap_pages;
-		is_swap_back = global_sev_step_config.is_swap_back;
-		mutex_unlock(&sev_step_config_mutex);
-
-		if (is_swap_pages) {
-			int swap_guest_pages_ret = 0;
-
-			printk("KVM_PAGE_SWAP: is_swap_pages=%d, nr_swap_times=%d, is_swap_back=%d, swap_gfn1=0x%llx, swap_gfn2=0x%llx, nr_gfn1_new_assignments=%d, nr_gfn2_new_assignments=%d\n",
-			       is_swap_pages, nr_swap_times, is_swap_back, swap_gfn1,
-			       swap_gfn2, nr_gfn1_new_assignments,
-			       nr_gfn2_new_assignments);
-			swap_guest_pages_ret = swap_guest_pages(
-				vcpu, is_swap_pages, nr_swap_times, is_swap_back,
-				swap_gfn1, swap_gfn2, nr_gfn1_new_assignments,
-				nr_gfn2_new_assignments);
-			
-			if (swap_guest_pages_ret) {
-				printk(KERN_ERR "%s: failed to swap guest pages\n", __func__);
-			}
-
-			mutex_lock(&sev_step_config_mutex);
-			global_sev_step_config.is_swap_pages = false;
-			global_sev_step_config.nr_swap_times = 0;
-			global_sev_step_config.swap_gfn1 = -1;
-			global_sev_step_config.swap_gfn2 = -1;
-			global_sev_step_config.nr_gfn1_new_assignments = 0;
-			global_sev_step_config.nr_gfn2_new_assignments = 0;
-			global_sev_step_config.swap_done = swap_guest_pages_ret == 0 ? 1 : -1;
-			mutex_unlock(&sev_step_config_mutex);
-		}
 	}
-#endif // ENABLE_OLD_SWAP_PAGES_SUPPORT
+
+	/* KVM_SWAP_GUEST_PAGES is serviced in svm_sev_step_pre_entry(). */
 
 #ifdef ENABLE_OLD_NULL_CIPHER_REPR_SUPPORT
 	mutex_lock(&sev_step_config_mutex);
@@ -4934,6 +5067,8 @@ static __no_kcsan fastpath_t svm_vcpu_run(struct kvm_vcpu *vcpu)
 	mutex_unlock(&sev_step_config_mutex);
 #endif // ENABLE_OLD_NULL_CIPHER_REPR_SUPPORT
 
+	if (sev_step_is_single_stepping_active(&global_sev_step_config) ||
+	    just_disblabled_stepping) {
 	mutex_lock(&sev_step_config_mutex);
 	if(sev_step_is_single_stepping_active(&global_sev_step_config)) {
 		global_sev_step_config.entry_counter += 1;
@@ -4985,15 +5120,25 @@ static __no_kcsan fastpath_t svm_vcpu_run(struct kvm_vcpu *vcpu)
 		svm_ssdbg_log("svm->vcpu.arch.interrupt.nr: 0x%x\n",svm->vcpu.arch.interrupt.nr);
 	}
 	mutex_unlock(&sev_step_config_mutex);
+	}
 
-	
-	
+
+
 
 	//
 	// End of sev step "before" block
 	//
 
-
+	/*
+	 * If anything above slept, the thread may have been scheduled out after
+	 * prepare_switch_to_guest() and resumed elsewhere: VMEXIT would then load
+	 * host FS/GS bases saved by another thread. Make that visible.
+	 */
+	if (unlikely(vcpu->cpu != raw_smp_processor_id() ||
+		     !svm->guest_state_loaded))
+		pr_err_ratelimited("sev-step: vcpu%d entering on cpu%d (vcpu->cpu=%d, guest_state_loaded=%d) — host state is stale\n",
+				   vcpu->vcpu_id, raw_smp_processor_id(),
+				   vcpu->cpu, svm->guest_state_loaded);
 
 	clgi();
 	kvm_load_guest_xsave_state(vcpu);
@@ -5063,6 +5208,8 @@ static __no_kcsan fastpath_t svm_vcpu_run(struct kvm_vcpu *vcpu)
 	//
 
 
+	if (sev_step_is_single_stepping_active(&global_sev_step_config) ||
+	    just_disblabled_stepping) {
 	mutex_lock(&sev_step_config_mutex);
 	if(sev_step_is_single_stepping_active(&global_sev_step_config)) {
 		svm_ssdbg_log("global_sev_step_config.active = true vmexit\n");
@@ -5073,6 +5220,7 @@ static __no_kcsan fastpath_t svm_vcpu_run(struct kvm_vcpu *vcpu)
 
 	}
 	mutex_unlock(&sev_step_config_mutex);
+	}
 
 #ifdef ENABLE_SEV_STEP_EVENT_SENDING
 	mutex_lock(&sev_step_config_mutex);
@@ -5201,92 +5349,10 @@ static __no_kcsan fastpath_t svm_vcpu_run(struct kvm_vcpu *vcpu)
 	}
 #endif // ENABLE_SEV_STEP_EVENT_SENDING
 
-	{
-		bool is_dump_page;
-		uint64_t *dump_page_gpas;
-		unsigned int nr_dump_pages;
-		bool is_decrypt_when_dump;
-		bool is_relocate_when_dump;
-
-		mutex_lock(&sev_step_config_mutex);
-		is_dump_page = global_sev_step_config.is_dump_page;
-		dump_page_gpas = global_sev_step_config.dump_page_gpas;
-		nr_dump_pages = global_sev_step_config.nr_dump_pages;
-		is_decrypt_when_dump = global_sev_step_config.is_decrypt_when_dump;
-		is_relocate_when_dump = global_sev_step_config.is_relocate_when_dump;
-		// mutex_unlock(&sev_step_config_mutex);
-
-		if (is_dump_page) {
-			int ret;
-			ret = dump_guest_pages(vcpu, dump_page_gpas,
-					       nr_dump_pages, is_decrypt_when_dump,
-					       is_relocate_when_dump);
-
-			if (ret) {
-				printk(KERN_ERR
-				       "%s: failed to dump guest pages\n",
-				       __func__);
-			}
-			// mutex_lock(&sev_step_config_mutex);
-
-			if (global_sev_step_config.dump_page_gpas)
-				kfree(global_sev_step_config.dump_page_gpas);
-
-			global_sev_step_config.is_dump_page = false;
-			global_sev_step_config.nr_dump_pages = 0;
-			global_sev_step_config.dump_page_gpas = NULL;
-			global_sev_step_config.is_decrypt_when_dump = false;
-			global_sev_step_config.is_relocate_when_dump = false;
-			// mutex_unlock(&sev_step_config_mutex);
-		}
-		mutex_unlock(&sev_step_config_mutex);
-	}
-
-	{
-		u64 gfn_to_translate;
-		u64 translated_pfn;
-
-		mutex_lock(&sev_step_config_mutex);
-		gfn_to_translate = global_sev_step_config.gfn_to_translate;
-		translated_pfn = global_sev_step_config.translated_pfn_of_gfn;
-		if ((gfn_to_translate != (u64)-1) &&
-		    (translated_pfn == (u64)-1)) {
-			u64 pfn = kvm_vcpu_gfn_to_pfn(vcpu, gfn_to_translate);
-			global_sev_step_config.translated_pfn_of_gfn = pfn;
-			if (pfn_valid(pfn)) {
-				printk(KERN_INFO
-				       "%s: gfn_to_translate=0x%llx, pfn=0x%llx (valid)\n",
-				       __func__, gfn_to_translate, pfn);
-
-			} else {
-				printk(KERN_ERR
-				       "%s: gfn_to_translate=0x%llx, pfn=0x%llx (invalid)\n",
-				       __func__, gfn_to_translate, pfn);
-			}
-		}
-		mutex_unlock(&sev_step_config_mutex);
-	}
-
-	{
-		bool is_dump_private_pages;
-
-		mutex_lock(&sev_step_config_mutex);
-		is_dump_private_pages = global_sev_step_config.is_dump_private_pages;
-		if (is_dump_private_pages) {
-			int ret;
-			ret = dump_private_pages();
-
-			if (ret) {
-				printk(KERN_ERR
-				       "%s: failed to dump private pages\n",
-				       __func__);
-			}
-
-			global_sev_step_config.is_dump_private_pages = false;
-		}
-
-		mutex_unlock(&sev_step_config_mutex);
-	}
+	/*
+	 * Page dump, gfn translation and private page dump are serviced in
+	 * svm_sev_step_pre_entry(), before the next VMRUN.
+	 */
 
 
 	//
@@ -6410,14 +6476,21 @@ static struct kvm_x86_init_ops svm_init_ops __initdata = {
 
 static int __init svm_init(void)
 {
+	int r;
+
 	__unused_size_checks();
 
-	return kvm_init(&svm_init_ops, sizeof(struct vcpu_svm),
-			__alignof__(struct vcpu_svm), THIS_MODULE);
+	r = kvm_init(&svm_init_ops, sizeof(struct vcpu_svm),
+		     __alignof__(struct vcpu_svm), THIS_MODULE);
+	if (!r)
+		WRITE_ONCE(sev_step_vcpu_pre_entry, svm_sev_step_pre_entry);
+	return r;
 }
 
 static void __exit svm_exit(void)
 {
+	/* No VM can be running: kvm_amd is only unloadable with none left. */
+	WRITE_ONCE(sev_step_vcpu_pre_entry, NULL);
 	kvm_exit();
 }
 

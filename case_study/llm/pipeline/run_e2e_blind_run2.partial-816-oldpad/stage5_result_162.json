@@ -1,0 +1,32 @@
+{
+  "index": 162,
+  "host_base": "0x1a261e000",
+  "gt_base": "0x1a261e000",
+  "gt_indication": "Shortness of breath and weakness.",
+  "recovered_labels": [
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 620,
+      "ind_gpa": 7019295584,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 19.05741310119629,
+  "timestamp": 1793055364.8334546,
+  "status": "SUCCESS"
+}

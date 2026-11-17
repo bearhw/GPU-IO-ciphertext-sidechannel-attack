@@ -1,0 +1,41 @@
+{
+  "index": 1476,
+  "host_base": "0x1a4b77000",
+  "gt_base": "0x1a4b76000",
+  "gt_indication": "Chest congestion and productive cough for 1 month; shortness of breath and body aches; smoker",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 270,
+      "ind_gpa": 7058454640,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 272,
+      "ind_gpa": 7058454656,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.572205305099487,
+  "timestamp": 1793290745.7512524,
+  "status": "SUCCESS"
+}

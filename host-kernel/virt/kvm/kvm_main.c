@@ -1220,6 +1220,20 @@ static void kvm_destroy_vm(struct kvm *kvm)
 	int i;
 	struct mm_struct *mm = kvm->mm;
 
+	/*
+	 * sev-step keeps a raw pointer to the last created VM. Drop it before
+	 * anything here is torn down, so the sev-step ioctls see NULL instead of
+	 * a freed struct kvm once QEMU exits. They check main_vm under this mutex.
+	 */
+	mutex_lock(&sev_step_config_mutex);
+	if (global_sev_step_config.main_vm == kvm) {
+		global_sev_step_config.main_vm = NULL;
+		global_sev_step_config.main_vm_pid = 0;
+		global_sev_step_config.is_swap_pages = false;
+		printk("sev-step: main_vm destroyed, cleared\n");
+	}
+	mutex_unlock(&sev_step_config_mutex);
+
 	kvm_destroy_pm_notifier(kvm);
 	kvm_uevent_notify_change(KVM_EVENT_DESTROY_VM, kvm);
 	kvm_destroy_vm_debugfs(kvm);
@@ -6046,6 +6060,10 @@ static long kvm_dev_ioctl(struct file *filp,
 		bool is_relocate_when_dump = false;
 		int ret = 0;
 
+		if (global_sev_step_config.main_vm == NULL) {
+			printk("KVM_DUMP_GUEST_PAGES: main_vm is not initialized, aborting!\n");
+			return -EFAULT;
+		}
 		vcpu = xa_load(&global_sev_step_config.main_vm->vcpu_array, 0);
 
 		if (copy_from_user(&param, argp, sizeof(param))) {
@@ -6447,11 +6465,13 @@ dump_guest_pages_out:
 		global_sev_step_config.swap_gfn1 = param.gfn1;
 		global_sev_step_config.swap_gfn2 = param.gfn2;
 
-		mutex_unlock(&sev_step_config_mutex);
-
 		/* Kick vcpu0 so QEMU's current KVM_RUN exits the guest and
-		 * re-enters, executing the swap in svm_vcpu_run() under the
-		 * correct (QEMU) process context. */
+		 * re-enters, executing the swap in svm_sev_step_pre_entry() under
+		 * the correct (QEMU) process context. Done under the mutex:
+		 * kvm_destroy_vm() clears main_vm under it, so the VM cannot be
+		 * freed between the NULL check above and this dereference. The
+		 * vCPU only takes this mutex where it may sleep, so holding it
+		 * across the kick can no longer stall the vCPU with IRQs/GIF off. */
 		{
 			struct kvm_vcpu *vcpu0 =
 				kvm_get_vcpu(global_sev_step_config.main_vm, 0);
@@ -6459,7 +6479,9 @@ dump_guest_pages_out:
 				kvm_vcpu_kick(vcpu0);
 		}
 
-		printk("KVM_SWAP_GUEST_PAGES: ioctl success, sev_step_config_mutex unlocked, vcpu0 kicked\n");
+		mutex_unlock(&sev_step_config_mutex);
+
+		printk("KVM_SWAP_GUEST_PAGES: ioctl success, vcpu0 kicked, sev_step_config_mutex unlocked\n");
 
 		r = 0;
 	} break;
@@ -6737,9 +6759,12 @@ dump_guest_pages_out:
 
 			// Resetting tracking
 			mutex_lock(&sev_step_config_mutex);
-			kvm_stop_tracking(xa_load(&global_sev_step_config.main_vm->vcpu_array,0),KVM_PAGE_TRACK_EXEC);
-			kvm_stop_tracking(xa_load(&global_sev_step_config.main_vm->vcpu_array,0),KVM_PAGE_TRACK_ACCESS);
-			kvm_stop_tracking(xa_load(&global_sev_step_config.main_vm->vcpu_array,0),KVM_PAGE_TRACK_WRITE);
+			/* The VM may already be gone (QEMU exited before the tool closed). */
+			if (global_sev_step_config.main_vm != NULL) {
+				kvm_stop_tracking(xa_load(&global_sev_step_config.main_vm->vcpu_array,0),KVM_PAGE_TRACK_EXEC);
+				kvm_stop_tracking(xa_load(&global_sev_step_config.main_vm->vcpu_array,0),KVM_PAGE_TRACK_ACCESS);
+				kvm_stop_tracking(xa_load(&global_sev_step_config.main_vm->vcpu_array,0),KVM_PAGE_TRACK_WRITE);
+			}
 			global_sev_step_config.decrypt_vmsa = false;
 
 			// Resetting dump page related settings

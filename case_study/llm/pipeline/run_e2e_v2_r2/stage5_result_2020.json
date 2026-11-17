@@ -1,0 +1,104 @@
+{
+  "index": 2020,
+  "host_base": "0x143817000",
+  "gt_base": "0x143817000",
+  "gt_indication": "70-year-old with chest pain.",
+  "recovered_labels": [
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 362,
+      "ind_gpa": 5427526480,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 5427526496,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 5427526512,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 5427526528,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 5427526544,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 5427526560,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 5427526576,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 5427526592,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 5427526608,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 9,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.11735200881958,
+  "timestamp": 1793396739.9422872,
+  "status": "SUCCESS"
+}

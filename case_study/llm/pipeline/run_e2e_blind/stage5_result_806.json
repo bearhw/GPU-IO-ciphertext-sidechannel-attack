@@ -1,0 +1,64 @@
+{
+  "index": 806,
+  "host_base": "0x19fd14000",
+  "gt_base": "0x19fd13000",
+  "gt_indication": "Productive cough for 2 days, weakness, mid chest pain off and on for a few days, smoker",
+  "recovered_labels": [
+    " of breath",
+    "ough and",
+    " pneumonia.",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 288,
+      "ind_gpa": 6976260352,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6976260352,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6976260352,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6976260352,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "fever."
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "of breath",
+      "ough and",
+      "pneumonia.",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 20.118619441986084,
+  "timestamp": 1792919364.8647687,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,20 @@
+{
+  "index": 675,
+  "host_base": "0x1a2e53000",
+  "gt_base": "0x1a2e52000",
+  "gt_indication": "Mild shortness-of-breath with productive cough 6 months. History of smoking. Quit 25 years ago.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 20.158918857574463,
+  "timestamp": 1792910647.0117106,
+  "status": "SUCCESS"
+}

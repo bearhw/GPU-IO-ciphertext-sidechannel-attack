@@ -1,0 +1,184 @@
+{
+  "index": 1914,
+  "host_base": "0x19f8a4000",
+  "gt_base": "0x19f8a4000",
+  "gt_indication": "Large left pneumothorax, chest tube placement",
+  "recovered_labels": [
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and",
+    " Chest pain",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 364,
+      "ind_gpa": 6971607904,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6971607904,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6971607920,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6971607920,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6971607936,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6971607936,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6971607952,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6971607952,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6971607968,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6971607968,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6971607984,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6971607984,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6971608000,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6971608000,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6971608016,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 6971608016,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 16,
+    "false_positive_labels": [
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and"
+    ],
+    "false_positive_count": 16,
+    "recovered_labels": [
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and",
+      "Chest pain",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 18.92800784111023,
+  "timestamp": 1792963152.8753436,
+  "status": "SUCCESS"
+}

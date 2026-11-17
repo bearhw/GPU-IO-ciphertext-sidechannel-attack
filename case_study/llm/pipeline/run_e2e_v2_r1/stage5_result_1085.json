@@ -1,0 +1,50 @@
+{
+  "index": 1085,
+  "host_base": "0x1a43d5000",
+  "gt_base": "0x1a43d5000",
+  "gt_indication": "Pulmonary hypertension, shortness of breath, pre VQ scan",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 598,
+      "ind_gpa": 7050453680,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 600,
+      "ind_gpa": 7050453696,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 602,
+      "ind_gpa": 7050453712,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 3,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.05654525756836,
+  "timestamp": 1793174767.8825338,
+  "status": "SUCCESS"
+}

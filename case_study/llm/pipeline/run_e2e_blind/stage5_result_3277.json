@@ -1,0 +1,32 @@
+{
+  "index": 3277,
+  "host_base": "0x19f451000",
+  "gt_base": "0x19f450000",
+  "gt_indication": "Acute onset of vomiting and diarrhea. Cough. Generalized weakness. Fever.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 6967072864,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 16.94192361831665,
+  "timestamp": 1793305175.9519331,
+  "status": "SUCCESS"
+}

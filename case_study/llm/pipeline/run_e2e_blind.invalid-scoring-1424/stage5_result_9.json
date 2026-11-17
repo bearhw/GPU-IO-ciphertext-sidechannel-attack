@@ -1,0 +1,34 @@
+{
+  "index": 9,
+  "host_base": "0x19fded000",
+  "gt_base": null,
+  "gt_indication": null,
+  "recovered_labels": [
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 312,
+      "ind_gpa": 6977149376,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "Respiratory"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 18.222349643707275,
+  "timestamp": 1792869440.8528352,
+  "status": "SUCCESS"
+}

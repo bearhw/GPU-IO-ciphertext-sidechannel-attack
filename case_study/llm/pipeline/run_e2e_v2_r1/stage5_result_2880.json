@@ -1,0 +1,59 @@
+{
+  "index": 2880,
+  "host_base": "0x1a6e86000",
+  "gt_base": "0x1a6e86000",
+  "gt_indication": "Cough, chest pain, shortness of breath, COVID positive",
+  "recovered_labels": [
+    " chest pain",
+    ", short",
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 7095216880,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 7095216896,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 354,
+      "ind_gpa": 7095216912,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 356,
+      "ind_gpa": 7095216928,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      ", short",
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.784751653671265,
+  "timestamp": 1793253814.1071784,
+  "status": "SUCCESS"
+}

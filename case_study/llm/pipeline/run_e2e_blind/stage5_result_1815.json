@@ -1,0 +1,41 @@
+{
+  "index": 1815,
+  "host_base": "0x1a091c000",
+  "gt_base": "0x1a091c000",
+  "gt_indication": "CHF. Shortness of breath.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 6988876528,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 352,
+      "ind_gpa": 6988876544,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 19.899662494659424,
+  "timestamp": 1792957126.2138953,
+  "status": "SUCCESS"
+}

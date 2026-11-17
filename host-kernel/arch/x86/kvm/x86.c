@@ -10185,6 +10185,19 @@ static int vcpu_enter_guest(struct kvm_vcpu *vcpu)
 		}
 	}
 
+	/*
+	 * sev-step swap/dump work sleeps (PSP commands, vmalloc, gfn_to_pfn,
+	 * usp_send_and_block). It used to run inside svm_vcpu_run(), with IRQs
+	 * off and after prepare_switch_to_guest(): a sleep there can migrate
+	 * this thread to a CPU whose host save area was filled by another
+	 * thread, and VMEXIT then restores that thread's FS/GS bases (QEMU
+	 * segfaults in kvm_ipi_signal on a foreign TLS address). Here the thread
+	 * may sleep, the memslot SRCU is held, and any TLB flush the swap
+	 * requests is still honoured before VMRUN.
+	 */
+	if (sev_step_vcpu_pre_entry)
+		sev_step_vcpu_pre_entry(vcpu);
+
 	r = kvm_mmu_reload(vcpu);
 	if (unlikely(r)) {
 		goto cancel_injection;

@@ -1,0 +1,41 @@
+{
+  "index": 559,
+  "host_base": "0x1a0c91000",
+  "gt_base": "0x1a0c91000",
+  "gt_indication": "Cough fever",
+  "recovered_labels": [
+    " Cough",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 560,
+      "ind_gpa": 6992503168,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 562,
+      "ind_gpa": 6992503184,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 18.870637893676758,
+  "timestamp": 1792907958.1270747,
+  "status": "SUCCESS"
+}

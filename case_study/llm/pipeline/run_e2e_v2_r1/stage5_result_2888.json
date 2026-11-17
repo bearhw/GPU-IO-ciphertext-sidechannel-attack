@@ -1,0 +1,20 @@
+{
+  "index": 2888,
+  "host_base": "0x19d9c5000",
+  "gt_base": "0x1a7052000",
+  "gt_indication": "Coughing over the last week. Wheezing.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.303119421005249,
+  "timestamp": 1793254061.1526685,
+  "status": "SUCCESS"
+}

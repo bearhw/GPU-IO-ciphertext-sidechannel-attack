@@ -1,0 +1,41 @@
+{
+  "index": 3290,
+  "host_base": "0x1a0595000",
+  "gt_base": "0x1a0594000",
+  "gt_indication": "MVC 02/04/1998, worsening shortness of breath",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 282,
+      "ind_gpa": 6985177296,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6985177312,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 17.3836088180542,
+  "timestamp": 1793026053.2284067,
+  "status": "SUCCESS"
+}

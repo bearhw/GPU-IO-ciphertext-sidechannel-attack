@@ -1,0 +1,204 @@
+{
+  "index": 1361,
+  "host_base": "0x1a05f2000",
+  "gt_base": "0x1a05f2000",
+  "gt_indication": "Right-sided rib pain. No known injury.",
+  "recovered_labels": [
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up",
+    "ough and",
+    " Follow-up"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 652,
+      "ind_gpa": 6985561184,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 652,
+      "ind_gpa": 6985561184,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 6985561200,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 654,
+      "ind_gpa": 6985561200,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 6985561216,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 6985561216,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6985561232,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6985561232,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6985561248,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6985561248,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6985561264,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6985561264,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6985561280,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6985561280,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6985561296,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6985561296,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6985561312,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6985561312,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 18,
+    "false_positive_labels": [
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up"
+    ],
+    "false_positive_count": 18,
+    "recovered_labels": [
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up",
+      "ough and",
+      "Follow-up"
+    ]
+  },
+  "elapsed_sec": 15.476865768432617,
+  "timestamp": 1793187672.6685843,
+  "status": "SUCCESS"
+}

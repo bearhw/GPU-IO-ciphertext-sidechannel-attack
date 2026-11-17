@@ -1,0 +1,32 @@
+{
+  "index": 2243,
+  "host_base": "0x1a4635000",
+  "gt_base": "0x1a4635000",
+  "gt_indication": "Cough and congestion for 2 weeks. Some chest pain with the cough.",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 506,
+      "ind_gpa": 7052943312,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 30.899450302124023,
+  "timestamp": 1793227914.0957608,
+  "status": "SUCCESS"
+}

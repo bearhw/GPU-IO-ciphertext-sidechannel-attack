@@ -1,0 +1,164 @@
+{
+  "index": 1278,
+  "host_base": "0x19f410000",
+  "gt_base": "0x19f410000",
+  "gt_indication": "Intubated patient, cardiac arrest, pneumonia. Current smoker.",
+  "recovered_labels": [
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox",
+    " wheez",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 656,
+      "ind_gpa": 6966809728,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 6966809728,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6966809744,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6966809744,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6966809760,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6966809760,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6966809776,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6966809776,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6966809792,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6966809792,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6966809808,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6966809808,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6966809824,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6966809824,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 14,
+    "false_positive_labels": [
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox"
+    ],
+    "false_positive_count": 14,
+    "recovered_labels": [
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox",
+      "wheez",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.550814390182495,
+  "timestamp": 1793183756.0806022,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 3108,
+  "host_base": "0x1a16af000",
+  "gt_base": "0x1a16af000",
+  "gt_indication": "37-year-old male with cough, body ache, malaise. Onset of fever this week.",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 622,
+      "ind_gpa": 7003112304,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 15.298724174499512,
+  "timestamp": 1793442965.0894473,
+  "status": "SUCCESS"
+}

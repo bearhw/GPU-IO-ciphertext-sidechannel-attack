@@ -1,0 +1,32 @@
+{
+  "index": 494,
+  "host_base": "0x19dd87000",
+  "gt_base": "0x19dd86000",
+  "gt_indication": "Chest pain. History of pericarditis.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6943176736,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.9805428981781,
+  "timestamp": 1793150385.8481722,
+  "status": "SUCCESS"
+}

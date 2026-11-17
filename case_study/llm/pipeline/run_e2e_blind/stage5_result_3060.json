@@ -1,0 +1,20 @@
+{
+  "index": 3060,
+  "host_base": "0x1a0ee7000",
+  "gt_base": "0x1a0ee6000",
+  "gt_indication": "82-year-old female with pneumothorax, lung surgery in the past.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 19.804038286209106,
+  "timestamp": 1793017366.1011448,
+  "status": "SUCCESS"
+}

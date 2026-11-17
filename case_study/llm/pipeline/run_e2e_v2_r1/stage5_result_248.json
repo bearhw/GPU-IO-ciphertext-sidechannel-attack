@@ -1,0 +1,32 @@
+{
+  "index": 248,
+  "host_base": "0x1a099f000",
+  "gt_base": "0x1a0999000",
+  "gt_indication": "Fell. Cough and congestion.",
+  "recovered_labels": [
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 210,
+      "ind_gpa": 6989411984,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 15.546612739562988,
+  "timestamp": 1793285999.9430296,
+  "status": "SUCCESS"
+}

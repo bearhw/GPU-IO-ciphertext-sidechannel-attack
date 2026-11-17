@@ -1,0 +1,44 @@
+{
+  "index": 1458,
+  "host_base": "0x1a19d3000",
+  "gt_base": "0x1a19d3000",
+  "gt_indication": "COVID-19.",
+  "recovered_labels": [
+    " chest pain",
+    " Fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 510,
+      "ind_gpa": 7006404592,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 510,
+      "ind_gpa": 7006404592,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "chest pain",
+      "Fever."
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "chest pain",
+      "Fever."
+    ]
+  },
+  "elapsed_sec": 30.83641505241394,
+  "timestamp": 1793193517.4031124,
+  "status": "SUCCESS"
+}

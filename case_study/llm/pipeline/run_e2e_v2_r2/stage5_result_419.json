@@ -1,0 +1,32 @@
+{
+  "index": 419,
+  "host_base": "0x1a19dd000",
+  "gt_base": "0x19c7f5000",
+  "gt_indication": "Chest pain. CABG.",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 578,
+      "ind_gpa": 7006446096,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 15.521310567855835,
+  "timestamp": 1793457452.1481867,
+  "status": "SUCCESS"
+}

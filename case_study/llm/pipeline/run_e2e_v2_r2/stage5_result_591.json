@@ -1,0 +1,41 @@
+{
+  "index": 591,
+  "host_base": "0x1a1ed0000",
+  "gt_base": "0x1a1ed0000",
+  "gt_indication": "Follow up effusions and pneumonia. Ventilator dependent respiratory failure.",
+  "recovered_labels": [
+    " pneumonia.",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 352,
+      "ind_gpa": 7011633920,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 358,
+      "ind_gpa": 7011633968,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "pneumonia.",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 15.290515661239624,
+  "timestamp": 1793342665.7469985,
+  "status": "SUCCESS"
+}

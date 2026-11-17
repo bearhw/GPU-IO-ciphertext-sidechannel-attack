@@ -1,0 +1,32 @@
+{
+  "index": 432,
+  "host_base": "0x197973000",
+  "gt_base": "0x197973000",
+  "gt_indication": "Worsening cough, congestion",
+  "recovered_labels": [
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 652,
+      "ind_gpa": 6838240352,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 18.929850578308105,
+  "timestamp": 1793068745.1477537,
+  "status": "SUCCESS"
+}

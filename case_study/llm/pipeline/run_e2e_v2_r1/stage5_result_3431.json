@@ -1,0 +1,41 @@
+{
+  "index": 3431,
+  "host_base": "0x1a26a2000",
+  "gt_base": "0x1a26a1000",
+  "gt_indication": "28-year-old presenting with 1 week history of chest pain, increasing bilateral lower extremity edema and shortness of breath. Current history of lupus.",
+  "recovered_labels": [
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 256,
+      "ind_gpa": 7019833344,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 258,
+      "ind_gpa": 7019833360,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.87978458404541,
+  "timestamp": 1793281964.9197862,
+  "status": "SUCCESS"
+}

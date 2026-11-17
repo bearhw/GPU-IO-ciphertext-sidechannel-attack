@@ -1,0 +1,20 @@
+{
+  "index": 1836,
+  "host_base": "0x19676e000",
+  "gt_base": "0x19676e000",
+  "gt_indication": "Recent pneumonia. PT had teeth extracted 1 week ago. Took multiple pain medicines this AM. Complains of dizziness, weakness.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 19.45390820503235,
+  "timestamp": 1792957878.4042156,
+  "status": "SUCCESS"
+}

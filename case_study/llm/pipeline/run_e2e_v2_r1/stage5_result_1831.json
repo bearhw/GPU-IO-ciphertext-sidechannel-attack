@@ -1,0 +1,32 @@
+{
+  "index": 1831,
+  "host_base": "0x1a0640000",
+  "gt_base": "0x1a063f000",
+  "gt_indication": "Cough, smoking history",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6985877536,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.268041133880615,
+  "timestamp": 1793207762.8774939,
+  "status": "SUCCESS"
+}

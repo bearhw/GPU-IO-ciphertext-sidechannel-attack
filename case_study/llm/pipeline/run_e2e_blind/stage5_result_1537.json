@@ -1,0 +1,32 @@
+{
+  "index": 1537,
+  "host_base": "0x1700fa000",
+  "gt_base": "0x1700f9000",
+  "gt_indication": "Chest pain, cough and fever.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6175041568,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 20.26895546913147,
+  "timestamp": 1792948769.0726676,
+  "status": "SUCCESS"
+}

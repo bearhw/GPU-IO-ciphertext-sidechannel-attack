@@ -1,0 +1,32 @@
+{
+  "index": 569,
+  "host_base": "0x1a2399000",
+  "gt_base": "0x1a2399000",
+  "gt_indication": "Three-week history weakness. Hypoxia.",
+  "recovered_labels": [
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 620,
+      "ind_gpa": 7016653664,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.68655514717102,
+  "timestamp": 1793152003.1947606,
+  "status": "SUCCESS"
+}

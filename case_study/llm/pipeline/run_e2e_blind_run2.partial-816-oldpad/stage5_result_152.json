@@ -1,0 +1,44 @@
+{
+  "index": 152,
+  "host_base": "0x1a2250000",
+  "gt_base": "0x1a2250000",
+  "gt_indication": "Vitreous hemorrhage and traction retinal detachment. Preop workup. Views smoker. Hypertension. Diabetes.",
+  "recovered_labels": [
+    " of breath",
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 378,
+      "ind_gpa": 7015304144,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7015304144,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "of breath",
+      "Cough"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "of breath",
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 19.42171859741211,
+  "timestamp": 1793055066.648271,
+  "status": "SUCCESS"
+}

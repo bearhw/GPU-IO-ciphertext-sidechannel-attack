@@ -1,0 +1,44 @@
+{
+  "index": 1239,
+  "host_base": "0x19fad8000",
+  "gt_base": "0x1a47ef000",
+  "gt_indication": "Weakness and cough.",
+  "recovered_labels": [
+    " COPD",
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 292,
+      "ind_gpa": 6973917472,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6973917472,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "COPD",
+      "wheez"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "COPD",
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 21.05078673362732,
+  "timestamp": 1793099789.8677588,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,32 @@
+{
+  "index": 3074,
+  "host_base": "0x1a020c000",
+  "gt_base": "0x1a020b000",
+  "gt_indication": "Chest pain. Former smoker.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6981470240,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.538859367370605,
+  "timestamp": 1793260016.113041,
+  "status": "SUCCESS"
+}

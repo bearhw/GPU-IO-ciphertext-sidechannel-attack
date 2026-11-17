@@ -1,0 +1,32 @@
+{
+  "index": 3012,
+  "host_base": "0x196670000",
+  "gt_base": "0x196670000",
+  "gt_indication": "CHF. Short of breath.",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 622,
+      "ind_gpa": 6818304880,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.738277673721313,
+  "timestamp": 1793257299.7656624,
+  "status": "SUCCESS"
+}

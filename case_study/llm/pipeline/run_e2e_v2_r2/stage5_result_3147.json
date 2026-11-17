@@ -1,0 +1,164 @@
+{
+  "index": 3147,
+  "host_base": "0x1a2102000",
+  "gt_base": "0x1a2102000",
+  "gt_indication": "Respiratory distress/intracranial hematoma",
+  "recovered_labels": [
+    "ough and",
+    " respiratory failure",
+    "ough and",
+    " respiratory failure",
+    "ough and",
+    " respiratory failure",
+    "ough and",
+    " respiratory failure",
+    "ough and",
+    " respiratory failure",
+    "ough and",
+    " respiratory failure",
+    "ough and",
+    " respiratory failure"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 520,
+      "ind_gpa": 7013937216,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 520,
+      "ind_gpa": 7013937216,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7013937232,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 522,
+      "ind_gpa": 7013937232,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7013937248,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 524,
+      "ind_gpa": 7013937248,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7013937264,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 526,
+      "ind_gpa": 7013937264,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7013937280,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 528,
+      "ind_gpa": 7013937280,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 7013937296,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 530,
+      "ind_gpa": 7013937296,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 7013937312,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 532,
+      "ind_gpa": 7013937312,
+      "token_idx": 24,
+      "n_blocks": 1,
+      "label": " respiratory failure"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 14,
+    "false_positive_labels": [
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure"
+    ],
+    "false_positive_count": 14,
+    "recovered_labels": [
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure",
+      "ough and",
+      "respiratory failure"
+    ]
+  },
+  "elapsed_sec": 30.803836822509766,
+  "timestamp": 1793443825.1183724,
+  "status": "SUCCESS"
+}

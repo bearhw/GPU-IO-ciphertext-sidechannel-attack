@@ -1,0 +1,414 @@
+{
+  "index": 1894,
+  "host_base": "0x1a137a000",
+  "gt_base": "0x1a1379000",
+  "gt_indication": "Inspiratory chest pain. Syncope.",
+  "recovered_labels": [
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-",
+    " Cough",
+    " chest pain",
+    " COPD",
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 274,
+      "ind_gpa": 6999746704,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6999746704,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6999746704,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 274,
+      "ind_gpa": 6999746704,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6999746720,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6999746720,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6999746720,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 276,
+      "ind_gpa": 6999746720,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6999746736,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6999746736,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6999746736,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 278,
+      "ind_gpa": 6999746736,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6999746752,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6999746752,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6999746752,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 280,
+      "ind_gpa": 6999746752,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6999746768,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6999746768,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6999746768,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 282,
+      "ind_gpa": 6999746768,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6999746784,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6999746784,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6999746784,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 284,
+      "ind_gpa": 6999746784,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6999746800,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6999746800,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6999746800,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 286,
+      "ind_gpa": 6999746800,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6999746816,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6999746816,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6999746816,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 288,
+      "ind_gpa": 6999746816,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6999746832,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6999746832,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6999746832,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 6999746832,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6999746848,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6999746848,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6999746848,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 292,
+      "ind_gpa": 6999746848,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": true,
+    "multi_match_count": 40,
+    "false_positive_labels": [
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "COPD",
+      "COVID-"
+    ],
+    "false_positive_count": 30,
+    "recovered_labels": [
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-",
+      "Cough",
+      "chest pain",
+      "COPD",
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.958616733551025,
+  "timestamp": 1793385398.0378108,
+  "status": "SUCCESS"
+}

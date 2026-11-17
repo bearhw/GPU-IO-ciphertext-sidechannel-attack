@@ -1,0 +1,44 @@
+{
+  "index": 158,
+  "host_base": "0x13f3f8000",
+  "gt_base": "0x13f3f8000",
+  "gt_indication": "Coronary artery disease. Status post CABG.",
+  "recovered_labels": [
+    " Respiratory",
+    " Respiratory"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 534,
+      "ind_gpa": 5356097712,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 5356097728,
+      "token_idx": 9,
+      "n_blocks": 1,
+      "label": " Respiratory"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "Respiratory",
+      "Respiratory"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "Respiratory",
+      "Respiratory"
+    ]
+  },
+  "elapsed_sec": 15.791294574737549,
+  "timestamp": 1793319258.7081895,
+  "status": "SUCCESS"
+}

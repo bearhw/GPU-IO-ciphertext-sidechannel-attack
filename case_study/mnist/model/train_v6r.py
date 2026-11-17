@@ -24,28 +24,21 @@ def augment_sparsity(pixel_arr):
             for k in range(196)]
 
 class RealPairDataset(Dataset):
-    def __init__(self, list_dir, images_db):
-        self.images_db = images_db
-        self.items = []
-        for fname in sorted(os.listdir(list_dir)):
-            if not fname.endswith('.out_v5.list'):
-                continue
-            m_idx = re.search(r'-(\d+)\.out_v5\.list$', fname)
-            if not m_idx:
-                continue
-            true_idx = int(m_idx.group(1))
-            if true_idx < len(images_db):
-                self.items.append((os.path.join(list_dir, fname), true_idx))
+    """Contrastive pair = (real captured sparsity, synthetic sparsity of its clean GT).
+    Pulling the two views together teaches the encoder to map a noisy real attack
+    capture into the same embedding as its clean digit — which is exactly what the
+    retrieval DB and the v10 decoder (frozen encoder) need. Only the input SOURCE
+    changed to real end-to-end captures; the contrastive objective is unchanged."""
+    def __init__(self, items):
+        self.items = items     # list of (real_sp: list[int], gt_img: np.ndarray)
         print(f'  RealPairDataset: {len(self.items)} pairs loaded')
 
     def __len__(self):
         return len(self.items)
 
     def __getitem__(self, idx):
-        fpath, true_idx = self.items[idx]
-        with open(fpath) as f:
-            real_sp = ast.literal_eval(f.read().strip())
-        aug_sp = augment_sparsity(self.images_db[true_idx])
+        real_sp, gt_img = self.items[idx]
+        aug_sp = augment_sparsity(gt_img)
         return (torch.tensor(real_sp, dtype=torch.float32),
                 torch.tensor(aug_sp,  dtype=torch.float32))
 
@@ -69,12 +62,19 @@ def nt_xent_loss(z1, z2, temperature=0.1):
     return F.cross_entropy(sim, labels)
 
 device    = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-mnist     = datasets.MNIST('./data', train=True, download=True, transform=transforms.ToTensor())
-images_db = np.stack([mnist[i][0].squeeze().numpy() for i in range(len(mnist))])
 
-OUT_LIST_DIR = './data/'
-dataset      = RealPairDataset(OUT_LIST_DIR, images_db)
-EPOCHS       = len(dataset)
+# Real end-to-end attack captures, shared with train_v9r / train_v10 (capture_data).
+from capture_data import load_items
+items, _msg = load_items()
+print(f'[v6r] {_msg}')
+if not items:
+    raise SystemExit('No training data: set CAPTURE_DIR to a dir with '
+                     'sparsities_*_bs*_idx*.npy, or provide legacy .out_v5.list files.')
+
+dataset      = RealPairDataset(items)
+# Original used EPOCHS = len(dataset), which explodes with larger capture sets; use a
+# fixed, env-overridable epoch count instead.
+EPOCHS       = int(os.environ.get('V6R_EPOCHS', '200'))
 loader       = DataLoader(dataset, batch_size=64, shuffle=True, num_workers=2, pin_memory=False)
 LOG_EVERY    = max(1, EPOCHS // 20)
 

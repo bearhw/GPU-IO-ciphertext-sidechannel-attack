@@ -1,0 +1,63 @@
+{
+  "index": 387,
+  "host_base": "0x13e3bc000",
+  "gt_base": "0x13e3bc000",
+  "gt_indication": "Persistent intermittently productive cough with mid upper chest tightness and shortness of breath on exertion since an episode of flu in March of 2001.",
+  "recovered_labels": [
+    "ness of",
+    " pneumonia.",
+    " COVID-",
+    " Hypox"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339074880,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339074880,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339074880,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 5339074880,
+      "token_idx": 29,
+      "n_blocks": 1,
+      "label": " Hypox"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "pneumonia.",
+      "COVID-",
+      "Hypox"
+    ],
+    "false_positive_count": 3,
+    "recovered_labels": [
+      "ness of",
+      "pneumonia.",
+      "COVID-",
+      "Hypox"
+    ]
+  },
+  "elapsed_sec": 15.20475459098816,
+  "timestamp": 1793145795.8986988,
+  "status": "SUCCESS"
+}

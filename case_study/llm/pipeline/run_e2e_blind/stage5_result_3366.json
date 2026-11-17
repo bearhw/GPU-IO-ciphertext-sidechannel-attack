@@ -1,0 +1,64 @@
+{
+  "index": 3366,
+  "host_base": "0x1a1c13000",
+  "gt_base": "0x1a1c13000",
+  "gt_indication": "Follow-up pneumothorax",
+  "recovered_labels": [
+    "ough and",
+    "ough and",
+    "ough and",
+    "ough and"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 452,
+      "ind_gpa": 7008763424,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 454,
+      "ind_gpa": 7008763440,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 456,
+      "ind_gpa": 7008763456,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 458,
+      "ind_gpa": 7008763472,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ],
+    "false_positive_count": 4,
+    "recovered_labels": [
+      "ough and",
+      "ough and",
+      "ough and",
+      "ough and"
+    ]
+  },
+  "elapsed_sec": 16.749648571014404,
+  "timestamp": 1793028059.0788739,
+  "status": "SUCCESS"
+}

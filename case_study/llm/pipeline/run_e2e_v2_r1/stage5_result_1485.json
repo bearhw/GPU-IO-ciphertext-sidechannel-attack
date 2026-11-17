@@ -1,0 +1,20 @@
+{
+  "index": 1485,
+  "host_base": "0x13bded000",
+  "gt_base": "0x13bded000",
+  "gt_indication": "One day history of left-sided lower anterior rib pain, status post injury when slipping and falling while pushing a below low are.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.286770820617676,
+  "timestamp": 1793194985.7382374,
+  "status": "SUCCESS"
+}

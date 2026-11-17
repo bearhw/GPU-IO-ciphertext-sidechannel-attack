@@ -1,0 +1,54 @@
+{
+  "index": 22,
+  "host_base": "0x1a015d000",
+  "gt_base": null,
+  "gt_indication": null,
+  "recovered_labels": [
+    "ough and",
+    " shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 644,
+      "ind_gpa": 6980756512,
+      "token_idx": 10,
+      "n_blocks": 1,
+      "label": "ough and"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 6980756528,
+      "token_idx": 4,
+      "n_blocks": 1,
+      "label": " shortness"
+    },
+    {
+      "tok_start": 648,
+      "ind_gpa": 6980756544,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 3,
+    "false_positive_labels": [
+      "ough and",
+      "shortness",
+      "of breath"
+    ],
+    "false_positive_count": 3,
+    "recovered_labels": [
+      "ough and",
+      "shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 19.05336880683899,
+  "timestamp": 1792869760.0454502,
+  "status": "SUCCESS"
+}

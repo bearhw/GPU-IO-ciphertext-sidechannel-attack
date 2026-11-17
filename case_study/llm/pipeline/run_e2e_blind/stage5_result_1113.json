@@ -1,0 +1,32 @@
+{
+  "index": 1113,
+  "host_base": "0x1a6195000",
+  "gt_base": "0x1a6195000",
+  "gt_indication": "History of pneumonia, followup, COPD",
+  "recovered_labels": [
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 578,
+      "ind_gpa": 7081648656,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 16.986056327819824,
+  "timestamp": 1792931208.1146138,
+  "status": "SUCCESS"
+}

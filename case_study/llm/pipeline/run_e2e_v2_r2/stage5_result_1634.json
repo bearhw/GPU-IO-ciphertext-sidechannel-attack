@@ -1,0 +1,41 @@
+{
+  "index": 1634,
+  "host_base": "0x1a34b3000",
+  "gt_base": "0x1a34b3000",
+  "gt_indication": "Flu-like symptoms. Upper extremity chest pain. Shortness of breath.",
+  "recovered_labels": [
+    " chest pain",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 708,
+      "ind_gpa": 7034586656,
+      "token_idx": 6,
+      "n_blocks": 1,
+      "label": " chest pain"
+    },
+    {
+      "tok_start": 712,
+      "ind_gpa": 7034586688,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "chest pain",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.36292290687561,
+  "timestamp": 1793378710.5346375,
+  "status": "SUCCESS"
+}

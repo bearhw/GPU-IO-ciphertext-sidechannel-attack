@@ -1,0 +1,54 @@
+{
+  "index": 595,
+  "host_base": "0x1a1add000",
+  "gt_base": "0x1a1add000",
+  "gt_indication": "Follow-up post intubation",
+  "recovered_labels": [
+    " COPD",
+    " COPD",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 538,
+      "ind_gpa": 7007494352,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 7007494384,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 7007494400,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 3,
+    "false_positive_labels": [
+      "COPD",
+      "COPD",
+      "COPD"
+    ],
+    "false_positive_count": 3,
+    "recovered_labels": [
+      "COPD",
+      "COPD",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 18.7595636844635,
+  "timestamp": 1792908915.0192575,
+  "status": "SUCCESS"
+}

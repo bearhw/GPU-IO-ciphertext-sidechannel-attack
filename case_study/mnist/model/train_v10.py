@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import numpy as np
-import json, os, ast, re
+import json, os, ast, re, glob
 from torch.utils.data import Dataset, DataLoader
 import matplotlib
 matplotlib.use('Agg')
@@ -97,38 +97,24 @@ class V10Dataset(Dataset):
         return len(self.items)
 
     def __getitem__(self, idx):
+        # Always train on the REAL captured sparsity. The old path used
+        # augment_sparsity(img) — sparsity synthesized from the clean image (100%
+        # observation + fake page shift) — which is a different distribution from
+        # what the attack actually dumps (partial observation, real noise), and that
+        # train/eval mismatch is what pinned SSIM at ~0.4. (self.augment is kept for
+        # call compatibility but no longer synthesizes input.)
         real_sp, img = self.items[idx]
-        sp = augment_sparsity(img) if self.augment else real_sp
-        return (torch.tensor(sp,  dtype=torch.float32),
-                torch.tensor(img, dtype=torch.float32))
+        return (torch.tensor(real_sp, dtype=torch.float32),
+                torch.tensor(img,     dtype=torch.float32))
 
 # ── Data loading ──────────────────────────────────────────────────────────────
-
-LIST_DIR  = './data/'
-JSON_PATH = './UNet_training_v3.json'
-
-with open(JSON_PATH) as f:
-    all_samples = json.load(f)
-json_map = {s['sample_idx']: s for s in all_samples}
-
-items = []
-for fname in sorted(os.listdir(LIST_DIR)):
-    if not fname.endswith('.out_v5.list'):
-        continue
-    m = re.search(r'-(\d+)\.out_v5\.list$', fname)
-    if not m:
-        continue
-    idx = int(m.group(1))
-    if idx not in json_map:
-        continue
-    with open(os.path.join(LIST_DIR, fname)) as f:
-        real_sp = ast.literal_eval(f.read().strip())
-    if len(real_sp) != 196:
-        continue
-    img = np.array(json_map[idx]['target_image'], dtype=np.float32)
-    items.append((real_sp, img))
-
-print(f'Matched items: {len(items)}')
+# Real end-to-end attack captures, shared with train_v6r / train_v9r (capture_data).
+from capture_data import load_items
+items, _msg = load_items()
+print(f'[v10] {_msg}')
+if not items:
+    raise SystemExit('No training data: set CAPTURE_DIR to a dir with '
+                     'sparsities_*_bs*_idx*.npy, or provide legacy .out_v5.list files.')
 
 rng     = np.random.default_rng(42)
 perm    = rng.permutation(len(items)).tolist()

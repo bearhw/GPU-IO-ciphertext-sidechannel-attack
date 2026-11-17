@@ -1,0 +1,32 @@
+{
+  "index": 2322,
+  "host_base": "0x1a09cd000",
+  "gt_base": "0x1a09cc000",
+  "gt_indication": "Cough and fever and vomiting for the past 3 days. Family members with COVID at home. Shortness of breath.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 260,
+      "ind_gpa": 6989600800,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.312105178833008,
+  "timestamp": 1793411425.765507,
+  "status": "SUCCESS"
+}

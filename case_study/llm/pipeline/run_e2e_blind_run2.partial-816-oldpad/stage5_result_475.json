@@ -1,0 +1,32 @@
+{
+  "index": 475,
+  "host_base": "0x1a4305000",
+  "gt_base": "0x1a4305000",
+  "gt_indication": "Initial evaluation for wheezing. History of asthma and recent pneumonia.",
+  "recovered_labels": [
+    " wheez"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 582,
+      "ind_gpa": 7049601584,
+      "token_idx": 19,
+      "n_blocks": 1,
+      "label": " wheez"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "wheez"
+    ]
+  },
+  "elapsed_sec": 18.827554941177368,
+  "timestamp": 1793069905.4812367,
+  "status": "SUCCESS"
+}

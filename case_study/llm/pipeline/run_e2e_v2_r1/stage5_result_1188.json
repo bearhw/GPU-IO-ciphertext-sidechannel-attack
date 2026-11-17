@@ -1,0 +1,34 @@
+{
+  "index": 1188,
+  "host_base": "0x1a644d000",
+  "gt_base": "0x1a644d000",
+  "gt_indication": "Motor vehicle collision, anterior right rib pain",
+  "recovered_labels": [
+    " COVID-"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 538,
+      "ind_gpa": 7084499152,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 1,
+    "false_positive_labels": [
+      "COVID-"
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      "COVID-"
+    ]
+  },
+  "elapsed_sec": 15.431922674179077,
+  "timestamp": 1793178674.137917,
+  "status": "SUCCESS"
+}

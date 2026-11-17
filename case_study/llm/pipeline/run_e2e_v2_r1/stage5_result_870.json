@@ -1,0 +1,32 @@
+{
+  "index": 870,
+  "host_base": "0x1a92c3000",
+  "gt_base": "0x1a92c3000",
+  "gt_indication": "short of breath",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 580,
+      "ind_gpa": 7133217312,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.661656141281128,
+  "timestamp": 1793161498.071675,
+  "status": "SUCCESS"
+}

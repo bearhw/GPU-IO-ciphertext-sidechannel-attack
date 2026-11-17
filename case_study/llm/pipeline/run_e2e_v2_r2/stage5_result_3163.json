@@ -1,0 +1,32 @@
+{
+  "index": 3163,
+  "host_base": "0x196e66000",
+  "gt_base": "0x1a0126000",
+  "gt_indication": "Cough and fever for 4 days",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 606,
+      "ind_gpa": 6826652400,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 15.3587167263031,
+  "timestamp": 1793445471.8805504,
+  "status": "SUCCESS"
+}

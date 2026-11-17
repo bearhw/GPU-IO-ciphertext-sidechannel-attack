@@ -1,0 +1,234 @@
+{
+  "index": 1253,
+  "host_base": "0x1a0178000",
+  "gt_base": "0x1a0178000",
+  "gt_indication": "Dyspnea, COVID-19, diabetes mellitus",
+  "recovered_labels": [
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " of breath",
+    " pneumonia.",
+    " COPD",
+    " of breath",
+    " pneumonia.",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 656,
+      "ind_gpa": 6980867200,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 6980867200,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 656,
+      "ind_gpa": 6980867200,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6980867216,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6980867216,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 658,
+      "ind_gpa": 6980867216,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6980867232,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6980867232,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 660,
+      "ind_gpa": 6980867232,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6980867248,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6980867248,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 662,
+      "ind_gpa": 6980867248,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6980867264,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6980867264,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 664,
+      "ind_gpa": 6980867264,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6980867280,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6980867280,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 666,
+      "ind_gpa": 6980867280,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6980867296,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6980867296,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 668,
+      "ind_gpa": 6980867296,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 21,
+    "false_positive_labels": [
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD"
+    ],
+    "false_positive_count": 21,
+    "recovered_labels": [
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD",
+      "of breath",
+      "pneumonia.",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.773947477340698,
+  "timestamp": 1793362291.35704,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,20 @@
+{
+  "index": 2389,
+  "host_base": "0x1a1ce9000",
+  "gt_base": "0x1a1ce8000",
+  "gt_indication": "Right rib pain x1 month without known injury.",
+  "recovered_labels": [],
+  "raw_matches": [],
+  "evaluation": {
+    "verdict": "NO_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 0,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": []
+  },
+  "elapsed_sec": 15.437169790267944,
+  "timestamp": 1793413156.9291508,
+  "status": "SUCCESS"
+}

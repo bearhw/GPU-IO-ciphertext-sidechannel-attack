@@ -1,0 +1,41 @@
+{
+  "index": 3120,
+  "host_base": "0x1a1ac4000",
+  "gt_base": "0x1a1ac3000",
+  "gt_indication": "Pericardiocentesis. Shortness of breath.",
+  "recovered_labels": [
+    " Shortness",
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 288,
+      "ind_gpa": 7007389952,
+      "token_idx": 2,
+      "n_blocks": 1,
+      "label": " Shortness"
+    },
+    {
+      "tok_start": 290,
+      "ind_gpa": 7007389968,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Shortness",
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.104735136032104,
+  "timestamp": 1793443243.5358653,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,41 @@
+{
+  "index": 2719,
+  "host_base": "0x19d2ff000",
+  "gt_base": "0x19d2ff000",
+  "gt_indication": "Shortness of breath, room 8.",
+  "recovered_labels": [
+    "ness of",
+    " breath,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 436,
+      "ind_gpa": 6932135328,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 438,
+      "ind_gpa": 6932135344,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath,"
+    ]
+  },
+  "elapsed_sec": 15.075727462768555,
+  "timestamp": 1793423262.0780091,
+  "status": "SUCCESS"
+}

@@ -1,0 +1,144 @@
+{
+  "index": 962,
+  "host_base": "0x1a15ff000",
+  "gt_base": "0x1a15ff000",
+  "gt_indication": "Urethral retention. Follow-up right lower lobe atelectasis.",
+  "recovered_labels": [
+    " pneumonia.",
+    " fever.",
+    " pneumonia.",
+    " fever.",
+    " pneumonia.",
+    " fever.",
+    " pneumonia.",
+    " fever.",
+    " pneumonia.",
+    " fever.",
+    " pneumonia.",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 368,
+      "ind_gpa": 7002389376,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 7002389376,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7002389392,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 7002389392,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7002389408,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 7002389408,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7002389424,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 7002389424,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7002389440,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 7002389440,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7002389456,
+      "token_idx": 13,
+      "n_blocks": 1,
+      "label": " pneumonia."
+    },
+    {
+      "tok_start": 378,
+      "ind_gpa": 7002389456,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 12,
+    "false_positive_labels": [
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever."
+    ],
+    "false_positive_count": 12,
+    "recovered_labels": [
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever.",
+      "pneumonia.",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 15.307401418685913,
+  "timestamp": 1793165995.9425383,
+  "status": "SUCCESS"
+}

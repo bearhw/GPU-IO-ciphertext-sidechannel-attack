@@ -1,0 +1,32 @@
+{
+  "index": 1111,
+  "host_base": "0x1a6e9b000",
+  "gt_base": "0x1a6e9b000",
+  "gt_indication": "Coughing, congestion",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 252,
+      "ind_gpa": 7095302112,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 16.567168951034546,
+  "timestamp": 1792931105.6802692,
+  "status": "SUCCESS"
+}

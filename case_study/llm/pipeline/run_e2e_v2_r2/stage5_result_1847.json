@@ -1,0 +1,41 @@
+{
+  "index": 1847,
+  "host_base": "0x194b38000",
+  "gt_base": "0x194b38000",
+  "gt_indication": "Respiratory distress. Shortness of breath. The patient is CPAP. History of hypertension.",
+  "recovered_labels": [
+    "ness of",
+    " breath."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 642,
+      "ind_gpa": 6789764112,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 6789764128,
+      "token_idx": 5,
+      "n_blocks": 1,
+      "label": " breath."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "ness of",
+      "breath."
+    ]
+  },
+  "elapsed_sec": 15.299253225326538,
+  "timestamp": 1793383431.5101762,
+  "status": "SUCCESS"
+}

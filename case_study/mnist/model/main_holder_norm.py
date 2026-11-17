@@ -42,8 +42,10 @@ sys.stdin.readline()
 
 
 def _load_label(idx: int) -> int:
+    # Match main.py's split: eval holds a batch from the test split by default.
+    _prefix = 'train' if os.environ.get("MNIST_SPLIT", "test").lower() == "train" else 't10k'
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                        '../data/MNIST/raw/train-labels-idx1-ubyte')
+                        f'../data/MNIST/raw/{_prefix}-labels-idx1-ubyte')
     try:
         with open(path, 'rb') as f:
             f.seek(8 + idx)

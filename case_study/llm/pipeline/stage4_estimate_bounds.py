@@ -49,6 +49,15 @@ def run_stage4(index: int, base_gpa: Optional[int] = None,
         base_gpa = int(st3["host_base"], 16)
         gt_base = int(st3["gt_base"], 16) if st3.get("gt_base") else None
         gt_ind = st3.get("gt_indication")
+    else:
+        # base_gpa was handed in (master_orchestrate always does), so the branch
+        # above never ran and the ground truth would be dropped from this file.
+        # Stage 5 reads gt from here, so losing it silently breaks scoring.
+        st3_path = stage3_json or (out_dir / f"stage3_located_{index}.json")
+        if st3_path.exists():
+            st3 = c.load_json(st3_path)
+            gt_base = int(st3["gt_base"], 16) if st3.get("gt_base") else None
+            gt_ind = st3.get("gt_indication")
 
     # Load dict cache for estimation
     if not c.DICT_CACHE.exists():

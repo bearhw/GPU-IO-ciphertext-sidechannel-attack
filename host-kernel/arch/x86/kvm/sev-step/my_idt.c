@@ -172,6 +172,15 @@ void my_idt_prepare_apic_timer(sev_step_config_t *config, struct vcpu_svm *svm) 
 	timmer programming has not yet been processed
 	*/
 
+	/*
+	 * Called from svm_vcpu_enter_exit() with GIF=0 and IRQs off on every
+	 * entry: a contended mutex there sleeps with the CPU deaf to interrupts
+	 * and NMIs. Without single-stepping there is nothing to do, so leave
+	 * before touching the mutex.
+	 */
+	if (!sev_step_is_single_stepping_active(config))
+		return;
+
 	mutex_lock(&sev_step_config_mutex);
 	if( !config->waitingForTimer && sev_step_is_single_stepping_active(config) ) {
 

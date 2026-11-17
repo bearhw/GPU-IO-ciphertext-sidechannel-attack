@@ -1,0 +1,41 @@
+{
+  "index": 1845,
+  "host_base": "0x1a089d000",
+  "gt_base": "0x1a089d000",
+  "gt_indication": "73-year-old female, congestive heart failure, shortness of breath.",
+  "recovered_labels": [
+    ", short",
+    "ness of"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 358,
+      "ind_gpa": 6988356400,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 360,
+      "ind_gpa": 6988356416,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 2,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      ", short",
+      "ness of"
+    ]
+  },
+  "elapsed_sec": 15.421911716461182,
+  "timestamp": 1793207934.6477556,
+  "status": "SUCCESS"
+}

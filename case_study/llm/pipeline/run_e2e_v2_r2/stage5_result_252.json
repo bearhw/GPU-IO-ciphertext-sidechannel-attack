@@ -1,0 +1,32 @@
+{
+  "index": 252,
+  "host_base": "0x196f16000",
+  "gt_base": "0x196f16000",
+  "gt_indication": "CABG. Chest pain.",
+  "recovered_labels": [
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 6827371248,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.637915849685669,
+  "timestamp": 1793325375.0511289,
+  "status": "SUCCESS"
+}

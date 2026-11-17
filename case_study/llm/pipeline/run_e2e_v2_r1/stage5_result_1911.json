@@ -1,0 +1,95 @@
+{
+  "index": 1911,
+  "host_base": "0x1a0e7f000",
+  "gt_base": "0x1a0e7f000",
+  "gt_indication": "Atypical chest pain, abnormal EKG",
+  "recovered_labels": [
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain",
+    " Chest pain"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 362,
+      "ind_gpa": 6994525008,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 364,
+      "ind_gpa": 6994525024,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 366,
+      "ind_gpa": 6994525040,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 368,
+      "ind_gpa": 6994525056,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 370,
+      "ind_gpa": 6994525072,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 372,
+      "ind_gpa": 6994525088,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 374,
+      "ind_gpa": 6994525104,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 376,
+      "ind_gpa": 6994525120,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 8,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain",
+      "Chest pain"
+    ]
+  },
+  "elapsed_sec": 15.778138399124146,
+  "timestamp": 1793212607.816133,
+  "status": "SUCCESS"
+}

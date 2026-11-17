@@ -1,0 +1,32 @@
+{
+  "index": 2070,
+  "host_base": "0x13f11f000",
+  "gt_base": "0x13f11f000",
+  "gt_indication": "Soreness of breath and cough",
+  "recovered_labels": [
+    " of breath"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 350,
+      "ind_gpa": 5353110256,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "of breath"
+    ]
+  },
+  "elapsed_sec": 15.642979383468628,
+  "timestamp": 1793399478.6933012,
+  "status": "SUCCESS"
+}

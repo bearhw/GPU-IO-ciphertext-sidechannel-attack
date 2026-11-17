@@ -1,0 +1,104 @@
+{
+  "index": 295,
+  "host_base": "0x1a06cf000",
+  "gt_base": "0x1a06cf000",
+  "gt_indication": "Progressive shortness of breath over the past 2 days.",
+  "recovered_labels": [
+    " Chest pain",
+    " COPD",
+    " Chest pain",
+    " COPD",
+    " Chest pain",
+    " COPD",
+    " Chest pain",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 552,
+      "ind_gpa": 6986465600,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6986465600,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6986465616,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6986465616,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6986465632,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6986465632,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6986465648,
+      "token_idx": 7,
+      "n_blocks": 1,
+      "label": " Chest pain"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6986465648,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 8,
+    "false_positive_labels": [
+      "Chest pain",
+      "COPD",
+      "Chest pain",
+      "COPD",
+      "Chest pain",
+      "COPD",
+      "Chest pain",
+      "COPD"
+    ],
+    "false_positive_count": 8,
+    "recovered_labels": [
+      "Chest pain",
+      "COPD",
+      "Chest pain",
+      "COPD",
+      "Chest pain",
+      "COPD",
+      "Chest pain",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 15.195689916610718,
+  "timestamp": 1793456278.6200993,
+  "status": "SUCCESS"
+}

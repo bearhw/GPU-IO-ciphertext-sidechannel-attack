@@ -1,0 +1,61 @@
+{
+  "index": 311,
+  "host_base": "0x1a041a000",
+  "gt_base": "0x1a041a000",
+  "gt_indication": "COVID, shortness of breath, back pain",
+  "recovered_labels": [
+    ", short",
+    "ness of",
+    " breath,",
+    " fever."
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 504,
+      "ind_gpa": 6983626688,
+      "token_idx": 11,
+      "n_blocks": 1,
+      "label": ", short"
+    },
+    {
+      "tok_start": 506,
+      "ind_gpa": 6983626704,
+      "token_idx": 1,
+      "n_blocks": 1,
+      "label": "ness of"
+    },
+    {
+      "tok_start": 508,
+      "ind_gpa": 6983626720,
+      "token_idx": 8,
+      "n_blocks": 1,
+      "label": " breath,"
+    },
+    {
+      "tok_start": 512,
+      "ind_gpa": 6983626752,
+      "token_idx": 23,
+      "n_blocks": 1,
+      "label": " fever."
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 4,
+    "false_positive_labels": [
+      "fever."
+    ],
+    "false_positive_count": 1,
+    "recovered_labels": [
+      ", short",
+      "ness of",
+      "breath,",
+      "fever."
+    ]
+  },
+  "elapsed_sec": 34.150745153427124,
+  "timestamp": 1792896698.4380522,
+  "status": "SUCCESS"
+}

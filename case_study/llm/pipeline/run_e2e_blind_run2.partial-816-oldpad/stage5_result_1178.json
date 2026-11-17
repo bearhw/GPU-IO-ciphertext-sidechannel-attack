@@ -1,0 +1,32 @@
+{
+  "index": 1178,
+  "host_base": "0x1a371f000",
+  "gt_base": "0x1a371e000",
+  "gt_indication": "59-year-old male status post CABG. No current chest complaints.",
+  "recovered_labels": [
+    " CABG"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 268,
+      "ind_gpa": 7037122656,
+      "token_idx": 21,
+      "n_blocks": 1,
+      "label": " CABG"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "CABG"
+    ]
+  },
+  "elapsed_sec": 19.967176914215088,
+  "timestamp": 1793098150.6136882,
+  "status": "SUCCESS"
+}

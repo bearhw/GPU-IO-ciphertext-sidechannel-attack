@@ -37,6 +37,21 @@ BURST_CLUSTER_OVERLAP = 40
 BURST_SLIDE_BACK      = 12      # measured slips ran -2 to -9 writes
 BURST_SLIDE_FWD       = 4
 
+# The envelope above misses real bursts whose writes stall slightly: replaying the
+# 1032 blind valid tracker logs, 5% of samples had all 49 GT pages written
+# consecutively but with a 10-30us gap somewhere. Widening the envelope outright
+# recovers them but reshuffles the top-10 for half the samples that already work,
+# so the wider windows are only appended after the strict ones (88.2% -> 93.3%
+# GT-in-candidates, with the strict top-10 unchanged).
+# DISABLED (BURST_WIDE_EXTRA = 0): in the live run of 2026-11-01 the probe chose a
+# wide window in 11/15 samples even though the GT window was a strict candidate.
+# Wide windows straddle the GT buffer and its neighbour, so they collect more
+# dictionary hits than the real buffer and win the probe; GT overlap fell to ~30.
+BURST_WIDE_GAP_US     = 30.0
+BURST_WIDE_SPAN_US    = 600.0
+BURST_WIDE_EXTRA      = 0
+BURST_MAX_CANDIDATES  = BURST_TOP_K + BURST_WIDE_EXTRA
+
 
 def _page_runs(pages: List[int]) -> int:
     """Number of maximal physically-contiguous runs in a page set."""
@@ -49,7 +64,9 @@ def _page_runs(pages: List[int]) -> int:
 
 
 def find_burst_candidates(writes: List[Tuple[int, int]], n_pages: Optional[int] = None,
-                          top_k: int = BURST_TOP_K) -> List[Dict]:
+                          top_k: int = BURST_TOP_K,
+                          max_gap_us: Optional[float] = None,
+                          max_span_us: Optional[float] = None) -> List[Dict]:
     """Candidate channel buffers, found as bursts of consecutive tracked writes.
 
     The guest materialises the channel with one memcpy, so its pages land as
@@ -62,6 +79,8 @@ def find_burst_candidates(writes: List[Tuple[int, int]], n_pages: Optional[int] 
     Pages stay in observed order, which is the tensor order.
     """
     n = n_pages or c.IMG_PAGES
+    max_gap_us = BURST_MAX_GAP_US if max_gap_us is None else max_gap_us
+    max_span_us = BURST_MAX_SPAN_US if max_span_us is None else max_span_us
     filt = [(g, ts) for g, ts in writes
             if not (c.BLIND_A_LO <= g < c.BLIND_A_HI or c.BLIND_B_LO <= g < c.BLIND_B_HI)]
 
@@ -74,7 +93,7 @@ def find_burst_candidates(writes: List[Tuple[int, int]], n_pages: Optional[int] 
         ts = [t for _, t in w]
         span = (ts[-1] - ts[0]) / 1000.0
         gap = max(b - a for a, b in zip(ts, ts[1:])) / 1000.0
-        if span > BURST_MAX_SPAN_US or gap > BURST_MAX_GAP_US:
+        if span > max_span_us or gap > max_gap_us:
             continue
         # Windows come out a few writes late — a duplicate page near the burst start
         # pushes the first accepted window past it — so carry the surrounding stream
@@ -111,6 +130,29 @@ def find_burst_candidates(writes: List[Tuple[int, int]], n_pages: Optional[int] 
             'ctx_off': w['ctx_off'],
         })
     return out
+
+
+def find_burst_candidates_tiered(writes: List[Tuple[int, int]],
+                                 n_pages: Optional[int] = None) -> List[Dict]:
+    """Strict-envelope candidates first, then up to BURST_WIDE_EXTRA windows that
+    only the wider envelope admits and that are distinct from every strict one.
+    Stage 3 probes all of them; the strict ones keep their order and come first."""
+    base = find_burst_candidates(writes, n_pages)
+    wide = find_burst_candidates(writes, n_pages, top_k=60,
+                                 max_gap_us=BURST_WIDE_GAP_US,
+                                 max_span_us=BURST_WIDE_SPAN_US)
+    extra = []
+    for w in wide:
+        if w['max_gap_us'] <= BURST_MAX_GAP_US and w['span_us'] <= BURST_MAX_SPAN_US:
+            continue
+        ws = set(w['channel_pages'])
+        if any(len(ws & set(b['channel_pages'])) >= BURST_CLUSTER_OVERLAP for b in base):
+            continue
+        w['tier'] = 'wide'
+        extra.append(w)
+        if len(extra) >= BURST_WIDE_EXTRA:
+            break
+    return base + extra
 
 
 BLOCK_LEAD_LOOK = 60      # how far into the block stream to look for the burst start
@@ -419,7 +461,7 @@ def track_mura_blind(index: int, output_dir: Path, study_type: Optional[str] = N
                 writes.append((int(m.group(1), 16), int(m.group(2))))
 
     print(f"[stage2] [blind] Captured {len(writes)} write events from live tracker")
-    candidates = find_burst_candidates(writes)
+    candidates = find_burst_candidates_tiered(writes)
     if candidates:
         print(f"[stage2] [blind] Found {len(candidates)} distinct burst candidate(s) "
               f"(best: {candidates[0]['runs']} run(s), {candidates[0]['span_us']}us)")
@@ -460,7 +502,7 @@ def run_stage2(index: int, output_dir: Path, blind: bool = False,
                 m = BLIND_LINE_RE.search(line)
                 if m:
                     writes.append((int(m.group(1), 16), int(m.group(2))))
-        candidates = find_burst_candidates(writes) or stitch_temporal_runs(writes)
+        candidates = find_burst_candidates_tiered(writes) or stitch_temporal_runs(writes)
         target_class = study_type or "ELBOW"
         img_path = ""
         gt_pages = []
@@ -539,7 +581,7 @@ def run_stage2(index: int, output_dir: Path, blind: bool = False,
                 channel_pages_hex=[hex(p) for p in cand["channel_pages"]],
                 channel_pages_int=cand["channel_pages"],
             )
-            for cand in candidates[:BURST_TOP_K]
+            for cand in candidates[:BURST_MAX_CANDIDATES]
         ],
         "timestamp": time.time(),
     }

@@ -1,0 +1,434 @@
+{
+  "index": 1217,
+  "host_base": "0x19e136000",
+  "gt_base": "0x19e136000",
+  "gt_indication": "Weakness and abdominal pain.",
+  "recovered_labels": [
+    " of breath",
+    " Cough",
+    " PICC",
+    " Fever.",
+    " catheter",
+    " of breath",
+    " Cough",
+    " PICC",
+    " COVID-",
+    " catheter",
+    " of breath",
+    " Cough",
+    " PICC",
+    " COVID-",
+    " catheter",
+    " of breath",
+    " Cough",
+    " PICC",
+    " COVID-",
+    " catheter",
+    " of breath",
+    " Cough",
+    " PICC",
+    " COVID-",
+    " catheter",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " of breath",
+    " PICC",
+    " cough,",
+    " COPD",
+    " cough,",
+    " COPD",
+    " cough,",
+    " COPD",
+    " cough,",
+    " COPD"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 534,
+      "ind_gpa": 6947041456,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6947041456,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6947041456,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6947041456,
+      "token_idx": 26,
+      "n_blocks": 1,
+      "label": " Fever."
+    },
+    {
+      "tok_start": 534,
+      "ind_gpa": 6947041456,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6947041472,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6947041472,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6947041472,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6947041472,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 536,
+      "ind_gpa": 6947041472,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6947041488,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6947041488,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6947041488,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6947041488,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 538,
+      "ind_gpa": 6947041488,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6947041504,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6947041504,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6947041504,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6947041504,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 540,
+      "ind_gpa": 6947041504,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6947041520,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6947041520,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6947041520,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6947041520,
+      "token_idx": 22,
+      "n_blocks": 1,
+      "label": " COVID-"
+    },
+    {
+      "tok_start": 542,
+      "ind_gpa": 6947041520,
+      "token_idx": 28,
+      "n_blocks": 1,
+      "label": " catheter"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6947041536,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 544,
+      "ind_gpa": 6947041536,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6947041552,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 546,
+      "ind_gpa": 6947041552,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6947041568,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 548,
+      "ind_gpa": 6947041568,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6947041584,
+      "token_idx": 0,
+      "n_blocks": 1,
+      "label": " of breath"
+    },
+    {
+      "tok_start": 550,
+      "ind_gpa": 6947041584,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6947041600,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 552,
+      "ind_gpa": 6947041600,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6947041616,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 554,
+      "ind_gpa": 6947041616,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6947041632,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 556,
+      "ind_gpa": 6947041632,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6947041648,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 558,
+      "ind_gpa": 6947041648,
+      "token_idx": 16,
+      "n_blocks": 1,
+      "label": " COPD"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 41,
+    "false_positive_labels": [
+      "of breath",
+      "Cough",
+      "PICC",
+      "Fever.",
+      "catheter",
+      "of breath",
+      "Cough",
+      "PICC",
+      "COVID-",
+      "catheter",
+      "of breath",
+      "Cough",
+      "PICC",
+      "COVID-",
+      "catheter",
+      "of breath",
+      "Cough",
+      "PICC",
+      "COVID-",
+      "catheter",
+      "of breath",
+      "Cough",
+      "PICC",
+      "COVID-",
+      "catheter",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "cough,",
+      "COPD",
+      "cough,",
+      "COPD",
+      "cough,",
+      "COPD",
+      "cough,",
+      "COPD"
+    ],
+    "false_positive_count": 41,
+    "recovered_labels": [
+      "of breath",
+      "Cough",
+      "PICC",
+      "Fever.",
+      "catheter",
+      "of breath",
+      "Cough",
+      "PICC",
+      "COVID-",
+      "catheter",
+      "of breath",
+      "Cough",
+      "PICC",
+      "COVID-",
+      "catheter",
+      "of breath",
+      "Cough",
+      "PICC",
+      "COVID-",
+      "catheter",
+      "of breath",
+      "Cough",
+      "PICC",
+      "COVID-",
+      "catheter",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "of breath",
+      "PICC",
+      "cough,",
+      "COPD",
+      "cough,",
+      "COPD",
+      "cough,",
+      "COPD",
+      "cough,",
+      "COPD"
+    ]
+  },
+  "elapsed_sec": 16.408602952957153,
+  "timestamp": 1792937896.7479775,
+  "status": "SUCCESS"
+}

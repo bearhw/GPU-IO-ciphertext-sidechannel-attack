@@ -1,0 +1,44 @@
+{
+  "index": 2918,
+  "host_base": "0x1a14a6000",
+  "gt_base": "0x1a14a6000",
+  "gt_indication": "70-year-old male with history of left foot cellulitis. Wound infection. Concern for osteomyelitis. History of peripheral vascular disease. Shortness of breath without exertion.",
+  "recovered_labels": [
+    " Follow-up",
+    " PICC"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 564,
+      "ind_gpa": 7000977824,
+      "token_idx": 17,
+      "n_blocks": 1,
+      "label": " Follow-up"
+    },
+    {
+      "tok_start": 564,
+      "ind_gpa": 7000977824,
+      "token_idx": 20,
+      "n_blocks": 1,
+      "label": " PICC"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 2,
+    "false_positive_labels": [
+      "Follow-up",
+      "PICC"
+    ],
+    "false_positive_count": 2,
+    "recovered_labels": [
+      "Follow-up",
+      "PICC"
+    ]
+  },
+  "elapsed_sec": 19.105249881744385,
+  "timestamp": 1793010583.3610685,
+  "status": "SUCCESS"
+}

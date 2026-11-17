@@ -1,0 +1,32 @@
+{
+  "index": 1554,
+  "host_base": "0x1ac61b000",
+  "gt_base": "0x1ac61a000",
+  "gt_indication": "Cough and congestion, comparison 01/11/2001.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 252,
+      "ind_gpa": 7187052512,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 16.89088273048401,
+  "timestamp": 1793110021.1618266,
+  "status": "SUCCESS"
+}

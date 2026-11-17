@@ -1,0 +1,32 @@
+{
+  "index": 2558,
+  "host_base": "0x1a2bce000",
+  "gt_base": "0x1a2bce000",
+  "gt_indication": "Leg swelling. Cough.",
+  "recovered_labels": [
+    " Cough"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 670,
+      "ind_gpa": 7025259760,
+      "token_idx": 3,
+      "n_blocks": 1,
+      "label": " Cough"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MATCH",
+    "top1_exact_match": true,
+    "any_label_match": true,
+    "multi_match_count": 1,
+    "false_positive_labels": [],
+    "false_positive_count": 0,
+    "recovered_labels": [
+      "Cough"
+    ]
+  },
+  "elapsed_sec": 18.94199252128601,
+  "timestamp": 1792996564.3099527,
+  "status": "SUCCESS"
+}

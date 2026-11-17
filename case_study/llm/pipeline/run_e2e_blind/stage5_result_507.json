@@ -1,0 +1,134 @@
+{
+  "index": 507,
+  "host_base": "0x19f67c000",
+  "gt_base": "0x19f67c000",
+  "gt_indication": "Chest pain after trauma",
+  "recovered_labels": [
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,",
+    " cough,"
+  ],
+  "raw_matches": [
+    {
+      "tok_start": 626,
+      "ind_gpa": 6969349008,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 628,
+      "ind_gpa": 6969349024,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 630,
+      "ind_gpa": 6969349040,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 632,
+      "ind_gpa": 6969349056,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 634,
+      "ind_gpa": 6969349072,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 636,
+      "ind_gpa": 6969349088,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 638,
+      "ind_gpa": 6969349104,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 640,
+      "ind_gpa": 6969349120,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 642,
+      "ind_gpa": 6969349136,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 644,
+      "ind_gpa": 6969349152,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    },
+    {
+      "tok_start": 646,
+      "ind_gpa": 6969349168,
+      "token_idx": 14,
+      "n_blocks": 1,
+      "label": " cough,"
+    }
+  ],
+  "evaluation": {
+    "verdict": "MULTI_MATCH",
+    "top1_exact_match": false,
+    "any_label_match": false,
+    "multi_match_count": 11,
+    "false_positive_labels": [
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,"
+    ],
+    "false_positive_count": 11,
+    "recovered_labels": [
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,",
+      "cough,"
+    ]
+  },
+  "elapsed_sec": 16.921675205230713,
+  "timestamp": 1793032246.111969,
+  "status": "SUCCESS"
+}
