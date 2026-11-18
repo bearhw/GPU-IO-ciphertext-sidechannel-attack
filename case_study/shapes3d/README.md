@@ -67,8 +67,7 @@ case_study/shapes3d/
 │   ├── rescore_cmaps.py
 │   ├── redecode.py
 │   ├── dict_k_redecode.py
-│   ├── eval_runhit.py
-│   └── usenix.fd
+│   └── eval_runhit.py
 ├── pipeline/
 │   ├── common.py
 │   ├── swapio.py
@@ -93,8 +92,7 @@ case_study/shapes3d/
 │           ├── summary.csv
 │           ├── tracked_1.json  tracked_2.json  tracked_3.json
 │           ├── dump_1.json     dump_2.json     dump_3.json
-│           ├── result_1.json   result_2.json   result_3.json
-│           └── usenix.fd
+│           └── result_1.json   result_2.json   result_3.json
 └── victim/
     ├── train_victim.py
     ├── victim_resnet18.pth
@@ -145,7 +143,6 @@ case_study/shapes3d/
 | `redecode.py` | 11-17 | 11-17 | Re-runs assembly and Stage 4/5 offline from saved dumps (`--assembly saved/windowed/weighted`), using each sample's boot dictionary snapshot. |
 | `dict_k_redecode.py` | 11-18 | 11-18 | Replays a run\*hit capture with Dict-K (a Dict-16 prefix): block probe recount → LNDS assembly → base offset → cmap. With `--check` it replays Dict-16 and compares with live (400/400 identical). Output goes to `dictk_out/` (git-ignored). |
 | `eval_runhit.py` | 11-18 | 11-18 | Produces all final tables in one run: localization (all planes and per plane), top-1/2/3 (RGB, R/G/B-only, Dict-8), and single-channel accuracy by pages found. |
-| `usenix.fd` | 11-12 | 11-12 | OVMF UEFI variable store (QEMU pflash unit 1). The launch script `launch-qemu-noncc.sh` copies it into the current directory as `./<guest>.fd`; this copy was left over from booting with `offline/` as the working directory. Not needed for analysis. |
 
 ### `pipeline/` — host-side capture pipeline (needs SNP host and guest)
 
@@ -165,7 +162,7 @@ case_study/shapes3d/
 | `ref_dict.json` | 11-12 | 11-17 | Stage 1 metadata for the last boot: `fixed_gpa`, `num_refs`/`usable_refs` 48, build time. Rewritten on every boot. |
 | `usenix.fd` | 11-12 | 11-17 | OVMF UEFI variable store of the capture guest (`usenix`). QEMU updates it on every boot. |
 | `runs/gt_debug/*` | 11-12 | 11-12 | First known-address (`--gt`) debug run, test #0. `summary.csv` holds the result (cube, 148/148 pages); `tracked_0.json` is Stage 2, `dump_0.json` Stage 3, `result_0.json` Stage 4/5. The page dumps (`.out`) are not in git. |
-| `runs/blind_debug/*` | 11-12 | 11-12 | First blind debug run, test #1–3. #1 had 10 candidates and a correct prediction, but 0 GT pages (correct by chance). #2–3 had 0 candidates. Same file layout as above. `usenix.fd` is a copy left over from booting in this directory. |
+| `runs/blind_debug/*` | 11-12 | 11-12 | First blind debug run, test #1–3. #1 had 10 candidates and a correct prediction, but 0 GT pages (correct by chance). #2–3 had 0 candidates. Same file layout as above. |
 
 ### `victim/` — runs inside the guest
 
