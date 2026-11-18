@@ -171,8 +171,11 @@ def main():
     ap.add_argument("--out", default=str(HERE / "attack_shapes.pth"))
     ap.add_argument("--no-degrade", action="store_true")
     ap.add_argument("--aug", default="v1", choices=["v1", "v2"])
+    ap.add_argument("--keep-ch", default="RGB", help="planes kept; others zeroed everywhere (single-channel ablation)")
+    ap.add_argument("--threads", type=int, default=48)
+    ap.add_argument("--dict-k", type=int, default=16, help="keep the top-K keywords per channel (Dict-K is a prefix of Dict-16)")
     a = ap.parse_args()
-    torch.set_num_threads(48)
+    torch.set_num_threads(a.threads)
     rng = np.random.default_rng(0)
     deg = degrade_v2 if a.aug == "v2" else degrade
 
@@ -193,6 +196,16 @@ def main():
     elif (DS / "cap_test.npz").exists():
         ct = np.load(DS / "cap_test.npz")
         evals.append(("cap_test", ct["maps"], ct["shape"]))
+
+    if a.dict_k < 16:                                    # maps store idx+1; rank >= K -> miss
+        Xtr = np.where(Xtr > a.dict_k, 0, Xtr).astype(Xtr.dtype)
+        evals = [(n, np.where(X > a.dict_k, 0, X).astype(X.dtype), y) for n, X, y in evals]
+    drop = [i for i, ch in enumerate("RGB") if ch not in a.keep_ch]
+    if drop:
+        Xtr = Xtr.copy(); Xtr[:, drop] = 0
+        evals = [(n, X.copy(), y) for n, X, y in evals]
+        for _, X, _ in evals:
+            X[:, drop] = 0
 
     model = ShapeNet()
     if a.init:

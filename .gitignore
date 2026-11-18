@@ -127,3 +127,6 @@ case_study/**/datasets/
 case_study/**/stage[0-9]_tracked_*.json
 *.npz
 *.pth
+
+# shapes3d offline replay outputs (regenerable: dict_k_redecode.py)
+case_study/shapes3d/offline/dictk_out/

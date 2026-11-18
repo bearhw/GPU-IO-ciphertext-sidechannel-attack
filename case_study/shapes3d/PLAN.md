@@ -156,3 +156,17 @@ The host's guest can only be used by one capture at a time, so this has to be se
   per shape cube 94.0 / cylinder 97.0 / sphere 94.9 / capsule 97.0.
 - 남은 오류는 대부분 localization 실패 17개(GT 페이지 0). window 조립(stage3 ASSEMBLE_WINDOWED, 기본 off)은 미검증.
 - #500 미캡처(첫 샘플 guest crash).
+
+## 11-18 run*hit 400 최종 + 단일 채널 ablation (기존 LNDS 조립, Dict-16)
+- 캡처: captures/test_runhit, test split 400 (shape당 100). run*hit K=8은 test 캡처 보고 정함(공개 필요).
+- RGB v2: top-1/2/3 83.5/90.8/93.8, GT>=1 남은 샘플만 94.9 (n=331), per-shape 89/88/80/77
+- 단일 채널 (train_attack.py --keep-ch, sim_train only, sim_val_damaged로 선택):
+  | plane | sim_test | val_dmg | cap top-1/2/3 | plane-localised-only |
+  | R | 98.9 | 92.8 | 78.5/88.5/94.5 | 90.5 (n=326) |
+  | G | 98.8 | 90.1 | 77.8/86.0/93.2 | 89.3 (n=327) |
+  | B | 98.5 | 89.5 | 69.5/80.5/91.5 | 82.6 (n=305) |
+- localization (148p): dump >=1/74/109/136/148 = 97.8/81.8/64.2/47.8/35.8, 조립 후 82.8/70.5/55.0/36.5/3.0
+- 텐서 양 끝 페이지(0-9, 140-147) recall 낮음 → R/B plane 완전 복원률 낮음, G는 가운데라 유리
+- Dict-8 (11-18): Dict-16 prefix로 저장 캡처 재생(offline/dict_k_redecode.py, Dict-16 재생 400/400 라이브와 동일), 모델 attack_shapes_sim_v2_dict8.pth (train_attack.py --dict-k 8)
+  top-1/2/3 81.0/87.5/94.2 (Dict-16 83.5/90.8/93.8), localised-only 93.6 (n=328). 148p >=1/74/109/136/148 = 82.0/64.2/51.0/32.0/3.0
+  Dict-8 map + Dict-16 localization: 82.8/88.8/94.8 → 손실 대부분 localization(block 탈락 62/400, 2번째 probe 미존재로 보수적)

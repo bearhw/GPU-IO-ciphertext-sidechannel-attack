@@ -30,11 +30,20 @@ def main():
     y = np.array([CLASSES.index(last[i]["gt_class"]) for i in idx])
     lost = np.array([last[i]["gt_overlap"] == "0" for i in idx])
     for ck in sys.argv[2:]:
+        ck, _, keep = ck.partition(":")            # "model.pth:G" keeps only the G plane
+        Xk = X.copy()
+        for j, ch in enumerate("RGB"):
+            if keep and ch not in keep:
+                Xk[:, j] = 0
         net = ShapeNet()
         net.load_state_dict(torch.load(HERE / ck, map_location="cpu"))
         net.eval()
         with torch.no_grad():
-            p = torch.cat([net(to_tensor(X[s:s + 100])).argmax(1) for s in range(0, len(X), 100)]).numpy()
+            logits = torch.cat([net(to_tensor(Xk[s:s + 100])) for s in range(0, len(X), 100)])
+        rank = logits.argsort(1, descending=True).numpy()
+        p = rank[:, 0]
+        topk = [100 * (rank[:, :k] == y[:, None]).any(1).mean() for k in (1, 2, 3)]
+        print(f"{ck}{(':' + keep) if keep else ''}: top-1/2/3 {topk[0]:.1f} / {topk[1]:.1f} / {topk[2]:.1f}%")
         cm = np.zeros((4, 4), int)
         for a, b in zip(y, p):
             cm[a, b] += 1
