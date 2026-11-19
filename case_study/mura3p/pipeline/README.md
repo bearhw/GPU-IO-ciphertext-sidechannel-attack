@@ -31,7 +31,9 @@ mura3p/pipeline/
 ├── capture_daemon.py
 ├── valid_order.txt
 ├── ref_dict.json
-└── usenix.fd
+├── usenix.fd
+└── logs/
+    └── daemon_logs_20261119.tar.gz
 ```
 
 | File | Created | Modified | Description |
