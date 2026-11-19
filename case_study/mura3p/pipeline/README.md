@@ -50,12 +50,12 @@ mura3p/pipeline/
 | `valid_order.txt` | 11-14 | 11-14 | Capture order for the 3,197 MURA valid images, one index per line, shuffled. How it was generated (script or seed) is not recorded in git; **unverified**. |
 | `ref_dict.json` | 11-14 | 11-16 | Stage 1 metadata from the last boot (11-16): `fixed_gpa` 0x146672000, `num_refs`/`usable_refs` 192, `build_sec` 3734. Rewritten on every boot. |
 | `usenix.fd` | 11-14 | 11-16 | OVMF UEFI variable store of the capture guest (QEMU pflash unit 1). QEMU updates it on every boot. |
+| `logs/daemon_logs_20261119.tar.gz` | 11-19 | 11-19 | Archive of `daemon_valid.log` (git-ignored by `*.log`): the valid capture from 11-14 to 11-16 13:12, with the stop note at the end. |
 
 ## Not in git (local only)
 
 | Path | Description |
 |---|---|
-| `daemon_valid.log` | Daemon log for the valid capture (11-14 → 11-16 13:12, stop note at the end). Git-ignored by `*.log`. |
 | `guest_crashes/` | Guest console log saved on oops (1 file). |
 | `../captures/valid_blind/` | The 71 captured samples: dumps, traces, `summary.csv`. Ignored by `case_study/**/captures/`. |
 | `../dict/dict_pages_m3/` | Ref dumps from the last boot. Tied to that boot's VEK. |

@@ -93,6 +93,7 @@ A 5-stage modular attack pipeline analyzing and reconstructing encrypted memory 
 | `mura_attack_{N}ref_blind_ft.done` | 10-22 | 10-22 | Completion markers written by `blind_ft_watchdog.sh` (0 B). |
 | `finetune_run1.err`, `finetune_16ref.err`, `finetune_32ref.err` | 10-05/06 | same | stderr from the block-given fine-tune runs. |
 | `logs/train_logs_20261119.tar.gz` | 11-19 | 11-19 | Archive of the git-ignored training logs: `finetune_*.log`, `finetune_blind_*.log`, `build_{tr,va}{16,32}.log`, `blind_ft_runner.log`, `blind_ft_watchdog.log`, `blind_watchdog_detached.log`. |
+| `logs/daemon_logs_20261119.tar.xz` | 11-19 | 11-19 | Archive of the capture daemon logs (git-ignored by `*.log`), 9.1 MB xz (260.7 MB uncompressed):<br>`daemon_train.log` (09-27 to 10-04, train capture, 121 MB)<br>`daemon_valid.log` (10-04 to 10-08, block-given valid capture, 35 MB)<br>`daemon_blind.log` (to 11-07, blind valid capture, 117 MB) |
 
 ### 2.3 Data and results at the top level
 
@@ -130,7 +131,6 @@ A 5-stage modular attack pipeline analyzing and reconstructing encrypted memory 
 | Path | Description |
 |---|---|
 | `blind_mura_{i}.log`, `_dbg.log` (3,195 each, 421 MB) | Per-sample write traces from the blind capture. |
-| `daemon_{train,valid,blind}.log` (121 / 35 / 117 MB) | Capture daemon logs. Not archived because of their size. |
 | `run_{block,full,probe500,track}.log`, `pipeline.log`, `stall_guard.log` | Early run, pipeline and stall_guard logs. |
 | `xor_slice_{i}.npy` (25) | Stage 4 outputs (`*.npy`). |
 | `datasets/*_slices.npy`, `*_labels.npy`, `datasets/old_valid_blind_n917/` | Built datasets (regenerable with `build_attack_dataset.py`). |
