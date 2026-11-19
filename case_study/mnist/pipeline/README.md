@@ -47,8 +47,60 @@ A 5-stage modular attack pipeline analyzing and reconstructing encrypted memory 
 
 ## 2. File Organization
 
-| Filename | Role |
-|---|---|
+- **Created:** filesystem birth time (`stat %w`).
+- **Modified:** last modification time.
+- All dates are 2026. This section was rewritten on 11-18, after checking every git-tracked file in this directory.
+
+```
+mnist/pipeline/
+├── README.md
+├── EVAL_README.md
+├── common.py
+├── stage1_zero_gpa.py
+├── stage2_track_gpa.py
+├── stage2b_locate_pages.py
+├── stage3_swap_dump.py
+├── stage4_extract_features.py
+├── stage5_reconstruct.py
+├── master_orchestrate.py
+├── capture_campaign.py
+├── run_test.py
+├── timing_harness.py
+├── output/            (81 files, 09-11 to 09-13)
+│   ├── dumps/
+│   ├── logs/
+│   └── results/
+└── output_timing/     (121 files, 11-07)
+    ├── timing_summary.json
+    └── results/
+```
+
+| File | Created | Modified | Role |
+|---|---|---|---|
+| `README.md` | 09-11 | 11-18 | This file: pipeline architecture, usage, file and directory descriptions. |
+| `EVAL_README.md` | 10-23 | 10-23 | Run order (Korean) for retraining v10 on real captures and measuring blind SSIM on the test split: train capture → retrain → eval capture → `run_test.py`. The `MNIST_SPLIT` switch is explained here. |
+| `common.py` | 09-11 | 09-13 | Shared configuration, SSH connections, path constants, SSIM/PSNR metric computation. |
+| `stage1_zero_gpa.py` | 09-11 | 11-07 | [Stage 1] Gets a verified all-zero page GPA from the guest ICMP module and dumps it to `z.out` (`zero_gpa.json`). This zero page is MNIST's "dictionary". |
+| `stage2_track_gpa.py` | 09-11 | 11-07 | [Stage 2] Gets the GT GPA and, with `--blind`, runs `write_pattern_tracker` Region-B precursor detection and 2 MB block ranking. Falls back to GT if blind detection misses. Writes `tracked_target_{index}.json`. |
+| `stage2b_locate_pages.py` | 10-19 | 10-19 | [Stage 2b] Finds the tensor start page inside a candidate 2 MB block from content. It swap-dumps all 512 pages, XORs them against the zero page, and picks the 49-page window whose background ratio is closest to 80.9% (`score_windows`). Write timing alone cannot place the start: measured offsets were 44–254 pages. |
+| `stage3_swap_dump.py` | 09-11 | 09-13 | [Stage 3] Page-swaps Page 1/2 with the zero page and dumps them (`swap_and_dump.py --swap-back`). Writes `swap_meta_{index}.json`. |
+| `stage4_extract_features.py` | 09-11 | 11-07 | [Stage 4] XORs dumps against `z.out`, estimates the in-page offset (64 B alignment + center of mass), and extracts the 196-dim sparsity vector (`.out_v5.list`). |
+| `stage5_reconstruct.py` | 09-11 | 11-07 | [Stage 5] Reconstructs with v6r (retrieval), v9r (UNet-GAN) and v10 (SparsityEncoder + V10Decoder), computes SSIM/PSNR/L1 against GT, and writes the comparison png. |
+| `master_orchestrate.py` | 09-13 | 09-13 | Runs stages 1–5 together or selectively (`--from-stage/--to-stage/--stage`), with batch mode (`--start/--end`). |
+| `capture_campaign.py` | 10-23 | 10-23 | Capture campaign for v10 retraining. Each bs=512 blind capture = one 2 MB block = 512 images, saved as `results/sparsities_*_bs512_idx*.npy`. Train (60k → batches 0–116) and eval (test 10k → batches 0–18) go to separate output dirs. Needs the guest. |
+| `run_test.py` | 10-23 | 10-23 | Guest-free. Re-runs Stage 5 with the current weights on the saved eval sparsity arrays and reports mean ± std of per-batch SSIM plus pooled per-image SSIM. GT is the MNIST test split. |
+| `timing_harness.py` | 11-07 | 11-07 | Per-stage timing study. Runs the blind bs=512 pipeline for N batches and reports wall-clock and self-reported times for dict_build, track_rank, page_dump, ciphermap, recon and per_sample. Output: `output_timing/`. |
+
+### Directories
+
+| Directory | Created | Contents |
+|---|---|---|
+| `output/dumps/` | 09-11 to 09-13 | `z.out` (zero page dump), `3-30.out` / `3-30_p2.out` (Page 1/2 dumps of sample #30, label 3). |
+| `output/logs/` | 09-11 to 09-13 | Write traces from the blind runs: `blind_{0,30}.log` (`CLOCK_REF` / `WRITE gpa ts` lines) and `blind_*_dbg.log`. |
+| `output/results/` | 09-11 to 09-13 | Single-sample results: `features_{0,30,1000}.json`, `metrics_{0,30,1000..1003}.json`, `recon_{30,1000..1003}_{v6r,v9r,v10}.{npy,png}`, `swap_meta_*.json`, `tracked_target_*.json`, `zero_gpa.json`, `*.out_v5.list`.<br>bs=512 batch results (images 0–511) from 4 runs: `batch_0`, `20260913_094647`, `20260913_095852`, `20260913_102307`. Each run has `sparsities_*.npy`, `recons_*_{v6r,v9r,v10}.npy`, `metrics_*.json` and `comparison_*.png`.<br>v10 batch SSIM per run: 0.417 / 0.418 / 0.454 / 0.444 (v6r 0.385–0.435, v9r 0.009–0.287). |
+| `output_timing/` | 11-07 | Output of `timing_harness.py` (`MNIST_SPLIT=test`, n=20, bs=512).<br>`timing_summary.json` holds the per-stage mean in seconds per batch: dict_build 6.18, track_rank 127.0, page_dump 190.4, ciphermap 0.32, recon 3.22, per_sample 321.0.<br>`results/` holds per-batch `tracked_target_N.json`, `swap_meta_N.json`, `features_N.json`, `metrics_N.json`, `metrics_*_bs512_idx*.json` (20 each), `comparison_*.png` (19) and `zero_gpa.json`. |
+
+---|---|
 | `common.py` | Shared configuration, SSH connections, path constants, SSIM/PSNR metric computation |
 | `stage1_zero_gpa.py` | [Stage 1] Acquire Zero Page GPA and dump `z.out` |
 | `stage2_track_gpa.py` | [Stage 2] Blind tracking with `write_pattern_tracker` and GT acquisition |

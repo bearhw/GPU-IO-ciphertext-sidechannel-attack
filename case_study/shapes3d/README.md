@@ -69,6 +69,7 @@ case_study/shapes3d/
 │   ├── dict_k_redecode.py
 │   └── eval_runhit.py
 ├── pipeline/
+│   ├── README.md
 │   ├── common.py
 │   ├── swapio.py
 │   ├── shapes_map.py
