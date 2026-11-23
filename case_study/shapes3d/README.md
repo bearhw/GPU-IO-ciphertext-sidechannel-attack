@@ -20,6 +20,9 @@ The run uses run\*hit localization, the original LNDS assembly and the v2 classi
 | G only | 77.8% | 86.0% | 93.2% |
 | B only | 69.5% | 80.5% | 91.5% |
 | RGB, Dict-8 (offline replay) | 81.0% | 87.5% | 94.2% |
+| Plaintext baseline (victim ResNet-18 on the images, no side channel) | 100.0% | 100.0% | 100.0% |
+
+The plaintext baseline is also 100.0% on the full test split (1,000), every shape at 100%. The gap to the attack therefore comes from the side channel (localization, dictionary hits, offset), not from the task.
 
 To reproduce:
 
@@ -27,6 +30,7 @@ To reproduce:
 cd offline
 python3 dict_k_redecode.py ../captures/test_runhit --k 8
 python3 eval_runhit.py ../captures/test_runhit
+python3 eval_plaintext.py --capture ../captures/test_runhit
 ```
 
 - **Leakage:** classifiers are trained only on `split.json` train_pool (sim_train). Checkpoints are selected on 2,000 maps held out of sim_train with fixed damage. Test hue combinations are disjoint from train.
@@ -67,7 +71,8 @@ case_study/shapes3d/
 │   ├── rescore_cmaps.py
 │   ├── redecode.py
 │   ├── dict_k_redecode.py
-│   └── eval_runhit.py
+│   ├── eval_runhit.py
+│   └── eval_plaintext.py
 ├── pipeline/
 │   ├── README.md
 │   ├── common.py
@@ -144,6 +149,7 @@ case_study/shapes3d/
 | `redecode.py` | 11-17 | 11-17 | Re-runs assembly and Stage 4/5 offline from saved dumps (`--assembly saved/windowed/weighted`), using each sample's boot dictionary snapshot. |
 | `dict_k_redecode.py` | 11-18 | 11-18 | Replays a run\*hit capture with Dict-K (a Dict-16 prefix): block probe recount → LNDS assembly → base offset → cmap. With `--check` it replays Dict-16 and compares with live (400/400 identical). Output goes to `dictk_out/` (git-ignored). |
 | `eval_runhit.py` | 11-18 | 11-18 | Produces all final tables in one run: localization (all planes and per plane), top-1/2/3 (RGB, R/G/B-only, Dict-8), and single-channel accuracy by pages found. |
+| `eval_plaintext.py` | 11-23 | 11-23 | Plaintext baseline: the victim ResNet-18 (`victim/victim_resnet18.pth`, preprocessing imported from `train_victim.py`) on the raw test images. Top-1/2/3 on the test split (1,000) and on the 400 captured samples, and checks that capture labels match. CPU, ~15 s. |
 
 ### `pipeline/` — host-side capture pipeline (needs SNP host and guest)
 

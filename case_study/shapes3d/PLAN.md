@@ -89,7 +89,7 @@ Report each tier in the same format as MURA:
 
 | Tier | Meaning |
 |---|---|
-| Plaintext ResNet-18 | Upper bound |
+| Plaintext ResNet-18 | Upper bound. Measured 11-23: 100.0% top-1 on the test split (1,000) and on the captured 400 (`offline/eval_plaintext.py`) |
 | Simulated cipher map | Dictionary ceiling |
 | GT-localized capture | Known address |
 | Blind e2e | Final result |
